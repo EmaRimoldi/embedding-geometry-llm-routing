@@ -1,0 +1,100 @@
+{
+  "scope": "Render four selected table families from saved reports; no experiments or intervals are recomputed.",
+  "created_utc": "2026-10-26T23:48:58.328136+00:00",
+  "python_version": "3.11.15",
+  "families": [
+    {
+      "family": "appendix_ci",
+      "status": "passed",
+      "inputs": {
+        "src/diagnostics/appendix_ci/render_tables.py": "5ba7b0a87e6530605af7161a067028fa4b1aeb3b3ade57824c5d9d85f7d2b0df",
+        "src/diagnostics/appendix_ci/ci_common.py": "8cea91e3b464a607db398e130964bf26954343202c5822c120f3034ea354fc42",
+        "configs/appendix_ci.json": "78f2c44218a9b4198b494d6517d44bf67ea7bf6c0aa756c36ece2c2c769f1581",
+        "configs/baselines.json": "741e9cdeab782a41b00f2377fdc5463732604e4a0def769f029fe0a91d127d2b",
+        "results/evidence/diagnostics/appendix_confidence_intervals/routing/routerbench-0shot/iid/report.json": "8a034ec46eb4d0cc7e286ae1bbedfe61ddb7b9a2cbb9dbc41eedac0d35eacc9b",
+        "results/evidence/diagnostics/appendix_confidence_intervals/routing/routerbench-0shot/ood/report.json": "5a1780912fb2f700e5f06bef3dfbe884b76ec9c5df6b7333d449c2fbd102bda8",
+        "results/evidence/diagnostics/appendix_confidence_intervals/routing/sprout-sixfam/iid/report.json": "5b3b067a7affd569f642622b1102d7a55003bd669cffd820577e67af0802d436",
+        "results/evidence/diagnostics/appendix_confidence_intervals/routing/sprout-sixfam/ood/report.json": "e608b351f29b3b578917912493fdf49227e54bf72eb6f918db71c655e44efc30",
+        "results/evidence/diagnostics/appendix_confidence_intervals/geometry/routerbench/report.json": "4e84859d36cd793a58886d00f331001486d31786d0f5e92e3c77ba14fb905d11",
+        "results/evidence/diagnostics/appendix_confidence_intervals/geometry/sprout/report.json": "eae6db361c60cab8f4e75fe7921fcb14db37bf2623accc594b453b921611b14a"
+      },
+      "outputs": {
+        "results/reproduced/saved_tables/run-noqvu4al/appendix_ci/results/diagnostics/appendix_confidence_intervals/overleaf/aistats_ci_tables.tex": "2fcc51086c6f9b3a044a510256b1746f6e1b0068ba018825b59697a138fcd185",
+        "results/reproduced/saved_tables/run-noqvu4al/appendix_ci/results/diagnostics/appendix_confidence_intervals/overleaf/aistats_tables.tex": "538a3cde0ac25ade3e10d780ac32aea9564e746daa6a3b62b94894e26f1e1382",
+        "results/reproduced/saved_tables/run-noqvu4al/appendix_ci/results/diagnostics/appendix_confidence_intervals/overleaf/pointmap.json": "cde10493f4304c81985cfcea7e507c587e0fb19d2f8ae54663b0f92ee1ef0629",
+        "results/reproduced/saved_tables/run-noqvu4al/appendix_ci/results/diagnostics/appendix_confidence_intervals/overleaf/macros.json": "834683af7d84a587fbf68d427ddcbb323b4c86eef7d6b66facaa59da2fc5a248",
+        "results/reproduced/saved_tables/run-noqvu4al/appendix_ci/results/diagnostics/appendix_confidence_intervals/overleaf/audit.json": "9abb41730cfe4ce045414999c936ed623085e9878b360227e4731f87df787507"
+      },
+      "returncode": 0,
+      "logs": [
+        "results/reproduced/saved_tables/run-noqvu4al/appendix_ci/stdout.log",
+        "results/reproduced/saved_tables/run-noqvu4al/appendix_ci/stderr.log"
+      ]
+    },
+    {
+      "family": "sharedtrunknet",
+      "status": "passed",
+      "inputs": {
+        "src/diagnostics/appendix_ci/render_sharedtrunknet.py": "5b8ee0ff378f14a43ef258041bd93d5092b853deeea631219676e6b11283a4cf",
+        "configs/baseline_splits/routerbench-0shot.json": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+        "configs/baseline_splits/sprout-sixfam.json": "8d3ff78c8c1b84f60a737720cad236af5d977ccb5f958a4ab7cda3927542c997",
+        "results/evidence/diagnostics/appendix_confidence_intervals/sharedtrunknet/report.json": "7ad0e6768320c15d1158895b89053c934e4c35de53406b800dfb2006ee935975",
+        "results/evidence/layer_sweep/summary/source_selection_audit.json": "c43d1035a7bcd9da2a9bd373b3a88452588f8b4942c6360802b59231b74c8e03"
+      },
+      "outputs": {
+        "results/reproduced/saved_tables/run-noqvu4al/sharedtrunknet/results/diagnostics/appendix_confidence_intervals/sharedtrunknet/aistats_sharedtrunknet.tex": "a7129f1f8fcf3b43a75978ad3f9cf156efc3e214b9560701d06b4ef3b3bc5dde",
+        "results/reproduced/saved_tables/run-noqvu4al/sharedtrunknet/results/diagnostics/appendix_confidence_intervals/sharedtrunknet/layer_selected_families.tex": "23dd4bae244303d2b9822f2c7ca2ab5bf707df3de59bf598ed45f4a0321501a6"
+      },
+      "returncode": 0,
+      "logs": [
+        "results/reproduced/saved_tables/run-noqvu4al/sharedtrunknet/stdout.log",
+        "results/reproduced/saved_tables/run-noqvu4al/sharedtrunknet/stderr.log"
+      ]
+    },
+    {
+      "family": "cost_reward",
+      "status": "passed",
+      "inputs": {
+        "src/diagnostics/render_knn_cost_reward_format.py": "1289a38a156802876b690d5048f64e54e22c42ca4f723b45233f4d5416081f9b",
+        "results/evidence/diagnostics/knn_cost_reward_format/routerbench/report.json": "1dda5b6b8de3d22269375b9f5767f508d3111096ac106851824a8248852313d6",
+        "results/evidence/diagnostics/knn_cost_reward_format/routerbench/complete.json": "9af666ac2385ce2638fd5551ad2f847928c448bd9277a2a358d2af97c90a1d07",
+        "results/evidence/diagnostics/knn_cost_reward_format/sprout/report.json": "3184880022ec254e3a040b83ae5575b1f2501cca4f48fd66ef8dfb2b6e0fe6a2",
+        "results/evidence/diagnostics/knn_cost_reward_format/sprout/complete.json": "dbebb9c3be3d08ba61774673adf9b4a75842c42f2b1ef78cb566a3ee05900607"
+      },
+      "outputs": {
+        "results/reproduced/saved_tables/run-noqvu4al/cost_reward/results/diagnostics/knn_cost_reward_format/paper/aistats_cost_reward.tex": "604e2069fa0cd166643b6d5de5e4f0aaa97d6daab5793a17a8abf97f4b5883a4"
+      },
+      "returncode": 0,
+      "logs": [
+        "results/reproduced/saved_tables/run-noqvu4al/cost_reward/stdout.log",
+        "results/reproduced/saved_tables/run-noqvu4al/cost_reward/stderr.log"
+      ]
+    },
+    {
+      "family": "family_utility",
+      "status": "passed",
+      "inputs": {
+        "src/diagnostics/export_family_utility_tables.py": "b3202fe06954ae1447f94492bd6c130ddc5f5d7bb9bee2a201d4d83329622960",
+        "results/evidence/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/audit.json": "910306b7c099383aa0d09d762fd7e74e6efc1ba68cd808c520b126cd92adc450",
+        "results/evidence/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/summary.json": "c33b4efba00056191588bbb9fd3e723b40a4f1261f9fa077d1562d198b388372",
+        "results/evidence/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/per_lambda.csv": "ccad342829cee28b61d6510ae0eec91f23dc4af4201938a49fd4fd14ed5eb7a1"
+      },
+      "outputs": {
+        "results/reproduced/saved_tables/run-noqvu4al/family_utility/results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/per_lambda_table.tex": "bf592bf0b61554149036703d2b24d98a66d6623be2b1543720bc48acc076d9d1",
+        "results/reproduced/saved_tables/run-noqvu4al/family_utility/results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/summary_table.tex": "9f10573521d4b324416a388a7f9834c3d19bcbe4a54ff580860b3d2c7430b306",
+        "results/reproduced/saved_tables/run-noqvu4al/family_utility/results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/table_provenance.json": "7616c300bc5aef3ba31789612918c72a859a9f216e9be1b30f18fae2d8b58b7e"
+      },
+      "returncode": 0,
+      "logs": [
+        "results/reproduced/saved_tables/run-noqvu4al/family_utility/stdout.log",
+        "results/reproduced/saved_tables/run-noqvu4al/family_utility/stderr.log"
+      ]
+    }
+  ],
+  "counts": {
+    "passed": 4,
+    "skipped": 0,
+    "missing": 0,
+    "failed": 0
+  }
+}

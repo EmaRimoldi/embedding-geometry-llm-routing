@@ -16,7 +16,7 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 | Fresh numeric controls | Single-model selection and realized-oracle controls from newly prepared public outcomes | 598 method scores; 3,588 saved metric comparisons, maximum error zero |
 | Saved-result reconstruction | Seven result groups, including final per-model SharedTrunkNet JSONs | 23,740 fold-level records, 4,031 reconstructed aggregate rows, saved-aggregate tolerance 1e-10 relative / 1e-12 absolute |
 | Printed results | Pinned manuscript values and settings, all 44 table labels | 5,493 checks passed at printed precision; supplied intervals compared without resampling |
-| CPU regression tests | Pipeline/geometry, integrity, paper-gate, rank-tie and distribution regression cases | 18 tests passed |
+| CPU regression tests | Pipeline/geometry, integrity, paper-gate, rank-tie and distribution regression cases | 20 tests passed |
 | CPU baseline execution | Actual kNN, Family Adaptation and Ridge CLI paths on synthetic ID/OOD inputs | 156 score checks; 16 MLP-equivalence and 36 direct-utility Ridge cases |
 | CPU/CUDA SharedTrunkNet | Actual probe, ternary search, fitting core, checkpoint reload and seed retention on synthetic inputs | 20 networks and 20 reloads on each device; cost-once and held-out-cost isolation checks passed |
 | PCA preprocessing | Actual production PCA100 entry point, both full-SVD and randomized branches | 10 checks per branch, including held-out poisoning and stale-cache rejection |
@@ -51,6 +51,10 @@ conference package's earlier checks.
    applies only to the root manuscript directory. Finder metadata is excluded
    from manifests and archives. Tests check both cases, and the tracked file list
    must equal the complete release-manifest file list.
+6. **Regenerated-value gate:** saved-table rendering now rejects a nonempty output
+   whose bytes differ from the frozen numerical table. A successful process exit
+   alone cannot mark such a table reproduced. Both matching and changed producers
+   are covered by regression tests.
 
 ## What this establishes and what it does not
 

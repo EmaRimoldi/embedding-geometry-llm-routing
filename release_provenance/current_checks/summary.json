@@ -1,6 +1,6 @@
 {
   "status": "passed_for_documented_scope",
-  "local_regression_tests": 18,
+  "local_regression_tests": 20,
   "python": "3.13.0",
   "packages": {
     "numpy": "2.0.2",
@@ -55,6 +55,10 @@
     "downloader_cli": {
       "file": "release_provenance/current_checks/downloader_cli.json",
       "sha256": "900286f0fe9d5b76647e90ffe5445b8cedfe28ba82ec02fa0abde1c9eba32de1"
+    },
+    "saved_tables": {
+      "file": "release_provenance/current_checks/saved_tables.json",
+      "sha256": "a348636c3deefa61a1d3eebeac219e865fa7f59be002bdf75aeba4e968d5a138"
     }
   },
   "limits": [
@@ -65,7 +69,8 @@
     "Check feature-file hashes before baseline fitting.",
     "Bootstrap Top-1 follows original average-rank point estimator; all 169 observed points preserved.",
     "Replace September code with conference package; remove manuscript-only figure builder.",
-    "Anchor the manuscript ignore rule and exclude Finder metadata; verify complete tracked-file manifest coverage."
+    "Anchor the manuscript ignore rule and exclude Finder metadata; verify complete tracked-file manifest coverage.",
+    "Require regenerated table bytes to match frozen evidence, with producer regression tests."
   ],
   "dependency_checks": {
     "compute": "passed",

@@ -1,8 +1,8 @@
 {
   "files": {
     ".github/workflows/cpu-checks.yml": {
-      "bytes": 973,
-      "sha256": "90438f3dcd89095396e6a5bf51cc8ecac6d0ae5eb551048432944d4ccf656f3e"
+      "bytes": 1068,
+      "sha256": "bdce5b3ffde448daf0748d279684527881bb0fcbe2a7f14c336f5940b7cd9ceb"
     },
     ".gitignore": {
       "bytes": 454,
@@ -109,8 +109,8 @@
       "sha256": "6aae17c114104734498cfa7e8cda8185ae0c8ca26cf6b947fa38a8429413a11e"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 5734,
-      "sha256": "f933b4e5a5a26af7db42749bd5674e25ef7579ff310c6b9bf4122d77b6acc6b4"
+      "bytes": 6016,
+      "sha256": "04c99943df79affded934947622e4d1cd4fe102ffd58930fba5d932191a40306"
     },
     "docs/RESULT_INDEX.md": {
       "bytes": 11590,
@@ -460,9 +460,13 @@
       "bytes": 21223,
       "sha256": "69dbc81d2f929e7dc71f04e68f64c00cee68aaf8b25529ed0e3b7974aa3b9e8f"
     },
+    "release_provenance/current_checks/saved_tables.json": {
+      "bytes": 7600,
+      "sha256": "a348636c3deefa61a1d3eebeac219e865fa7f59be002bdf75aeba4e968d5a138"
+    },
     "release_provenance/current_checks/summary.json": {
-      "bytes": 2949,
-      "sha256": "cacacf9a9af7959d7649103aab3ea1a278967600e65367a552d984f5932a0cb4"
+      "bytes": 3227,
+      "sha256": "fbc07718c30fe3e2be1c59ed47af8567ba7dfa39fe41f10865bb1587b014c999"
     },
     "release_provenance/original_source_hashes.json": {
       "bytes": 18876,
@@ -7581,8 +7585,8 @@
       "sha256": "85943d8d8e171ab6057342816b78086dbc62e3880adb4607ad3075bc2f331018"
     },
     "scripts/render_saved_tables.py": {
-      "bytes": 6239,
-      "sha256": "d7ff187346bebb392dc7ca9a0e921f3b051a47c5f94f52e97b8dada474bd469a"
+      "bytes": 6645,
+      "sha256": "46fa5d7ba74040352b5ee103372f7706d35a927fe72088baf23ec3e19df565dd"
     },
     "scripts/reproduce_outcome_controls.py": {
       "bytes": 4104,
@@ -8001,8 +8005,8 @@
       "sha256": "aa03687bd64c4924666ef66e63a98ebd51f5ba15b1530b5588da68a14d8fa33a"
     },
     "tests/test_distribution.py": {
-      "bytes": 1266,
-      "sha256": "65ec0ab8b25ae6ed31789026bd0fe8ce376ff70b1742f7665bbc40741570d026"
+      "bytes": 2548,
+      "sha256": "30559f9c1933fee97366eba8fb7f13ba1d811dc757de87fdc26aecb01661db3b"
     },
     "tests/test_family_rank.py": {
       "bytes": 1889,

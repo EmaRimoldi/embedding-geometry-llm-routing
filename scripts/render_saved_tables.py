@@ -86,16 +86,22 @@ def render(spec, run):
     except subprocess.TimeoutExpired:
         record.update(status="failed", reason="Renderer exceeded the 60-second limit.")
         return record
-    absent = []
+    absent, mismatched = [], []
     for relative in spec["outputs"]:
         output = work / "results" / relative
         if output.is_file() and output.stat().st_size:
             record["outputs"][str(output.relative_to(ROOT))] = digest(output)
+            if output.suffix == ".tex":
+                reference = EVIDENCE / relative
+                if not reference.is_file() or digest(output) != digest(reference):
+                    mismatched.append("results/" + relative)
         else:
             absent.append("results/" + relative)
-    record.update(status="failed" if absent else "passed")
+    record.update(status="failed" if absent or mismatched else "passed")
     if absent:
         record.update(reason="Renderer did not produce every expected nonempty output.", missing_outputs=absent)
+    if mismatched:
+        record.update(reason="Regenerated numerical tables differ from the frozen evidence.", mismatched_outputs=mismatched)
     return record
 
 
