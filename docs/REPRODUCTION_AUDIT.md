@@ -28,6 +28,11 @@ The current machine-readable records are under `release_provenance/current_check
 They are distinct from `release_provenance/reviewer_smoke/`, which describes the
 conference package's earlier checks.
 
+CI fixes Ubuntu 24.04, Python 3.11.17 and the exact Node-24 action commits instead
+of floating runner/Python/action versions. Local and cluster executions recorded
+here used Python 3.11.15; the original study reports 3.11.16. These patch-version
+differences are recorded rather than presented as an identical original environment.
+
 ## Corrections and cleanup
 
 1. **Embedding integrity:** the baseline loader now checks the recorded vector-file
