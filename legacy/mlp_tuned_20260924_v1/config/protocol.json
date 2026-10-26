@@ -1,0 +1,19 @@
+{
+  "version": "mlp_tuned_20260924_v1",
+  "why": "With the published sklearn defaults (alpha=1e-4, no early stopping) the per-model MLP heads memorise the training set (final training half-MSE ~0.002 on 0/1 rewards) and route below the train-selected single model. Regularisation and early stopping are therefore selected on source validation, exactly like the architecture already was.",
+  "architectures": [[100], [100, 100], [100, 100, 100]],
+  "alphas": [0.0001, 0.01, 1.0, 10.0, 100.0],
+  "early_stopping": [false, true],
+  "sklearn_semantics": {"solver": "adam", "learning_rate_init": 0.001, "batch_size": 200, "max_iter": 200, "tol": 0.0001, "n_iter_no_change": 10, "validation_fraction": 0.1, "random_state": 1234, "early_stopping_score": "R2 on a random 10% of the fit rows, best weights restored"},
+  "selection": "per (outer split, representation, lambda): the (architecture, alpha, early_stopping) with the highest inner source-validation utility; ties -> first in the order above. Outer test outcomes are never used.",
+  "representations": ["gte", "reader"],
+  "reader": "Qwen2.5-7B-Instruct hidden_states[21], last input token (the paper's L21)",
+  "target": "per-model utility r - lambda*c (the paper's historical adaptation of the RouterBench MLP router)",
+  "lambdas": {
+    "routerbench-0shot": [0, 1, 2, 5, 10, 20, 30, 50, 75, 100, 150, 250, 500],
+    "sprout-sixfam": [0, 0.5, 1, 2, 5, 10, 25, 50, 75, 100, 150, 250, 500],
+    "llmrouterbench-performance-cost": [0, 0.05, 0.1, 0.25, 0.5, 1, 1.5, 2, 2.5, 3.75, 5, 7.5, 10, 12.5, 25]
+  },
+  "llmrouterbench_lambda_note": "RouterBench grid / 20 (the paper maps the benchmarks at equal lambda*c_strongest, factor ~19: 0.5<->10, 2<->38, 5<->94, 10<->189) plus the earlier LLMRouterBench points 2 and 10.",
+  "llmrouterbench_missing_policy": "278 cells (gpt-5-chat on every tau2 row) are recorded as reward 0 and cost 0, as in astra_reward_transfer_20260922_v1; missing_choice_rate is reported."
+}

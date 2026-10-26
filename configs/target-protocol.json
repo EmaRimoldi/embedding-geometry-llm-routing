@@ -1,0 +1,34 @@
+{
+  "status": "Reference specification from final manuscript; final implementation not yet imported or verified",
+  "cohorts": {
+    "routerbench-0shot": {
+      "rows": 34771,
+      "models": 11
+    },
+    "sprout-sixfam": {
+      "rows": 43887,
+      "models": 13
+    }
+  },
+  "data_revisions": {
+    "routerbench": "784021482c3f320c6619ed4b3bb3b41a21424fcb",
+    "sprout": "d54e3cda2189ca1ed13a877a44ed34736c4b6920"
+  },
+  "id_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "validation_seeds": [
+    10000,
+    10001,
+    10002,
+    10003,
+    10004
+  ],
+  "routing_bootstrap_seed": 20261005,
+  "routing_bootstrap_samples": 2000,
+  "warning": "The included historical RouterBench cohort has 34661 rows and cannot establish exact reproduction of this target."
+}

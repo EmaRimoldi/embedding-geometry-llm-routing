@@ -1,0 +1,964 @@
+{
+"groups": [
+{
+"panel": "routerbench-0shot",
+"reader": "gte",
+"layer": null,
+"pool": "emitted",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 0,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 1,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 2,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 3,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 4,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 5,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 6,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 7,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 8,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 9,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 10,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 11,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 12,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 13,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 14,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 15,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 16,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 17,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 18,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 19,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 20,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 21,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 22,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 23,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 24,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 25,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 26,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 27,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 28,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "gte",
+"layer": null,
+"pool": "emitted",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 0,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 1,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 2,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 3,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 4,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 5,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 6,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 7,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 8,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 9,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 10,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 11,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 12,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 13,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 14,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 15,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 16,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 17,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 18,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 19,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 20,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 21,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 22,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 23,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 24,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 25,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 26,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 27,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 28,
+"pool": "last",
+"method": "knn",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "gte",
+"layer": null,
+"pool": "emitted",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 0,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 1,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 2,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 3,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 4,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 5,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 6,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 7,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 8,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 9,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 10,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 11,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 12,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 13,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 14,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 15,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 16,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 17,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 18,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 19,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 20,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 21,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 22,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 23,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 24,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 25,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 26,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 27,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "routerbench-0shot",
+"reader": "qwen2.5-7b-instruct",
+"layer": 28,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "gte",
+"layer": null,
+"pool": "emitted",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 0,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 1,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 2,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 3,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 4,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 5,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 6,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 7,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 8,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 9,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 10,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 11,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 12,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 13,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 14,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 15,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 16,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 17,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 18,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 19,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 20,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 21,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 22,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 23,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 24,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 25,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 26,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 27,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+},
+{
+"panel": "sprout-sixfam",
+"reader": "qwen2.5-7b-instruct",
+"layer": 28,
+"pool": "last",
+"method": "prior",
+"splits": "ood"
+}
+]
+}

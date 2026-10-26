@@ -1,0 +1,89 @@
+{
+  "recorded_utc": "2026-10-26T22:44:54.952875+00:00",
+  "status": "Initial historical-code export; final conference package pending",
+  "environment": {
+    "python": "3.11.15",
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.14.1",
+      "scikit-learn": "1.5.2",
+      "joblib": "1.4.2",
+      "threadpoolctl": "3.5.0"
+    }
+  },
+  "unit_tests_passed": 4,
+  "original_source_checksums_verified": 500,
+  "full_panel_reference_runs": [
+    {
+      "file": "validation/routerbench-reference.json",
+      "sha256": "db8d7b1ada8b0627673ac456b0d339a58e26b833d8486763c88d9f4ba742575d",
+      "input": {
+        "panel": "routerbench-0shot",
+        "profile": "legacy",
+        "shape": [
+          34661,
+          11
+        ],
+        "families": 7,
+        "splits": [
+          "iid_0",
+          "iid_1",
+          "iid_2",
+          "iid_3",
+          "iid_4",
+          "ood_0",
+          "ood_1",
+          "ood_2",
+          "ood_3",
+          "ood_4",
+          "ood_5",
+          "ood_6"
+        ],
+        "panel_sha256": "e38f37acd988555679f877c2f920993813d851f3dcd73513b103706fbbe6690d",
+        "splits_sha256": "ba5b149762f53b2d9387716c2ad13e10d1d3f34bbe3945d4f87fb8747dae5fdc"
+      },
+      "splits": 12,
+      "split_penalty_conditions": 156,
+      "scored_method_results": 312
+    },
+    {
+      "file": "validation/sprout-reference.json",
+      "sha256": "3e7d0a320a3f2c1e4716b60bfc83c53b5893574ede3a9779b411f4f706acded6",
+      "input": {
+        "panel": "sprout-sixfam",
+        "profile": "legacy",
+        "shape": [
+          43887,
+          13
+        ],
+        "families": 6,
+        "splits": [
+          "iid_0",
+          "iid_1",
+          "iid_2",
+          "iid_3",
+          "iid_4",
+          "ood_0",
+          "ood_1",
+          "ood_2",
+          "ood_3",
+          "ood_4",
+          "ood_5"
+        ],
+        "panel_sha256": "962ead32c76e6c9e1a5157139c1b5d9fbe4149578eb165434ed363da0e619365",
+        "splits_sha256": "8db66c0c70421ab71bfc943b09d98f5f6b47897061f54c7b77433f83aaad85e5"
+      },
+      "splits": 11,
+      "split_penalty_conditions": 143,
+      "scored_method_results": 286
+    }
+  ],
+  "total_split_penalty_conditions": 299,
+  "total_scored_reference_results": 598,
+  "limits": [
+    "Full-panel runs cover training-selected single-model and realized-oracle controls only.",
+    "Original kNN and soft-prior runners were executed on synthetic inputs, not full benchmark embeddings.",
+    "Final October experiment code and exact final inputs remain unavailable."
+  ]
+}

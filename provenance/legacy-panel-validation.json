@@ -1,0 +1,51 @@
+{
+  "routerbench-0shot": {
+    "shape": [
+      34661,
+      11
+    ],
+    "finite_rewards": true,
+    "finite_costs": true,
+    "unique_query_ids": true,
+    "outer_and_inner_disjoint": true,
+    "OOD_test_each_row_once": true,
+    "splits": [
+      "iid_0",
+      "iid_1",
+      "iid_2",
+      "iid_3",
+      "iid_4",
+      "ood_0",
+      "ood_1",
+      "ood_2",
+      "ood_3",
+      "ood_4",
+      "ood_5",
+      "ood_6"
+    ]
+  },
+  "sprout-sixfam": {
+    "shape": [
+      43887,
+      13
+    ],
+    "finite_rewards": true,
+    "finite_costs": true,
+    "unique_query_ids": true,
+    "outer_and_inner_disjoint": true,
+    "OOD_test_each_row_once": true,
+    "splits": [
+      "iid_0",
+      "iid_1",
+      "iid_2",
+      "iid_3",
+      "iid_4",
+      "ood_0",
+      "ood_1",
+      "ood_2",
+      "ood_3",
+      "ood_4",
+      "ood_5"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "_note": "Frozen decoder readers. 'path' may be a glob (HF snapshot); the newest match is used. 'cached' lists panels whose all-layer features already exist (read in place, never rewritten). Everything else is extracted into this folder by code/extract.py. Only weights already on the cluster are listed; nothing is downloaded.",
+  "qwen2.5-7b-instruct": {
+    "path": "__PROJECT_SCRATCH__/artifacts/models/Qwen2.5-7B-Instruct__a09a3545",
+    "role": "primary",
+    "cached": {
+      "routerbench-0shot": "features/routerbench-0shot/prompt/hidden/qwen2.5-7b-instruct"
+    }
+  },
+  "qwen2.5-coder-1.5b-instruct": {
+    "path": "__HOME__/.cache/huggingface/hub/models--Qwen--Qwen2.5-Coder-1.5B-Instruct/snapshots/*",
+    "role": "small reader",
+    "cached": {
+      "routerbench-0shot": "features/routerbench-0shot/prompt/hidden/qwen2.5-coder-1.5b-instruct"
+    }
+  },
+  "qwen2.5-coder-7b-instruct": {
+    "path": "__SCRATCH__/huggingface/hub/models--Qwen--Qwen2.5-Coder-7B-Instruct/snapshots/*",
+    "role": "same size, different post-training",
+    "cached": {}
+  },
+  "qwen2.5-coder-14b-instruct": {
+    "path": "__SCRATCH__/huggingface/hub/models--Qwen--Qwen2.5-Coder-14B-Instruct/snapshots/*",
+    "role": "larger reader",
+    "cached": {}
+  },
+  "gte-qwen2-7b": {
+    "path": "__PROJECT_SCRATCH__/artifacts/models/gte-Qwen2-7B-instruct",
+    "role": "GTE's own intermediate layers (GTE L21 vs its emitted embedding)",
+    "style": "gte",
+    "cached": {
+      "routerbench-0shot": "features/routerbench-0shot/prompt/hidden/gte-qwen2-7b"
+    }
+  }
+}
