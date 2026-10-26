@@ -1,0 +1,278 @@
+[
+  {
+    "index": 0,
+    "panel": "routerbench-0shot",
+    "split": "iid_0",
+    "representation": "gte"
+  },
+  {
+    "index": 1,
+    "panel": "routerbench-0shot",
+    "split": "iid_0",
+    "representation": "reader"
+  },
+  {
+    "index": 2,
+    "panel": "routerbench-0shot",
+    "split": "iid_1",
+    "representation": "gte"
+  },
+  {
+    "index": 3,
+    "panel": "routerbench-0shot",
+    "split": "iid_1",
+    "representation": "reader"
+  },
+  {
+    "index": 4,
+    "panel": "routerbench-0shot",
+    "split": "iid_2",
+    "representation": "gte"
+  },
+  {
+    "index": 5,
+    "panel": "routerbench-0shot",
+    "split": "iid_2",
+    "representation": "reader"
+  },
+  {
+    "index": 6,
+    "panel": "routerbench-0shot",
+    "split": "iid_3",
+    "representation": "gte"
+  },
+  {
+    "index": 7,
+    "panel": "routerbench-0shot",
+    "split": "iid_3",
+    "representation": "reader"
+  },
+  {
+    "index": 8,
+    "panel": "routerbench-0shot",
+    "split": "iid_4",
+    "representation": "gte"
+  },
+  {
+    "index": 9,
+    "panel": "routerbench-0shot",
+    "split": "iid_4",
+    "representation": "reader"
+  },
+  {
+    "index": 10,
+    "panel": "routerbench-0shot",
+    "split": "ood_0",
+    "representation": "gte"
+  },
+  {
+    "index": 11,
+    "panel": "routerbench-0shot",
+    "split": "ood_0",
+    "representation": "reader"
+  },
+  {
+    "index": 12,
+    "panel": "routerbench-0shot",
+    "split": "ood_1",
+    "representation": "gte"
+  },
+  {
+    "index": 13,
+    "panel": "routerbench-0shot",
+    "split": "ood_1",
+    "representation": "reader"
+  },
+  {
+    "index": 14,
+    "panel": "routerbench-0shot",
+    "split": "ood_2",
+    "representation": "gte"
+  },
+  {
+    "index": 15,
+    "panel": "routerbench-0shot",
+    "split": "ood_2",
+    "representation": "reader"
+  },
+  {
+    "index": 16,
+    "panel": "routerbench-0shot",
+    "split": "ood_3",
+    "representation": "gte"
+  },
+  {
+    "index": 17,
+    "panel": "routerbench-0shot",
+    "split": "ood_3",
+    "representation": "reader"
+  },
+  {
+    "index": 18,
+    "panel": "routerbench-0shot",
+    "split": "ood_4",
+    "representation": "gte"
+  },
+  {
+    "index": 19,
+    "panel": "routerbench-0shot",
+    "split": "ood_4",
+    "representation": "reader"
+  },
+  {
+    "index": 20,
+    "panel": "routerbench-0shot",
+    "split": "ood_5",
+    "representation": "gte"
+  },
+  {
+    "index": 21,
+    "panel": "routerbench-0shot",
+    "split": "ood_5",
+    "representation": "reader"
+  },
+  {
+    "index": 22,
+    "panel": "routerbench-0shot",
+    "split": "ood_6",
+    "representation": "gte"
+  },
+  {
+    "index": 23,
+    "panel": "routerbench-0shot",
+    "split": "ood_6",
+    "representation": "reader"
+  },
+  {
+    "index": 24,
+    "panel": "sprout-sixfam",
+    "split": "iid_0",
+    "representation": "gte"
+  },
+  {
+    "index": 25,
+    "panel": "sprout-sixfam",
+    "split": "iid_0",
+    "representation": "reader"
+  },
+  {
+    "index": 26,
+    "panel": "sprout-sixfam",
+    "split": "iid_1",
+    "representation": "gte"
+  },
+  {
+    "index": 27,
+    "panel": "sprout-sixfam",
+    "split": "iid_1",
+    "representation": "reader"
+  },
+  {
+    "index": 28,
+    "panel": "sprout-sixfam",
+    "split": "iid_2",
+    "representation": "gte"
+  },
+  {
+    "index": 29,
+    "panel": "sprout-sixfam",
+    "split": "iid_2",
+    "representation": "reader"
+  },
+  {
+    "index": 30,
+    "panel": "sprout-sixfam",
+    "split": "iid_3",
+    "representation": "gte"
+  },
+  {
+    "index": 31,
+    "panel": "sprout-sixfam",
+    "split": "iid_3",
+    "representation": "reader"
+  },
+  {
+    "index": 32,
+    "panel": "sprout-sixfam",
+    "split": "iid_4",
+    "representation": "gte"
+  },
+  {
+    "index": 33,
+    "panel": "sprout-sixfam",
+    "split": "iid_4",
+    "representation": "reader"
+  },
+  {
+    "index": 34,
+    "panel": "sprout-sixfam",
+    "split": "ood_0",
+    "representation": "gte"
+  },
+  {
+    "index": 35,
+    "panel": "sprout-sixfam",
+    "split": "ood_0",
+    "representation": "reader"
+  },
+  {
+    "index": 36,
+    "panel": "sprout-sixfam",
+    "split": "ood_1",
+    "representation": "gte"
+  },
+  {
+    "index": 37,
+    "panel": "sprout-sixfam",
+    "split": "ood_1",
+    "representation": "reader"
+  },
+  {
+    "index": 38,
+    "panel": "sprout-sixfam",
+    "split": "ood_2",
+    "representation": "gte"
+  },
+  {
+    "index": 39,
+    "panel": "sprout-sixfam",
+    "split": "ood_2",
+    "representation": "reader"
+  },
+  {
+    "index": 40,
+    "panel": "sprout-sixfam",
+    "split": "ood_3",
+    "representation": "gte"
+  },
+  {
+    "index": 41,
+    "panel": "sprout-sixfam",
+    "split": "ood_3",
+    "representation": "reader"
+  },
+  {
+    "index": 42,
+    "panel": "sprout-sixfam",
+    "split": "ood_4",
+    "representation": "gte"
+  },
+  {
+    "index": 43,
+    "panel": "sprout-sixfam",
+    "split": "ood_4",
+    "representation": "reader"
+  },
+  {
+    "index": 44,
+    "panel": "sprout-sixfam",
+    "split": "ood_5",
+    "representation": "gte"
+  },
+  {
+    "index": 45,
+    "panel": "sprout-sixfam",
+    "split": "ood_5",
+    "representation": "reader"
+  }
+]

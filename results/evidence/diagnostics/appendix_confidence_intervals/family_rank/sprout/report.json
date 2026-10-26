@@ -1,0 +1,276 @@
+{
+  "dataset": "sprout",
+  "complete": true,
+  "rows": [
+    {
+      "metric": "mean_rank",
+      "lambda_value": "0",
+      "mean": 3.0,
+      "low": 3.0,
+      "high": 3.3333333333333335
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "0",
+      "mean": 2.0,
+      "low": 1.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "0.5",
+      "mean": 3.0,
+      "low": 3.0,
+      "high": 3.3333333333333335
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "0.5",
+      "mean": 2.0,
+      "low": 1.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "1",
+      "mean": 3.0,
+      "low": 3.0,
+      "high": 3.3333333333333335
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "1",
+      "mean": 2.0,
+      "low": 1.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "2",
+      "mean": 3.0,
+      "low": 3.0,
+      "high": 3.3333333333333335
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "2",
+      "mean": 2.0,
+      "low": 1.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "5",
+      "mean": 3.0,
+      "low": 3.0,
+      "high": 3.504166666666644
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "5",
+      "mean": 2.0,
+      "low": 1.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "10",
+      "mean": 3.0,
+      "low": 3.0,
+      "high": 3.6666666666666665
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "10",
+      "mean": 2.0,
+      "low": 1.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "25",
+      "mean": 3.3333333333333335,
+      "low": 3.3333333333333335,
+      "high": 3.5
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "25",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "50",
+      "mean": 3.3333333333333335,
+      "low": 3.3333333333333335,
+      "high": 3.6666666666666665
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "50",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "75",
+      "mean": 3.3333333333333335,
+      "low": 3.3333333333333335,
+      "high": 3.6666666666666665
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "75",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "100",
+      "mean": 3.6666666666666665,
+      "low": 3.0,
+      "high": 4.333333333333333
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "100",
+      "mean": 1.0,
+      "low": 0.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "150",
+      "mean": 3.6666666666666665,
+      "low": 3.0,
+      "high": 3.6666666666666665
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "150",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "250",
+      "mean": 3.1666666666666665,
+      "low": 3.0,
+      "high": 3.3333333333333335
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "250",
+      "mean": 2.0,
+      "low": 2.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "500",
+      "mean": 3.1666666666666665,
+      "low": 3.0,
+      "high": 3.3333333333333335
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "500",
+      "mean": 2.0,
+      "low": 2.0,
+      "high": 2.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "mean",
+      "mean": 3.205128205128205,
+      "low": 3.1538461538461533,
+      "high": 3.461538461538461
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "mean",
+      "mean": 21.0,
+      "low": 15.0,
+      "high": 22.0
+    }
+  ],
+  "n_families": 6,
+  "n_sources": 5,
+  "replicates": 2000,
+  "source_hashes": {
+    "datasets/sprout/prepared/panel.npz": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+    "results/geometry/gte-qwen2-7b/sprout/primary/ood_0/per_query.npz": "1a8e547f6543c9353c512b1f7656722d9766dba4c0ceb2b3c777bb0a8acb951c",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/math/result.json": "4d8ece788e63cb3618f2cbb80edf07c740127bc099f2b2df24ca2b2be8692fb2",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/math/predictions.npz": "cdf1679b4761f2d5d21300e310f9d4edf8060149e38f3eb744e623fac59bbc94",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/mmlupro/result.json": "a76bab61a9c62eb23492ded5ea9da35dddefd811057164f880aad9c2b04cf747",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/mmlupro/predictions.npz": "77df173446ff087b1a42b9c9851cbe776e02ac307b06ce85781bf4bd82e38a6d",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/musr/result.json": "66b65bcf7c2b8b9213d8c7a356ea056873dc91ac13a81f595a2eb3c4f3ed84ca",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/musr/predictions.npz": "c38b15309f4ece637c19ae72373277d19963de18cf1756c0f8c109373de27a8e",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/openhermes/result.json": "3c5afaf8920ea47e1065dbfe8bda8055f611bc13373479a839540ee12091aa13",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/openhermes/predictions.npz": "9a676b624ffbcb47855626cce38afd18fbaeecd4626412b6f1f8d0f528695370",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/ragbench/result.json": "a9cf421c40bfde607fb270567811e92df50a55ef2d24b89f8f342dc507ad7f76",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_0/ragbench/predictions.npz": "e431f60b928998efe5d65a1ef470c7f9a88164089a203bb07353a1f3b437c801",
+    "results/geometry/gte-qwen2-7b/sprout/primary/ood_1/per_query.npz": "6e2d715b81ca82d1d941588d552135f0e39ede0f5dd245d6a1edf2a5c1729517",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/gpqa/result.json": "9192197cd2bb56cde373fc9830114e8c4c91470a82ac1b122f162b517dd2987e",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/gpqa/predictions.npz": "bce4e4958205273b5983ed857fe0fc34d0d222da8e3499a7aa2500415d020bba",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/mmlupro/result.json": "09e9175516ea34ad9979ea181043f78625637cd0e7eca82df0d002fb892877e6",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/mmlupro/predictions.npz": "04956bff11f32365fb77276c20df54d6764e00a18991ace77e0bf002fa0ddf94",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/musr/result.json": "cfd665e6317a3c3d3ef7d07bec2d1e8137eee3912d87356a21c34ff8d3673561",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/musr/predictions.npz": "9a86996fb8fffc1147db7c79cc122aa451e06ef7402120debee68d6b375dce15",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/openhermes/result.json": "22251ef0c4673d063861adb89f43aadfeaf9cb625a0e18044066dcd95653ae04",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/openhermes/predictions.npz": "01b99e4e3eab7e1377677ce54afcff22a64e733e1e2c082482e6db6007a6194a",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/ragbench/result.json": "1dd19ea41b6a88f6cd7ee916d7529d7aead240259684713b85c91d94725db4a6",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_1/ragbench/predictions.npz": "b946c9e6cb17287c7324819497eee4c6230469ed5540847feb32223a2d8d0adc",
+    "results/geometry/gte-qwen2-7b/sprout/primary/ood_2/per_query.npz": "88319289f5394c69f4a5ecf16d7efef5f3c300c50fa9e871d5acbb318cac8b41",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/gpqa/result.json": "7c5a89717fa1c7c5ff9f0313e773794e7effe2c200b108fa9b86f2b64fb65af4",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/gpqa/predictions.npz": "8e70e75edce54b00260cc798bd7c920f165e1f73fbcf5f2bf4441405ba6ccd47",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/math/result.json": "822f866e20d528ab80b2cf2f7d96538e2af7619dcc765b8627efc855ec6f54a5",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/math/predictions.npz": "17d77f9e9190065d3a171d69d546a56b8c4213566106222adb08b0f708a05a8d",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/musr/result.json": "b513b437b3d7e1890e9498d99a5dc2c6e9d0bcd2aec6e9e51faf3143f6a1d3db",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/musr/predictions.npz": "e2c68e7ff211cc987c37a58e817b6d2db209302ea870290790b56bbb010a1602",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/openhermes/result.json": "f5d80f229099ab648196097b5977c2382cea620fc24fc28edaf246d6542aa10a",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/openhermes/predictions.npz": "ae8de26d035fce597d47b4ec711b1e5d1e61769156a938666a4cfe65da77d598",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/ragbench/result.json": "8e0660127f8ab19b8ed01f9aaf4c4a9a3bef6fd17155425db169ca3dba8dfdbf",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_2/ragbench/predictions.npz": "73a6477f8bf5b194d4fb87ad47875f8bed326145e2fa647832ed157c9677e066",
+    "results/geometry/gte-qwen2-7b/sprout/primary/ood_3/per_query.npz": "3d72b6c65a8e7737da92922963ee7f11c179f50921707cc981ea2b142c13ecfc",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/gpqa/result.json": "dd1349a065ee9a2cff62a47c39b668a1c6b6670c2851001da31b56fcc63106b5",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/gpqa/predictions.npz": "95de769a748e7f8bf9b2988bbf22ccafb65f6f87503005c74b11d76a7e10f54c",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/math/result.json": "6649b7cde9fca2f9f85ac5466fef32b617d11689b3b1b3c762dca54236a287cc",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/math/predictions.npz": "9bbbb6b5972bef3d9e0d8f4fe6d9069d3e3f7c62e7bf606ea3be7bc657bf2708",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/mmlupro/result.json": "b59926d5b2f6ad001ed9bea8a06c67edea085c3a702db5a536c9521f70c6dfc9",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/mmlupro/predictions.npz": "fdbd4f0dd6db9f26cf42d78dbbfd0173023536b7e13e5144d66af89433bd715a",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/openhermes/result.json": "871d8d0a63fbfcc4f47ec7775cebbca12be41469158c977a732e9ed741497428",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/openhermes/predictions.npz": "fbafa2bf257120518767db593c194fdd77c79b9c10906bdd52e4a5075df9aa94",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/ragbench/result.json": "c1f66bada1e8638406408c2776fa45e55546dd8182d022cfc02254be1dd12c2e",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_3/ragbench/predictions.npz": "2c3afd0332fc4bdc9e04fe468e60f394bb75dfac10a8946ef804c5b6c91a17d3",
+    "results/geometry/gte-qwen2-7b/sprout/primary/ood_4/per_query.npz": "0ca558eadb0e12915511dd9adbb8087a80cdad286021524589fa3e7bcea64e22",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/gpqa/result.json": "387192a339f127340b55af89ea8fc1d8b7286ab405640a9ed2ff7a463a776e7c",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/gpqa/predictions.npz": "516e5b04c308ca21d148388cea886b216d2dc28ed766f9beec20564e6e59f854",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/math/result.json": "32572dfb2c4079e97328ab3243ee048ecdf31ebbc6148df1c4c41e57fb6e3d8a",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/math/predictions.npz": "26f4bb93c96fcfbfa999ee1e1a136426f6ca07caa32cbeb2a658b2d4f4b96c0f",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/mmlupro/result.json": "cdebb9b5c58099e8f9a5077546ce85c6950da3d655e7ddbbe583ea9f660cc6b7",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/mmlupro/predictions.npz": "45749155d362e49bbbd3838d0ec5be79e6d71915d7264fc7f46a66189a461f91",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/musr/result.json": "23b93fd9a86758dc710a1f565d4e6b39ff19efbf7115ade41fa2e87d01ae4759",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/musr/predictions.npz": "cdb7f5ac2d55ab08aaeaffaf0e936a298214eda4e63633000d3c6eb78b10a92f",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/ragbench/result.json": "0f4ae7c48ac484d0efd2aeb6b42818efe9757d2a606443fa843d5a3157988a45",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_4/ragbench/predictions.npz": "77df4b3ae7c88edf370068db8d02cee90b4438a7fbc22a7d44f686974778b328",
+    "results/geometry/gte-qwen2-7b/sprout/primary/ood_5/per_query.npz": "3780684ba7e8724bf958b3409ef8744b6c1750713b08d9fffc38b6e8b5d03007",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/gpqa/result.json": "05b639b3fc864609778ef177164e77707db9cf71fdde929ab02c1dbff33d8ef0",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/gpqa/predictions.npz": "464291777d388430a37c9dc818513a639281b4d22a2953d7a9156b67c656373b",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/math/result.json": "4bbfa8475ac579f1a0a86b21c0038ffffaed984f1bfa1a0e3fbe26e557704f8a",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/math/predictions.npz": "8c0827ef6956aee58668b43a42547bc6dfa2cfd94e3fb2173aa8ecd6ee914fe3",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/mmlupro/result.json": "eff8cc185729ca7a22e3bd4462c59b1335f1089fd22aad8446c110c378687679",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/mmlupro/predictions.npz": "87b6fc9ba663a29f9a7aa178d083f0862006ea85a9b2349a0f093fe1b3e0142d",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/musr/result.json": "1bf945fa13ecdece75006669103f6b08de097e833211cbeb67b81cc150582cd5",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/musr/predictions.npz": "27b3beca660a2bf01ef07a98b19658a8ee03b59be74282847fd56aa901f7d952",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/openhermes/result.json": "e3bfb15e2211f100d2edb464558e5c46c2b665fa4c4625db4b7dd57feb4ce297",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/sprout/ood_5/openhermes/predictions.npz": "d7a57756068607cfafb9e9bd143f64daf21a43250e4b6b4b7dd867c4a9ae6ad4"
+  },
+  "original_scores_reproduced": true,
+  "slurm_job": "[redacted]"
+}

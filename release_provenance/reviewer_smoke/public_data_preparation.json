@@ -1,0 +1,111 @@
+{
+  "datasets": {
+    "routerbench": {
+      "rows": 34771,
+      "shared_minilm_rows": 34659,
+      "family_counts": {
+        "arc-challenge": 1470,
+        "grade-school-math": 7450,
+        "hellaswag": 10042,
+        "mbpp": 425,
+        "mmlu": 14037,
+        "mtbench": 80,
+        "winogrande": 1267
+      },
+      "exclusions": {
+        "outside_seven_paper_families": 1719,
+        "exact_duplicate_prompt": 7
+      },
+      "file_hashes": {
+        "panel.npz": {
+          "actual": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+          "canonical": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+          "equal": true
+        },
+        "queries.jsonl": {
+          "actual": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd",
+          "canonical": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd",
+          "equal": true
+        },
+        "excluded.jsonl": {
+          "actual": "205d589b57185bba271f4602d711ebb7012fb9bf50b16d356bfc3f5a67f9ff6d",
+          "canonical": "205d589b57185bba271f4602d711ebb7012fb9bf50b16d356bfc3f5a67f9ff6d",
+          "equal": true
+        },
+        "manifest.json": {
+          "actual": "557bc48609f0ff15040bdf83120770ef7da8775c52a640709a85d1d3168b4f88",
+          "canonical": "557bc48609f0ff15040bdf83120770ef7da8775c52a640709a85d1d3168b4f88",
+          "equal": true
+        }
+      },
+      "panel_arrays_equal": {
+        "reward": true,
+        "cost": true,
+        "family": true,
+        "topic": true,
+        "subgroup": true,
+        "format": true,
+        "keys": true,
+        "minilm_keep": true
+      },
+      "manifest_equal": true
+    },
+    "sprout": {
+      "rows": 43887,
+      "shared_minilm_rows": 41324,
+      "family_counts": {
+        "openhermes": 19340,
+        "math": 9884,
+        "ragbench": 1589,
+        "mmlupro": 11786,
+        "musr": 748,
+        "gpqa": 540
+      },
+      "exclusions": {
+        "over_8192_tokens": 74,
+        "exact_duplicate_prompt": 280
+      },
+      "file_hashes": {
+        "panel.npz": {
+          "actual": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+          "canonical": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+          "equal": true
+        },
+        "queries.jsonl": {
+          "actual": "977295d4650e20ecbb1b1b14d9250d2bec9b42efb0633a21d98098157c78c0f9",
+          "canonical": "977295d4650e20ecbb1b1b14d9250d2bec9b42efb0633a21d98098157c78c0f9",
+          "equal": true
+        },
+        "excluded.jsonl": {
+          "actual": "c6d255d6c369056092b608a544f39a2a89d0b3575cf6db025fb3c46573f5485b",
+          "canonical": "c6d255d6c369056092b608a544f39a2a89d0b3575cf6db025fb3c46573f5485b",
+          "equal": true
+        },
+        "manifest.json": {
+          "actual": "a1f6bb0cad2e88a49489d2b043a1ec5204d54bf32e1139a46967bf3e09cbfec7",
+          "canonical": "a1f6bb0cad2e88a49489d2b043a1ec5204d54bf32e1139a46967bf3e09cbfec7",
+          "equal": true
+        }
+      },
+      "panel_arrays_equal": {
+        "reward": true,
+        "cost": true,
+        "family": true,
+        "topic": true,
+        "subgroup": true,
+        "format": true,
+        "keys": true,
+        "minilm_keep": true
+      },
+      "manifest_equal": true
+    }
+  },
+  "versions": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pyarrow": "18.1.0",
+    "transformers": "4.44.2",
+    "huggingface-hub": "0.36.2"
+  },
+  "passed": true
+}

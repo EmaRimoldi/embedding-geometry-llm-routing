@@ -1,0 +1,49 @@
+{
+  "passed": true,
+  "verified_canonical_inputs": [
+    {
+      "dataset": "routerbench",
+      "file": "panel.npz",
+      "sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f"
+    },
+    {
+      "dataset": "routerbench",
+      "file": "queries.jsonl",
+      "sha256": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd"
+    },
+    {
+      "dataset": "routerbench",
+      "file": "excluded.jsonl",
+      "sha256": "205d589b57185bba271f4602d711ebb7012fb9bf50b16d356bfc3f5a67f9ff6d"
+    },
+    {
+      "dataset": "routerbench",
+      "file": "manifest.json",
+      "sha256": "557bc48609f0ff15040bdf83120770ef7da8775c52a640709a85d1d3168b4f88"
+    },
+    {
+      "dataset": "sprout",
+      "file": "panel.npz",
+      "sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972"
+    },
+    {
+      "dataset": "sprout",
+      "file": "queries.jsonl",
+      "sha256": "977295d4650e20ecbb1b1b14d9250d2bec9b42efb0633a21d98098157c78c0f9"
+    },
+    {
+      "dataset": "sprout",
+      "file": "excluded.jsonl",
+      "sha256": "c6d255d6c369056092b608a544f39a2a89d0b3575cf6db025fb3c46573f5485b"
+    },
+    {
+      "dataset": "sprout",
+      "file": "manifest.json",
+      "sha256": "a1f6bb0cad2e88a49489d2b043a1ec5204d54bf32e1139a46967bf3e09cbfec7"
+    }
+  ],
+  "fresh_method_scores": 598,
+  "saved_metric_comparisons": 3588,
+  "maximum_absolute_error": 0.0,
+  "scope": "Actual recomputation from downloaded public outcomes and frozen splits. No embedding or fitted router required. Oracle uses test outcomes only as an upper bound."
+}

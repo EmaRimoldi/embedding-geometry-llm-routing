@@ -1,0 +1,74 @@
+{
+  "status": "passed_for_documented_scope",
+  "local_regression_tests": 18,
+  "python": "3.13.0",
+  "packages": {
+    "numpy": "2.0.2",
+    "scipy": "1.15.2",
+    "scikit-learn": "1.6.1",
+    "torch": "2.7.0",
+    "transformers": "4.51.3",
+    "pandas": "2.2.3",
+    "pyarrow": "20.0.0"
+  },
+  "reports": {
+    "public_inputs": {
+      "file": "release_provenance/current_checks/public_inputs.json",
+      "sha256": "69dbc81d2f929e7dc71f04e68f64c00cee68aaf8b25529ed0e3b7974aa3b9e8f"
+    },
+    "fresh_outcome_controls": {
+      "file": "release_provenance/current_checks/fresh_outcome_controls.json",
+      "sha256": "afa3ade0efbe63a76829a2a508e37ca0d65059ffb2aa0d0657f67263d3f3df0e"
+    },
+    "paper_results": {
+      "file": "release_provenance/current_checks/paper_results.json",
+      "sha256": "3eb18eef00e3389ca275e6dfeb0dc279569749c60503116f0dd1d31c4586800c"
+    },
+    "pca_full": {
+      "file": "release_provenance/current_checks/pca_full.json",
+      "sha256": "aca415c08d68aa1107d0de82868279ec330096408982518871290f9e1cab7beb"
+    },
+    "pca_randomized": {
+      "file": "release_provenance/current_checks/pca_randomized.json",
+      "sha256": "6e29b35c4fdb2eef60f7cc6f6a393731b81a921cb8a124290c4945333a34ec04"
+    },
+    "orchestration": {
+      "file": "release_provenance/current_checks/orchestration.json",
+      "sha256": "cf870d9e96505c81f8e59e17bed2bca2c87d3da36302cb099b5c5e7bb2d2c4d8"
+    },
+    "gpu": {
+      "file": "release_provenance/current_checks/gpu.json",
+      "sha256": "82dd42e66c782f435529f1c684467b572d1c3ee70ea764aeed03b924f28031ed"
+    },
+    "model_weights": {
+      "file": "release_provenance/current_checks/model_weights.json",
+      "sha256": "4beb1d7e4d80da3cdf41f10b641609a4726ecdc1fd0a1effc478b4538b17621f"
+    },
+    "baselines": {
+      "file": "release_provenance/current_checks/baselines.json",
+      "sha256": "86445ecd3b86a959108788b69c93cdae89e60b6607a3eb083c66f4fd7c90ae34"
+    },
+    "nvidia_cpu": {
+      "file": "release_provenance/current_checks/nvidia_cpu.json",
+      "sha256": "cba714a26f7c43f060fc647aeb811556621dee23b3be238c22aa3b01d49374dd"
+    },
+    "downloader_cli": {
+      "file": "release_provenance/current_checks/downloader_cli.json",
+      "sha256": "900286f0fe9d5b76647e90ffe5445b8cedfe28ba82ec02fa0abde1c9eba32de1"
+    }
+  },
+  "limits": [
+    "Full-scale router/SharedTrunkNet refitting was not repeated.",
+    "Supplied confidence endpoints compared; not all bootstrap arrays regenerated."
+  ],
+  "changes": [
+    "Check feature-file hashes before baseline fitting.",
+    "Bootstrap Top-1 follows original average-rank point estimator; all 169 observed points preserved.",
+    "Replace September code with conference package; remove manuscript-only figure builder.",
+    "Anchor the manuscript ignore rule and exclude Finder metadata; verify complete tracked-file manifest coverage."
+  ],
+  "dependency_checks": {
+    "compute": "passed",
+    "download": "passed"
+  }
+}

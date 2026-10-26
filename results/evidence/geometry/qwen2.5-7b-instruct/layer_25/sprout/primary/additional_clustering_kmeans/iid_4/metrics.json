@@ -1,0 +1,926 @@
+{
+  "encoder": "qwen2.5-7b-instruct/layer_25",
+  "dataset": "sprout",
+  "subset": "primary",
+  "fold": "iid_4",
+  "algorithm": "ordinary sklearn KMeans",
+  "clustering": {
+    "family": {
+      "clusters": 6,
+      "train_rows": 30720,
+      "test_rows": 13167,
+      "nmi": 0.7235840531543999,
+      "ari": 0.5473615622338994
+    },
+    "topic/math": {
+      "clusters": 7,
+      "train_rows": 6918,
+      "test_rows": 2965,
+      "nmi": 0.22170895994493087,
+      "ari": 0.16051714972130862
+    },
+    "topic/mmlupro": {
+      "clusters": 14,
+      "train_rows": 8248,
+      "test_rows": 3536,
+      "nmi": 0.20699767709283878,
+      "ari": 0.11377196182348875
+    }
+  },
+  "fine_groups": {
+    "2": {
+      "group_details": [
+        {
+          "cell": "TAUR-Lab/MuSR",
+          "training": 173,
+          "test": 75,
+          "clusters": 2
+        },
+        {
+          "cell": "TAUR-Lab/MuSR/object_placements",
+          "training": 169,
+          "test": 81,
+          "clusters": 2
+        },
+        {
+          "cell": "TAUR-Lab/MuSR/team_allocation",
+          "training": 181,
+          "test": 69,
+          "clusters": 2
+        },
+        {
+          "cell": "gpqa",
+          "training": 378,
+          "test": 162,
+          "clusters": 2
+        },
+        {
+          "cell": "math",
+          "training": 1,
+          "test": 0,
+          "clusters": 1
+        },
+        {
+          "cell": "math::Algebra",
+          "training": 1997,
+          "test": 904,
+          "clusters": 2
+        },
+        {
+          "cell": "math::Counting & Probability",
+          "training": 848,
+          "test": 376,
+          "clusters": 2
+        },
+        {
+          "cell": "math::Geometry",
+          "training": 950,
+          "test": 385,
+          "clusters": 2
+        },
+        {
+          "cell": "math::Intermediate Algebra",
+          "training": 1163,
+          "test": 479,
+          "clusters": 2
+        },
+        {
+          "cell": "math::Number Theory",
+          "training": 609,
+          "test": 246,
+          "clusters": 2
+        },
+        {
+          "cell": "math::Prealgebra",
+          "training": 834,
+          "test": 352,
+          "clusters": 2
+        },
+        {
+          "cell": "math::Precalculus",
+          "training": 517,
+          "test": 223,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro",
+          "training": 2,
+          "test": 0,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlupro::biology",
+          "training": 505,
+          "test": 212,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::business",
+          "training": 542,
+          "test": 233,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::chemistry",
+          "training": 744,
+          "test": 369,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::computer science",
+          "training": 289,
+          "test": 121,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::economics",
+          "training": 577,
+          "test": 265,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::engineering",
+          "training": 675,
+          "test": 281,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::health",
+          "training": 496,
+          "test": 227,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::history",
+          "training": 266,
+          "test": 115,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::law",
+          "training": 748,
+          "test": 289,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::math",
+          "training": 915,
+          "test": 415,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::other",
+          "training": 650,
+          "test": 274,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::philosophy",
+          "training": 358,
+          "test": 141,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::physics",
+          "training": 931,
+          "test": 348,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlupro::psychology",
+          "training": 552,
+          "test": 246,
+          "clusters": 2
+        },
+        {
+          "cell": "openhermes",
+          "training": 13538,
+          "test": 5802,
+          "clusters": 2
+        },
+        {
+          "cell": "rungalileo/ragbench/covidqa",
+          "training": 164,
+          "test": 77,
+          "clusters": 2
+        },
+        {
+          "cell": "rungalileo/ragbench/cuad",
+          "training": 114,
+          "test": 42,
+          "clusters": 2
+        },
+        {
+          "cell": "rungalileo/ragbench/delucionqa",
+          "training": 65,
+          "test": 27,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/emanual",
+          "training": 54,
+          "test": 12,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/expertqa",
+          "training": 87,
+          "test": 41,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/finqa",
+          "training": 90,
+          "test": 42,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/hagrid",
+          "training": 91,
+          "test": 34,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/hotpotqa",
+          "training": 86,
+          "test": 46,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/msmarco",
+          "training": 93,
+          "test": 39,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/pubmedqa",
+          "training": 88,
+          "test": 44,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/tatqa",
+          "training": 93,
+          "test": 39,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/techqa",
+          "training": 87,
+          "test": 34,
+          "clusters": 1
+        }
+      ],
+      "queries": 13167,
+      "metrics": {
+        "mean_reward": {
+          "neighbor_pair_mse": 0.06733546578590101,
+          "same_fine_group_random_pair_mse": 0.09795492801258035,
+          "reduction": {
+            "mean": 0.030619462226679342,
+            "ci95": [
+              0.029565892714219368,
+              0.03165545395274025
+            ],
+            "n": 13167
+          }
+        },
+        "solve_fraction": {
+          "neighbor_pair_mse": 0.07009706442904824,
+          "same_fine_group_random_pair_mse": 0.101453964111893,
+          "reduction": {
+            "mean": 0.03135689968284477,
+            "ci95": [
+              0.03023568734309027,
+              0.03244661767839004
+            ],
+            "n": 13167
+          }
+        },
+        "strict_solve_fraction": {
+          "neighbor_pair_mse": 0.0968024777741377,
+          "same_fine_group_random_pair_mse": 0.15373642982215205,
+          "reduction": {
+            "mean": 0.05693395204801435,
+            "ci95": [
+              0.055325626685587326,
+              0.05851142067004907
+            ],
+            "n": 13167
+          }
+        },
+        "relative_reward": {
+          "neighbor_pair_mse": 0.1678030726785585,
+          "same_fine_group_random_pair_mse": 0.17651046186799982,
+          "reduction": {
+            "mean": 0.008707389189441318,
+            "ci95": [
+              0.008045564960211436,
+              0.009324552893327795
+            ],
+            "n": 13167
+          }
+        }
+      }
+    },
+    "4": {
+      "group_details": [
+        {
+          "cell": "TAUR-Lab/MuSR",
+          "training": 173,
+          "test": 75,
+          "clusters": 3
+        },
+        {
+          "cell": "TAUR-Lab/MuSR/object_placements",
+          "training": 169,
+          "test": 81,
+          "clusters": 3
+        },
+        {
+          "cell": "TAUR-Lab/MuSR/team_allocation",
+          "training": 181,
+          "test": 69,
+          "clusters": 3
+        },
+        {
+          "cell": "gpqa",
+          "training": 378,
+          "test": 162,
+          "clusters": 4
+        },
+        {
+          "cell": "math",
+          "training": 1,
+          "test": 0,
+          "clusters": 1
+        },
+        {
+          "cell": "math::Algebra",
+          "training": 1997,
+          "test": 904,
+          "clusters": 4
+        },
+        {
+          "cell": "math::Counting & Probability",
+          "training": 848,
+          "test": 376,
+          "clusters": 4
+        },
+        {
+          "cell": "math::Geometry",
+          "training": 950,
+          "test": 385,
+          "clusters": 4
+        },
+        {
+          "cell": "math::Intermediate Algebra",
+          "training": 1163,
+          "test": 479,
+          "clusters": 4
+        },
+        {
+          "cell": "math::Number Theory",
+          "training": 609,
+          "test": 246,
+          "clusters": 4
+        },
+        {
+          "cell": "math::Prealgebra",
+          "training": 834,
+          "test": 352,
+          "clusters": 4
+        },
+        {
+          "cell": "math::Precalculus",
+          "training": 517,
+          "test": 223,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro",
+          "training": 2,
+          "test": 0,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlupro::biology",
+          "training": 505,
+          "test": 212,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::business",
+          "training": 542,
+          "test": 233,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::chemistry",
+          "training": 744,
+          "test": 369,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::computer science",
+          "training": 289,
+          "test": 121,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::economics",
+          "training": 577,
+          "test": 265,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::engineering",
+          "training": 675,
+          "test": 281,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::health",
+          "training": 496,
+          "test": 227,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::history",
+          "training": 266,
+          "test": 115,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::law",
+          "training": 748,
+          "test": 289,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::math",
+          "training": 915,
+          "test": 415,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::other",
+          "training": 650,
+          "test": 274,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::philosophy",
+          "training": 358,
+          "test": 141,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::physics",
+          "training": 931,
+          "test": 348,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlupro::psychology",
+          "training": 552,
+          "test": 246,
+          "clusters": 4
+        },
+        {
+          "cell": "openhermes",
+          "training": 13538,
+          "test": 5802,
+          "clusters": 4
+        },
+        {
+          "cell": "rungalileo/ragbench/covidqa",
+          "training": 164,
+          "test": 77,
+          "clusters": 3
+        },
+        {
+          "cell": "rungalileo/ragbench/cuad",
+          "training": 114,
+          "test": 42,
+          "clusters": 2
+        },
+        {
+          "cell": "rungalileo/ragbench/delucionqa",
+          "training": 65,
+          "test": 27,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/emanual",
+          "training": 54,
+          "test": 12,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/expertqa",
+          "training": 87,
+          "test": 41,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/finqa",
+          "training": 90,
+          "test": 42,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/hagrid",
+          "training": 91,
+          "test": 34,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/hotpotqa",
+          "training": 86,
+          "test": 46,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/msmarco",
+          "training": 93,
+          "test": 39,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/pubmedqa",
+          "training": 88,
+          "test": 44,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/tatqa",
+          "training": 93,
+          "test": 39,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/techqa",
+          "training": 87,
+          "test": 34,
+          "clusters": 1
+        }
+      ],
+      "queries": 13167,
+      "metrics": {
+        "mean_reward": {
+          "neighbor_pair_mse": 0.06754776709233187,
+          "same_fine_group_random_pair_mse": 0.09271733717768572,
+          "reduction": {
+            "mean": 0.025169570085353858,
+            "ci95": [
+              0.024059131312164254,
+              0.02617899691719784
+            ],
+            "n": 13167
+          }
+        },
+        "solve_fraction": {
+          "neighbor_pair_mse": 0.07029798811175329,
+          "same_fine_group_random_pair_mse": 0.09545739066157792,
+          "reduction": {
+            "mean": 0.025159402549824624,
+            "ci95": [
+              0.024009811285721515,
+              0.02621450370838081
+            ],
+            "n": 13167
+          }
+        },
+        "strict_solve_fraction": {
+          "neighbor_pair_mse": 0.09736678076759049,
+          "same_fine_group_random_pair_mse": 0.1491788223185252,
+          "reduction": {
+            "mean": 0.051812041550934725,
+            "ci95": [
+              0.05014898416789972,
+              0.05359953287648812
+            ],
+            "n": 13167
+          }
+        },
+        "relative_reward": {
+          "neighbor_pair_mse": 0.16759507554748446,
+          "same_fine_group_random_pair_mse": 0.17496110031041115,
+          "reduction": {
+            "mean": 0.0073660247629266816,
+            "ci95": [
+              0.006854256996003254,
+              0.00796376104636308
+            ],
+            "n": 13167
+          }
+        }
+      }
+    },
+    "8": {
+      "group_details": [
+        {
+          "cell": "TAUR-Lab/MuSR",
+          "training": 173,
+          "test": 75,
+          "clusters": 3
+        },
+        {
+          "cell": "TAUR-Lab/MuSR/object_placements",
+          "training": 169,
+          "test": 81,
+          "clusters": 3
+        },
+        {
+          "cell": "TAUR-Lab/MuSR/team_allocation",
+          "training": 181,
+          "test": 69,
+          "clusters": 3
+        },
+        {
+          "cell": "gpqa",
+          "training": 378,
+          "test": 162,
+          "clusters": 7
+        },
+        {
+          "cell": "math",
+          "training": 1,
+          "test": 0,
+          "clusters": 1
+        },
+        {
+          "cell": "math::Algebra",
+          "training": 1997,
+          "test": 904,
+          "clusters": 8
+        },
+        {
+          "cell": "math::Counting & Probability",
+          "training": 848,
+          "test": 376,
+          "clusters": 8
+        },
+        {
+          "cell": "math::Geometry",
+          "training": 950,
+          "test": 385,
+          "clusters": 8
+        },
+        {
+          "cell": "math::Intermediate Algebra",
+          "training": 1163,
+          "test": 479,
+          "clusters": 8
+        },
+        {
+          "cell": "math::Number Theory",
+          "training": 609,
+          "test": 246,
+          "clusters": 8
+        },
+        {
+          "cell": "math::Prealgebra",
+          "training": 834,
+          "test": 352,
+          "clusters": 8
+        },
+        {
+          "cell": "math::Precalculus",
+          "training": 517,
+          "test": 223,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro",
+          "training": 2,
+          "test": 0,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlupro::biology",
+          "training": 505,
+          "test": 212,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro::business",
+          "training": 542,
+          "test": 233,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro::chemistry",
+          "training": 744,
+          "test": 369,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro::computer science",
+          "training": 289,
+          "test": 121,
+          "clusters": 5
+        },
+        {
+          "cell": "mmlupro::economics",
+          "training": 577,
+          "test": 265,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlupro::engineering",
+          "training": 675,
+          "test": 281,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro::health",
+          "training": 496,
+          "test": 227,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro::history",
+          "training": 266,
+          "test": 115,
+          "clusters": 5
+        },
+        {
+          "cell": "mmlupro::law",
+          "training": 748,
+          "test": 289,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro::math",
+          "training": 915,
+          "test": 415,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro::other",
+          "training": 650,
+          "test": 274,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro::philosophy",
+          "training": 358,
+          "test": 141,
+          "clusters": 7
+        },
+        {
+          "cell": "mmlupro::physics",
+          "training": 931,
+          "test": 348,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlupro::psychology",
+          "training": 552,
+          "test": 246,
+          "clusters": 8
+        },
+        {
+          "cell": "openhermes",
+          "training": 13538,
+          "test": 5802,
+          "clusters": 8
+        },
+        {
+          "cell": "rungalileo/ragbench/covidqa",
+          "training": 164,
+          "test": 77,
+          "clusters": 3
+        },
+        {
+          "cell": "rungalileo/ragbench/cuad",
+          "training": 114,
+          "test": 42,
+          "clusters": 2
+        },
+        {
+          "cell": "rungalileo/ragbench/delucionqa",
+          "training": 65,
+          "test": 27,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/emanual",
+          "training": 54,
+          "test": 12,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/expertqa",
+          "training": 87,
+          "test": 41,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/finqa",
+          "training": 90,
+          "test": 42,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/hagrid",
+          "training": 91,
+          "test": 34,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/hotpotqa",
+          "training": 86,
+          "test": 46,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/msmarco",
+          "training": 93,
+          "test": 39,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/pubmedqa",
+          "training": 88,
+          "test": 44,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/tatqa",
+          "training": 93,
+          "test": 39,
+          "clusters": 1
+        },
+        {
+          "cell": "rungalileo/ragbench/techqa",
+          "training": 87,
+          "test": 34,
+          "clusters": 1
+        }
+      ],
+      "queries": 13167,
+      "metrics": {
+        "mean_reward": {
+          "neighbor_pair_mse": 0.06795540713559944,
+          "same_fine_group_random_pair_mse": 0.0880609488710866,
+          "reduction": {
+            "mean": 0.020105541735487165,
+            "ci95": [
+              0.0191135870800465,
+              0.020995451941410205
+            ],
+            "n": 13167
+          }
+        },
+        "solve_fraction": {
+          "neighbor_pair_mse": 0.07067741075838242,
+          "same_fine_group_random_pair_mse": 0.0910237971706743,
+          "reduction": {
+            "mean": 0.020346386412291875,
+            "ci95": [
+              0.019290305425122885,
+              0.021302160207798616
+            ],
+            "n": 13167
+          }
+        },
+        "strict_solve_fraction": {
+          "neighbor_pair_mse": 0.0977471471398597,
+          "same_fine_group_random_pair_mse": 0.1359990034253779,
+          "reduction": {
+            "mean": 0.03825185628551821,
+            "ci95": [
+              0.03688966653532039,
+              0.03963630060390056
+            ],
+            "n": 13167
+          }
+        },
+        "relative_reward": {
+          "neighbor_pair_mse": 0.16756516303983918,
+          "same_fine_group_random_pair_mse": 0.17434046727874628,
+          "reduction": {
+            "mean": 0.006775304238907094,
+            "ci95": [
+              0.006235960058536545,
+              0.007280883522029052
+            ],
+            "n": 13167
+          }
+        }
+      }
+    }
+  },
+  "panel_sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+  "split_sha256": "382c42c377bc5c429ebf68f7e36d26d7a5674a8bdafbf705f37e67264583e1de",
+  "code_sha256": {
+    "run_additional_clustering.py": "b12bcb4a5113b34d2371b3d32fbff48ab34dfa17fb95fe880d09b55639d1a4d6",
+    "clustering_tools.py": "992536a84ce8650ebd500bbd4be096a0ff65c259c2c0ccbf2602830872ce6e00",
+    "refinements.py": "5302ff0608830c79ac0930a65899c7291f6ad15c46b909cfa2b88c57b6c08e68",
+    "geometry.py": "12c83d3b489c9f3c0f4c20123e129d14b155896ccb85a18d271ac79a484e77c0"
+  },
+  "slurm_job": "[redacted]"
+}

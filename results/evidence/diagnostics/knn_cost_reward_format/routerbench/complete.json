@@ -1,0 +1,168 @@
+{
+  "complete": true,
+  "panel": "routerbench-0shot",
+  "dataset": "routerbench",
+  "n_queries": 34771,
+  "n_models": 11,
+  "lambdas": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20,
+    30,
+    50,
+    75,
+    100,
+    150,
+    250,
+    500
+  ],
+  "folds": [
+    {
+      "split": "ood_0",
+      "heldout_family": "arc-challenge",
+      "n_test": 1470,
+      "n_train": 33301,
+      "format_pools": {
+        "choice": 25346
+      },
+      "seconds": 4.075279474258423,
+      "sha256": "356629c11db1960f6be2d79664bc7f9589728b5e3bba29c992cb9117382fe078"
+    },
+    {
+      "split": "ood_1",
+      "heldout_family": "grade-school-math",
+      "n_test": 7450,
+      "n_train": 27321,
+      "format_pools": {
+        "free": 505
+      },
+      "seconds": 1.090818166732788,
+      "sha256": "5169881fb62e3678e55cf172164582b87d9ee667297b10e776e81714c8a5249b"
+    },
+    {
+      "split": "ood_2",
+      "heldout_family": "hellaswag",
+      "n_test": 10042,
+      "n_train": 24729,
+      "format_pools": {
+        "choice": 16774
+      },
+      "seconds": 17.858678102493286,
+      "sha256": "57f797eb25de0325b30d8bd3cc4e8ef4b452945babacf51ae621d9415a9bba1e"
+    },
+    {
+      "split": "ood_3",
+      "heldout_family": "mbpp",
+      "n_test": 425,
+      "n_train": 34346,
+      "format_pools": {
+        "free": 7530
+      },
+      "seconds": 0.42047643661499023,
+      "sha256": "7cb702f3dddddbb13435b439c00740bac546f376fbc8eb79e78a8f65a04c487f"
+    },
+    {
+      "split": "ood_4",
+      "heldout_family": "mmlu",
+      "n_test": 14037,
+      "n_train": 20734,
+      "format_pools": {
+        "choice": 12779
+      },
+      "seconds": 19.251088857650757,
+      "sha256": "bc1475ca97f528e8766c5b0cd985ddaaf4037a673bc6fabb1c949075eb522939"
+    },
+    {
+      "split": "ood_5",
+      "heldout_family": "mtbench",
+      "n_test": 80,
+      "n_train": 34691,
+      "format_pools": {
+        "free": 7875
+      },
+      "seconds": 0.13951706886291504,
+      "sha256": "138257bfccc6ba373ef70035062d6e23eb2aeee6ba0bb54dff468c2dfb21ba1a"
+    },
+    {
+      "split": "ood_6",
+      "heldout_family": "winogrande",
+      "n_test": 1267,
+      "n_train": 33504,
+      "format_pools": {
+        "choice": 25549
+      },
+      "seconds": 3.49657940864563,
+      "sha256": "ebe75e55e2275acc9b8b529640b78f336bbe1117744d1dfc881929861ac4ae7d"
+    }
+  ],
+  "format_by_family": {
+    "arc-challenge": [
+      "choice"
+    ],
+    "grade-school-math": [
+      "free"
+    ],
+    "hellaswag": [
+      "choice"
+    ],
+    "mbpp": [
+      "free"
+    ],
+    "mmlu": [
+      "choice"
+    ],
+    "mtbench": [
+      "free"
+    ],
+    "winogrande": [
+      "choice"
+    ]
+  },
+  "source_hashes": {
+    "configs/knn_cost_reward_format.json": "83fd4849948df0e4fe7733b666c0b408044eb0b288869f106066fd0c0742290b",
+    "src/diagnostics/knn_cost_reward_format.py": "7f2f6281d932d9f5a595e6dc9f429342177ba1cf0f1c0cbad9c29d3a7468220b",
+    "src/baselines/common.py": "94523b04b15d6485ae58e116d8952ec90c87a6c165cad228911edabb2a4e133a",
+    "src/diagnostics/appendix_ci/ci_common.py": "8cea91e3b464a607db398e130964bf26954343202c5822c120f3034ea354fc42",
+    "configs/appendix_ci.json": "80577c288be7a2991db486c3fae989b808049a44f488ee3f205d76d0179adb9e",
+    "configs/baselines.json": "8bbb430a67286bfafbb90e704a8f1bd8cbfb8d13bf7d06a999bf1853e14ee301",
+    "configs/baseline_splits/routerbench-0shot.json": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+    "datasets/routerbench/prepared/panel.npz": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+    "datasets/routerbench/prepared/manifest.json": "557bc48609f0ff15040bdf83120770ef7da8775c52a640709a85d1d3168b4f88",
+    "datasets/routerbench/prepared/queries.jsonl": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd",
+    "artifacts/embeddings/gte-qwen2-7b/routerbench/manifest.json": "3fcfd0a678e9039a40e32ae2b84019e04ad533512c8ad7f556fc8e2e63125019",
+    "artifacts/embeddings/gte-qwen2-7b/routerbench/vectors.npy": "77df73ef60a9786f9c447bd351f50f32593d024cc678241b6789a5a93fc79d38",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_0/knn/predictions.npz": "e1ac3e292b40c493ea183a187e98b5e3ce93b9dbd723cf0bcbf8dfb80018d11a",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_0/knn/result.json": "9c882a157a97f6b6ec6d6bda057aa4fad9867d12c9e47c4dd190fc2606940ff9",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/predictions.npz": "6ce02d32b4fa8b20e47ece3f178dcd5573889a03de280e0d24753966cea91127",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/result.json": "adeb696b054f7a994e61a8649880d93de4c207ea5ce5de0bef60a919f101c29c",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_1/knn/predictions.npz": "f0709f0bc541f72d33c1d69afac962c5c3a918da855cd0373fda272fa45ff5e8",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_1/knn/result.json": "236ac5f6e78ccba1ec3b7ea3983e4b5bf28ceb30d62bfd80de7a9b26f8074e6d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/predictions.npz": "d20cffd89baf1bcc53aef6d76c22c221e305dd2aaf3f83cb516ab37bd2765148",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/result.json": "8eee3b7c163e4c903ec9dcfb041ecf9115334086a740047e88afa4929cefde8d",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_2/knn/predictions.npz": "3a93ac20a1f812d9195aaab5daca92e11347db8afeefd56168e492e4193eda12",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_2/knn/result.json": "2f9bec99519d8e0211d28fd7b9ace65ffb6f2195d1975cd5f161626eb62227be",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/predictions.npz": "4a9418e9a54b20749a1794c8aafafb27f6d0a7ed61b4f1ee1396917fecc6b1b0",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/result.json": "95ab066966bccf1c30d5371765ac3ebb2a5cd0c6825df85cbfb85918c73451fe",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_3/knn/predictions.npz": "76b8ab112afbb4c992a762b403c701879ea081c4bd4229fbc622ae9477bbac38",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_3/knn/result.json": "b74262bd9a2e7e00213d44232caaeb5a6fafddb6e144225b15c00fc77e76a46e",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/predictions.npz": "174828b2b02252b0ae4539e401c44f3a457d268f76f45a546e4e0a65d71128fd",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/result.json": "0f8c29883b49f64e8346d63e04bb99aabab5acb705581e8cc56cf1dfe29c3c14",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_4/knn/predictions.npz": "d6fe3beddd3ef95b91b22ce3975bc2f215d73cf1ac438c34ae1ad6ec903f55e1",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_4/knn/result.json": "d15803e289d733949acb010ea36478b62e8da987e59ea0d5dd9b159e1d41e17d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/predictions.npz": "d31b42a0aa72d5dd8e889fa278ec3760600d7fbd63d2fb82b4e536c1511d70cc",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/result.json": "e63e98dda89d0f0b75da832773e83414a8532056b647e329478eb0ce2b33840a",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_5/knn/predictions.npz": "732032a8c478e5693767972e84d10e3dcbaa3f7f6c8a4b5ce65b52c7da632985",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_5/knn/result.json": "75ab1f7d70c5087d1d5ae60eeb7b7887f05055cc06e05e7e87b30f29f8fec2b7",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/predictions.npz": "63afb7cb26d32f15c60ba44b6559e8ce351c3b9ad4bfbec26ad0a5c9342d6545",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/result.json": "69773d67f4736628e46a1e475dd2e93e80e5edc6717bdbc3219f67e22d31afda",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_6/knn/predictions.npz": "6552b6caac75d453c63d67f040dd6b617f0a5d1f5d65735ef63104b6e672ce62",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_6/knn/result.json": "233c60b827f5e62db8d36e81ea893bdf926962710b183a6992c1b41a9cf57185",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/predictions.npz": "96f3530b3c9442fdf11617e248d81f8e76a394d15324a1fba2f287e9327ce204",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/result.json": "fa770a7d357ac72ede3bb0025c80bd745fe9bc6b54bd9482049ea3ae60ed9c6d"
+  },
+  "seconds": 47.79956388473511,
+  "slurm_job": "[redacted]"
+}

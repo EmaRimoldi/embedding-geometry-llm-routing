@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "scope": "Full model-weight bytes match pinned public LFS checksums",
+  "files": [
+    {
+      "asset": "minilm-l12",
+      "repository": "sentence-transformers/all-MiniLM-L12-v2",
+      "revision": "a50ef00143b4d5391434df20ae11632588ac25be",
+      "file": "model.safetensors",
+      "bytes": 133466304,
+      "sha256": "d2d541e5f101695ae495eacd867a8d025ecfe8f9674fb23aa6cf93cdb60a5542"
+    },
+    {
+      "asset": "gte-qwen2-7b",
+      "repository": "Alibaba-NLP/gte-Qwen2-7B-instruct",
+      "revision": "a8d08b36ada9cacfe34c4d6f80957772a025daf2",
+      "file": "model-00001-of-00007.safetensors",
+      "bytes": 4970694768,
+      "sha256": "01947bf0a7febbeab0dc6301c9c0f6052664edd36ed6c72f0a4ed2e83be7841d"
+    },
+    {
+      "asset": "gte-qwen2-7b",
+      "repository": "Alibaba-NLP/gte-Qwen2-7B-instruct",
+      "revision": "a8d08b36ada9cacfe34c4d6f80957772a025daf2",
+      "file": "model-00002-of-00007.safetensors",
+      "bytes": 4778622352,
+      "sha256": "d6c947d8a589b9e8ce836166a979d2d245eec6a8c611a31869e559bb4e8ed811"
+    },
+    {
+      "asset": "gte-qwen2-7b",
+      "repository": "Alibaba-NLP/gte-Qwen2-7B-instruct",
+      "revision": "a8d08b36ada9cacfe34c4d6f80957772a025daf2",
+      "file": "model-00003-of-00007.safetensors",
+      "bytes": 4932743960,
+      "sha256": "71a24cecc80362f913d9a354e22271b2364980c8022c847ab789be3ae717e511"
+    },
+    {
+      "asset": "gte-qwen2-7b",
+      "repository": "Alibaba-NLP/gte-Qwen2-7B-instruct",
+      "revision": "a8d08b36ada9cacfe34c4d6f80957772a025daf2",
+      "file": "model-00004-of-00007.safetensors",
+      "bytes": 4932743992,
+      "sha256": "9a27660fd42d6634690d56fc464a5ec825f24249de5a619ec9254092122afc8a"
+    },
+    {
+      "asset": "gte-qwen2-7b",
+      "repository": "Alibaba-NLP/gte-Qwen2-7B-instruct",
+      "revision": "a8d08b36ada9cacfe34c4d6f80957772a025daf2",
+      "file": "model-00005-of-00007.safetensors",
+      "bytes": 4998852296,
+      "sha256": "20b5664f282214cf3c5d963d815782cce537913299573e3621cdcc53906493ae"
+    },
+    {
+      "asset": "gte-qwen2-7b",
+      "repository": "Alibaba-NLP/gte-Qwen2-7B-instruct",
+      "revision": "a8d08b36ada9cacfe34c4d6f80957772a025daf2",
+      "file": "model-00006-of-00007.safetensors",
+      "bytes": 3662865184,
+      "sha256": "3a42dec896d4104e5e2f169db2162c075fcb3c1d04562bc75ea9bf0545e64e21"
+    },
+    {
+      "asset": "gte-qwen2-7b",
+      "repository": "Alibaba-NLP/gte-Qwen2-7B-instruct",
+      "revision": "a8d08b36ada9cacfe34c4d6f80957772a025daf2",
+      "file": "model-00007-of-00007.safetensors",
+      "bytes": 2173997184,
+      "sha256": "eeae9256d11850b8333c591254d591a47609ab7242256bee7dc5107fa137be52"
+    },
+    {
+      "asset": "qwen2.5-7b-instruct",
+      "repository": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "file": "model-00001-of-00004.safetensors",
+      "bytes": 3945441440,
+      "sha256": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7"
+    },
+    {
+      "asset": "qwen2.5-7b-instruct",
+      "repository": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "file": "model-00002-of-00004.safetensors",
+      "bytes": 3864726352,
+      "sha256": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185"
+    },
+    {
+      "asset": "qwen2.5-7b-instruct",
+      "repository": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "file": "model-00003-of-00004.safetensors",
+      "bytes": 3864726424,
+      "sha256": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5"
+    },
+    {
+      "asset": "qwen2.5-7b-instruct",
+      "repository": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "file": "model-00004-of-00004.safetensors",
+      "bytes": 3556377672,
+      "sha256": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd"
+    }
+  ]
+}

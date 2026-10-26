@@ -1,0 +1,62 @@
+{
+  "passed": true,
+  "scope": "Four illustrative prompts, canonical unchanged encode.py; cached pinned weights; fresh dependency installation. No paper performance or model-answer generation.",
+  "vectors": [
+    {
+      "encoder": "minilm-l12",
+      "layer": null,
+      "shape": [
+        4,
+        384
+      ],
+      "finite": true,
+      "hashes_match": true,
+      "completed_rows": 4
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "layer": null,
+      "shape": [
+        4,
+        3584
+      ],
+      "finite": true,
+      "hashes_match": true,
+      "completed_rows": 4
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct",
+      "layer": 21,
+      "shape": [
+        4,
+        3584
+      ],
+      "finite": true,
+      "hashes_match": true,
+      "completed_rows": 4
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct",
+      "layer": 23,
+      "shape": [
+        4,
+        3584
+      ],
+      "finite": true,
+      "hashes_match": true,
+      "completed_rows": 4
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct",
+      "layer": 25,
+      "shape": [
+        4,
+        3584
+      ],
+      "finite": true,
+      "hashes_match": true,
+      "completed_rows": 4
+    }
+  ],
+  "encoder_code_sha256": "2a7cb29f58c03c0659c2af0ca069f7d3b75193b59d8bb9eba25bb82c18a6a5e8"
+}

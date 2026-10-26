@@ -1,0 +1,301 @@
+{
+  "dataset": "routerbench",
+  "complete": true,
+  "rows": [
+    {
+      "metric": "mean_rank",
+      "lambda_value": "0",
+      "mean": 3.142857142857143,
+      "low": 3.0,
+      "high": 3.5714285714285716
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "0",
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "1",
+      "mean": 3.142857142857143,
+      "low": 3.0,
+      "high": 3.5714285714285716
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "1",
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "2",
+      "mean": 3.142857142857143,
+      "low": 3.0,
+      "high": 3.5714285714285716
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "2",
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "5",
+      "mean": 3.357142857142857,
+      "low": 3.142857142857143,
+      "high": 3.642857142857143
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "5",
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "10",
+      "mean": 3.357142857142857,
+      "low": 3.2142857142857144,
+      "high": 3.642857142857143
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "10",
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "20",
+      "mean": 2.7142857142857144,
+      "low": 2.5714285714285716,
+      "high": 3.642857142857143
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "20",
+      "mean": 1.0,
+      "low": 0.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "30",
+      "mean": 3.2857142857142856,
+      "low": 3.142857142857143,
+      "high": 3.5714285714285716
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "30",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "50",
+      "mean": 3.2857142857142856,
+      "low": 3.142857142857143,
+      "high": 3.5714285714285716
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "50",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "75",
+      "mean": 3.2857142857142856,
+      "low": 3.142857142857143,
+      "high": 3.5714285714285716
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "75",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "100",
+      "mean": 3.2857142857142856,
+      "low": 3.142857142857143,
+      "high": 3.5714285714285716
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "100",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "150",
+      "mean": 3.2857142857142856,
+      "low": 3.142857142857143,
+      "high": 3.5714285714285716
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "150",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "250",
+      "mean": 3.2857142857142856,
+      "low": 3.142857142857143,
+      "high": 3.5714285714285716
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "250",
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "500",
+      "mean": 3.5714285714285716,
+      "low": 3.4285714285714284,
+      "high": 3.857142857142857
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "500",
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0
+    },
+    {
+      "metric": "mean_rank",
+      "lambda_value": "mean",
+      "mean": 3.2417582417582413,
+      "low": 3.0989010989010994,
+      "high": 3.576923076923076
+    },
+    {
+      "metric": "top1_count",
+      "lambda_value": "mean",
+      "mean": 7.0,
+      "low": 6.0,
+      "high": 7.0
+    }
+  ],
+  "n_families": 7,
+  "n_sources": 6,
+  "replicates": 2000,
+  "source_hashes": {
+    "datasets/routerbench/prepared/panel.npz": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_0/per_query.npz": "94d79c345daaa79b65c01129920767dc9463ebd7114116ac4aef8b90e3b99868",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/grade-school-math/result.json": "202d760dcfe166a7d9973c40953630c41a0f8b69671511e90078ca2062343602",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/grade-school-math/predictions.npz": "3c50b675561adb974bec315eaf616f8d3de9d8c4a476f54f1c77249058dc1b07",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/hellaswag/result.json": "32e9d1b8606987831b2af2786c972462bab45ebddd6e65f05fb1f660f5b06182",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/hellaswag/predictions.npz": "ea9abcef1b677c37fbea96d4a3bae978634ec473f88f8a23a27f20d1a8cb7151",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/mbpp/result.json": "161b92f61bd6fc2953ba9a763c485e992c697c16a0655dd85d6c1b6968aae590",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/mbpp/predictions.npz": "575bbb38ffdf04a8ef1ec2f7c9bfd9faf6450b6c29c70879f3fe71459582ade0",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/mmlu/result.json": "d8356bbce2a26dfff5d48a99168f3e19f5fa534d01c9618e9241908ba1ab6ad3",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/mmlu/predictions.npz": "dc9a90c901361f8a78c6d125bb0b0c2856a79c9b941b89195fd757e6abc7e544",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/mtbench/result.json": "9cd352063b740d7340f0c1de25417893dc8f5244dd423e84b0f52a667afff113",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/mtbench/predictions.npz": "135f5931ad2c2271ffbe6b5f72c14d68f7cd9415ad8416e3e095ec63d5e54210",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/winogrande/result.json": "529ef7858967f05c393a38bbf5d39d5c6198133f147e1c9d46dd834c23403b0b",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_0/winogrande/predictions.npz": "c9438b54acbf5f93b9814dc4bdc69512d23ac151c57338ed90fc01b4c30e70fb",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_1/per_query.npz": "d79a17225eafcd8be73a57733972a8b5760bb59bcccb7f47aba2cceed4fcc095",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/arc-challenge/result.json": "a156c7303d0e5871d840e79ea54c017dd397fcacfe81267bb11f19f67726f5ab",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/arc-challenge/predictions.npz": "fbe7bf45f7b17f76a0d9692c34106164e19c6ed4e25edf59612f097e93845390",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/hellaswag/result.json": "4c3a6471ac5b41d7e945fefaa0eed75ddae7dad06c960df593539a1699e325c8",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/hellaswag/predictions.npz": "5f51750a6c7a6f1363434f572e694b800af341c1bc50cfc1da291a6f85080a66",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/mbpp/result.json": "1d5119c20f7075ed882c69d3a8314e5b0e5bade94a6bdaf9b101e5ac15f63f12",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/mbpp/predictions.npz": "80e1ff2dbf6a2a2df7ed3732c1841baddcd2b2cd183bba590bcf00ec0743d7c2",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/mmlu/result.json": "3f67716f526c8804d5af947fa26457a7006cd64a287218f361ff258e4749e594",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/mmlu/predictions.npz": "f68f3a99cbf6dfb2a5d4d2510f524f3aa24592400c281f14d9554e0b420ae055",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/mtbench/result.json": "8351a5641a60e0dafe0a67cd58b76b669f41cccc6f925e224cc8356009a31fb7",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/mtbench/predictions.npz": "086cbc55c54b3ab2fe49ea2e94afc9e2caf29f941f77b5bd1d0ee4ca118a195f",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/winogrande/result.json": "95830457413b64a43a5c4722a4fd0aac4ce492e5499e3760691bc4ddb3029134",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_1/winogrande/predictions.npz": "4c663b0502aac34c2bdbe034b6a6547816c07e0fa79c0662077bceb1996a0a83",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_2/per_query.npz": "077df15a528c3b6e1df04ebbf97e0a069472d93356f379fc4656f4b01c318bb9",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/arc-challenge/result.json": "808ce64b8ab0deb29f8e90550809e9d2a626ea10544e415f43c9b8b6aeebe903",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/arc-challenge/predictions.npz": "b029742a59ad0f73e08ef66b3bc2333b7b8071d1a0ede5cb36203bf73ac06352",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/grade-school-math/result.json": "ac369bcffb646e928efa54d58ab15fff2a98eb71b52e6cb982c056deb410d35d",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/grade-school-math/predictions.npz": "111bc0ffc4f76023d0badcb27b1317cf0f14f60a79a3272aeba96ea7994f2eb2",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/mbpp/result.json": "5e8c0110aeccdf6f4f7a1fae9233dba42e3438278dab9891ff32b0e5ca9c6b5e",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/mbpp/predictions.npz": "458f734294a913bde210e5a5e4d1e7b0a6b888caab29e69b92827be677965591",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/mmlu/result.json": "8e9877c2f215ae15854343f93ef5f462d595d8c4f2bcc2942e1936318bb171bb",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/mmlu/predictions.npz": "047c7d67611e0597128a8cab92944d257631af5d765be518d6b3b2e37cd8fd4c",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/mtbench/result.json": "73053db41b99e1cf9d3106aa54c932ef66cc3b7b0b797b06175fbe2be697b202",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/mtbench/predictions.npz": "ae5b4b64c38a8201798cd83ddb5971d5fc7e4ff86b0242627c3bb255398fbf29",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/winogrande/result.json": "e0c954e10eb3558766871eb21a52ccd850c256dac01e7dbcf88e7319c158ab94",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_2/winogrande/predictions.npz": "65077f57d22f0d0f4430bd4cc22d2955b22b42d3ee43a3b71a7c016fcff71425",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_3/per_query.npz": "1f37bad77bb25fe88173b37be2450b33e62173776e1ae860ab7ed178f1cbad2e",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/arc-challenge/result.json": "5eb1879ce2cce5db27e9eb1ab6de1b84be11547a10a74a6477bbec9cbd82327e",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/arc-challenge/predictions.npz": "1d756ac761084dc2f3d5980b9eaae11809d205f025895fa2918aebb3928cbbf7",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/grade-school-math/result.json": "1b6249762a4e4025723af3549468dfab76afd5c7ef00ca952720daf2e4a3ecc9",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/grade-school-math/predictions.npz": "dc46a91f3c4b743d098a99772f7a19132cb6f2d9ac29365277cc62e4df67c6e6",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/hellaswag/result.json": "f43ca97aee2c77e45332483796e3d4a9a1dcd57262d52c3ca843ebe2754a2ce1",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/hellaswag/predictions.npz": "9ac41bb9b4abcf50bc2a026fea4eaf1786c5fea8652fdb5498b213cdb8ecdb10",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/mmlu/result.json": "74cdff2c83095b111d17ccd8bb75ed12fa8a574c8c2448883b74153b3012d00b",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/mmlu/predictions.npz": "09a24607fe97ca3f99f115531d76940112236455e4e9b397cee82a6e0f111c45",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/mtbench/result.json": "9f76e6c45fe661c5e1e2b925c6555564e82b7d1933a1d53562eb71ea58c5a9a0",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/mtbench/predictions.npz": "d17649c842c74027bdf14eeb62a5f70bab66223a5090a86490abbcfc628627b6",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/winogrande/result.json": "cb7a7c1fd1ecf2a66b407671ea5f6827f86d62a7bbab35407921f877171a3bdf",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_3/winogrande/predictions.npz": "e13b90c02d4b9c10ff17b1952bae3b711017ad82093e318bbcce7a4eefef4999",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_4/per_query.npz": "04588e803ed8d348ec26b6696a985c8d4561754f9dfe215190d984cc1473c5f7",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/arc-challenge/result.json": "eb7f155e12822c769be07dcb12125ca31728bc3adaa403d4cabb6ef1289d3430",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/arc-challenge/predictions.npz": "b7c6f40d04be9c1ad4cf77dcb145929f10d37b83a1634d5e85a723454f61acd9",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/grade-school-math/result.json": "2f98feb2222d6e809e784a21e51fe692c0c4e6389acb2b2d06f0427fc0c002e4",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/grade-school-math/predictions.npz": "18381a3a24722b3441923b73bd09e316f0d3cf0173f2fe2659d63bb05dd9925e",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/hellaswag/result.json": "d7536b8e07a9ba0f3bc4ee060e2b56b7e0b38c02fe96de21e930971012685ea6",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/hellaswag/predictions.npz": "84d620866f3b90d22905a98eaf28a44f48f4bfb10ec0853c68b86e8529811f67",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/mbpp/result.json": "13e78b15bd7cf92247d0277e12e2db8f0c1dce745c898489b0985d0b0cc9c942",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/mbpp/predictions.npz": "91cd91be5a3e83201f948dcee9051ce4ff42b564b25dbf3f109072e92d4276e4",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/mtbench/result.json": "47f50b3ccc24598a682458b6a639b810d8805bb304c5d5752487148d40f76bcf",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/mtbench/predictions.npz": "f15a43442c7b051f3b727d90c1f0fe61b1f80195daeb7aca597ed305489a1314",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/winogrande/result.json": "f4d1c69c5f7c99ee0ba02a2b49c0a870b439de0935d7497663b7c25bfa3b75c4",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_4/winogrande/predictions.npz": "dbe25670320d6da2e4483d66013b0644388a98182e926134471a737208e7b3de",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_5/per_query.npz": "deb679a935a95d73205688646ea9aa77d6e0d360ba2877fa26437a34424c1700",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/arc-challenge/result.json": "1e2a31abd6c0bd719b1817c084fc78aa5ad21f27e9234b6f6eca0ab6cac994c8",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/arc-challenge/predictions.npz": "02dd28bb1d591975b35b88703a15cf42b13a7316e8cc24921a073ebf3e6348f4",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/grade-school-math/result.json": "7e3d620ca00b80a947c53348d1c185b308aa89bc0fe5096bf50fee63a5e778b6",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/grade-school-math/predictions.npz": "25b2c3a78b8f3b0db1f426025ea629a7736f7284a0eae5bf569ebe2855f37a6f",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/hellaswag/result.json": "6f0f05d7be5c977a1ab802f4ff451accde7eb26f2b5643b30eca48238e97e109",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/hellaswag/predictions.npz": "ceed5e508bdd82358c9704c6ee66df3a0ef6b55386f8f3daad079d261b85e81a",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/mbpp/result.json": "0a658687b2b7a5246ae5294f8c267b3af08a44b27f501c54f5a04414cea6d55c",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/mbpp/predictions.npz": "9fba2104587ae0fdfb29697021c5909bda03e1556d817e00cf8544b68b29e262",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/mmlu/result.json": "bc5c4ada2b37671f0616ded0bbfe93fe0ad546f511037bd9e4bb390b124b281c",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/mmlu/predictions.npz": "c83afc083ecb3fe8ac7c7f0397b6dfd7bc0e770e53843559755225bebb2c7482",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/winogrande/result.json": "7249e06c4307a769041cb2b69121e877ae6b788c40e5defae3473df02d3804e0",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_5/winogrande/predictions.npz": "9e6107dd762eadb2e4d195ac27c243862817fb4cc5bde56b25cd7e119112792f",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_6/per_query.npz": "5f30776f3b702a42ce90202ad86048935c3ca0658514479ae45a4cd094a87f86",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/arc-challenge/result.json": "77e8bf15a75345c7311819f0fb70580168acfe31fe91bbb71aa572407b03efe6",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/arc-challenge/predictions.npz": "ebbb61a09ea816130ed9cff781f39d8d45d23ce0dd3892a582993079bf935f6e",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/grade-school-math/result.json": "606a55d4379f75220531b711be0deaf2424068f423f65bc148352afed385e335",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/grade-school-math/predictions.npz": "6120b177f46988a61edd03baac5487644637d93eded835ddc43212932d44c47a",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/hellaswag/result.json": "a71f40f04a4adbc844fee02f215be92bea7790762dd16e8f66a757a7655bb2e9",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/hellaswag/predictions.npz": "7b7184d588da1f7ca3b9a03b0dc5da01a3a38596b0d50d76a111509569a5b0ce",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/mbpp/result.json": "1c45de8e0ea828a0502ee102f02c9242ef71ab96bbbea51e59baf1de44fd7baf",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/mbpp/predictions.npz": "f0fc29d9c4a17f763130f88d9fed13343a78ac097fe3c3ba7893075922694258",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/mmlu/result.json": "6b0c066a61949b5a8f4fba13fab46ea8c38c466935b740b7eff088fcdddb8807",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/mmlu/predictions.npz": "320de1af2e4cd0c59e707405cb1f5d12acd6ef4390b6c12c72ac63ef88e4a5d5",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/mtbench/result.json": "64a9f6536ba91cd30a07f6d10513fd0659566df2b1cf27b82cc06331448230df",
+    "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/routerbench/ood_6/mtbench/predictions.npz": "9f8ea53554b88843943daf39f842c4768f6f50ed87ec5ae8ea110092cb38cc0f"
+  },
+  "original_scores_reproduced": true,
+  "slurm_job": "[redacted]"
+}

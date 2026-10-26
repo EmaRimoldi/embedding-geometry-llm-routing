@@ -1,0 +1,57 @@
+{
+  "cosines": {
+    "pythagoras_fermat": 0.9689304374310361,
+    "prime_odd_order": 0.9824208483930569
+  },
+  "cosine_matrix": [
+    [
+      0.9999999999999999,
+      0.9689304374310361,
+      0.9372776828505339,
+      0.9459822685962237
+    ],
+    [
+      0.9689304374310361,
+      1.0,
+      0.9277178939028342,
+      0.9495728914378
+    ],
+    [
+      0.9372776828505339,
+      0.9277178939028342,
+      0.9999999999999999,
+      0.9824208483930569
+    ],
+    [
+      0.9459822685962237,
+      0.9495728914378,
+      0.9824208483930569,
+      0.9999999999999998
+    ]
+  ],
+  "row_ids": [
+    "pythagoras_fermat_A",
+    "pythagoras_fermat_B",
+    "prime_odd_order_A",
+    "prime_odd_order_B"
+  ],
+  "feature_manifest": {
+    "encoder": "qwen2.5-7b-instruct",
+    "layer": 21,
+    "dataset": "proof_twins_v1",
+    "rows": 4,
+    "valid_rows": 4,
+    "dimension": 3584,
+    "pooling": "last_nonpadding",
+    "max_tokens": 8192,
+    "truncation": false,
+    "chat_template": false,
+    "append_eos": false,
+    "dtype_storage": "float32",
+    "model_dtype": "torch.bfloat16",
+    "tokens_max": 44,
+    "vector_sha256": "8ca726088bd3f085194eaed22cdb9bc3d24dba9ea7933b8dfa8ca31ee3e2f339",
+    "query_sha256": "120f9489edf7fc12599df3ccf3c631708c9bf951a0486a2c36b61b99788cf2bd",
+    "code_sha256": "2a7cb29f58c03c0659c2af0ca069f7d3b75193b59d8bb9eba25bb82c18a6a5e8"
+  }
+}

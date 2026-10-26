@@ -1,0 +1,105 @@
+dataset,protocol,encoder,method,mean_utility
+routerbench-0shot,iid,gte,Avengers-Pro,0.71757870410689
+routerbench-0shot,iid,gte,Best single model,0.6993540203810761
+routerbench-0shot,iid,gte,Family lookup,0.7212385245251297
+routerbench-0shot,iid,gte,Family-topic lookup,0.722882964901634
+routerbench-0shot,iid,gte,KM-Prox,0.7287029179506844
+routerbench-0shot,iid,gte,KM-Prox (validated),0.7289091163986551
+routerbench-0shot,iid,gte,MLP,0.7244535643983365
+routerbench-0shot,iid,gte,Realized oracle,0.9033230942558339
+routerbench-0shot,iid,gte,Ridge,0.7290037112589782
+routerbench-0shot,iid,gte,Family Adaptation,0.7211258253480417
+routerbench-0shot,iid,gte,Utility-cluster control,0.7275067674799434
+routerbench-0shot,iid,gte,Validated kNN,0.7293777871386856
+routerbench-0shot,iid,gte,kNN-100,0.728235715346313
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,0.7365789691276015
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,0.7373574216246992
+routerbench-0shot,iid,reader,Avengers-Pro,0.7173234058114087
+routerbench-0shot,iid,reader,Best single model,0.6993540203810761
+routerbench-0shot,iid,reader,Family lookup,0.7212385245251297
+routerbench-0shot,iid,reader,Family-topic lookup,0.722882964901634
+routerbench-0shot,iid,reader,KM-Prox,0.7252083482789643
+routerbench-0shot,iid,reader,KM-Prox (validated),0.730058308118806
+routerbench-0shot,iid,reader,MLP,0.7298517357681392
+routerbench-0shot,iid,reader,Realized oracle,0.9033230942558339
+routerbench-0shot,iid,reader,Ridge,0.7358389509498289
+routerbench-0shot,iid,reader,Family Adaptation,0.7217393021265928
+routerbench-0shot,iid,reader,Utility-cluster control,0.731409302112553
+routerbench-0shot,iid,reader,Validated kNN,0.7359962796566187
+routerbench-0shot,iid,reader,kNN-100,0.7352079295612965
+routerbench-0shot,ood,gte,Avengers-Pro,0.6662415393845004
+routerbench-0shot,ood,gte,Best single model,0.6618000327793054
+routerbench-0shot,ood,gte,KM-Prox,0.6763589015116486
+routerbench-0shot,ood,gte,KM-Prox (validated),0.6764135795789153
+routerbench-0shot,ood,gte,MLP,0.6754501427119859
+routerbench-0shot,ood,gte,Realized oracle,0.9029676483181608
+routerbench-0shot,ood,gte,Ridge,0.6795775899602454
+routerbench-0shot,ood,gte,Family Adaptation,0.7006057189943876
+routerbench-0shot,ood,gte,Utility-cluster control,0.6728222059589888
+routerbench-0shot,ood,gte,Validated kNN,0.6565929300595325
+routerbench-0shot,ood,gte,kNN-100,0.6615458911913775
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,0.6841289253604352
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,0.6802892358118946
+routerbench-0shot,ood,reader,Avengers-Pro,0.6580534165053548
+routerbench-0shot,ood,reader,Best single model,0.6618000327793054
+routerbench-0shot,ood,reader,KM-Prox,0.7027587804204654
+routerbench-0shot,ood,reader,KM-Prox (validated),0.6984422436645924
+routerbench-0shot,ood,reader,MLP,0.6918014701813846
+routerbench-0shot,ood,reader,Realized oracle,0.9029676483181608
+routerbench-0shot,ood,reader,Ridge,0.6902189691163947
+routerbench-0shot,ood,reader,Family Adaptation,0.715697026270787
+routerbench-0shot,ood,reader,Utility-cluster control,0.6961923243308417
+routerbench-0shot,ood,reader,Validated kNN,0.7033769668366433
+routerbench-0shot,ood,reader,kNN-100,0.7006755642363331
+sprout-sixfam,iid,gte,Avengers-Pro,0.8138151941079973
+sprout-sixfam,iid,gte,Best single model,0.7868408531781085
+sprout-sixfam,iid,gte,Family lookup,0.8096640297411946
+sprout-sixfam,iid,gte,Family-topic lookup,0.8122482880458721
+sprout-sixfam,iid,gte,KM-Prox,0.8148429108037285
+sprout-sixfam,iid,gte,KM-Prox (validated),0.8165692650305544
+sprout-sixfam,iid,gte,MLP,0.8105224359634577
+sprout-sixfam,iid,gte,Realized oracle,0.9604683811008115
+sprout-sixfam,iid,gte,Ridge,0.8179012386997565
+sprout-sixfam,iid,gte,Family Adaptation,0.8093072399110246
+sprout-sixfam,iid,gte,Utility-cluster control,0.8159288522275092
+sprout-sixfam,iid,gte,Validated kNN,0.8183307176974429
+sprout-sixfam,iid,gte,kNN-100,0.8187106867667363
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,0.8178216655447185
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,0.817737144688411
+sprout-sixfam,iid,reader,Avengers-Pro,0.8168505856414053
+sprout-sixfam,iid,reader,Best single model,0.7868408531781085
+sprout-sixfam,iid,reader,Family lookup,0.8096640297411946
+sprout-sixfam,iid,reader,Family-topic lookup,0.8122482880458721
+sprout-sixfam,iid,reader,KM-Prox,0.814161244154033
+sprout-sixfam,iid,reader,KM-Prox (validated),0.8189240779887071
+sprout-sixfam,iid,reader,MLP,0.8128393672313652
+sprout-sixfam,iid,reader,Realized oracle,0.9604683811008115
+sprout-sixfam,iid,reader,Ridge,0.820941104957265
+sprout-sixfam,iid,reader,Family Adaptation,0.8095987817609291
+sprout-sixfam,iid,reader,Utility-cluster control,0.8189724913965275
+sprout-sixfam,iid,reader,Validated kNN,0.8212342687211619
+sprout-sixfam,iid,reader,kNN-100,0.8206043798202383
+sprout-sixfam,ood,gte,Avengers-Pro,0.7439023407354728
+sprout-sixfam,ood,gte,Best single model,0.7574596183528153
+sprout-sixfam,ood,gte,KM-Prox,0.7459561589754545
+sprout-sixfam,ood,gte,KM-Prox (validated),0.7482800022636807
+sprout-sixfam,ood,gte,MLP,0.7563625475188728
+sprout-sixfam,ood,gte,Realized oracle,0.9600698070715524
+sprout-sixfam,ood,gte,Ridge,0.7674035564441811
+sprout-sixfam,ood,gte,Family Adaptation,0.7602711630813226
+sprout-sixfam,ood,gte,Utility-cluster control,0.7496348564479843
+sprout-sixfam,ood,gte,Validated kNN,0.7534385652355174
+sprout-sixfam,ood,gte,kNN-100,0.7529084942971107
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,0.7812322692084741
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,0.7806172777633994
+sprout-sixfam,ood,reader,Avengers-Pro,0.7713544288631995
+sprout-sixfam,ood,reader,Best single model,0.7574596183528153
+sprout-sixfam,ood,reader,KM-Prox,0.770928701402553
+sprout-sixfam,ood,reader,KM-Prox (validated),0.7764149978197066
+sprout-sixfam,ood,reader,MLP,0.766686178545653
+sprout-sixfam,ood,reader,Realized oracle,0.9600698070715524
+sprout-sixfam,ood,reader,Ridge,0.7712062383449891
+sprout-sixfam,ood,reader,Family Adaptation,0.776661289009449
+sprout-sixfam,ood,reader,Utility-cluster control,0.776680571211205
+sprout-sixfam,ood,reader,Validated kNN,0.773903974942869
+sprout-sixfam,ood,reader,kNN-100,0.7731341424069859

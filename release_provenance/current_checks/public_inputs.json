@@ -1,0 +1,578 @@
+{
+  "passed": true,
+  "scope": "Remote-verified pinned public data/tokenizers; no model weights or encoder execution",
+  "assets": [
+    {
+      "asset": "routerbench",
+      "revision": "784021482c3f320c6619ed4b3bb3b41a21424fcb",
+      "files": [
+        {
+          "path": "datasets/routerbench/raw/README.md",
+          "bytes": 1027,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "913e76f57054d55a28ff0887e027e3d8e93df4a9"
+        },
+        {
+          "path": "datasets/routerbench/raw/routerbench_0shot.pkl",
+          "bytes": 99567659,
+          "checksum_kind": "sha256",
+          "checksum": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d"
+        }
+      ]
+    },
+    {
+      "asset": "sprout",
+      "revision": "d54e3cda2189ca1ed13a877a44ed34736c4b6920",
+      "files": [
+        {
+          "path": "datasets/sprout/raw/README.md",
+          "bytes": 4255,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "d8d7f0f033cb45d2e73ebd9847343015a5a70282"
+        },
+        {
+          "path": "datasets/sprout/raw/data/test-00000-of-00001.parquet",
+          "bytes": 87262738,
+          "checksum_kind": "sha256",
+          "checksum": "d40ac32d71b5716cd8b7f5c33c05612c3b111a3a1ed855a6e9504ad0bd54948f"
+        },
+        {
+          "path": "datasets/sprout/raw/data/train-00000-of-00003.parquet",
+          "bytes": 134710470,
+          "checksum_kind": "sha256",
+          "checksum": "869336223180644e4c8395af51c8fee51ffdfcf619fce96392f6e0179a6fa3ff"
+        },
+        {
+          "path": "datasets/sprout/raw/data/train-00001-of-00003.parquet",
+          "bytes": 136895290,
+          "checksum_kind": "sha256",
+          "checksum": "c9d3e62145d1951032edad5be5701425a4109c271a9ffba4f45bd3d8fd4932ae"
+        },
+        {
+          "path": "datasets/sprout/raw/data/train-00002-of-00003.parquet",
+          "bytes": 135106423,
+          "checksum_kind": "sha256",
+          "checksum": "f3b0f101a1fe0381d2c3637f28a4a2ecc15830af60b46924590fcbc59fccff5e"
+        },
+        {
+          "path": "datasets/sprout/raw/data/validation-00000-of-00001.parquet",
+          "bytes": 86893175,
+          "checksum_kind": "sha256",
+          "checksum": "c0d710427c0c902f8283c02fc1cf9f10416f51cb183c99ea92e3f633f8db9862"
+        }
+      ]
+    },
+    {
+      "asset": "minilm-l12",
+      "revision": "a50ef00143b4d5391434df20ae11632588ac25be",
+      "files": [
+        {
+          "path": "embedders/minilm-l12/1_Pooling/config.json",
+          "bytes": 190,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "d1514c3162bbe87b343f565fadc62e6c06f04f03"
+        },
+        {
+          "path": "embedders/minilm-l12/README.md",
+          "bytes": 10514,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "3584154ea565fdde01c15815e8864fa0313106a7"
+        },
+        {
+          "path": "embedders/minilm-l12/config.json",
+          "bytes": 615,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "997449989924d15c7b98619a97c899740c99854d"
+        },
+        {
+          "path": "embedders/minilm-l12/config_sentence_transformers.json",
+          "bytes": 116,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "fd1b291129c607e5d49799f87cb219b27f98acdf"
+        },
+        {
+          "path": "embedders/minilm-l12/data_config.json",
+          "bytes": 39265,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "2e85f0eac205cf444bdf97ede4935603ca6a0416"
+        },
+        {
+          "path": "embedders/minilm-l12/modules.json",
+          "bytes": 349,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "952a9b81c0bfd99800fabf352f69c7ccd46c5e43"
+        },
+        {
+          "path": "embedders/minilm-l12/sentence_bert_config.json",
+          "bytes": 53,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "5fd10429389515d3e5cccdeda08cae5fea1ae82e"
+        },
+        {
+          "path": "embedders/minilm-l12/special_tokens_map.json",
+          "bytes": 112,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "e7b0375001f109a6b8873d756ad4f7bbb15fbaa5"
+        },
+        {
+          "path": "embedders/minilm-l12/tokenizer.json",
+          "bytes": 466247,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "cb202bfe2e3c98645018a6d12f182a434c9d3e02"
+        },
+        {
+          "path": "embedders/minilm-l12/tokenizer_config.json",
+          "bytes": 352,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "160e50cfb71e8ec988666144435831d7257cd3b8"
+        },
+        {
+          "path": "embedders/minilm-l12/vocab.txt",
+          "bytes": 231508,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "fb140275c155a9c7c5a3b3e0e77a9e839594a938"
+        }
+      ]
+    },
+    {
+      "asset": "gte-qwen2-7b",
+      "revision": "a8d08b36ada9cacfe34c4d6f80957772a025daf2",
+      "files": [
+        {
+          "path": "embedders/gte-qwen2-7b/1_Pooling/config.json",
+          "bytes": 298,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "0b135f01d8b469cd7ccd5467eddad779978a8ddd"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/README.md",
+          "bytes": 147256,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "3393346bc306ed37d2a414ecd481e9976522ba68"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/added_tokens.json",
+          "bytes": 80,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "409be9f93d4810d569098a16c4bf30c977edf44a"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/config.json",
+          "bytes": 902,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "a9e4963872a0007ca95a22f941fc0d96db55d3f2"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/config_sentence_transformers.json",
+          "bytes": 284,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "48db36c0419aaf25de374105e28d4317bdafb58d"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/generation_config.json",
+          "bytes": 117,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "cfe930046d635990853f302e81c3211c7a0535b7"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/merges.txt",
+          "bytes": 1671853,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/model.safetensors.index.json",
+          "bytes": 27752,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "f9e2dcdafd7f1dd050ea8f8b1b5f1eb7428130c7"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/modeling_qwen.py",
+          "bytes": 65203,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "2d2045522f422e6b306f1c29a4836aea1f9d3a15"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/modules.json",
+          "bytes": 349,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "952a9b81c0bfd99800fabf352f69c7ccd46c5e43"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/scripts/eval_mteb.py",
+          "bytes": 36209,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "1fd330fabc9b7a20fbc314c94805424defecf78a"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/sentence_bert_config.json",
+          "bytes": 55,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "62244604e6bde5bb9ad3d244bfb0505e770d4d7a"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/special_tokens_map.json",
+          "bytes": 370,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "63fbc67881d34146bdf06dc3b24107a394ae9a7a"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/tokenization_qwen.py",
+          "bytes": 10811,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "db342039f7789058e18cca82e6e83bfe96fe6a6d"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/tokenizer.json",
+          "bytes": 7028015,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "33ea6c72ebb92a237fa2bdf26c5ff16592efcdae"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/tokenizer_config.json",
+          "bytes": 1312,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "a7172ae01cf8da9b14ec5725c2b74a14388c8b1a"
+        },
+        {
+          "path": "embedders/gte-qwen2-7b/vocab.json",
+          "bytes": 2776833,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "4783fe10ac3adce15ac8f358ef5462739852c569"
+        }
+      ]
+    },
+    {
+      "asset": "qwen2.5-7b-instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "files": [
+        {
+          "path": "embedders/qwen2.5-7b-instruct/LICENSE",
+          "bytes": 11343,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "6634c8cc3133b3848ec74b9f275acaaa1ea618ab"
+        },
+        {
+          "path": "embedders/qwen2.5-7b-instruct/README.md",
+          "bytes": 6240,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "4e9536cebaeb5cac673952ad5d0eeae469900f81"
+        },
+        {
+          "path": "embedders/qwen2.5-7b-instruct/config.json",
+          "bytes": 663,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "0178295f88afc3c7f279ed284f961f8c1be00654"
+        },
+        {
+          "path": "embedders/qwen2.5-7b-instruct/generation_config.json",
+          "bytes": 243,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "0eb3c536657dcd12626e09eca4b6198c0cbcde1e"
+        },
+        {
+          "path": "embedders/qwen2.5-7b-instruct/merges.txt",
+          "bytes": 1671839,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0"
+        },
+        {
+          "path": "embedders/qwen2.5-7b-instruct/model.safetensors.index.json",
+          "bytes": 27752,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "14d037fdda5a1311dcc0275003a7a370d84114e6"
+        },
+        {
+          "path": "embedders/qwen2.5-7b-instruct/tokenizer.json",
+          "bytes": 7031645,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "443909a61d429dff23010e5bddd28ff530edda00"
+        },
+        {
+          "path": "embedders/qwen2.5-7b-instruct/tokenizer_config.json",
+          "bytes": 7305,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "07bfe0640cb5a0037f9322287fbfc682806cf672"
+        },
+        {
+          "path": "embedders/qwen2.5-7b-instruct/vocab.json",
+          "bytes": 2776833,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "4783fe10ac3adce15ac8f358ef5462739852c569"
+        }
+      ]
+    },
+    {
+      "asset": "mmlupro-subject-metadata",
+      "revision": "b189ec765aa7ed75c8acfea42df31fdae71f97be",
+      "files": [
+        {
+          "path": "datasets/sprout/source_metadata/mmlupro/README.md",
+          "bytes": 11723,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "29e49a8b4c80bb3701e56f69acd89197f0eea371"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/mmlupro/data/test-00000-of-00001.parquet",
+          "bytes": 4144185,
+          "checksum_kind": "sha256",
+          "checksum": "0e24a191921c2f453518a537a8b2117bd137e7714d4ef1565e9ba06c1ecb9ad8"
+        }
+      ]
+    },
+    {
+      "asset": "math-subject-metadata",
+      "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+      "files": [
+        {
+          "path": "datasets/sprout/source_metadata/math/README.md",
+          "bytes": 3926,
+          "checksum_kind": "git-blob-sha1",
+          "checksum": "9ab6422553ffa7c65f5c11386d1599fc77149101"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/algebra/test-00000-of-00001.parquet",
+          "bytes": 353114,
+          "checksum_kind": "sha256",
+          "checksum": "0e04a850dac9cfc758eac0c80afd2d0cc65e29ea72f916c8ac1045b12af937f5"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/algebra/train-00000-of-00001.parquet",
+          "bytes": 505186,
+          "checksum_kind": "sha256",
+          "checksum": "73347f5b55869f21ff094361025dbd12d291e971aa4d72142eacee10438e449f"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/counting_and_probability/test-00000-of-00001.parquet",
+          "bytes": 175032,
+          "checksum_kind": "sha256",
+          "checksum": "c324818949c75a6227c0328a8499d58023cbbf6757cfc1736f5ab24cc8d87966"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/counting_and_probability/train-00000-of-00001.parquet",
+          "bytes": 329354,
+          "checksum_kind": "sha256",
+          "checksum": "d37ae017930df41678edee50dcde18c17fb06afaff9eb505c1b95f1002bfcb31"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/geometry/test-00000-of-00001.parquet",
+          "bytes": 263835,
+          "checksum_kind": "sha256",
+          "checksum": "98720f3a8134ad9784fd8951195245264495df03ffc5c9485a9a54ff5ae2431a"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/geometry/train-00000-of-00001.parquet",
+          "bytes": 549388,
+          "checksum_kind": "sha256",
+          "checksum": "9dbf5e5b55499e696e0ba72da9d85d4f0be3acbf7eaa6cb014b0fc78bb63784f"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/intermediate_algebra/test-00000-of-00001.parquet",
+          "bytes": 394797,
+          "checksum_kind": "sha256",
+          "checksum": "e859f72486c951c2017da880541ca729940eaa986b0364eb23e238983df9bfeb"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/intermediate_algebra/train-00000-of-00001.parquet",
+          "bytes": 575154,
+          "checksum_kind": "sha256",
+          "checksum": "0c87f3798ebdfb915b1f9b6fc13c1a8d064c3cb91631ccbe85b83ed5d71150f6"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/number_theory/test-00000-of-00001.parquet",
+          "bytes": 182003,
+          "checksum_kind": "sha256",
+          "checksum": "ba156c9c9fa2040836ba12135fd964e6e67d6bccd8c469ec4a3ad941f8f6fbe9"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/number_theory/train-00000-of-00001.parquet",
+          "bytes": 308653,
+          "checksum_kind": "sha256",
+          "checksum": "81c08649149b39811f2d1d7ddf5dfccf6c4c8044a2e169cfb24db09160c941f4"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/prealgebra/test-00000-of-00001.parquet",
+          "bytes": 267729,
+          "checksum_kind": "sha256",
+          "checksum": "301e5d8ade5c7b5038032532e498bdc9dca799e7f1061a63f2e7d980803240cc"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/prealgebra/train-00000-of-00001.parquet",
+          "bytes": 383626,
+          "checksum_kind": "sha256",
+          "checksum": "765b526fb5c0b8385cb7be2c16bf4f6f28cf71f2bc15c826abfbb5fa7f8616cc"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/precalculus/test-00000-of-00001.parquet",
+          "bytes": 242241,
+          "checksum_kind": "sha256",
+          "checksum": "da37474ba3761ae5727af3844a7ba963a735bd6a14c65e6137593669a4fe3b9c"
+        },
+        {
+          "path": "datasets/sprout/source_metadata/math/precalculus/train-00000-of-00001.parquet",
+          "bytes": 353745,
+          "checksum_kind": "sha256",
+          "checksum": "28bb1ff95525c8d32521509bef91de76339659f5467a381e6e8deea204538f0e"
+        }
+      ]
+    }
+  ],
+  "prepared": [
+    {
+      "dataset": "routerbench",
+      "manifest": {
+        "release_rows": 36497,
+        "cost": "Released total_cost in USD",
+        "rows": 34771,
+        "models": [
+          "WizardLM/WizardLM-13B-V1.2",
+          "claude-instant-v1",
+          "claude-v1",
+          "claude-v2",
+          "gpt-3.5-turbo-1106",
+          "gpt-4-1106-preview",
+          "meta/code-llama-instruct-34b-chat",
+          "meta/llama-2-70b-chat",
+          "mistralai/mistral-7b-chat",
+          "mistralai/mixtral-8x7b-chat",
+          "zero-one-ai/Yi-34B-Chat"
+        ],
+        "family_counts": {
+          "arc-challenge": 1470,
+          "grade-school-math": 7450,
+          "hellaswag": 10042,
+          "mbpp": 425,
+          "mmlu": 14037,
+          "mtbench": 80,
+          "winogrande": 1267
+        },
+        "exclusions": {
+          "outside_seven_paper_families": 1719,
+          "exact_duplicate_prompt": 7
+        },
+        "shared_minilm_rows": 34659,
+        "panel_sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+        "queries_sha256": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd",
+        "prepare_code_sha256": "31c4afd447ea92e16b85f1b313d83559eae7fe793c9eb47cd9690f5f7d7dc6bd",
+        "config_sha256": "856002a63fc7309782cbd7ce768275520d3c7fa5a0b17d10b3b53c69b0705c8d",
+        "raw_sha256": {
+          "datasets/routerbench/raw/README.md": "93b0ba00aaaa24834e21a56b76656cf5bd506543af321898aecf695ec943eb31",
+          "datasets/routerbench/raw/routerbench_0shot.pkl": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d"
+        }
+      }
+    },
+    {
+      "dataset": "sprout",
+      "manifest": {
+        "release_rows": 44241,
+        "native_subject_joins": {
+          "openhermes::no_topic": 19455,
+          "math::matched": 9883,
+          "ragbench::no_topic": 1827,
+          "mmlupro::matched": 11784,
+          "musr::no_topic": 748,
+          "gpqa::no_topic": 541,
+          "mmlupro::no_topic": 2,
+          "math::no_topic": 1
+        },
+        "prices_usd_per_million": {
+          "aws-claude-3-5-sonnet-v1": [
+            3,
+            15
+          ],
+          "aws-titan-text-premier-v1": [
+            0.5,
+            1.5
+          ],
+          "openai-gpt-4o": [
+            2.5,
+            10
+          ],
+          "openai-gpt-4o-mini": [
+            0.15,
+            0.6
+          ],
+          "wxai-granite-3-2b-instruct-8k-max-tokens": [
+            0.1,
+            0.1
+          ],
+          "wxai-granite-3-8b-instruct-8k-max-tokens": [
+            0.2,
+            0.2
+          ],
+          "wxai-llama-3-1-70b-instruct": [
+            0.9,
+            0.9
+          ],
+          "wxai-llama-3-1-8b-instruct": [
+            0.2,
+            0.2
+          ],
+          "wxai-llama-3-2-1b-instruct": [
+            0.06,
+            0.06
+          ],
+          "wxai-llama-3-2-3b-instruct": [
+            0.06,
+            0.06
+          ],
+          "wxai-llama-3-3-70b-instruct": [
+            0.9,
+            0.9
+          ],
+          "wxai-llama-3-405b-instruct": [
+            3.5,
+            3.5
+          ],
+          "wxai-mixtral-8x7b-instruct-v01": [
+            0.6,
+            0.6
+          ]
+        },
+        "price_source": "https://huggingface.co/CARROT-LLM-Routing",
+        "cost": "(released input tokens * input price + released output tokens * output price) / 1e6",
+        "rows": 43887,
+        "models": [
+          "aws-claude-3-5-sonnet-v1",
+          "aws-titan-text-premier-v1",
+          "openai-gpt-4o",
+          "openai-gpt-4o-mini",
+          "wxai-granite-3-2b-instruct-8k-max-tokens",
+          "wxai-granite-3-8b-instruct-8k-max-tokens",
+          "wxai-llama-3-1-70b-instruct",
+          "wxai-llama-3-1-8b-instruct",
+          "wxai-llama-3-2-1b-instruct",
+          "wxai-llama-3-2-3b-instruct",
+          "wxai-llama-3-3-70b-instruct",
+          "wxai-llama-3-405b-instruct",
+          "wxai-mixtral-8x7b-instruct-v01"
+        ],
+        "family_counts": {
+          "openhermes": 19340,
+          "math": 9884,
+          "ragbench": 1589,
+          "mmlupro": 11786,
+          "musr": 748,
+          "gpqa": 540
+        },
+        "exclusions": {
+          "over_8192_tokens": 74,
+          "exact_duplicate_prompt": 280
+        },
+        "shared_minilm_rows": 41324,
+        "panel_sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+        "queries_sha256": "977295d4650e20ecbb1b1b14d9250d2bec9b42efb0633a21d98098157c78c0f9",
+        "prepare_code_sha256": "31c4afd447ea92e16b85f1b313d83559eae7fe793c9eb47cd9690f5f7d7dc6bd",
+        "config_sha256": "856002a63fc7309782cbd7ce768275520d3c7fa5a0b17d10b3b53c69b0705c8d",
+        "raw_sha256": {
+          "datasets/sprout/raw/README.md": "25676c415aea4244859dfe07a85a88361350ff7830bdec9994e08925922e2992",
+          "datasets/sprout/raw/data/test-00000-of-00001.parquet": "d40ac32d71b5716cd8b7f5c33c05612c3b111a3a1ed855a6e9504ad0bd54948f",
+          "datasets/sprout/raw/data/train-00000-of-00003.parquet": "869336223180644e4c8395af51c8fee51ffdfcf619fce96392f6e0179a6fa3ff",
+          "datasets/sprout/raw/data/train-00001-of-00003.parquet": "c9d3e62145d1951032edad5be5701425a4109c271a9ffba4f45bd3d8fd4932ae",
+          "datasets/sprout/raw/data/train-00002-of-00003.parquet": "f3b0f101a1fe0381d2c3637f28a4a2ecc15830af60b46924590fcbc59fccff5e",
+          "datasets/sprout/raw/data/validation-00000-of-00001.parquet": "c0d710427c0c902f8283c02fc1cf9f10416f51cb183c99ea92e3f633f8db9862"
+        }
+      }
+    }
+  ]
+}

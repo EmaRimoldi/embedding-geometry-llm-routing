@@ -1,0 +1,28 @@
+{
+  "sources_verified": 9,
+  "base_questions": 2850,
+  "variants": 11400,
+  "encoders": {
+    "gte-qwen2-7b": {
+      "all_11400_retrieval_rows_reconstructed": true,
+      "finite_vectors": true,
+      "unique_neighbours_and_self_exclusion": true,
+      "metrics_and_bootstrap_reconstructed": true,
+      "selected_variant_exact_ties": 2,
+      "queries_sha256": "312ac571ed12f34251385cb24df461fb41f74b66cd477ba1149353639832da5e",
+      "vectors_sha256": "ebaf5a633650836a7be37c816eecb61b2f0828986a017d3693b3f18a1956eddc"
+    },
+    "qwen2.5-7b-instruct/layer_21": {
+      "all_11400_retrieval_rows_reconstructed": true,
+      "finite_vectors": true,
+      "unique_neighbours_and_self_exclusion": true,
+      "metrics_and_bootstrap_reconstructed": true,
+      "selected_variant_exact_ties": 0,
+      "queries_sha256": "312ac571ed12f34251385cb24df461fb41f74b66cd477ba1149353639832da5e",
+      "vectors_sha256": "10b9738e1ecb0ab46d0cef21d1ef2840f241be0c260a8c3400711bc50d77207a"
+    }
+  },
+  "audit_code_sha256": "ed69b961b0f37e5a536eaac50ae15cf103bad0f1277560971a46aa21516f8072",
+  "paired_alignment_and_intervals_verified": true,
+  "status": "passed"
+}

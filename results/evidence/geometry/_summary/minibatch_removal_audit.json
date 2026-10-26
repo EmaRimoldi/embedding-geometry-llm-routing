@@ -1,0 +1,1238 @@
+{
+  "removed_from": 88,
+  "records": [
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "a17f267d270abb52362db12409ae0f702084ef5be687e50f23487770e89aa1a8",
+        "per_query_sha256": "ae82db236c1da0c0cb630a433ea6195e17c2a7fe32bb8f73fc9e27799d0a5eba"
+      },
+      "new_hashes": {
+        "metrics_sha256": "1f2493ba6c5a3721c0b55817bced46e8d5a5d9e21f83fb8cff601e8e66dd7a04",
+        "per_query_sha256": "ed6e163f85425b1bfa1d6ab23a167729f70df2d383b5300b25e1a5dbf6551f45"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "564c2780ecd04e1aaace73a4dfb2a4abd492fd08a664e65b838ae8cf6ac6e415",
+        "per_query_sha256": "f4b9183cf9c7ca0554fa34367b09542d3ab6b278fed02a831e9a2d76dcea6a98"
+      },
+      "new_hashes": {
+        "metrics_sha256": "059295ac06d76b4a5429b9ccede5a86584ad6bf3412a65218ffacb0216776bfa",
+        "per_query_sha256": "666b113417c22e8e21463feb30f6243fa0e2b596c5713bfac9840281cbfd46b3"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "57c94e8d1583667296133a38757b1c51433eec61165d51b3a7e5f771a1f46a53",
+        "per_query_sha256": "2f40e80b134581baa65641644301431363c3f0179181a240547b9e58c53377b4"
+      },
+      "new_hashes": {
+        "metrics_sha256": "5cb5fa134ca3596cfc9a6df1b3e6df2bb56bfe67dec0d3291d73ba250d23dfd0",
+        "per_query_sha256": "d0440c617919052e1cdc7ed476c6e120e38ea5101eaa42f9213cb1868919c321"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "1df7585d51f4ae65fb23ba5bdd88bc708f61c5112425087d8f607ce2c2964fa4",
+        "per_query_sha256": "137eb8bb8a5e7da74fa67256e8b6cf84edc15bcd7a21a4adaea58435adf51c13"
+      },
+      "new_hashes": {
+        "metrics_sha256": "6924c0d8c2b881a87cb2838fbf28f0a3d7b4d056870691881e9266f1ef349878",
+        "per_query_sha256": "a722fcc99adb878c11decc19591368261fd3dcb3c3d91d201c619b4b9c7dad29"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "dcf76e9aa0c2060aa550d2d97b906e2b3a7961e5186d52437f597aecc3c0dc4c",
+        "per_query_sha256": "326eaefd4008e051f9483e3a1e44edf1a5aedbd5a763fc389f2c74b3623a1cd0"
+      },
+      "new_hashes": {
+        "metrics_sha256": "75ddf7416ccd5cade6f297df12af948dd02d670fd8e955cb4c5f13a14cef39fe",
+        "per_query_sha256": "9c20d913f1a930da60d31a63a06f2ecaddb2353183bb2f86f200c8b74d43a3cd"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "5cfe15b6fec6f945c66e7d590c82e07c6a8de0f5c5805e1716ae1a3776871ae3",
+        "per_query_sha256": "7d9a3386e3e28b823ae3c89f51e435eae99e56f4f1ee74d5b44fbf8e5bc5a333"
+      },
+      "new_hashes": {
+        "metrics_sha256": "68e71274244050e747b817445cd974cd4635ec58db60fb3c2361bee79125aacb",
+        "per_query_sha256": "8b94ed824146674d0038be259dcf59a7c20902fd06a92a02952932e6c287565e"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "23726c34bd4da69a828ee5b62afccfeb3e2ecbd0d64aec78a318b0c1b19979b6",
+        "per_query_sha256": "f8659d3ad05fd55880abca70ae0b7675001f48e3e81dc4ec9544204bc6d8a5d8"
+      },
+      "new_hashes": {
+        "metrics_sha256": "8bd8d4179385efcb2fed53cbbd3704bf579902071f6fe73068402d4ee94d33e0",
+        "per_query_sha256": "841ed853997fa93c6d5ae55b2f88d30246b3ade1ca3cdfc479a7cdc0f4c562b4"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "af3d957688d59fe96a289bff237efcf15bbabfefeddee4e58ec7eb419694261d",
+        "per_query_sha256": "b6cff2a811a4a89b6b569c106c1a124a0469f33ca02f74df7472e22955ce0eea"
+      },
+      "new_hashes": {
+        "metrics_sha256": "6c14ee012eaa462e340163fb8e6aeb0588c6fb92154f359f9ce9cf29cba90e6b",
+        "per_query_sha256": "8f41a161eb61823bf4f34961b7fa56df392e888e424ad17f96753036f8cf06e7"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "c727234add2b8e6f4aa054fdf001fd2a70615ad7181005bc15dddf64e07e11b0",
+        "per_query_sha256": "08e835c4fe745236ba0aaa8a81ccb34c873505e8f759d8cef61fda3fdd4b9d52"
+      },
+      "new_hashes": {
+        "metrics_sha256": "0ea0aab8f056e213cefd100a20cba7eb3f931d5bef65ceaf9e007daf672cb8d0",
+        "per_query_sha256": "800470c6f59a2f27a9da5369d074e2317aae8f93fdaf84853428d0758d20426d"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "ed54cb1ded3104757ddfb5b085ed73bd6e74d12ef6b95075d9f54fd077d49d74",
+        "per_query_sha256": "7c03c825159c252cff3935ed4c7f0352eb2783f606bae3ab437a08956e9e0943"
+      },
+      "new_hashes": {
+        "metrics_sha256": "dec3945e8fda62f21b47774c9b716ca94033f693dc38964f9a72e4f5a5a56fb7",
+        "per_query_sha256": "66d00ceb2006a1ac1783af076d83547378bc98fa91025c2fd916cdfba8ffaeb7"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "00f53d6cfdb937ce440be862ba4a2bed727cf76f520ea622d507016c94974a34",
+        "per_query_sha256": "8bedf7ed37bd1c54c8b04233277efeda1b678baa92102aa2128f76a1326665e0"
+      },
+      "new_hashes": {
+        "metrics_sha256": "a92a33e7c897c16b00dddee42ddde3565c691e82caac3006b51c876637398a90",
+        "per_query_sha256": "f5cb26430baf73f3d00e813bfc22f8721e172a104e3c90070e12864f00a536f7"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "a4cc8488b325b386001435a2130a7c190bc278ab8478917d50a9d5c13fe0e4fd",
+        "per_query_sha256": "c76bc091d3d36453196b1528311a4eebdeed7ff236e7df5643038ae2d8be496a"
+      },
+      "new_hashes": {
+        "metrics_sha256": "63ca455973abd2dbe508312c68098a897c94b25e5a9698a600b209929b11af6e",
+        "per_query_sha256": "13c782303bbc206246f94a066225bcf652bc8fe06c0b5ab6b10f972d337701d4"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "4f77c96170a9644b22244ffa67cd2ce3a12dbe56d7b9ba6eda49ca81ac26f022",
+        "per_query_sha256": "a981edef2f266a1b7686197805d5ebc4dcaa48b8ae869be26a9c6eac9f9ed243"
+      },
+      "new_hashes": {
+        "metrics_sha256": "2698e6039673403792e98833c1c09e9eea2cbc74f8acd3839e8b2e03897068df",
+        "per_query_sha256": "f7ed4a32920da521a2e747e553b1334c67c5577e4e0304b3e24fcf1aafa714dc"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "78daca0421005a4fbd26a453b40d38f7ae92b05e96b90c49b9620ee90c8ec090",
+        "per_query_sha256": "0e63095805fe87aaf5c03193e1b274aed7f544448fdf7376bc0c18833517c383"
+      },
+      "new_hashes": {
+        "metrics_sha256": "921f813579b98a2b36787be8bbce2f0d2f1ba953078cfb7fa819cb3a8314953d",
+        "per_query_sha256": "3117fd224e30491d0cfe3b3f6bcec5d5322bc7b44bb469933ff524a9e6a6716b"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "c222099d2fd1c5b1df03b4880452a750f4e3a12aac270e0e63135393864698ab",
+        "per_query_sha256": "9df4a6249cf1e4317f0d48733925d1b56f76dc7d1f1aba37cc85a9eabd1b6ede"
+      },
+      "new_hashes": {
+        "metrics_sha256": "94e2421de0a9cda65df4f5cd3a44ed4c108a6259f10ad2a3c1327623aec331f2",
+        "per_query_sha256": "0addc6cd2596f923396ed47ff210d8aaab703e9305ad08eb0b69a31435351f93"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "bdba416565a1c024b3289a0a3c147b3122fd70e65e6439d67b2b62a82081626e",
+        "per_query_sha256": "d52ca44d6b950c9b4683ea765f8a5f6398363dc038c3e4d67e0cee7daf196853"
+      },
+      "new_hashes": {
+        "metrics_sha256": "bad80699c46f931ec3a7206196022806e71db399ac4c60477e54aaa63ea2e5a4",
+        "per_query_sha256": "ba3ca64c873cf25e3ffc0ef795e301fc53c464662b8b0db43fd1b93f79b0e6d0"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "553947eed00430a0b69d33b96477774870d004953d7e7b8b7e8a3cf25531e008",
+        "per_query_sha256": "d576cb2e0046be9a9cb54c387785bb5bab9358b234a8f78e4fb0134b679ae223"
+      },
+      "new_hashes": {
+        "metrics_sha256": "d4579e33de0abd783cbe1c956cb7d7697f9643a6f856dd97a3e0860fe6cbc1f5",
+        "per_query_sha256": "e86501e9df12870b957ab4772b9f12251253dd7c33f4ab6a1585b7d82852cf33"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "1814ba94e8ace18a75e81a8631886efd690e210c0329bc3c71915c3c421d7c31",
+        "per_query_sha256": "ecbce649c6ad884af80d6e484e53df537c7dcbe40016816d6b65a8f4e0fda55b"
+      },
+      "new_hashes": {
+        "metrics_sha256": "8626fb645cdfdd4be47ae3f1bc7b21f50c8af997990b2c980b8e6091ccb2aa44",
+        "per_query_sha256": "e2b4bff52900c360516f5deb9f4b0a61e5259bdbc8881c8ce44eea26b8cab31e"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "09ab344593ee65d503e5a94fe7e4da033dbc395f0cbe40841b9c258609ce39f1",
+        "per_query_sha256": "8e8387161a943c6558ff85f2164291b83dfd8721a9eef4e95fed35afd8916102"
+      },
+      "new_hashes": {
+        "metrics_sha256": "9263bb297b4b66270f61d158a65233b473de4641c36d62c48bc61a776d6c7a7e",
+        "per_query_sha256": "8d002fdc05efe645716c10e287e9ac1be3a5c61a3eca47f4489a55b00a45d88f"
+      }
+    },
+    {
+      "encoder": "gte-qwen2-7b",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "d258297c8c9d306c462e6e1f3bf0f6bbd746d3871ca22e64987d50053b567953",
+        "per_query_sha256": "add5184dc205487fc9ee63ac4c233edf45d0f07ef95515dc6f4ef41a2384eace"
+      },
+      "new_hashes": {
+        "metrics_sha256": "f426f95b4dfa507caa397d64f99bf35de684ee163f49ea1aad69687215541558",
+        "per_query_sha256": "a3357aae445ee8ca376717e7a2f4742e1f296ffaf666b06a353b8e4262f1d784"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "94eeaca77b376599628eb1361d2917fc0777efaaa075a0ba0580bcaf135ff208",
+        "per_query_sha256": "17b057fed90419e2212942168a5855b7fe03cdbe60deba3f74774a3dae7f6fda"
+      },
+      "new_hashes": {
+        "metrics_sha256": "c2f26003fd97bd2a4a8cf46073aaec5396a946171fc8d10e74da211b7c29515e",
+        "per_query_sha256": "ec17c0e86d1c6d688581accb4c651e46efe99357afff28473eaf21aad7160e40"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "a1b2e7e5dc6a633bd8ae2364d5eac4ff791d0e2704620944040573e0557b655b",
+        "per_query_sha256": "c319254d847eff95cbdfc96b23148edf7cea0304930b00fa2977d159339a0514"
+      },
+      "new_hashes": {
+        "metrics_sha256": "afc288a22e9a14d8bbc60730d2b4b2d084aa83edd1537a60f1a40ecb9b0c5f80",
+        "per_query_sha256": "945a5c629bf655f571cc815632461e9d4f4e9d43d644ea09e75d73b170a3346d"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "1520abe74f5dc84f827d768c42ec44c0dcac534ac56b79eb817a1f11e973d4ba",
+        "per_query_sha256": "9f2e5663a331cc973664e17b57440ed999267a0c318d3cef56476d69cb449edf"
+      },
+      "new_hashes": {
+        "metrics_sha256": "5559c5cdb33079a872c0ddea2353790b061db2d8ce73c0b290e5e91b481d183b",
+        "per_query_sha256": "033ea403352acd95bd10372170588d0a7d36f1ae382a04fb8fb8cc2c7ab1e587"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "5116384f410fc09b5c003460666d382b1dd946ec178e3f780e8a8403f0f80639",
+        "per_query_sha256": "af22a873e697faa164210e077fe1004e17066e20876c6fa099eaed57cf1cc961"
+      },
+      "new_hashes": {
+        "metrics_sha256": "2343a53bf98280adf44076167d92eb88c1c04b51703063c14f11ede0aba47754",
+        "per_query_sha256": "c8e6ab6043b7b024b81a6e3ba3fc0f7b2ba2d9f435d127e84d2280c124b110ff"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "7b555933d2ed48cf7cad66b34a219e951ed901a212bfc40e8d85df65bf2437be",
+        "per_query_sha256": "4d3f1ff60e65cf81a78f4dd9c55dca6d42c24996907975c53445d4524cc66cc1"
+      },
+      "new_hashes": {
+        "metrics_sha256": "ad0656bc3e91d92ecce35fac808ebf9902bd95b0ad4094c5b5ab63f5e35edc4f",
+        "per_query_sha256": "cb34f47cfe23dd28d05fbff4d9648e00d97a4217347ddb58bd3aca112b44ff26"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "97bee59a77b64ce1f48e81110609ba75274773e9a69f59f1095a7dd01130dd56",
+        "per_query_sha256": "c494a45e40ad1d99733b0a64aa504840c87304b2d7fac3ec8e64f7a2632b7773"
+      },
+      "new_hashes": {
+        "metrics_sha256": "49a9f8f2c25e279fd6a62a126df1857dad70fcaf071f83c1a314c4e19433ed4d",
+        "per_query_sha256": "ee4b9150cefba56946d95804cf6e9074a19f2e93117bf8147e5525eadabac145"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "897b490f62dbb0b625916cb45f42363d4354dd99b1dbe2be03409048f93a9d61",
+        "per_query_sha256": "d22ce9a2e3c40986979cd1cec512dcdc8632b08755ff6f142663ad7f3e489c97"
+      },
+      "new_hashes": {
+        "metrics_sha256": "2fa2dad730f6af48d41dde32face0a330bd054d9f368c17590a355bf52690b12",
+        "per_query_sha256": "72175f7a88f49cd0e51a059a4706c4e825a52cdea6842ed713112d6fc33da2c1"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "f74a10b49a46c9f5af780118e834f03387a5045470fbf5d39f8f39422e9b88fc",
+        "per_query_sha256": "02228fd21a680138273185b254c5ac6c8b232a0f4b26b88bdcdcf6f2e87144ea"
+      },
+      "new_hashes": {
+        "metrics_sha256": "5f08018cad1f025481667aa2e27f680457cf58401142bb63028beefd7b27d417",
+        "per_query_sha256": "85113423f2b800b4b7be4f2318b93296bacff3fbd416f5156bc35e38ec427ad8"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "5ea6f2ee4fb82f49b72b02152549dee2a3b8264996db900f18394268191d2c47",
+        "per_query_sha256": "643b1e417298f628fac34af2a0f9707b6812a520ad042e1d3bf2fc4fe941efd3"
+      },
+      "new_hashes": {
+        "metrics_sha256": "9e99bd31a7f929858fd6ebb97898568bfcaf69aaa65d0d9301363682f1df16d1",
+        "per_query_sha256": "290af45b43dbc08a20480fc00e5d51625f272bfbc8feb2672cbe8e5e476cdc85"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "116d8ca84523856a9c102a7e84fd780303a03104a73b9cb431fb611483fccb32",
+        "per_query_sha256": "c7ed8c3e9dcce516dfe6fc65f71ac52860d7b9fb44e71719513b2def04d38a85"
+      },
+      "new_hashes": {
+        "metrics_sha256": "e2d7cc19f289713ff15a28b3bf7b7630458d90499a995ecc30e479f22ba1ffc3",
+        "per_query_sha256": "f49e60818ba6f67fe3bd3092eafdb8f7b61f709b80fc7f98fbe98561f0faf93a"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "f0c7a7f035f7a4bbd52513f0541b4d9fc303ef1f6492152a77da3d8616e550af",
+        "per_query_sha256": "cb974cd18f7c08035eb585ab2c88bcc58ca91df7dfb88c615d39f4c7e4e743b8"
+      },
+      "new_hashes": {
+        "metrics_sha256": "717164b305dba8e023b3823e5994e0e8dd4dd03366bea5f16ceac074dd24a53f",
+        "per_query_sha256": "a3a1f6cbcff9cad64c15f9fc0a17205951d72b98f537d0aa061190605509a7c3"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "ac3de6ec0723724791fb3e40b5127bf351573238fe0e29a93c694e0b24e09544",
+        "per_query_sha256": "3b6cc60ccdc2236f5eeac1d8e099dbe348ab4553671c292a95ef505e380804aa"
+      },
+      "new_hashes": {
+        "metrics_sha256": "188e892cf438acb0f4f63924341e0e4da54ddc50b2e3211d462e6ef50d2d54d9",
+        "per_query_sha256": "4950036dbb7b5a3da7eb9f5f5b96a02532ebceb64765031743d42196bd4f2dcc"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "62452a616e37657871e497b575578144730ac91834b598c43948727919ca030e",
+        "per_query_sha256": "52d7bb21e77aaa293e65adb16a1f361089573278092fada58ae441d5879959fa"
+      },
+      "new_hashes": {
+        "metrics_sha256": "7b9ccfc927d81876d5d7f05d1bb9160997bad8e38906ac6fdf236184597a63cd",
+        "per_query_sha256": "3dfd09ff7f02cde888509ce4449af8c740a95601e8bb7ed7be549feb6a7addf1"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "25d70fdd6add72f3cfce0a51a29258027b845b5de6ae8c68b5a516fe93f3f8a5",
+        "per_query_sha256": "50a4a5da643799914cae30b0b0ba6e3b8e6f8e66be499646490c18e6d1858f13"
+      },
+      "new_hashes": {
+        "metrics_sha256": "dd7415a8343431285215863347f93746365d49ce8c1e379797c1e164e9ec08b7",
+        "per_query_sha256": "2085496bec935f76229433f557b4d6f5bbf4ee4a841d1bb94a8a2fd91c25c4d8"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "33643a14df2095e1c919ee21ba8c4d0a6ef6a5c15d87b8ceed6527f42023fb78",
+        "per_query_sha256": "8637368007567afa5d7a392182d5d93728998d63c384e3c7694af03bc2386cca"
+      },
+      "new_hashes": {
+        "metrics_sha256": "9089490e4ecfcb914e9d4f141c1ae2546429f9dd7a3454a22a003fb3a36faaea",
+        "per_query_sha256": "f01eec0d2aa9f7429e6f10cc7e0e0f5249c69718b74af2fa0a732ea714529490"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "3d1085fa5364e797697009e7063bce36a72911a2623d7d93583e54941d92f217",
+        "per_query_sha256": "88c073fc52fe7854d1f13b9e64dafeeb2d344bc57a2cee31f67c7fa358047404"
+      },
+      "new_hashes": {
+        "metrics_sha256": "17754569b09bb909c00a1713c35e0949bd5d89a73d7d43e31fc96c2de30e3888",
+        "per_query_sha256": "7dab202ead0d12fc3981429b66f6e046bc73f3ef99368d4e965725f8f9792f2c"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "285b7ff51431be0b207804423b1d4c24b0f333052cce291ec83fccba54f7b3d6",
+        "per_query_sha256": "959a921bb923b619a53d1f330ad115ca57d9fb2167028b41ed0dae7c3b5637a5"
+      },
+      "new_hashes": {
+        "metrics_sha256": "145ec960f1bfc07dc8d7aae663079436dc5ac35fd6856794f69cd5d43fdb438f",
+        "per_query_sha256": "6a15ab6faad6e1f0d59cd4ba981728b2a9bde2db97fd536ef03f7cbbf086fa7c"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "9acb6b1b7418b6f1b4e0565d371ee6e72cf90e9afc693238d10ee6e9c162c8d8",
+        "per_query_sha256": "b6da0b664a34655be9f7e95cf9b33021e492dc9789157edf26709557ac0ad5aa"
+      },
+      "new_hashes": {
+        "metrics_sha256": "d3992063df721620fa42d065d19ab17500d5ec3f48573f1c52a769c0e6c5f024",
+        "per_query_sha256": "346f254f09435ba2382e1afa6dbf43434d88a28a1bbd755b216288f2744321da"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "8c00ee9be6366c47b2fb464f9341340ccd084e115fdc98ef9babe228180d5108",
+        "per_query_sha256": "1272bfb9ce3c04d19d92e863b3e40fbfa680adf32684e19efd75cc95da675fc1"
+      },
+      "new_hashes": {
+        "metrics_sha256": "ba977d3c7e09717f9d2a2986973350be2bacef12490c80269bfb11e49a43613b",
+        "per_query_sha256": "14ae5da9eb6db8b2ffab24ee34b942d1cfb887f1c8767fa4ad1b779d2c785797"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "d42dc6291f88e7bf5f3ca4b9cac16391c6cd057b305cd88bba63dfa453fe60e1",
+        "per_query_sha256": "2b3f4aff174eb38649ed3fe69e6b10a55247d078917a874fa24bfef5ffa06469"
+      },
+      "new_hashes": {
+        "metrics_sha256": "bad8362599574bbcc8a17288c0262e1ad5255731b5cbf7ef43af6cebf5cef4a4",
+        "per_query_sha256": "0d4caff29893accdf6d70b42fd4733a59387337d0e89d3e1c4a3731e80719774"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "75bcdf8a2ade64c75ffc8db753d59f8852161aebe0e3ceb7993545d0f1b2b2aa",
+        "per_query_sha256": "cfc9d3d8c6bb42d38e17c62237321f761e8d9044a8d9ce37343e591a5b3975e3"
+      },
+      "new_hashes": {
+        "metrics_sha256": "a5329f10e15d91cdada89653c2db99549725f2ff83e0f548cfda1fbca83c1240",
+        "per_query_sha256": "0a2de664ac00bc461573501e7ab2a1607c7159cc4af13befeebcd383bb62bf95"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "5618c09ce4690cd10ec1a33bf4b73b0445004f6b59c7071fc275d30f3075a5d9",
+        "per_query_sha256": "3bedac9df381763f306d8543ee4325c6321dfa051b7b2e8ad2a88f517a89cf52"
+      },
+      "new_hashes": {
+        "metrics_sha256": "0ac8b443f885812772ec85337f2f1fc41ad1db0c564cb5133d697e695bc66cdf",
+        "per_query_sha256": "f9266ff90f8f13e816cb5adaed674d426b383b0c376df20562297312396a5a6b"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "dd61a1baddd70eb861ca6cf04e253bcccbdafc66de374a61ee9d842436f43c9c",
+        "per_query_sha256": "3fca3d6ad8109d0675eccf972de7108afed2f6050ce61da2afecf739bd526da7"
+      },
+      "new_hashes": {
+        "metrics_sha256": "c90066510550438271827f3d64d7f359e2736c367c431fd02664b9a978b985c1",
+        "per_query_sha256": "61f4265fce5a18ddb90d58d0f4160c58bc3b8f7d07a34e75fb87c4b0fea08ee8"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "1cb55c14e9b2b420788797a90709661a2ec8fadd4851e0a2fc0f4c86b8961637",
+        "per_query_sha256": "a44f9af385ac5686f96611b9787bc2c73162b8ffcab542c20cb2fc6da8ce56f6"
+      },
+      "new_hashes": {
+        "metrics_sha256": "ee10d79cc69f11f5ef60599f7835aaeb2ffc0cc851cc304f656b9961e4fbd9bb",
+        "per_query_sha256": "2111c4ef60815c95ea1cf3e34c99f9779ab1d0a1b0fb8f8a9f761fa98825747c"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "39d2f0d10ec4df07c1272235af5d27393fbad006b7d8f5a368dc229450c55fc6",
+        "per_query_sha256": "c15c0dac0711b4dd511c52e8de28625e6023114963d5302cfb4a8fd44e6fc473"
+      },
+      "new_hashes": {
+        "metrics_sha256": "51972a5dd0a9bf72ff9b42cbaede97164e83dbf30476df39405a4022fec40ee8",
+        "per_query_sha256": "f9ae7472383466c6ba2b21c261ed850cfe1d8578a7a6563a33823c72411e64e5"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "279d1c9d9eeab6ceda121da08b8735fa8a68c0c170e0ab2007a80481050f9918",
+        "per_query_sha256": "2363fb06f7c1562539e5f8bbd487f46fc41ae1534cd88903e43fe67d25bf70c0"
+      },
+      "new_hashes": {
+        "metrics_sha256": "708a4e77f060c9a82d009e383a56f0883278e1e60db31d36b4d9771a707e87bc",
+        "per_query_sha256": "f0b419e749136b2ef281da84c9b4b54ad5abb304bf6df15e11fc8cb60da17948"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "e49224d1c0b16768c94300610ff492c8980d4d35784fb8e3ac3f4e38bb13e707",
+        "per_query_sha256": "6227233f6842b3e1e8b8e7439bb47e67eb92abd7b832614e7d8e71bee61d7ffd"
+      },
+      "new_hashes": {
+        "metrics_sha256": "182727a11fea9cc077180ff58a91a10994aa9a0a6cb4f29eeb41d29ae747b84c",
+        "per_query_sha256": "db19ca3529fbb11c218522fe9876f053114101516c8844bd869573528a14cfc3"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "a94489df6dc5bb105d83be431856d22cfeaf53d17ad0f4eb11d0c53d7375bf8c",
+        "per_query_sha256": "8a997f77ce641f7a02f4e23968b12726e23a4992564e966341392cdbdc58a14e"
+      },
+      "new_hashes": {
+        "metrics_sha256": "a5661e53c7f03be98fc2cdc7971aad9e63ecd32504d4402a0a5ec409dd323aa4",
+        "per_query_sha256": "244c002640afe8825ef7e37652d9471e32fd9e4d26f21274af073e8eb17ac213"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "09114500ed1ff801d95596da2e8dc14e720d750b1710d90be5c640b3fb9353c7",
+        "per_query_sha256": "03b1183f89bd136e87145c964cba89cc3e391354891537df59467770b7a827d3"
+      },
+      "new_hashes": {
+        "metrics_sha256": "b22ae1398ea8dbe3f3f06efbb28708d1aa2c37f5df3d8d3f54ac9363d8322d4f",
+        "per_query_sha256": "d53f2769b5656d5ceac48b8430f7b159524bbb87f1854269308d8ce1b6ca898e"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "13b8d11dc0d3acb82e69f6a06d4c1351789e018f9d1fc27b074665517f8aee56",
+        "per_query_sha256": "2b7f4a4625fbceb6a5bdacfd24b60562de83f5fd6103254f433493259e4aedc0"
+      },
+      "new_hashes": {
+        "metrics_sha256": "7e198e7d642afb756e3d07151b2e66013206837635e7051f058c4b6d874fe166",
+        "per_query_sha256": "f984ed8430a0ac9acd3e8c2c4f6b7534d5c7394ad0a9f3494207aecbf922d3e4"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "f960c4cffc76777474d6e0af847c5c1f0ce12f990c02e0f6af824e7f7d3f13a0",
+        "per_query_sha256": "bf8f2964a0c9af55308303e0a10dc2ac2aa4b4935086b4bb4093aecb707b5b89"
+      },
+      "new_hashes": {
+        "metrics_sha256": "2fae773d4be2266d1e2f5d0add986d957e8029956fe21a70a15fc73337e35b2b",
+        "per_query_sha256": "ec76d9a8a9b78b693a3db8047c3f9d13262f381d8b52b936e0a93e1f4f9009e3"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "6609f5de38579a5c3b4f28064b2fb3e1bbb1e5b5d6456132b016957f1b918758",
+        "per_query_sha256": "6c0fb75030fca90cee8fa628629863d326c57d06f99570553584b9e2af24b5d9"
+      },
+      "new_hashes": {
+        "metrics_sha256": "dbb172252c33cb8cef6639f19c40a2ea1e004012b250b8e5b7129a4035158fcb",
+        "per_query_sha256": "27a5226f1ec9d3ce37664683efa9b0976f165ac413a62ec19648ac786d2bf751"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "5e67195ebec54fe82411293d1d4054c3f25bc6b2f6a93f95239b1f4072137ae9",
+        "per_query_sha256": "8dab0829a41ed59e93732fd992b1ab94f46422f02c9fea4f4dbd12d57faad80b"
+      },
+      "new_hashes": {
+        "metrics_sha256": "da35b12a053ff7cef249d3378abb53080e8300f700fea9f577d2a54fbb7a52b2",
+        "per_query_sha256": "b012bed8269679ec5bd30cef8831731d12d3b2baf87bbbc7c2f252a4a3918266"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "ac0184b3237ec55b526b7c704872b5839e97db5231a9dcaf056205ee979d6f06",
+        "per_query_sha256": "3d32209d9d6e43746e08e44e44afd719ed70f5ca9b7f561b258e9e38429d2f7a"
+      },
+      "new_hashes": {
+        "metrics_sha256": "4f14c217df89d65644d6617d0fecbe4f5b5a98e5bc97f20e17aa8acadcca3fa4",
+        "per_query_sha256": "7ff38e65676db0378d91da394575baa7e1bbe516f93784fa7a3bbb73c6d78a8d"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "40a4b5f27c5081a13fed4811cf2c70e516b0f08e651ef8b9cc8df6081810e1f4",
+        "per_query_sha256": "8f6a21eb1b85c67846899c709048a9a9ff44b6d4b383e1850d345898677500aa"
+      },
+      "new_hashes": {
+        "metrics_sha256": "411789a71001056547d93b59c23a77d669727e21b33c6c86d75229ddd6cb236d",
+        "per_query_sha256": "3c83ba047791e5c63ed691a5a1b690f5cd079450e531f37e056a9e43c9c1db86"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "006788893105b13fd0c030ce5b1204fc3442e701b10f300d0e0d1c09e59d6800",
+        "per_query_sha256": "dcf323b6e17678993ed5bd3f2e7fd75e57fe6f7fd4b6164b63a3ad65e8d45e16"
+      },
+      "new_hashes": {
+        "metrics_sha256": "3cbb0b14c66cebde3fab727b3d62e6761c67b1b187e470f025f3706fcfb888a8",
+        "per_query_sha256": "256319cd32418e1ed184f1b4b28001d0a40ba32096489fcd473ed4c6c27400d9"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "2ab2a36213368dabcbf496045a60bceb374a2d751a613cf109f5f177b4cdef0e",
+        "per_query_sha256": "ab7776afc95dc95ce1145be3b0ea1c177536592d17efed62b958c3029cd7c05b"
+      },
+      "new_hashes": {
+        "metrics_sha256": "60ba803b82021859075bbb390d3024f949ba3863b6766f4a2d90efb9e658ec58",
+        "per_query_sha256": "47f2625f544c5710b8d3eab424d872b6b7566c8040220f4f1c8b97d33f624fd9"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "6b43b788d7e4e6b675195ff0b2787e637a55c2d2152de1ce2724299823709b2e",
+        "per_query_sha256": "1f4d0a97bcdfb71e2cf58e1b753ed881621ccb3d71433003eaa5a197a27eb7a1"
+      },
+      "new_hashes": {
+        "metrics_sha256": "8e9296492870422420764696eada8ba0a46478afaa0ad77549bc2f679594b008",
+        "per_query_sha256": "f4f5a4a0cea01e82dc1949edfa0e7c8f2528be9d0fd1534ead20239af280039e"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "b4c82e033ed7f9732373c2ce69f811618c634f124560ace5a494abba7f99842b",
+        "per_query_sha256": "d2abe6b79c572a5e9b7ba3a82099f4524a9bcbf98b7313d6d8b110524ecef1c2"
+      },
+      "new_hashes": {
+        "metrics_sha256": "1620e8b546bf8295f669c9849640e238855f17d873b4dcfba887ef003296a978",
+        "per_query_sha256": "4c999a72c2c16a913b1ac442d34b1e1a7b30e25f8582ff52bef17475757b34fc"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_23",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "a5fb298f91e1f0f245dbce599d8df25aca7b1b8ec61e47b0e56eee8011505afd",
+        "per_query_sha256": "be93b2682f731e51fe6717112c36d271f1f702e8c3e7940acc434b2289e48cfb"
+      },
+      "new_hashes": {
+        "metrics_sha256": "55ddb7936eb25ea3700539e1b6674ab72a0687d22753d74074956dd3bfc954b3",
+        "per_query_sha256": "beda8d57edcd249974431036978140daace6769f0098f159d2ec1195fa722181"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "356d8532e9fe8f5dcd0010abdb618841df5c1a783a7bcd6a5680095d273ea224",
+        "per_query_sha256": "28ec978020a856033b05b2c2c8d31fec4d45399b34564fc6f61522ba60183f19"
+      },
+      "new_hashes": {
+        "metrics_sha256": "314bd4f8bd4902080bb998b45801e88cc968b139bf86db0f2a6e1132f8ef3e08",
+        "per_query_sha256": "2d4c8784d36ae4cc8b4bfc7c743508ef8d2f820824ad77ce2905a084a6b3aaf0"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "734e49c660730091e42b64c2eb4ae3b5921ec422c72f7fbc9658a4fda266586d",
+        "per_query_sha256": "1f6c4743c8f36fd4b48ff67637ff2a35a243ddb10670e939fa19fe12f9f6d4ef"
+      },
+      "new_hashes": {
+        "metrics_sha256": "dbbab10c64306d69ade01f62745829b769f9826a132e75c5cbf73738e79aa0f4",
+        "per_query_sha256": "cde082ca56e329d81aa530f4389469134239aa5f0cb1054579e034286faf87dc"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "fe7871c406292dbc6f03e8847d66587d6fed72f5674575f691436b60c7987178",
+        "per_query_sha256": "05c4d3b308cdb5ef14039fd7c51867b63194e3694441bf748628f7e5ed930d32"
+      },
+      "new_hashes": {
+        "metrics_sha256": "3f304cad33a04ab69ed12bc68ce4a7906dd25dfee5ddfdc2840c343dce70f4c3",
+        "per_query_sha256": "915793f54133adf30e9ab8a6e0213a2fdab60ffacb1c7b352e4b03fbad305056"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "9d7b8b0a129cdb953030810e3ab0c7920b8f58271f3c329856fef04768774970",
+        "per_query_sha256": "10a1112a36e21d76b1dcc912fbfc205c3a48247102bf0096c4e5a3640f57495c"
+      },
+      "new_hashes": {
+        "metrics_sha256": "523a5b3f69bfbc2cc136e2dddee43f41f5b00a06d9a9963ed42db5e590f2a95e",
+        "per_query_sha256": "bf9fce534955c6c248185398dcbae8e34a46c4a8e9041ee9771abeb92a65320f"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "primary",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "6433aa8d8c370ef1fbee9da9caeb987e1ad933a44b60b37b82c2ed3fe3abe549",
+        "per_query_sha256": "3f489660ea5d2573761dac317e0dfd5198635df219f8734311d4a200a83a3f68"
+      },
+      "new_hashes": {
+        "metrics_sha256": "19b9d8bb44df8177c70e11dda8a8cb43555b760b9f2ab9de391abf5bd45df36d",
+        "per_query_sha256": "3990415c52ab64b0725164f8c038d603a4f24a929d616f8f8952e1305ecbc570"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "498ffb5d404fe6dac6b2b2d69d91bcf4750137c68f2254ce747ca7447b6905b5",
+        "per_query_sha256": "689c45a9f8ce3bd1c7fc7203dc1cbdc1d2cf2b4fc6d493928651523d85b8cbe1"
+      },
+      "new_hashes": {
+        "metrics_sha256": "56c73c1c0fccffcba7c6294ff73e67d8a428d1dc782cdd53585af41f935ab908",
+        "per_query_sha256": "9eade377abcb8fb1fb2fae4723696452d7dcc9cfa93cb75915441610d7ebd282"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "b68433c3be4edb13ae63380c599ca18cd3377026df2c6add43a9a7b638073f80",
+        "per_query_sha256": "866cfe5b929cfc8351dbb0617feab7fadd9296b2519946f40e8a11480581a769"
+      },
+      "new_hashes": {
+        "metrics_sha256": "9bf6592ae824a20569f697ab4e4be03b77a40b39083d912d494a14e1486e912c",
+        "per_query_sha256": "78cc1a754f30fd0c08bd7684925b372c50bc8f8adc4a770c75d3d6d07a95342a"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "e6d0039966a97dc8f3acc7d17dbb7b1d001bb0275badc5ecd76b920310ef10ab",
+        "per_query_sha256": "df98fcae2492d456f41b0b3556fe2aa02edf164929b5cc38267cd4e75244dc03"
+      },
+      "new_hashes": {
+        "metrics_sha256": "dc68d901e48a15ca6ff8a3ca09be76b6d0d85a1b55bd3540d47828d28a974e09",
+        "per_query_sha256": "d8690e83a5802b5e20f1400f388fe392c746e3f3ccae4ee983ffb95ee600ad8e"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "5c2adc2245870ef3898b803372bf6b7baa9a0137e1ac30318e1c58b923d9856e",
+        "per_query_sha256": "d668f0ac35156b1b1947d2a9ec01b9a83731e1d366d851181c4b5d972c664836"
+      },
+      "new_hashes": {
+        "metrics_sha256": "1cf38644e9bcecbffade2caec69a5619d7219e3a53b99d57d2a1e0c33c975e1d",
+        "per_query_sha256": "386640c785cbdd1deab2ee10066671165ce1521032c32cc2f0c353a6ed1dbf23"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "7de631e81ce93af6504a7bf5edd3905933045268e5002737baa4bdf25a629d1c",
+        "per_query_sha256": "4986a1765dc72d3fde7dde0c696bb6270499e67c1c73e2acf021fb302b54ce8c"
+      },
+      "new_hashes": {
+        "metrics_sha256": "68f57337b9db1e349048d7fbacba39ed63a20c4bf5f095a3fbbcaffddc689a9e",
+        "per_query_sha256": "b22b7ee3a61174ee2bfb994ed329191679b2ed8f29b972715343c3d5279e93a8"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "553862589f45564721ffa610bcfbe35ce266e2ef05c21edc66b666ba8d88d77a",
+        "per_query_sha256": "ca1c288c9b5f059627820b493255e01ad8f19ec8ebe6843a17bc02677a22e72c"
+      },
+      "new_hashes": {
+        "metrics_sha256": "f78282db6c1e7b689419a8eed5110740bb0de0bba019336f66da43d7144a950a",
+        "per_query_sha256": "c6707d045937708aabee2312b9d5b33a334fc8994bfb9e3bd51bfd420f30a0b2"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "c8efa098c6d0e955f41815f4d91dfb726d8b9f7cb86bccc50b599d022fb50ba5",
+        "per_query_sha256": "cbf6c54e4c9f333b97d77c3fbe9a9a9938b9d61b488417d0b757dac52dd1d3e3"
+      },
+      "new_hashes": {
+        "metrics_sha256": "d90b9449b793faa9b1ed90f7f4c84cc17d1f20586376c0d8ca9614a5a4b2eec6",
+        "per_query_sha256": "81eb8397e958453a163f3e9f9c84e7f3b29f4b25b8f24c02bda767199caa0b73"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "43150f51d6acbd83047803b5dae13954598e0527a66cf66dff3cb5bb2e8f8191",
+        "per_query_sha256": "8cb4969af56bd9c413ae84e21f61709b9ef93b84bf86be199a73c9a228591429"
+      },
+      "new_hashes": {
+        "metrics_sha256": "cce662c3e48f61b3e5a47d090a075da8278e66d6496f98ba60d1857d8f9dc559",
+        "per_query_sha256": "2770f343c79be2cc2702d7f635bcfaff3770151fe4d60d0c526ae2b61a2610ab"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "ef88c375d8223692f87b6dec6f269c5c7d30e94cb51faeaecb82c109e13ab046",
+        "per_query_sha256": "cf2920fa74e8506b714d89734f0a40a396eca98362912e74e3d6ef6d0c9e8c3c"
+      },
+      "new_hashes": {
+        "metrics_sha256": "c500e1bbbee47100aff538e6bb3f1876ef22bb4101998746a2142e9200935dc2",
+        "per_query_sha256": "ad07b834dcafb045fb686671f85183501a5187a22e0d6113f1d96b9d0aa553db"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "sprout",
+      "subset": "primary",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "937e633f54507d7d75d027ab4ce6b5759115c6dcaf10718997cbadc1d8fee536",
+        "per_query_sha256": "13888b0652772e7d19f00e3eec6bd5927cfefc01eeaa29c2552dcdfea89c9f15"
+      },
+      "new_hashes": {
+        "metrics_sha256": "63237b9aec6fba6e592fd06e3e40e93082e324d0a8fb95db11db193fe7dd55aa",
+        "per_query_sha256": "b8616590d2c555b9f8f26de5450d8256c4ca907471a09a10bc87de852d225e09"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "f3706d9977d1706b7e9af7d83fc32c4d35eb8eb30a8a8546f783fbc8f5e1647b",
+        "per_query_sha256": "6e608263b44e39f28b6fc353da28ebcd73870322537e822d66946694c9b90b80"
+      },
+      "new_hashes": {
+        "metrics_sha256": "9cc851a90f4d3910ef75f47bb604403a7a0b1626cd35c36d2b9e01dff4ead186",
+        "per_query_sha256": "7fd2ec7e89c24ea58a565d566bc327349d71f3d80fecc3a774827a663b817ac0"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "a8d0221505a97ee770050ea80454afcbe0ed9209b60ca813c6dec55cd2775ca5",
+        "per_query_sha256": "34d7ebb5b94cea0f02fae8b32b64c0f48deb42e7e2629aa8fd278c5123f75b62"
+      },
+      "new_hashes": {
+        "metrics_sha256": "bce21c6839fe061026dde13262b5215337b108546353e927244a754a66bb62c7",
+        "per_query_sha256": "4dbe8fa29071feb1def83d3c3ead452ee33945ba489b61d65399076e1043d0a5"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "b4d5d32a9e68f225daea9f012133ad555129d9e42288f54c36a5cbdb6c614943",
+        "per_query_sha256": "4b9f7e688218dd9a2065fca8dd967f7302bc7a5b9be85e58a4918e0eeaeab045"
+      },
+      "new_hashes": {
+        "metrics_sha256": "2de1fba0996db1c749ab6f8c6ecc3592c7d02ce6b2b7e0c32993eb62e1842813",
+        "per_query_sha256": "adcf316801655941c95a725fcf4f1c03cf1694359fdc63768dc79ba523520038"
+      }
+    },
+    {
+      "encoder": "qwen2.5-7b-instruct/layer_25",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "f3e66ae72d23601bcb49795b16bc108e53a3dfb42991c3b406b0a15656f5ace4",
+        "per_query_sha256": "6d7d017f6678d2a5361c865149ec549fcb06caf3a34279ed2f9154b39c79bcd5"
+      },
+      "new_hashes": {
+        "metrics_sha256": "e29fa17bb51c0b610d23926b01e118136e78d4954b53a3c2c5038db1fe62d448",
+        "per_query_sha256": "901e5b4af99f4948ae3195236438473f88a8980afa042ac30f34cd52dbc3af59"
+      }
+    },
+    {
+      "encoder": "minilm-l12",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "8a66ce4e0c9571791592b4a3ba9a5cfc374ca958cc6add2a78dfd1c6e4ed1225",
+        "per_query_sha256": "fa046ca3f7a0388ae54de922f6b52789bfa18fe67389f4f744eeae40f4b64174"
+      },
+      "new_hashes": {
+        "metrics_sha256": "0bcbe2b54e1d2bc97623ac11821b6a5d4bb034777c1fbd47bb9068ee3d07cf58",
+        "per_query_sha256": "5547d194a221b6c01813de079c212c25d78cc538ff6015c6f249e574611069f2"
+      }
+    },
+    {
+      "encoder": "minilm-l12",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_1",
+      "old_hashes": {
+        "metrics_sha256": "883a7ae8063cf34b317ccc115434e6e00acb53b3f51e3f4c0aa2c241656230fd",
+        "per_query_sha256": "fbfc9059db1770ebad384e74be6c0f0041541607a152a70dca03f69ca6e2d7a7"
+      },
+      "new_hashes": {
+        "metrics_sha256": "08079f3c8258d766db3be59104748e98790159b95461fb8bea7088ad55b689db",
+        "per_query_sha256": "bbc4828a6c7249d56aa3b1465262228d6ad5b38a8ce4457cc3cb63a88847e319"
+      }
+    },
+    {
+      "encoder": "minilm-l12",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "b5ee6fd9820481df7671860d56a032762e441ec4566f73fc8f8c7b9458c55c4d",
+        "per_query_sha256": "6f997c983dfdeef123291072a56f43f69927438caca4220dc2a59cb8e59b7ae6"
+      },
+      "new_hashes": {
+        "metrics_sha256": "89550b43a16f0096953084207fc9e37df48382c79c4bc2be8d594bc9031b91b1",
+        "per_query_sha256": "4656ca94a75bc544682df73dbeea4a6abfd9f305de1dcd650b03235ad2c5891d"
+      }
+    },
+    {
+      "encoder": "minilm-l12",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "85965a49a8ce042b61095f158bd5af23a0a78f5e70744a9820b6f18ca91afd59",
+        "per_query_sha256": "c90f808435eb3d2038817bd229741b7f7f54eb7b11ad0d851e40a6d3820cb5cd"
+      },
+      "new_hashes": {
+        "metrics_sha256": "a8a1653d62d99cd38054f9d9f5c5a2eb64e1a7bbd56b4a9bb5acf73687d8831b",
+        "per_query_sha256": "d870f0434d176d27dc2af70d3e91a6e4c8086debdf6d2bc9d82575b616009403"
+      }
+    },
+    {
+      "encoder": "minilm-l12",
+      "dataset": "routerbench",
+      "subset": "shared_minilm",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "e10f3ffb74509e7e9b8f21721ef3e3466afae0c18e2d626b012e596b6e81fd39",
+        "per_query_sha256": "289886f4db08aadba5b76399c7724654b096e8d49e8e87101e31fea74c109c69"
+      },
+      "new_hashes": {
+        "metrics_sha256": "97a63c4c85dc5a0fa3462d2262ffbcc2737e4bb3cbbccda2d561485b24ce8833",
+        "per_query_sha256": "b9f9bb32bd149ed3fae9e6a8cefd6938ef5556ad1f4ac9a8562b5ca04c71de85"
+      }
+    },
+    {
+      "encoder": "minilm-l12",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_0",
+      "old_hashes": {
+        "metrics_sha256": "dd9070682f5d3c7c5aeaace7fff83e1f648a42a4aaf971bda02d7251105e5d21",
+        "per_query_sha256": "0d7a1afff909e26e6d4ebf6dbb485c46b53990243956703f8ef539b20147ea1e"
+      },
+      "new_hashes": {
+        "metrics_sha256": "eb5a7c18d5c8ff7853c09c9643daa19626e0fcb0fad99a88856619b76b7202e4",
+        "per_query_sha256": "57cc014ba314fe02dce127ea9cad6656c05ad977406fdc7dee7ddc101a9b5235"
+      }
+    },
+    {
+      "encoder": "minilm-l12",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_2",
+      "old_hashes": {
+        "metrics_sha256": "6c9298489952e782a52de41b0b94368b0544d007c28b00cc8a6090b26e73582b",
+        "per_query_sha256": "09fc576577d2373e443fd2e7bdaf1ed3aed4935b435491a80f13f0c8da9d758a"
+      },
+      "new_hashes": {
+        "metrics_sha256": "a12325f6ee03945b72f859842d913bf83a36d770ed397b0df2910f25a11f0f9d",
+        "per_query_sha256": "a10cbb5dd3c2514cc95a84ef86cef5cc1279c67550d287eb55da55d903158a58"
+      }
+    },
+    {
+      "encoder": "minilm-l12",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_3",
+      "old_hashes": {
+        "metrics_sha256": "f7b74cebdd0489ea145c0d31f1b3793ed5d941449e124f73dc14ebb639662865",
+        "per_query_sha256": "42ec97dc3465841f396cc0418ed249714cbf99edf1574f11d39fc05041106248"
+      },
+      "new_hashes": {
+        "metrics_sha256": "ad7a3eedbcaeb5d921dd434cce29c8eafb82258b73186b584834921b6be63191",
+        "per_query_sha256": "2ca2fbde07a5b5274e4100ac358ce46c87b4c9a0c2432accee4e167756c9ec5e"
+      }
+    },
+    {
+      "encoder": "minilm-l12",
+      "dataset": "sprout",
+      "subset": "shared_minilm",
+      "fold": "iid_4",
+      "old_hashes": {
+        "metrics_sha256": "22701163f164e8aa4c56f1ed946e411d79fa661ccea05375ebff143d733c1426",
+        "per_query_sha256": "f74c37dc63bbc5bb8ecd618be11eed047c1bf4d3bd938e5ebdd0327207d55b8b"
+      },
+      "new_hashes": {
+        "metrics_sha256": "ff55dbf206f8b4d02078d5b0076cbc7195a704b39fa5d774e0e70bddad2ec1a4",
+        "per_query_sha256": "d5a18dc739bf4d66b4227619f0e53997e3db2f713c565c483a7155dae1be003e"
+      }
+    }
+  ],
+  "note": "Only MiniBatch-derived fields removed. All other NPZ arrays retained. Original source archives and batch logs remain as provenance, not active experiment results."
+}

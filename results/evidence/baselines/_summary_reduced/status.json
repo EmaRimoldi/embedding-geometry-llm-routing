@@ -1,0 +1,7 @@
+{
+  "completed_result_files": 1144,
+  "audited_score_records": 6500,
+  "missing": [],
+  "all_complete": true,
+  "warning": "Partial groups are explicitly marked; do not compare their pooled scores as complete results."
+}

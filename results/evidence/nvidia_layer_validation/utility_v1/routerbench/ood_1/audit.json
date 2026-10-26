@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "identity": {
+    "panel": "routerbench-0shot",
+    "split": "ood_1",
+    "config_sha256": "72e143166adf5bace61f73fe4fb06c3d7c6d759d898d5e72e27036d14cccb42e",
+    "split_sha256": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de"
+  },
+  "probe_fold_target_scores": 5720,
+  "checkpoint_checks": 130,
+  "utility_scores": 13,
+  "scores": [
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 0,
+      "n_test": 7450,
+      "utility": 0.6587919463087248,
+      "reward": 0.6587919463087248,
+      "cost": 0.008547322147651006,
+      "equal_family": 0.6587919463087248
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 1,
+      "n_test": 7450,
+      "utility": 0.6502446241610738,
+      "reward": 0.6587919463087248,
+      "cost": 0.008547322147651006,
+      "equal_family": 0.6502446241610738
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 2,
+      "n_test": 7450,
+      "utility": 0.6416973020134229,
+      "reward": 0.6587919463087248,
+      "cost": 0.008547322147651006,
+      "equal_family": 0.6416973020134229
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 5,
+      "n_test": 7450,
+      "utility": 0.6160553355704698,
+      "reward": 0.6587919463087248,
+      "cost": 0.008547322147651006,
+      "equal_family": 0.6160553355704698
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 10,
+      "n_test": 7450,
+      "utility": 0.5733187248322147,
+      "reward": 0.6587919463087248,
+      "cost": 0.008547322147651006,
+      "equal_family": 0.5733187248322147
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 20,
+      "n_test": 7450,
+      "utility": 0.4878455033557047,
+      "reward": 0.6587919463087248,
+      "cost": 0.008547322147651006,
+      "equal_family": 0.4878455033557047
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 30,
+      "n_test": 7450,
+      "utility": 0.4872594375838926,
+      "reward": 0.6378859060402684,
+      "cost": 0.005020882281879195,
+      "equal_family": 0.4872594375838926
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 50,
+      "n_test": 7450,
+      "utility": 0.57844477852349,
+      "reward": 0.604765100671141,
+      "cost": 0.0005264064429530202,
+      "equal_family": 0.57844477852349
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 75,
+      "n_test": 7450,
+      "utility": 0.5652846174496644,
+      "reward": 0.604765100671141,
+      "cost": 0.0005264064429530202,
+      "equal_family": 0.5652846174496644
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 100,
+      "n_test": 7450,
+      "utility": 0.5521244563758388,
+      "reward": 0.604765100671141,
+      "cost": 0.0005264064429530202,
+      "equal_family": 0.5521244563758388
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 150,
+      "n_test": 7450,
+      "utility": 0.5245943140939597,
+      "reward": 0.6028859060402685,
+      "cost": 0.0005219439463087248,
+      "equal_family": 0.5245943140939597
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 250,
+      "n_test": 7450,
+      "utility": 0.4730045637583893,
+      "reward": 0.6045637583892618,
+      "cost": 0.0005262367785234899,
+      "equal_family": 0.4730045637583893
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "protocol": "ood",
+      "lambda_value": 500,
+      "n_test": 7450,
+      "utility": 0.387274711409396,
+      "reward": 0.46956375838926173,
+      "cost": 0.00016457809395973157,
+      "equal_family": 0.387274711409396
+    }
+  ],
+  "seconds": 9.933573607355356,
+  "hardware": {
+    "host": "[redacted]",
+    "cpu_threads": "4",
+    "job_id": "[redacted]",
+    "array_job_id": "[redacted]",
+    "array_task_id": "6",
+    "partition": "[redacted]",
+    "cpu_model": "AMD EPYC 9474F 48-Core Processor"
+  }
+}

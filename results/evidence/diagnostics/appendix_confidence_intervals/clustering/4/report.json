@@ -1,0 +1,36 @@
+{
+  "dataset": "routerbench",
+  "encoder": "minilm-l12",
+  "subset": "shared_minilm",
+  "complete": true,
+  "rows": [
+    {
+      "family": "mmlu",
+      "metric": "nmi",
+      "mean": 0.6403913159134822,
+      "low": 0.6510511656804131,
+      "high": 0.6624165219016602
+    },
+    {
+      "family": "mmlu",
+      "metric": "ari",
+      "mean": 0.3865510614410407,
+      "low": 0.37805335868914547,
+      "high": 0.4067240281105357
+    }
+  ],
+  "source_hashes": {
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/20/assignments.npz": "6ff4a0ecac49caa5a20fb2c49f092e021af162b361932b21b6d1e1e37a2e37b8",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/20/report.json": "18c047dc027c7c04e0fd4fb10c9229428241d1158ad21eae529a9939e2be20a3",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/21/assignments.npz": "99d2eebd2aaabc6a0162b07c1bd69ee10e4728941a88facd2fa14636d400771a",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/21/report.json": "dfe522ef4c67510850a1134206a1224d32a5b3a69b0e2ba1c7836a3591f38414",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/22/assignments.npz": "ab39db626dff96c085a550788e077f0055092bdb0fe16e11785d3ee0a4703037",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/22/report.json": "b3b5a684f5e63236e4aebcbc8e611cb2691011516e7c5bb885582519dd3001e6",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/23/assignments.npz": "6aedc1cceb674e4cd248519b9002e21e106e2e5d46a3d21a8399d072ae4294c1",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/23/report.json": "c67dbece9c3629e376b3669a0f9fb759e2ffab76df2dcaea5679663509cc2fd4",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/24/assignments.npz": "e4b7eee3679430e12e6cd1d5b1ac9a04302b76609f4a4e54486d6b4dd4991d74",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/24/report.json": "10a69fe5232d2ed6a11202bba2f08767ed80bf17cc3835e62dbc8c6bbd7a02f4"
+  },
+  "replicates": 2000,
+  "slurm_job": "[redacted]"
+}

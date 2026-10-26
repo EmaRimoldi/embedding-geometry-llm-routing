@@ -1,0 +1,22 @@
+{
+  "version": "ridge_v1",
+  "method": "Ridge",
+  "target": "per-model observed utility r - lambda*c",
+  "alpha_grid": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1,
+    10,
+    100,
+    1000,
+    10000
+  ],
+  "fit_intercept": true,
+  "feature_preprocessing": "same float32 unit-normalized embeddings as other baselines; float64 linear algebra; no PCA or per-coordinate scaling",
+  "loss": "sum of squared residuals plus alpha times squared weights; intercept unpenalized",
+  "selection": "same alpha across candidate models, selected per outer split/encoder/lambda by pooled inner routing utility",
+  "implementation": "Reuse source-centered eigendecomposition across alphas; fit reward/cost jointly with identical alpha then subtract lambda*cost. Exactly equivalent to utility-target ridge; no separate reward/cost tuning or prediction clipping.",
+  "protocol": "Reuse frozen configs/baselines.json and configs/baseline_splits exactly"
+}

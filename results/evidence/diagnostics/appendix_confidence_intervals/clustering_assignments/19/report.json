@@ -1,0 +1,30 @@
+{
+  "task": 19,
+  "dataset": "sprout",
+  "encoder": "gte-qwen2-7b",
+  "subset": "shared_minilm",
+  "fold": "iid_4",
+  "records": [
+    {
+      "family": "math",
+      "nmi": 0.3280290324583175,
+      "ari": 0.2501206057698284,
+      "n": 2925,
+      "clusters": 7
+    },
+    {
+      "family": "mmlupro",
+      "nmi": 0.2819029267178371,
+      "ari": 0.16621349622266857,
+      "n": 3418,
+      "clusters": 14
+    }
+  ],
+  "original_scores_reproduced": true,
+  "source_hashes": {
+    "results/geometry/gte-qwen2-7b/sprout/shared_minilm/iid_4/split.npz": "783620237edc9658d327afbadf4599e7f5ebf6444484eb69048ad00f963612ee",
+    "results/geometry/gte-qwen2-7b/sprout/shared_minilm/additional_clustering_kmeans/iid_4/metrics.json": "70fb523c11af5432cec68eadb2a880e9b8feb04656812cf54f514d845d02c646",
+    "artifacts/embeddings/gte-qwen2-7b/sprout/manifest.json": "672d135013d71857f7f5bef7e8e230ee0f4dd7618f1f3ff2a46fccd0580047ea"
+  },
+  "slurm_job": "[redacted]"
+}

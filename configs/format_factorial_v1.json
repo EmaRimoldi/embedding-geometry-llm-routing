@@ -1,0 +1,23 @@
+{
+  "version": "format_factorial_v1",
+  "source": "routerbench",
+  "family": "mmlu",
+  "questions_per_subject": 50,
+  "seed": 20261002,
+  "ks": [
+    10,
+    100
+  ],
+  "primary_k": 100,
+  "bootstrap_repetitions": 1000,
+  "selection": "sha256(seed|query_key), first50 per official subject",
+  "templates": [
+    "plain",
+    "structured"
+  ],
+  "responses": [
+    "letter",
+    "answer_text"
+  ],
+  "scope": "Controlled geometry within MMLU; not a routing evaluation or choice-versus-free task intervention"
+}

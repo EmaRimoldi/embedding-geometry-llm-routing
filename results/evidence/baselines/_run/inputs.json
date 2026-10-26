@@ -1,0 +1,154 @@
+{
+  "routerbench-0shot": {
+    "rows": 34771,
+    "models": [
+      "WizardLM/WizardLM-13B-V1.2",
+      "claude-instant-v1",
+      "claude-v1",
+      "claude-v2",
+      "gpt-3.5-turbo-1106",
+      "gpt-4-1106-preview",
+      "meta/code-llama-instruct-34b-chat",
+      "meta/llama-2-70b-chat",
+      "mistralai/mistral-7b-chat",
+      "mistralai/mixtral-8x7b-chat",
+      "zero-one-ai/Yi-34B-Chat"
+    ],
+    "families": [
+      "arc-challenge",
+      "grade-school-math",
+      "hellaswag",
+      "mbpp",
+      "mmlu",
+      "mtbench",
+      "winogrande"
+    ],
+    "family_counts": [
+      1470,
+      7450,
+      10042,
+      425,
+      14037,
+      80,
+      1267
+    ],
+    "panel_sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+    "split_sha256": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+    "representations": {
+      "gte": {
+        "encoder": "gte-qwen2-7b",
+        "layer": null,
+        "dataset": "routerbench",
+        "rows": 34771,
+        "valid_rows": 34771,
+        "dimension": 3584,
+        "pooling": "last_nonpadding",
+        "max_tokens": 8192,
+        "truncation": false,
+        "chat_template": false,
+        "append_eos": true,
+        "dtype_storage": "float32",
+        "model_dtype": "torch.bfloat16",
+        "tokens_max": 1032,
+        "vector_sha256": "77df73ef60a9786f9c447bd351f50f32593d024cc678241b6789a5a93fc79d38",
+        "query_sha256": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd",
+        "code_sha256": "2a7cb29f58c03c0659c2af0ca069f7d3b75193b59d8bb9eba25bb82c18a6a5e8"
+      },
+      "reader": {
+        "encoder": "qwen2.5-7b-instruct",
+        "layer": 21,
+        "dataset": "routerbench",
+        "rows": 34771,
+        "valid_rows": 34771,
+        "dimension": 3584,
+        "pooling": "last_nonpadding",
+        "max_tokens": 8192,
+        "truncation": false,
+        "chat_template": false,
+        "append_eos": false,
+        "dtype_storage": "float32",
+        "model_dtype": "torch.bfloat16",
+        "tokens_max": 1031,
+        "vector_sha256": "af19737a594d69c403c2ac1851aecea96582dbdb8456d41e6a7146004c244392",
+        "query_sha256": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd",
+        "code_sha256": "2a7cb29f58c03c0659c2af0ca069f7d3b75193b59d8bb9eba25bb82c18a6a5e8"
+      }
+    }
+  },
+  "sprout-sixfam": {
+    "rows": 43887,
+    "models": [
+      "aws-claude-3-5-sonnet-v1",
+      "aws-titan-text-premier-v1",
+      "openai-gpt-4o",
+      "openai-gpt-4o-mini",
+      "wxai-granite-3-2b-instruct-8k-max-tokens",
+      "wxai-granite-3-8b-instruct-8k-max-tokens",
+      "wxai-llama-3-1-70b-instruct",
+      "wxai-llama-3-1-8b-instruct",
+      "wxai-llama-3-2-1b-instruct",
+      "wxai-llama-3-2-3b-instruct",
+      "wxai-llama-3-3-70b-instruct",
+      "wxai-llama-3-405b-instruct",
+      "wxai-mixtral-8x7b-instruct-v01"
+    ],
+    "families": [
+      "gpqa",
+      "math",
+      "mmlupro",
+      "musr",
+      "openhermes",
+      "ragbench"
+    ],
+    "family_counts": [
+      540,
+      9884,
+      11786,
+      748,
+      19340,
+      1589
+    ],
+    "panel_sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+    "split_sha256": "8d3ff78c8c1b84f60a737720cad236af5d977ccb5f958a4ab7cda3927542c997",
+    "representations": {
+      "gte": {
+        "encoder": "gte-qwen2-7b",
+        "layer": null,
+        "dataset": "sprout",
+        "rows": 43887,
+        "valid_rows": 43887,
+        "dimension": 3584,
+        "pooling": "last_nonpadding",
+        "max_tokens": 8192,
+        "truncation": false,
+        "chat_template": false,
+        "append_eos": true,
+        "dtype_storage": "float32",
+        "model_dtype": "torch.bfloat16",
+        "tokens_max": 8004,
+        "vector_sha256": "60a1e1eb4dd7b9124131935a7acb898b21e8c79d6e4d219a7f3da022628ac85d",
+        "query_sha256": "977295d4650e20ecbb1b1b14d9250d2bec9b42efb0633a21d98098157c78c0f9",
+        "code_sha256": "2a7cb29f58c03c0659c2af0ca069f7d3b75193b59d8bb9eba25bb82c18a6a5e8"
+      },
+      "reader": {
+        "encoder": "qwen2.5-7b-instruct",
+        "layer": 21,
+        "dataset": "sprout",
+        "rows": 43887,
+        "valid_rows": 43887,
+        "dimension": 3584,
+        "pooling": "last_nonpadding",
+        "max_tokens": 8192,
+        "truncation": false,
+        "chat_template": false,
+        "append_eos": false,
+        "dtype_storage": "float32",
+        "model_dtype": "torch.bfloat16",
+        "tokens_max": 8003,
+        "vector_sha256": "ea355a9f7513944c6ab8a73d0323112235e580c0762278c355cd428e38279110",
+        "query_sha256": "977295d4650e20ecbb1b1b14d9250d2bec9b42efb0633a21d98098157c78c0f9",
+        "code_sha256": "2a7cb29f58c03c0659c2af0ca069f7d3b75193b59d8bb9eba25bb82c18a6a5e8"
+      }
+    }
+  }
+}

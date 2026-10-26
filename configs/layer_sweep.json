@@ -1,0 +1,42 @@
+{
+  "version": "layer_sweep_v1",
+  "layers": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "priority_layers": [
+    23,
+    25,
+    21
+  ],
+  "datasets": {
+    "routerbench-0shot": "routerbench",
+    "sprout-sixfam": "sprout"
+  },
+  "routers": [
+    "knn100",
+    "knn_validated",
+    "family_adaptation"
+  ],
+  "full_sweep_protocol": "ood",
+  "additional_iid_layers": [
+    23,
+    25
+  ],
+  "layer_selection": "One layer per outer family and router: mean inner validation utility over all fixed penalties; smaller layer breaks ties.",
+  "secondary_layer_selection": "One layer per outer family, router and penalty using source validation only.",
+  "knn_selection": "For validated kNN, select k per penalty from the same inner source predictions before averaging validation utilities for layer choice.",
+  "gpu_limit": 2
+}

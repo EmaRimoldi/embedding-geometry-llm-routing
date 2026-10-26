@@ -1,0 +1,9 @@
+{
+  "base": "src/encode.py",
+  "base_sha256": "2a7cb29f58c03c0659c2af0ca069f7d3b75193b59d8bb9eba25bb82c18a6a5e8",
+  "replacements": {
+    "from common import ROOT,CONFIG,sha,write_json": "sys.path.insert(0,str(__import__('pathlib').Path(__file__).resolve().parents[2]))\nfrom common import ROOT,CONFIG,sha,write_json",
+    "layers=CONFIG['qwen_layers'] if enc=='qwen2.5-7b-instruct' else [None]": "assert enc=='gte-qwen2-7b'\n layers=[21]",
+    "output_hidden_states=enc=='qwen2.5-7b-instruct'": "output_hidden_states=True"
+  }
+}

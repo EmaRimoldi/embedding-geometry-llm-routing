@@ -1,0 +1,45 @@
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{6pt}
+\caption{Layer selected using only the remaining training families, separately for each held-out family and router.}
+\label{tab:layer-selected-families}
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Held-out family & kNN-100 & Validated kNN & Family Adaptation \\
+\midrule
+
+\multicolumn{4}{l}{\textbf{RouterBench}} \\
+
+ARC & 18 & 18 & 18 \\
+
+GSM8K & 27 & 19 & 18 \\
+
+HellaSwag & 20 & 20 & 19 \\
+
+MBPP & 19 & 19 & 22 \\
+
+MMLU & 23 & 22 & 22 \\
+
+MT-Bench & 19 & 19 & 20 \\
+
+WinoGrande & 23 & 19 & 23 \\
+
+\midrule
+
+\multicolumn{4}{l}{\textbf{SPROUT}} \\
+
+GPQA & 25 & 26 & 27 \\
+
+MATH & 16 & 19 & 27 \\
+
+MMLU-Pro & 27 & 27 & 27 \\
+
+MuSR & 26 & 25 & 27 \\
+
+OpenHermes & 23 & 23 & 22 \\
+
+RAGBench & 22 & 26 & 28 \\
+
+\bottomrule
+\end{tabular}
+\end{table}

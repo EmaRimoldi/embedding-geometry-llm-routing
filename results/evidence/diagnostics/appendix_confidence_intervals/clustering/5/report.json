@@ -1,0 +1,50 @@
+{
+  "dataset": "sprout",
+  "encoder": "minilm-l12",
+  "subset": "shared_minilm",
+  "complete": true,
+  "rows": [
+    {
+      "family": "math",
+      "metric": "nmi",
+      "mean": 0.29649088553579656,
+      "low": 0.2894287294126261,
+      "high": 0.31047097485496844
+    },
+    {
+      "family": "math",
+      "metric": "ari",
+      "mean": 0.1937935929399049,
+      "low": 0.184908873120338,
+      "high": 0.2062114401174952
+    },
+    {
+      "family": "mmlupro",
+      "metric": "nmi",
+      "mean": 0.5045662320255258,
+      "low": 0.5016668439105622,
+      "high": 0.5195810680438222
+    },
+    {
+      "family": "mmlupro",
+      "metric": "ari",
+      "mean": 0.3442086017931981,
+      "low": 0.3346019646006418,
+      "high": 0.35903646225302527
+    }
+  ],
+  "source_hashes": {
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/25/assignments.npz": "05c4c4bf856491afdf33995231b47e4342ff0ab68acda5df084367c0695edddb",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/25/report.json": "d82012891ef588d755ce1ee4a711eea379db617678beb4c54134fe8a3d1387ae",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/26/assignments.npz": "911afa41db78ab99f11617d569f43aea574e8645984399b5f533190991a8d2e6",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/26/report.json": "9e4ee7e841b59e59c2a671cdb4871cc99191d557d9306d24b5bd56bb495bf558",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/27/assignments.npz": "3aa8b5c6cc699f36504609e1e9d227a36d487cd19808a2d1e3aca6a83ba2f608",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/27/report.json": "a590d87475336909c721734bd8c353a43d87f03a556e2d97c194f2b474f3dda1",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/28/assignments.npz": "b73559f9d1b4bab5ca28c4e6edb6f65f4091fc12e59e3babc0b1a97ea67f5f6d",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/28/report.json": "e28b701773720ceaf5e7c15c504bbb4d693a7cabb5dfe3dd735381db09278d43",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/29/assignments.npz": "95bead77e136c40495ed5f36d018e7879e4d2b0abdf012bb6d2dc5a5cc2c2fb3",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/29/report.json": "8fa25262daae00e223c57c8aa486efafa8bc72a66d722e7bb93162dbac071de7"
+  },
+  "replicates": 2000,
+  "slurm_job": "[redacted]"
+}

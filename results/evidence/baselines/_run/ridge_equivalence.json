@@ -1,0 +1,185 @@
+{
+  "pass_all": true,
+  "checks": [
+    {
+      "alpha": 0.0001,
+      "lambda_value": 0,
+      "max_abs_difference": 3.3306690738754696e-16
+    },
+    {
+      "alpha": 0.0001,
+      "lambda_value": 2,
+      "max_abs_difference": 6.661338147750939e-16
+    },
+    {
+      "alpha": 0.0001,
+      "lambda_value": 50,
+      "max_abs_difference": 8.049116928532385e-16
+    },
+    {
+      "alpha": 0.0001,
+      "lambda_value": 500,
+      "max_abs_difference": 2.4424906541753444e-15
+    },
+    {
+      "alpha": 0.001,
+      "lambda_value": 0,
+      "max_abs_difference": 3.885780586188048e-16
+    },
+    {
+      "alpha": 0.001,
+      "lambda_value": 2,
+      "max_abs_difference": 4.440892098500626e-16
+    },
+    {
+      "alpha": 0.001,
+      "lambda_value": 50,
+      "max_abs_difference": 9.71445146547012e-16
+    },
+    {
+      "alpha": 0.001,
+      "lambda_value": 500,
+      "max_abs_difference": 2.4424906541753444e-15
+    },
+    {
+      "alpha": 0.01,
+      "lambda_value": 0,
+      "max_abs_difference": 3.885780586188048e-16
+    },
+    {
+      "alpha": 0.01,
+      "lambda_value": 2,
+      "max_abs_difference": 4.996003610813204e-16
+    },
+    {
+      "alpha": 0.01,
+      "lambda_value": 50,
+      "max_abs_difference": 7.494005416219807e-16
+    },
+    {
+      "alpha": 0.01,
+      "lambda_value": 500,
+      "max_abs_difference": 2.4424906541753444e-15
+    },
+    {
+      "alpha": 0.1,
+      "lambda_value": 0,
+      "max_abs_difference": 3.885780586188048e-16
+    },
+    {
+      "alpha": 0.1,
+      "lambda_value": 2,
+      "max_abs_difference": 6.661338147750939e-16
+    },
+    {
+      "alpha": 0.1,
+      "lambda_value": 50,
+      "max_abs_difference": 9.992007221626409e-16
+    },
+    {
+      "alpha": 0.1,
+      "lambda_value": 500,
+      "max_abs_difference": 2.220446049250313e-15
+    },
+    {
+      "alpha": 1,
+      "lambda_value": 0,
+      "max_abs_difference": 3.885780586188048e-16
+    },
+    {
+      "alpha": 1,
+      "lambda_value": 2,
+      "max_abs_difference": 6.106226635438361e-16
+    },
+    {
+      "alpha": 1,
+      "lambda_value": 50,
+      "max_abs_difference": 8.881784197001252e-16
+    },
+    {
+      "alpha": 1,
+      "lambda_value": 500,
+      "max_abs_difference": 2.6645352591003757e-15
+    },
+    {
+      "alpha": 10,
+      "lambda_value": 0,
+      "max_abs_difference": 3.608224830031759e-16
+    },
+    {
+      "alpha": 10,
+      "lambda_value": 2,
+      "max_abs_difference": 4.996003610813204e-16
+    },
+    {
+      "alpha": 10,
+      "lambda_value": 50,
+      "max_abs_difference": 5.551115123125783e-16
+    },
+    {
+      "alpha": 10,
+      "lambda_value": 500,
+      "max_abs_difference": 1.7763568394002505e-15
+    },
+    {
+      "alpha": 100,
+      "lambda_value": 0,
+      "max_abs_difference": 1.1102230246251565e-16
+    },
+    {
+      "alpha": 100,
+      "lambda_value": 2,
+      "max_abs_difference": 3.3306690738754696e-16
+    },
+    {
+      "alpha": 100,
+      "lambda_value": 50,
+      "max_abs_difference": 4.996003610813204e-16
+    },
+    {
+      "alpha": 100,
+      "lambda_value": 500,
+      "max_abs_difference": 8.881784197001252e-16
+    },
+    {
+      "alpha": 1000,
+      "lambda_value": 0,
+      "max_abs_difference": 1.1102230246251565e-16
+    },
+    {
+      "alpha": 1000,
+      "lambda_value": 2,
+      "max_abs_difference": 3.3306690738754696e-16
+    },
+    {
+      "alpha": 1000,
+      "lambda_value": 50,
+      "max_abs_difference": 3.885780586188048e-16
+    },
+    {
+      "alpha": 1000,
+      "lambda_value": 500,
+      "max_abs_difference": 7.771561172376096e-16
+    },
+    {
+      "alpha": 10000,
+      "lambda_value": 0,
+      "max_abs_difference": 1.1102230246251565e-16
+    },
+    {
+      "alpha": 10000,
+      "lambda_value": 2,
+      "max_abs_difference": 3.3306690738754696e-16
+    },
+    {
+      "alpha": 10000,
+      "lambda_value": 50,
+      "max_abs_difference": 4.440892098500626e-16
+    },
+    {
+      "alpha": 10000,
+      "lambda_value": 500,
+      "max_abs_difference": 7.771561172376096e-16
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+dataset,protocol,nvidia_control,baseline_encoder,baseline_method,mean_nvidia_minus_baseline,positive_penalties,negative_penalties,exact_equal_penalties
+routerbench-0shot,iid,selected_layer,gte,Avengers-Pro,0.019778717517809054,13,0,0
+routerbench-0shot,iid,selected_layer,gte,Best single model,0.038003401243623156,13,0,0
+routerbench-0shot,iid,selected_layer,gte,Family lookup,0.016118897099569374,13,0,0
+routerbench-0shot,iid,selected_layer,gte,Family-topic lookup,0.014474456723065132,13,0,0
+routerbench-0shot,iid,selected_layer,gte,KM-Prox,0.008654503674014854,13,0,0
+routerbench-0shot,iid,selected_layer,gte,KM-Prox (validated),0.008448305226044108,13,0,0
+routerbench-0shot,iid,selected_layer,gte,MLP,0.012903857226362678,13,0,0
+routerbench-0shot,iid,selected_layer,gte,Realized oracle,-0.165965672631135,0,13,0
+routerbench-0shot,iid,selected_layer,gte,Ridge,0.008353710365720848,13,0,0
+routerbench-0shot,iid,selected_layer,gte,Family Adaptation,0.016231596276657625,13,0,0
+routerbench-0shot,iid,selected_layer,gte,Utility-cluster control,0.009850654144755756,13,0,0
+routerbench-0shot,iid,selected_layer,gte,Validated kNN,0.007979634486013413,13,0,0
+routerbench-0shot,iid,selected_layer,gte,kNN-100,0.009121706278386009,13,0,0
+routerbench-0shot,iid,selected_layer,reader,Avengers-Pro,0.020034015813290458,13,0,0
+routerbench-0shot,iid,selected_layer,reader,Best single model,0.038003401243623156,13,0,0
+routerbench-0shot,iid,selected_layer,reader,Family lookup,0.016118897099569374,13,0,0
+routerbench-0shot,iid,selected_layer,reader,Family-topic lookup,0.014474456723065132,13,0,0
+routerbench-0shot,iid,selected_layer,reader,KM-Prox,0.012149073345734989,13,0,0
+routerbench-0shot,iid,selected_layer,reader,KM-Prox (validated),0.007299113505893073,13,0,0
+routerbench-0shot,iid,selected_layer,reader,MLP,0.0075056858565597006,13,0,0
+routerbench-0shot,iid,selected_layer,reader,Realized oracle,-0.165965672631135,0,13,0
+routerbench-0shot,iid,selected_layer,reader,Ridge,0.0015184706748702008,13,0,0
+routerbench-0shot,iid,selected_layer,reader,Family Adaptation,0.015618119498106396,13,0,0
+routerbench-0shot,iid,selected_layer,reader,Utility-cluster control,0.005948119512146039,13,0,0
+routerbench-0shot,iid,selected_layer,reader,Validated kNN,0.0013611419680804422,11,2,0
+routerbench-0shot,iid,selected_layer,reader,kNN-100,0.0021494920634025105,12,1,0
+routerbench-0shot,iid,fixed_l21,gte,Avengers-Pro,0.01900026502071135,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,Best single model,0.03722494874652545,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,Family lookup,0.015340444602471671,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,Family-topic lookup,0.01369600422596743,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,KM-Prox,0.007876051176917151,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,KM-Prox (validated),0.007669852728946406,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,MLP,0.012125404729264976,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,Realized oracle,-0.16674412512823267,0,13,0
+routerbench-0shot,iid,fixed_l21,gte,Ridge,0.007575257868623146,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,Family Adaptation,0.015453143779559923,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,Utility-cluster control,0.009072201647658052,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,Validated kNN,0.007201181988915711,13,0,0
+routerbench-0shot,iid,fixed_l21,gte,kNN-100,0.008343253781288307,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,Avengers-Pro,0.019255563316192756,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,Best single model,0.03722494874652545,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,Family lookup,0.015340444602471671,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,Family-topic lookup,0.01369600422596743,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,KM-Prox,0.011370620848637287,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,KM-Prox (validated),0.00652066100879537,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,MLP,0.0067272333594619975,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,Realized oracle,-0.16674412512823267,0,13,0
+routerbench-0shot,iid,fixed_l21,reader,Ridge,0.000740018177772498,10,3,0
+routerbench-0shot,iid,fixed_l21,reader,Family Adaptation,0.014839667001008694,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,Utility-cluster control,0.005169667015048336,13,0,0
+routerbench-0shot,iid,fixed_l21,reader,Validated kNN,0.0005826894709827395,8,5,0
+routerbench-0shot,iid,fixed_l21,reader,kNN-100,0.0013710395663048076,10,3,0
+routerbench-0shot,ood,selected_layer,gte,Avengers-Pro,0.01404769642739417,9,4,0
+routerbench-0shot,ood,selected_layer,gte,Best single model,0.01848920303258904,6,7,0
+routerbench-0shot,ood,selected_layer,gte,KM-Prox,0.0039303343002457785,3,10,0
+routerbench-0shot,ood,selected_layer,gte,KM-Prox (validated),0.0038756562329792734,4,9,0
+routerbench-0shot,ood,selected_layer,gte,MLP,0.004839093099908607,4,9,0
+routerbench-0shot,ood,selected_layer,gte,Realized oracle,-0.2226784125062663,0,13,0
+routerbench-0shot,ood,selected_layer,gte,Ridge,0.0007116458516491103,2,11,0
+routerbench-0shot,ood,selected_layer,gte,Family Adaptation,-0.020316483182492948,0,13,0
+routerbench-0shot,ood,selected_layer,gte,Utility-cluster control,0.0074670298529057304,9,4,0
+routerbench-0shot,ood,selected_layer,gte,Validated kNN,0.02369630575236218,10,3,0
+routerbench-0shot,ood,selected_layer,gte,kNN-100,0.018743344620517077,10,3,0
+routerbench-0shot,ood,selected_layer,reader,Avengers-Pro,0.02223581930653972,10,3,0
+routerbench-0shot,ood,selected_layer,reader,Best single model,0.01848920303258904,6,7,0
+routerbench-0shot,ood,selected_layer,reader,KM-Prox,-0.022469544608570816,0,13,0
+routerbench-0shot,ood,selected_layer,reader,KM-Prox (validated),-0.018153007852697783,2,11,0
+routerbench-0shot,ood,selected_layer,reader,MLP,-0.011512234369490063,5,8,0
+routerbench-0shot,ood,selected_layer,reader,Realized oracle,-0.2226784125062663,0,13,0
+routerbench-0shot,ood,selected_layer,reader,Ridge,-0.00992973330450002,4,9,0
+routerbench-0shot,ood,selected_layer,reader,Family Adaptation,-0.035407790458892606,0,13,0
+routerbench-0shot,ood,selected_layer,reader,Utility-cluster control,-0.015903088518947055,6,7,0
+routerbench-0shot,ood,selected_layer,reader,Validated kNN,-0.023087731024748755,4,9,0
+routerbench-0shot,ood,selected_layer,reader,kNN-100,-0.02038632842443859,5,8,0
+routerbench-0shot,ood,fixed_l21,gte,Avengers-Pro,0.01788738597593481,7,6,0
+routerbench-0shot,ood,fixed_l21,gte,Best single model,0.022328892581129682,6,7,0
+routerbench-0shot,ood,fixed_l21,gte,KM-Prox,0.007770023848786419,4,9,0
+routerbench-0shot,ood,fixed_l21,gte,KM-Prox (validated),0.007715345781519915,4,9,0
+routerbench-0shot,ood,fixed_l21,gte,MLP,0.008678782648449247,4,9,0
+routerbench-0shot,ood,fixed_l21,gte,Realized oracle,-0.2188387229577256,0,13,0
+routerbench-0shot,ood,fixed_l21,gte,Ridge,0.004551335400189751,4,9,0
+routerbench-0shot,ood,fixed_l21,gte,Family Adaptation,-0.016476793633952307,0,13,0
+routerbench-0shot,ood,fixed_l21,gte,Utility-cluster control,0.01130671940144637,9,4,0
+routerbench-0shot,ood,fixed_l21,gte,Validated kNN,0.02753599530090282,6,7,0
+routerbench-0shot,ood,fixed_l21,gte,kNN-100,0.022583034169057718,9,4,0
+routerbench-0shot,ood,fixed_l21,reader,Avengers-Pro,0.02607550885508036,7,6,0
+routerbench-0shot,ood,fixed_l21,reader,Best single model,0.022328892581129682,6,7,0
+routerbench-0shot,ood,fixed_l21,reader,KM-Prox,-0.018629855060030176,1,12,0
+routerbench-0shot,ood,fixed_l21,reader,KM-Prox (validated),-0.014313318304157142,2,11,0
+routerbench-0shot,ood,fixed_l21,reader,MLP,-0.007672544820949423,6,7,0
+routerbench-0shot,ood,fixed_l21,reader,Realized oracle,-0.2188387229577256,0,13,0
+routerbench-0shot,ood,fixed_l21,reader,Ridge,-0.006090043755959378,2,11,0
+routerbench-0shot,ood,fixed_l21,reader,Family Adaptation,-0.03156810091035196,0,13,0
+routerbench-0shot,ood,fixed_l21,reader,Utility-cluster control,-0.012063398970406413,3,10,0
+routerbench-0shot,ood,fixed_l21,reader,Validated kNN,-0.019248041476208115,4,9,0
+routerbench-0shot,ood,fixed_l21,reader,kNN-100,-0.01654663887589795,4,9,0
+sprout-sixfam,iid,selected_layer,gte,Avengers-Pro,0.00392195058041378,13,0,0
+sprout-sixfam,iid,selected_layer,gte,Best single model,0.030896291510302574,13,0,0
+sprout-sixfam,iid,selected_layer,gte,Family lookup,0.008073114947216537,13,0,0
+sprout-sixfam,iid,selected_layer,gte,Family-topic lookup,0.005488856642538748,13,0,0
+sprout-sixfam,iid,selected_layer,gte,KM-Prox,0.0028942338846825477,11,2,0
+sprout-sixfam,iid,selected_layer,gte,KM-Prox (validated),0.0011678796578567475,10,3,0
+sprout-sixfam,iid,selected_layer,gte,MLP,0.007214708724953427,13,0,0
+sprout-sixfam,iid,selected_layer,gte,Realized oracle,-0.14273123641240043,0,13,0
+sprout-sixfam,iid,selected_layer,gte,Ridge,-0.00016409401134535978,6,7,0
+sprout-sixfam,iid,selected_layer,gte,Family Adaptation,0.008429904777386331,13,0,0
+sprout-sixfam,iid,selected_layer,gte,Utility-cluster control,0.001808292460901716,10,3,0
+sprout-sixfam,iid,selected_layer,gte,Validated kNN,-0.0005935730090318789,7,6,0
+sprout-sixfam,iid,selected_layer,gte,kNN-100,-0.0009735420783251522,3,10,0
+sprout-sixfam,iid,selected_layer,reader,Avengers-Pro,0.0008865590470056135,10,3,0
+sprout-sixfam,iid,selected_layer,reader,Best single model,0.030896291510302574,13,0,0
+sprout-sixfam,iid,selected_layer,reader,Family lookup,0.008073114947216537,13,0,0
+sprout-sixfam,iid,selected_layer,reader,Family-topic lookup,0.005488856642538748,13,0,0
+sprout-sixfam,iid,selected_layer,reader,KM-Prox,0.0035759005343779003,12,1,0
+sprout-sixfam,iid,selected_layer,reader,KM-Prox (validated),-0.0011869333002962122,4,9,0
+sprout-sixfam,iid,selected_layer,reader,MLP,0.0048977774570459105,11,2,0
+sprout-sixfam,iid,selected_layer,reader,Realized oracle,-0.14273123641240043,0,13,0
+sprout-sixfam,iid,selected_layer,reader,Ridge,-0.0032039602688539105,0,13,0
+sprout-sixfam,iid,selected_layer,reader,Family Adaptation,0.008138362927481883,13,0,0
+sprout-sixfam,iid,selected_layer,reader,Utility-cluster control,-0.0012353467081164505,4,9,0
+sprout-sixfam,iid,selected_layer,reader,Validated kNN,-0.0034971240327508627,0,13,0
+sprout-sixfam,iid,selected_layer,reader,kNN-100,-0.0028672351318272007,1,12,0
+sprout-sixfam,iid,fixed_l21,gte,Avengers-Pro,0.004006471436721213,13,0,0
+sprout-sixfam,iid,fixed_l21,gte,Best single model,0.030980812366610006,13,0,0
+sprout-sixfam,iid,fixed_l21,gte,Family lookup,0.00815763580352397,13,0,0
+sprout-sixfam,iid,fixed_l21,gte,Family-topic lookup,0.005573377498846181,13,0,0
+sprout-sixfam,iid,fixed_l21,gte,KM-Prox,0.002978754740989981,13,0,0
+sprout-sixfam,iid,fixed_l21,gte,KM-Prox (validated),0.001252400514164181,9,4,0
+sprout-sixfam,iid,fixed_l21,gte,MLP,0.0072992295812608615,13,0,0
+sprout-sixfam,iid,fixed_l21,gte,Realized oracle,-0.142646715556093,0,13,0
+sprout-sixfam,iid,fixed_l21,gte,Ridge,-7.957315503792639e-05,6,7,0
+sprout-sixfam,iid,fixed_l21,gte,Family Adaptation,0.008514425633693765,13,0,0
+sprout-sixfam,iid,fixed_l21,gte,Utility-cluster control,0.0018928133172091495,12,1,0
+sprout-sixfam,iid,fixed_l21,gte,Validated kNN,-0.0005090521527244455,6,7,0
+sprout-sixfam,iid,fixed_l21,gte,kNN-100,-0.0008890212220177188,3,10,0
+sprout-sixfam,iid,fixed_l21,reader,Avengers-Pro,0.0009710799033130469,9,4,0
+sprout-sixfam,iid,fixed_l21,reader,Best single model,0.030980812366610006,13,0,0
+sprout-sixfam,iid,fixed_l21,reader,Family lookup,0.00815763580352397,13,0,0
+sprout-sixfam,iid,fixed_l21,reader,Family-topic lookup,0.005573377498846181,13,0,0
+sprout-sixfam,iid,fixed_l21,reader,KM-Prox,0.0036604213906853336,13,0,0
+sprout-sixfam,iid,fixed_l21,reader,KM-Prox (validated),-0.0011024124439887788,4,9,0
+sprout-sixfam,iid,fixed_l21,reader,MLP,0.004982298313353344,13,0,0
+sprout-sixfam,iid,fixed_l21,reader,Realized oracle,-0.142646715556093,0,13,0
+sprout-sixfam,iid,fixed_l21,reader,Ridge,-0.0031194394125464773,0,13,0
+sprout-sixfam,iid,fixed_l21,reader,Family Adaptation,0.008222883783789317,13,0,0
+sprout-sixfam,iid,fixed_l21,reader,Utility-cluster control,-0.001150825851809017,5,8,0
+sprout-sixfam,iid,fixed_l21,reader,Validated kNN,-0.0034126031764434295,0,13,0
+sprout-sixfam,iid,fixed_l21,reader,kNN-100,-0.0027827142755197675,2,11,0
+sprout-sixfam,ood,selected_layer,gte,Avengers-Pro,0.03671493702792668,13,0,0
+sprout-sixfam,ood,selected_layer,gte,Best single model,0.023157659410584223,10,3,0
+sprout-sixfam,ood,selected_layer,gte,KM-Prox,0.034661118787944936,13,0,0
+sprout-sixfam,ood,selected_layer,gte,KM-Prox (validated),0.03233727549971872,13,0,0
+sprout-sixfam,ood,selected_layer,gte,MLP,0.024254730244526616,11,2,0
+sprout-sixfam,ood,selected_layer,gte,Realized oracle,-0.17945252930815322,0,13,0
+sprout-sixfam,ood,selected_layer,gte,Ridge,0.013213721319218412,7,6,0
+sprout-sixfam,ood,selected_layer,gte,Family Adaptation,0.020346114682076862,13,0,0
+sprout-sixfam,ood,selected_layer,gte,Utility-cluster control,0.030982421315415024,13,0,0
+sprout-sixfam,ood,selected_layer,gte,Validated kNN,0.02717871252788199,13,0,0
+sprout-sixfam,ood,selected_layer,gte,kNN-100,0.02770878346628851,13,0,0
+sprout-sixfam,ood,selected_layer,reader,Avengers-Pro,0.009262848900200075,11,2,0
+sprout-sixfam,ood,selected_layer,reader,Best single model,0.023157659410584223,10,3,0
+sprout-sixfam,ood,selected_layer,reader,KM-Prox,0.00968857636084631,8,5,0
+sprout-sixfam,ood,selected_layer,reader,KM-Prox (validated),0.00420227994369283,7,6,0
+sprout-sixfam,ood,selected_layer,reader,MLP,0.013931099217746344,13,0,0
+sprout-sixfam,ood,selected_layer,reader,Realized oracle,-0.17945252930815322,0,13,0
+sprout-sixfam,ood,selected_layer,reader,Ridge,0.00941103941841027,9,4,0
+sprout-sixfam,ood,selected_layer,reader,Family Adaptation,0.0039559887539503125,7,6,0
+sprout-sixfam,ood,selected_layer,reader,Utility-cluster control,0.003936706552194409,9,4,0
+sprout-sixfam,ood,selected_layer,reader,Validated kNN,0.006713302820530389,10,3,0
+sprout-sixfam,ood,selected_layer,reader,kNN-100,0.007483135356413591,9,4,0
+sprout-sixfam,ood,fixed_l21,gte,Avengers-Pro,0.0373299284730015,13,0,0
+sprout-sixfam,ood,fixed_l21,gte,Best single model,0.023772650855659043,10,3,0
+sprout-sixfam,ood,fixed_l21,gte,KM-Prox,0.035276110233019756,13,0,0
+sprout-sixfam,ood,fixed_l21,gte,KM-Prox (validated),0.03295226694479354,13,0,0
+sprout-sixfam,ood,fixed_l21,gte,MLP,0.024869721689601436,12,1,0
+sprout-sixfam,ood,fixed_l21,gte,Realized oracle,-0.1788375378630784,0,13,0
+sprout-sixfam,ood,fixed_l21,gte,Ridge,0.013828712764293231,7,6,0
+sprout-sixfam,ood,fixed_l21,gte,Family Adaptation,0.02096110612715168,13,0,0
+sprout-sixfam,ood,fixed_l21,gte,Utility-cluster control,0.03159741276048984,13,0,0
+sprout-sixfam,ood,fixed_l21,gte,Validated kNN,0.02779370397295681,13,0,0
+sprout-sixfam,ood,fixed_l21,gte,kNN-100,0.028323774911363328,13,0,0
+sprout-sixfam,ood,fixed_l21,reader,Avengers-Pro,0.009877840345274894,11,2,0
+sprout-sixfam,ood,fixed_l21,reader,Best single model,0.023772650855659043,10,3,0
+sprout-sixfam,ood,fixed_l21,reader,KM-Prox,0.01030356780592113,10,3,0
+sprout-sixfam,ood,fixed_l21,reader,KM-Prox (validated),0.00481727138876765,9,4,0
+sprout-sixfam,ood,fixed_l21,reader,MLP,0.014546090662821164,11,2,0
+sprout-sixfam,ood,fixed_l21,reader,Realized oracle,-0.1788375378630784,0,13,0
+sprout-sixfam,ood,fixed_l21,reader,Ridge,0.010026030863485089,11,2,0
+sprout-sixfam,ood,fixed_l21,reader,Family Adaptation,0.004570980199025132,5,8,0
+sprout-sixfam,ood,fixed_l21,reader,Utility-cluster control,0.0045516979972692285,8,5,0
+sprout-sixfam,ood,fixed_l21,reader,Validated kNN,0.007328294265605209,11,2,0
+sprout-sixfam,ood,fixed_l21,reader,kNN-100,0.008098126801488411,11,2,0

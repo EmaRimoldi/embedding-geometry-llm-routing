@@ -1,0 +1,40 @@
+[
+  {
+    "dataset": "sprout",
+    "source": "mmlupro",
+    "queries": 540,
+    "mismatch_count": 1,
+    "old_mean": 0.1702454388141632,
+    "cpu_mean": 0.17024305794433484,
+    "max_difference": 0.0012907672951094629,
+    "details": [
+      {
+        "query_row": 24184,
+        "old_error": 0.10272036492824554,
+        "cpu_error": 0.10142959763313608,
+        "float64_error": 0.10272036686390533,
+        "cpu_boundary_gap": 2.9802322387695312e-08,
+        "float64_boundary_gap": 6.659650830798114e-09
+      }
+    ]
+  },
+  {
+    "dataset": "routerbench",
+    "source": "hellaswag",
+    "queries": 7450,
+    "mismatch_count": 1,
+    "old_mean": 0.05031237751245499,
+    "cpu_mean": 0.050312383604193246,
+    "max_difference": 4.6281090649698264e-05,
+    "details": [
+      {
+        "query_row": 3160,
+        "old_error": 0.0554446280002594,
+        "cpu_error": 0.0554909090909091,
+        "float64_error": 0.05544462809917355,
+        "cpu_boundary_gap": 1.4901161193847656e-08,
+        "float64_boundary_gap": 6.68443067564084e-09
+      }
+    ]
+  }
+]

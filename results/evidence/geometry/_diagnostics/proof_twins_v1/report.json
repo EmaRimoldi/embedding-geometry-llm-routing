@@ -1,0 +1,53 @@
+{
+  "prompts": [
+    {
+      "id": "pythagoras_fermat_A",
+      "pair": "pythagoras_fermat",
+      "arm": "A",
+      "prompt": "Prove that positive integers a, b, c satisfying a^n + b^n = c^n exist when n = 2. Give a complete mathematical proof; do not merely cite a theorem."
+    },
+    {
+      "id": "pythagoras_fermat_B",
+      "pair": "pythagoras_fermat",
+      "arm": "B",
+      "prompt": "Prove that positive integers a, b, c satisfying a^n + b^n = c^n do not exist when n > 2 is an integer. Give a complete mathematical proof; do not merely cite a theorem."
+    },
+    {
+      "id": "prime_odd_order_A",
+      "pair": "prime_odd_order",
+      "arm": "A",
+      "prompt": "Prove that every finite group of prime order is solvable. Give a complete mathematical proof; do not merely cite a theorem."
+    },
+    {
+      "id": "prime_odd_order_B",
+      "pair": "prime_odd_order",
+      "arm": "B",
+      "prompt": "Prove that every finite group of odd order is solvable. Give a complete mathematical proof; do not merely cite a theorem."
+    }
+  ],
+  "cosines": {
+    "gte-qwen2-7b": {
+      "pythagoras_fermat": 0.9083998626616043,
+      "prime_odd_order": 0.8954523771339465
+    },
+    "qwen2.5-7b-instruct": {
+      "pythagoras_fermat": 0.9689304374310361,
+      "prime_odd_order": 0.9824208483930569
+    }
+  },
+  "scope": "Embedding-only descriptive comparison; no generated answers or routing outcomes. Cross-encoder cosine scales are not calibrated.",
+  "audit": {
+    "gte-qwen2-7b": {
+      "finite": true,
+      "rows": 4,
+      "dimension": 3584,
+      "vector_sha256": "d64a786ca7001566bde4f2474382a765f5419fbb2175b0beb5a36033d49bdd4f"
+    },
+    "qwen2.5-7b-instruct": {
+      "finite": true,
+      "rows": 4,
+      "dimension": 3584,
+      "vector_sha256": "8ca726088bd3f085194eaed22cdb9bc3d24dba9ea7933b8dfa8ca31ee3e2f339"
+    }
+  }
+}

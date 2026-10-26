@@ -1,0 +1,243 @@
+{
+  "dataset": "routerbench",
+  "panel": "routerbench-0shot",
+  "complete": true,
+  "method": "kNN-100",
+  "representations": {
+    "gte": "gte-qwen2-7b",
+    "l21": "qwen2.5-7b-instruct/layer_21"
+  },
+  "n_queries": 34771,
+  "penalties": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20,
+    30,
+    50,
+    75,
+    100,
+    150,
+    250,
+    500
+  ],
+  "replicates": 2000,
+  "seed": 20261005,
+  "interval": "Pointwise 95% percentile, paired query bootstrap within fixed held-out families",
+  "scope": "Conditional on the existing fitted models, query pools, splits and measured benchmark families. No retraining or population-of-families uncertainty.",
+  "family_rows": [
+    {
+      "family": "arc-challenge",
+      "n_queries": 1470,
+      "gte": {
+        "mean": 0.9079788573835682,
+        "low": 0.8978897255913133,
+        "high": 0.9177386003427527
+      },
+      "l21": {
+        "mean": 0.9125527659236026,
+        "low": 0.9015268314727897,
+        "high": 0.9231982029623241
+      },
+      "difference": {
+        "mean": 0.004573908540034366,
+        "low": -0.002128059971218368,
+        "high": 0.010744095002617892
+      }
+    },
+    {
+      "family": "grade-school-math",
+      "n_queries": 7450,
+      "gte": {
+        "mean": 0.4125196942023751,
+        "low": 0.40876714442733647,
+        "high": 0.4161779709019096
+      },
+      "l21": {
+        "mean": 0.572295864099122,
+        "low": 0.5690083597132143,
+        "high": 0.5755425337178635
+      },
+      "difference": {
+        "mean": 0.15977616989674692,
+        "low": 0.15665339034099168,
+        "high": 0.16281081813603643
+      }
+    },
+    {
+      "family": "hellaswag",
+      "n_queries": 10042,
+      "gte": {
+        "mean": 0.7219959294440305,
+        "low": 0.7154659325680257,
+        "high": 0.7288218372377168
+      },
+      "l21": {
+        "mean": 0.7262621791069812,
+        "low": 0.7193928741548573,
+        "high": 0.7330155872106571
+      },
+      "difference": {
+        "mean": 0.00426624966295075,
+        "low": 0.0006407647511377901,
+        "high": 0.008111116144483945
+      }
+    },
+    {
+      "family": "mbpp",
+      "n_queries": 425,
+      "gte": {
+        "mean": 0.53162470479638,
+        "low": 0.49218694503167415,
+        "high": 0.5700337812714931
+      },
+      "l21": {
+        "mean": 0.573004199167421,
+        "low": 0.5322938310714933,
+        "high": 0.611197141252489
+      },
+      "difference": {
+        "mean": 0.04137949437104094,
+        "low": 0.012299381097738116,
+        "high": 0.07025922247420834
+      }
+    },
+    {
+      "family": "mmlu",
+      "n_queries": 14037,
+      "gte": {
+        "mean": 0.725252525011921,
+        "low": 0.719156025147511,
+        "high": 0.7316462603796282
+      },
+      "l21": {
+        "mean": 0.7286900086414477,
+        "low": 0.7223088578231158,
+        "high": 0.7354747196303721
+      },
+      "difference": {
+        "mean": 0.003437483629526783,
+        "low": 0.00019110292204257417,
+        "high": 0.006598572081143652
+      }
+    },
+    {
+      "family": "mtbench",
+      "n_queries": 80,
+      "gte": {
+        "mean": 0.39949285134615375,
+        "low": 0.317034825264423,
+        "high": 0.4804849008221155
+      },
+      "l21": {
+        "mean": 0.5922110999999999,
+        "low": 0.5212369542307692,
+        "high": 0.6589136015625
+      },
+      "difference": {
+        "mean": 0.19271824865384612,
+        "low": 0.11549145478846153,
+        "high": 0.2836357896394231
+      }
+    },
+    {
+      "family": "winogrande",
+      "n_queries": 1267,
+      "gte": {
+        "mean": 0.715121385744643,
+        "low": 0.6963464988904745,
+        "high": 0.7342792387769412
+      },
+      "l21": {
+        "mean": 0.7462376985611069,
+        "low": 0.7279014555154509,
+        "high": 0.7655109891406102
+      },
+      "difference": {
+        "mean": 0.031116312816463876,
+        "low": 0.019347140396150632,
+        "high": 0.04436214882824222
+      }
+    }
+  ],
+  "equal_family": {
+    "gte": {
+      "mean": 0.6305694211327245,
+      "low": 0.6169017741509806,
+      "high": 0.6438713131311969
+    },
+    "l21": {
+      "mean": 0.6930362593570972,
+      "low": 0.6809734887775107,
+      "high": 0.7045875755083862
+    },
+    "difference": {
+      "mean": 0.06246683822437271,
+      "low": 0.050491101034604635,
+      "high": 0.07561844041823744
+    }
+  },
+  "query_weighted": {
+    "gte": {
+      "mean": 0.6615458911913793,
+      "low": 0.658321837699825,
+      "high": 0.6651141799530669
+    },
+    "l21": {
+      "mean": 0.7006755642363331,
+      "low": 0.6971982366299391,
+      "high": 0.7043159244956723
+    },
+    "difference": {
+      "mean": 0.03912967304495385,
+      "low": 0.037144213320123895,
+      "high": 0.04101598419140785
+    }
+  },
+  "audited_fold_penalty_scores": 182,
+  "max_score_error": 0.0,
+  "max_original_bootstrap_draw_error": 4.218847493575595e-15,
+  "source_hashes": {
+    "configs/baseline_splits/routerbench-0shot.json": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+    "datasets/routerbench/prepared/panel.npz": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+    "datasets/routerbench/prepared/manifest.json": "557bc48609f0ff15040bdf83120770ef7da8775c52a640709a85d1d3168b4f88",
+    "configs/baselines.json": "8bbb430a67286bfafbb90e704a8f1bd8cbfb8d13bf7d06a999bf1853e14ee301",
+    "configs/appendix_ci.json": "80577c288be7a2991db486c3fae989b808049a44f488ee3f205d76d0179adb9e",
+    "src/diagnostics/appendix_ci/ci_common.py": "8cea91e3b464a607db398e130964bf26954343202c5822c120f3034ea354fc42",
+    "src/baselines/common.py": "94523b04b15d6485ae58e116d8952ec90c87a6c165cad228911edabb2a4e133a",
+    "src/diagnostics/per_family_routing_ci.py": "7903a94962c9cd77b584e2b3c0d4811e32bef5bc398decf870347f714013c986",
+    "results/diagnostics/appendix_confidence_intervals/routing/routerbench-0shot/ood/report.json": "a793dbaccd107ff022dc194fd3ef0f3d9fe60ef087b7576297f61875092356a8",
+    "results/diagnostics/appendix_confidence_intervals/routing/routerbench-0shot/ood/bootstrap.npz": "2de48037d23ac765f12eb3eb937090fb95ac5904ba10eac080490dec02f8879d",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_0/knn/result.json": "9c882a157a97f6b6ec6d6bda057aa4fad9867d12c9e47c4dd190fc2606940ff9",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_0/knn/predictions.npz": "e1ac3e292b40c493ea183a187e98b5e3ce93b9dbd723cf0bcbf8dfb80018d11a",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_1/knn/result.json": "236ac5f6e78ccba1ec3b7ea3983e4b5bf28ceb30d62bfd80de7a9b26f8074e6d",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_1/knn/predictions.npz": "f0709f0bc541f72d33c1d69afac962c5c3a918da855cd0373fda272fa45ff5e8",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_2/knn/result.json": "2f9bec99519d8e0211d28fd7b9ace65ffb6f2195d1975cd5f161626eb62227be",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_2/knn/predictions.npz": "3a93ac20a1f812d9195aaab5daca92e11347db8afeefd56168e492e4193eda12",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_3/knn/result.json": "b74262bd9a2e7e00213d44232caaeb5a6fafddb6e144225b15c00fc77e76a46e",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_3/knn/predictions.npz": "76b8ab112afbb4c992a762b403c701879ea081c4bd4229fbc622ae9477bbac38",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_4/knn/result.json": "d15803e289d733949acb010ea36478b62e8da987e59ea0d5dd9b159e1d41e17d",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_4/knn/predictions.npz": "d6fe3beddd3ef95b91b22ce3975bc2f215d73cf1ac438c34ae1ad6ec903f55e1",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_5/knn/result.json": "75ab1f7d70c5087d1d5ae60eeb7b7887f05055cc06e05e7e87b30f29f8fec2b7",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_5/knn/predictions.npz": "732032a8c478e5693767972e84d10e3dcbaa3f7f6c8a4b5ce65b52c7da632985",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_6/knn/result.json": "233c60b827f5e62db8d36e81ea893bdf926962710b183a6992c1b41a9cf57185",
+    "results/baselines/gte-qwen2-7b/routerbench/ood_6/knn/predictions.npz": "6552b6caac75d453c63d67f040dd6b617f0a5d1f5d65735ef63104b6e672ce62",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/result.json": "adeb696b054f7a994e61a8649880d93de4c207ea5ce5de0bef60a919f101c29c",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/predictions.npz": "6ce02d32b4fa8b20e47ece3f178dcd5573889a03de280e0d24753966cea91127",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/result.json": "8eee3b7c163e4c903ec9dcfb041ecf9115334086a740047e88afa4929cefde8d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/predictions.npz": "d20cffd89baf1bcc53aef6d76c22c221e305dd2aaf3f83cb516ab37bd2765148",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/result.json": "95ab066966bccf1c30d5371765ac3ebb2a5cd0c6825df85cbfb85918c73451fe",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/predictions.npz": "4a9418e9a54b20749a1794c8aafafb27f6d0a7ed61b4f1ee1396917fecc6b1b0",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/result.json": "0f8c29883b49f64e8346d63e04bb99aabab5acb705581e8cc56cf1dfe29c3c14",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/predictions.npz": "174828b2b02252b0ae4539e401c44f3a457d268f76f45a546e4e0a65d71128fd",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/result.json": "e63e98dda89d0f0b75da832773e83414a8532056b647e329478eb0ce2b33840a",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/predictions.npz": "d31b42a0aa72d5dd8e889fa278ec3760600d7fbd63d2fb82b4e536c1511d70cc",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/result.json": "69773d67f4736628e46a1e475dd2e93e80e5edc6717bdbc3219f67e22d31afda",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/predictions.npz": "63afb7cb26d32f15c60ba44b6559e8ce351c3b9ad4bfbec26ad0a5c9342d6545",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/result.json": "fa770a7d357ac72ede3bb0025c80bd745fe9bc6b54bd9482049ea3ae60ed9c6d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/predictions.npz": "96f3530b3c9442fdf11617e248d81f8e76a394d15324a1fba2f287e9327ce204"
+  },
+  "slurm_job": "[redacted]"
+}

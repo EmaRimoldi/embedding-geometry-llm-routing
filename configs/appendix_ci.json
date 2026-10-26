@@ -1,0 +1,12 @@
+{
+  "version": "appendix_ci_v1",
+  "replicates": 2000,
+  "seed": 20261005,
+  "interval": "pointwise percentile 95%",
+  "scope": "Conditional on the existing fitted models, query pools, splits and measured benchmark families. No retraining or population-of-families uncertainty.",
+  "ood": "Paired queries resampled within each held-out family; original query weights and families retained.",
+  "iid": "Paired bootstrap of unique test-query identities; all repeated split appearances and all penalties stay together. Inverse split-size weighting and normalized weighted ratios follow the existing IID diagnostic.",
+  "existing_disagreement": "Preserve the existing 1000-replicate seed42 bootstrap and its published intervals; add missing disagreement and conditional-gain intervals using those exact draws.",
+  "clustering": "Regenerate missing k-means assignments with the frozen ordinary KMeans settings only; audit NMI/ARI against the original before resampling held-out assignments. Do not refit inside bootstrap.",
+  "family_rank": "Resample held-out queries within each family and recompute both source-error winners and retrieval ranks together; retain original equal-family/equal-penalty summary."
+}

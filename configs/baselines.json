@@ -1,0 +1,123 @@
+{
+  "version": "baselines_v1",
+  "panels": [
+    "routerbench-0shot",
+    "sprout-sixfam"
+  ],
+  "representations": [
+    "gte",
+    "reader"
+  ],
+  "primary_pooling": "Qwen2.5-7B-Instruct hidden_states[21], last input token",
+  "normalization": "float32 unit vectors; no truncation",
+  "iid": {
+    "outer_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "train_fraction": 0.7,
+    "stratification": "family",
+    "validation_fraction_of_training": 0.2
+  },
+  "ood": {
+    "outer": "leave one full family out",
+    "inner": "leave one source family out",
+    "validation_aggregation": "equal query weight across all inner validation predictions"
+  },
+  "lambdas": {
+    "routerbench-0shot": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      20,
+      30,
+      50,
+      75,
+      100,
+      150,
+      250,
+      500
+    ],
+    "sprout-sixfam": [
+      0,
+      0.5,
+      1,
+      2,
+      5,
+      10,
+      25,
+      50,
+      75,
+      100,
+      150,
+      250,
+      500
+    ]
+  },
+  "knn_candidates": [
+    5,
+    10,
+    20,
+    40,
+    100,
+    200
+  ],
+  "family_adaptation": {
+    "class_weight": "balanced",
+    "C": 1,
+    "max_iter": 3000,
+    "coordinate_standardization": false
+  },
+  "reporting": "both pooled and equal-family; no test-based method exclusion; all attempted methods preserved",
+  "graphrouter_task_descriptions": "Native method only; OOD eligibility audit required. No substantial query-only redesign.",
+  "mlp": {
+    "architectures": [
+      [
+        100,
+        100
+      ],
+      [
+        100,
+        100,
+        100
+      ]
+    ],
+    "alphas": [
+      0.0001,
+      0.01,
+      1,
+      10,
+      100
+    ],
+    "early_stopping": [
+      false,
+      true
+    ],
+    "max_iter": 200,
+    "batch_size": 200,
+    "tol": 0.0001,
+    "n_iter_no_change": 10,
+    "validation_fraction": 0.1,
+    "seed": 1234
+  },
+  "display_names": {
+    "mlp": "MLP",
+    "knn100": "kNN-100",
+    "knn_validated": "Validated kNN",
+    "avengerspro_validated": "Avengers-Pro",
+    "km_prox32_temp20": "KM-Prox",
+    "km_prox32_validated": "KM-Prox (validated)",
+    "family_adaptation": "Family Adaptation",
+    "best_single_train": "Best single model",
+    "family_lookup": "Family lookup",
+    "family_topic_lookup": "Family-topic lookup",
+    "realized_oracle": "Realized oracle",
+    "cluster_utility_validated": "Utility-cluster control"
+  },
+  "graphrouter": "Excluded at user request"
+}

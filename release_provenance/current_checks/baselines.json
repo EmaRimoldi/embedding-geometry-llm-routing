@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "scope": "Synthetic fixture; real kNN/prior/Ridge CLI fit-predict-save paths, all prescribed RouterBench penalties, IID/OOD; not paper performance.",
+  "score_checks": 156,
+  "mlp_sklearn_equivalence_cases": 16,
+  "ridge_direct_utility_checks": 36,
+  "workspace": "results/reproduced/smoke/baseline-pkmfrsg5"
+}

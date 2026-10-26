@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "scope": "synthetic orchestration only; no real jobs/data/model fits",
+  "checks": [
+    {
+      "check": "layout idempotency and relative internal runtime links",
+      "passed": true
+    },
+    {
+      "check": "missing preparation fails without changing configs",
+      "passed": true
+    },
+    {
+      "check": "NVIDIA rejects missing reduced provenance stage",
+      "passed": true
+    },
+    {
+      "check": "all provenance stages and exact config/hash idempotency",
+      "passed": true
+    },
+    {
+      "check": "unchanged metadata can be rechecked after results exist",
+      "passed": true
+    },
+    {
+      "check": "partial baseline checkpoint prevents provenance rebinding",
+      "passed": true
+    },
+    {
+      "check": "PCA cache prevents NVIDIA provenance rebinding",
+      "passed": true
+    },
+    {
+      "check": "partial utility checkpoint prevents provenance rebinding",
+      "passed": true
+    },
+    {
+      "check": "missing source leaves utility config and manifest untouched",
+      "passed": true
+    },
+    {
+      "check": "stale source manifest is preserved without partial config update",
+      "passed": true
+    },
+    {
+      "check": "changed frozen data rejected rather than rehashed",
+      "passed": true
+    },
+    {
+      "check": "stale NVIDIA source provenance rejected",
+      "passed": true
+    },
+    {
+      "check": "external runtime link rejected",
+      "passed": true
+    },
+    {
+      "check": "altered upstream vendor code rejected",
+      "passed": true
+    },
+    {
+      "check": "59 Slurm launchers execute with inert Python/sbatch stubs",
+      "passed": true
+    },
+    {
+      "check": "missing/empty scheduler metadata produces explicit unavailable accounting without sacct",
+      "passed": true
+    },
+    {
+      "check": "documented paths, frozen task counts and complete geometry batch coverage",
+      "passed": true
+    }
+  ],
+  "checks_passed": 17,
+  "initializer_sha256": "85943d8d8e171ab6057342816b78086dbc62e3880adb4607ad3075bc2f331018",
+  "harness_sha256": "535d264cc5a47d5f1f5e1836b2c3e21bb278296c135d3538fc5ac7dc400af8ac"
+}

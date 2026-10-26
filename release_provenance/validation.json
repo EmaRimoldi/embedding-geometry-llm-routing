@@ -1,0 +1,121 @@
+{
+  "validation_scope": "Fresh public PyPI installation; public data/tokenizer download; complete preparation; CPU/GPU synthetic execution; canonical encoders on four supplied prompts using cached pinned weights. Full study not rerun.",
+  "checks": [
+    {
+      "name": "release_integrity",
+      "exit_code": 0,
+      "seconds": 2.958084570011124
+    },
+    {
+      "name": "evidence_reconstruction_stdlib",
+      "exit_code": 0,
+      "seconds": 0.6022600908763707
+    },
+    {
+      "name": "saved_tables",
+      "exit_code": 0,
+      "seconds": 1.0109532258938998
+    },
+    {
+      "name": "synthetic_tests",
+      "exit_code": 0,
+      "seconds": 3.7359537528827786
+    },
+    {
+      "name": "layout_initializer",
+      "exit_code": 0,
+      "seconds": 0.04023304604925215
+    }
+  ],
+  "original_files_checked": 182,
+  "original_files_changed": [],
+  "evidence": {
+    "status": "passed",
+    "evidence_verified": {
+      "files": 1758,
+      "bytes": 38102436
+    },
+    "reconstructed": [
+      {
+        "name": "baselines_original",
+        "source": "baselines/_summary/per_split.csv",
+        "fold_scores": 6045,
+        "aggregate_rows": 1079,
+        "verified_against": "baselines/_summary/scores.csv"
+      },
+      {
+        "name": "baselines_reduced",
+        "source": "baselines/_summary_reduced/per_split.csv",
+        "fold_scores": 6500,
+        "aggregate_rows": 1144,
+        "verified_against": "baselines/_summary_reduced/scores.csv"
+      },
+      {
+        "name": "ridge",
+        "source": "baselines/_summary/ridge_per_split.csv",
+        "fold_scores": 598,
+        "aggregate_rows": 104,
+        "verified_against": "baselines/_summary/ridge_scores.csv"
+      },
+      {
+        "name": "layer_sweep",
+        "source": "layer_sweep/summary/per_split.csv",
+        "fold_scores": 8892,
+        "aggregate_rows": 1404,
+        "verified_against": "layer_sweep/summary/scores.csv"
+      },
+      {
+        "name": "nvidia_earlier_controls",
+        "source": "nvidia/summary/per_split.csv",
+        "fold_scores": 598,
+        "aggregate_rows": 104,
+        "verified_against": "nvidia/summary/scores.csv"
+      },
+      {
+        "name": "geometry_pooled",
+        "fold_scores": 808,
+        "aggregate_rows": 144
+      },
+      {
+        "name": "nvidia_final_per_model_utility",
+        "source": "23 exported result.json files",
+        "fold_scores": 299,
+        "aggregate_rows": 52,
+        "verified_against": "utility_v1 saved fold CSV and aggregate report"
+      }
+    ],
+    "numerical_tolerance": {
+      "relative": 1e-10,
+      "absolute": 1e-12
+    },
+    "figures": [
+      "figures/routerbench-0shot_ood_utility.svg",
+      "figures/sprout-sixfam_ood_utility.svg"
+    ],
+    "interpretation": "Saved fold-level score aggregation; final utility additionally reconstructed from exported result JSONs. No model execution, per-query decision recomputation, or bootstrap resampling.",
+    "summary_only": "Confidence intervals, format controls, family-transfer tests and other saved audit reports are preserved evidence. Their underlying arrays are excluded from this compact package.",
+    "canonical_nvidia": "results/evidence/nvidia_layer_validation/utility_v1; results/evidence/nvidia contains earlier controls. Earlier inference timings do not describe the final per-target pipeline."
+  },
+  "source_review": "Release source changes are limited to the documented portability, metadata and small-reference-pool corrections. Scientific parameters, prepared data, splits and saved outcomes are preserved.",
+  "not_run": [
+    "full public model-weight download",
+    "full-scale GPU extraction/training study",
+    "all historical per-query audits and bootstrap resampling from omitted large arrays"
+  ],
+  "additional_checks": {
+    "slurm_sh_to_bash_wrapper": "passed without submitting jobs",
+    "restored_compute_records": 52,
+    "restored_compute_resource_timing_status_fields": "identical to original"
+  },
+  "initial_packaging_validation_scope": "Fresh extraction; standard-library route isolated from site packages. Existing pinned scientific environment used read-only for renderers/tests. No new dependency installation or GPU experiment rerun.",
+  "reviewer_smoke_directory": "release_provenance/reviewer_smoke",
+  "reviewer_tests_passed": 10,
+  "conceptual_limitations": "See docs/CONCEPTUAL_AUDIT.md and docs/REVIEWER_NVIDIA_AUDIT.md; smoke success is not full-study validation.",
+  "known_unresolved_findings": [
+    "Optional family-rank confidence-interval Top1 tie convention differs from point-estimate convention; 169 observed point estimates unaffected, intervals not for publication."
+  ],
+  "reviewer_pca_checks": {
+    "full": 10,
+    "randomized": 10
+  }
+}

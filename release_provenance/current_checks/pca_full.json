@@ -1,0 +1,73 @@
+{
+  "status": "passed",
+  "scope": "actual production PCA100 CLI on synthetic CPU fixtures",
+  "rows": 160,
+  "source_rows": 120,
+  "heldout_rows": 40,
+  "input_features": 128,
+  "components": 100,
+  "numpy_version": "1.26.4",
+  "sklearn_version": "1.5.2",
+  "harness_sha256": "b4c7f96379ba797df95599be43286493b009d928a38aa03f6af4281544c8f978",
+  "production_source_sha256": {
+    "src/nvidia/pca.py": "b2ea8ead2664dbf4b699b25f9da4706df42e85615dc93f99e442438ffe928002",
+    "src/nvidia/common_nv.py": "579d2d77e846af7488aedce1ccc85b14204179bd41801ffc716b092cbf529ca4",
+    "src/nvidia/timing.py": "e03abc1a0cc981bb6cad7f44cc6ebb0535db36067f0ef1756be4a24ab6d61d54",
+    "src/baselines/common.py": "90469238a1bda991d4a8057ae536879181d35eff4252c783fab7f93202661133",
+    "src/baselines/run_mlp.py": "34c14433d25a0cfe8e11795091419eadd062555b58bef03aedc10a439b99eea1",
+    "src/baselines/batched_mlp.py": "abf4686bbb2e3a8d6865da62a33d1b30c859e1d06d873b85f79e15c2163b13c1",
+    "configs/baselines.json": "741e9cdeab782a41b00f2377fdc5463732604e4a0def769f029fe0a91d127d2b"
+  },
+  "commands": [
+    {
+      "name": "initial-fit",
+      "exit_code": 0,
+      "expected_failure": false,
+      "wall_seconds": 4.934259208966978
+    },
+    {
+      "name": "heldout-poison-fit",
+      "exit_code": 0,
+      "expected_failure": false,
+      "wall_seconds": 4.344555957941338
+    },
+    {
+      "name": "completed-cache-reuse",
+      "exit_code": 0,
+      "expected_failure": false,
+      "wall_seconds": 4.359484791988507
+    },
+    {
+      "name": "stale-cache-rejected",
+      "exit_code": 1,
+      "expected_failure": true,
+      "wall_seconds": 4.345810792059638
+    },
+    {
+      "name": "vector-manifest-mismatch-rejected",
+      "exit_code": 1,
+      "expected_failure": true,
+      "wall_seconds": 4.389433667063713
+    }
+  ],
+  "checks": [
+    "unchanged production entrypoint and dependency bytes",
+    "PCA100 output shape and finite float32 projections",
+    "saved source rows, scaler moments and PCA transform reconstructed",
+    "ready config/vector/source-row hashes and projected-vector hash verified",
+    "poisoning heldout vectors leaves all fitted transform arrays exactly unchanged",
+    "poisoning heldout vectors leaves source-row projections exactly unchanged",
+    "heldout projections change under poisoning",
+    "completed cache is reused without changing saved bytes",
+    "stale config-bound cache rejected without overwriting artifacts",
+    "raw-vector checksum mismatch rejected"
+  ],
+  "run_directory": ".cache/reviewer_pca_smoke/run-rzojw3h0",
+  "checks_passed": 10,
+  "solver": "full",
+  "maximum_reconstruction_error": {
+    "ordinary": 0.0,
+    "poisoned": 0.0
+  },
+  "training_projection_max_difference": 0.0
+}

@@ -1,0 +1,1436 @@
+{
+  "categories": {
+    "nv-u-preflight": {
+      "jobs": 2,
+      "cpu_core_hours": 0.061111111111111116,
+      "gpu_hours": 0.0,
+      "failed_jobs": 1
+    },
+    "nv-u-probe": {
+      "jobs": 23,
+      "cpu_core_hours": 0.2177777777777778,
+      "gpu_hours": 0.0,
+      "failed_jobs": 0
+    },
+    "nv-u-train": {
+      "jobs": 2,
+      "cpu_core_hours": 11.157777777777778,
+      "gpu_hours": 2.7894444444444444,
+      "failed_jobs": 0
+    },
+    "nv-u-audit-submit": {
+      "jobs": 1,
+      "cpu_core_hours": 0.0,
+      "gpu_hours": 0.0,
+      "failed_jobs": 0
+    },
+    "nv-u-report": {
+      "jobs": 1,
+      "cpu_core_hours": 0.0044444444444444444,
+      "gpu_hours": 0.0,
+      "failed_jobs": 0
+    },
+    "nv-u-audit": {
+      "jobs": 23,
+      "cpu_core_hours": 0.29333333333333333,
+      "gpu_hours": 0.0,
+      "failed_jobs": 0
+    }
+  },
+  "allocated_gpu_hours": 2.7894444444444444,
+  "allocated_cpu_core_hours": 11.734444444444447,
+  "training_elapsed_wall_seconds": 6605.0,
+  "probe_measured_seconds": 117.87327177403495,
+  "network_timing_seconds": {
+    "training_seconds": 9701.622313646745,
+    "prediction_and_validation_seconds": 49.425197929307615,
+    "feature_assembly_seconds": 43.464786569085845
+  },
+  "jobs": [
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-preflight",
+      "State": "FAILED",
+      "ExitCode": "1:0",
+      "ElapsedRaw": "19",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.021111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 77.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-preflight",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "36",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.04,
+      "gpu_hours": 0.0,
+      "queue_seconds": 44.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 55.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "10",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.011111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 55.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "7",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.0077777777777777776,
+      "gpu_hours": 0.0,
+      "queue_seconds": 55.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "8",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.008888888888888889,
+      "gpu_hours": 0.0,
+      "queue_seconds": 55.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 106.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 106.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "8",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.008888888888888889,
+      "gpu_hours": 0.0,
+      "queue_seconds": 106.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "10",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.011111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 106.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "10",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.011111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 156.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 156.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "8",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.008888888888888889,
+      "gpu_hours": 0.0,
+      "queue_seconds": 156.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 156.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "7",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.0077777777777777776,
+      "gpu_hours": 0.0,
+      "queue_seconds": 206.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "6",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.006666666666666667,
+      "gpu_hours": 0.0,
+      "queue_seconds": 206.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 206.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "7",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.0077777777777777776,
+      "gpu_hours": 0.0,
+      "queue_seconds": 206.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "8",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.008888888888888889,
+      "gpu_hours": 0.0,
+      "queue_seconds": 255.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "7",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.0077777777777777776,
+      "gpu_hours": 0.0,
+      "queue_seconds": 255.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 255.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 255.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "7",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.0077777777777777776,
+      "gpu_hours": 0.0,
+      "queue_seconds": 304.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 304.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-probe",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "12",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.013333333333333334,
+      "gpu_hours": 0.0,
+      "queue_seconds": 304.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-train",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "6605",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=24G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 7.338888888888889,
+      "gpu_hours": 1.8347222222222221,
+      "queue_seconds": 334.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-train",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "3437",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,gres/gpu:a100=1,gres/gpu=1,mem=24G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 3.818888888888889,
+      "gpu_hours": 0.9547222222222222,
+      "queue_seconds": 338.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit-submit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "0",
+      "AllocCPUS": "1",
+      "AllocTRES": "billing=1,cpu=1,mem=2G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.0,
+      "gpu_hours": 0.0,
+      "queue_seconds": 32.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-report",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "4",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=4G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.0044444444444444444,
+      "gpu_hours": 0.0,
+      "queue_seconds": 340.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "11",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.012222222222222223,
+      "gpu_hours": 0.0,
+      "queue_seconds": 50.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "10",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.011111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 50.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 50.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 50.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 98.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "13",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.014444444444444444,
+      "gpu_hours": 0.0,
+      "queue_seconds": 98.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "13",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.014444444444444444,
+      "gpu_hours": 0.0,
+      "queue_seconds": 98.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 98.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "10",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.011111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 144.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 144.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "11",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.012222222222222223,
+      "gpu_hours": 0.0,
+      "queue_seconds": 145.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "10",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.011111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 145.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "12",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.013333333333333334,
+      "gpu_hours": 0.0,
+      "queue_seconds": 193.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "10",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.011111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 193.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "12",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.013333333333333334,
+      "gpu_hours": 0.0,
+      "queue_seconds": 193.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "9",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.01,
+      "gpu_hours": 0.0,
+      "queue_seconds": 193.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "19",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.021111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 242.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "11",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.012222222222222223,
+      "gpu_hours": 0.0,
+      "queue_seconds": 242.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "13",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.014444444444444444,
+      "gpu_hours": 0.0,
+      "queue_seconds": 242.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "14",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.015555555555555555,
+      "gpu_hours": 0.0,
+      "queue_seconds": 242.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "20",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.022222222222222223,
+      "gpu_hours": 0.0,
+      "queue_seconds": 291.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "11",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.012222222222222223,
+      "gpu_hours": 0.0,
+      "queue_seconds": 291.0
+    },
+    {
+      "JobIDRaw": "[redacted]",
+      "JobID": "[redacted]",
+      "JobName": "nv-u-audit",
+      "State": "COMPLETED",
+      "ExitCode": "0:0",
+      "ElapsedRaw": "10",
+      "AllocCPUS": "4",
+      "AllocTRES": "billing=4,cpu=4,mem=16G,node=1",
+      "Submit": "[redacted]",
+      "Start": "[redacted]",
+      "End": "[redacted]",
+      "NodeList": "[redacted]",
+      "cpu_core_hours": 0.011111111111111112,
+      "gpu_hours": 0.0,
+      "queue_seconds": 291.0
+    }
+  ],
+  "reversals": [
+    {
+      "panel": "routerbench-0shot",
+      "protocol": "iid",
+      "comparator": "kNN-100",
+      "nvidia_higher": 13,
+      "baseline_higher": 0,
+      "exact_ties": 0,
+      "per_penalty": [
+        {
+          "lambda_value": 0,
+          "nvidia_minus_baseline": 0.002320743865030672
+        },
+        {
+          "lambda_value": 1,
+          "nvidia_minus_baseline": 0.0022560561795246237
+        },
+        {
+          "lambda_value": 2,
+          "nvidia_minus_baseline": 0.0016316523917178083
+        },
+        {
+          "lambda_value": 5,
+          "nvidia_minus_baseline": 0.0015938191621932551
+        },
+        {
+          "lambda_value": 10,
+          "nvidia_minus_baseline": 0.0017474126970858928
+        },
+        {
+          "lambda_value": 20,
+          "nvidia_minus_baseline": 0.0011360509079755277
+        },
+        {
+          "lambda_value": 30,
+          "nvidia_minus_baseline": 0.0047009211564418285
+        },
+        {
+          "lambda_value": 50,
+          "nvidia_minus_baseline": 0.005775563627300584
+        },
+        {
+          "lambda_value": 75,
+          "nvidia_minus_baseline": 0.005340046769555129
+        },
+        {
+          "lambda_value": 100,
+          "nvidia_minus_baseline": 0.00541197932515336
+        },
+        {
+          "lambda_value": 150,
+          "nvidia_minus_baseline": 0.0024243359049078705
+        },
+        {
+          "lambda_value": 250,
+          "nvidia_minus_baseline": 0.0008771347200919877
+        },
+        {
+          "lambda_value": 500,
+          "nvidia_minus_baseline": 0.0007210032208589956
+        }
+      ]
+    },
+    {
+      "panel": "routerbench-0shot",
+      "protocol": "iid",
+      "comparator": "Family Adaptation",
+      "nvidia_higher": 13,
+      "baseline_higher": 0,
+      "exact_ties": 0,
+      "per_penalty": [
+        {
+          "lambda_value": 0,
+          "nvidia_minus_baseline": 0.004915644171779254
+        },
+        {
+          "lambda_value": 1,
+          "nvidia_minus_baseline": 0.004585986275000065
+        },
+        {
+          "lambda_value": 2,
+          "nvidia_minus_baseline": 0.004680749809355733
+        },
+        {
+          "lambda_value": 5,
+          "nvidia_minus_baseline": 0.0058785485851227115
+        },
+        {
+          "lambda_value": 10,
+          "nvidia_minus_baseline": 0.006043894753834378
+        },
+        {
+          "lambda_value": 20,
+          "nvidia_minus_baseline": 0.008355461102760864
+        },
+        {
+          "lambda_value": 30,
+          "nvidia_minus_baseline": 0.015007082839724073
+        },
+        {
+          "lambda_value": 50,
+          "nvidia_minus_baseline": 0.019082238006135177
+        },
+        {
+          "lambda_value": 75,
+          "nvidia_minus_baseline": 0.026101832480828202
+        },
+        {
+          "lambda_value": 100,
+          "nvidia_minus_baseline": 0.03376094040644162
+        },
+        {
+          "lambda_value": 150,
+          "nvidia_minus_baseline": 0.031212426503067325
+        },
+        {
+          "lambda_value": 250,
+          "nvidia_minus_baseline": 0.025104980809049104
+        },
+        {
+          "lambda_value": 500,
+          "nvidia_minus_baseline": 0.02629909083588955
+        }
+      ]
+    },
+    {
+      "panel": "routerbench-0shot",
+      "protocol": "ood",
+      "comparator": "kNN-100",
+      "nvidia_higher": 6,
+      "baseline_higher": 7,
+      "exact_ties": 0,
+      "per_penalty": [
+        {
+          "lambda_value": 0,
+          "nvidia_minus_baseline": 0.006194817520347451
+        },
+        {
+          "lambda_value": 1,
+          "nvidia_minus_baseline": 0.008232354772655381
+        },
+        {
+          "lambda_value": 2,
+          "nvidia_minus_baseline": 0.008369252687584483
+        },
+        {
+          "lambda_value": 5,
+          "nvidia_minus_baseline": 0.007544239164821387
+        },
+        {
+          "lambda_value": 10,
+          "nvidia_minus_baseline": -0.00011440597049272583
+        },
+        {
+          "lambda_value": 20,
+          "nvidia_minus_baseline": -0.023195392022087313
+        },
+        {
+          "lambda_value": 30,
+          "nvidia_minus_baseline": -0.04773170308590491
+        },
+        {
+          "lambda_value": 50,
+          "nvidia_minus_baseline": -0.02072094489660925
+        },
+        {
+          "lambda_value": 75,
+          "nvidia_minus_baseline": 0.0088895173420378
+        },
+        {
+          "lambda_value": 100,
+          "nvidia_minus_baseline": -0.013910014954991334
+        },
+        {
+          "lambda_value": 150,
+          "nvidia_minus_baseline": -0.011055256535618785
+        },
+        {
+          "lambda_value": 250,
+          "nvidia_minus_baseline": 0.011542191050013084
+        },
+        {
+          "lambda_value": 500,
+          "nvidia_minus_baseline": -0.008866431796612062
+        }
+      ]
+    },
+    {
+      "panel": "routerbench-0shot",
+      "protocol": "ood",
+      "comparator": "Family Adaptation",
+      "nvidia_higher": 0,
+      "baseline_higher": 13,
+      "exact_ties": 0,
+      "per_penalty": [
+        {
+          "lambda_value": 0,
+          "nvidia_minus_baseline": -0.000575191970320077
+        },
+        {
+          "lambda_value": 1,
+          "nvidia_minus_baseline": -0.0001622634379224719
+        },
+        {
+          "lambda_value": 2,
+          "nvidia_minus_baseline": -0.00015833715452528985
+        },
+        {
+          "lambda_value": 5,
+          "nvidia_minus_baseline": -0.0004901574875615378
+        },
+        {
+          "lambda_value": 10,
+          "nvidia_minus_baseline": -0.007523154755399664
+        },
+        {
+          "lambda_value": 20,
+          "nvidia_minus_baseline": -0.0315810394869287
+        },
+        {
+          "lambda_value": 30,
+          "nvidia_minus_baseline": -0.058356254695004495
+        },
+        {
+          "lambda_value": 50,
+          "nvidia_minus_baseline": -0.03395959434586282
+        },
+        {
+          "lambda_value": 75,
+          "nvidia_minus_baseline": -0.018546214445946396
+        },
+        {
+          "lambda_value": 100,
+          "nvidia_minus_baseline": -0.03656633085042149
+        },
+        {
+          "lambda_value": 150,
+          "nvidia_minus_baseline": -0.02724546604929401
+        },
+        {
+          "lambda_value": 250,
+          "nvidia_minus_baseline": -0.017610125535647225
+        },
+        {
+          "lambda_value": 500,
+          "nvidia_minus_baseline": -0.03732665295792481
+        }
+      ]
+    },
+    {
+      "panel": "sprout-sixfam",
+      "protocol": "iid",
+      "comparator": "kNN-100",
+      "nvidia_higher": 4,
+      "baseline_higher": 9,
+      "exact_ties": 0,
+      "per_penalty": [
+        {
+          "lambda_value": 0,
+          "nvidia_minus_baseline": -0.0009432672590565794
+        },
+        {
+          "lambda_value": 0.5,
+          "nvidia_minus_baseline": -0.0021758202652085723
+        },
+        {
+          "lambda_value": 1,
+          "nvidia_minus_baseline": -0.0017084650101008014
+        },
+        {
+          "lambda_value": 2,
+          "nvidia_minus_baseline": -0.001690948250322788
+        },
+        {
+          "lambda_value": 5,
+          "nvidia_minus_baseline": -0.0025135455707451237
+        },
+        {
+          "lambda_value": 10,
+          "nvidia_minus_baseline": -0.0006864570350120225
+        },
+        {
+          "lambda_value": 25,
+          "nvidia_minus_baseline": 0.0019051234335841771
+        },
+        {
+          "lambda_value": 50,
+          "nvidia_minus_baseline": 0.0006741999316473013
+        },
+        {
+          "lambda_value": 75,
+          "nvidia_minus_baseline": 9.737526011988074e-05
+        },
+        {
+          "lambda_value": 100,
+          "nvidia_minus_baseline": 0.00018213501936670262
+        },
+        {
+          "lambda_value": 150,
+          "nvidia_minus_baseline": -0.0029360513632565866
+        },
+        {
+          "lambda_value": 250,
+          "nvidia_minus_baseline": -0.00802423646236794
+        },
+        {
+          "lambda_value": 500,
+          "nvidia_minus_baseline": -0.008622684210526144
+        }
+      ]
+    },
+    {
+      "panel": "sprout-sixfam",
+      "protocol": "iid",
+      "comparator": "Family Adaptation",
+      "nvidia_higher": 13,
+      "baseline_higher": 0,
+      "exact_ties": 0,
+      "per_penalty": [
+        {
+          "lambda_value": 0,
+          "nvidia_minus_baseline": 0.005332573858889633
+        },
+        {
+          "lambda_value": 0.5,
+          "nvidia_minus_baseline": 0.004124458087035876
+        },
+        {
+          "lambda_value": 1,
+          "nvidia_minus_baseline": 0.004857002219184392
+        },
+        {
+          "lambda_value": 2,
+          "nvidia_minus_baseline": 0.005987430345257061
+        },
+        {
+          "lambda_value": 5,
+          "nvidia_minus_baseline": 0.0046012912554110885
+        },
+        {
+          "lambda_value": 10,
+          "nvidia_minus_baseline": 0.007435803091060955
+        },
+        {
+          "lambda_value": 25,
+          "nvidia_minus_baseline": 0.014100901978431168
+        },
+        {
+          "lambda_value": 50,
+          "nvidia_minus_baseline": 0.008747920012151522
+        },
+        {
+          "lambda_value": 75,
+          "nvidia_minus_baseline": 0.0075846180944785235
+        },
+        {
+          "lambda_value": 100,
+          "nvidia_minus_baseline": 0.008647840601503809
+        },
+        {
+          "lambda_value": 150,
+          "nvidia_minus_baseline": 0.009768223725981517
+        },
+        {
+          "lambda_value": 250,
+          "nvidia_minus_baseline": 0.012388886458570725
+        },
+        {
+          "lambda_value": 500,
+          "nvidia_minus_baseline": 0.02305318326118333
+        }
+      ]
+    },
+    {
+      "panel": "sprout-sixfam",
+      "protocol": "ood",
+      "comparator": "kNN-100",
+      "nvidia_higher": 10,
+      "baseline_higher": 3,
+      "exact_ties": 0,
+      "per_penalty": [
+        {
+          "lambda_value": 0,
+          "nvidia_minus_baseline": -0.0031307676532914552
+        },
+        {
+          "lambda_value": 0.5,
+          "nvidia_minus_baseline": 0.009647798192516932
+        },
+        {
+          "lambda_value": 1,
+          "nvidia_minus_baseline": -0.005524348225442677
+        },
+        {
+          "lambda_value": 2,
+          "nvidia_minus_baseline": -0.007866462694191667
+        },
+        {
+          "lambda_value": 5,
+          "nvidia_minus_baseline": 0.004527639460432553
+        },
+        {
+          "lambda_value": 10,
+          "nvidia_minus_baseline": 0.014541126855333264
+        },
+        {
+          "lambda_value": 25,
+          "nvidia_minus_baseline": 0.012830242275616577
+        },
+        {
+          "lambda_value": 50,
+          "nvidia_minus_baseline": 0.01416038584318835
+        },
+        {
+          "lambda_value": 75,
+          "nvidia_minus_baseline": 0.0029215747032148576
+        },
+        {
+          "lambda_value": 100,
+          "nvidia_minus_baseline": 0.024073227128762698
+        },
+        {
+          "lambda_value": 150,
+          "nvidia_minus_baseline": 0.018258990042609446
+        },
+        {
+          "lambda_value": 250,
+          "nvidia_minus_baseline": 0.0147945241187597
+        },
+        {
+          "lambda_value": 500,
+          "nvidia_minus_baseline": 0.027321011005536855
+        }
+      ]
+    },
+    {
+      "panel": "sprout-sixfam",
+      "protocol": "ood",
+      "comparator": "Family Adaptation",
+      "nvidia_higher": 10,
+      "baseline_higher": 3,
+      "exact_ties": 0,
+      "per_penalty": [
+        {
+          "lambda_value": 0,
+          "nvidia_minus_baseline": 0.00488983070157456
+        },
+        {
+          "lambda_value": 0.5,
+          "nvidia_minus_baseline": 0.019231368951511674
+        },
+        {
+          "lambda_value": 1,
+          "nvidia_minus_baseline": 0.005065953231708886
+        },
+        {
+          "lambda_value": 2,
+          "nvidia_minus_baseline": 0.006602115520313645
+        },
+        {
+          "lambda_value": 5,
+          "nvidia_minus_baseline": 0.004786771427757852
+        },
+        {
+          "lambda_value": 10,
+          "nvidia_minus_baseline": 0.0070167954884136075
+        },
+        {
+          "lambda_value": 25,
+          "nvidia_minus_baseline": 0.00324115313190676
+        },
+        {
+          "lambda_value": 50,
+          "nvidia_minus_baseline": 0.001477897361405578
+        },
+        {
+          "lambda_value": 75,
+          "nvidia_minus_baseline": -0.012736191172784683
+        },
+        {
+          "lambda_value": 100,
+          "nvidia_minus_baseline": 0.007490721739923156
+        },
+        {
+          "lambda_value": 150,
+          "nvidia_minus_baseline": -0.0004417622188803705
+        },
+        {
+          "lambda_value": 250,
+          "nvidia_minus_baseline": -0.007645666199557977
+        },
+        {
+          "lambda_value": 500,
+          "nvidia_minus_baseline": 0.04172304725773013
+        }
+      ]
+    }
+  ],
+  "cached_feature_costs": "Existing raw embeddings and outer-training PCA were reused. Their historical compute is excluded from these incremental totals; queue time is recorded separately per allocation.",
+  "limitations": "Mean comparisons do not establish significance or equivalence. No inference-speed conclusion for this new pipeline; the earlier measured inference timings belong to the older pipeline.",
+  "failed_job_explanation": "The preflight failed on a missing output directory before router training. Fixed; preserved logs/hashes; all training and audit allocations completed."
+}

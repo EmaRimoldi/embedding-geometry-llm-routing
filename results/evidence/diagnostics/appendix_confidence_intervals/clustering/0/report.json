@@ -1,0 +1,36 @@
+{
+  "dataset": "routerbench",
+  "encoder": "gte-qwen2-7b",
+  "subset": "primary",
+  "complete": true,
+  "rows": [
+    {
+      "family": "mmlu",
+      "metric": "nmi",
+      "mean": 0.7219901244233213,
+      "low": 0.7267526835156338,
+      "high": 0.7374092402633096
+    },
+    {
+      "family": "mmlu",
+      "metric": "ari",
+      "mean": 0.41849466777072236,
+      "low": 0.40982043358254316,
+      "high": 0.43689644051074816
+    }
+  ],
+  "source_hashes": {
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/0/assignments.npz": "50066a2c7a280bd915b0cd85d469e7b36a43c80b80fbb9610bb631107f7c7b57",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/0/report.json": "31f5b850289b9cabc39f700a7ab58e1081a05c573bebee8592a796f9963694ec",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/1/assignments.npz": "fac014343c1ce3c6ed1c9865e1612a6e3664956d7d23f91af63ebdcb93b44a76",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/1/report.json": "5c4109e80bd9bbcbc98d6576b0f75a11e21e4240d2e626be693fcca418183b81",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/2/assignments.npz": "7ac711fdccf9dcdf5206d99a9bfabb7d031b32715698510e07e0a526b2854f3f",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/2/report.json": "c65946d6096506f6d84cce177dce404d41af2f7845a721e2e04c4c4b574c65a4",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/3/assignments.npz": "107539d485b4a497cfc2833153ac812c14035a28f224d46b4fd440ffcf035065",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/3/report.json": "1397d13fa66419389a3d8b9e022bd29b3f34cc20731ab8740fc2ca4541384591",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/4/assignments.npz": "26098f3db187f43a3e654851911fef5ad4640b8ecec3945117e6472e1641fded",
+    "results/diagnostics/appendix_confidence_intervals/clustering_assignments/4/report.json": "46e570d23e9aaf38d299af45c10d03ecf0de34510b88e2ede1ce16428fb83c6c"
+  },
+  "replicates": 2000,
+  "slurm_job": "[redacted]"
+}

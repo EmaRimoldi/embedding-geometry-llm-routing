@@ -1,0 +1,90 @@
+[
+  {
+    "name": "routerbench",
+    "repo": "withmartian/routerbench",
+    "type": "dataset",
+    "revision": "784021482c3f320c6619ed4b3bb3b41a21424fcb",
+    "destination": "datasets/routerbench/raw",
+    "include": [
+      "README.md",
+      "routerbench_0shot.pkl"
+    ]
+  },
+  {
+    "name": "sprout",
+    "repo": "CARROT-LLM-Routing/SPROUT",
+    "type": "dataset",
+    "revision": "d54e3cda2189ca1ed13a877a44ed34736c4b6920",
+    "destination": "datasets/sprout/raw",
+    "include": [
+      "README.md",
+      "data/*.parquet"
+    ]
+  },
+  {
+    "name": "minilm-l12",
+    "repo": "sentence-transformers/all-MiniLM-L12-v2",
+    "type": "model",
+    "revision": "a50ef00143b4d5391434df20ae11632588ac25be",
+    "destination": "embedders/minilm-l12",
+    "include": [
+      "README.md",
+      "*.json",
+      "vocab.txt",
+      "model.safetensors",
+      "1_Pooling/config.json"
+    ]
+  },
+  {
+    "name": "gte-qwen2-7b",
+    "repo": "Alibaba-NLP/gte-Qwen2-7B-instruct",
+    "type": "model",
+    "revision": "a8d08b36ada9cacfe34c4d6f80957772a025daf2",
+    "destination": "embedders/gte-qwen2-7b",
+    "include": [
+      "README.md",
+      "LICENSE*",
+      "*.json",
+      "*.txt",
+      "*.safetensors",
+      "*.py",
+      "1_Pooling/config.json"
+    ]
+  },
+  {
+    "name": "qwen2.5-7b-instruct",
+    "repo": "Qwen/Qwen2.5-7B-Instruct",
+    "type": "model",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "destination": "embedders/qwen2.5-7b-instruct",
+    "include": [
+      "README.md",
+      "LICENSE*",
+      "*.json",
+      "*.txt",
+      "*.safetensors"
+    ]
+  },
+  {
+    "name": "mmlupro-subject-metadata",
+    "repo": "TIGER-Lab/MMLU-Pro",
+    "type": "dataset",
+    "revision": "b189ec765aa7ed75c8acfea42df31fdae71f97be",
+    "destination": "datasets/sprout/source_metadata/mmlupro",
+    "include": [
+      "README.md",
+      "data/test-*.parquet"
+    ]
+  },
+  {
+    "name": "math-subject-metadata",
+    "repo": "EleutherAI/hendrycks_math",
+    "type": "dataset",
+    "revision": "21a5633873b6a120296cce3e2df9d5550074f4a3",
+    "destination": "datasets/sprout/source_metadata/math",
+    "include": [
+      "README.md",
+      "*/*.parquet"
+    ]
+  }
+]

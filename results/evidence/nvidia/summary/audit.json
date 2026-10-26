@@ -1,0 +1,9 @@
+{
+  "completed_outer_evaluations": 23,
+  "expected": 23,
+  "missing": [],
+  "source_validation_scores_reconstructed": 6552,
+  "test_scores_reconstructed": 598,
+  "all_complete": true,
+  "comparison": "Complete NVIDIA utility pipeline; not an isolated architecture or equal-compute comparison"
+}

@@ -1,106 +1,125 @@
-# Routing Theory — experiment reproduction
+# Routing Theory: experiment reproduction
 
-Code, configurations and launch tools for rerunning the LLM routing experiments in *Embedding Geometry Shapes LLM Routing: Tracing Failure Modes and Improving Generalization*.
+This repository now uses the final conference supplement (archive SHA-256
+`043676877fed7b9ecf4f93da0ba428a5f8dbd0025212873fcebc94470623494e`). The obsolete
+September export was removed from the active tree; Git history preserves it.
+The original conference file manifest is retained separately from the current
+repository manifest, so original results and later code fixes remain distinguishable.
 
-**Current status:** the September source archive is available here. The final October experiment implementation has been located on the cluster but is not readable with the current account. The conference submission package has not yet been imported. This repository does not claim exact reproduction of the final experiments.
-
-The recovered historical code uses **34,661 RouterBench queries**, whereas the final protocol uses **34,771**. SPROUT has 43,887 queries in both, but matching counts alone do not establish identical preprocessing or settings. SharedTrunkNet's final implementation and other October changes still require the conference package. See [reproduction status](docs/reproduction-status.md).
-
-## Start
-
-Use Python 3.11. The small CPU environment supports input validation, reference baselines, kNN and Family Adaptation:
+## Checks added to this repository
 
 ```bash
-python3.11 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements-cpu.txt
-python -m unittest discover -s tests -v
+python scripts/verify_release.py
+python scripts/check_paper_results.py
 ```
 
-The tests execute the **original recovered kNN and soft-family-prior runners** on synthetic inputs, including their validation and prediction exports. Synthetic tests check execution and selected numerical properties; they do not reproduce benchmark results.
+The paper check reconstructs saved aggregates and verifies **5,493 numeric values
+and settings covering all 44 tables** against the pinned final manuscript snapshot.
+It checks printed precision, full penalty grids and known-metadata/oracle labels.
+Supplied confidence endpoints are compared, not resampled by this compact command.
 
-## Historical benchmark inputs
+Fresh public data preparation has also been rerun: all eight output-file hashes
+match the canonical cohorts (34,771 RouterBench and 43,887 SPROUT queries).
+CPU and CUDA component checks passed, including actual encoder extraction on four
+illustrative prompts and SharedTrunkNet toy fitting. These checks **do not constitute
+a repeat of every full-scale model fit or confidence-interval bootstrap**. See
+`docs/REPRODUCTION_AUDIT.md` for exactly what ran, fixes and remaining compute.
 
-Raw benchmark records, model weights and embedding arrays are not tracked in Git. If you have the audited September `routing-geometry-code.zip`, stage its two frozen numeric panels locally:
+For CPU development on Python 3.11, create a virtual environment. On Linux,
+install the CPU PyTorch wheel before the remaining pinned dependencies:
 
 ```bash
-python -m repro prepare-legacy-data \
-  --archive /path/to/routing-geometry-code.zip \
-  --destination data/legacy
-
-python -m repro validate \
-  --data-root data/legacy --panel routerbench-0shot
-python -m repro validate \
-  --data-root data/legacy --panel sprout-sixfam
+python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+python -m pip install -r environment/cpu-requirements.lock
+python -B -m pytest -q tests
 ```
 
-The preparation command verifies the audited archive hash and extracts only the two panels, split registries and source manifests. It checks finite outcomes, unique IDs, outer/inner separation and complete held-out-family coverage. It does not download anything or invoke a model API. The legacy archive is currently required for this staging route; upstream-only preparation for the final cohort remains to be integrated from the conference package.
+On macOS, install `torch==2.5.1` from the ordinary package index instead of the
+CPU wheel index. Full Linux/CUDA reproduction retains `requirements.lock`.
 
-## Run actual reference controls
-
-These commands recompute the training-selected single-model baseline and the realized-oracle upper bound, for all five ID splits and all held-out-family folds at all thirteen penalties:
+To independently download, checksum and prepare public data and tokenizers without
+downloading the large model weights:
 
 ```bash
-python -m repro reference-baselines \
-  --data-root data/legacy --panel routerbench-0shot \
-  --split all --output runs/routerbench-reference.json
-
-python -m repro reference-baselines \
-  --data-root data/legacy --panel sprout-sixfam \
-  --split all --output runs/sprout-reference.json
+python -B scripts/check_public_inputs.py --download --prepare
+python -B scripts/reproduce_outcome_controls.py
 ```
 
-The realized oracle uses observed test outcomes as an upper bound; it is not a deployable router. Outputs contain utility, reward, cost and family summaries, input hashes and environment versions. Existing output files are never overwritten. The checked-in `validation/` results record actual executions on these **historical** inputs.
+The latter recomputes all 598 single-model/oracle control scores from the prepared
+outcomes and checks 3,588 saved metric values. Use a fresh reproduction copy for
+preparation. Full model extraction still requires all model weights; after the
+production asset download, verify their pinned LFS checksums with
+`python scripts/verify_model_weights.py`.
 
-## Run original kNN or Family Adaptation
+This package contains the source, frozen configurations and compact evidence for the routing study. It supports two separate workflows:
 
-Provide aligned embeddings, with exactly one row per frozen-panel query:
+1. **Check the supplied evidence and regenerate numerical summary tables**, without models, datasets or a GPU.
+2. **Reproduce the experiments from public assets**, using the pinned revisions and the full execution instructions.
 
-```text
-data/legacy/
-  astra_definitive_paper_20260923_v1/inputs/<panel>/
-    panel.npz
-    splits.json
-    source_manifest.json
-  embeddings/<panel>/
-    gte.npy
-    reader.npy
-```
+## Quick evidence check
 
-`panel` is `routerbench-0shot` or `sprout-sixfam`. The archive's extraction and alignment scripts are retained under `legacy/`; see [the historical instructions](legacy/ARCHIVE_README.md). GPU extraction and the other historical methods require their additional dependencies. The original dependency list is preserved at `legacy/requirements.txt`; it differs from the CPU environment above and from the final protocol.
+From this directory, with Python 3.11:
 
 ```bash
-python -m repro run-legacy \
-  --data-root data/legacy --panel routerbench-0shot \
-  --split ood_0 --representation gte --kind knn \
-  --workdir runs/routerbench-ood0-gte-knn
-
-python -m repro run-legacy \
-  --data-root data/legacy --panel routerbench-0shot \
-  --split ood_0 --representation gte --kind prior \
-  --workdir runs/routerbench-ood0-gte-prior
+python scripts/verify_release.py
+python scripts/reproduce_results.py
 ```
 
-`knn` produces fixed k=100 and validation-selected kNN. `prior` is the historical soft-family-prior implementation in the Family Adaptation lineage. Each launch copies the unmodified recovered sources into a fresh workspace, points them to external inputs and records feature/code/input hashes. It does not change the repository sources or shared input files. A legacy run cannot establish compliance with the final October protocol.
+The second command reconstructs the supported aggregate tables from the bundled records and writes derived outputs to `results/reproduced/`. Read `docs/RESULT_INDEX.md` for the exact coverage and distinction between reconstructed results and supplied summary-only evidence. It does not retrain routers or independently regenerate all predictions.
 
-## Recover the final submission
+## Render saved appendix tables
 
-Place the conference archive in `incoming/` (ignored by Git) and inspect it:
+With the compute dependencies installed:
 
 ```bash
-python -m repro inspect-submission --archive incoming/submission.zip
+python -B scripts/render_saved_tables.py
 ```
 
-This inventories the package and its dependency/launch files without importing or executing code. Integration must then verify the final cohort, feature conventions, configurations and experimental entry points before replacing the pending status. See [conference integration](conference/README.md).
+This optional command regenerates four table families in isolated output folders.
+See `docs/SAVED_TABLES.md`. It does not recompute bootstrap intervals.
 
-## Contents
+## Full experiment reproduction
 
-- `legacy/`: recovered historical Python sources, job scripts and configurations. Files retain their original checksums and license text.
-- `repro/`: portable input checks, reference controls, original-runner launchers and archive inspection.
-- `configs/target-protocol.json`: a partial final-protocol reference, explicitly not a verified executable implementation.
-- `provenance/source-manifest.json`: hashes and provenance of every exported original source/configuration file.
-- `provenance/experiment-code-inventory.csv`: **scheduler-derived locations** of the final experiment launchers; their contents are not included or verified.
-- `validation/`: numerical checks actually executed during repository preparation.
+Read `docs/RUN_COMMANDS.md` and `environment/`. Public dataset/model revisions are in `manifests/assets.json`. Frozen settings and row splits are in `configs/`.
 
-The manuscript and Overleaf project identify the experiments and their target settings. LaTeX compilation, PDF assembly and publication layout are outside this repository's execution requirements.
+The full pipeline requires Linux, the pinned Python environment, CUDA-capable hardware for encoder extraction and neural router fitting, substantial storage, and either configurable Slurm launchers or the documented Python commands. No GPUs are needed for the compact evidence check. Downloaded model weights, raw datasets, all fitted checkpoints and large embedding arrays are deliberately omitted.
 
+## Methods and results
+
+- The primary representations are GTE-Qwen2-7B-Instruct and raw Qwen2.5-7B-Instruct hidden state 21; GTE internal-layer and Qwen layer-sweep controls are separate.
+- kNN-100 and validated kNN are separate methods. The fixed cost-penalty grids, splits and all reported outcomes are retained.
+- The final NVIDIA utility adaptation is `src/nvidia_utility/` with `configs/nvidia_utility_v1.json`. It uses per-target/per-penalty Ridge validation and the reference ternary layer search, followed by SharedTrunkNet ensembles.
+- `src/nvidia/` retains the earlier common-layer and fixed-layer utility controls. Their CPU inference measurements apply to those controls, not to the final per-target pipeline.
+- Read `docs/METHODS.md` and `docs/RESULT_INDEX.md` before interpreting a comparison.
+
+## Package contents
+
+`src/` source; `configs/` frozen protocols/splits; `jobs/` configurable Slurm examples; `tests/` synthetic tests; `environment/` dependency specifications; `manifests/` public asset revisions; `results/` compact evidence; `release_provenance/` checksums; `scripts/` installation, verification and reproduction helpers.
+
+Historical scheduling logs, private research notes, machine-specific caches and obsolete manuscript drafts are excluded. This code supplement does not contain or replace the submitted paper PDF.
+
+## Updating the repository
+
+After changing code, configuration or documentation, run the affected tests and
+the paper-value check, then refresh the current file manifest and code archive:
+
+```bash
+python scripts/build_submission.py
+python scripts/verify_release.py
+```
+
+Commit the regenerated manifest with the changes. The deterministic export is
+`dist/routing_reproduction.zip`. Original conference fingerprints and saved
+experimental evidence remain separate from newly executed results.
+
+## Provenance and limitations
+
+Original-run source hashes and release hashes are distinct. Portability and anonymization changes are described in `docs/RELEASE_CHANGES.md`. Published numerical outcomes are not retuned or selected by this packaging step. Fresh runs produce their own provenance; do not relabel historical results as having been generated by the release sources.
+
+The release verification report describes exactly which checks ran. A successful compact evidence check is not a claim that every GPU experiment was rerun. See `docs/VALIDATION.md`.
+
+Third-party code notices are retained. See `THIRD_PARTY.md` for asset and licensing information. The package does not assert a new license grant over third-party assets or its authors' original code.
+
+## Reviewer smoke tests
+
+See [reviewer smoke tests](docs/REVIEWER_SMOKE_TESTS.md) for small CPU/GPU execution checks, installation evidence and their scope. These runs do not replace the saved paper evidence.

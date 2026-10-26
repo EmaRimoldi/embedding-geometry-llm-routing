@@ -1,0 +1,991 @@
+{
+  "dataset": "routerbench",
+  "complete": true,
+  "rows": [
+    {
+      "scope": "family_locality",
+      "encoder": "gte-qwen2-7b",
+      "subset": "primary",
+      "metric": "same_family",
+      "mean": 0.9550711273008121,
+      "low": 0.9534214125647925,
+      "high": 0.956703517858194
+    },
+    {
+      "scope": "family_locality",
+      "encoder": "gte-qwen2-7b",
+      "subset": "primary",
+      "metric": "random_same_family",
+      "mean": 0.2955497534253521,
+      "low": 0.2940816317955779,
+      "high": 0.2969947589581336
+    },
+    {
+      "scope": "family_locality",
+      "encoder": "gte-qwen2-7b",
+      "subset": "shared_minilm",
+      "metric": "same_family",
+      "mean": 0.9547905366415117,
+      "low": 0.9531620319463884,
+      "high": 0.95640353224165
+    },
+    {
+      "scope": "family_locality",
+      "encoder": "gte-qwen2-7b",
+      "subset": "shared_minilm",
+      "metric": "random_same_family",
+      "mean": 0.294875024675389,
+      "low": 0.2934064208883212,
+      "high": 0.29632626730465383
+    },
+    {
+      "scope": "family_locality",
+      "encoder": "minilm-l12",
+      "subset": "shared_minilm",
+      "metric": "same_family",
+      "mean": 0.9042881323330642,
+      "low": 0.9018913500441368,
+      "high": 0.9066228597577135
+    },
+    {
+      "scope": "family_locality",
+      "encoder": "minilm-l12",
+      "subset": "shared_minilm",
+      "metric": "random_same_family",
+      "mean": 0.294875024675389,
+      "low": 0.2934064208883212,
+      "high": 0.29632626730465383
+    },
+    {
+      "scope": "answer_format",
+      "encoder": "gte-qwen2-7b",
+      "subset": "primary",
+      "metric": "same_format",
+      "mean": 0.7640781110695839,
+      "low": 0.763230479422508,
+      "high": 0.7648589485490792
+    },
+    {
+      "scope": "answer_format",
+      "encoder": "gte-qwen2-7b",
+      "subset": "primary",
+      "metric": "random_same_format",
+      "mean": 0.5118377073609575,
+      "low": 0.5118377073609031,
+      "high": 0.5118377073609036
+    },
+    {
+      "scope": "answer_format",
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "subset": "primary",
+      "metric": "same_format",
+      "mean": 0.9992933766644316,
+      "low": 0.9991320137470897,
+      "high": 0.9994423585746759
+    },
+    {
+      "scope": "answer_format",
+      "encoder": "qwen2.5-7b-instruct/layer_21",
+      "subset": "primary",
+      "metric": "random_same_format",
+      "mean": 0.5118377073609575,
+      "low": 0.5118377073609031,
+      "high": 0.5118377073609036
+    },
+    {
+      "scope": "deployability",
+      "group": "family",
+      "metric": "accuracy",
+      "mean": 0.9997124233131686,
+      "low": 0.9994836881226793,
+      "high": 0.9998848813198106
+    },
+    {
+      "scope": "deployability",
+      "group": "family",
+      "metric": "known_utility",
+      "mean": 0.7212385245251297,
+      "low": 0.7171983416660437,
+      "high": 0.7252268516162483
+    },
+    {
+      "scope": "deployability",
+      "group": "family",
+      "metric": "predicted_utility",
+      "mean": 0.7211656890086716,
+      "low": 0.7171390066408743,
+      "high": 0.725195987731074
+    },
+    {
+      "scope": "deployability",
+      "group": "family",
+      "metric": "difference",
+      "mean": -7.283551645823503e-05,
+      "low": -0.00017686282579166393,
+      "high": 6.279820108401168e-06
+    },
+    {
+      "scope": "deployability",
+      "group": "cell",
+      "metric": "accuracy",
+      "mean": 0.9385161042947463,
+      "low": 0.9355671191895103,
+      "high": 0.9413560238942236
+    },
+    {
+      "scope": "deployability",
+      "group": "cell",
+      "metric": "known_utility",
+      "mean": 0.7228829649016416,
+      "low": 0.7186798514877745,
+      "high": 0.7271273529947198
+    },
+    {
+      "scope": "deployability",
+      "group": "cell",
+      "metric": "predicted_utility",
+      "mean": 0.7223235864057423,
+      "low": 0.7181856551122144,
+      "high": 0.7264582066646157
+    },
+    {
+      "scope": "deployability",
+      "group": "cell",
+      "metric": "difference",
+      "mean": -0.0005593784959001876,
+      "low": -0.0009500473531286636,
+      "high": -0.0001980101110341418
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "0",
+      "metric": "overall_gain",
+      "mean": -9.585889570543296e-07,
+      "low": -0.0018105917475646563,
+      "high": 0.0018529147116989333
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "0",
+      "metric": "different_choices",
+      "mean": 0.22611196319019697,
+      "low": 0.22131692557895008,
+      "high": 0.23095005052518236
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "0",
+      "metric": "conditional_gain",
+      "mean": -4.239443784971255e-06,
+      "low": -0.008059739109668087,
+      "high": 0.008105653457674274
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "1",
+      "metric": "overall_gain",
+      "mean": 0.0004235942961656443,
+      "low": -0.0015239471061618403,
+      "high": 0.0022982474176414026
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "1",
+      "metric": "different_choices",
+      "mean": 0.23820935582823352,
+      "low": 0.23330027676175713,
+      "high": 0.24304678383517106
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "1",
+      "metric": "conditional_gain",
+      "mean": 0.0017782437414888396,
+      "low": -0.006395388664693465,
+      "high": 0.009655033908210849
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "2",
+      "metric": "overall_gain",
+      "mean": 0.00039252401993865327,
+      "low": -0.001540871671212256,
+      "high": 0.0022468960697310664
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "2",
+      "metric": "different_choices",
+      "mean": 0.2412193251533862,
+      "low": 0.23643378139148075,
+      "high": 0.24617403423018652
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "2",
+      "metric": "conditional_gain",
+      "mean": 0.0016272494738514655,
+      "low": -0.006401708207723174,
+      "high": 0.009286846876270934
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "5",
+      "metric": "overall_gain",
+      "mean": 0.0013216267223926429,
+      "low": -0.000830625443720339,
+      "high": 0.003318408579864545
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "5",
+      "metric": "different_choices",
+      "mean": 0.27971625766873515,
+      "low": 0.2747651209506888,
+      "high": 0.28488298084740155
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "5",
+      "metric": "conditional_gain",
+      "mean": 0.00472488347087008,
+      "low": -0.002946035456870034,
+      "high": 0.011844526674294769
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "10",
+      "metric": "overall_gain",
+      "mean": 0.0014582123819018454,
+      "low": -0.0007060608418845772,
+      "high": 0.003820912951064198
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "10",
+      "metric": "different_choices",
+      "mean": 0.21010352760737358,
+      "low": 0.2054770599793892,
+      "high": 0.21457446240878653
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "10",
+      "metric": "conditional_gain",
+      "mean": 0.006940446923989055,
+      "low": -0.0033238761366147437,
+      "high": 0.018184779556909322
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "20",
+      "metric": "overall_gain",
+      "mean": 0.003587171257668741,
+      "low": 0.0013285064771211504,
+      "high": 0.0059680460209627475
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "20",
+      "metric": "different_choices",
+      "mean": 0.20663343558283273,
+      "low": 0.20207302495583387,
+      "high": 0.2112290752486937
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "20",
+      "metric": "conditional_gain",
+      "mean": 0.017360071701613647,
+      "low": 0.006405557505493319,
+      "high": 0.02912194311594052
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "30",
+      "metric": "overall_gain",
+      "mean": 0.0060639635368098166,
+      "low": 0.0035291383469845837,
+      "high": 0.008831024126320865
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "30",
+      "metric": "different_choices",
+      "mean": 0.2444401840490923,
+      "low": 0.23978026448725015,
+      "high": 0.24927657630516467
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "30",
+      "metric": "conditional_gain",
+      "mean": 0.024807555927841868,
+      "low": 0.014351689488306063,
+      "high": 0.03591644298971927
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "50",
+      "metric": "overall_gain",
+      "mean": 0.012242644325153491,
+      "low": 0.009819459043527719,
+      "high": 0.014899245899256125
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "50",
+      "metric": "different_choices",
+      "mean": 0.2557515337423387,
+      "low": 0.2513116046243175,
+      "high": 0.2601690185866256
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "50",
+      "metric": "conditional_gain",
+      "mean": 0.04786928995502156,
+      "low": 0.03828438453688256,
+      "high": 0.05812298151480956
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "75",
+      "metric": "overall_gain",
+      "mean": 0.0114091651667946,
+      "low": 0.008203418688004956,
+      "high": 0.014603836775230137
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "75",
+      "metric": "different_choices",
+      "mean": 0.2996357361963405,
+      "low": 0.29421982242555184,
+      "high": 0.3044283189528273
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "75",
+      "metric": "conditional_gain",
+      "mean": 0.03807678386972702,
+      "low": 0.027363165117806534,
+      "high": 0.048660686396514635
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "100",
+      "metric": "overall_gain",
+      "mean": 0.01576409062883425,
+      "low": 0.012154727366921383,
+      "high": 0.019068148942096238
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "100",
+      "metric": "different_choices",
+      "mean": 0.3670628834356179,
+      "low": 0.36153952039119713,
+      "high": 0.37232890012915537
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "100",
+      "metric": "conditional_gain",
+      "mean": 0.042946566760676694,
+      "low": 0.033186573884024094,
+      "high": 0.05178241640829178
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "150",
+      "metric": "overall_gain",
+      "mean": 0.01476570758819054,
+      "low": 0.010852212266806568,
+      "high": 0.018553815847711378
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "150",
+      "metric": "different_choices",
+      "mean": 0.4605444785276712,
+      "low": 0.45495504033820616,
+      "high": 0.4660389419963351
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "150",
+      "metric": "conditional_gain",
+      "mean": 0.0320614148613734,
+      "low": 0.023643917828122894,
+      "high": 0.040269588154145906
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "250",
+      "metric": "overall_gain",
+      "mean": 0.011617186963190067,
+      "low": 0.008119284731703244,
+      "high": 0.015180946694384257
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "250",
+      "metric": "different_choices",
+      "mean": 0.47137653374240857,
+      "low": 0.46548218587741985,
+      "high": 0.47695961250399055
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "250",
+      "metric": "conditional_gain",
+      "mean": 0.02464523821531275,
+      "low": 0.01724508180085224,
+      "high": 0.0322271046950705
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "500",
+      "metric": "overall_gain",
+      "mean": 0.011918552377300613,
+      "low": 0.008537150977012554,
+      "high": 0.015397480318699239
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "500",
+      "metric": "different_choices",
+      "mean": 0.4048504601227513,
+      "low": 0.39938269990548875,
+      "high": 0.41057045302858025
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "500",
+      "metric": "conditional_gain",
+      "mean": 0.029439394421552318,
+      "low": 0.021025486972102096,
+      "high": 0.037912640474727095
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "mean",
+      "metric": "overall_gain",
+      "mean": 0.0069971908211833725,
+      "low": 0.005359683344460531,
+      "high": 0.008721417383084936
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "mean",
+      "metric": "different_choices",
+      "mean": 0.30043505191130604,
+      "low": 0.2980438188403875,
+      "high": 0.30285021865206996
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_lookup",
+      "lambda_value": "mean",
+      "metric": "conditional_gain",
+      "mean": 0.023290194591705206,
+      "low": 0.01777632587964077,
+      "high": 0.02903391551700885
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "0",
+      "metric": "overall_gain",
+      "mean": 0.0009020322085889577,
+      "low": -0.0009113524123048191,
+      "high": 0.002859940186946999
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "0",
+      "metric": "different_choices",
+      "mean": 0.23550613496933662,
+      "low": 0.23056183867505028,
+      "high": 0.24034894595734588
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "0",
+      "metric": "conditional_gain",
+      "mean": 0.0038301856072938574,
+      "low": -0.0038790679553828136,
+      "high": 0.011994657586257756
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "1",
+      "metric": "overall_gain",
+      "mean": 0.001432289200306747,
+      "low": -0.0004527401736924032,
+      "high": 0.003382681431262727
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "1",
+      "metric": "different_choices",
+      "mean": 0.2492139570552265,
+      "low": 0.2441587115622012,
+      "high": 0.25416293567193776
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "1",
+      "metric": "conditional_gain",
+      "mean": 0.005747227070389753,
+      "low": -0.001800908714931786,
+      "high": 0.013552587877106533
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "2",
+      "metric": "overall_gain",
+      "mean": 0.0015895745720858935,
+      "low": -0.00031710797099021164,
+      "high": 0.0035988715185487534
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "2",
+      "metric": "different_choices",
+      "mean": 0.2551380368098316,
+      "low": 0.2502677876463252,
+      "high": 0.2598651281836991
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "2",
+      "metric": "conditional_gain",
+      "mean": 0.006230253207093111,
+      "low": -0.001235018816111723,
+      "high": 0.013965261637529201
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "5",
+      "metric": "overall_gain",
+      "mean": 0.0022918481756134994,
+      "low": 0.00020023557392914376,
+      "high": 0.004312506929391732
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "5",
+      "metric": "different_choices",
+      "mean": 0.2927147239264085,
+      "low": 0.2877014988406285,
+      "high": 0.2979391870347848
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "5",
+      "metric": "conditional_gain",
+      "mean": 0.007829630654963888,
+      "low": 0.0006843279179299557,
+      "high": 0.014856723947827543
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "10",
+      "metric": "overall_gain",
+      "mean": 0.002534489414110432,
+      "low": 0.0002825871593063913,
+      "high": 0.004875252847865664
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "10",
+      "metric": "different_choices",
+      "mean": 0.22003450920246437,
+      "low": 0.2153744130981342,
+      "high": 0.22465078723258988
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "10",
+      "metric": "conditional_gain",
+      "mean": 0.011518599620109253,
+      "low": 0.0013032481723660402,
+      "high": 0.02215599334441518
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "20",
+      "metric": "overall_gain",
+      "mean": 0.004250713013803698,
+      "low": 0.0020173728605520145,
+      "high": 0.00667274722285264
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "20",
+      "metric": "different_choices",
+      "mean": 0.21083205521473228,
+      "low": 0.20622743324403373,
+      "high": 0.21529754681056357
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "20",
+      "metric": "conditional_gain",
+      "mean": 0.02016160687460145,
+      "low": 0.009526815106422882,
+      "high": 0.03158281360508688
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "30",
+      "metric": "overall_gain",
+      "mean": 0.0065216432722392855,
+      "low": 0.0038910561504632455,
+      "high": 0.009082520136849969
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "30",
+      "metric": "different_choices",
+      "mean": 0.2477952453987842,
+      "low": 0.24304974745047092,
+      "high": 0.2524977562357917
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "30",
+      "metric": "conditional_gain",
+      "mean": 0.02631867799458304,
+      "low": 0.015752587028951326,
+      "high": 0.03647368246413996
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "50",
+      "metric": "overall_gain",
+      "mean": 0.010763966123466273,
+      "low": 0.008291617991075296,
+      "high": 0.013241900394041717
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "50",
+      "metric": "different_choices",
+      "mean": 0.2537576687116611,
+      "low": 0.24960487096399273,
+      "high": 0.25837530002669606
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "50",
+      "metric": "conditional_gain",
+      "mean": 0.04241828898458677,
+      "low": 0.03295863514758422,
+      "high": 0.052077063712769524
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "75",
+      "metric": "overall_gain",
+      "mean": 0.007958116039110506,
+      "low": 0.005097231081347815,
+      "high": 0.010835969780484171
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "75",
+      "metric": "different_choices",
+      "mean": 0.2752684049079901,
+      "low": 0.2703634591808828,
+      "high": 0.2803130345225353
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "75",
+      "metric": "conditional_gain",
+      "mean": 0.02891038672516938,
+      "low": 0.018629772325154725,
+      "high": 0.039230143522040094
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "100",
+      "metric": "overall_gain",
+      "mean": 0.007140812446318968,
+      "low": 0.004091058905218268,
+      "high": 0.010342332645181865
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "100",
+      "metric": "different_choices",
+      "mean": 0.3310007668711988,
+      "low": 0.32565238072891795,
+      "high": 0.3363258233194715
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "100",
+      "metric": "conditional_gain",
+      "mean": 0.021573401517518683,
+      "low": 0.012460014301019966,
+      "high": 0.03099247248773892
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "150",
+      "metric": "overall_gain",
+      "mean": 0.00883622532208588,
+      "low": 0.0054517910844519785,
+      "high": 0.012374513184778257
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "150",
+      "metric": "different_choices",
+      "mean": 0.39108512269944323,
+      "low": 0.385640569089776,
+      "high": 0.3961993071607973
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "150",
+      "metric": "conditional_gain",
+      "mean": 0.02259412288837358,
+      "low": 0.013897480400498045,
+      "high": 0.03156102475938453
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "250",
+      "metric": "overall_gain",
+      "mean": 0.008549939551380508,
+      "low": 0.005247294164575016,
+      "high": 0.011971758258979054
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "250",
+      "metric": "different_choices",
+      "mean": 0.43535276073627693,
+      "low": 0.42982788248689363,
+      "high": 0.4407326559122819
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "250",
+      "metric": "conditional_gain",
+      "mean": 0.019639107230928515,
+      "low": 0.012101810407066607,
+      "high": 0.027425261748035525
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "500",
+      "metric": "overall_gain",
+      "mean": 0.006814106441717824,
+      "low": 0.003707030778796733,
+      "high": 0.009876659617854514
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "500",
+      "metric": "different_choices",
+      "mean": 0.3438650306748892,
+      "low": 0.338294985706041,
+      "high": 0.34923716688189055
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "500",
+      "metric": "conditional_gain",
+      "mean": 0.019816223907223332,
+      "low": 0.010833637225346172,
+      "high": 0.02871985943250297
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "mean",
+      "metric": "overall_gain",
+      "mean": 0.005352750444679115,
+      "low": 0.003751334011466439,
+      "high": 0.007051248997996067
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "mean",
+      "metric": "different_choices",
+      "mean": 0.28781264747524954,
+      "low": 0.2854132000765526,
+      "high": 0.29027677615106473
+    },
+    {
+      "scope": "disagreement",
+      "reference": "family_topic_lookup",
+      "lambda_value": "mean",
+      "metric": "conditional_gain",
+      "mean": 0.01859803761799392,
+      "low": 0.013092143808447589,
+      "high": 0.024499834456503843
+    }
+  ],
+  "source_hashes": {
+    "datasets/routerbench/prepared/panel.npz": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_0/per_query.npz": "e2307a5088052ccfc10faef9e2af18c9151f72385a7be327a38c3060b6e7459e",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_0/metrics.json": "3d14abf4dd94e30f5355e51f9136af4845f08470129c957f937e61e0e6718a96",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_1/per_query.npz": "9da229450895702d8624a6a1a0f39e84ed996cd127b365e096c7458a1b87577b",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_1/metrics.json": "706c74eb1fbb2b8380c8f3b38bd823152b33cf38cdb45a87789b2f5928da2bcb",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_2/per_query.npz": "bad7c24ee4ebc3f67f7318d403cbb60192a73336e4eb1cfbf11ad50121ba1dd5",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_2/metrics.json": "f37b866c268ba0ba6b007caa61e74f074623745e9cc5b0706fd78a127196d6de",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_3/per_query.npz": "ec9bf08249d805a693d49ce0ccb45288990365c18e35f45112cbc63dbad0fb63",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_3/metrics.json": "b608f6891f0b665c585c3f4d6b7a967fa52225806fd7acd9d2518e34c7c9a7c7",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_4/per_query.npz": "d1c0bde69e0903ca359caa23417cba54f9dd6490a3212e5804f118962ef62b66",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_4/metrics.json": "274d74facb35326fa5bae12516dad01a96f50d3ea99d4ab1f8301bebe67819f6",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_0/per_query.npz": "841f9658b9825bc7b8bde05386652bb48867155c99c3b7c4308ddc064dabe40f",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_0/metrics.json": "663b5ce6399d5e39b53256eca5d72f94c31ecc90098b9b74267a8972b2643fa9",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_1/per_query.npz": "528a5713ae3ac01026813a8dca4f73e215f763527d24670a4e9ccef78f60d0b2",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_1/metrics.json": "16a25af13b43923f66c481488bbe2824787317f9dafb91532c8b51a32add21ba",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_2/per_query.npz": "b5816187b77048d2b4b6c528c7de332885148e7c645c256d9adf1858f2e228ff",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_2/metrics.json": "ef131c6f98971737dfa31fc95132f0c8e82cf9b15cd2e6e88fb3b46432b258bd",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_3/per_query.npz": "5f7a9a8cc1b074bef4e3738cb2a19ca66962447899e51657f4e1e783b067ee70",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_3/metrics.json": "4ae215488e84a3adc4eb6f0b357abec98d4cb675be236fddcd64ff3ba6eca66f",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_4/per_query.npz": "2d93c59a624a518f8950902b9d33b6a6750212457f9c19e38c166de86aca11f5",
+    "results/geometry/gte-qwen2-7b/routerbench/shared_minilm/iid_4/metrics.json": "e85232e2f754deb01048f1e3d7425354f729ac91601e7ae8ffaa7df65ce85442",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_0/per_query.npz": "e7a5ca7b9ad2ef02aaeb4a97355aa4dce3481eeff9dfff6e4fc8bfff278a57e7",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_0/metrics.json": "9894c08d10a0e08c7e40c2b78ad4026a145f1391a8efc869986cd539d3f3084c",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_1/per_query.npz": "48bb2731aa8e43106d712ffdee7b75d24eb84707e14b3553e8403f89a9ac136a",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_1/metrics.json": "31c4a47a8aeb932172069222999dd77c6cf4b9f9727249970c0e473ddec387f7",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_2/per_query.npz": "7f880d157c1134a0d6ad4b6994e601b20d4d707b29f10e09e138f3f72d6b6624",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_2/metrics.json": "f5bc8346eeb059776288105b16c78c3152a9349c9fb87f15ca0682a6b2ff3020",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_3/per_query.npz": "2fc7283568cd5ad04f7d1c6378b9b2f1563b4aef1024cf4a89c65bf815db9373",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_3/metrics.json": "c2021f8e84b95c1d25ab889fc186be314211b6cb52bd26484b8fee1dad0381e2",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_4/per_query.npz": "1f958f9e31007469e9881d7689b944fa1bf6f092544e8d80debf9140a7455814",
+    "results/geometry/minilm-l12/routerbench/shared_minilm/iid_4/metrics.json": "3007901b18f4a194477dac2ed742e1ee34fa8f5b5d0db91a25708eaf9ae69a67",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_0/per_query.npz": "94d79c345daaa79b65c01129920767dc9463ebd7114116ac4aef8b90e3b99868",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_0/metrics.json": "886d6e1435848510b2d663b9ff1e777c75b7b16426caea611045fdbf1b2502dd",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_1/per_query.npz": "d79a17225eafcd8be73a57733972a8b5760bb59bcccb7f47aba2cceed4fcc095",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_1/metrics.json": "cf321454ac142b65a9e143e9f29df6cc5d43a6fe16ac7d928ff67d184552302a",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_2/per_query.npz": "077df15a528c3b6e1df04ebbf97e0a069472d93356f379fc4656f4b01c318bb9",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_2/metrics.json": "e3c68fca45fc4d78b517d3c159954ba06d00361f80518e66a373a732b788acf7",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_3/per_query.npz": "1f37bad77bb25fe88173b37be2450b33e62173776e1ae860ab7ed178f1cbad2e",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_3/metrics.json": "3ab076a6db2f8a8e745405eb9362ff78f027376a294d8d1fa4c43b4f147be2de",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_4/per_query.npz": "04588e803ed8d348ec26b6696a985c8d4561754f9dfe215190d984cc1473c5f7",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_4/metrics.json": "7d59228fb6d0fe823c3707d16e4f2f38982328f787305c069adefcb59d7f9704",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_5/per_query.npz": "deb679a935a95d73205688646ea9aa77d6e0d360ba2877fa26437a34424c1700",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_5/metrics.json": "bd52d7299a2e162e352c37b5f8f117839497472570f3e18b055cf7bc9340f61a",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_6/per_query.npz": "5f30776f3b702a42ce90202ad86048935c3ca0658514479ae45a4cd094a87f86",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/ood_6/metrics.json": "cbe8e9fc6254967749d56bbce88caa4e356a20414cb5ac93bf05df151e35ce6e",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_0/per_query.npz": "7e4e1a7282b6d5d3586f8c859efe2e7668faf4d510d7a20953340c0b16276fe9",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_0/metrics.json": "133ecb413bcd25e1413dc060f16116cfdbca7b5d6b345ec8d45c113f358721f4",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_1/per_query.npz": "8b1dbc71501fd1b8437bea5c8a167f4ab961ca70ec92bd661965879c75bfe1c9",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_1/metrics.json": "db6285d9c44a1f3b649fcf13a051be63b8d6cbf89eb489bf9a9dbb1277c63580",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_2/per_query.npz": "87319f5193699bfb6994a2cd0475dbe6c4dc0cf2b805dc2448ba50458cc5c717",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_2/metrics.json": "c030a88ff0baace43c3e87d43aff9ac54fa3e74cae79e552cde31130c21f70b0",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_3/per_query.npz": "4e84fedb6ef67114beb25580f0fe3afc99a01d7ef12d0904b1fc313442173947",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_3/metrics.json": "23c18a97bb1efb37586c36382f5b9ca63df09e2a4675c0094351df5a4297067a",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_4/per_query.npz": "2b48e957e88e8680eb1a8d256b51c6a58f622b35ad3cefb2a2366ead78bf148d",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_4/metrics.json": "ce36cbff552fabf6a25485fdae53134d69ecc4bee098e1f0b63140412267ad05",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_5/per_query.npz": "1c369a8d6801fb2959871e0fe167f9f653d7f1c8a6e645ea1acb9def1f680a8d",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_5/metrics.json": "2836721e8b57fd55dcb1aa4d1bf473593fe009f375f8c7b128d65942cc0bf4db",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_6/per_query.npz": "81078d4b1089ee38a4b4a886fcab7f278ad7bdc017f9195151b7d9a90e4aaeea",
+    "results/geometry/qwen2.5-7b-instruct/layer_21/routerbench/primary/ood_6/metrics.json": "87507c395dba83a418ff1872bbbc1d4a8a12846bb84ac0df2bf7e441c6a16036",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_0/result.json": "ec2d7324c510938063a9ac2bc280513eaf5e07c40e3710612b08ab49446d2619",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_0/predictions.npz": "9e072ec4e23d1de3c151392bd8ecdfb13cb19239655d399ee79786c18fa4fb88",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_1/result.json": "f88f91bef28ca1bfdb321e56563b3981a163f54be10d14fdb2b3704017816987",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_1/predictions.npz": "74fbd4aaed9fe730b1cdec3777f1f12b6557062b676fba86621ddf8dbba59ecd",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_2/result.json": "f1b26f76492dde4ae6d147f31970d395cb053465074d75ee4f5df62e7a2d491d",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_2/predictions.npz": "cf25b793eb1d0c3da144c80164ae987dab761627b8ba96a60fdb70588d0ef412",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_3/result.json": "133ccca27a0ca42eeadaa577240872eca4f2512c8769f33b05c2e8776c98532a",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_3/predictions.npz": "920d9db59df5299f16afeb40adf615c02c9d1cc2a112732b6b1d698d3d89aef6",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_4/result.json": "be082328fe8b6ca34099bd62d7110c215d541acb7fa7c408f57d95b6f86ec5d4",
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_4/predictions.npz": "02dd4d93ff9a332e378722884df70541464195d1ef5fe840cc61a5fb52dd1abc",
+    "results/diagnostics/iid_lookup_disagreement/paired_metrics.npz": "5bd810223824b053183c6e2b5068229d81ad27064b275f20b19d991030408f3f",
+    "results/diagnostics/iid_lookup_disagreement/report.json": "95204f3865452a4fb77a1d124a40dfc3d58018c7cf6c71bbc1c5a63e08c373df"
+  },
+  "existing_disagreement_intervals_reproduced": true,
+  "slurm_job": "[redacted]"
+}

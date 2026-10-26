@@ -1,0 +1,1353 @@
+dataset,protocol,encoder,method,lambda_value,utility
+routerbench-0shot,iid,gte,Avengers-Pro,0.0,0.7913401073619633
+routerbench-0shot,iid,gte,Avengers-Pro,1.0,0.7888396510697853
+routerbench-0shot,iid,gte,Avengers-Pro,2.0,0.7863391947776074
+routerbench-0shot,iid,gte,Avengers-Pro,5.0,0.7788378259010736
+routerbench-0shot,iid,gte,Avengers-Pro,10.0,0.766369939148773
+routerbench-0shot,iid,gte,Avengers-Pro,20.0,0.7406763944785276
+routerbench-0shot,iid,gte,Avengers-Pro,30.0,0.7188317934432517
+routerbench-0shot,iid,gte,Avengers-Pro,50.0,0.7022313828604295
+routerbench-0shot,iid,gte,Avengers-Pro,75.0,0.6937305981595091
+routerbench-0shot,iid,gte,Avengers-Pro,100.0,0.6823850617331289
+routerbench-0shot,iid,gte,Avengers-Pro,150.0,0.6620175276150309
+routerbench-0shot,iid,gte,Avengers-Pro,250.0,0.637551934125767
+routerbench-0shot,iid,gte,Avengers-Pro,500.0,0.5793717427147238
+routerbench-0shot,iid,gte,Best single model,0.0,0.7922469325153374
+routerbench-0shot,iid,gte,Best single model,1.0,0.7889791944018406
+routerbench-0shot,iid,gte,Best single model,2.0,0.7857114562883436
+routerbench-0shot,iid,gte,Best single model,5.0,0.7759082419478527
+routerbench-0shot,iid,gte,Best single model,10.0,0.7595695513803681
+routerbench-0shot,iid,gte,Best single model,20.0,0.7268921702453988
+routerbench-0shot,iid,gte,Best single model,30.0,0.6942147891104296
+routerbench-0shot,iid,gte,Best single model,50.0,0.6536627676380368
+routerbench-0shot,iid,gte,Best single model,75.0,0.6489992319785276
+routerbench-0shot,iid,gte,Best single model,100.0,0.6443356963190183
+routerbench-0shot,iid,gte,Best single model,150.0,0.635008625
+routerbench-0shot,iid,gte,Best single model,250.0,0.6163544823619632
+routerbench-0shot,iid,gte,Best single model,500.0,0.5697191257668711
+routerbench-0shot,iid,gte,Family lookup,0.0,0.7925153374233128
+routerbench-0shot,iid,gte,Family lookup,1.0,0.7894516491180982
+routerbench-0shot,iid,gte,Family lookup,2.0,0.7867330528374232
+routerbench-0shot,iid,gte,Family lookup,5.0,0.7784851707246931
+routerbench-0shot,iid,gte,Family lookup,10.0,0.7707519385736196
+routerbench-0shot,iid,gte,Family lookup,20.0,0.756810625613497
+routerbench-0shot,iid,gte,Family lookup,30.0,0.7428693126533743
+routerbench-0shot,iid,gte,Family lookup,50.0,0.7156886489647238
+routerbench-0shot,iid,gte,Family lookup,75.0,0.6958304552338956
+routerbench-0shot,iid,gte,Family lookup,100.0,0.6753323987730062
+routerbench-0shot,iid,gte,Family lookup,150.0,0.653898075345092
+routerbench-0shot,iid,gte,Family lookup,250.0,0.6292250508052147
+routerbench-0shot,iid,gte,Family lookup,500.0,0.5885091027607362
+routerbench-0shot,iid,gte,Family-topic lookup,0.0,0.7916123466257668
+routerbench-0shot,iid,gte,Family-topic lookup,1.0,0.788442954213957
+routerbench-0shot,iid,gte,Family-topic lookup,2.0,0.7855360022852761
+routerbench-0shot,iid,gte,Family-topic lookup,5.0,0.7775149492714725
+routerbench-0shot,iid,gte,Family-topic lookup,10.0,0.7696756615414111
+routerbench-0shot,iid,gte,Family-topic lookup,20.0,0.756147083857362
+routerbench-0shot,iid,gte,Family-topic lookup,30.0,0.7424116329179447
+routerbench-0shot,iid,gte,Family-topic lookup,50.0,0.717167327166411
+routerbench-0shot,iid,gte,Family-topic lookup,75.0,0.6992815043615798
+routerbench-0shot,iid,gte,Family-topic lookup,100.0,0.6839556769555214
+routerbench-0shot,iid,gte,Family-topic lookup,150.0,0.6598275576111964
+routerbench-0shot,iid,gte,Family-topic lookup,250.0,0.6322922982170244
+routerbench-0shot,iid,gte,Family-topic lookup,500.0,0.593613548696319
+routerbench-0shot,iid,gte,KM-Prox,0.0,0.7936177147239264
+routerbench-0shot,iid,gte,KM-Prox,1.0,0.7905911762423313
+routerbench-0shot,iid,gte,KM-Prox,2.0,0.7876075834202455
+routerbench-0shot,iid,gte,KM-Prox,5.0,0.779857799213957
+routerbench-0shot,iid,gte,KM-Prox,10.0,0.7732810340490797
+routerbench-0shot,iid,gte,KM-Prox,20.0,0.7615086430214725
+routerbench-0shot,iid,gte,KM-Prox,30.0,0.7507829733895705
+routerbench-0shot,iid,gte,KM-Prox,50.0,0.7300523142254601
+routerbench-0shot,iid,gte,KM-Prox,75.0,0.7081815993098158
+routerbench-0shot,iid,gte,KM-Prox,100.0,0.69153273351227
+routerbench-0shot,iid,gte,KM-Prox,150.0,0.665966916411043
+routerbench-0shot,iid,gte,KM-Prox,250.0,0.6399130612538343
+routerbench-0shot,iid,gte,KM-Prox,500.0,0.6002443845858896
+routerbench-0shot,iid,gte,KM-Prox (validated),0.0,0.7948648389570553
+routerbench-0shot,iid,gte,KM-Prox (validated),1.0,0.7914235993865031
+routerbench-0shot,iid,gte,KM-Prox (validated),2.0,0.7884103374539877
+routerbench-0shot,iid,gte,KM-Prox (validated),5.0,0.7807077716449387
+routerbench-0shot,iid,gte,KM-Prox (validated),10.0,0.7734979243865031
+routerbench-0shot,iid,gte,KM-Prox (validated),20.0,0.7610491812883436
+routerbench-0shot,iid,gte,KM-Prox (validated),30.0,0.7509647380368099
+routerbench-0shot,iid,gte,KM-Prox (validated),50.0,0.7313217994631901
+routerbench-0shot,iid,gte,KM-Prox (validated),75.0,0.7080426732170245
+routerbench-0shot,iid,gte,KM-Prox (validated),100.0,0.6911736476226993
+routerbench-0shot,iid,gte,KM-Prox (validated),150.0,0.6658637703220859
+routerbench-0shot,iid,gte,KM-Prox (validated),250.0,0.6390638314800614
+routerbench-0shot,iid,gte,KM-Prox (validated),500.0,0.5994343999233128
+routerbench-0shot,iid,gte,MLP,0.0,0.7933924463190184
+routerbench-0shot,iid,gte,MLP,1.0,0.7876080932745397
+routerbench-0shot,iid,gte,MLP,2.0,0.7859317945510736
+routerbench-0shot,iid,gte,MLP,5.0,0.776447467023773
+routerbench-0shot,iid,gte,MLP,10.0,0.7667680131993865
+routerbench-0shot,iid,gte,MLP,20.0,0.7551246906058282
+routerbench-0shot,iid,gte,MLP,30.0,0.7461989748849693
+routerbench-0shot,iid,gte,MLP,50.0,0.7282265371932515
+routerbench-0shot,iid,gte,MLP,75.0,0.7021230067983129
+routerbench-0shot,iid,gte,MLP,100.0,0.6842329042331288
+routerbench-0shot,iid,gte,MLP,150.0,0.6622548251035276
+routerbench-0shot,iid,gte,MLP,250.0,0.6342599115222393
+routerbench-0shot,iid,gte,MLP,500.0,0.5953276724693252
+routerbench-0shot,iid,gte,Realized oracle,0.0,0.9193912960122699
+routerbench-0shot,iid,gte,Realized oracle,1.0,0.9191535958572083
+routerbench-0shot,iid,gte,Realized oracle,2.0,0.9189158957021472
+routerbench-0shot,iid,gte,Realized oracle,5.0,0.9182096846157977
+routerbench-0shot,iid,gte,Realized oracle,10.0,0.9170380734110429
+routerbench-0shot,iid,gte,Realized oracle,20.0,0.9147039484325153
+routerbench-0shot,iid,gte,Realized oracle,30.0,0.9124660941533743
+routerbench-0shot,iid,gte,Realized oracle,50.0,0.9083703765145706
+routerbench-0shot,iid,gte,Realized oracle,75.0,0.9039969922795247
+routerbench-0shot,iid,gte,Realized oracle,100.0,0.8999918542254601
+routerbench-0shot,iid,gte,Realized oracle,150.0,0.892334633619632
+routerbench-0shot,iid,gte,Realized oracle,250.0,0.8772262629792944
+routerbench-0shot,iid,gte,Realized oracle,500.0,0.841401517523006
+routerbench-0shot,iid,gte,Ridge,0.0,0.7940682515337423
+routerbench-0shot,iid,gte,Ridge,1.0,0.7912776904144171
+routerbench-0shot,iid,gte,Ridge,2.0,0.7884328028418711
+routerbench-0shot,iid,gte,Ridge,5.0,0.780562874756135
+routerbench-0shot,iid,gte,Ridge,10.0,0.7730700321273006
+routerbench-0shot,iid,gte,Ridge,20.0,0.7621822612730061
+routerbench-0shot,iid,gte,Ridge,30.0,0.7521054238496933
+routerbench-0shot,iid,gte,Ridge,50.0,0.7324902613113498
+routerbench-0shot,iid,gte,Ridge,75.0,0.7073445580406441
+routerbench-0shot,iid,gte,Ridge,100.0,0.6893146726380369
+routerbench-0shot,iid,gte,Ridge,150.0,0.6662573951111963
+routerbench-0shot,iid,gte,Ridge,250.0,0.6394596566717793
+routerbench-0shot,iid,gte,Ridge,500.0,0.6004823657975459
+routerbench-0shot,iid,gte,Family Adaptation,0.0,0.7924913726993865
+routerbench-0shot,iid,gte,Family Adaptation,1.0,0.7897699085122699
+routerbench-0shot,iid,gte,Family Adaptation,2.0,0.7867340914877301
+routerbench-0shot,iid,gte,Family Adaptation,5.0,0.7784970087231594
+routerbench-0shot,iid,gte,Family Adaptation,10.0,0.7707087683282209
+routerbench-0shot,iid,gte,Family Adaptation,20.0,0.7567759109662576
+routerbench-0shot,iid,gte,Family Adaptation,30.0,0.7426973857361963
+routerbench-0shot,iid,gte,Family Adaptation,50.0,0.7189095260736196
+routerbench-0shot,iid,gte,Family Adaptation,75.0,0.6948503833397239
+routerbench-0shot,iid,gte,Family Adaptation,100.0,0.6716460740030674
+routerbench-0shot,iid,gte,Family Adaptation,150.0,0.653893045053681
+routerbench-0shot,iid,gte,Family Adaptation,250.0,0.6292551610429449
+routerbench-0shot,iid,gte,Family Adaptation,500.0,0.5884070935582821
+routerbench-0shot,iid,gte,Utility-cluster control,0.0,0.7926169478527606
+routerbench-0shot,iid,gte,Utility-cluster control,1.0,0.7892574666449387
+routerbench-0shot,iid,gte,Utility-cluster control,2.0,0.7863620281518405
+routerbench-0shot,iid,gte,Utility-cluster control,5.0,0.7787316217407975
+routerbench-0shot,iid,gte,Utility-cluster control,10.0,0.7717668552530675
+routerbench-0shot,iid,gte,Utility-cluster control,20.0,0.7593529400920246
+routerbench-0shot,iid,gte,Utility-cluster control,30.0,0.7496408017254601
+routerbench-0shot,iid,gte,Utility-cluster control,50.0,0.7296661907592026
+routerbench-0shot,iid,gte,Utility-cluster control,75.0,0.7049157130943251
+routerbench-0shot,iid,gte,Utility-cluster control,100.0,0.690557740797546
+routerbench-0shot,iid,gte,Utility-cluster control,150.0,0.666185059815951
+routerbench-0shot,iid,gte,Utility-cluster control,250.0,0.6390848513420246
+routerbench-0shot,iid,gte,Utility-cluster control,500.0,0.5994497599693251
+routerbench-0shot,iid,gte,Validated kNN,0.0,0.7934863880368098
+routerbench-0shot,iid,gte,Validated kNN,1.0,0.7905155568289878
+routerbench-0shot,iid,gte,Validated kNN,2.0,0.7875926632745399
+routerbench-0shot,iid,gte,Validated kNN,5.0,0.7807047589846625
+routerbench-0shot,iid,gte,Validated kNN,10.0,0.7735991904386502
+routerbench-0shot,iid,gte,Validated kNN,20.0,0.7617236906441719
+routerbench-0shot,iid,gte,Validated kNN,30.0,0.7507643526702454
+routerbench-0shot,iid,gte,Validated kNN,50.0,0.7290354091564417
+routerbench-0shot,iid,gte,Validated kNN,75.0,0.7087588637538343
+routerbench-0shot,iid,gte,Validated kNN,100.0,0.6921600329371167
+routerbench-0shot,iid,gte,Validated kNN,150.0,0.6702142462653374
+routerbench-0shot,iid,gte,Validated kNN,250.0,0.6423900513228528
+routerbench-0shot,iid,gte,Validated kNN,500.0,0.6009660284892638
+routerbench-0shot,iid,gte,kNN-100,0.0,0.7925143788343559
+routerbench-0shot,iid,gte,kNN-100,1.0,0.7898752434142639
+routerbench-0shot,iid,gte,kNN-100,2.0,0.787125576857362
+routerbench-0shot,iid,gte,kNN-100,5.0,0.7798067974470859
+routerbench-0shot,iid,gte,kNN-100,10.0,0.7722101509555214
+routerbench-0shot,iid,gte,kNN-100,20.0,0.7603977968711656
+routerbench-0shot,iid,gte,kNN-100,30.0,0.7489332761901841
+routerbench-0shot,iid,gte,kNN-100,50.0,0.7279312932898773
+routerbench-0shot,iid,gte,kNN-100,75.0,0.7072396204006901
+routerbench-0shot,iid,gte,kNN-100,100.0,0.6910964894018405
+routerbench-0shot,iid,gte,kNN-100,150.0,0.6686637829332823
+routerbench-0shot,iid,gte,kNN-100,250.0,0.6408422377684049
+routerbench-0shot,iid,gte,kNN-100,500.0,0.6004276551380368
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,0.0,0.7966008435582822
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,1.0,0.7935423789388036
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,2.0,0.7908962868162576
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,5.0,0.7825897197177915
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,10.0,0.7756148327891103
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,20.0,0.7643046883466257
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,30.0,0.7559269781909509
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,50.0,0.7396306185774539
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,75.0,0.7209879583991565
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,100.0,0.7062407971855829
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,150.0,0.6850748138151841
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,250.0,0.6525387813266871
+routerbench-0shot,iid,nvidia_pipeline,fixed_l21,500.0,0.6115779009969324
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,0.0,0.7968289877300613
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,1.0,0.7944523453992332
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,2.0,0.7911413413510736
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,5.0,0.7837886914148773
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,10.0,0.7758126742147239
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,20.0,0.7653919876487729
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,30.0,0.7568278224018404
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,50.0,0.740846352779908
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,75.0,0.721486491692868
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,100.0,0.7071199576533742
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,150.0,0.6847671985429449
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,250.0,0.6540703666027609
+routerbench-0shot,iid,nvidia_pipeline,selected_layer,500.0,0.6131122636886502
+routerbench-0shot,iid,reader,Avengers-Pro,0.0,0.7928470092024539
+routerbench-0shot,iid,reader,Avengers-Pro,1.0,0.79029181125
+routerbench-0shot,iid,reader,Avengers-Pro,2.0,0.7873257872392638
+routerbench-0shot,iid,reader,Avengers-Pro,5.0,0.7795675182131903
+routerbench-0shot,iid,reader,Avengers-Pro,10.0,0.7669302818251534
+routerbench-0shot,iid,reader,Avengers-Pro,20.0,0.7362720743865032
+routerbench-0shot,iid,reader,Avengers-Pro,30.0,0.7212696595092024
+routerbench-0shot,iid,reader,Avengers-Pro,50.0,0.7001557553680982
+routerbench-0shot,iid,reader,Avengers-Pro,75.0,0.6771642312116564
+routerbench-0shot,iid,reader,Avengers-Pro,100.0,0.6721013551917177
+routerbench-0shot,iid,reader,Avengers-Pro,150.0,0.6658488583128835
+routerbench-0shot,iid,reader,Avengers-Pro,250.0,0.6457105797737729
+routerbench-0shot,iid,reader,Avengers-Pro,500.0,0.5897193540644171
+routerbench-0shot,iid,reader,Best single model,0.0,0.7922469325153374
+routerbench-0shot,iid,reader,Best single model,1.0,0.7889791944018406
+routerbench-0shot,iid,reader,Best single model,2.0,0.7857114562883436
+routerbench-0shot,iid,reader,Best single model,5.0,0.7759082419478527
+routerbench-0shot,iid,reader,Best single model,10.0,0.7595695513803681
+routerbench-0shot,iid,reader,Best single model,20.0,0.7268921702453988
+routerbench-0shot,iid,reader,Best single model,30.0,0.6942147891104296
+routerbench-0shot,iid,reader,Best single model,50.0,0.6536627676380368
+routerbench-0shot,iid,reader,Best single model,75.0,0.6489992319785276
+routerbench-0shot,iid,reader,Best single model,100.0,0.6443356963190183
+routerbench-0shot,iid,reader,Best single model,150.0,0.635008625
+routerbench-0shot,iid,reader,Best single model,250.0,0.6163544823619632
+routerbench-0shot,iid,reader,Best single model,500.0,0.5697191257668711
+routerbench-0shot,iid,reader,Family lookup,0.0,0.7925153374233128
+routerbench-0shot,iid,reader,Family lookup,1.0,0.7894516491180982
+routerbench-0shot,iid,reader,Family lookup,2.0,0.7867330528374232
+routerbench-0shot,iid,reader,Family lookup,5.0,0.7784851707246931
+routerbench-0shot,iid,reader,Family lookup,10.0,0.7707519385736196
+routerbench-0shot,iid,reader,Family lookup,20.0,0.756810625613497
+routerbench-0shot,iid,reader,Family lookup,30.0,0.7428693126533743
+routerbench-0shot,iid,reader,Family lookup,50.0,0.7156886489647238
+routerbench-0shot,iid,reader,Family lookup,75.0,0.6958304552338956
+routerbench-0shot,iid,reader,Family lookup,100.0,0.6753323987730062
+routerbench-0shot,iid,reader,Family lookup,150.0,0.653898075345092
+routerbench-0shot,iid,reader,Family lookup,250.0,0.6292250508052147
+routerbench-0shot,iid,reader,Family lookup,500.0,0.5885091027607362
+routerbench-0shot,iid,reader,Family-topic lookup,0.0,0.7916123466257668
+routerbench-0shot,iid,reader,Family-topic lookup,1.0,0.788442954213957
+routerbench-0shot,iid,reader,Family-topic lookup,2.0,0.7855360022852761
+routerbench-0shot,iid,reader,Family-topic lookup,5.0,0.7775149492714725
+routerbench-0shot,iid,reader,Family-topic lookup,10.0,0.7696756615414111
+routerbench-0shot,iid,reader,Family-topic lookup,20.0,0.756147083857362
+routerbench-0shot,iid,reader,Family-topic lookup,30.0,0.7424116329179447
+routerbench-0shot,iid,reader,Family-topic lookup,50.0,0.717167327166411
+routerbench-0shot,iid,reader,Family-topic lookup,75.0,0.6992815043615798
+routerbench-0shot,iid,reader,Family-topic lookup,100.0,0.6839556769555214
+routerbench-0shot,iid,reader,Family-topic lookup,150.0,0.6598275576111964
+routerbench-0shot,iid,reader,Family-topic lookup,250.0,0.6322922982170244
+routerbench-0shot,iid,reader,Family-topic lookup,500.0,0.593613548696319
+routerbench-0shot,iid,reader,KM-Prox,0.0,0.7925086273006134
+routerbench-0shot,iid,reader,KM-Prox,1.0,0.7897724491947853
+routerbench-0shot,iid,reader,KM-Prox,2.0,0.7870236450153374
+routerbench-0shot,iid,reader,KM-Prox,5.0,0.7787295261694785
+routerbench-0shot,iid,reader,KM-Prox,10.0,0.7705255106978527
+routerbench-0shot,iid,reader,KM-Prox,20.0,0.7571849983128834
+routerbench-0shot,iid,reader,KM-Prox,30.0,0.7497512099693252
+routerbench-0shot,iid,reader,KM-Prox,50.0,0.7302804474693252
+routerbench-0shot,iid,reader,KM-Prox,75.0,0.7065550078604295
+routerbench-0shot,iid,reader,KM-Prox,100.0,0.6864800678680982
+routerbench-0shot,iid,reader,KM-Prox,150.0,0.6574585024923313
+routerbench-0shot,iid,reader,KM-Prox,250.0,0.6310128824769939
+routerbench-0shot,iid,reader,KM-Prox,500.0,0.5904256527990798
+routerbench-0shot,iid,reader,KM-Prox (validated),0.0,0.7927799079754602
+routerbench-0shot,iid,reader,KM-Prox (validated),1.0,0.7898437199999999
+routerbench-0shot,iid,reader,KM-Prox (validated),2.0,0.7871197578987731
+routerbench-0shot,iid,reader,KM-Prox (validated),5.0,0.7790226168711658
+routerbench-0shot,iid,reader,KM-Prox (validated),10.0,0.7728577434432516
+routerbench-0shot,iid,reader,KM-Prox (validated),20.0,0.7614765720858896
+routerbench-0shot,iid,reader,KM-Prox (validated),30.0,0.750755897392638
+routerbench-0shot,iid,reader,KM-Prox (validated),50.0,0.7302328261119633
+routerbench-0shot,iid,reader,KM-Prox (validated),75.0,0.710947139570552
+routerbench-0shot,iid,reader,KM-Prox (validated),100.0,0.6952549654907975
+routerbench-0shot,iid,reader,KM-Prox (validated),150.0,0.6689772862346626
+routerbench-0shot,iid,reader,KM-Prox (validated),250.0,0.6440637921779142
+routerbench-0shot,iid,reader,KM-Prox (validated),500.0,0.607425780291411
+routerbench-0shot,iid,reader,MLP,0.0,0.7905751533742331
+routerbench-0shot,iid,reader,MLP,1.0,0.7863633859718557
+routerbench-0shot,iid,reader,MLP,2.0,0.7852796713690183
+routerbench-0shot,iid,reader,MLP,5.0,0.778277295961273
+routerbench-0shot,iid,reader,MLP,10.0,0.7667798756296011
+routerbench-0shot,iid,reader,MLP,20.0,0.7558042368619632
+routerbench-0shot,iid,reader,MLP,30.0,0.7456967032929447
+routerbench-0shot,iid,reader,MLP,50.0,0.7290938638113498
+routerbench-0shot,iid,reader,MLP,75.0,0.7141222997220092
+routerbench-0shot,iid,reader,MLP,100.0,0.699408667791411
+routerbench-0shot,iid,reader,MLP,150.0,0.6806571246587423
+routerbench-0shot,iid,reader,MLP,250.0,0.6504869236963191
+routerbench-0shot,iid,reader,MLP,500.0,0.605527362845092
+routerbench-0shot,iid,reader,Realized oracle,0.0,0.9193912960122699
+routerbench-0shot,iid,reader,Realized oracle,1.0,0.9191535958572083
+routerbench-0shot,iid,reader,Realized oracle,2.0,0.9189158957021472
+routerbench-0shot,iid,reader,Realized oracle,5.0,0.9182096846157977
+routerbench-0shot,iid,reader,Realized oracle,10.0,0.9170380734110429
+routerbench-0shot,iid,reader,Realized oracle,20.0,0.9147039484325153
+routerbench-0shot,iid,reader,Realized oracle,30.0,0.9124660941533743
+routerbench-0shot,iid,reader,Realized oracle,50.0,0.9083703765145706
+routerbench-0shot,iid,reader,Realized oracle,75.0,0.9039969922795247
+routerbench-0shot,iid,reader,Realized oracle,100.0,0.8999918542254601
+routerbench-0shot,iid,reader,Realized oracle,150.0,0.892334633619632
+routerbench-0shot,iid,reader,Realized oracle,250.0,0.8772262629792944
+routerbench-0shot,iid,reader,Realized oracle,500.0,0.841401517523006
+routerbench-0shot,iid,reader,Ridge,0.0,0.7965097776073619
+routerbench-0shot,iid,reader,Ridge,1.0,0.7934950504735429
+routerbench-0shot,iid,reader,Ridge,2.0,0.7906204806173314
+routerbench-0shot,iid,reader,Ridge,5.0,0.7832494651437885
+routerbench-0shot,iid,reader,Ridge,10.0,0.7750126429823619
+routerbench-0shot,iid,reader,Ridge,20.0,0.7647698503113498
+routerbench-0shot,iid,reader,Ridge,30.0,0.7551797079670245
+routerbench-0shot,iid,reader,Ridge,50.0,0.736673511541411
+routerbench-0shot,iid,reader,Ridge,75.0,0.718814031432132
+routerbench-0shot,iid,reader,Ridge,100.0,0.704546681572086
+routerbench-0shot,iid,reader,Ridge,150.0,0.682649601368865
+routerbench-0shot,iid,reader,Ridge,250.0,0.6530472127875767
+routerbench-0shot,iid,reader,Ridge,500.0,0.6113383485429447
+routerbench-0shot,iid,reader,Family Adaptation,0.0,0.7926207822085889
+routerbench-0shot,iid,reader,Family Adaptation,1.0,0.789795767101227
+routerbench-0shot,iid,reader,Family Adaptation,2.0,0.7867358233128836
+routerbench-0shot,iid,reader,Family Adaptation,5.0,0.778457328125
+routerbench-0shot,iid,reader,Family Adaptation,10.0,0.7707330335506135
+routerbench-0shot,iid,reader,Family Adaptation,20.0,0.7567919873466257
+routerbench-0shot,iid,reader,Family Adaptation,30.0,0.7428509411426379
+routerbench-0shot,iid,reader,Family Adaptation,50.0,0.7218985713190182
+routerbench-0shot,iid,reader,Family Adaptation,75.0,0.6958192351418712
+routerbench-0shot,iid,reader,Family Adaptation,100.0,0.6754639451687118
+routerbench-0shot,iid,reader,Family Adaptation,150.0,0.6538856853911044
+routerbench-0shot,iid,reader,Family Adaptation,250.0,0.6291619976993865
+routerbench-0shot,iid,reader,Family Adaptation,500.0,0.5883958301380369
+routerbench-0shot,iid,reader,Utility-cluster control,0.0,0.7934058665644173
+routerbench-0shot,iid,reader,Utility-cluster control,1.0,0.7909427589723925
+routerbench-0shot,iid,reader,Utility-cluster control,2.0,0.7877979746319018
+routerbench-0shot,iid,reader,Utility-cluster control,5.0,0.7798326307783743
+routerbench-0shot,iid,reader,Utility-cluster control,10.0,0.7738674541595093
+routerbench-0shot,iid,reader,Utility-cluster control,20.0,0.7619701947331288
+routerbench-0shot,iid,reader,Utility-cluster control,30.0,0.7514093602730062
+routerbench-0shot,iid,reader,Utility-cluster control,50.0,0.7293587840260736
+routerbench-0shot,iid,reader,Utility-cluster control,75.0,0.709150443082822
+routerbench-0shot,iid,reader,Utility-cluster control,100.0,0.6995935260736197
+routerbench-0shot,iid,reader,Utility-cluster control,150.0,0.6742470000613497
+routerbench-0shot,iid,reader,Utility-cluster control,250.0,0.6464349960314416
+routerbench-0shot,iid,reader,Utility-cluster control,500.0,0.6103099380751534
+routerbench-0shot,iid,reader,Validated kNN,0.0,0.7961656441717793
+routerbench-0shot,iid,reader,Validated kNN,1.0,0.7935006551265338
+routerbench-0shot,iid,reader,Validated kNN,2.0,0.7907296224079756
+routerbench-0shot,iid,reader,Validated kNN,5.0,0.783606957305598
+routerbench-0shot,iid,reader,Validated kNN,10.0,0.7762099333013803
+routerbench-0shot,iid,reader,Validated kNN,20.0,0.7645153609279142
+routerbench-0shot,iid,reader,Validated kNN,30.0,0.7541477858128833
+routerbench-0shot,iid,reader,Validated kNN,50.0,0.7360510603565951
+routerbench-0shot,iid,reader,Validated kNN,75.0,0.7177784017158741
+routerbench-0shot,iid,reader,Validated kNN,100.0,0.7045519286042944
+routerbench-0shot,iid,reader,Validated kNN,150.0,0.6836091576802148
+routerbench-0shot,iid,reader,Validated kNN,250.0,0.652996554428681
+routerbench-0shot,iid,reader,Validated kNN,500.0,0.6140885736963191
+routerbench-0shot,iid,reader,kNN-100,0.0,0.7952156825153375
+routerbench-0shot,iid,reader,kNN-100,1.0,0.7921256971967024
+routerbench-0shot,iid,reader,kNN-100,2.0,0.7897849207305215
+routerbench-0shot,iid,reader,kNN-100,5.0,0.7827420575479295
+routerbench-0shot,iid,reader,kNN-100,10.0,0.775029515607362
+routerbench-0shot,iid,reader,kNN-100,20.0,0.764011397541411
+routerbench-0shot,iid,reader,kNN-100,30.0,0.7531571028259202
+routerbench-0shot,iid,reader,kNN-100,50.0,0.7352052456978528
+routerbench-0shot,iid,reader,kNN-100,75.0,0.7165810208531442
+routerbench-0shot,iid,reader,kNN-100,100.0,0.70381290625
+routerbench-0shot,iid,reader,kNN-100,150.0,0.6826737759892638
+routerbench-0shot,iid,reader,kNN-100,250.0,0.6533898437883436
+routerbench-0shot,iid,reader,kNN-100,500.0,0.6139739177530674
+routerbench-0shot,ood,gte,Avengers-Pro,0.0,0.7905380920882344
+routerbench-0shot,ood,gte,Avengers-Pro,1.0,0.7873436197520922
+routerbench-0shot,ood,gte,Avengers-Pro,2.0,0.784091628218918
+routerbench-0shot,ood,gte,Avengers-Pro,5.0,0.7743356536193955
+routerbench-0shot,ood,gte,Avengers-Pro,10.0,0.7580756959535245
+routerbench-0shot,ood,gte,Avengers-Pro,20.0,0.7250298331368094
+routerbench-0shot,ood,gte,Avengers-Pro,30.0,0.6259153785050761
+routerbench-0shot,ood,gte,Avengers-Pro,50.0,0.5724429642518192
+routerbench-0shot,ood,gte,Avengers-Pro,75.0,0.5118742078168589
+routerbench-0shot,ood,gte,Avengers-Pro,100.0,0.603735133875931
+routerbench-0shot,ood,gte,Avengers-Pro,150.0,0.5994458551666619
+routerbench-0shot,ood,gte,Avengers-Pro,250.0,0.5800096229616635
+routerbench-0shot,ood,gte,Avengers-Pro,500.0,0.5483023266515199
+routerbench-0shot,ood,gte,Best single model,0.0,0.7921400017255759
+routerbench-0shot,ood,gte,Best single model,1.0,0.7888810298812229
+routerbench-0shot,ood,gte,Best single model,2.0,0.7856220580368698
+routerbench-0shot,ood,gte,Best single model,5.0,0.7758451425038108
+routerbench-0shot,ood,gte,Best single model,10.0,0.7595502832820453
+routerbench-0shot,ood,gte,Best single model,20.0,0.7269605648385149
+routerbench-0shot,ood,gte,Best single model,30.0,0.648446788185557
+routerbench-0shot,ood,gte,Best single model,50.0,0.5445471303672601
+routerbench-0shot,ood,gte,Best single model,75.0,0.4958563862126485
+routerbench-0shot,ood,gte,Best single model,100.0,0.5983035546863765
+routerbench-0shot,ood,gte,Best single model,150.0,0.5883507621293607
+routerbench-0shot,ood,gte,Best single model,250.0,0.616711995628541
+routerbench-0shot,ood,gte,Best single model,500.0,0.4821847286531879
+routerbench-0shot,ood,gte,KM-Prox,0.0,0.7921400017255759
+routerbench-0shot,ood,gte,KM-Prox,1.0,0.7888810298812229
+routerbench-0shot,ood,gte,KM-Prox,2.0,0.7856220580368698
+routerbench-0shot,ood,gte,KM-Prox,5.0,0.7758451425038108
+routerbench-0shot,ood,gte,KM-Prox,10.0,0.7594884651577463
+routerbench-0shot,ood,gte,KM-Prox,20.0,0.7267063812947572
+routerbench-0shot,ood,gte,KM-Prox,30.0,0.6935183273992696
+routerbench-0shot,ood,gte,KM-Prox,50.0,0.626738313249547
+routerbench-0shot,ood,gte,KM-Prox,75.0,0.548106993759167
+routerbench-0shot,ood,gte,KM-Prox,100.0,0.4796000834028357
+routerbench-0shot,ood,gte,KM-Prox,150.0,0.6351422889764459
+routerbench-0shot,ood,gte,KM-Prox,250.0,0.6139476675965604
+routerbench-0shot,ood,gte,KM-Prox,500.0,0.5669289666676253
+routerbench-0shot,ood,gte,KM-Prox (validated),0.0,0.7921400017255759
+routerbench-0shot,ood,gte,KM-Prox (validated),1.0,0.7888810298812229
+routerbench-0shot,ood,gte,KM-Prox (validated),2.0,0.7856220580368698
+routerbench-0shot,ood,gte,KM-Prox (validated),5.0,0.7758451425038108
+routerbench-0shot,ood,gte,KM-Prox (validated),10.0,0.7576124309338242
+routerbench-0shot,ood,gte,KM-Prox (validated),20.0,0.7243154941761814
+routerbench-0shot,ood,gte,KM-Prox (validated),30.0,0.6923207494176182
+routerbench-0shot,ood,gte,KM-Prox (validated),50.0,0.6292141954502314
+routerbench-0shot,ood,gte,KM-Prox (validated),75.0,0.552666491328981
+routerbench-0shot,ood,gte,KM-Prox (validated),100.0,0.47473408932731304
+routerbench-0shot,ood,gte,KM-Prox (validated),150.0,0.6347347939374766
+routerbench-0shot,ood,gte,KM-Prox (validated),250.0,0.6162985390123954
+routerbench-0shot,ood,gte,KM-Prox (validated),500.0,0.5689915187943976
+routerbench-0shot,ood,gte,MLP,0.0,0.7921400017255759
+routerbench-0shot,ood,gte,MLP,1.0,0.7888810868597393
+routerbench-0shot,ood,gte,MLP,2.0,0.7856220580368698
+routerbench-0shot,ood,gte,MLP,5.0,0.7758454885968192
+routerbench-0shot,ood,gte,MLP,10.0,0.7593883229127723
+routerbench-0shot,ood,gte,MLP,20.0,0.721557411463576
+routerbench-0shot,ood,gte,MLP,30.0,0.6777715606971327
+routerbench-0shot,ood,gte,MLP,50.0,0.5893899748353513
+routerbench-0shot,ood,gte,MLP,75.0,0.5258144383796842
+routerbench-0shot,ood,gte,MLP,100.0,0.6171149877771707
+routerbench-0shot,ood,gte,MLP,150.0,0.6119549204797101
+routerbench-0shot,ood,gte,MLP,250.0,0.5921273755428376
+routerbench-0shot,ood,gte,MLP,500.0,0.5432442279485777
+routerbench-0shot,ood,gte,Realized oracle,0.0,0.9188835523856087
+routerbench-0shot,ood,gte,Realized oracle,1.0,0.9186478285789883
+routerbench-0shot,ood,gte,Realized oracle,2.0,0.9184121047723678
+routerbench-0shot,ood,gte,Realized oracle,5.0,0.9177119825889392
+routerbench-0shot,ood,gte,Realized oracle,10.0,0.9165525191452647
+routerbench-0shot,ood,gte,Realized oracle,20.0,0.9142480166345518
+routerbench-0shot,ood,gte,Realized oracle,30.0,0.9120496283213022
+routerbench-0shot,ood,gte,Realized oracle,50.0,0.908024680515372
+routerbench-0shot,ood,gte,Realized oracle,75.0,0.9036933869143826
+routerbench-0shot,ood,gte,Realized oracle,100.0,0.8997174063213597
+routerbench-0shot,ood,gte,Realized oracle,150.0,0.8921098748324754
+routerbench-0shot,ood,gte,Realized oracle,250.0,0.8770920790601363
+routerbench-0shot,ood,gte,Realized oracle,500.0,0.8414363680653417
+routerbench-0shot,ood,gte,Ridge,0.0,0.7921400017255759
+routerbench-0shot,ood,gte,Ridge,1.0,0.7888810298812229
+routerbench-0shot,ood,gte,Ridge,2.0,0.7856220580368698
+routerbench-0shot,ood,gte,Ridge,5.0,0.7758452987259499
+routerbench-0shot,ood,gte,Ridge,10.0,0.7595505957263237
+routerbench-0shot,ood,gte,Ridge,20.0,0.7269327819159643
+routerbench-0shot,ood,gte,Ridge,30.0,0.6907300081102068
+routerbench-0shot,ood,gte,Ridge,50.0,0.5392260212993587
+routerbench-0shot,ood,gte,Ridge,75.0,0.60544872134825
+routerbench-0shot,ood,gte,Ridge,100.0,0.6336208869460184
+routerbench-0shot,ood,gte,Ridge,150.0,0.6168452431624054
+routerbench-0shot,ood,gte,Ridge,250.0,0.599431104943775
+routerbench-0shot,ood,gte,Ridge,500.0,0.5202349176612695
+routerbench-0shot,ood,gte,Family Adaptation,0.0,0.7921400017255759
+routerbench-0shot,ood,gte,Family Adaptation,1.0,0.7888810298812229
+routerbench-0shot,ood,gte,Family Adaptation,2.0,0.7856220580368698
+routerbench-0shot,ood,gte,Family Adaptation,5.0,0.7758184871013201
+routerbench-0shot,ood,gte,Family Adaptation,10.0,0.7625072483966524
+routerbench-0shot,ood,gte,Family Adaptation,20.0,0.7356748302896092
+routerbench-0shot,ood,gte,Family Adaptation,30.0,0.7113681704293809
+routerbench-0shot,ood,gte,Family Adaptation,50.0,0.6814890121077909
+routerbench-0shot,ood,gte,Family Adaptation,75.0,0.6645985913548645
+routerbench-0shot,ood,gte,Family Adaptation,100.0,0.654387811106957
+routerbench-0shot,ood,gte,Family Adaptation,150.0,0.6248458105892842
+routerbench-0shot,ood,gte,Family Adaptation,250.0,0.5973316556900865
+routerbench-0shot,ood,gte,Family Adaptation,500.0,0.5332096402174227
+routerbench-0shot,ood,gte,Utility-cluster control,0.0,0.7905380920882344
+routerbench-0shot,ood,gte,Utility-cluster control,1.0,0.7872892492134249
+routerbench-0shot,ood,gte,Utility-cluster control,2.0,0.7838944823214749
+routerbench-0shot,ood,gte,Utility-cluster control,5.0,0.7731668456472347
+routerbench-0shot,ood,gte,Utility-cluster control,10.0,0.7569273556124357
+routerbench-0shot,ood,gte,Utility-cluster control,20.0,0.7246748601995915
+routerbench-0shot,ood,gte,Utility-cluster control,30.0,0.6889226647493601
+routerbench-0shot,ood,gte,Utility-cluster control,50.0,0.6240346357596847
+routerbench-0shot,ood,gte,Utility-cluster control,75.0,0.5390724032958498
+routerbench-0shot,ood,gte,Utility-cluster control,100.0,0.6228084213856376
+routerbench-0shot,ood,gte,Utility-cluster control,150.0,0.5796333036150815
+routerbench-0shot,ood,gte,Utility-cluster control,250.0,0.5452112518478041
+routerbench-0shot,ood,gte,Utility-cluster control,500.0,0.5305151117310403
+routerbench-0shot,ood,gte,Validated kNN,0.0,0.7913433608466826
+routerbench-0shot,ood,gte,Validated kNN,1.0,0.7879198837882142
+routerbench-0shot,ood,gte,Validated kNN,2.0,0.7846525900204193
+routerbench-0shot,ood,gte,Validated kNN,5.0,0.7746194585142792
+routerbench-0shot,ood,gte,Validated kNN,10.0,0.7580676198556269
+routerbench-0shot,ood,gte,Validated kNN,20.0,0.7248082651634983
+routerbench-0shot,ood,gte,Validated kNN,30.0,0.6907171366943716
+routerbench-0shot,ood,gte,Validated kNN,50.0,0.6020667397946565
+routerbench-0shot,ood,gte,Validated kNN,75.0,0.5309735000172557
+routerbench-0shot,ood,gte,Validated kNN,100.0,0.4683389435449081
+routerbench-0shot,ood,gte,Validated kNN,150.0,0.5252050792326938
+routerbench-0shot,ood,gte,Validated kNN,250.0,0.5536632430761266
+routerbench-0shot,ood,gte,Validated kNN,500.0,0.5433322702251876
+routerbench-0shot,ood,gte,kNN-100,0.0,0.7899542722383596
+routerbench-0shot,ood,gte,kNN-100,1.0,0.7864272344252394
+routerbench-0shot,ood,gte,kNN-100,2.0,0.7830741577981651
+routerbench-0shot,ood,gte,kNN-100,5.0,0.7732180929222628
+routerbench-0shot,ood,gte,kNN-100,10.0,0.756331816916396
+routerbench-0shot,ood,gte,kNN-100,20.0,0.7225131837450749
+routerbench-0shot,ood,gte,kNN-100,30.0,0.688121183457479
+routerbench-0shot,ood,gte,kNN-100,50.0,0.6224643852635817
+routerbench-0shot,ood,gte,kNN-100,75.0,0.5490847797014754
+routerbench-0shot,ood,gte,kNN-100,100.0,0.505657963820425
+routerbench-0shot,ood,gte,kNN-100,150.0,0.5319572431048862
+routerbench-0shot,ood,gte,kNN-100,250.0,0.5559915640907652
+routerbench-0shot,ood,gte,kNN-100,500.0,0.5353007080037963
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,0.0,0.7911621753760317
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,1.0,0.7877767393287509
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,2.0,0.7838205903195192
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,5.0,0.7738607443846883
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,10.0,0.7488807335423197
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,20.0,0.7045597928733714
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,30.0,0.6989044833913318
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,50.0,0.664146704869
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,75.0,0.6542488325040982
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,100.0,0.6383636625348709
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,150.0,0.6031229935866095
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,250.0,0.5543120977251157
+routerbench-0shot,ood,nvidia_pipeline,fixed_l21,500.0,0.49051647924994973
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,0.0,0.7917661269448678
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,1.0,0.7885948142187454
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,2.0,0.7854235390756665
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,5.0,0.7746658832360299
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,10.0,0.7587939756118605
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,20.0,0.6916706167783497
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,30.0,0.6872234193437059
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,50.0,0.6654047798452735
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,75.0,0.6387499223490839
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,100.0,0.6223815881050301
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,150.0,0.5983005319087746
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,250.0,0.5567121480544132
+routerbench-0shot,ood,nvidia_pipeline,selected_layer,500.0,0.48407272008282765
+routerbench-0shot,ood,reader,Avengers-Pro,0.0,0.7913663685254954
+routerbench-0shot,ood,reader,Avengers-Pro,1.0,0.7881721127951454
+routerbench-0shot,ood,reader,Avengers-Pro,2.0,0.7849778570647953
+routerbench-0shot,ood,reader,Avengers-Pro,5.0,0.7753952835984009
+routerbench-0shot,ood,reader,Avengers-Pro,10.0,0.7439489484340398
+routerbench-0shot,ood,reader,Avengers-Pro,20.0,0.7126812901555895
+routerbench-0shot,ood,reader,Avengers-Pro,30.0,0.6799973716602915
+routerbench-0shot,ood,reader,Avengers-Pro,50.0,0.6210011291018377
+routerbench-0shot,ood,reader,Avengers-Pro,75.0,0.5499147339737135
+routerbench-0shot,ood,reader,Avengers-Pro,100.0,0.46884905812314853
+routerbench-0shot,ood,reader,Avengers-Pro,150.0,0.5908438402691899
+routerbench-0shot,ood,reader,Avengers-Pro,250.0,0.5478645365390701
+routerbench-0shot,ood,reader,Avengers-Pro,500.0,0.4996818843288949
+routerbench-0shot,ood,reader,Best single model,0.0,0.7921400017255759
+routerbench-0shot,ood,reader,Best single model,1.0,0.7888810298812229
+routerbench-0shot,ood,reader,Best single model,2.0,0.7856220580368698
+routerbench-0shot,ood,reader,Best single model,5.0,0.7758451425038108
+routerbench-0shot,ood,reader,Best single model,10.0,0.7595502832820453
+routerbench-0shot,ood,reader,Best single model,20.0,0.7269605648385149
+routerbench-0shot,ood,reader,Best single model,30.0,0.648446788185557
+routerbench-0shot,ood,reader,Best single model,50.0,0.5445471303672601
+routerbench-0shot,ood,reader,Best single model,75.0,0.4958563862126485
+routerbench-0shot,ood,reader,Best single model,100.0,0.5983035546863765
+routerbench-0shot,ood,reader,Best single model,150.0,0.5883507621293607
+routerbench-0shot,ood,reader,Best single model,250.0,0.616711995628541
+routerbench-0shot,ood,reader,Best single model,500.0,0.4821847286531879
+routerbench-0shot,ood,reader,KM-Prox,0.0,0.7920623508095826
+routerbench-0shot,ood,reader,KM-Prox,1.0,0.7886696285985448
+routerbench-0shot,ood,reader,KM-Prox,2.0,0.7854307160564838
+routerbench-0shot,ood,reader,KM-Prox,5.0,0.7753924337810244
+routerbench-0shot,ood,reader,KM-Prox,10.0,0.7597062657386904
+routerbench-0shot,ood,reader,KM-Prox,20.0,0.7286662024100544
+routerbench-0shot,ood,reader,KM-Prox,30.0,0.6990555433550947
+routerbench-0shot,ood,reader,KM-Prox,50.0,0.6805300667222686
+routerbench-0shot,ood,reader,KM-Prox,75.0,0.6681030952517902
+routerbench-0shot,ood,reader,KM-Prox,100.0,0.6353621190072186
+routerbench-0shot,ood,reader,KM-Prox,150.0,0.6366737094130167
+routerbench-0shot,ood,reader,KM-Prox,250.0,0.6167558640821372
+routerbench-0shot,ood,reader,KM-Prox,500.0,0.5694561502401427
+routerbench-0shot,ood,reader,KM-Prox (validated),0.0,0.7921400017255759
+routerbench-0shot,ood,reader,KM-Prox (validated),1.0,0.7888810298812229
+routerbench-0shot,ood,reader,KM-Prox (validated),2.0,0.7856220580368698
+routerbench-0shot,ood,reader,KM-Prox (validated),5.0,0.7758451425038108
+routerbench-0shot,ood,reader,KM-Prox (validated),10.0,0.7659643709413017
+routerbench-0shot,ood,reader,KM-Prox (validated),20.0,0.7349431471053465
+routerbench-0shot,ood,reader,KM-Prox (validated),30.0,0.7248952761784245
+routerbench-0shot,ood,reader,KM-Prox (validated),50.0,0.6952873313968536
+routerbench-0shot,ood,reader,KM-Prox (validated),75.0,0.6623051097178683
+routerbench-0shot,ood,reader,KM-Prox (validated),100.0,0.622012965977395
+routerbench-0shot,ood,reader,KM-Prox (validated),150.0,0.5977954968220645
+routerbench-0shot,ood,reader,KM-Prox (validated),250.0,0.6171765954387277
+routerbench-0shot,ood,reader,KM-Prox (validated),500.0,0.5168806419142389
+routerbench-0shot,ood,reader,MLP,0.0,0.7888038882977194
+routerbench-0shot,ood,reader,MLP,1.0,0.7855293818814529
+routerbench-0shot,ood,reader,MLP,2.0,0.7820331274107735
+routerbench-0shot,ood,reader,MLP,5.0,0.7733421615426649
+routerbench-0shot,ood,reader,MLP,10.0,0.7592911292743953
+routerbench-0shot,ood,reader,MLP,20.0,0.722392704725202
+routerbench-0shot,ood,reader,MLP,30.0,0.7009264081562221
+routerbench-0shot,ood,reader,MLP,50.0,0.6676274735440453
+routerbench-0shot,ood,reader,MLP,75.0,0.6539077704121251
+routerbench-0shot,ood,reader,MLP,100.0,0.6114068715193696
+routerbench-0shot,ood,reader,MLP,150.0,0.6148081057490437
+routerbench-0shot,ood,reader,MLP,250.0,0.6061825990049178
+routerbench-0shot,ood,reader,MLP,500.0,0.527167490840068
+routerbench-0shot,ood,reader,Realized oracle,0.0,0.9188835523856087
+routerbench-0shot,ood,reader,Realized oracle,1.0,0.9186478285789883
+routerbench-0shot,ood,reader,Realized oracle,2.0,0.9184121047723678
+routerbench-0shot,ood,reader,Realized oracle,5.0,0.9177119825889392
+routerbench-0shot,ood,reader,Realized oracle,10.0,0.9165525191452647
+routerbench-0shot,ood,reader,Realized oracle,20.0,0.9142480166345518
+routerbench-0shot,ood,reader,Realized oracle,30.0,0.9120496283213022
+routerbench-0shot,ood,reader,Realized oracle,50.0,0.908024680515372
+routerbench-0shot,ood,reader,Realized oracle,75.0,0.9036933869143826
+routerbench-0shot,ood,reader,Realized oracle,100.0,0.8997174063213597
+routerbench-0shot,ood,reader,Realized oracle,150.0,0.8921098748324754
+routerbench-0shot,ood,reader,Realized oracle,250.0,0.8770920790601363
+routerbench-0shot,ood,reader,Realized oracle,500.0,0.8414363680653417
+routerbench-0shot,ood,reader,Ridge,0.0,0.7921400017255759
+routerbench-0shot,ood,reader,Ridge,1.0,0.7888812355353598
+routerbench-0shot,ood,reader,Ridge,2.0,0.785622469345144
+routerbench-0shot,ood,reader,Ridge,5.0,0.7739296340197291
+routerbench-0shot,ood,reader,Ridge,10.0,0.7537547694630583
+routerbench-0shot,ood,reader,Ridge,20.0,0.7194743766357021
+routerbench-0shot,ood,reader,Ridge,30.0,0.7380801652526532
+routerbench-0shot,ood,reader,Ridge,50.0,0.6981509188691727
+routerbench-0shot,ood,reader,Ridge,75.0,0.6556109201633546
+routerbench-0shot,ood,reader,Ridge,100.0,0.6153889637916655
+routerbench-0shot,ood,reader,Ridge,150.0,0.5881162569382531
+routerbench-0shot,ood,reader,Ridge,250.0,0.5594193307641425
+routerbench-0shot,ood,reader,Ridge,500.0,0.504277556009318
+routerbench-0shot,ood,reader,Family Adaptation,0.0,0.7921400017255759
+routerbench-0shot,ood,reader,Family Adaptation,1.0,0.7888810298812229
+routerbench-0shot,ood,reader,Family Adaptation,2.0,0.7856220580368698
+routerbench-0shot,ood,reader,Family Adaptation,5.0,0.775876592706566
+routerbench-0shot,ood,reader,Family Adaptation,10.0,0.7660718258318714
+routerbench-0shot,ood,reader,Family Adaptation,20.0,0.7522666094158925
+routerbench-0shot,ood,reader,Family Adaptation,30.0,0.7384773933450289
+routerbench-0shot,ood,reader,Family Adaptation,50.0,0.712594845129562
+routerbench-0shot,ood,reader,Family Adaptation,75.0,0.696556706594576
+routerbench-0shot,ood,reader,Family Adaptation,100.0,0.6688890000287596
+routerbench-0shot,ood,reader,Family Adaptation,150.0,0.6350494616203158
+routerbench-0shot,ood,reader,Family Adaptation,250.0,0.6190678453308791
+routerbench-0shot,ood,reader,Family Adaptation,500.0,0.5725679718731127
+routerbench-0shot,ood,reader,Utility-cluster control,0.0,0.7913634925656438
+routerbench-0shot,ood,reader,Utility-cluster control,1.0,0.7881721127951454
+routerbench-0shot,ood,reader,Utility-cluster control,2.0,0.7847509246210922
+routerbench-0shot,ood,reader,Utility-cluster control,5.0,0.7722411879439763
+routerbench-0shot,ood,reader,Utility-cluster control,10.0,0.7653333147162866
+routerbench-0shot,ood,reader,Utility-cluster control,20.0,0.7514834540277818
+routerbench-0shot,ood,reader,Utility-cluster control,30.0,0.7373106700986455
+routerbench-0shot,ood,reader,Utility-cluster control,50.0,0.7013198271548129
+routerbench-0shot,ood,reader,Utility-cluster control,75.0,0.6700827990279256
+routerbench-0shot,ood,reader,Utility-cluster control,100.0,0.6198335394437894
+routerbench-0shot,ood,reader,Utility-cluster control,150.0,0.5916102082194932
+routerbench-0shot,ood,reader,Utility-cluster control,250.0,0.5689575968479479
+routerbench-0shot,ood,reader,Utility-cluster control,500.0,0.5080410888383998
+routerbench-0shot,ood,reader,Validated kNN,0.0,0.7909522303068649
+routerbench-0shot,ood,reader,Validated kNN,1.0,0.7868622646803372
+routerbench-0shot,ood,reader,Validated kNN,2.0,0.7832761813925397
+routerbench-0shot,ood,reader,Validated kNN,5.0,0.7712630512783641
+routerbench-0shot,ood,reader,Validated kNN,10.0,0.7625119110753215
+routerbench-0shot,ood,reader,Validated kNN,20.0,0.7467370573178799
+routerbench-0shot,ood,reader,Validated kNN,30.0,0.7323483496591987
+routerbench-0shot,ood,reader,Validated kNN,50.0,0.7041721730752639
+routerbench-0shot,ood,reader,Validated kNN,75.0,0.6722195877311552
+routerbench-0shot,ood,reader,Validated kNN,100.0,0.6461989865117482
+routerbench-0shot,ood,reader,Validated kNN,150.0,0.6178374024330621
+routerbench-0shot,ood,reader,Validated kNN,250.0,0.5890358711282391
+routerbench-0shot,ood,reader,Validated kNN,500.0,0.540485502286388
+routerbench-0shot,ood,reader,kNN-100,0.0,0.7853699922349083
+routerbench-0shot,ood,reader,kNN-100,1.0,0.780486411670645
+routerbench-0shot,ood,reader,kNN-100,2.0,0.77709446819476
+routerbench-0shot,ood,reader,kNN-100,5.0,0.767842196054183
+routerbench-0shot,ood,reader,kNN-100,10.0,0.7586630770469645
+routerbench-0shot,ood,reader,kNN-100,20.0,0.7438809619510511
+routerbench-0shot,ood,reader,kNN-100,30.0,0.7278528417359293
+routerbench-0shot,ood,reader,kNN-100,50.0,0.6993561956803084
+routerbench-0shot,ood,reader,kNN-100,75.0,0.6691209748065918
+routerbench-0shot,ood,reader,kNN-100,100.0,0.6462326841333295
+routerbench-0shot,ood,reader,kNN-100,150.0,0.6188592521066406
+routerbench-0shot,ood,reader,kNN-100,250.0,0.5899155287452188
+routerbench-0shot,ood,reader,kNN-100,500.0,0.5441077507118
+sprout-sixfam,iid,gte,Avengers-Pro,0.0,0.8648062580694158
+sprout-sixfam,iid,gte,Avengers-Pro,0.5,0.8632188283094099
+sprout-sixfam,iid,gte,Avengers-Pro,1.0,0.8618183437373738
+sprout-sixfam,iid,gte,Avengers-Pro,2.0,0.8593112102164502
+sprout-sixfam,iid,gte,Avengers-Pro,5.0,0.8536256940495177
+sprout-sixfam,iid,gte,Avengers-Pro,10.0,0.8446247632642211
+sprout-sixfam,iid,gte,Avengers-Pro,25.0,0.8336646421166551
+sprout-sixfam,iid,gte,Avengers-Pro,50.0,0.818825707070707
+sprout-sixfam,iid,gte,Avengers-Pro,75.0,0.8067761850079745
+sprout-sixfam,iid,gte,Avengers-Pro,100.0,0.7942553022708286
+sprout-sixfam,iid,gte,Avengers-Pro,150.0,0.7731256010632642
+sprout-sixfam,iid,gte,Avengers-Pro,250.0,0.7366949662033873
+sprout-sixfam,iid,gte,Avengers-Pro,500.0,0.6688500220247589
+sprout-sixfam,iid,gte,Best single model,0.0,0.8433956102377155
+sprout-sixfam,iid,gte,Best single model,0.5,0.8409393665413534
+sprout-sixfam,iid,gte,Best single model,1.0,0.8384831228449914
+sprout-sixfam,iid,gte,Best single model,2.0,0.8335706354522671
+sprout-sixfam,iid,gte,Best single model,5.0,0.8188331732740943
+sprout-sixfam,iid,gte,Best single model,10.0,0.8015272321409583
+sprout-sixfam,iid,gte,Best single model,25.0,0.7972857122161465
+sprout-sixfam,iid,gte,Best single model,50.0,0.7888544805574542
+sprout-sixfam,iid,gte,Best single model,75.0,0.780423248898762
+sprout-sixfam,iid,gte,Best single model,100.0,0.7719920172400699
+sprout-sixfam,iid,gte,Best single model,150.0,0.7551295539226855
+sprout-sixfam,iid,gte,Best single model,250.0,0.7214046272879167
+sprout-sixfam,iid,gte,Best single model,500.0,0.6370923107009949
+sprout-sixfam,iid,gte,Family lookup,0.0,0.861410344041923
+sprout-sixfam,iid,gte,Family lookup,0.5,0.8595869859497229
+sprout-sixfam,iid,gte,Family lookup,1.0,0.8580461710807321
+sprout-sixfam,iid,gte,Family lookup,2.0,0.8546242127941066
+sprout-sixfam,iid,gte,Family lookup,5.0,0.8503547210032656
+sprout-sixfam,iid,gte,Family lookup,10.0,0.8435502561631351
+sprout-sixfam,iid,gte,Family lookup,25.0,0.8268750820042531
+sprout-sixfam,iid,gte,Family lookup,50.0,0.8152028263461685
+sprout-sixfam,iid,gte,Family lookup,75.0,0.8037292400888585
+sprout-sixfam,iid,gte,Family lookup,100.0,0.7927009006607427
+sprout-sixfam,iid,gte,Family lookup,150.0,0.7708669558365611
+sprout-sixfam,iid,gte,Family lookup,250.0,0.7313245503911293
+sprout-sixfam,iid,gte,Family lookup,500.0,0.6573601402749298
+sprout-sixfam,iid,gte,Family-topic lookup,0.0,0.8626255031518189
+sprout-sixfam,iid,gte,Family-topic lookup,0.5,0.86052151950862
+sprout-sixfam,iid,gte,Family-topic lookup,1.0,0.8590661876729704
+sprout-sixfam,iid,gte,Family-topic lookup,2.0,0.855284379793423
+sprout-sixfam,iid,gte,Family-topic lookup,5.0,0.8510342645173542
+sprout-sixfam,iid,gte,Family-topic lookup,10.0,0.8448429054834055
+sprout-sixfam,iid,gte,Family-topic lookup,25.0,0.8334988472696894
+sprout-sixfam,iid,gte,Family-topic lookup,50.0,0.8205148383458647
+sprout-sixfam,iid,gte,Family-topic lookup,75.0,0.8062742375636059
+sprout-sixfam,iid,gte,Family-topic lookup,100.0,0.7955464901648058
+sprout-sixfam,iid,gte,Family-topic lookup,150.0,0.775190092541961
+sprout-sixfam,iid,gte,Family-topic lookup,250.0,0.73643856478317
+sprout-sixfam,iid,gte,Family-topic lookup,500.0,0.6583899137996507
+sprout-sixfam,iid,gte,KM-Prox,0.0,0.8635041391357182
+sprout-sixfam,iid,gte,KM-Prox,0.5,0.8619535156858054
+sprout-sixfam,iid,gte,KM-Prox,1.0,0.8603698407594744
+sprout-sixfam,iid,gte,KM-Prox,2.0,0.8584280482737147
+sprout-sixfam,iid,gte,KM-Prox,5.0,0.8532174234905445
+sprout-sixfam,iid,gte,KM-Prox,10.0,0.8466089155388472
+sprout-sixfam,iid,gte,KM-Prox,25.0,0.8342388561555404
+sprout-sixfam,iid,gte,KM-Prox,50.0,0.8165523034859878
+sprout-sixfam,iid,gte,KM-Prox,75.0,0.8055695933963698
+sprout-sixfam,iid,gte,KM-Prox,100.0,0.7947852731829574
+sprout-sixfam,iid,gte,KM-Prox,150.0,0.7763724602415129
+sprout-sixfam,iid,gte,KM-Prox,250.0,0.7433852160704792
+sprout-sixfam,iid,gte,KM-Prox,500.0,0.6779722550315181
+sprout-sixfam,iid,gte,KM-Prox (validated),0.0,0.865131692868535
+sprout-sixfam,iid,gte,KM-Prox (validated),0.5,0.864151013592694
+sprout-sixfam,iid,gte,KM-Prox (validated),1.0,0.8625084966886915
+sprout-sixfam,iid,gte,KM-Prox (validated),2.0,0.8611365228768892
+sprout-sixfam,iid,gte,KM-Prox (validated),5.0,0.8548175857864359
+sprout-sixfam,iid,gte,KM-Prox (validated),10.0,0.8477273377306904
+sprout-sixfam,iid,gte,KM-Prox (validated),25.0,0.8369511182121973
+sprout-sixfam,iid,gte,KM-Prox (validated),50.0,0.8203827056277055
+sprout-sixfam,iid,gte,KM-Prox (validated),75.0,0.8066257232475127
+sprout-sixfam,iid,gte,KM-Prox (validated),100.0,0.7950985117338801
+sprout-sixfam,iid,gte,KM-Prox (validated),150.0,0.7766095181514393
+sprout-sixfam,iid,gte,KM-Prox (validated),250.0,0.7466051564517354
+sprout-sixfam,iid,gte,KM-Prox (validated),500.0,0.6776550624287992
+sprout-sixfam,iid,gte,MLP,0.0,0.8576878560036455
+sprout-sixfam,iid,gte,MLP,0.5,0.8563000174087492
+sprout-sixfam,iid,gte,MLP,1.0,0.856282637148781
+sprout-sixfam,iid,gte,MLP,2.0,0.8543242378090682
+sprout-sixfam,iid,gte,MLP,5.0,0.8477076124341155
+sprout-sixfam,iid,gte,MLP,10.0,0.8381422920665299
+sprout-sixfam,iid,gte,MLP,25.0,0.8274254113997114
+sprout-sixfam,iid,gte,MLP,50.0,0.8138068584795323
+sprout-sixfam,iid,gte,MLP,75.0,0.8024926080846054
+sprout-sixfam,iid,gte,MLP,100.0,0.7936969490848333
+sprout-sixfam,iid,gte,MLP,150.0,0.7745722995898839
+sprout-sixfam,iid,gte,MLP,250.0,0.7424176062504746
+sprout-sixfam,iid,gte,MLP,500.0,0.6719352817650185
+sprout-sixfam,iid,gte,Realized oracle,0.0,0.9769685577580315
+sprout-sixfam,iid,gte,Realized oracle,0.5,0.9767720422921697
+sprout-sixfam,iid,gte,Realized oracle,1.0,0.9765755268263081
+sprout-sixfam,iid,gte,Realized oracle,2.0,0.9761824958945848
+sprout-sixfam,iid,gte,Realized oracle,5.0,0.9750359821439963
+sprout-sixfam,iid,gte,Realized oracle,10.0,0.9733319996005164
+sprout-sixfam,iid,gte,Realized oracle,25.0,0.9696168732778918
+sprout-sixfam,iid,gte,Realized oracle,50.0,0.9646477121971596
+sprout-sixfam,iid,gte,Realized oracle,75.0,0.9599334060302271
+sprout-sixfam,iid,gte,Realized oracle,100.0,0.9553591374648742
+sprout-sixfam,iid,gte,Realized oracle,150.0,0.9467259313131313
+sprout-sixfam,iid,gte,Realized oracle,250.0,0.9319360477709424
+sprout-sixfam,iid,gte,Realized oracle,500.0,0.9030032417407154
+sprout-sixfam,iid,gte,Ridge,0.0,0.8665105187210451
+sprout-sixfam,iid,gte,Ridge,0.5,0.8645172614224956
+sprout-sixfam,iid,gte,Ridge,1.0,0.862685916024607
+sprout-sixfam,iid,gte,Ridge,2.0,0.8612684434100403
+sprout-sixfam,iid,gte,Ridge,5.0,0.8572525244740639
+sprout-sixfam,iid,gte,Ridge,10.0,0.8516320045492518
+sprout-sixfam,iid,gte,Ridge,25.0,0.8383031338953444
+sprout-sixfam,iid,gte,Ridge,50.0,0.8214427116579326
+sprout-sixfam,iid,gte,Ridge,75.0,0.8079857442621706
+sprout-sixfam,iid,gte,Ridge,100.0,0.7982293720817195
+sprout-sixfam,iid,gte,Ridge,150.0,0.7783419584719374
+sprout-sixfam,iid,gte,Ridge,250.0,0.744707091706539
+sprout-sixfam,iid,gte,Ridge,500.0,0.6798394224196856
+sprout-sixfam,iid,gte,Family Adaptation,0.0,0.8611323763955343
+sprout-sixfam,iid,gte,Family Adaptation,0.5,0.8593470139158502
+sprout-sixfam,iid,gte,Family Adaptation,1.0,0.8574980269529886
+sprout-sixfam,iid,gte,Family Adaptation,2.0,0.8542523096787422
+sprout-sixfam,iid,gte,Family Adaptation,5.0,0.8499833647413991
+sprout-sixfam,iid,gte,Family Adaptation,10.0,0.8431797172932332
+sprout-sixfam,iid,gte,Family Adaptation,25.0,0.8264993284726968
+sprout-sixfam,iid,gte,Family Adaptation,50.0,0.8148534914938863
+sprout-sixfam,iid,gte,Family Adaptation,75.0,0.8033744818865346
+sprout-sixfam,iid,gte,Family Adaptation,100.0,0.7923152399179768
+sprout-sixfam,iid,gte,Family Adaptation,150.0,0.7703698222829802
+sprout-sixfam,iid,gte,Family Adaptation,250.0,0.7310957752335384
+sprout-sixfam,iid,gte,Family Adaptation,500.0,0.6570931705779601
+sprout-sixfam,iid,gte,Utility-cluster control,0.0,0.8648138528138528
+sprout-sixfam,iid,gte,Utility-cluster control,0.5,0.8624145567642593
+sprout-sixfam,iid,gte,Utility-cluster control,1.0,0.8623115831434648
+sprout-sixfam,iid,gte,Utility-cluster control,2.0,0.8598782977838536
+sprout-sixfam,iid,gte,Utility-cluster control,5.0,0.8553184660856686
+sprout-sixfam,iid,gte,Utility-cluster control,10.0,0.8470962258601047
+sprout-sixfam,iid,gte,Utility-cluster control,25.0,0.8346494010974406
+sprout-sixfam,iid,gte,Utility-cluster control,50.0,0.8200010352775878
+sprout-sixfam,iid,gte,Utility-cluster control,75.0,0.8073507388736992
+sprout-sixfam,iid,gte,Utility-cluster control,100.0,0.7949404390521758
+sprout-sixfam,iid,gte,Utility-cluster control,150.0,0.776700176934761
+sprout-sixfam,iid,gte,Utility-cluster control,250.0,0.7435574873927242
+sprout-sixfam,iid,gte,Utility-cluster control,500.0,0.6780428178780284
+sprout-sixfam,iid,gte,Validated kNN,0.0,0.8654047239310397
+sprout-sixfam,iid,gte,Validated kNN,0.5,0.8641557517099567
+sprout-sixfam,iid,gte,Validated kNN,1.0,0.862602256268702
+sprout-sixfam,iid,gte,Validated kNN,2.0,0.8608753187836258
+sprout-sixfam,iid,gte,Validated kNN,5.0,0.856191914901648
+sprout-sixfam,iid,gte,Validated kNN,10.0,0.8499440798815219
+sprout-sixfam,iid,gte,Validated kNN,25.0,0.8381470234525709
+sprout-sixfam,iid,gte,Validated kNN,50.0,0.8225658224272803
+sprout-sixfam,iid,gte,Validated kNN,75.0,0.8104108441406548
+sprout-sixfam,iid,gte,Validated kNN,100.0,0.7993333686185159
+sprout-sixfam,iid,gte,Validated kNN,150.0,0.7800246539530644
+sprout-sixfam,iid,gte,Validated kNN,250.0,0.7470537087795246
+sprout-sixfam,iid,gte,Validated kNN,500.0,0.6815898632186527
+sprout-sixfam,iid,gte,kNN-100,0.0,0.8664801397432975
+sprout-sixfam,iid,gte,kNN-100,0.5,0.8650157914646464
+sprout-sixfam,iid,gte,kNN-100,1.0,0.863577834730007
+sprout-sixfam,iid,gte,kNN-100,2.0,0.8612090005045948
+sprout-sixfam,iid,gte,kNN-100,5.0,0.8561004110450369
+sprout-sixfam,iid,gte,kNN-100,10.0,0.8499141531875143
+sprout-sixfam,iid,gte,kNN-100,25.0,0.8384677698260804
+sprout-sixfam,iid,gte,kNN-100,50.0,0.8231019667046403
+sprout-sixfam,iid,gte,kNN-100,75.0,0.810568355316321
+sprout-sixfam,iid,gte,kNN-100,100.0,0.7997235722336142
+sprout-sixfam,iid,gte,kNN-100,150.0,0.7808235395002658
+sprout-sixfam,iid,gte,kNN-100,250.0,0.7470662623984202
+sprout-sixfam,iid,gte,kNN-100,500.0,0.6811901313131313
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,0.0,0.8661301739196478
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,0.5,0.8647724699759247
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,1.0,0.8623707108042834
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,2.0,0.8600186569493431
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,5.0,0.854064083196628
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,10.0,0.8483409353246754
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,25.0,0.839433739747095
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,50.0,0.8234992913723703
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,75.0,0.8109910479038506
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,100.0,0.7996351913268018
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,150.0,0.7781469028632186
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,250.0,0.7438400108604845
+sprout-sixfam,iid,nvidia_pipeline,fixed_l21,500.0,0.6804384378370167
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,0.0,0.8660381256170732
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,0.5,0.864240013564973
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,1.0,0.8629704243097136
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,2.0,0.8603759223182198
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,5.0,0.8551761933219412
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,10.0,0.8489042574375333
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,25.0,0.8393504790498975
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,50.0,0.8229499758714969
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,75.0,0.8110705477785373
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,100.0,0.800309759763044
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,150.0,0.7787237705475811
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,250.0,0.7433134561023772
+sprout-sixfam,iid,nvidia_pipeline,selected_layer,500.0,0.6771599552669553
+sprout-sixfam,iid,reader,Avengers-Pro,0.0,0.8657457279562543
+sprout-sixfam,iid,reader,Avengers-Pro,0.5,0.863973370900357
+sprout-sixfam,iid,reader,Avengers-Pro,1.0,0.862585420102529
+sprout-sixfam,iid,reader,Avengers-Pro,2.0,0.8612403733834587
+sprout-sixfam,iid,reader,Avengers-Pro,5.0,0.8558115171033644
+sprout-sixfam,iid,reader,Avengers-Pro,10.0,0.8491096253816358
+sprout-sixfam,iid,reader,Avengers-Pro,25.0,0.8384500662071847
+sprout-sixfam,iid,reader,Avengers-Pro,50.0,0.8227659871269082
+sprout-sixfam,iid,reader,Avengers-Pro,75.0,0.8102510546821601
+sprout-sixfam,iid,reader,Avengers-Pro,100.0,0.7983715126452495
+sprout-sixfam,iid,reader,Avengers-Pro,150.0,0.7776351973114606
+sprout-sixfam,iid,reader,Avengers-Pro,250.0,0.737995342522974
+sprout-sixfam,iid,reader,Avengers-Pro,500.0,0.6751224180147339
+sprout-sixfam,iid,reader,Best single model,0.0,0.8433956102377155
+sprout-sixfam,iid,reader,Best single model,0.5,0.8409393665413534
+sprout-sixfam,iid,reader,Best single model,1.0,0.8384831228449914
+sprout-sixfam,iid,reader,Best single model,2.0,0.8335706354522671
+sprout-sixfam,iid,reader,Best single model,5.0,0.8188331732740943
+sprout-sixfam,iid,reader,Best single model,10.0,0.8015272321409583
+sprout-sixfam,iid,reader,Best single model,25.0,0.7972857122161465
+sprout-sixfam,iid,reader,Best single model,50.0,0.7888544805574542
+sprout-sixfam,iid,reader,Best single model,75.0,0.780423248898762
+sprout-sixfam,iid,reader,Best single model,100.0,0.7719920172400699
+sprout-sixfam,iid,reader,Best single model,150.0,0.7551295539226855
+sprout-sixfam,iid,reader,Best single model,250.0,0.7214046272879167
+sprout-sixfam,iid,reader,Best single model,500.0,0.6370923107009949
+sprout-sixfam,iid,reader,Family lookup,0.0,0.861410344041923
+sprout-sixfam,iid,reader,Family lookup,0.5,0.8595869859497229
+sprout-sixfam,iid,reader,Family lookup,1.0,0.8580461710807321
+sprout-sixfam,iid,reader,Family lookup,2.0,0.8546242127941066
+sprout-sixfam,iid,reader,Family lookup,5.0,0.8503547210032656
+sprout-sixfam,iid,reader,Family lookup,10.0,0.8435502561631351
+sprout-sixfam,iid,reader,Family lookup,25.0,0.8268750820042531
+sprout-sixfam,iid,reader,Family lookup,50.0,0.8152028263461685
+sprout-sixfam,iid,reader,Family lookup,75.0,0.8037292400888585
+sprout-sixfam,iid,reader,Family lookup,100.0,0.7927009006607427
+sprout-sixfam,iid,reader,Family lookup,150.0,0.7708669558365611
+sprout-sixfam,iid,reader,Family lookup,250.0,0.7313245503911293
+sprout-sixfam,iid,reader,Family lookup,500.0,0.6573601402749298
+sprout-sixfam,iid,reader,Family-topic lookup,0.0,0.8626255031518189
+sprout-sixfam,iid,reader,Family-topic lookup,0.5,0.86052151950862
+sprout-sixfam,iid,reader,Family-topic lookup,1.0,0.8590661876729704
+sprout-sixfam,iid,reader,Family-topic lookup,2.0,0.855284379793423
+sprout-sixfam,iid,reader,Family-topic lookup,5.0,0.8510342645173542
+sprout-sixfam,iid,reader,Family-topic lookup,10.0,0.8448429054834055
+sprout-sixfam,iid,reader,Family-topic lookup,25.0,0.8334988472696894
+sprout-sixfam,iid,reader,Family-topic lookup,50.0,0.8205148383458647
+sprout-sixfam,iid,reader,Family-topic lookup,75.0,0.8062742375636059
+sprout-sixfam,iid,reader,Family-topic lookup,100.0,0.7955464901648058
+sprout-sixfam,iid,reader,Family-topic lookup,150.0,0.775190092541961
+sprout-sixfam,iid,reader,Family-topic lookup,250.0,0.73643856478317
+sprout-sixfam,iid,reader,Family-topic lookup,500.0,0.6583899137996507
+sprout-sixfam,iid,reader,KM-Prox,0.0,0.8625035315561631
+sprout-sixfam,iid,reader,KM-Prox,0.5,0.8610772204427736
+sprout-sixfam,iid,reader,KM-Prox,1.0,0.8594258280466318
+sprout-sixfam,iid,reader,KM-Prox,2.0,0.8568055062565506
+sprout-sixfam,iid,reader,KM-Prox,5.0,0.8516282828624593
+sprout-sixfam,iid,reader,KM-Prox,10.0,0.8460039994152047
+sprout-sixfam,iid,reader,KM-Prox,25.0,0.833565085137085
+sprout-sixfam,iid,reader,KM-Prox,50.0,0.8163944634692792
+sprout-sixfam,iid,reader,KM-Prox,75.0,0.8051357387028176
+sprout-sixfam,iid,reader,KM-Prox,100.0,0.79408146449457
+sprout-sixfam,iid,reader,KM-Prox,150.0,0.7753825685425685
+sprout-sixfam,iid,reader,KM-Prox,250.0,0.743246391205286
+sprout-sixfam,iid,reader,KM-Prox,500.0,0.6788460938710411
+sprout-sixfam,iid,reader,KM-Prox (validated),0.0,0.866879623300676
+sprout-sixfam,iid,reader,KM-Prox (validated),0.5,0.8652867937347157
+sprout-sixfam,iid,reader,KM-Prox (validated),1.0,0.8639357428039798
+sprout-sixfam,iid,reader,KM-Prox (validated),2.0,0.8625091680716943
+sprout-sixfam,iid,reader,KM-Prox (validated),5.0,0.8566189479114453
+sprout-sixfam,iid,reader,KM-Prox (validated),10.0,0.8505764588288903
+sprout-sixfam,iid,reader,KM-Prox (validated),25.0,0.8382588491683756
+sprout-sixfam,iid,reader,KM-Prox (validated),50.0,0.8214882803979646
+sprout-sixfam,iid,reader,KM-Prox (validated),75.0,0.8094087170008354
+sprout-sixfam,iid,reader,KM-Prox (validated),100.0,0.7990083709273182
+sprout-sixfam,iid,reader,KM-Prox (validated),150.0,0.7806581418318524
+sprout-sixfam,iid,reader,KM-Prox (validated),250.0,0.7489918269917217
+sprout-sixfam,iid,reader,KM-Prox (validated),500.0,0.6823920928837245
+sprout-sixfam,iid,reader,MLP,0.0,0.8626660590871118
+sprout-sixfam,iid,reader,MLP,0.5,0.8603086499951393
+sprout-sixfam,iid,reader,MLP,1.0,0.8589500999559505
+sprout-sixfam,iid,reader,MLP,2.0,0.8552909126455531
+sprout-sixfam,iid,reader,MLP,5.0,0.8465841530675173
+sprout-sixfam,iid,reader,MLP,10.0,0.8365002312645249
+sprout-sixfam,iid,reader,MLP,25.0,0.8364220212387028
+sprout-sixfam,iid,reader,MLP,50.0,0.8161356718083086
+sprout-sixfam,iid,reader,MLP,75.0,0.8047282216602111
+sprout-sixfam,iid,reader,MLP,100.0,0.7937419086352244
+sprout-sixfam,iid,reader,MLP,150.0,0.7741321454773297
+sprout-sixfam,iid,reader,MLP,250.0,0.743757946684894
+sprout-sixfam,iid,reader,MLP,500.0,0.6776937524872788
+sprout-sixfam,iid,reader,Realized oracle,0.0,0.9769685577580315
+sprout-sixfam,iid,reader,Realized oracle,0.5,0.9767720422921697
+sprout-sixfam,iid,reader,Realized oracle,1.0,0.9765755268263081
+sprout-sixfam,iid,reader,Realized oracle,2.0,0.9761824958945848
+sprout-sixfam,iid,reader,Realized oracle,5.0,0.9750359821439963
+sprout-sixfam,iid,reader,Realized oracle,10.0,0.9733319996005164
+sprout-sixfam,iid,reader,Realized oracle,25.0,0.9696168732778918
+sprout-sixfam,iid,reader,Realized oracle,50.0,0.9646477121971596
+sprout-sixfam,iid,reader,Realized oracle,75.0,0.9599334060302271
+sprout-sixfam,iid,reader,Realized oracle,100.0,0.9553591374648742
+sprout-sixfam,iid,reader,Realized oracle,150.0,0.9467259313131313
+sprout-sixfam,iid,reader,Realized oracle,250.0,0.9319360477709424
+sprout-sixfam,iid,reader,Realized oracle,500.0,0.9030032417407154
+sprout-sixfam,iid,reader,Ridge,0.0,0.8686480595427963
+sprout-sixfam,iid,reader,Ridge,0.5,0.8668168616170728
+sprout-sixfam,iid,reader,Ridge,1.0,0.8657240149107617
+sprout-sixfam,iid,reader,Ridge,2.0,0.8633647536073517
+sprout-sixfam,iid,reader,Ridge,5.0,0.857180125676312
+sprout-sixfam,iid,reader,Ridge,10.0,0.8516575489572416
+sprout-sixfam,iid,reader,Ridge,25.0,0.8405134576289207
+sprout-sixfam,iid,reader,Ridge,50.0,0.8256830655122653
+sprout-sixfam,iid,reader,Ridge,75.0,0.81278489621402
+sprout-sixfam,iid,reader,Ridge,100.0,0.8013868017467912
+sprout-sixfam,iid,reader,Ridge,150.0,0.7826440677830941
+sprout-sixfam,iid,reader,Ridge,250.0,0.7502178282828283
+sprout-sixfam,iid,reader,Ridge,500.0,0.6856128829649883
+sprout-sixfam,iid,reader,Family Adaptation,0.0,0.8613419913419914
+sprout-sixfam,iid,reader,Family Adaptation,0.5,0.8595715435482645
+sprout-sixfam,iid,reader,Family Adaptation,1.0,0.8579207312569302
+sprout-sixfam,iid,reader,Family Adaptation,2.0,0.8545967041117947
+sprout-sixfam,iid,reader,Family Adaptation,5.0,0.8502095571276678
+sprout-sixfam,iid,reader,Family Adaptation,10.0,0.8434547214019897
+sprout-sixfam,iid,reader,Family Adaptation,25.0,0.8267933279980252
+sprout-sixfam,iid,reader,Family Adaptation,50.0,0.8151661839067366
+sprout-sixfam,iid,reader,Family Adaptation,75.0,0.8036780349548113
+sprout-sixfam,iid,reader,Family Adaptation,100.0,0.7926506405407457
+sprout-sixfam,iid,reader,Family Adaptation,150.0,0.7707202286018077
+sprout-sixfam,iid,reader,Family Adaptation,250.0,0.7313138089542037
+sprout-sixfam,iid,reader,Family Adaptation,500.0,0.6573666891471103
+sprout-sixfam,iid,reader,Utility-cluster control,0.0,0.8659697729171414
+sprout-sixfam,iid,reader,Utility-cluster control,0.5,0.8650499030557455
+sprout-sixfam,iid,reader,Utility-cluster control,1.0,0.8643385982220703
+sprout-sixfam,iid,reader,Utility-cluster control,2.0,0.8615486460438976
+sprout-sixfam,iid,reader,Utility-cluster control,5.0,0.8569003459557987
+sprout-sixfam,iid,reader,Utility-cluster control,10.0,0.8499830749905065
+sprout-sixfam,iid,reader,Utility-cluster control,25.0,0.8391251819890636
+sprout-sixfam,iid,reader,Utility-cluster control,50.0,0.8234632401837928
+sprout-sixfam,iid,reader,Utility-cluster control,75.0,0.8087153766613503
+sprout-sixfam,iid,reader,Utility-cluster control,100.0,0.7982783892306525
+sprout-sixfam,iid,reader,Utility-cluster control,150.0,0.7815318108301057
+sprout-sixfam,iid,reader,Utility-cluster control,250.0,0.7484138923824712
+sprout-sixfam,iid,reader,Utility-cluster control,500.0,0.683324155692261
+sprout-sixfam,iid,reader,Validated kNN,0.0,0.8685197083618136
+sprout-sixfam,iid,reader,Validated kNN,0.5,0.8668848988486367
+sprout-sixfam,iid,reader,Validated kNN,1.0,0.8654051363492065
+sprout-sixfam,iid,reader,Validated kNN,2.0,0.8628543552259437
+sprout-sixfam,iid,reader,Validated kNN,5.0,0.8575602921743753
+sprout-sixfam,iid,reader,Validated kNN,10.0,0.8525982204754309
+sprout-sixfam,iid,reader,Validated kNN,25.0,0.839923870486823
+sprout-sixfam,iid,reader,Validated kNN,50.0,0.8241306676236044
+sprout-sixfam,iid,reader,Validated kNN,75.0,0.8120462348826613
+sprout-sixfam,iid,reader,Validated kNN,100.0,0.8017684738664843
+sprout-sixfam,iid,reader,Validated kNN,150.0,0.7835544613503457
+sprout-sixfam,iid,reader,Validated kNN,250.0,0.7521528567251462
+sprout-sixfam,iid,reader,Validated kNN,500.0,0.6886463170046329
+sprout-sixfam,iid,reader,kNN-100,0.0,0.8676178324599376
+sprout-sixfam,iid,reader,kNN-100,0.5,0.8658718219005089
+sprout-sixfam,iid,reader,kNN-100,1.0,0.8644861984862154
+sprout-sixfam,iid,reader,kNN-100,2.0,0.8622750827073745
+sprout-sixfam,iid,reader,kNN-100,5.0,0.857324393953824
+sprout-sixfam,iid,reader,kNN-100,10.0,0.8515769815280627
+sprout-sixfam,iid,reader,kNN-100,25.0,0.8389891065428722
+sprout-sixfam,iid,reader,kNN-100,50.0,0.8232399039872408
+sprout-sixfam,iid,reader,kNN-100,75.0,0.8111652777891699
+sprout-sixfam,iid,reader,kNN-100,100.0,0.8011163461228828
+sprout-sixfam,iid,reader,kNN-100,150.0,0.7834245036910458
+sprout-sixfam,iid,reader,kNN-100,250.0,0.7517269318751424
+sprout-sixfam,iid,reader,kNN-100,500.0,0.6890425566188197
+sprout-sixfam,ood,gte,Avengers-Pro,0.0,0.7891067970013899
+sprout-sixfam,ood,gte,Avengers-Pro,0.5,0.7882964258812404
+sprout-sixfam,ood,gte,Avengers-Pro,1.0,0.787486054761091
+sprout-sixfam,ood,gte,Avengers-Pro,2.0,0.7874250297172283
+sprout-sixfam,ood,gte,Avengers-Pro,5.0,0.7830429616913892
+sprout-sixfam,ood,gte,Avengers-Pro,10.0,0.7822363528265774
+sprout-sixfam,ood,gte,Avengers-Pro,25.0,0.7798798651935654
+sprout-sixfam,ood,gte,Avengers-Pro,50.0,0.7662737080456627
+sprout-sixfam,ood,gte,Avengers-Pro,75.0,0.7548088544443684
+sprout-sixfam,ood,gte,Avengers-Pro,100.0,0.7423492521703464
+sprout-sixfam,ood,gte,Avengers-Pro,150.0,0.7175334533574863
+sprout-sixfam,ood,gte,Avengers-Pro,250.0,0.6412892881149315
+sprout-sixfam,ood,gte,Avengers-Pro,500.0,0.5510023863558685
+sprout-sixfam,ood,gte,Best single model,0.0,0.8445006493950372
+sprout-sixfam,ood,gte,Best single model,0.5,0.8420470017886845
+sprout-sixfam,ood,gte,Best single model,1.0,0.8039546997949277
+sprout-sixfam,ood,gte,Best single model,2.0,0.8010137357258413
+sprout-sixfam,ood,gte,Best single model,5.0,0.7669186417788867
+sprout-sixfam,ood,gte,Best single model,10.0,0.7576324159660036
+sprout-sixfam,ood,gte,Best single model,25.0,0.7641059640098434
+sprout-sixfam,ood,gte,Best single model,50.0,0.7546108616446784
+sprout-sixfam,ood,gte,Best single model,75.0,0.7451157592795133
+sprout-sixfam,ood,gte,Best single model,100.0,0.7356206569143483
+sprout-sixfam,ood,gte,Best single model,150.0,0.7166304521840181
+sprout-sixfam,ood,gte,Best single model,250.0,0.7218240247681547
+sprout-sixfam,ood,gte,Best single model,500.0,0.59300017533666
+sprout-sixfam,ood,gte,KM-Prox,0.0,0.7886670312393192
+sprout-sixfam,ood,gte,KM-Prox,0.5,0.7872649623857862
+sprout-sixfam,ood,gte,KM-Prox,1.0,0.7860775312267868
+sprout-sixfam,ood,gte,KM-Prox,2.0,0.7837049737963409
+sprout-sixfam,ood,gte,KM-Prox,5.0,0.7808195663750087
+sprout-sixfam,ood,gte,KM-Prox,10.0,0.7796072955203134
+sprout-sixfam,ood,gte,KM-Prox,25.0,0.7724735866828446
+sprout-sixfam,ood,gte,KM-Prox,50.0,0.7579117956342426
+sprout-sixfam,ood,gte,KM-Prox,75.0,0.743701909278374
+sprout-sixfam,ood,gte,KM-Prox,100.0,0.7318933827784994
+sprout-sixfam,ood,gte,KM-Prox,150.0,0.712303052156675
+sprout-sixfam,ood,gte,KM-Prox,250.0,0.6822106512179006
+sprout-sixfam,ood,gte,KM-Prox,500.0,0.5907943283888167
+sprout-sixfam,ood,gte,KM-Prox (validated),0.0,0.79681295144348
+sprout-sixfam,ood,gte,KM-Prox (validated),0.5,0.7947806296044386
+sprout-sixfam,ood,gte,KM-Prox (validated),1.0,0.7929431480427005
+sprout-sixfam,ood,gte,KM-Prox (validated),2.0,0.7888672146056919
+sprout-sixfam,ood,gte,KM-Prox (validated),5.0,0.7764626605486818
+sprout-sixfam,ood,gte,KM-Prox (validated),10.0,0.7656776639665505
+sprout-sixfam,ood,gte,KM-Prox (validated),25.0,0.7698797963804771
+sprout-sixfam,ood,gte,KM-Prox (validated),50.0,0.7576675550846493
+sprout-sixfam,ood,gte,KM-Prox (validated),75.0,0.7443236380078384
+sprout-sixfam,ood,gte,KM-Prox (validated),100.0,0.7329508051359171
+sprout-sixfam,ood,gte,KM-Prox (validated),150.0,0.7215320630254972
+sprout-sixfam,ood,gte,KM-Prox (validated),250.0,0.6906584469774649
+sprout-sixfam,ood,gte,KM-Prox (validated),500.0,0.5950834566044615
+sprout-sixfam,ood,gte,MLP,0.0,0.8087994166837561
+sprout-sixfam,ood,gte,MLP,0.5,0.8055703084154759
+sprout-sixfam,ood,gte,MLP,1.0,0.8124620386861713
+sprout-sixfam,ood,gte,MLP,2.0,0.8071162661161619
+sprout-sixfam,ood,gte,MLP,5.0,0.7970986122348305
+sprout-sixfam,ood,gte,MLP,10.0,0.7907574913254495
+sprout-sixfam,ood,gte,MLP,25.0,0.7744373911010095
+sprout-sixfam,ood,gte,MLP,50.0,0.7452338527012556
+sprout-sixfam,ood,gte,MLP,75.0,0.7354350481121973
+sprout-sixfam,ood,gte,MLP,100.0,0.7312585131132225
+sprout-sixfam,ood,gte,MLP,150.0,0.7164344002210221
+sprout-sixfam,ood,gte,MLP,250.0,0.7217629665390662
+sprout-sixfam,ood,gte,MLP,500.0,0.5863468124957277
+sprout-sixfam,ood,gte,Realized oracle,0.0,0.9765904481965049
+sprout-sixfam,ood,gte,Realized oracle,0.5,0.9763937904725771
+sprout-sixfam,ood,gte,Realized oracle,1.0,0.9761971327486498
+sprout-sixfam,ood,gte,Realized oracle,2.0,0.9758038173007954
+sprout-sixfam,ood,gte,Realized oracle,5.0,0.9746619772643381
+sprout-sixfam,ood,gte,Realized oracle,10.0,0.972958999854171
+sprout-sixfam,ood,gte,Realized oracle,25.0,0.9692289426196823
+sprout-sixfam,ood,gte,Realized oracle,50.0,0.964235365484084
+sprout-sixfam,ood,gte,Realized oracle,75.0,0.9594960184564906
+sprout-sixfam,ood,gte,Realized oracle,100.0,0.954898574703215
+sprout-sixfam,ood,gte,Realized oracle,150.0,0.9463052567047188
+sprout-sixfam,ood,gte,Realized oracle,250.0,0.9315518344270513
+sprout-sixfam,ood,gte,Realized oracle,500.0,0.902585333697906
+sprout-sixfam,ood,gte,Ridge,0.0,0.8328149565930686
+sprout-sixfam,ood,gte,Ridge,0.5,0.8291945632855972
+sprout-sixfam,ood,gte,Ridge,1.0,0.8256317877931962
+sprout-sixfam,ood,gte,Ridge,2.0,0.8200554143154009
+sprout-sixfam,ood,gte,Ridge,5.0,0.8097092588158225
+sprout-sixfam,ood,gte,Ridge,10.0,0.7894582139904757
+sprout-sixfam,ood,gte,Ridge,25.0,0.766708808468339
+sprout-sixfam,ood,gte,Ridge,50.0,0.7526730338368995
+sprout-sixfam,ood,gte,Ridge,75.0,0.7430364432292024
+sprout-sixfam,ood,gte,Ridge,100.0,0.7339087833527014
+sprout-sixfam,ood,gte,Ridge,150.0,0.7156548056941692
+sprout-sixfam,ood,gte,Ridge,250.0,0.720962266502609
+sprout-sixfam,ood,gte,Ridge,500.0,0.6364378978968716
+sprout-sixfam,ood,gte,Family Adaptation,0.0,0.8096869232346711
+sprout-sixfam,ood,gte,Family Adaptation,0.5,0.8060640014389229
+sprout-sixfam,ood,gte,Family Adaptation,1.0,0.8020935875521226
+sprout-sixfam,ood,gte,Family Adaptation,2.0,0.7917843274978924
+sprout-sixfam,ood,gte,Family Adaptation,5.0,0.7802226449062365
+sprout-sixfam,ood,gte,Family Adaptation,10.0,0.7833939689543601
+sprout-sixfam,ood,gte,Family Adaptation,25.0,0.7755690966573245
+sprout-sixfam,ood,gte,Family Adaptation,50.0,0.7647611534736938
+sprout-sixfam,ood,gte,Family Adaptation,75.0,0.7579379265500034
+sprout-sixfam,ood,gte,Family Adaptation,100.0,0.7513892966026386
+sprout-sixfam,ood,gte,Family Adaptation,150.0,0.7380167044910794
+sprout-sixfam,ood,gte,Family Adaptation,250.0,0.7127466934969354
+sprout-sixfam,ood,gte,Family Adaptation,500.0,0.6098587952013125
+sprout-sixfam,ood,gte,Utility-cluster control,0.0,0.7905423018205846
+sprout-sixfam,ood,gte,Utility-cluster control,0.5,0.7883222482768246
+sprout-sixfam,ood,gte,Utility-cluster control,1.0,0.7930807405837718
+sprout-sixfam,ood,gte,Utility-cluster control,2.0,0.7913967232665711
+sprout-sixfam,ood,gte,Utility-cluster control,5.0,0.7916529484072732
+sprout-sixfam,ood,gte,Utility-cluster control,10.0,0.7838079885273542
+sprout-sixfam,ood,gte,Utility-cluster control,25.0,0.778731662650671
+sprout-sixfam,ood,gte,Utility-cluster control,50.0,0.7690931295144348
+sprout-sixfam,ood,gte,Utility-cluster control,75.0,0.7493721879485952
+sprout-sixfam,ood,gte,Utility-cluster control,100.0,0.7359595923622029
+sprout-sixfam,ood,gte,Utility-cluster control,150.0,0.7128439715063687
+sprout-sixfam,ood,gte,Utility-cluster control,250.0,0.6720466850092283
+sprout-sixfam,ood,gte,Utility-cluster control,500.0,0.5884029539499168
+sprout-sixfam,ood,gte,Validated kNN,0.0,0.8037095267391257
+sprout-sixfam,ood,gte,Validated kNN,0.5,0.8020029943966323
+sprout-sixfam,ood,gte,Validated kNN,1.0,0.8001303781165265
+sprout-sixfam,ood,gte,Validated kNN,2.0,0.7961026623123018
+sprout-sixfam,ood,gte,Validated kNN,5.0,0.784644972657051
+sprout-sixfam,ood,gte,Validated kNN,10.0,0.7815938248000548
+sprout-sixfam,ood,gte,Validated kNN,25.0,0.7724390961161619
+sprout-sixfam,ood,gte,Validated kNN,50.0,0.7596409948276254
+sprout-sixfam,ood,gte,Validated kNN,75.0,0.7481525816471848
+sprout-sixfam,ood,gte,Validated kNN,100.0,0.7361970328798961
+sprout-sixfam,ood,gte,Validated kNN,150.0,0.7143209016679197
+sprout-sixfam,ood,gte,Validated kNN,250.0,0.6844162854034225
+sprout-sixfam,ood,gte,Validated kNN,500.0,0.611350096497824
+sprout-sixfam,ood,gte,kNN-100,0.0,0.8034595666142595
+sprout-sixfam,ood,gte,kNN-100,0.5,0.8012595343649599
+sprout-sixfam,ood,gte,kNN-100,1.0,0.7993936819171965
+sprout-sixfam,ood,gte,kNN-100,2.0,0.7954981123590127
+sprout-sixfam,ood,gte,kNN-100,5.0,0.7872853679164673
+sprout-sixfam,ood,gte,kNN-100,10.0,0.7820459574589286
+sprout-sixfam,ood,gte,kNN-100,25.0,0.7733663693918472
+sprout-sixfam,ood,gte,kNN-100,50.0,0.7607281382186069
+sprout-sixfam,ood,gte,kNN-100,75.0,0.7496264080707271
+sprout-sixfam,ood,gte,kNN-100,100.0,0.7379239051427529
+sprout-sixfam,ood,gte,kNN-100,150.0,0.7149017429762798
+sprout-sixfam,ood,gte,kNN-100,250.0,0.6786105964750381
+sprout-sixfam,ood,gte,kNN-100,500.0,0.6037110449563652
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,0.0,0.8307150181147036
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,0.5,0.8119119378139313
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,1.0,0.8240385870888873
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,2.0,0.8291092852580492
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,5.0,0.7991016656219382
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,10.0,0.8048867274158634
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,25.0,0.8009643289869438
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,50.0,0.7972534279969012
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,75.0,0.7850290593285028
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,100.0,0.7682536263586027
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,150.0,0.7566249030464602
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,250.0,0.7170594112721307
+sprout-sixfam,ood,nvidia_pipeline,fixed_l21,500.0,0.6310715214072504
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,0.0,0.8349076036183835
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,0.5,0.8156090162207488
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,1.0,0.8174636353981819
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,2.0,0.825135278868002
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,5.0,0.8002146948492722
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,10.0,0.7891285160981611
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,25.0,0.808779614566956
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,50.0,0.7951756769544512
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,75.0,0.7911088767630505
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,100.0,0.7752163339713355
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,150.0,0.7464723948549685
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,250.0,0.7200022834780232
+sprout-sixfam,ood,nvidia_pipeline,selected_layer,500.0,0.6288106852826578
+sprout-sixfam,ood,reader,Avengers-Pro,0.0,0.8148022193360221
+sprout-sixfam,ood,reader,Avengers-Pro,0.5,0.8142843765272174
+sprout-sixfam,ood,reader,Avengers-Pro,1.0,0.8134589255428712
+sprout-sixfam,ood,reader,Avengers-Pro,2.0,0.8112990672363114
+sprout-sixfam,ood,reader,Avengers-Pro,5.0,0.8118419868355095
+sprout-sixfam,ood,reader,Avengers-Pro,10.0,0.801984129799257
+sprout-sixfam,ood,reader,Avengers-Pro,25.0,0.7948300657085242
+sprout-sixfam,ood,reader,Avengers-Pro,50.0,0.7865667848109917
+sprout-sixfam,ood,reader,Avengers-Pro,75.0,0.7763796164581768
+sprout-sixfam,ood,reader,Avengers-Pro,100.0,0.7661924481053614
+sprout-sixfam,ood,reader,Avengers-Pro,150.0,0.7458181113997311
+sprout-sixfam,ood,reader,Avengers-Pro,250.0,0.7098963865153691
+sprout-sixfam,ood,reader,Avengers-Pro,500.0,0.5802534569462483
+sprout-sixfam,ood,reader,Best single model,0.0,0.8445006493950372
+sprout-sixfam,ood,reader,Best single model,0.5,0.8420470017886845
+sprout-sixfam,ood,reader,Best single model,1.0,0.8039546997949277
+sprout-sixfam,ood,reader,Best single model,2.0,0.8010137357258413
+sprout-sixfam,ood,reader,Best single model,5.0,0.7669186417788867
+sprout-sixfam,ood,reader,Best single model,10.0,0.7576324159660036
+sprout-sixfam,ood,reader,Best single model,25.0,0.7641059640098434
+sprout-sixfam,ood,reader,Best single model,50.0,0.7546108616446784
+sprout-sixfam,ood,reader,Best single model,75.0,0.7451157592795133
+sprout-sixfam,ood,reader,Best single model,100.0,0.7356206569143483
+sprout-sixfam,ood,reader,Best single model,150.0,0.7166304521840181
+sprout-sixfam,ood,reader,Best single model,250.0,0.7218240247681547
+sprout-sixfam,ood,reader,Best single model,500.0,0.59300017533666
+sprout-sixfam,ood,reader,KM-Prox,0.0,0.825014241119238
+sprout-sixfam,ood,reader,KM-Prox,0.5,0.8220597788342789
+sprout-sixfam,ood,reader,KM-Prox,1.0,0.8189051264474673
+sprout-sixfam,ood,reader,KM-Prox,2.0,0.8118277925763893
+sprout-sixfam,ood,reader,KM-Prox,5.0,0.7829304487148816
+sprout-sixfam,ood,reader,KM-Prox,10.0,0.7754303982386583
+sprout-sixfam,ood,reader,KM-Prox,25.0,0.774980943046916
+sprout-sixfam,ood,reader,KM-Prox,50.0,0.7649811611638982
+sprout-sixfam,ood,reader,KM-Prox,75.0,0.7696570377047873
+sprout-sixfam,ood,reader,KM-Prox,100.0,0.7668205215667511
+sprout-sixfam,ood,reader,KM-Prox,150.0,0.7520969541094175
+sprout-sixfam,ood,reader,KM-Prox,250.0,0.721637102387951
+sprout-sixfam,ood,reader,KM-Prox,500.0,0.6357316123225557
+sprout-sixfam,ood,reader,KM-Prox (validated),0.0,0.8194565588898762
+sprout-sixfam,ood,reader,KM-Prox (validated),0.5,0.8164485849813156
+sprout-sixfam,ood,reader,KM-Prox (validated),1.0,0.8134219606774215
+sprout-sixfam,ood,reader,KM-Prox (validated),2.0,0.8073989285665459
+sprout-sixfam,ood,reader,KM-Prox (validated),5.0,0.8054857269749585
+sprout-sixfam,ood,reader,KM-Prox (validated),10.0,0.8043777097090254
+sprout-sixfam,ood,reader,KM-Prox (validated),25.0,0.7746622150921685
+sprout-sixfam,ood,reader,KM-Prox (validated),50.0,0.7910452132180373
+sprout-sixfam,ood,reader,KM-Prox (validated),75.0,0.7828756882163284
+sprout-sixfam,ood,reader,KM-Prox (validated),100.0,0.7662399454280312
+sprout-sixfam,ood,reader,KM-Prox (validated),150.0,0.7564687550413562
+sprout-sixfam,ood,reader,KM-Prox (validated),250.0,0.721637102387951
+sprout-sixfam,ood,reader,KM-Prox (validated),500.0,0.6338765824731698
+sprout-sixfam,ood,reader,MLP,0.0,0.8139221181671109
+sprout-sixfam,ood,reader,MLP,0.5,0.814544845370155
+sprout-sixfam,ood,reader,MLP,1.0,0.8079709896260852
+sprout-sixfam,ood,reader,MLP,2.0,0.8044192007564881
+sprout-sixfam,ood,reader,MLP,5.0,0.7997381807106889
+sprout-sixfam,ood,reader,MLP,10.0,0.7868978899651377
+sprout-sixfam,ood,reader,MLP,25.0,0.792449219489826
+sprout-sixfam,ood,reader,MLP,50.0,0.7521640342812222
+sprout-sixfam,ood,reader,MLP,75.0,0.7794017826292525
+sprout-sixfam,ood,reader,MLP,100.0,0.7592340232642925
+sprout-sixfam,ood,reader,MLP,150.0,0.7439648495568164
+sprout-sixfam,ood,reader,MLP,250.0,0.7144788065942078
+sprout-sixfam,ood,reader,MLP,500.0,0.5977343806822065
+sprout-sixfam,ood,reader,Realized oracle,0.0,0.9765904481965049
+sprout-sixfam,ood,reader,Realized oracle,0.5,0.9763937904725771
+sprout-sixfam,ood,reader,Realized oracle,1.0,0.9761971327486498
+sprout-sixfam,ood,reader,Realized oracle,2.0,0.9758038173007954
+sprout-sixfam,ood,reader,Realized oracle,5.0,0.9746619772643381
+sprout-sixfam,ood,reader,Realized oracle,10.0,0.972958999854171
+sprout-sixfam,ood,reader,Realized oracle,25.0,0.9692289426196823
+sprout-sixfam,ood,reader,Realized oracle,50.0,0.964235365484084
+sprout-sixfam,ood,reader,Realized oracle,75.0,0.9594960184564906
+sprout-sixfam,ood,reader,Realized oracle,100.0,0.954898574703215
+sprout-sixfam,ood,reader,Realized oracle,150.0,0.9463052567047188
+sprout-sixfam,ood,reader,Realized oracle,250.0,0.9315518344270513
+sprout-sixfam,ood,reader,Realized oracle,500.0,0.902585333697906
+sprout-sixfam,ood,reader,Ridge,0.0,0.8103242418028118
+sprout-sixfam,ood,reader,Ridge,0.5,0.8083230067827603
+sprout-sixfam,ood,reader,Ridge,1.0,0.8063884134345023
+sprout-sixfam,ood,reader,Ridge,2.0,0.8026851875790098
+sprout-sixfam,ood,reader,Ridge,5.0,0.7805918890901633
+sprout-sixfam,ood,reader,Ridge,10.0,0.7993275528197417
+sprout-sixfam,ood,reader,Ridge,25.0,0.7896953483662589
+sprout-sixfam,ood,reader,Ridge,50.0,0.7923170928179187
+sprout-sixfam,ood,reader,Ridge,75.0,0.7623917543349966
+sprout-sixfam,ood,reader,Ridge,100.0,0.7700545722423496
+sprout-sixfam,ood,reader,Ridge,150.0,0.7519401903752819
+sprout-sixfam,ood,reader,Ridge,250.0,0.7217278989222321
+sprout-sixfam,ood,reader,Ridge,500.0,0.6299139499168318
+sprout-sixfam,ood,reader,Family Adaptation,0.0,0.8163098411830383
+sprout-sixfam,ood,reader,Family Adaptation,0.5,0.8128911932440132
+sprout-sixfam,ood,reader,Family Adaptation,1.0,0.8094471740447057
+sprout-sixfam,ood,reader,Family Adaptation,2.0,0.8025122949028186
+sprout-sixfam,ood,reader,Family Adaptation,5.0,0.8070362196607196
+sprout-sixfam,ood,reader,Family Adaptation,10.0,0.8084584201699819
+sprout-sixfam,ood,reader,Family Adaptation,25.0,0.8041563033757149
+sprout-sixfam,ood,reader,Family Adaptation,50.0,0.7957185007519311
+sprout-sixfam,ood,reader,Family Adaptation,75.0,0.7872908783067878
+sprout-sixfam,ood,reader,Family Adaptation,100.0,0.7772154939959441
+sprout-sixfam,ood,reader,Family Adaptation,150.0,0.7570733702463145
+sprout-sixfam,ood,reader,Family Adaptation,250.0,0.7210367301250941
+sprout-sixfam,ood,reader,Family Adaptation,500.0,0.5974503371157746
+sprout-sixfam,ood,reader,Utility-cluster control,0.0,0.8209558639232575
+sprout-sixfam,ood,reader,Utility-cluster control,0.5,0.8181199444812817
+sprout-sixfam,ood,reader,Utility-cluster control,1.0,0.8153828795281063
+sprout-sixfam,ood,reader,Utility-cluster control,2.0,0.816985267092761
+sprout-sixfam,ood,reader,Utility-cluster control,5.0,0.8042495832706725
+sprout-sixfam,ood,reader,Utility-cluster control,10.0,0.8049749047781802
+sprout-sixfam,ood,reader,Utility-cluster control,25.0,0.8012269576127327
+sprout-sixfam,ood,reader,Utility-cluster control,50.0,0.7835513527354342
+sprout-sixfam,ood,reader,Utility-cluster control,75.0,0.7750621304429558
+sprout-sixfam,ood,reader,Utility-cluster control,100.0,0.7679713897053797
+sprout-sixfam,ood,reader,Utility-cluster control,150.0,0.7464656925171462
+sprout-sixfam,ood,reader,Utility-cluster control,250.0,0.7212113769453368
+sprout-sixfam,ood,reader,Utility-cluster control,500.0,0.6206900827124204
+sprout-sixfam,ood,reader,Validated kNN,0.0,0.8212067354797549
+sprout-sixfam,ood,reader,Validated kNN,0.5,0.8176570598726275
+sprout-sixfam,ood,reader,Validated kNN,1.0,0.8157052819176523
+sprout-sixfam,ood,reader,Validated kNN,2.0,0.8103640448510948
+sprout-sixfam,ood,reader,Validated kNN,5.0,0.8050273409118872
+sprout-sixfam,ood,reader,Validated kNN,10.0,0.7991509516485518
+sprout-sixfam,ood,reader,Validated kNN,25.0,0.7991303905313646
+sprout-sixfam,ood,reader,Validated kNN,50.0,0.7883692175587304
+sprout-sixfam,ood,reader,Validated kNN,75.0,0.7735973058593661
+sprout-sixfam,ood,reader,Validated kNN,100.0,0.762909658349853
+sprout-sixfam,ood,reader,Validated kNN,150.0,0.7416342415407753
+sprout-sixfam,ood,reader,Validated kNN,250.0,0.7059830012304328
+sprout-sixfam,ood,reader,Validated kNN,500.0,0.6200164445052065
+sprout-sixfam,ood,reader,kNN-100,0.0,0.8243304395379043
+sprout-sixfam,ood,reader,kNN-100,0.5,0.8224747640030079
+sprout-sixfam,ood,reader,kNN-100,1.0,0.8200374755018572
+sprout-sixfam,ood,reader,kNN-100,2.0,0.8169808731173239
+sprout-sixfam,ood,reader,kNN-100,5.0,0.8072953516280449
+sprout-sixfam,ood,reader,kNN-100,10.0,0.8009340888030623
+sprout-sixfam,ood,reader,kNN-100,25.0,0.794567214232005
+sprout-sixfam,ood,reader,kNN-100,50.0,0.7830360122701483
+sprout-sixfam,ood,reader,kNN-100,75.0,0.7716331124307882
+sprout-sixfam,ood,reader,kNN-100,100.0,0.7606329886071046
+sprout-sixfam,ood,reader,kNN-100,150.0,0.7383726179848247
+sprout-sixfam,ood,reader,kNN-100,250.0,0.6985965398067764
+sprout-sixfam,ood,reader,kNN-100,500.0,0.6118523733679678

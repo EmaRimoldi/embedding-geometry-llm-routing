@@ -1,0 +1,13 @@
+{
+  "cells_with_intervals": 1376,
+  "tables": 17,
+  "macro_names": [
+    "CIDeployability",
+    "CIOodMean",
+    "CINvidiaMean",
+    "CIDisagreementSummary",
+    "CIDisagreementPenalties"
+  ],
+  "full_tables": 12,
+  "all_intervals_ordered": true
+}

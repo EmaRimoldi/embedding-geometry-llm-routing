@@ -1,0 +1,30 @@
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Mean retrieval rank of the source family with the lowest relative-utility prediction error, averaging equally over held-out families. Sources are ranked by their share of GTE kNN-100 neighbours; rank 1 is highest. RouterBench has six eligible sources and SPROUT five. A dash denotes a penalty outside that benchmarks prescribed grid.}
+\label{tab:utility-family-rank}
+\begin{tabular}{@{}rcc@{}}
+\toprule
+$\lambda$ & RouterBench & SPROUT \\
+\midrule
+0 & 3.14 & 3.00 \\
+0.5 & --- & 3.00 \\
+1 & 3.14 & 3.00 \\
+2 & 3.14 & 3.00 \\
+5 & 3.36 & 3.00 \\
+10 & 3.36 & 3.00 \\
+20 & 2.71 & --- \\
+25 & --- & 3.33 \\
+30 & 3.29 & --- \\
+50 & 3.29 & 3.33 \\
+75 & 3.29 & 3.33 \\
+100 & 3.29 & 3.67 \\
+150 & 3.29 & 3.67 \\
+250 & 3.29 & 3.17 \\
+500 & 3.57 & 3.17 \\
+\midrule
+Mean & 3.24 & 3.21 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,25 @@
+{
+  "commit": "8a9d3509fbde879d9795258081bab9553b458e04",
+  "files": {
+    "sweep.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-AI-Blueprints/llm-router/8a9d3509fbde879d9795258081bab9553b458e04/src/model_router_toolkit/prefill/sweep.py",
+      "sha256": "22d5c2a16b5a00405cf3e35cd66c3cebb5a8c7a229a53762e5fce12894533b25"
+    },
+    "train.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-AI-Blueprints/llm-router/8a9d3509fbde879d9795258081bab9553b458e04/src/model_router_toolkit/prefill/train.py",
+      "sha256": "ae314c39377ce0e0a153ddb5517c82de4fa5830f308e2f710c63cc404cb9791e"
+    },
+    "transforms.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-AI-Blueprints/llm-router/8a9d3509fbde879d9795258081bab9553b458e04/src/model_router_toolkit/prefill/transforms.py",
+      "sha256": "2fa067ddbd99ba6aa6247ccaa8a2ac9fc659da72ffebdb5c5abc99e9e1660bd8"
+    },
+    "extract.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-AI-Blueprints/llm-router/8a9d3509fbde879d9795258081bab9553b458e04/src/model_router_toolkit/prefill/extract.py",
+      "sha256": "a63c1b89baf694774e90070fcfc09778aa8cd935a109029a9409e1e37d5890a2"
+    },
+    "trunk.py": {
+      "url": "https://raw.githubusercontent.com/NVIDIA-AI-Blueprints/llm-router/8a9d3509fbde879d9795258081bab9553b458e04/src/model_router_toolkit/prefill/trunk.py",
+      "sha256": "1a1560e0b994d14118b7b15b28d2b599936212c48d647d77bbc02e99013fd850"
+    }
+  }
+}

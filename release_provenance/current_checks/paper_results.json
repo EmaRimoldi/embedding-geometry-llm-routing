@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "numeric_checks": 5493,
+  "tables_covered": 44,
+  "expected_tables": 44,
+  "errors": [],
+  "reference": "Final Overleaf snapshot 6e3bea88ec5d65de3587c0719025702e110ac3e0",
+  "scope": "Reconstructed fold aggregates, supplied CI endpoints and configurations compared with printed paper values. No full model retraining or bootstrap resampling."
+}

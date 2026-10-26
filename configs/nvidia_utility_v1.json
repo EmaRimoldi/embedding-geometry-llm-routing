@@ -1,0 +1,212 @@
+{
+  "version": "nvidia_per_target_utility_v1",
+  "tasks": [
+    [
+      "routerbench-0shot",
+      "iid_0"
+    ],
+    [
+      "routerbench-0shot",
+      "iid_1"
+    ],
+    [
+      "routerbench-0shot",
+      "iid_2"
+    ],
+    [
+      "routerbench-0shot",
+      "iid_3"
+    ],
+    [
+      "routerbench-0shot",
+      "iid_4"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_0"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_1"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_2"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_3"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_4"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_5"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_6"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_0"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_1"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_2"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_3"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_4"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_0"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_1"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_2"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_3"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_4"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_5"
+    ]
+  ],
+  "layers": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28
+  ],
+  "lambdas": {
+    "routerbench-0shot": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      20,
+      30,
+      50,
+      75,
+      100,
+      150,
+      250,
+      500
+    ],
+    "sprout-sixfam": [
+      0,
+      0.5,
+      1,
+      2,
+      5,
+      10,
+      25,
+      50,
+      75,
+      100,
+      150,
+      250,
+      500
+    ]
+  },
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "keep_seeds": 5,
+  "encoder": "Qwen2.5-7B-Instruct",
+  "prompts": "raw",
+  "pooling": "last_input_token",
+  "pca": 100,
+  "probe": {
+    "type": "Ridge",
+    "alpha": 1.0,
+    "fit_intercept": true,
+    "solver": "cholesky",
+    "folds": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "score": "mean_fold_mse"
+  },
+  "search": "Reference ternary search per model and penalty; negative MSE; unchanged tie behavior",
+  "preprocessing": "Reuse verified StandardScaler/PCA100 fitted on all outer training rows; fixed during CV",
+  "input_hashes": {
+    "datasets/routerbench/prepared/panel.npz": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+    "datasets/routerbench/prepared/queries.jsonl": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd",
+    "datasets/routerbench/prepared/manifest.json": "557bc48609f0ff15040bdf83120770ef7da8775c52a640709a85d1d3168b4f88",
+    "configs/baseline_splits/routerbench-0shot.json": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+    "datasets/sprout/prepared/panel.npz": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+    "datasets/sprout/prepared/queries.jsonl": "977295d4650e20ecbb1b1b14d9250d2bec9b42efb0633a21d98098157c78c0f9",
+    "datasets/sprout/prepared/manifest.json": "a1f6bb0cad2e88a49489d2b043a1ec5204d54bf32e1139a46967bf3e09cbfec7",
+    "configs/baseline_splits/sprout-sixfam.json": "8d3ff78c8c1b84f60a737720cad236af5d977ccb5f958a4ab7cda3927542c997",
+    "configs/nvidia.json": "4a7e398acc43d07cd604776539d3633e4f257202bb2966ca2352e5aa4d60be84"
+  },
+  "reference_commit": "8a9d3509fbde879d9795258081bab9553b458e04",
+  "expected_outer_evaluations": 23,
+  "expected_penalty_evaluations": 299,
+  "expected_final_fits": 2990,
+  "architecture": {
+    "hidden": [
+      256,
+      128
+    ],
+    "dropout": [
+      0.3,
+      0.2
+    ]
+  },
+  "loss": "MSE",
+  "output": "raw utility",
+  "training": {
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "batch_size": 512,
+    "epochs": 150,
+    "patience": 15,
+    "min_delta": 0.0001,
+    "train_fraction": 0.85
+  },
+  "layer_range_note": "User accepted existing 15-28 range; literal-reference index14-27 difference was discussed and explicitly dismissed. Preserve frozen cached 15-28; no new extraction.",
+  "implementation_note": "Multi-output float64 Ridge batches independent utility targets for identical alpha/design; verified against separate fits. Final network uses float32 utility as existing baselines."
+}

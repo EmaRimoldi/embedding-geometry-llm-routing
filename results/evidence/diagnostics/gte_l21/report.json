@@ -1,0 +1,736 @@
+{
+  "complete": true,
+  "evaluations": 23,
+  "method_evaluations": 46,
+  "prediction_reconstruction_passed": true,
+  "scores": [
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 0,
+      "utility": 0.7936944018404908
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 1,
+      "utility": 0.7910752932937116
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 2,
+      "utility": 0.7884499427530673
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 5,
+      "utility": 0.780780095297546
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 10,
+      "utility": 0.7733368276096627
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 20,
+      "utility": 0.7624291726150307
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 30,
+      "utility": 0.7518358701763803
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 50,
+      "utility": 0.7318531094056749
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 75,
+      "utility": 0.7114873685832055
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 100,
+      "utility": 0.6963838840490797
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 150,
+      "utility": 0.6722796081940183
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 250,
+      "utility": 0.6430585251533742
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 500,
+      "utility": 0.6026725323236196
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 0,
+      "utility": 0.7925249233128835
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 1,
+      "utility": 0.7897869879601227
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 2,
+      "utility": 0.7868044281441717
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 5,
+      "utility": 0.7784700943251532
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 10,
+      "utility": 0.770631560506135
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 20,
+      "utility": 0.7566432941717791
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 30,
+      "utility": 0.7425047446702454
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 50,
+      "utility": 0.7233075646088956
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 75,
+      "utility": 0.6951288707822085
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 100,
+      "utility": 0.6693219965490798
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 150,
+      "utility": 0.6539371527990798
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 250,
+      "utility": 0.6291138420245399
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 500,
+      "utility": 0.5881626418711656
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 0,
+      "utility": 0.7909033389893877
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 1,
+      "utility": 0.787640682148917
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 2,
+      "utility": 0.7843852152080759
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 5,
+      "utility": 0.7745525964453136
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 10,
+      "utility": 0.7581028700353741
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 20,
+      "utility": 0.7249067501078484
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 30,
+      "utility": 0.6935621636996346
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 50,
+      "utility": 0.6561791691351988
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 75,
+      "utility": 0.6516577399269508
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 100,
+      "utility": 0.6377566161456386
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 150,
+      "utility": 0.6162265416582784
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 250,
+      "utility": 0.5933695507750714
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 500,
+      "utility": 0.543736878433177
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 0,
+      "utility": 0.7921400017255759
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 1,
+      "utility": 0.7888810298812229
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 2,
+      "utility": 0.7856220580368698
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 5,
+      "utility": 0.7758338855655575
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 10,
+      "utility": 0.7644552148629604
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 20,
+      "utility": 0.7453249610307441
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 30,
+      "utility": 0.7251526703287222
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 50,
+      "utility": 0.6879437781484571
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 75,
+      "utility": 0.6716079996261253
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 100,
+      "utility": 0.6603005147968133
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 150,
+      "utility": 0.637216434960168
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 250,
+      "utility": 0.6135330332748555
+    },
+    {
+      "panel": "routerbench-0shot",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 500,
+      "utility": 0.5554466509447528
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 0,
+      "utility": 0.8666472241209083
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 0.5,
+      "utility": 0.86509640333827
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 1,
+      "utility": 0.8634810353922686
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 2,
+      "utility": 0.8612928797903852
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 5,
+      "utility": 0.8569585088691426
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 10,
+      "utility": 0.8499051575119617
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 25,
+      "utility": 0.8368484915584415
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 50,
+      "utility": 0.8228949630819471
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 75,
+      "utility": 0.8108597350763272
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 100,
+      "utility": 0.8003877171565277
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 150,
+      "utility": 0.7816434157363105
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 250,
+      "utility": 0.7488555101389839
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "knn100",
+      "lambda_value": 500,
+      "utility": 0.685487256018835
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 0,
+      "utility": 0.8613784461152882
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 0.5,
+      "utility": 0.8595564145720361
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 1,
+      "utility": 0.8577805266666667
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 2,
+      "utility": 0.8546354401063265
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 5,
+      "utility": 0.850179043859649
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 10,
+      "utility": 0.8433340620034937
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 25,
+      "utility": 0.826667958855472
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 50,
+      "utility": 0.8149995034176349
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 75,
+      "utility": 0.8035921359459255
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 100,
+      "utility": 0.7925902303485988
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 150,
+      "utility": 0.7707932953975847
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 250,
+      "utility": 0.7313521510214931
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "iid",
+      "method": "family_adaptation",
+      "lambda_value": 500,
+      "utility": 0.6570740869598238
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 0,
+      "utility": 0.7992845261694808
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 0.5,
+      "utility": 0.7970183727165221
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 1,
+      "utility": 0.7956611654583361
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 2,
+      "utility": 0.7937923740091599
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 5,
+      "utility": 0.789084146505799
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 10,
+      "utility": 0.7881690629639756
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 25,
+      "utility": 0.7927597546141227
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 50,
+      "utility": 0.781768462209766
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 75,
+      "utility": 0.7695450747430903
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 100,
+      "utility": 0.7569776223255178
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 150,
+      "utility": 0.7316522042518286
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 250,
+      "utility": 0.6898339429671657
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "knn100",
+      "lambda_value": 500,
+      "utility": 0.6101066320322647
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 0,
+      "utility": 0.7991712807892997
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 0.5,
+      "utility": 0.7980226560370952
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 1,
+      "utility": 0.7976765259017478
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 2,
+      "utility": 0.7964540537357304
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 5,
+      "utility": 0.7956162068721945
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 10,
+      "utility": 0.7967893777656253
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 25,
+      "utility": 0.7898616544477863
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 50,
+      "utility": 0.7736273251760202
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 75,
+      "utility": 0.7605478354353223
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 100,
+      "utility": 0.7493626226445188
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 150,
+      "utility": 0.7277698117324036
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 250,
+      "utility": 0.6906992059151913
+    },
+    {
+      "panel": "sprout-sixfam",
+      "mode": "ood",
+      "method": "family_adaptation",
+      "lambda_value": 500,
+      "utility": 0.6116349610362979
+    }
+  ]
+}

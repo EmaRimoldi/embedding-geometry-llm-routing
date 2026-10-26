@@ -1,0 +1,820 @@
+{
+  "records": [
+    {
+      "dataset": "routerbench",
+      "seed": 0,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.24778565950920245,
+      "random_absolute_difference": 0.27308122025242615,
+      "relative_reduction": 0.09263017324970724
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 0,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.22114333519241494,
+      "random_absolute_difference": 0.24438069256645728,
+      "relative_reduction": 0.09508671544386893
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 0,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.32923182166759624,
+      "random_absolute_difference": 0.3517724577975785,
+      "relative_reduction": 0.06407731938738903
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 0,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.2459486544896821,
+      "random_absolute_difference": 0.2564142625838011,
+      "relative_reduction": 0.040815233866714706
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 0,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.2193427565532627,
+      "random_absolute_difference": 0.22781225477581057,
+      "relative_reduction": 0.03717753564610771
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 0,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.3272595684606804,
+      "random_absolute_difference": 0.3367612082051568,
+      "relative_reduction": 0.02821476913899179
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 1,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.2494326896263246,
+      "random_absolute_difference": 0.2732532889833001,
+      "relative_reduction": 0.08717406273719652
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 1,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.22259511816787508,
+      "random_absolute_difference": 0.24471390897420545,
+      "relative_reduction": 0.09038632458223628
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 1,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.33092133470440604,
+      "random_absolute_difference": 0.35187733428467766,
+      "relative_reduction": 0.059554843516342215
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 1,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.2475808700501952,
+      "random_absolute_difference": 0.25681777280088863,
+      "relative_reduction": 0.03596675825802298
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 1,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.22077083623814836,
+      "random_absolute_difference": 0.22838531456378483,
+      "relative_reduction": 0.03334049012818574
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 1,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.3291357449107641,
+      "random_absolute_difference": 0.33709334731354784,
+      "relative_reduction": 0.023606524620558567
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 2,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.2482091815393196,
+      "random_absolute_difference": 0.2735360027589192,
+      "relative_reduction": 0.09259044865812927
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 2,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.22122237520914667,
+      "random_absolute_difference": 0.24483639769288892,
+      "relative_reduction": 0.0964481699055324
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 2,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.3293437151422198,
+      "random_absolute_difference": 0.35232064637376254,
+      "relative_reduction": 0.06521596581986133
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 2,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.24587632459564976,
+      "random_absolute_difference": 0.2565469582897845,
+      "relative_reduction": 0.041593296468094065
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 2,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.2189286461238148,
+      "random_absolute_difference": 0.22794199203427606,
+      "relative_reduction": 0.03954227928790721
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 2,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.327195517289459,
+      "random_absolute_difference": 0.33691274024160967,
+      "relative_reduction": 0.028841957550142405
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 3,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.2478135457334077,
+      "random_absolute_difference": 0.27337269829869704,
+      "relative_reduction": 0.09349562968194602
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 3,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.2210592843697713,
+      "random_absolute_difference": 0.2446041883327791,
+      "relative_reduction": 0.09625715783319067
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 3,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.32955978980758505,
+      "random_absolute_difference": 0.3522045931619848,
+      "relative_reduction": 0.06429445780675846
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 3,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.24606891383156718,
+      "random_absolute_difference": 0.2565479175217001,
+      "relative_reduction": 0.04084618495976111
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 3,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.21932214689068602,
+      "random_absolute_difference": 0.22786703967292138,
+      "relative_reduction": 0.037499468086743204
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 3,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.32806822539040714,
+      "random_absolute_difference": 0.337100438402134,
+      "relative_reduction": 0.02679383347746389
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 4,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.24752596904629115,
+      "random_absolute_difference": 0.2727765306324158,
+      "relative_reduction": 0.09256867343969355
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 4,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.22034317484662574,
+      "random_absolute_difference": 0.2439879168678489,
+      "relative_reduction": 0.09690947947241935
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 4,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.3287405883993307,
+      "random_absolute_difference": 0.3516046818117435,
+      "relative_reduction": 0.06502784119539884
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 4,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.24577610847741221,
+      "random_absolute_difference": 0.25635234123993067,
+      "relative_reduction": 0.04125662637354155
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 4,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.21860028583379812,
+      "random_absolute_difference": 0.22764316007484983,
+      "relative_reduction": 0.039723900503219056
+    },
+    {
+      "dataset": "routerbench",
+      "seed": 4,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 10432,
+      "neighbor_absolute_difference": 0.32707944088120466,
+      "random_absolute_difference": 0.3368668215806777,
+      "relative_reduction": 0.02905415455742355
+    },
+    {
+      "dataset": "sprout",
+      "seed": 0,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.18806106174527226,
+      "random_absolute_difference": 0.2627839686796415,
+      "relative_reduction": 0.28435108621661587
+    },
+    {
+      "dataset": "sprout",
+      "seed": 0,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.18992265629107735,
+      "random_absolute_difference": 0.2611742083630738,
+      "relative_reduction": 0.2728123596834854
+    },
+    {
+      "dataset": "sprout",
+      "seed": 0,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.2720565341091657,
+      "random_absolute_difference": 0.3394280892830908,
+      "relative_reduction": 0.19848550341317128
+    },
+    {
+      "dataset": "sprout",
+      "seed": 0,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13166,
+      "neighbor_absolute_difference": 0.18619813271947558,
+      "random_absolute_difference": 0.2468457706790601,
+      "relative_reduction": 0.2456904073857371
+    },
+    {
+      "dataset": "sprout",
+      "seed": 0,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13166,
+      "neighbor_absolute_difference": 0.1879848794680938,
+      "random_absolute_difference": 0.24511253274076067,
+      "relative_reduction": 0.23306704326329575
+    },
+    {
+      "dataset": "sprout",
+      "seed": 0,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13166,
+      "neighbor_absolute_difference": 0.2700696081982729,
+      "random_absolute_difference": 0.32407981307687406,
+      "relative_reduction": 0.16665710945034873
+    },
+    {
+      "dataset": "sprout",
+      "seed": 1,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.18827429880061458,
+      "random_absolute_difference": 0.2621016149176975,
+      "relative_reduction": 0.2816744038004704
+    },
+    {
+      "dataset": "sprout",
+      "seed": 1,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.19039401826243932,
+      "random_absolute_difference": 0.26052020643049006,
+      "relative_reduction": 0.26917753954245105
+    },
+    {
+      "dataset": "sprout",
+      "seed": 1,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.2724626338573707,
+      "random_absolute_difference": 0.3389361959126593,
+      "relative_reduction": 0.1961241167420732
+    },
+    {
+      "dataset": "sprout",
+      "seed": 1,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13165,
+      "neighbor_absolute_difference": 0.18579742323760554,
+      "random_absolute_difference": 0.24643385080187896,
+      "relative_reduction": 0.24605559409539968
+    },
+    {
+      "dataset": "sprout",
+      "seed": 1,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13165,
+      "neighbor_absolute_difference": 0.1879059540156008,
+      "random_absolute_difference": 0.24471730363306451,
+      "relative_reduction": 0.23215092996712694
+    },
+    {
+      "dataset": "sprout",
+      "seed": 1,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13165,
+      "neighbor_absolute_difference": 0.2694488387040229,
+      "random_absolute_difference": 0.32389655884101004,
+      "relative_reduction": 0.1681021877225738
+    },
+    {
+      "dataset": "sprout",
+      "seed": 2,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.18790215632320897,
+      "random_absolute_difference": 0.26230867715013145,
+      "relative_reduction": 0.28366015808289924
+    },
+    {
+      "dataset": "sprout",
+      "seed": 2,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.18974831309041834,
+      "random_absolute_difference": 0.2606270214906569,
+      "relative_reduction": 0.2719545655506004
+    },
+    {
+      "dataset": "sprout",
+      "seed": 2,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.270944035496667,
+      "random_absolute_difference": 0.338817929574772,
+      "relative_reduction": 0.20032556766782983
+    },
+    {
+      "dataset": "sprout",
+      "seed": 2,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13166,
+      "neighbor_absolute_difference": 0.18535271503523063,
+      "random_absolute_difference": 0.24687063853300154,
+      "relative_reduction": 0.24919092794239772
+    },
+    {
+      "dataset": "sprout",
+      "seed": 2,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13166,
+      "neighbor_absolute_difference": 0.18715390750067187,
+      "random_absolute_difference": 0.2450275434718336,
+      "relative_reduction": 0.2361923690338691
+    },
+    {
+      "dataset": "sprout",
+      "seed": 2,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13166,
+      "neighbor_absolute_difference": 0.2684410982834574,
+      "random_absolute_difference": 0.32409377740508527,
+      "relative_reduction": 0.1717178267574928
+    },
+    {
+      "dataset": "sprout",
+      "seed": 3,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.18983531088794248,
+      "random_absolute_difference": 0.26332693627147746,
+      "relative_reduction": 0.27908890151582766
+    },
+    {
+      "dataset": "sprout",
+      "seed": 3,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.19160474321000637,
+      "random_absolute_difference": 0.2616122877493426,
+      "relative_reduction": 0.2676003682457463
+    },
+    {
+      "dataset": "sprout",
+      "seed": 3,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.27345512090248936,
+      "random_absolute_difference": 0.33992966804352265,
+      "relative_reduction": 0.19555382595355653
+    },
+    {
+      "dataset": "sprout",
+      "seed": 3,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13166,
+      "neighbor_absolute_difference": 0.1872754998305659,
+      "random_absolute_difference": 0.24740799191049703,
+      "relative_reduction": 0.24304991773137552
+    },
+    {
+      "dataset": "sprout",
+      "seed": 3,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13166,
+      "neighbor_absolute_difference": 0.18900413945009875,
+      "random_absolute_difference": 0.24556508714816802,
+      "relative_reduction": 0.23032976045141862
+    },
+    {
+      "dataset": "sprout",
+      "seed": 3,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13166,
+      "neighbor_absolute_difference": 0.27071946096589117,
+      "random_absolute_difference": 0.32460070656670126,
+      "relative_reduction": 0.16599238544706674
+    },
+    {
+      "dataset": "sprout",
+      "seed": 4,
+      "group": "family",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.18795707216759847,
+      "random_absolute_difference": 0.2617253792192967,
+      "relative_reduction": 0.2818538548754519
+    },
+    {
+      "dataset": "sprout",
+      "seed": 4,
+      "group": "family",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.1898223647697332,
+      "random_absolute_difference": 0.2602451637377659,
+      "relative_reduction": 0.27060175857482494
+    },
+    {
+      "dataset": "sprout",
+      "seed": 4,
+      "group": "family",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.27213317676475574,
+      "random_absolute_difference": 0.3386233490867333,
+      "relative_reduction": 0.19635436393060746
+    },
+    {
+      "dataset": "sprout",
+      "seed": 4,
+      "group": "subgroup",
+      "k": 10,
+      "target": "solve_fraction_050",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.1857271383587173,
+      "random_absolute_difference": 0.24597295676578065,
+      "relative_reduction": 0.24492862629785106
+    },
+    {
+      "dataset": "sprout",
+      "seed": 4,
+      "group": "subgroup",
+      "k": 10,
+      "target": "mean_reward",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.1875274666853614,
+      "random_absolute_difference": 0.24435616932131507,
+      "relative_reduction": 0.23256504140571543
+    },
+    {
+      "dataset": "sprout",
+      "seed": 4,
+      "group": "subgroup",
+      "k": 10,
+      "target": "reward_profile",
+      "n": 13167,
+      "neighbor_absolute_difference": 0.2693820682241735,
+      "random_absolute_difference": 0.32336042543833515,
+      "relative_reduction": 0.16692938581148464
+    }
+  ],
+  "pooled": [
+    {
+      "dataset": "routerbench",
+      "group": "family",
+      "target": "solve_fraction_050",
+      "relative_reduction": 0.09169171697791734,
+      "n_evaluations": 52160,
+      "splits": 5
+    },
+    {
+      "dataset": "routerbench",
+      "group": "family",
+      "target": "mean_reward",
+      "relative_reduction": 0.09501645917940194,
+      "n_evaluations": 52160,
+      "splits": 5
+    },
+    {
+      "dataset": "routerbench",
+      "group": "family",
+      "target": "reward_profile",
+      "relative_reduction": 0.06363436449120086,
+      "n_evaluations": 52160,
+      "splits": 5
+    },
+    {
+      "dataset": "routerbench",
+      "group": "subgroup",
+      "target": "solve_fraction_050",
+      "relative_reduction": 0.04009449821061972,
+      "n_evaluations": 52160,
+      "splits": 5
+    },
+    {
+      "dataset": "routerbench",
+      "group": "subgroup",
+      "target": "mean_reward",
+      "relative_reduction": 0.03745456800686031,
+      "n_evaluations": 52160,
+      "splits": 5
+    },
+    {
+      "dataset": "routerbench",
+      "group": "subgroup",
+      "target": "reward_profile",
+      "relative_reduction": 0.0273016652111836,
+      "n_evaluations": 52160,
+      "splits": 5
+    },
+    {
+      "dataset": "sprout",
+      "group": "family",
+      "target": "solve_fraction_050",
+      "relative_reduction": 0.2821243225300617,
+      "n_evaluations": 65835,
+      "splits": 5
+    },
+    {
+      "dataset": "sprout",
+      "group": "family",
+      "target": "mean_reward",
+      "relative_reduction": 0.27042823300900853,
+      "n_evaluations": 65835,
+      "splits": 5
+    },
+    {
+      "dataset": "sprout",
+      "group": "family",
+      "target": "reward_profile",
+      "relative_reduction": 0.19736791715719504,
+      "n_evaluations": 65835,
+      "splits": 5
+    },
+    {
+      "dataset": "sprout",
+      "group": "subgroup",
+      "target": "solve_fraction_050",
+      "relative_reduction": 0.24578241418510804,
+      "n_evaluations": 65830,
+      "splits": 5
+    },
+    {
+      "dataset": "sprout",
+      "group": "subgroup",
+      "target": "mean_reward",
+      "relative_reduction": 0.23286028057983355,
+      "n_evaluations": 65830,
+      "splits": 5
+    },
+    {
+      "dataset": "sprout",
+      "group": "subgroup",
+      "target": "reward_profile",
+      "relative_reduction": 0.16787958434719508,
+      "n_evaluations": 65830,
+      "splits": 5
+    }
+  ],
+  "provenance": [
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/routerbench/primary/iid_0",
+      "metrics_sha256": "a17f267d270abb52362db12409ae0f702084ef5be687e50f23487770e89aa1a8",
+      "panel_sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f"
+    },
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/routerbench/primary/iid_1",
+      "metrics_sha256": "564c2780ecd04e1aaace73a4dfb2a4abd492fd08a664e65b838ae8cf6ac6e415",
+      "panel_sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f"
+    },
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/routerbench/primary/iid_2",
+      "metrics_sha256": "57c94e8d1583667296133a38757b1c51433eec61165d51b3a7e5f771a1f46a53",
+      "panel_sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f"
+    },
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/routerbench/primary/iid_3",
+      "metrics_sha256": "1df7585d51f4ae65fb23ba5bdd88bc708f61c5112425087d8f607ce2c2964fa4",
+      "panel_sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f"
+    },
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/routerbench/primary/iid_4",
+      "metrics_sha256": "dcf76e9aa0c2060aa550d2d97b906e2b3a7961e5186d52437f597aecc3c0dc4c",
+      "panel_sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f"
+    },
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/sprout/primary/iid_0",
+      "metrics_sha256": "00f53d6cfdb937ce440be862ba4a2bed727cf76f520ea622d507016c94974a34",
+      "panel_sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972"
+    },
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/sprout/primary/iid_1",
+      "metrics_sha256": "a4cc8488b325b386001435a2130a7c190bc278ab8478917d50a9d5c13fe0e4fd",
+      "panel_sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972"
+    },
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/sprout/primary/iid_2",
+      "metrics_sha256": "4f77c96170a9644b22244ffa67cd2ce3a12dbe56d7b9ba6eda49ca81ac26f022",
+      "panel_sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972"
+    },
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/sprout/primary/iid_3",
+      "metrics_sha256": "78daca0421005a4fbd26a453b40d38f7ae92b05e96b90c49b9620ee90c8ec090",
+      "panel_sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972"
+    },
+    {
+      "path": "${REPO_ROOT}/results/geometry/gte-qwen2-7b/sprout/primary/iid_4",
+      "metrics_sha256": "c222099d2fd1c5b1df03b4880452a750f4e3a12aac270e0e63135393864698ab",
+      "panel_sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972"
+    }
+  ],
+  "code_sha256": "9539dc20a92d5637df42c2ce880b413ec53a0468e6e0cd73516dd7daa206ae81",
+  "notes": [
+    "GTE primary rows; five frozen IID splits; identical saved nearest neighbours; absolute difference averaged over queries and reward-profile model dimensions.",
+    "Random expectation uses all eligible training examples in the same native group. Groups with fewer than ten eligible examples are excluded and coverage is reported.",
+    "This matches the historical error metric, but does not assert identical row masks, source metadata, or train/test splits. No generated topics are imported."
+  ]
+}

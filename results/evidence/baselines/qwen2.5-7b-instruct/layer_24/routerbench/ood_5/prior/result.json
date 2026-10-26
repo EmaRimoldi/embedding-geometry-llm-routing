@@ -1,0 +1,589 @@
+{
+  "panel": "routerbench-0shot",
+  "split": "ood_5",
+  "representation": "reader",
+  "results": {
+    "0": {
+      "family_adaptation": {
+        "utility": 0.80625,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.80625,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.80625,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.80625,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.80625,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.80625,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.91875,
+        "reward": 0.91875,
+        "cost": 0.0084291671,
+        "equal_family": 0.91875,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.91875,
+            "reward": 0.91875,
+            "cost": 0.0084291671
+          }
+        }
+      }
+    },
+    "1": {
+      "family_adaptation": {
+        "utility": 0.783259625,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.783259625,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.783259625,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.783259625,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.783259625,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.783259625,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.9152653775499999,
+        "reward": 0.91875,
+        "cost": 0.0034846224499999997,
+        "equal_family": 0.9152653775499999,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.9152653775499999,
+            "reward": 0.91875,
+            "cost": 0.0034846224499999997
+          }
+        }
+      }
+    },
+    "2": {
+      "family_adaptation": {
+        "utility": 0.76026925,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.76026925,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.76026925,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.76026925,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.76026925,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.76026925,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.9117807550999999,
+        "reward": 0.91875,
+        "cost": 0.0034846224499999997,
+        "equal_family": 0.9117807550999999,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.9117807550999999,
+            "reward": 0.91875,
+            "cost": 0.0034846224499999997
+          }
+        }
+      }
+    },
+    "5": {
+      "family_adaptation": {
+        "utility": 0.7072218125,
+        "reward": 0.8125,
+        "cost": 0.021055637500000002,
+        "equal_family": 0.7072218125,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.7072218125,
+            "reward": 0.8125,
+            "cost": 0.021055637500000002
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.691298125,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.691298125,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.691298125,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.9043907502499998,
+        "reward": 0.9149999999999998,
+        "cost": 0.00212184995,
+        "equal_family": 0.9043907502499998,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.9043907502499998,
+            "reward": 0.9149999999999998,
+            "cost": 0.00212184995
+          }
+        }
+      }
+    },
+    "10": {
+      "family_adaptation": {
+        "utility": 0.660476675,
+        "reward": 0.7137500000000001,
+        "cost": 0.0053273324999999995,
+        "equal_family": 0.660476675,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.660476675,
+            "reward": 0.7137500000000001,
+            "cost": 0.0053273324999999995
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.5763462500000001,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.5763462500000001,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.5763462500000001,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.8952933755,
+        "reward": 0.9125,
+        "cost": 0.0017206624499999997,
+        "equal_family": 0.8952933755,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.8952933755,
+            "reward": 0.9125,
+            "cost": 0.0017206624499999997
+          }
+        }
+      }
+    },
+    "20": {
+      "family_adaptation": {
+        "utility": 0.66829285,
+        "reward": 0.6887500000000001,
+        "cost": 0.0010228575,
+        "equal_family": 0.66829285,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.66829285,
+            "reward": 0.6887500000000001,
+            "cost": 0.0010228575
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.34644250000000004,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.34644250000000004,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.34644250000000004,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.879232901,
+        "reward": 0.9024999999999999,
+        "cost": 0.00116335495,
+        "equal_family": 0.879232901,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.879232901,
+            "reward": 0.9024999999999999,
+            "cost": 0.00116335495
+          }
+        }
+      }
+    },
+    "30": {
+      "family_adaptation": {
+        "utility": 0.6642306249999999,
+        "reward": 0.6887500000000001,
+        "cost": 0.0008173125,
+        "equal_family": 0.6642306249999999,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.6642306249999999,
+            "reward": 0.6887500000000001,
+            "cost": 0.0008173125
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.11653875,
+        "reward": 0.80625,
+        "cost": 0.022990375,
+        "equal_family": 0.11653875,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.11653875,
+            "reward": 0.80625,
+            "cost": 0.022990375
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.8687830994999999,
+        "reward": 0.8925000000000001,
+        "cost": 0.00079056335,
+        "equal_family": 0.8687830994999999,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.8687830994999999,
+            "reward": 0.8925000000000001,
+            "cost": 0.00079056335
+          }
+        }
+      }
+    },
+    "50": {
+      "family_adaptation": {
+        "utility": 0.6478843750000001,
+        "reward": 0.6887500000000001,
+        "cost": 0.0008173125,
+        "equal_family": 0.6478843750000001,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.6478843750000001,
+            "reward": 0.6887500000000001,
+            "cost": 0.0008173125
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.612347,
+        "reward": 0.64375,
+        "cost": 0.0006280600000000001,
+        "equal_family": 0.612347,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.612347,
+            "reward": 0.64375,
+            "cost": 0.0006280600000000001
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.8559098949999999,
+        "reward": 0.8862500000000001,
+        "cost": 0.0006068021,
+        "equal_family": 0.8559098949999999,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.8559098949999999,
+            "reward": 0.8862500000000001,
+            "cost": 0.0006068021
+          }
+        }
+      }
+    },
+    "75": {
+      "family_adaptation": {
+        "utility": 0.6279887500000001,
+        "reward": 0.6887500000000001,
+        "cost": 0.0008101500000000001,
+        "equal_family": 0.6279887500000001,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.6279887500000001,
+            "reward": 0.6887500000000001,
+            "cost": 0.0008101500000000001
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.5966454999999999,
+        "reward": 0.64375,
+        "cost": 0.0006280600000000001,
+        "equal_family": 0.5966454999999999,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.5966454999999999,
+            "reward": 0.64375,
+            "cost": 0.0006280600000000001
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.84136681125,
+        "reward": 0.8774999999999998,
+        "cost": 0.00048177585,
+        "equal_family": 0.84136681125,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.84136681125,
+            "reward": 0.8774999999999998,
+            "cost": 0.00048177585
+          }
+        }
+      }
+    },
+    "100": {
+      "family_adaptation": {
+        "utility": 0.6077349999999999,
+        "reward": 0.6887500000000001,
+        "cost": 0.0008101500000000001,
+        "equal_family": 0.6077349999999999,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.6077349999999999,
+            "reward": 0.6887500000000001,
+            "cost": 0.0008101500000000001
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.580944,
+        "reward": 0.64375,
+        "cost": 0.0006280600000000001,
+        "equal_family": 0.580944,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.580944,
+            "reward": 0.64375,
+            "cost": 0.0006280600000000001
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.829322415,
+        "reward": 0.8774999999999998,
+        "cost": 0.00048177585,
+        "equal_family": 0.829322415,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.829322415,
+            "reward": 0.8774999999999998,
+            "cost": 0.00048177585
+          }
+        }
+      }
+    },
+    "150": {
+      "family_adaptation": {
+        "utility": 0.5672275000000001,
+        "reward": 0.6887500000000001,
+        "cost": 0.0008101500000000001,
+        "equal_family": 0.5672275000000001,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.5672275000000001,
+            "reward": 0.6887500000000001,
+            "cost": 0.0008101500000000001
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.549541,
+        "reward": 0.64375,
+        "cost": 0.0006280600000000001,
+        "equal_family": 0.549541,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.549541,
+            "reward": 0.64375,
+            "cost": 0.0006280600000000001
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.8055961225000001,
+        "reward": 0.87625,
+        "cost": 0.00047102585,
+        "equal_family": 0.8055961225000001,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.8055961225000001,
+            "reward": 0.87625,
+            "cost": 0.00047102585
+          }
+        }
+      }
+    },
+    "250": {
+      "family_adaptation": {
+        "utility": 0.487034375,
+        "reward": 0.6887500000000001,
+        "cost": 0.0008068624999999999,
+        "equal_family": 0.487034375,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.487034375,
+            "reward": 0.6887500000000001,
+            "cost": 0.0008068624999999999
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.48673500000000003,
+        "reward": 0.64375,
+        "cost": 0.0006280600000000001,
+        "equal_family": 0.48673500000000003,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.48673500000000003,
+            "reward": 0.64375,
+            "cost": 0.0006280600000000001
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.766196575,
+        "reward": 0.8524999999999998,
+        "cost": 0.0003452137,
+        "equal_family": 0.766196575,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.766196575,
+            "reward": 0.8524999999999998,
+            "cost": 0.0003452137
+          }
+        }
+      }
+    },
+    "500": {
+      "family_adaptation": {
+        "utility": 0.285529375,
+        "reward": 0.67125,
+        "cost": 0.00077144125,
+        "equal_family": 0.285529375,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.285529375,
+            "reward": 0.67125,
+            "cost": 0.00077144125
+          }
+        }
+      },
+      "best_single_train": {
+        "utility": 0.32971999999999996,
+        "reward": 0.64375,
+        "cost": 0.0006280600000000001,
+        "equal_family": 0.32971999999999996,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.32971999999999996,
+            "reward": 0.64375,
+            "cost": 0.0006280600000000001
+          }
+        }
+      },
+      "realized_oracle": {
+        "utility": 0.69487805,
+        "reward": 0.8225000000000001,
+        "cost": 0.00025524390000000003,
+        "equal_family": 0.69487805,
+        "per_family": {
+          "5": {
+            "n": 80,
+            "utility": 0.69487805,
+            "reward": 0.8225000000000001,
+            "cost": 0.00025524390000000003
+          }
+        }
+      }
+    }
+  },
+  "selections": {
+    "iterations": [
+      39
+    ]
+  },
+  "n_train": 34691,
+  "n_test": 80,
+  "split_sha256": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+  "code_sha256": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+  "seconds": 4.024712324142456
+}

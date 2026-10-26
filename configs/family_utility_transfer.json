@@ -1,0 +1,45 @@
+{
+  "version": "family_utility_transfer_v1",
+  "datasets": [
+    "routerbench",
+    "sprout"
+  ],
+  "encoder": "gte-qwen2-7b",
+  "k": 100,
+  "lambdas": {
+    "routerbench": [
+      0,
+      1,
+      2,
+      5,
+      10,
+      20,
+      30,
+      50,
+      75,
+      100,
+      150,
+      250,
+      500
+    ],
+    "sprout": [
+      0,
+      0.5,
+      1,
+      2,
+      5,
+      10,
+      25,
+      50,
+      75,
+      100,
+      150,
+      250,
+      500
+    ]
+  },
+  "best_source": "minimum query-mean relative utility MSE",
+  "ranking": "descending original unrestricted k100 retrieval share",
+  "aggregation": "equal heldout-family weight within penalty, equal weight over all13 penalties; retain query-weighted summaries too",
+  "scope": "Retrospective diagnostic, no test-based router selection"
+}

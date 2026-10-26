@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/NVIDIA-AI-Blueprints/llm-router.git",
+  "commit": "8a9d3509fbde879d9795258081bab9553b458e04",
+  "path": "src/model_router_toolkit/prefill/trunk.py",
+  "sha256": "1a1560e0b994d14118b7b15b28d2b599936212c48d647d77bbc02e99013fd850",
+  "modified": false
+}

@@ -1,0 +1,930 @@
+{
+  "complete": true,
+  "replicates": 2000,
+  "audit_score_count": 845,
+  "reproduced_existing_intervals": true,
+  "results": {
+    "routerbench-0shot": {
+      "lambdas": [
+        0,
+        1,
+        2,
+        5,
+        10,
+        20,
+        30,
+        50,
+        75,
+        100,
+        150,
+        250,
+        500
+      ],
+      "rows": {
+        "fixed_l21": {
+          "0": {
+            "mean": 0.7911621753760082,
+            "low": 0.7877609574070359,
+            "high": 0.7949082568807355
+          },
+          "1": {
+            "mean": 0.7877767393287581,
+            "low": 0.7844764145877332,
+            "high": 0.7915044527213789
+          },
+          "2": {
+            "mean": 0.7838205903195232,
+            "low": 0.7803744732990155,
+            "high": 0.7875211556964156
+          },
+          "5": {
+            "mean": 0.7738607443846685,
+            "low": 0.7704710379590772,
+            "high": 0.7776113028055006
+          },
+          "10": {
+            "mean": 0.7488807335423222,
+            "low": 0.7453429166086699,
+            "high": 0.752736362175378
+          },
+          "20": {
+            "mean": 0.7045597928733732,
+            "low": 0.7007800989100128,
+            "high": 0.7083597629677049
+          },
+          "30": {
+            "mean": 0.6989044833913358,
+            "low": 0.6948518029852481,
+            "high": 0.7028686477927023
+          },
+          "50": {
+            "mean": 0.6641467048689955,
+            "low": 0.6601094537150228,
+            "high": 0.6686844959664678
+          },
+          "75": {
+            "mean": 0.6542488325040998,
+            "low": 0.6497849242436241,
+            "high": 0.6584864653482804
+          },
+          "100": {
+            "mean": 0.638363662534862,
+            "low": 0.6340519316600055,
+            "high": 0.6427298679790646
+          },
+          "150": {
+            "mean": 0.6031229935866028,
+            "low": 0.5986542801364657,
+            "high": 0.6076936720399198
+          },
+          "250": {
+            "mean": 0.5543120977251096,
+            "low": 0.5497684558432326,
+            "high": 0.559064595136753
+          },
+          "500": {
+            "mean": 0.49051647924994995,
+            "low": 0.4857058344957015,
+            "high": 0.49555649708090216
+          },
+          "mean": {
+            "mean": 0.6841289253604314,
+            "low": 0.6808929701037628,
+            "high": 0.6875092498527743
+          }
+        },
+        "selected_layer": {
+          "0": {
+            "mean": 0.7917661269448443,
+            "low": 0.7883219133760909,
+            "high": 0.7954761870524301
+          },
+          "1": {
+            "mean": 0.7885948142187521,
+            "low": 0.7851475414900365,
+            "high": 0.7922599917500233
+          },
+          "2": {
+            "mean": 0.7854235390756724,
+            "low": 0.7819622691142065,
+            "high": 0.7890702226878742
+          },
+          "5": {
+            "mean": 0.77466588323601,
+            "low": 0.7711727381683033,
+            "high": 0.7783953887255203
+          },
+          "10": {
+            "mean": 0.7587939756118617,
+            "low": 0.7553094122357726,
+            "high": 0.7625416263035302
+          },
+          "20": {
+            "mean": 0.6916706167783522,
+            "low": 0.6878058340542423,
+            "high": 0.6957399237611815
+          },
+          "30": {
+            "mean": 0.6872234193437079,
+            "low": 0.6832599989617798,
+            "high": 0.6915681287768558
+          },
+          "50": {
+            "mean": 0.6654047798452634,
+            "low": 0.6613250230148701,
+            "high": 0.6695902310761858
+          },
+          "75": {
+            "mean": 0.6387499223490847,
+            "low": 0.6346433172938669,
+            "high": 0.6431504023791396
+          },
+          "100": {
+            "mean": 0.6223815881050252,
+            "low": 0.618201819921775,
+            "high": 0.6269366067987706
+          },
+          "150": {
+            "mean": 0.5983005319087662,
+            "low": 0.5937211131582371,
+            "high": 0.6026771587422003
+          },
+          "250": {
+            "mean": 0.5567121480544095,
+            "low": 0.5522215473383008,
+            "high": 0.5612968805541987
+          },
+          "500": {
+            "mean": 0.48407272008283136,
+            "low": 0.47943379375054024,
+            "high": 0.48894627840010485
+          },
+          "mean": {
+            "mean": 0.6802892358118908,
+            "low": 0.6771417552972433,
+            "high": 0.6837027675557786
+          }
+        },
+        "per_model": {
+          "0": {
+            "mean": 0.7915648097552322,
+            "low": 0.7881739092922275,
+            "high": 0.7952405740415881
+          },
+          "1": {
+            "mean": 0.7887187664433083,
+            "low": 0.7852523217815154,
+            "high": 0.7924565976729188
+          },
+          "2": {
+            "mean": 0.7854637208823504,
+            "low": 0.7820173942685014,
+            "high": 0.7891235942394543
+          },
+          "5": {
+            "mean": 0.7753864352189851,
+            "low": 0.7719030294850611,
+            "high": 0.7790186126894557
+          },
+          "10": {
+            "mean": 0.7585486710764756,
+            "low": 0.7551448953639548,
+            "high": 0.7622013930171709
+          },
+          "20": {
+            "mean": 0.7206855699289672,
+            "low": 0.7171139377958664,
+            "high": 0.7245852082540065
+          },
+          "30": {
+            "mean": 0.6801211386500279,
+            "low": 0.6763803956486746,
+            "high": 0.6840695872839453
+          },
+          "50": {
+            "mean": 0.6786352507836838,
+            "low": 0.6745604296755933,
+            "high": 0.6826267926253217
+          },
+          "75": {
+            "mean": 0.6780104921486239,
+            "low": 0.6738612704426838,
+            "high": 0.6822528060973961
+          },
+          "100": {
+            "mean": 0.6323226691783308,
+            "low": 0.6279342824048789,
+            "high": 0.6365951264271966
+          },
+          "150": {
+            "mean": 0.6078039955710146,
+            "low": 0.6034088979573506,
+            "high": 0.6124701544318556
+          },
+          "250": {
+            "mean": 0.6014577197952291,
+            "low": 0.5971623166575607,
+            "high": 0.6059668401649377
+          },
+          "500": {
+            "mean": 0.5352413189151909,
+            "low": 0.5307044579534683,
+            "high": 0.5399557922550416
+          },
+          "mean": {
+            "mean": 0.6949200429498015,
+            "low": 0.6918237725558946,
+            "high": 0.6982607572280686
+          }
+        },
+        "knn100": {
+          "0": {
+            "mean": 0.785369992234885,
+            "low": 0.7817529694285482,
+            "high": 0.7890792255040135
+          },
+          "1": {
+            "mean": 0.7804864116706458,
+            "low": 0.7768885214512115,
+            "high": 0.7842535998146458
+          },
+          "2": {
+            "mean": 0.777094468194762,
+            "low": 0.7734392142940977,
+            "high": 0.7808612092600175
+          },
+          "5": {
+            "mean": 0.7678421960541643,
+            "low": 0.7642398311739688,
+            "high": 0.7716453107934795
+          },
+          "10": {
+            "mean": 0.7586630770469693,
+            "low": 0.7549171659673308,
+            "high": 0.7626225247922134
+          },
+          "20": {
+            "mean": 0.743880961951051,
+            "low": 0.7401089970981579,
+            "high": 0.7477738548991993
+          },
+          "30": {
+            "mean": 0.7278528417359361,
+            "low": 0.7240112000201335,
+            "high": 0.7318691820712685
+          },
+          "50": {
+            "mean": 0.6993561956803052,
+            "low": 0.6953917068677941,
+            "high": 0.703652832993013
+          },
+          "75": {
+            "mean": 0.6691209748065954,
+            "low": 0.6648230925394023,
+            "high": 0.6734536867792141
+          },
+          "100": {
+            "mean": 0.6462326841333302,
+            "low": 0.6418081158149044,
+            "high": 0.6507586152756619
+          },
+          "150": {
+            "mean": 0.6188592521066448,
+            "low": 0.6142790917862603,
+            "high": 0.6234531445529334
+          },
+          "250": {
+            "mean": 0.5899155287452158,
+            "low": 0.5851772983412915,
+            "high": 0.5946050676389824
+          },
+          "500": {
+            "mean": 0.5441077507117995,
+            "low": 0.5394166084883967,
+            "high": 0.5487436642604484
+          },
+          "mean": {
+            "mean": 0.700675564236331,
+            "low": 0.6971982366299408,
+            "high": 0.7043159244956743
+          }
+        },
+        "family_adaptation": {
+          "0": {
+            "mean": 0.7921400017255523,
+            "low": 0.7886629303154945,
+            "high": 0.7958217336286
+          },
+          "1": {
+            "mean": 0.78888102988123,
+            "low": 0.7854069000172575,
+            "high": 0.7925619029651164
+          },
+          "2": {
+            "mean": 0.7856220580368739,
+            "low": 0.78215223579995,
+            "high": 0.7893020723016324
+          },
+          "5": {
+            "mean": 0.7758765927065462,
+            "low": 0.7724140830469376,
+            "high": 0.7795544590355482
+          },
+          "10": {
+            "mean": 0.7660718258318735,
+            "low": 0.7624259278148473,
+            "high": 0.7698259056642047
+          },
+          "20": {
+            "mean": 0.7522666094158954,
+            "low": 0.7486108484254137,
+            "high": 0.7560072109861686
+          },
+          "30": {
+            "mean": 0.7384773933450333,
+            "low": 0.7348323170688233,
+            "high": 0.7422531021425915
+          },
+          "50": {
+            "mean": 0.712594845129554,
+            "low": 0.7089960849558558,
+            "high": 0.7163517015544578
+          },
+          "75": {
+            "mean": 0.6965567065945761,
+            "low": 0.692729730659172,
+            "high": 0.7005163363974309
+          },
+          "100": {
+            "mean": 0.6688890000287536,
+            "low": 0.6647047260073065,
+            "high": 0.6732615602369808
+          },
+          "150": {
+            "mean": 0.6350494616203061,
+            "low": 0.6307080743651335,
+            "high": 0.639523721815595
+          },
+          "250": {
+            "mean": 0.6190678453308791,
+            "low": 0.614743928848755,
+            "high": 0.6235460121581217
+          },
+          "500": {
+            "mean": 0.5725679718731196,
+            "low": 0.5682673872264256,
+            "high": 0.5770575702812699
+          },
+          "mean": {
+            "mean": 0.715697026270784,
+            "low": 0.7125285583434379,
+            "high": 0.7190570654220045
+          }
+        }
+      },
+      "differences": {
+        "knn100": {
+          "mean": 0.005755521286529597,
+          "low": 0.004280825810771954,
+          "high": 0.007237004168925054
+        },
+        "family_adaptation": {
+          "mean": 0.020776983320982562,
+          "low": 0.019473247045874845,
+          "high": 0.02207285679938295
+        }
+      },
+      "penalty_counts": {
+        "knn100": {
+          "ours_higher": 7,
+          "sharedtrunknet_higher": 6,
+          "ties": 0
+        },
+        "family_adaptation": {
+          "ours_higher": 13,
+          "sharedtrunknet_higher": 0,
+          "ties": 0
+        }
+      }
+    },
+    "sprout-sixfam": {
+      "lambdas": [
+        0,
+        0.5,
+        1,
+        2,
+        5,
+        10,
+        25,
+        50,
+        75,
+        100,
+        150,
+        250,
+        500
+      ],
+      "rows": {
+        "fixed_l21": {
+          "0": {
+            "mean": 0.83071501811439,
+            "low": 0.8274358579989534,
+            "high": 0.8338980905507342
+          },
+          "0.5": {
+            "mean": 0.8119119378139262,
+            "low": 0.8086291663339773,
+            "high": 0.815224870287193
+          },
+          "1": {
+            "mean": 0.8240385870888848,
+            "low": 0.8210883266561658,
+            "high": 0.827321299126539
+          },
+          "2": {
+            "mean": 0.8291092852580609,
+            "low": 0.8259768418594378,
+            "high": 0.8323370183357285
+          },
+          "5": {
+            "mean": 0.7991016656219349,
+            "low": 0.7956384997033891,
+            "high": 0.8026345232648938
+          },
+          "10": {
+            "mean": 0.8048867274158608,
+            "low": 0.8015261788030653,
+            "high": 0.808186296281134
+          },
+          "25": {
+            "mean": 0.8009643289869481,
+            "low": 0.797734572145086,
+            "high": 0.8040699748302487
+          },
+          "50": {
+            "mean": 0.7972534279968984,
+            "low": 0.793857401604408,
+            "high": 0.8006581827850536
+          },
+          "75": {
+            "mean": 0.7850290593285026,
+            "low": 0.7816745351002323,
+            "high": 0.7882315317635376
+          },
+          "100": {
+            "mean": 0.7682536263586038,
+            "low": 0.7647306834062512,
+            "high": 0.7714523145908838
+          },
+          "150": {
+            "mean": 0.756624903046462,
+            "low": 0.7531115660474658,
+            "high": 0.7599589766474154
+          },
+          "250": {
+            "mean": 0.7170594112721257,
+            "low": 0.7133618703047059,
+            "high": 0.7206675847574483
+          },
+          "500": {
+            "mean": 0.6310715214072555,
+            "low": 0.6267781422972662,
+            "high": 0.6352331526847386
+          },
+          "mean": {
+            "mean": 0.7812322692084505,
+            "low": 0.7783205701651305,
+            "high": 0.7840976913769813
+          }
+        },
+        "selected_layer": {
+          "0": {
+            "mean": 0.8349076036180679,
+            "low": 0.8317934468065731,
+            "high": 0.8381957356392575
+          },
+          "0.5": {
+            "mean": 0.8156090162207422,
+            "low": 0.8123351939782114,
+            "high": 0.8188196278513913
+          },
+          "1": {
+            "mean": 0.8174636353981778,
+            "low": 0.814255279076153,
+            "high": 0.8208455010824538
+          },
+          "2": {
+            "mean": 0.8251352788680073,
+            "low": 0.8220283846358181,
+            "high": 0.8284168979286153
+          },
+          "5": {
+            "mean": 0.8002146948492762,
+            "low": 0.7968791182987303,
+            "high": 0.8034993098549719
+          },
+          "10": {
+            "mean": 0.7891285160981597,
+            "low": 0.7856110947884368,
+            "high": 0.7925876284521081
+          },
+          "25": {
+            "mean": 0.808779614566964,
+            "low": 0.8055523687178183,
+            "high": 0.8119876628672817
+          },
+          "50": {
+            "mean": 0.795175676954449,
+            "low": 0.7918216688247689,
+            "high": 0.7983953237202962
+          },
+          "75": {
+            "mean": 0.7911088767630565,
+            "low": 0.787715539410022,
+            "high": 0.7945128541622555
+          },
+          "100": {
+            "mean": 0.7752163339713376,
+            "low": 0.7716377108557236,
+            "high": 0.7786461149941922
+          },
+          "150": {
+            "mean": 0.7464723948549703,
+            "low": 0.7427478308243363,
+            "high": 0.7498584489000187
+          },
+          "250": {
+            "mean": 0.7200022834780185,
+            "low": 0.7163571162815899,
+            "high": 0.7236080169569031
+          },
+          "500": {
+            "mean": 0.6288106852826615,
+            "low": 0.6245623920921937,
+            "high": 0.632893435655778
+          },
+          "mean": {
+            "mean": 0.7806172777633762,
+            "low": 0.777698683418836,
+            "high": 0.7834896862593621
+          }
+        },
+        "per_model": {
+          "0": {
+            "mean": 0.8211996718843021,
+            "low": 0.8178569166267933,
+            "high": 0.8243858773668761
+          },
+          "0.5": {
+            "mean": 0.8321225621955157,
+            "low": 0.8290932667288409,
+            "high": 0.8353889062229192
+          },
+          "1": {
+            "mean": 0.8145131272764083,
+            "low": 0.8113218008101746,
+            "high": 0.8178151212976137
+          },
+          "2": {
+            "mean": 0.809114410423145,
+            "low": 0.8058539296330268,
+            "high": 0.8124055515640998
+          },
+          "5": {
+            "mean": 0.8118229910884809,
+            "low": 0.8085091573418698,
+            "high": 0.8150413607598522
+          },
+          "10": {
+            "mean": 0.8154752156583976,
+            "low": 0.8121742800728605,
+            "high": 0.8187521667940996
+          },
+          "25": {
+            "mean": 0.807397456507626,
+            "low": 0.8041578073544019,
+            "high": 0.8105523718532851
+          },
+          "50": {
+            "mean": 0.7971963981133364,
+            "low": 0.793872219439131,
+            "high": 0.8003880841015025
+          },
+          "75": {
+            "mean": 0.7745546871340139,
+            "low": 0.7711612265406076,
+            "high": 0.7779087700916588
+          },
+          "100": {
+            "mean": 0.7847062157358689,
+            "low": 0.7812542082074448,
+            "high": 0.788074402212503
+          },
+          "150": {
+            "mean": 0.7566316080274365,
+            "low": 0.7530655378238459,
+            "high": 0.7600572228823481
+          },
+          "250": {
+            "mean": 0.7133910639255312,
+            "low": 0.7095928747379666,
+            "high": 0.717159113147119
+          },
+          "500": {
+            "mean": 0.6391733843735063,
+            "low": 0.6350984338243698,
+            "high": 0.6431161313230597
+          },
+          "mean": {
+            "mean": 0.7828691378725823,
+            "low": 0.7800061311369753,
+            "high": 0.785721212854541
+          }
+        },
+        "knn100": {
+          "0": {
+            "mean": 0.8243304395375987,
+            "low": 0.8211734112607395,
+            "high": 0.8275070351129054
+          },
+          "0.5": {
+            "mean": 0.8224747640029961,
+            "low": 0.8192178570284085,
+            "high": 0.8256932970753753
+          },
+          "1": {
+            "mean": 0.8200374755018641,
+            "low": 0.8169185692486706,
+            "high": 0.8231921817618575
+          },
+          "2": {
+            "mean": 0.816980873117318,
+            "low": 0.8137286758542424,
+            "high": 0.8202002652654004
+          },
+          "5": {
+            "mean": 0.8072953516280542,
+            "low": 0.8039543315958346,
+            "high": 0.8106009099525234
+          },
+          "10": {
+            "mean": 0.8009340888030598,
+            "low": 0.7974293148998027,
+            "high": 0.8041972561153106
+          },
+          "25": {
+            "mean": 0.7945672142320073,
+            "low": 0.7910869806131398,
+            "high": 0.7978540193445701
+          },
+          "50": {
+            "mean": 0.783036012270145,
+            "low": 0.7795883202622675,
+            "high": 0.7864279777263231
+          },
+          "75": {
+            "mean": 0.771633112430794,
+            "low": 0.7681791548555127,
+            "high": 0.7750851330083541
+          },
+          "100": {
+            "mean": 0.7606329886071085,
+            "low": 0.7570886565475002,
+            "high": 0.7641278784486323
+          },
+          "150": {
+            "mean": 0.7383726179848303,
+            "low": 0.7347911329630673,
+            "high": 0.7419250448880106
+          },
+          "250": {
+            "mean": 0.6985965398067779,
+            "low": 0.6947298116711694,
+            "high": 0.7023155222061799
+          },
+          "500": {
+            "mean": 0.6118523733679743,
+            "low": 0.6078983290467588,
+            "high": 0.6159633208467226
+          },
+          "mean": {
+            "mean": 0.7731341424069635,
+            "low": 0.7701245629925942,
+            "high": 0.7760360791937757
+          }
+        },
+        "family_adaptation": {
+          "0": {
+            "mean": 0.8163098411827319,
+            "low": 0.8129687265021549,
+            "high": 0.8195741392667548
+          },
+          "0.5": {
+            "mean": 0.8128911932440116,
+            "low": 0.8095104926650296,
+            "high": 0.816074124158524
+          },
+          "1": {
+            "mean": 0.8094471740447027,
+            "low": 0.8061391277978132,
+            "high": 0.8125990653452649
+          },
+          "2": {
+            "mean": 0.8025122949028203,
+            "low": 0.7991573804282054,
+            "high": 0.8057609951250403
+          },
+          "5": {
+            "mean": 0.8070362196607265,
+            "low": 0.8034952460708785,
+            "high": 0.8102890957800748
+          },
+          "10": {
+            "mean": 0.8084584201699825,
+            "low": 0.8050392915319485,
+            "high": 0.8117220342350838
+          },
+          "25": {
+            "mean": 0.8041563033757213,
+            "low": 0.8008114379984419,
+            "high": 0.8075236702817777
+          },
+          "50": {
+            "mean": 0.7957185007519308,
+            "low": 0.7923645258063354,
+            "high": 0.7991438777998073
+          },
+          "75": {
+            "mean": 0.7872908783067966,
+            "low": 0.7839278256666298,
+            "high": 0.7906181275626922
+          },
+          "100": {
+            "mean": 0.7772154939959441,
+            "low": 0.7738856554076409,
+            "high": 0.7805638144268267
+          },
+          "150": {
+            "mean": 0.7570733702463153,
+            "low": 0.7535964586594578,
+            "high": 0.7605369121764446
+          },
+          "250": {
+            "mean": 0.7210367301250882,
+            "low": 0.7173437895048675,
+            "high": 0.7246948189099307
+          },
+          "500": {
+            "mean": 0.5974503371157718,
+            "low": 0.5932554008789641,
+            "high": 0.6015822854347551
+          },
+          "mean": {
+            "mean": 0.7766612890094267,
+            "low": 0.7736699447460882,
+            "high": 0.7796829190203806
+          }
+        }
+      },
+      "differences": {
+        "knn100": {
+          "mean": -0.009734995465618504,
+          "low": -0.01116573242805734,
+          "high": -0.00829431101741071
+        },
+        "family_adaptation": {
+          "mean": -0.006207848863155798,
+          "low": -0.007329846639459149,
+          "high": -0.0050434804147970235
+        }
+      },
+      "penalty_counts": {
+        "knn100": {
+          "ours_higher": 3,
+          "sharedtrunknet_higher": 10,
+          "ties": 0
+        },
+        "family_adaptation": {
+          "ours_higher": 3,
+          "sharedtrunknet_higher": 10,
+          "ties": 0
+        }
+      }
+    }
+  },
+  "source_hashes": {
+    "configs/baseline_splits/routerbench-0shot.json": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+    "datasets/routerbench/prepared/panel.npz": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+    "results/nvidia/results/routerbench/ood_0/result.json": "f2f8daf6ad954c08e70c80c6f708ee7b0fcc7f16e6ac2a319bb4b82a0608c7f3",
+    "results/nvidia/results/routerbench/ood_0/predictions.npz": "9659ffe2c0a7606d1b361dc9cf78f2a8f96a768df6d513ed8c7dac52ee6c67ef",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_0/result.json": "787365ae21d12f8e0cfa5d216ff33c70d0b161d08149c214b1c000537e424a4c",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_0/predictions.npz": "ba957c41695961fd4739632d6e11de437dd2543765cd538865772bcde4a5f5ad",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/result.json": "adeb696b054f7a994e61a8649880d93de4c207ea5ce5de0bef60a919f101c29c",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/predictions.npz": "6ce02d32b4fa8b20e47ece3f178dcd5573889a03de280e0d24753966cea91127",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/prior/result.json": "97d8c12064f10a9e84871f1cf0e70fe7fde70bcd79c83b659f72ce9455235662",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/prior/predictions.npz": "71cac62f50be28f3d7cc281843216edd8a176dbe63dc9b49e3ef72bb4707768b",
+    "results/nvidia/results/routerbench/ood_1/result.json": "2111e42d1dbc8df26199ae0de2b33178e29de6169360c26c910051e25b5c7098",
+    "results/nvidia/results/routerbench/ood_1/predictions.npz": "9ccbd593d58563413b08923c3e0bd7f672aa3d33c190e19687d738ca5a478eff",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_1/result.json": "06e41c599aee7a5c4ad9036cc24b9c0d3db8726ea5240ae6d72abc1cbb62751b",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_1/predictions.npz": "43138135fb3c2266b74c99d59ba65b22fe1065c99d0505e242db58a1ac6ea13f",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/result.json": "8eee3b7c163e4c903ec9dcfb041ecf9115334086a740047e88afa4929cefde8d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/predictions.npz": "d20cffd89baf1bcc53aef6d76c22c221e305dd2aaf3f83cb516ab37bd2765148",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/prior/result.json": "abe9bf725003d1c02e738baa8dd64fcd2359b6cdcc0f0abf9374c55256bfb2a2",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/prior/predictions.npz": "a39dd2ab573a502c23354467926154a14935b0aa8168b8d5ec3502cf27c10828",
+    "results/nvidia/results/routerbench/ood_2/result.json": "d2773eb89cbe9e3b69b52115bcfa5b3e7815798d066827c2462b00f6dc95582e",
+    "results/nvidia/results/routerbench/ood_2/predictions.npz": "b88d8d38ddf64e2e37aa5e415b43c7dad137d50e04a9c9f7ba2a0bf6351fc469",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_2/result.json": "963b6ad3d708cd086825815ccaa0c228f25055094a7bd3872ed397ce6576c1a4",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_2/predictions.npz": "a872cdfbfe0d838181887744332255402b117859cae44b4b298390441a9daeba",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/result.json": "95ab066966bccf1c30d5371765ac3ebb2a5cd0c6825df85cbfb85918c73451fe",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/predictions.npz": "4a9418e9a54b20749a1794c8aafafb27f6d0a7ed61b4f1ee1396917fecc6b1b0",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prior/result.json": "8e2b197c48b4ed275634303ed4e48abc1a25634837453b3a975671f66c6564b4",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prior/predictions.npz": "a836c07a78db37b43586c1368c4cdd17a3e2d520656615455208e71a7216c47f",
+    "results/nvidia/results/routerbench/ood_3/result.json": "b1a27739617146945c6caa1b170795c0db98dd41e5f04aeb2081b9e8014e9f45",
+    "results/nvidia/results/routerbench/ood_3/predictions.npz": "37010d3b6b55a396781e8891e6df8235ee50ea9c8e465f70c1d671294ffff20a",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_3/result.json": "707d7877504c8249e7606d3d3d36d80ca532fca2c0844831b77b75fa37a30764",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_3/predictions.npz": "b5177ac2fefa808acfb26af46b8ed3589eafb1c10ddc0e00be072abbbdceb30e",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/result.json": "0f8c29883b49f64e8346d63e04bb99aabab5acb705581e8cc56cf1dfe29c3c14",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/predictions.npz": "174828b2b02252b0ae4539e401c44f3a457d268f76f45a546e4e0a65d71128fd",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/prior/result.json": "14ca441b8e37aa1a792c5cec138a86fd9008729387bdb3ef7f19d1508ac5bf92",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/prior/predictions.npz": "7d0e162673e3cd7481886b29759acf9adf55163cb94029cee18e834286f369f5",
+    "results/nvidia/results/routerbench/ood_4/result.json": "725736b4e26483cc6323dbf655db8e4f332f14e7ed48a0508d0523be0735895a",
+    "results/nvidia/results/routerbench/ood_4/predictions.npz": "e8c48fd270706a2fddba55d2e8d6f146f21ba7fb016b8841555894a6ba5881ad",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_4/result.json": "6a5f1e07db6d023035cd5df02422496b53fd06b40c03314509f59c06fb482131",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_4/predictions.npz": "7f99790e642ef7f75fa72cd767b8a1e6fd904130540bb52f56a1f216058fa18a",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/result.json": "e63e98dda89d0f0b75da832773e83414a8532056b647e329478eb0ce2b33840a",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/predictions.npz": "d31b42a0aa72d5dd8e889fa278ec3760600d7fbd63d2fb82b4e536c1511d70cc",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prior/result.json": "91c742d973b99dad0526cc23a1208ddd4ef500fb1e7a0063199091e7356f8f5e",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prior/predictions.npz": "aed3a20d97d23ae2d3cf73bdd7e5796b030b15781f1ef3c07e8c31e7df162624",
+    "results/nvidia/results/routerbench/ood_5/result.json": "b6074866b369cd9a49f4751237cc353fa0d255b43ddcf5961f125da6667a67c1",
+    "results/nvidia/results/routerbench/ood_5/predictions.npz": "bbae62031ddda465d256fbe9f4c325f5484b3d5f48fc455eb62bf4d4641516bb",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_5/result.json": "48610ee9eb10d9ac85dcdc21f1b830187f2d26b225a331b1f806facfd97df034",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_5/predictions.npz": "9f01e94542ce847df1c5bcda8e44c21db750dd9050f1acc80b33693516865a60",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/result.json": "69773d67f4736628e46a1e475dd2e93e80e5edc6717bdbc3219f67e22d31afda",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/predictions.npz": "63afb7cb26d32f15c60ba44b6559e8ce351c3b9ad4bfbec26ad0a5c9342d6545",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/prior/result.json": "25315f423993afb2c648c91eed81c069953bf2a26cef55c22d25b682426cdb2b",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/prior/predictions.npz": "7d2300286274c4b9abe47dceed651eb02176152a88a1579965a6a859e7c029ed",
+    "results/nvidia/results/routerbench/ood_6/result.json": "5291cfb8e037958d2804f226fd765a703a500a56fd7ef01a626e188403824cb8",
+    "results/nvidia/results/routerbench/ood_6/predictions.npz": "ad3c38a10266841d14b193470dee72912699735f7d9fce3140d466970e39ef91",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_6/result.json": "94c5ed0e2487a07aca1ee6ca0ebe6b18463ce70feeb861cb58b733d2171d157c",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_6/predictions.npz": "b585ba9cfb4b1d30c7e70dac1168534002b9f3dc0ed777222ab425e00ed5e52e",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/result.json": "fa770a7d357ac72ede3bb0025c80bd745fe9bc6b54bd9482049ea3ae60ed9c6d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/predictions.npz": "96f3530b3c9442fdf11617e248d81f8e76a394d15324a1fba2f287e9327ce204",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/prior/result.json": "d36beb48755781064722dc8392cb4f8a7009b269dba7bc6131096171190f257d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/prior/predictions.npz": "ed5240f4209c491031a75258a4e21b3d9358e9cf937884a7794335ca33bb5459",
+    "results/diagnostics/appendix_confidence_intervals/routing/routerbench-0shot/ood/report.json": "a793dbaccd107ff022dc194fd3ef0f3d9fe60ef087b7576297f61875092356a8",
+    "configs/baseline_splits/sprout-sixfam.json": "8d3ff78c8c1b84f60a737720cad236af5d977ccb5f958a4ab7cda3927542c997",
+    "datasets/sprout/prepared/panel.npz": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+    "results/nvidia/results/sprout/ood_0/result.json": "252aaa7f9dc5c71e2acb8d1dad51caf91c2d86a52905a7831ffbbba36fb1e61f",
+    "results/nvidia/results/sprout/ood_0/predictions.npz": "6ccb3b538365912f450d0f75eebf956941947242843c407200a0c4d85bb43a28",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_0/result.json": "4833ce8b0c0716a09704170eefb8da123037e7ee89734693adfa29c4ed486246",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_0/predictions.npz": "bb5ddff0e2ecf5168032a44dc7457bf975022729a744fc4d4f8ae7f26d205b05",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/knn/result.json": "d9bcb0d6391094b0bd8ba8daec7fe007d91acf30f836c0bb4ee6667ad8f7d868",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/knn/predictions.npz": "b8ef6d141e83b3d1b1cc64fca62e3b51d19d185ba884a9c0895b3ef718762295",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/prior/result.json": "a380aa36993b42b1c913d8743a736f89af4aa6f1c01a4ab02d283603a823378d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/prior/predictions.npz": "7a4497aa01cf75fa1312e6b8ef07532d77d6e0d4305f08d0c016d9ba9c7b27dc",
+    "results/nvidia/results/sprout/ood_1/result.json": "ed63b3ac64b2b9b66adfb2f386354ad37f1876aa3e49ceee8a6e469b1c513ebb",
+    "results/nvidia/results/sprout/ood_1/predictions.npz": "2cdcba2f7e63d1919c631809d3d6a9b7d1476cc23300842973bdce462071683c",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_1/result.json": "a2da5e3ac432125b105dd83dd3e11c596f293c2617b861e5c7ef1a278f7cfff2",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_1/predictions.npz": "cf50d6f05a01e9ba446f6a5adab259725f7328a84705da9a4ed3af1dcb9150ab",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/knn/result.json": "506b5f5608172bf4efc1197642ad03252a6adb8f296540f667615a3326025742",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/knn/predictions.npz": "4835aea4e643af8f849758bd7acac01b626537157f3f2f6fedbe7a88128db2b4",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/prior/result.json": "da91a7b8d461c0b71842cb79043a684c902c2209470babceea387039160e1d18",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/prior/predictions.npz": "c39134c4242382b1245a3fb6bf743f8a1de0fbe039317c572b7f06d708505642",
+    "results/nvidia/results/sprout/ood_2/result.json": "9ff3546f3ecda950e9ade06c0b590dffd7b13edb714efcbc3421617d6d5b5d71",
+    "results/nvidia/results/sprout/ood_2/predictions.npz": "4fa19e59cead034548475a62e4d3155f41466e5e4121c8cc37da6fc9bc874fbe",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_2/result.json": "c9614255d82eff1082260318238b6b0062ecf50a453093737cdf25a412dfc994",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_2/predictions.npz": "d9cdecf69711306c718f63bd96b24f721066effe6a2dca233c0607d50931b877",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/knn/result.json": "289b3ba00b3a5c06bfd954c419265718aa403830e1477315d836b3c090aa256a",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/knn/predictions.npz": "bb822a7d338466099c2520c521def05be87368001bd7e9868c9c59cf77dffce3",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/prior/result.json": "31580f78446c5b7452221395dd724922b126f49f90cfab8062ae07aa67e0f73a",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/prior/predictions.npz": "51b632159e47e0d20be1bc3727689bb42e979c18447937b7c8880aba85c34975",
+    "results/nvidia/results/sprout/ood_3/result.json": "6a74a7f12de53e4c0aae78194c2612900cba8bb62f9b3cc5c21111366c82252d",
+    "results/nvidia/results/sprout/ood_3/predictions.npz": "282dfd3b4c00fdfcd5f1a87a83e9e2b970a78b72119b9b6efcc0ce32517269c1",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_3/result.json": "140a507870312036522cd1dfb47e1ffcc04758add3ea68eb58743639ed0cfad8",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_3/predictions.npz": "65498deff91a27880d2821aac90a0acd3ce9fe2bca61644a289093a4424cfdba",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/knn/result.json": "13725e76030c3413f8a26a7608bb038694dd32e3978a9d2f9be89b626f878806",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/knn/predictions.npz": "31b7449224d7abba76869b26ea5b4e96a5c61e3ead04d05f22342411c1036e97",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/prior/result.json": "f91e356dafe2141758de095bcf4fd9c2d02effd25a74710d208b5aa06c08262d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/prior/predictions.npz": "7b5ec9743c2dba40a914079c8cb7633c1ac91d4dc0f3f1edb0cee7bf484b9a1f",
+    "results/nvidia/results/sprout/ood_4/result.json": "0c8c1463db198c6240067d8ddac29ec13fc82b771bee86b651a74a80322397e2",
+    "results/nvidia/results/sprout/ood_4/predictions.npz": "35dbe8bd00e2623fbb49e9e342fe8710ac5c6a2258258a89339635342e85bfc7",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_4/result.json": "b1a1afe8856a5c9903409124c05b7c7e69f7a2a9a8362556e3bab521ab0971ea",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_4/predictions.npz": "acddb4503d18efb59d8cb1db8ce55e28c7d9ddac619f3a5d1f7e4efc0f77ab10",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/knn/result.json": "52648db29e13816a30eae03788739235f2f7611aa6f865135f4e79c719b36d0b",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/knn/predictions.npz": "dce7062ce82394a1f700fa76079711d232b05d51bc859c3a732c74e8adc0fdcc",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/prior/result.json": "44446e1495836065aebe09868eca3570c23cf5788774ad41e2df099c9bccd0a9",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/prior/predictions.npz": "0eab2c96a7bf6be0fcebaf0d138b472b8b16d9f2b32bf2b3db35bc272b2e6d42",
+    "results/nvidia/results/sprout/ood_5/result.json": "5dcbe48e25692da4242d24047c821eff5db42a44c508ad25bfc96649da4f8a12",
+    "results/nvidia/results/sprout/ood_5/predictions.npz": "393006c7ff1f490999fe7a3a956f5f656855d3795920fe953456e3a8a4bec06f",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_5/result.json": "6b44b083234a1fb760d289d101e9477f089a89e149cd75d124fb4f168e6c4d33",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_5/predictions.npz": "c353ee5a75622ab98b6c6711eca7b892c20e5438ee00e0c52e0c383b0beee088",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/knn/result.json": "ea1433a7116e509c896bb777ac8e63757dae4f4821f02a414285f818da0d9983",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/knn/predictions.npz": "8e8129d30779ef711865cbf7c16163cc68bf2f2303648afaf234b51aa486b95d",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/prior/result.json": "0664feb19fedda8910b7696c1f41136ce01d5799816393aa9280d5172e0410b6",
+    "results/baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/prior/predictions.npz": "749ba5da8b681245ed0118dd047f347b82f5c4c3f6e5d44edbd44ce0bc9b2ed4",
+    "results/diagnostics/appendix_confidence_intervals/routing/sprout-sixfam/ood/report.json": "97bcbb235af8ece9619e20880bec71837da3c2732905f9687d07d44d66a12f89",
+    "src/diagnostics/appendix_ci/sharedtrunknet.py": "e915fcbabe6bbb24888f3989e10c2f89e007a74d8518735a30c069bfbc6b3409",
+    "src/diagnostics/appendix_ci/ci_common.py": "8cea91e3b464a607db398e130964bf26954343202c5822c120f3034ea354fc42",
+    "configs/appendix_ci.json": "80577c288be7a2991db486c3fae989b808049a44f488ee3f205d76d0179adb9e"
+  },
+  "slurm_job": "[redacted]"
+}

@@ -1,0 +1,617 @@
+{
+  "passed": true,
+  "head_subset_tests": [
+    {
+      "architecture": [
+        100,
+        100
+      ],
+      "dtype": "torch.float64",
+      "max_difference": 2.7755575615628914e-16
+    },
+    {
+      "architecture": [
+        100,
+        100
+      ],
+      "dtype": "torch.float32",
+      "max_difference": 0.0
+    },
+    {
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "dtype": "torch.float64",
+      "max_difference": 3.3306690738754696e-16
+    },
+    {
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "dtype": "torch.float32",
+      "max_difference": 1.1920928955078125e-07
+    }
+  ],
+  "complete_from_cached_fits": 14,
+  "next_units": [
+    {
+      "task": 0,
+      "description": [
+        "routerbench-0shot",
+        "iid_0",
+        "gte"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 1,
+      "description": [
+        "routerbench-0shot",
+        "iid_0",
+        "reader"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 2,
+      "description": [
+        "routerbench-0shot",
+        "iid_1",
+        "gte"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 3,
+      "description": [
+        "routerbench-0shot",
+        "iid_1",
+        "reader"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 4,
+      "description": [
+        "routerbench-0shot",
+        "iid_2",
+        "gte"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 5,
+      "description": [
+        "routerbench-0shot",
+        "iid_2",
+        "reader"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 6,
+      "description": [
+        "routerbench-0shot",
+        "iid_3",
+        "gte"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 7,
+      "description": [
+        "routerbench-0shot",
+        "iid_3",
+        "reader"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 8,
+      "description": [
+        "routerbench-0shot",
+        "iid_4",
+        "gte"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 9,
+      "description": [
+        "routerbench-0shot",
+        "iid_4",
+        "reader"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 10,
+      "description": [
+        "routerbench-0shot",
+        "ood_0",
+        "gte"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 11,
+      "description": [
+        "routerbench-0shot",
+        "ood_0",
+        "reader"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 12,
+      "description": [
+        "routerbench-0shot",
+        "ood_1",
+        "gte"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 13,
+      "description": [
+        "routerbench-0shot",
+        "ood_1",
+        "reader"
+      ],
+      "next_unit": [
+        1,
+        0,
+        "inner_1",
+        null
+      ]
+    },
+    {
+      "task": 14,
+      "description": [
+        "routerbench-0shot",
+        "ood_2",
+        "gte"
+      ],
+      "next_unit": null
+    },
+    {
+      "task": 15,
+      "description": [
+        "routerbench-0shot",
+        "ood_2",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_4",
+        null
+      ]
+    },
+    {
+      "task": 16,
+      "description": [
+        "routerbench-0shot",
+        "ood_3",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_5",
+        null
+      ]
+    },
+    {
+      "task": 17,
+      "description": [
+        "routerbench-0shot",
+        "ood_3",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_5",
+        null
+      ]
+    },
+    {
+      "task": 18,
+      "description": [
+        "routerbench-0shot",
+        "ood_4",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_5",
+        null
+      ]
+    },
+    {
+      "task": 19,
+      "description": [
+        "routerbench-0shot",
+        "ood_4",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_5",
+        null
+      ]
+    },
+    {
+      "task": 20,
+      "description": [
+        "routerbench-0shot",
+        "ood_5",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_2",
+        null
+      ]
+    },
+    {
+      "task": 21,
+      "description": [
+        "routerbench-0shot",
+        "ood_5",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_2",
+        null
+      ]
+    },
+    {
+      "task": 22,
+      "description": [
+        "routerbench-0shot",
+        "ood_6",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 23,
+      "description": [
+        "routerbench-0shot",
+        "ood_6",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 24,
+      "description": [
+        "sprout-sixfam",
+        "iid_0",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 25,
+      "description": [
+        "sprout-sixfam",
+        "iid_0",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 26,
+      "description": [
+        "sprout-sixfam",
+        "iid_1",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 27,
+      "description": [
+        "sprout-sixfam",
+        "iid_1",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 28,
+      "description": [
+        "sprout-sixfam",
+        "iid_2",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 29,
+      "description": [
+        "sprout-sixfam",
+        "iid_2",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 30,
+      "description": [
+        "sprout-sixfam",
+        "iid_3",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 31,
+      "description": [
+        "sprout-sixfam",
+        "iid_3",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 32,
+      "description": [
+        "sprout-sixfam",
+        "iid_4",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 33,
+      "description": [
+        "sprout-sixfam",
+        "iid_4",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 34,
+      "description": [
+        "sprout-sixfam",
+        "ood_0",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_1",
+        null
+      ]
+    },
+    {
+      "task": 35,
+      "description": [
+        "sprout-sixfam",
+        "ood_0",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_1",
+        null
+      ]
+    },
+    {
+      "task": 36,
+      "description": [
+        "sprout-sixfam",
+        "ood_1",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_1",
+        null
+      ]
+    },
+    {
+      "task": 37,
+      "description": [
+        "sprout-sixfam",
+        "ood_1",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_1",
+        null
+      ]
+    },
+    {
+      "task": 38,
+      "description": [
+        "sprout-sixfam",
+        "ood_2",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 39,
+      "description": [
+        "sprout-sixfam",
+        "ood_2",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_0",
+        null
+      ]
+    },
+    {
+      "task": 40,
+      "description": [
+        "sprout-sixfam",
+        "ood_3",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_3",
+        null
+      ]
+    },
+    {
+      "task": 41,
+      "description": [
+        "sprout-sixfam",
+        "ood_3",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_3",
+        null
+      ]
+    },
+    {
+      "task": 42,
+      "description": [
+        "sprout-sixfam",
+        "ood_4",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_3",
+        null
+      ]
+    },
+    {
+      "task": 43,
+      "description": [
+        "sprout-sixfam",
+        "ood_4",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_3",
+        null
+      ]
+    },
+    {
+      "task": 44,
+      "description": [
+        "sprout-sixfam",
+        "ood_5",
+        "gte"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_4",
+        null
+      ]
+    },
+    {
+      "task": 45,
+      "description": [
+        "sprout-sixfam",
+        "ood_5",
+        "reader"
+      ],
+      "next_unit": [
+        0,
+        0,
+        "inner_4",
+        null
+      ]
+    }
+  ],
+  "protocol_sha256": "4d2bcf8217154a06358ed959b1fc5554c661a292fae9536b947b0bc8f06fe521"
+}

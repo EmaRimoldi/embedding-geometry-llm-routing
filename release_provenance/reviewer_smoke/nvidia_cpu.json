@@ -1,0 +1,53 @@
+{
+  "passed": true,
+  "synthetic_only": true,
+  "device": "cpu",
+  "scope": "Actual utility probe, reference search, fitting core, prediction, checkpoint reload and ensemble assembly; no paper experiments.",
+  "train_rows": 60,
+  "test_rows": 12,
+  "targets": 3,
+  "feature_block_width": 100,
+  "layers": [
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "penalties": [
+    0,
+    2
+  ],
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+  ],
+  "toy_epochs": 4,
+  "toy_batch_size": 16,
+  "independent_ridge_predictions": 180,
+  "reference_ternary_paths": 6,
+  "cached_selection_identical": true,
+  "repeated_blocks_preserved": true,
+  "trained_networks": 20,
+  "checkpoint_reloads": 20,
+  "negative_raw_predictions": 360,
+  "top_five_seed_retention": true,
+  "cost_applied_once": true,
+  "heldout_cost_changes_do_not_change_routes": true,
+  "exclusions": [
+    "Full-data integrity/preflight",
+    "Encoder extraction",
+    "PCA fitting",
+    "GPU worker scheduling",
+    "Full experimental reproduction"
+  ]
+}

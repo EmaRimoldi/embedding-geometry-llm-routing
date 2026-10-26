@@ -1,0 +1,195 @@
+{
+  "purpose": "Reference-comparison design audit only; no model fitting or selection",
+  "datasets": {
+    "routerbench": {
+      "rows": 34771,
+      "models": 11,
+      "panel_sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+      "fractional_rewards": 81935,
+      "total_outcomes": 382481,
+      "fraction_fractional": 0.21421979130989513,
+      "per_family": {
+        "arc-challenge": {
+          "queries": 1470,
+          "fractional_rewards": 0,
+          "total_outcomes": 16170,
+          "fraction_fractional": 0.0,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "grade-school-math": {
+          "queries": 7450,
+          "fractional_rewards": 81333,
+          "total_outcomes": 81950,
+          "fraction_fractional": 0.9924710189139719,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "hellaswag": {
+          "queries": 10042,
+          "fractional_rewards": 0,
+          "total_outcomes": 110462,
+          "fraction_fractional": 0.0,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "mbpp": {
+          "queries": 425,
+          "fractional_rewards": 0,
+          "total_outcomes": 4675,
+          "fraction_fractional": 0.0,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "mmlu": {
+          "queries": 14037,
+          "fractional_rewards": 0,
+          "total_outcomes": 154407,
+          "fraction_fractional": 0.0,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "mtbench": {
+          "queries": 80,
+          "fractional_rewards": 602,
+          "total_outcomes": 880,
+          "fraction_fractional": 0.6840909090909091,
+          "reward_min": 0.1,
+          "reward_max": 1.0
+        },
+        "winogrande": {
+          "queries": 1267,
+          "fractional_rewards": 0,
+          "total_outcomes": 13937,
+          "fraction_fractional": 0.0,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        }
+      },
+      "proposed_threshold_0_5_positive_counts": [
+        15837,
+        22512,
+        23794,
+        24255,
+        23394,
+        29755,
+        6999,
+        12175,
+        10297,
+        19861,
+        24045
+      ],
+      "model_names": [
+        "WizardLM/WizardLM-13B-V1.2",
+        "claude-instant-v1",
+        "claude-v1",
+        "claude-v2",
+        "gpt-3.5-turbo-1106",
+        "gpt-4-1106-preview",
+        "meta/code-llama-instruct-34b-chat",
+        "meta/llama-2-70b-chat",
+        "mistralai/mistral-7b-chat",
+        "mistralai/mixtral-8x7b-chat",
+        "zero-one-ai/Yi-34B-Chat"
+      ],
+      "PCA100_shared_once_input_dim": 100,
+      "current_repeated_input_dim": 1100,
+      "shared_once_parameters": 60171,
+      "repeated_parameters": 316171
+    },
+    "sprout": {
+      "rows": 43887,
+      "models": 13,
+      "panel_sha256": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+      "fractional_rewards": 132189,
+      "total_outcomes": 570531,
+      "fraction_fractional": 0.23169468442556146,
+      "per_family": {
+        "gpqa": {
+          "queries": 540,
+          "fractional_rewards": 345,
+          "total_outcomes": 7020,
+          "fraction_fractional": 0.049145299145299144,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "math": {
+          "queries": 9884,
+          "fractional_rewards": 3624,
+          "total_outcomes": 128492,
+          "fraction_fractional": 0.028204090527036704,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "mmlupro": {
+          "queries": 11786,
+          "fractional_rewards": 5462,
+          "total_outcomes": 153218,
+          "fraction_fractional": 0.03564855304207078,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "musr": {
+          "queries": 748,
+          "fractional_rewards": 223,
+          "total_outcomes": 9724,
+          "fraction_fractional": 0.02293294940353764,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "openhermes": {
+          "queries": 19340,
+          "fractional_rewards": 116059,
+          "total_outcomes": 251420,
+          "fraction_fractional": 0.46161403229655557,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        },
+        "ragbench": {
+          "queries": 1589,
+          "fractional_rewards": 6476,
+          "total_outcomes": 20657,
+          "fraction_fractional": 0.3135014764970712,
+          "reward_min": 0.0,
+          "reward_max": 1.0
+        }
+      },
+      "proposed_threshold_0_5_positive_counts": [
+        37124,
+        26708,
+        37737,
+        36035,
+        25212,
+        29985,
+        36620,
+        31488,
+        21328,
+        28989,
+        36890,
+        35484,
+        28366
+      ],
+      "model_names": [
+        "aws-claude-3-5-sonnet-v1",
+        "aws-titan-text-premier-v1",
+        "openai-gpt-4o",
+        "openai-gpt-4o-mini",
+        "wxai-granite-3-2b-instruct-8k-max-tokens",
+        "wxai-granite-3-8b-instruct-8k-max-tokens",
+        "wxai-llama-3-1-70b-instruct",
+        "wxai-llama-3-1-8b-instruct",
+        "wxai-llama-3-2-1b-instruct",
+        "wxai-llama-3-2-3b-instruct",
+        "wxai-llama-3-3-70b-instruct",
+        "wxai-llama-3-405b-instruct",
+        "wxai-mixtral-8x7b-instruct-v01"
+      ],
+      "PCA100_shared_once_input_dim": 100,
+      "current_repeated_input_dim": 1300,
+      "shared_once_parameters": 60429,
+      "repeated_parameters": 367629
+    }
+  },
+  "source_sha256": "25c54c464ca6e86400c625a3be408ae97c29501decb8d0295251f2fea7945740",
+  "slurm_job_id": "[redacted]"
+}

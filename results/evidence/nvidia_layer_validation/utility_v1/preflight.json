@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "outer_evaluations": 23,
+  "cached_transforms": 322,
+  "ternary_matches_reference": true,
+  "batched_ridge_matches_independent": true,
+  "source_only": true,
+  "seconds": 32.066210203804076,
+  "hardware": {
+    "host": "[redacted]",
+    "cpu_threads": "4",
+    "job_id": "[redacted]",
+    "array_job_id": null,
+    "array_task_id": null,
+    "partition": "[redacted]",
+    "cpu_model": "AMD EPYC 9474F 48-Core Processor"
+  },
+  "config_sha256": "72e143166adf5bace61f73fe4fb06c3d7c6d759d898d5e72e27036d14cccb42e"
+}

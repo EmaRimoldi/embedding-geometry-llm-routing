@@ -1,0 +1,45 @@
+{
+  "scope": "Routing results only; geometry and layer-selection tables unchanged",
+  "reports": [
+    {
+      "panel": "routerbench-0shot",
+      "protocol": "iid",
+      "replicates": 2000,
+      "audited_saved_scores": 1625,
+      "rows": 359
+    },
+    {
+      "panel": "routerbench-0shot",
+      "protocol": "ood",
+      "replicates": 2000,
+      "audited_saved_scores": 1911,
+      "rows": 339
+    },
+    {
+      "panel": "sprout-sixfam",
+      "protocol": "iid",
+      "replicates": 2000,
+      "audited_saved_scores": 1625,
+      "rows": 359
+    },
+    {
+      "panel": "sprout-sixfam",
+      "protocol": "ood",
+      "replicates": 2000,
+      "audited_saved_scores": 1638,
+      "rows": 339
+    }
+  ],
+  "full_table_unique_point_estimates_checked": 1064,
+  "full_table_point_mismatches": 0,
+  "summary_point_estimates_unchanged": true,
+  "lookup_original_1000_draw_intervals_preserved": true,
+  "overleaf_compile_errors": 0,
+  "overleaf_compile_warnings": 0,
+  "overleaf_existing_typesetting_messages": 4,
+  "main_body_unchanged": true,
+  "confidence_level": 0.95,
+  "interval_method": "paired percentile query bootstrap",
+  "geometry_intervals_published": false,
+  "layer_intervals_published": false
+}

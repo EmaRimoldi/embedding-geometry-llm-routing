@@ -1,0 +1,187 @@
+\subsection{SharedTrunkNet implementation and robustness}
+\label{app:sharedtrunknet}
+
+\paragraph{Comparison and inputs.}
+We adapt the released SharedTrunkNet pipeline of \citet{varshney2026prefill} to predict utility $u_\lambda(x,m)=r(x,m)-\lambda c(x,m)$.
+All compared methods use the same raw prompts, frozen Qwen2.5-7B-Instruct checkpoint, candidate models, recorded outcomes, outer splits and penalty grids.
+kNN-100 and the Family Adaptation use unit-normalized L21 states as in the main text.
+SharedTrunkNet retains its own feature preprocessing and network.
+The comparison evaluates these routing pipelines with a common encoder and utility objective; it does not reproduce the original paper's model pools or absolute scores.
+
+\paragraph{Features and layer selection.}
+For each layer $\ell\in\{15,\ldots,28\}$, we use the last input token's hidden state.
+We standardize its coordinates and fit an unwhitened PCA with 100 components on the outer training queries only.
+These transforms remain fixed during feature selection.
+For each candidate model and penalty, a Ridge probe with fixed $\alpha=1$ and an intercept predicts utility in five shuffled folds of the outer training queries.
+We apply the released ternary layer-search rule to negative mean validation MSE.
+This selects a layer separately for every model and penalty; it is a heuristic search, not an exhaustive maximization.
+The selected 100-dimensional blocks are concatenated in candidate-model order, giving $100M$ inputs for $M$ candidate models.
+Blocks are repeated when models select the same layer.
+The five folds split training queries, not whole families; the outer test family is excluded from all preprocessing, selection and fitting.
+
+\paragraph{Network and utility objective.}
+We use the released shared network: hidden widths 256 and 128, ReLU activations, dropout 0.3 and 0.2, and $M$ linear outputs.
+Training uses Adam with learning rate $10^{-3}$, weight decay $10^{-4}$, batches of 512, at most 150 epochs and early stopping with patience 15 and improvement threshold $10^{-4}$.
+Each of ten independently initialized networks reserves a random 15\% of the outer training queries for early stopping; the five networks with lowest validation MSE are retained.
+Their raw outputs are averaged, and the model with the largest predicted utility is selected.
+We train a separate ensemble for each penalty.
+The utility adaptation replaces logistic-regression/AUC feature selection with Ridge/MSE, and binary cross-entropy with utility MSE in the network.
+Outputs are not passed through a sigmoid, and cost is not subtracted again.
+The architecture, optimizer, stopping rule and ten-to-five ensemble procedure are retained.
+All 23 outer evaluations and 299 penalty evaluations completed; saved predictions reproduce their reported utilities.
+
+\paragraph{Alternative selection procedures.}
+Table~\ref{tab:nvidia-mean-ci} also reports two completed controls.
+The fixed-L21 control repeats the L21 PCA block for every candidate model.
+The common-layer control selects one layer for all models and penalties by mean validation routing utility over the thirteen penalties.
+It trains one screening network per layer and penalty using the two source-family holdouts defined for MLP in Appendix~\ref{app:mlp-validation}, fitting preprocessing within each training fold.
+Both controls use the same final shared architecture and ten-to-five ensemble rule, with the common layer's block repeated $M$ times.
+Thus, these controls compare selection procedures and feature assembly.
+The per-model selection procedure used in the main comparison has the highest mean among these three SharedTrunkNet variants on both benchmarks.
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{6pt}
+\caption{Out-of-distribution mean utility over thirteen penalties, with 95\% intervals.}
+\label{tab:nvidia-mean-ci}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Method & RouterBench & SPROUT \\
+\midrule
+
+SharedTrunkNet: fixed L21 & \resultci{0.6841}{0.6809}{0.6875} & \resultci{0.7812}{0.7783}{0.7841} \\[2pt]
+
+SharedTrunkNet: common selected layer & \resultci{0.6803}{0.6771}{0.6837} & \resultci{0.7806}{0.7777}{0.7835} \\[2pt]
+
+SharedTrunkNet: per-model selected layers & \resultci{0.6949}{0.6918}{0.6983} & \resultci{0.7829}{0.7800}{0.7857} \\[2pt]
+
+\midrule
+
+L21 kNN-100 & \resultci{0.7007}{0.6972}{0.7043} & \resultci{0.7731}{0.7701}{0.7760} \\[2pt]
+
+L21 Family Adaptation & \resultci{0.7157}{0.7125}{0.7191} & \resultci{0.7767}{0.7737}{0.7797} \\[2pt]
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\paragraph{Paired utility differences.}
+Table~\ref{tab:sharedtrunknet-differences} subtracts the main SharedTrunkNet variant from each L21 method, using the same queries and averaging all thirteen penalties.
+Intervals use the paired query bootstrap in Appendix~\ref{app:routing-ci}.
+Both L21 methods have higher mean utility on RouterBench and lower mean utility on SPROUT; none of these four difference intervals includes zero.
+These intervals condition on the fitted routers and evaluated families.
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{6pt}
+\caption{Mean utility difference from SharedTrunkNet, with paired 95\% intervals. Positive values favor the L21 method.}
+\label{tab:sharedtrunknet-differences}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Comparison & RouterBench & SPROUT \\
+\midrule
+
+L21 kNN-100 minus SharedTrunkNet & \resultci{+0.0058}{+0.0043}{+0.0072} & \resultci{-0.0097}{-0.0112}{-0.0083} \\[2pt]
+
+L21 Family Adaptation minus SharedTrunkNet & \resultci{+0.0208}{+0.0195}{+0.0221} & \resultci{-0.0062}{-0.0073}{-0.0050} \\[2pt]
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\paragraph{Results at every penalty.}
+Tables~\ref{tab:sharedtrunknet-routerbench} and~\ref{tab:sharedtrunknet-sprout} retain every prescribed penalty, including reversals.
+SharedTrunkNet denotes the per-model selection procedure used in the main text.
+On RouterBench, the Family Adaptation has higher utility at 13 of 13 penalties and kNN-100 at 7 of 13.
+On SPROUT, each has higher utility at 3 of 13 penalties.
+These counts describe the observed comparisons; penalties are not independent statistical replications.
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{6pt}
+\caption{RouterBench: out-of-distribution utility at every penalty, with 95\% intervals.}
+\label{tab:sharedtrunknet-routerbench}
+\begin{tabular}{@{}rrrr@{}}
+\toprule
+$\lambda$ & SharedTrunkNet & L21 kNN-100 & L21 Family Adaptation \\
+\midrule
+
+0 & \resultci{0.7916}{0.7882}{0.7952} & \resultci{0.7854}{0.7818}{0.7891} & \resultci{0.7921}{0.7887}{0.7958} \\[2pt]
+
+1 & \resultci{0.7887}{0.7853}{0.7925} & \resultci{0.7805}{0.7769}{0.7843} & \resultci{0.7889}{0.7854}{0.7926} \\[2pt]
+
+2 & \resultci{0.7855}{0.7820}{0.7891} & \resultci{0.7771}{0.7734}{0.7809} & \resultci{0.7856}{0.7822}{0.7893} \\[2pt]
+
+5 & \resultci{0.7754}{0.7719}{0.7790} & \resultci{0.7678}{0.7642}{0.7716} & \resultci{0.7759}{0.7724}{0.7796} \\[2pt]
+
+10 & \resultci{0.7585}{0.7551}{0.7622} & \resultci{0.7587}{0.7549}{0.7626} & \resultci{0.7661}{0.7624}{0.7698} \\[2pt]
+
+20 & \resultci{0.7207}{0.7171}{0.7246} & \resultci{0.7439}{0.7401}{0.7478} & \resultci{0.7523}{0.7486}{0.7560} \\[2pt]
+
+30 & \resultci{0.6801}{0.6764}{0.6841} & \resultci{0.7279}{0.7240}{0.7319} & \resultci{0.7385}{0.7348}{0.7423} \\[2pt]
+
+50 & \resultci{0.6786}{0.6746}{0.6826} & \resultci{0.6994}{0.6954}{0.7037} & \resultci{0.7126}{0.7090}{0.7164} \\[2pt]
+
+75 & \resultci{0.6780}{0.6739}{0.6823} & \resultci{0.6691}{0.6648}{0.6735} & \resultci{0.6966}{0.6927}{0.7005} \\[2pt]
+
+100 & \resultci{0.6323}{0.6279}{0.6366} & \resultci{0.6462}{0.6418}{0.6508} & \resultci{0.6689}{0.6647}{0.6733} \\[2pt]
+
+150 & \resultci{0.6078}{0.6034}{0.6125} & \resultci{0.6189}{0.6143}{0.6235} & \resultci{0.6350}{0.6307}{0.6395} \\[2pt]
+
+250 & \resultci{0.6015}{0.5972}{0.6060} & \resultci{0.5899}{0.5852}{0.5946} & \resultci{0.6191}{0.6147}{0.6235} \\[2pt]
+
+500 & \resultci{0.5352}{0.5307}{0.5400} & \resultci{0.5441}{0.5394}{0.5487} & \resultci{0.5726}{0.5683}{0.5771} \\[2pt]
+
+\midrule
+
+Mean & \resultci{0.6949}{0.6918}{0.6983} & \resultci{0.7007}{0.6972}{0.7043} & \resultci{0.7157}{0.7125}{0.7191} \\[2pt]
+
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{6pt}
+\caption{SPROUT: out-of-distribution utility at every penalty, with 95\% intervals.}
+\label{tab:sharedtrunknet-sprout}
+\begin{tabular}{@{}rrrr@{}}
+\toprule
+$\lambda$ & SharedTrunkNet & L21 kNN-100 & L21 Family Adaptation \\
+\midrule
+
+0 & \resultci{0.8212}{0.8179}{0.8244} & \resultci{0.8243}{0.8212}{0.8275} & \resultci{0.8163}{0.8130}{0.8196} \\[2pt]
+
+0.5 & \resultci{0.8321}{0.8291}{0.8354} & \resultci{0.8225}{0.8192}{0.8257} & \resultci{0.8129}{0.8095}{0.8161} \\[2pt]
+
+1 & \resultci{0.8145}{0.8113}{0.8178} & \resultci{0.8200}{0.8169}{0.8232} & \resultci{0.8094}{0.8061}{0.8126} \\[2pt]
+
+2 & \resultci{0.8091}{0.8059}{0.8124} & \resultci{0.8170}{0.8137}{0.8202} & \resultci{0.8025}{0.7992}{0.8058} \\[2pt]
+
+5 & \resultci{0.8118}{0.8085}{0.8150} & \resultci{0.8073}{0.8040}{0.8106} & \resultci{0.8070}{0.8035}{0.8103} \\[2pt]
+
+10 & \resultci{0.8155}{0.8122}{0.8188} & \resultci{0.8009}{0.7974}{0.8042} & \resultci{0.8085}{0.8050}{0.8117} \\[2pt]
+
+25 & \resultci{0.8074}{0.8042}{0.8106} & \resultci{0.7946}{0.7911}{0.7979} & \resultci{0.8042}{0.8008}{0.8075} \\[2pt]
+
+50 & \resultci{0.7972}{0.7939}{0.8004} & \resultci{0.7830}{0.7796}{0.7864} & \resultci{0.7957}{0.7924}{0.7991} \\[2pt]
+
+75 & \resultci{0.7746}{0.7712}{0.7779} & \resultci{0.7716}{0.7682}{0.7751} & \resultci{0.7873}{0.7839}{0.7906} \\[2pt]
+
+100 & \resultci{0.7847}{0.7813}{0.7881} & \resultci{0.7606}{0.7571}{0.7641} & \resultci{0.7772}{0.7739}{0.7806} \\[2pt]
+
+150 & \resultci{0.7566}{0.7531}{0.7601} & \resultci{0.7384}{0.7348}{0.7419} & \resultci{0.7571}{0.7536}{0.7605} \\[2pt]
+
+250 & \resultci{0.7134}{0.7096}{0.7172} & \resultci{0.6986}{0.6947}{0.7023} & \resultci{0.7210}{0.7173}{0.7247} \\[2pt]
+
+500 & \resultci{0.6392}{0.6351}{0.6431} & \resultci{0.6119}{0.6079}{0.6160} & \resultci{0.5975}{0.5933}{0.6016} \\[2pt]
+
+\midrule
+
+Mean & \resultci{0.7829}{0.7800}{0.7857} & \resultci{0.7731}{0.7701}{0.7760} & \resultci{0.7767}{0.7737}{0.7797} \\[2pt]
+
+\bottomrule
+\end{tabular}
+\end{table}

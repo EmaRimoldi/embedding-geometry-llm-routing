@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "python": "3.11.16",
+  "compute": {
+    "torch": "2.5.1+cu124",
+    "sklearn": "1.5.2",
+    "transformers": "4.44.2",
+    "numpy": "1.26.4",
+    "scipy": "1.14.1"
+  },
+  "fresh_public_pypi_install": true,
+  "original_site_packages_used": false,
+  "pip_checks": {
+    "compute": "No broken requirements found.",
+    "download": "No broken requirements found."
+  }
+}

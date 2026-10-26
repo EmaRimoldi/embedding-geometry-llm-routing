@@ -1,0 +1,1333 @@
+{
+  "completed_folds": 23,
+  "expected_folds": 23,
+  "all_complete": true,
+  "missing": [],
+  "audited_latency_rows": 1794,
+  "expected_latency_rows": 1794,
+  "folds": [
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "cc05da19d1a6377e817fb0696cac3df06926d8cf2005d7ea3850eee6c773435a"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "f8f078dea4c4996dbe620e836ec827fba330b0f086593b34959ca0832c1bdf57"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "8c560cc498f7af3080a152b54ac148ea8f8e8d2eaa050d6e05cf03616ac6d584"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "3b0bf839cf47b9db4309a71db7dc5231f6bc1b89a314197a402f171ba7edfb13"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "64427c40a0d5c9e4da1aa2afbea013f43c3a7c4b5d8c1efb9fded74087ef9243"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "2e709c13ffb658029871269001e7061d182cab144246fdf5fe4a64bb7e285fd7"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "0b23168e1b09b0ce54b0d457ca66acbc9fd5c780efe8749c61f7620731709be6"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_2",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "4aae07af0ff5b58fd244c9ce8b4781df2cfb99bab906174aaff3f11c612850e8"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_3",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "dee609cb5fefaef12287ada215ec298251621cee16d9506da99bef28f983b84e"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_4",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "2f6a61adea4f34ad1644cc2d6736a8cd984e5b4d8156781b6a4a9dec2a1d91e3"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_5",
+      "queries": 80,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "878d316cc3fb6273dda9224fdbe70d63b6d6c90eea7f674fea7a15c933990a32"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_6",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "debaa4d94f922d1b80c59f05a1dad0846674ac5c7558478245dcf4d0c0a74612"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_0",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "64632c01f96737f90b3e4af3743fe6ca24fbfd006b5c14d1e66c705bb50888b4"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_1",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "340d3abdbf8e42cbc8caebe690728e4fba98f5ddd9d88b3d6206d1985eb11384"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_2",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "4f25e47c783dd915aa7bde5fd70664125aee4f6e90d0cc6f9bbd036bd3252258"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_3",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "aa83dbbb6d3fe3dd6fafb2577fc23f11c4129e4ac4c2d080f37be6e9f0abbcb8"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_4",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "c5d653615f8ea090f7ec087d3811daa5b6d99e3c41b5b6e8500ade01968b1718"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_0",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "b9b9726ceba689ade253a8c5b125d63f1c26447df790dc403850a492210781b0"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_1",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "13fece4ddd0cb206392d0df62ea0fa836248671a1a69dc27ef733da9e1ee7580"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_2",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "46405a0bc6c0f0e4be808a9943c5de195e7a2274fc74074c4c9c17863abd8d4c"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "9e4c95ae56c9b3c522fe54f7ffd38a6e406ed412e95dcef79c0662d040dbce6a"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_4",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "b7152f4062daeb645a81981fb8a51f3da0ec93b0bfd9e416cc235c231eb89ced"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_5",
+      "queries": 128,
+      "hardware": {
+        "host": "[redacted]",
+        "cpu_threads": "4",
+        "job_id": "[redacted]",
+        "array_job_id": null,
+        "array_task_id": null,
+        "partition": "[redacted]",
+        "cpu_model": "AMD EPYC 9474F 48-Core Processor",
+        "torch_version": "2.5.1+cu124",
+        "numpy_version": "1.26.4",
+        "threadpools": [
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libopenblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/numpy.libs/libopenblas64_p-r0-0cf96a72.3.23.dev.so",
+            "version": "0.3.23.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scikit_learn.libs/libgomp-a34b3233.so.1.0.0",
+            "version": null
+          },
+          {
+            "user_api": "openmp",
+            "internal_api": "openmp",
+            "num_threads": 4,
+            "prefix": "libgomp",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/torch/lib/libgomp-a34b3233.so.1",
+            "version": null
+          },
+          {
+            "user_api": "blas",
+            "internal_api": "openblas",
+            "num_threads": 4,
+            "prefix": "libscipy_openblas",
+            "filepath": "${REPO_ROOT}/.venv/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-c128ec02.so",
+            "version": "0.3.27.dev",
+            "threading_layer": "pthreads",
+            "architecture": "Cooperlake"
+          }
+        ],
+        "device": "cpu"
+      },
+      "result_sha256": "9058c5f35421deb285b0160fd3dd7e0fdddd67f5f4dd87ca6d67c98922577611"
+    }
+  ],
+  "result_hashes": {
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/iid_0/result.json": "cc05da19d1a6377e817fb0696cac3df06926d8cf2005d7ea3850eee6c773435a",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/iid_1/result.json": "f8f078dea4c4996dbe620e836ec827fba330b0f086593b34959ca0832c1bdf57",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/iid_2/result.json": "8c560cc498f7af3080a152b54ac148ea8f8e8d2eaa050d6e05cf03616ac6d584",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/iid_3/result.json": "3b0bf839cf47b9db4309a71db7dc5231f6bc1b89a314197a402f171ba7edfb13",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/iid_4/result.json": "64427c40a0d5c9e4da1aa2afbea013f43c3a7c4b5d8c1efb9fded74087ef9243",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/ood_0/result.json": "2e709c13ffb658029871269001e7061d182cab144246fdf5fe4a64bb7e285fd7",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/ood_1/result.json": "0b23168e1b09b0ce54b0d457ca66acbc9fd5c780efe8749c61f7620731709be6",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/ood_2/result.json": "4aae07af0ff5b58fd244c9ce8b4781df2cfb99bab906174aaff3f11c612850e8",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/ood_3/result.json": "dee609cb5fefaef12287ada215ec298251621cee16d9506da99bef28f983b84e",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/ood_4/result.json": "2f6a61adea4f34ad1644cc2d6736a8cd984e5b4d8156781b6a4a9dec2a1d91e3",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/ood_5/result.json": "878d316cc3fb6273dda9224fdbe70d63b6d6c90eea7f674fea7a15c933990a32",
+    "results/nvidia/inference_cpu_v1/runs/24694101/routerbench/ood_6/result.json": "debaa4d94f922d1b80c59f05a1dad0846674ac5c7558478245dcf4d0c0a74612",
+    "results/nvidia/inference_cpu_v1/runs/24694101/sprout/iid_0/result.json": "64632c01f96737f90b3e4af3743fe6ca24fbfd006b5c14d1e66c705bb50888b4",
+    "results/nvidia/inference_cpu_v1/runs/24694101/sprout/iid_1/result.json": "340d3abdbf8e42cbc8caebe690728e4fba98f5ddd9d88b3d6206d1985eb11384",
+    "results/nvidia/inference_cpu_v1/runs/24742075/sprout/iid_2/result.json": "4f25e47c783dd915aa7bde5fd70664125aee4f6e90d0cc6f9bbd036bd3252258",
+    "results/nvidia/inference_cpu_v1/runs/24694101/sprout/iid_3/result.json": "aa83dbbb6d3fe3dd6fafb2577fc23f11c4129e4ac4c2d080f37be6e9f0abbcb8",
+    "results/nvidia/inference_cpu_v1/runs/24742075/sprout/iid_4/result.json": "c5d653615f8ea090f7ec087d3811daa5b6d99e3c41b5b6e8500ade01968b1718",
+    "results/nvidia/inference_cpu_v1/runs/24694101/sprout/ood_0/result.json": "b9b9726ceba689ade253a8c5b125d63f1c26447df790dc403850a492210781b0",
+    "results/nvidia/inference_cpu_v1/runs/24742075/sprout/ood_1/result.json": "13fece4ddd0cb206392d0df62ea0fa836248671a1a69dc27ef733da9e1ee7580",
+    "results/nvidia/inference_cpu_v1/runs/24694101/sprout/ood_2/result.json": "46405a0bc6c0f0e4be808a9943c5de195e7a2274fc74074c4c9c17863abd8d4c",
+    "results/nvidia/inference_cpu_v1/runs/24742075/sprout/ood_3/result.json": "9e4c95ae56c9b3c522fe54f7ffd38a6e406ed412e95dcef79c0662d040dbce6a",
+    "results/nvidia/inference_cpu_v1/runs/24694101/sprout/ood_4/result.json": "b7152f4062daeb645a81981fb8a51f3da0ec93b0bfd9e416cc235c231eb89ced",
+    "results/nvidia/inference_cpu_v1/runs/24742075/sprout/ood_5/result.json": "9058c5f35421deb285b0160fd3dd7e0fdddd67f5f4dd87ca6d67c98922577611"
+  },
+  "numerical_choice_disagreements": 0,
+  "notes": [
+    "CPU deployment from precomputed features only; four threads, warm caches, deterministic bounded test sample.",
+    "Per-penalty latency sums independently measured phase medians; not a single fused end-to-end timer.",
+    "All-penalty work reuses preprocessing and kNN retrieval. Single-penalty results do not divide retrieval by13.",
+    "Setup includes integrity hashing; raw setup fields are not pure cold-start latency.",
+    "Summaries are stratified by CPU model and protocol, weighted by sampled query count with equal penalty weight.",
+    "Point measurements are not uncertainty estimates. Full frozen performance comparison is reported separately.",
+    "Original validated-kNN runtime bundles its search and is not kNN100 training time."
+  ]
+}

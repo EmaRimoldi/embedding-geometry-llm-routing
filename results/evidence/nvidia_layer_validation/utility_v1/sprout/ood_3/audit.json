@@ -1,0 +1,167 @@
+{
+  "passed": true,
+  "identity": {
+    "panel": "sprout-sixfam",
+    "split": "ood_3",
+    "config_sha256": "72e143166adf5bace61f73fe4fb06c3d7c6d759d898d5e72e27036d14cccb42e",
+    "split_sha256": "8d3ff78c8c1b84f60a737720cad236af5d977ccb5f958a4ab7cda3927542c997"
+  },
+  "probe_fold_target_scores": 9295,
+  "checkpoint_checks": 130,
+  "utility_scores": 13,
+  "scores": [
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 0,
+      "n_test": 748,
+      "utility": 0.6065508021390374,
+      "reward": 0.6065508021390374,
+      "cost": 0.005993204545454546,
+      "equal_family": 0.6065508021390374
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 0.5,
+      "n_test": 748,
+      "utility": 0.5978269134358288,
+      "reward": 0.5998663101604278,
+      "cost": 0.004078793449197861,
+      "equal_family": 0.5978269134358288
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 1,
+      "n_test": 748,
+      "utility": 0.5957798054812835,
+      "reward": 0.5998663101604278,
+      "cost": 0.004086504679144384,
+      "equal_family": 0.5957798054812835
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 2,
+      "n_test": 748,
+      "utility": 0.5870705949197862,
+      "reward": 0.595855614973262,
+      "cost": 0.004392510026737967,
+      "equal_family": 0.5870705949197862
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 5,
+      "n_test": 748,
+      "utility": 0.5794723429144385,
+      "reward": 0.5998663101604278,
+      "cost": 0.004078793449197861,
+      "equal_family": 0.5794723429144385
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 10,
+      "n_test": 748,
+      "utility": 0.5606746671122995,
+      "reward": 0.6012032085561497,
+      "cost": 0.004052854144385027,
+      "equal_family": 0.5606746671122995
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 25,
+      "n_test": 748,
+      "utility": 0.6047632887700535,
+      "reward": 0.6315508021390374,
+      "cost": 0.0010715005347593583,
+      "equal_family": 0.6047632887700535
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 50,
+      "n_test": 748,
+      "utility": 0.5968129712566844,
+      "reward": 0.6437165775401069,
+      "cost": 0.0009380721256684494,
+      "equal_family": 0.5968129712566844
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 75,
+      "n_test": 748,
+      "utility": 0.565824724264706,
+      "reward": 0.6254010695187165,
+      "cost": 0.000794351270053476,
+      "equal_family": 0.565824724264706
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 100,
+      "n_test": 748,
+      "utility": 0.5577917379679144,
+      "reward": 0.5893048128342245,
+      "cost": 0.0003151307486631016,
+      "equal_family": 0.5577917379679144
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 150,
+      "n_test": 748,
+      "utility": 0.5350412733957218,
+      "reward": 0.5741978609625669,
+      "cost": 0.00026104391711229943,
+      "equal_family": 0.5350412733957218
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 250,
+      "n_test": 748,
+      "utility": 0.5089368816844919,
+      "reward": 0.5741978609625669,
+      "cost": 0.00026104391711229943,
+      "equal_family": 0.5089368816844919
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "protocol": "ood",
+      "lambda_value": 500,
+      "n_test": 748,
+      "utility": 0.44367590240641713,
+      "reward": 0.5741978609625669,
+      "cost": 0.00026104391711229943,
+      "equal_family": 0.44367590240641713
+    }
+  ],
+  "seconds": 16.60018816124648,
+  "hardware": {
+    "host": "[redacted]",
+    "cpu_threads": "4",
+    "job_id": "[redacted]",
+    "array_job_id": "[redacted]",
+    "array_task_id": "20",
+    "partition": "[redacted]",
+    "cpu_model": "AMD EPYC 9474F 48-Core Processor"
+  }
+}

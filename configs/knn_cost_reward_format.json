@@ -1,0 +1,13 @@
+{
+  "version": "knn_cost_reward_format_v1",
+  "scope": "OOD only; all 13 held-out families on RouterBench and SPROUT; existing frozen splits and penalty grids",
+  "k": 100,
+  "prediction": "Separate arithmetic means of per-model recorded reward and total USD cost; no new tuning or fitted head",
+  "primary_metrics": "Query- and model-weighted MSE for reward and cost, in separate units. Relative error reduction versus GTE and source-model training mean to compare changes across targets.",
+  "secondary_metrics": "MAE; per-query across-model centered MSE and MAE; per-model and per-family breakdowns; equal-family summaries",
+  "format_control": "For each test query use the 100 nearest GTE training queries with the same existing coarse answer-format label as that query. No held-out family queries. This is a known-format diagnostic, not a deployability or causal identification claim.",
+  "retrieval": "Original float32 unit normalization and common.nearest exact cosine, stable row-index ties, no parameter search",
+  "hybrids": "All four GTE/L21 reward and cost combinations, with argmax(predicted reward - lambda predicted cost); plus format-filtered GTE and source-mean references. No clipping or second cost subtraction.",
+  "uncertainty": "Existing paired bootstrap: 2000 within-held-out-family query draws, same draws across methods/metrics and penalties; mean over penalties inside replicates; fixed fitted routers and benchmark families",
+  "controls": "Reuse exact audited original kNN100 reward/cost predictions. Reconstruct all original choices and scores. New format-restricted predictions recorded with neighbor identities. No manuscript edits."
+}

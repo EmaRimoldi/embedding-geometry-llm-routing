@@ -1,0 +1,118 @@
+{
+  "sharedtrunknet_cuda": {
+    "passed": true,
+    "synthetic_only": true,
+    "device": "cuda",
+    "scope": "Actual utility probe, reference search, fitting core, prediction, checkpoint reload and ensemble assembly; no paper experiments.",
+    "train_rows": 60,
+    "test_rows": 12,
+    "targets": 3,
+    "feature_block_width": 100,
+    "layers": [
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "penalties": [
+      0,
+      2
+    ],
+    "seeds": [
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51
+    ],
+    "toy_epochs": 4,
+    "toy_batch_size": 16,
+    "independent_ridge_predictions": 180,
+    "reference_ternary_paths": 6,
+    "cached_selection_identical": true,
+    "repeated_blocks_preserved": true,
+    "trained_networks": 20,
+    "checkpoint_reloads": 20,
+    "negative_raw_predictions": 360,
+    "top_five_seed_retention": true,
+    "cost_applied_once": true,
+    "heldout_cost_changes_do_not_change_routes": true,
+    "exclusions": [
+      "Full-data integrity/preflight",
+      "Encoder extraction",
+      "PCA fitting",
+      "GPU worker scheduling",
+      "Full experimental reproduction"
+    ]
+  },
+  "encoders_cuda": {
+    "passed": true,
+    "scope": "Four illustrative prompts, canonical unchanged encode.py; cached pinned weights; fresh dependency installation. No paper performance or model-answer generation.",
+    "vectors": [
+      {
+        "encoder": "minilm-l12",
+        "layer": null,
+        "shape": [
+          4,
+          384
+        ],
+        "finite": true,
+        "hashes_match": true,
+        "completed_rows": 4
+      },
+      {
+        "encoder": "gte-qwen2-7b",
+        "layer": null,
+        "shape": [
+          4,
+          3584
+        ],
+        "finite": true,
+        "hashes_match": true,
+        "completed_rows": 4
+      },
+      {
+        "encoder": "qwen2.5-7b-instruct",
+        "layer": 21,
+        "shape": [
+          4,
+          3584
+        ],
+        "finite": true,
+        "hashes_match": true,
+        "completed_rows": 4
+      },
+      {
+        "encoder": "qwen2.5-7b-instruct",
+        "layer": 23,
+        "shape": [
+          4,
+          3584
+        ],
+        "finite": true,
+        "hashes_match": true,
+        "completed_rows": 4
+      },
+      {
+        "encoder": "qwen2.5-7b-instruct",
+        "layer": 25,
+        "shape": [
+          4,
+          3584
+        ],
+        "finite": true,
+        "hashes_match": true,
+        "completed_rows": 4
+      }
+    ],
+    "encoder_code_sha256": "2a7cb29f58c03c0659c2af0ca069f7d3b75193b59d8bb9eba25bb82c18a6a5e8"
+  },
+  "scheduler_state": "COMPLETED|0:0|00:02:26"
+}

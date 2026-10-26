@@ -1,0 +1,152 @@
+[
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "rows": 34771,
+    "eligible_rows": 34771,
+    "dimension": 3584,
+    "norm_quantiles": [
+      161.93418884277344,
+      207.35323333740234,
+      211.27365112304688,
+      213.71875762939453,
+      221.92562866210938
+    ],
+    "passed": true
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "rows": 43887,
+    "eligible_rows": 43887,
+    "dimension": 3584,
+    "norm_quantiles": [
+      169.28826904296875,
+      207.30519104003906,
+      211.5906982421875,
+      213.93250274658203,
+      229.6918487548828
+    ],
+    "passed": true
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "rows": 34771,
+    "eligible_rows": 34771,
+    "dimension": 3584,
+    "norm_quantiles": [
+      85.42737579345703,
+      97.9552993774414,
+      106.28097534179688,
+      110.17682266235352,
+      134.72879028320312
+    ],
+    "passed": true
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "rows": 43887,
+    "eligible_rows": 43887,
+    "dimension": 3584,
+    "norm_quantiles": [
+      84.9421157836914,
+      99.88937759399414,
+      110.8262939453125,
+      119.63312911987305,
+      2609.727783203125
+    ],
+    "passed": true
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "rows": 34771,
+    "eligible_rows": 34771,
+    "dimension": 3584,
+    "norm_quantiles": [
+      125.32325744628906,
+      146.9847640991211,
+      150.28636169433594,
+      153.5702667236328,
+      199.18878173828125
+    ],
+    "passed": true
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "rows": 43887,
+    "eligible_rows": 43887,
+    "dimension": 3584,
+    "norm_quantiles": [
+      122.85612487792969,
+      144.93923950195312,
+      169.1824493408203,
+      178.4258575439453,
+      2576.5419921875
+    ],
+    "passed": true
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "rows": 34771,
+    "eligible_rows": 34771,
+    "dimension": 3584,
+    "norm_quantiles": [
+      192.6728973388672,
+      231.6170883178711,
+      237.6907501220703,
+      244.32861328125,
+      307.8443298339844
+    ],
+    "passed": true
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "rows": 43887,
+    "eligible_rows": 43887,
+    "dimension": 3584,
+    "norm_quantiles": [
+      182.5205535888672,
+      224.1335906982422,
+      256.7669982910156,
+      269.7367858886719,
+      2491.567626953125
+    ],
+    "passed": true
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "rows": 34771,
+    "eligible_rows": 34659,
+    "dimension": 384,
+    "norm_quantiles": [
+      1.5587477684020996,
+      2.519687056541443,
+      2.667499303817749,
+      2.962445378303528,
+      6.246756553649902
+    ],
+    "passed": true
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "rows": 43887,
+    "eligible_rows": 41324,
+    "dimension": 384,
+    "norm_quantiles": [
+      1.510305404663086,
+      2.8013349771499634,
+      3.7913535833358765,
+      4.4738147258758545,
+      6.207357406616211
+    ],
+    "passed": true
+  }
+]

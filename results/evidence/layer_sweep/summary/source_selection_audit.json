@@ -1,0 +1,244 @@
+{
+  "status": "passed",
+  "nested_records_checked": 1014,
+  "source_only_inner_splits_checked": 72,
+  "source_hashes_verified": true,
+  "heldout_family_excluded": true,
+  "validation_aggregation_reconstructed": true,
+  "selections": [
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_0",
+      "method": "knn100",
+      "layer": 18
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_0",
+      "method": "knn_validated",
+      "layer": 18
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_0",
+      "method": "family_adaptation",
+      "layer": 18
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_1",
+      "method": "knn100",
+      "layer": 27
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_1",
+      "method": "knn_validated",
+      "layer": 19
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_1",
+      "method": "family_adaptation",
+      "layer": 18
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_2",
+      "method": "knn100",
+      "layer": 20
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_2",
+      "method": "knn_validated",
+      "layer": 20
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_2",
+      "method": "family_adaptation",
+      "layer": 19
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_3",
+      "method": "knn100",
+      "layer": 19
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_3",
+      "method": "knn_validated",
+      "layer": 19
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_3",
+      "method": "family_adaptation",
+      "layer": 22
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_4",
+      "method": "knn100",
+      "layer": 23
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_4",
+      "method": "knn_validated",
+      "layer": 22
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_4",
+      "method": "family_adaptation",
+      "layer": 22
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_5",
+      "method": "knn100",
+      "layer": 19
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_5",
+      "method": "knn_validated",
+      "layer": 19
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_5",
+      "method": "family_adaptation",
+      "layer": 20
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_6",
+      "method": "knn100",
+      "layer": 23
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_6",
+      "method": "knn_validated",
+      "layer": 19
+    },
+    {
+      "dataset": "routerbench-0shot",
+      "split": "ood_6",
+      "method": "family_adaptation",
+      "layer": 23
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_0",
+      "method": "knn100",
+      "layer": 25
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_0",
+      "method": "knn_validated",
+      "layer": 26
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_0",
+      "method": "family_adaptation",
+      "layer": 27
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_1",
+      "method": "knn100",
+      "layer": 16
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_1",
+      "method": "knn_validated",
+      "layer": 19
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_1",
+      "method": "family_adaptation",
+      "layer": 27
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_2",
+      "method": "knn100",
+      "layer": 27
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_2",
+      "method": "knn_validated",
+      "layer": 27
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_2",
+      "method": "family_adaptation",
+      "layer": 27
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_3",
+      "method": "knn100",
+      "layer": 26
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_3",
+      "method": "knn_validated",
+      "layer": 25
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_3",
+      "method": "family_adaptation",
+      "layer": 27
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_4",
+      "method": "knn100",
+      "layer": 23
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_4",
+      "method": "knn_validated",
+      "layer": 23
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_4",
+      "method": "family_adaptation",
+      "layer": 22
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_5",
+      "method": "knn100",
+      "layer": 22
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_5",
+      "method": "knn_validated",
+      "layer": 26
+    },
+    {
+      "dataset": "sprout-sixfam",
+      "split": "ood_5",
+      "method": "family_adaptation",
+      "layer": 28
+    }
+  ]
+}

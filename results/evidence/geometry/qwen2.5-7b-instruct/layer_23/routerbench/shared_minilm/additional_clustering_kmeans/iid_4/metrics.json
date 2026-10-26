@@ -1,0 +1,1369 @@
+{
+  "encoder": "qwen2.5-7b-instruct/layer_23",
+  "dataset": "routerbench",
+  "subset": "shared_minilm",
+  "fold": "iid_4",
+  "algorithm": "ordinary sklearn KMeans",
+  "clustering": {
+    "family": {
+      "clusters": 7,
+      "train_rows": 24261,
+      "test_rows": 10398,
+      "nmi": 0.6874479008728658,
+      "ari": 0.5684598631865654
+    },
+    "topic/mmlu": {
+      "clusters": 57,
+      "train_rows": 9747,
+      "test_rows": 4178,
+      "nmi": 0.3124424147597285,
+      "ari": 0.0952812779409971
+    }
+  },
+  "fine_groups": {
+    "2": {
+      "group_details": [
+        {
+          "cell": "arc-challenge",
+          "training": 1029,
+          "test": 441,
+          "clusters": 2
+        },
+        {
+          "cell": "grade-school-math",
+          "training": 5215,
+          "test": 2235,
+          "clusters": 2
+        },
+        {
+          "cell": "hellaswag",
+          "training": 7029,
+          "test": 3013,
+          "clusters": 2
+        },
+        {
+          "cell": "mbpp",
+          "training": 298,
+          "test": 127,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-abstract-algebra",
+          "training": 74,
+          "test": 26,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-anatomy",
+          "training": 102,
+          "test": 33,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-astronomy",
+          "training": 112,
+          "test": 40,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-business-ethics",
+          "training": 72,
+          "test": 28,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-clinical-knowledge",
+          "training": 182,
+          "test": 83,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-college-biology",
+          "training": 94,
+          "test": 50,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-chemistry",
+          "training": 69,
+          "test": 31,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-computer-science",
+          "training": 68,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-mathematics",
+          "training": 73,
+          "test": 27,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-medicine",
+          "training": 112,
+          "test": 54,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-college-physics",
+          "training": 70,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-computer-security",
+          "training": 59,
+          "test": 41,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-conceptual-physics",
+          "training": 177,
+          "test": 58,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-econometrics",
+          "training": 81,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-electrical-engineering",
+          "training": 105,
+          "test": 40,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-elementary-mathematics",
+          "training": 269,
+          "test": 109,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-formal-logic",
+          "training": 85,
+          "test": 41,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-global-facts",
+          "training": 64,
+          "test": 36,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-high-school-biology",
+          "training": 202,
+          "test": 108,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-chemistry",
+          "training": 139,
+          "test": 64,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-computer-science",
+          "training": 67,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-high-school-european-history",
+          "training": 88,
+          "test": 52,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-high-school-geography",
+          "training": 144,
+          "test": 54,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-government-and-politics",
+          "training": 136,
+          "test": 57,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-macroeconomics",
+          "training": 275,
+          "test": 115,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-mathematics",
+          "training": 191,
+          "test": 79,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-microeconomics",
+          "training": 165,
+          "test": 73,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-physics",
+          "training": 110,
+          "test": 41,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-psychology",
+          "training": 387,
+          "test": 156,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-statistics",
+          "training": 142,
+          "test": 74,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-us-history",
+          "training": 136,
+          "test": 67,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-world-history",
+          "training": 147,
+          "test": 55,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-human-aging",
+          "training": 150,
+          "test": 73,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-human-sexuality",
+          "training": 84,
+          "test": 47,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-international-law",
+          "training": 89,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-jurisprudence",
+          "training": 69,
+          "test": 39,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-logical-fallacies",
+          "training": 123,
+          "test": 40,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-machine-learning",
+          "training": 79,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-management",
+          "training": 71,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-marketing",
+          "training": 173,
+          "test": 61,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-medical-genetics",
+          "training": 67,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-miscellaneous",
+          "training": 544,
+          "test": 239,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-moral-disputes",
+          "training": 240,
+          "test": 106,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-moral-scenarios",
+          "training": 614,
+          "test": 281,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-nutrition",
+          "training": 225,
+          "test": 81,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-philosophy",
+          "training": 223,
+          "test": 88,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-prehistory",
+          "training": 233,
+          "test": 91,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-professional-accounting",
+          "training": 209,
+          "test": 73,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-professional-law",
+          "training": 1035,
+          "test": 453,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-professional-medicine",
+          "training": 197,
+          "test": 75,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-professional-psychology",
+          "training": 456,
+          "test": 156,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-public-relations",
+          "training": 78,
+          "test": 31,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-security-studies",
+          "training": 164,
+          "test": 81,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-sociology",
+          "training": 140,
+          "test": 61,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-us-foreign-policy",
+          "training": 67,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-virology",
+          "training": 114,
+          "test": 52,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-world-religions",
+          "training": 106,
+          "test": 65,
+          "clusters": 2
+        },
+        {
+          "cell": "mtbench",
+          "training": 29,
+          "test": 12,
+          "clusters": 1
+        },
+        {
+          "cell": "mtbench-math",
+          "training": 14,
+          "test": 6,
+          "clusters": 1
+        },
+        {
+          "cell": "mtbench-reference",
+          "training": 13,
+          "test": 6,
+          "clusters": 1
+        },
+        {
+          "cell": "winogrande",
+          "training": 887,
+          "test": 380,
+          "clusters": 2
+        }
+      ],
+      "queries": 10398,
+      "metrics": {
+        "mean_reward": {
+          "neighbor_pair_mse": 0.06706562430950644,
+          "same_fine_group_random_pair_mse": 0.08774670414186593,
+          "reduction": {
+            "mean": 0.0206810798323595,
+            "ci95": [
+              0.019712318986598025,
+              0.021577393759727743
+            ],
+            "n": 10398
+          }
+        },
+        "solve_fraction": {
+          "neighbor_pair_mse": 0.08182255328821976,
+          "same_fine_group_random_pair_mse": 0.10589955330469655,
+          "reduction": {
+            "mean": 0.024077000016476783,
+            "ci95": [
+              0.02300800932667934,
+              0.025083214349187446
+            ],
+            "n": 10398
+          }
+        },
+        "strict_solve_fraction": {
+          "neighbor_pair_mse": 0.06302555005015267,
+          "same_fine_group_random_pair_mse": 0.08277984426339104,
+          "reduction": {
+            "mean": 0.019754294213238342,
+            "ci95": [
+              0.018827736382441014,
+              0.02069110053965227
+            ],
+            "n": 10398
+          }
+        },
+        "relative_reward": {
+          "neighbor_pair_mse": 0.18973684425962398,
+          "same_fine_group_random_pair_mse": 0.215435960567322,
+          "reduction": {
+            "mean": 0.025699116307698004,
+            "ci95": [
+              0.024580530267702173,
+              0.026713221371111283
+            ],
+            "n": 10398
+          }
+        }
+      }
+    },
+    "4": {
+      "group_details": [
+        {
+          "cell": "arc-challenge",
+          "training": 1029,
+          "test": 441,
+          "clusters": 4
+        },
+        {
+          "cell": "grade-school-math",
+          "training": 5215,
+          "test": 2235,
+          "clusters": 4
+        },
+        {
+          "cell": "hellaswag",
+          "training": 7029,
+          "test": 3013,
+          "clusters": 4
+        },
+        {
+          "cell": "mbpp",
+          "training": 298,
+          "test": 127,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-abstract-algebra",
+          "training": 74,
+          "test": 26,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-anatomy",
+          "training": 102,
+          "test": 33,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-astronomy",
+          "training": 112,
+          "test": 40,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-business-ethics",
+          "training": 72,
+          "test": 28,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-clinical-knowledge",
+          "training": 182,
+          "test": 83,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-college-biology",
+          "training": 94,
+          "test": 50,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-chemistry",
+          "training": 69,
+          "test": 31,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-computer-science",
+          "training": 68,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-mathematics",
+          "training": 73,
+          "test": 27,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-medicine",
+          "training": 112,
+          "test": 54,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-college-physics",
+          "training": 70,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-computer-security",
+          "training": 59,
+          "test": 41,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-conceptual-physics",
+          "training": 177,
+          "test": 58,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-econometrics",
+          "training": 81,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-electrical-engineering",
+          "training": 105,
+          "test": 40,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-elementary-mathematics",
+          "training": 269,
+          "test": 109,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-formal-logic",
+          "training": 85,
+          "test": 41,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-global-facts",
+          "training": 64,
+          "test": 36,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-high-school-biology",
+          "training": 202,
+          "test": 108,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-high-school-chemistry",
+          "training": 139,
+          "test": 64,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-computer-science",
+          "training": 67,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-high-school-european-history",
+          "training": 88,
+          "test": 52,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-high-school-geography",
+          "training": 144,
+          "test": 54,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-government-and-politics",
+          "training": 136,
+          "test": 57,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-macroeconomics",
+          "training": 275,
+          "test": 115,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-high-school-mathematics",
+          "training": 191,
+          "test": 79,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-high-school-microeconomics",
+          "training": 165,
+          "test": 73,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-high-school-physics",
+          "training": 110,
+          "test": 41,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-psychology",
+          "training": 387,
+          "test": 156,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-high-school-statistics",
+          "training": 142,
+          "test": 74,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-us-history",
+          "training": 136,
+          "test": 67,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-world-history",
+          "training": 147,
+          "test": 55,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-human-aging",
+          "training": 150,
+          "test": 73,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-human-sexuality",
+          "training": 84,
+          "test": 47,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-international-law",
+          "training": 89,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-jurisprudence",
+          "training": 69,
+          "test": 39,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-logical-fallacies",
+          "training": 123,
+          "test": 40,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-machine-learning",
+          "training": 79,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-management",
+          "training": 71,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-marketing",
+          "training": 173,
+          "test": 61,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-medical-genetics",
+          "training": 67,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-miscellaneous",
+          "training": 544,
+          "test": 239,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-moral-disputes",
+          "training": 240,
+          "test": 106,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-moral-scenarios",
+          "training": 614,
+          "test": 281,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-nutrition",
+          "training": 225,
+          "test": 81,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-philosophy",
+          "training": 223,
+          "test": 88,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-prehistory",
+          "training": 233,
+          "test": 91,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-professional-accounting",
+          "training": 209,
+          "test": 73,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-professional-law",
+          "training": 1035,
+          "test": 453,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-professional-medicine",
+          "training": 197,
+          "test": 75,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-professional-psychology",
+          "training": 456,
+          "test": 156,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-public-relations",
+          "training": 78,
+          "test": 31,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-security-studies",
+          "training": 164,
+          "test": 81,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-sociology",
+          "training": 140,
+          "test": 61,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-us-foreign-policy",
+          "training": 67,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-virology",
+          "training": 114,
+          "test": 52,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-world-religions",
+          "training": 106,
+          "test": 65,
+          "clusters": 2
+        },
+        {
+          "cell": "mtbench",
+          "training": 29,
+          "test": 12,
+          "clusters": 1
+        },
+        {
+          "cell": "mtbench-math",
+          "training": 14,
+          "test": 6,
+          "clusters": 1
+        },
+        {
+          "cell": "mtbench-reference",
+          "training": 13,
+          "test": 6,
+          "clusters": 1
+        },
+        {
+          "cell": "winogrande",
+          "training": 887,
+          "test": 380,
+          "clusters": 4
+        }
+      ],
+      "queries": 10398,
+      "metrics": {
+        "mean_reward": {
+          "neighbor_pair_mse": 0.06748074009782556,
+          "same_fine_group_random_pair_mse": 0.08688857419267408,
+          "reduction": {
+            "mean": 0.019407834094848527,
+            "ci95": [
+              0.018512498251326198,
+              0.020230144389845984
+            ],
+            "n": 10398
+          }
+        },
+        "solve_fraction": {
+          "neighbor_pair_mse": 0.08258287114972841,
+          "same_fine_group_random_pair_mse": 0.10494126432701545,
+          "reduction": {
+            "mean": 0.022358393177287023,
+            "ci95": [
+              0.021433925247724733,
+              0.02330491231217746
+            ],
+            "n": 10398
+          }
+        },
+        "strict_solve_fraction": {
+          "neighbor_pair_mse": 0.06330898027115832,
+          "same_fine_group_random_pair_mse": 0.08191864908461306,
+          "reduction": {
+            "mean": 0.018609668813454758,
+            "ci95": [
+              0.017713359891591736,
+              0.019433876294139885
+            ],
+            "n": 10398
+          }
+        },
+        "relative_reward": {
+          "neighbor_pair_mse": 0.1894046224718994,
+          "same_fine_group_random_pair_mse": 0.21214744690390447,
+          "reduction": {
+            "mean": 0.022742824432005086,
+            "ci95": [
+              0.02176993681654775,
+              0.023729268800978125
+            ],
+            "n": 10398
+          }
+        }
+      }
+    },
+    "8": {
+      "group_details": [
+        {
+          "cell": "arc-challenge",
+          "training": 1029,
+          "test": 441,
+          "clusters": 8
+        },
+        {
+          "cell": "grade-school-math",
+          "training": 5215,
+          "test": 2235,
+          "clusters": 8
+        },
+        {
+          "cell": "hellaswag",
+          "training": 7029,
+          "test": 3013,
+          "clusters": 8
+        },
+        {
+          "cell": "mbpp",
+          "training": 298,
+          "test": 127,
+          "clusters": 5
+        },
+        {
+          "cell": "mmlu-abstract-algebra",
+          "training": 74,
+          "test": 26,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-anatomy",
+          "training": 102,
+          "test": 33,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-astronomy",
+          "training": 112,
+          "test": 40,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-business-ethics",
+          "training": 72,
+          "test": 28,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-clinical-knowledge",
+          "training": 182,
+          "test": 83,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-college-biology",
+          "training": 94,
+          "test": 50,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-chemistry",
+          "training": 69,
+          "test": 31,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-computer-science",
+          "training": 68,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-mathematics",
+          "training": 73,
+          "test": 27,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-college-medicine",
+          "training": 112,
+          "test": 54,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-college-physics",
+          "training": 70,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-computer-security",
+          "training": 59,
+          "test": 41,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-conceptual-physics",
+          "training": 177,
+          "test": 58,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-econometrics",
+          "training": 81,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-electrical-engineering",
+          "training": 105,
+          "test": 40,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-elementary-mathematics",
+          "training": 269,
+          "test": 109,
+          "clusters": 5
+        },
+        {
+          "cell": "mmlu-formal-logic",
+          "training": 85,
+          "test": 41,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-global-facts",
+          "training": 64,
+          "test": 36,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-high-school-biology",
+          "training": 202,
+          "test": 108,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-high-school-chemistry",
+          "training": 139,
+          "test": 64,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-computer-science",
+          "training": 67,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-high-school-european-history",
+          "training": 88,
+          "test": 52,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-high-school-geography",
+          "training": 144,
+          "test": 54,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-government-and-politics",
+          "training": 136,
+          "test": 57,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-macroeconomics",
+          "training": 275,
+          "test": 115,
+          "clusters": 5
+        },
+        {
+          "cell": "mmlu-high-school-mathematics",
+          "training": 191,
+          "test": 79,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-high-school-microeconomics",
+          "training": 165,
+          "test": 73,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-high-school-physics",
+          "training": 110,
+          "test": 41,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-psychology",
+          "training": 387,
+          "test": 156,
+          "clusters": 7
+        },
+        {
+          "cell": "mmlu-high-school-statistics",
+          "training": 142,
+          "test": 74,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-us-history",
+          "training": 136,
+          "test": 67,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-high-school-world-history",
+          "training": 147,
+          "test": 55,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-human-aging",
+          "training": 150,
+          "test": 73,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-human-sexuality",
+          "training": 84,
+          "test": 47,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-international-law",
+          "training": 89,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-jurisprudence",
+          "training": 69,
+          "test": 39,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-logical-fallacies",
+          "training": 123,
+          "test": 40,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-machine-learning",
+          "training": 79,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-management",
+          "training": 71,
+          "test": 32,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-marketing",
+          "training": 173,
+          "test": 61,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-medical-genetics",
+          "training": 67,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-miscellaneous",
+          "training": 544,
+          "test": 239,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlu-moral-disputes",
+          "training": 240,
+          "test": 106,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-moral-scenarios",
+          "training": 614,
+          "test": 281,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlu-nutrition",
+          "training": 225,
+          "test": 81,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-philosophy",
+          "training": 223,
+          "test": 88,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-prehistory",
+          "training": 233,
+          "test": 91,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-professional-accounting",
+          "training": 209,
+          "test": 73,
+          "clusters": 4
+        },
+        {
+          "cell": "mmlu-professional-law",
+          "training": 1035,
+          "test": 453,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlu-professional-medicine",
+          "training": 197,
+          "test": 75,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-professional-psychology",
+          "training": 456,
+          "test": 156,
+          "clusters": 8
+        },
+        {
+          "cell": "mmlu-public-relations",
+          "training": 78,
+          "test": 31,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-security-studies",
+          "training": 164,
+          "test": 81,
+          "clusters": 3
+        },
+        {
+          "cell": "mmlu-sociology",
+          "training": 140,
+          "test": 61,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-us-foreign-policy",
+          "training": 67,
+          "test": 33,
+          "clusters": 1
+        },
+        {
+          "cell": "mmlu-virology",
+          "training": 114,
+          "test": 52,
+          "clusters": 2
+        },
+        {
+          "cell": "mmlu-world-religions",
+          "training": 106,
+          "test": 65,
+          "clusters": 2
+        },
+        {
+          "cell": "mtbench",
+          "training": 29,
+          "test": 12,
+          "clusters": 1
+        },
+        {
+          "cell": "mtbench-math",
+          "training": 14,
+          "test": 6,
+          "clusters": 1
+        },
+        {
+          "cell": "mtbench-reference",
+          "training": 13,
+          "test": 6,
+          "clusters": 1
+        },
+        {
+          "cell": "winogrande",
+          "training": 887,
+          "test": 380,
+          "clusters": 8
+        }
+      ],
+      "queries": 10398,
+      "metrics": {
+        "mean_reward": {
+          "neighbor_pair_mse": 0.06746312009302488,
+          "same_fine_group_random_pair_mse": 0.08260362915362994,
+          "reduction": {
+            "mean": 0.01514050906060507,
+            "ci95": [
+              0.01432261315192777,
+              0.01590926500230697
+            ],
+            "n": 10398
+          }
+        },
+        "solve_fraction": {
+          "neighbor_pair_mse": 0.08280676989694458,
+          "same_fine_group_random_pair_mse": 0.10040831170144783,
+          "reduction": {
+            "mean": 0.017601541804503254,
+            "ci95": [
+              0.016702361172826044,
+              0.018459932837830786
+            ],
+            "n": 10398
+          }
+        },
+        "strict_solve_fraction": {
+          "neighbor_pair_mse": 0.06323204239849049,
+          "same_fine_group_random_pair_mse": 0.07766046678786417,
+          "reduction": {
+            "mean": 0.014428424389373685,
+            "ci95": [
+              0.013603256698690308,
+              0.015176598701543758
+            ],
+            "n": 10398
+          }
+        },
+        "relative_reward": {
+          "neighbor_pair_mse": 0.18978491055972302,
+          "same_fine_group_random_pair_mse": 0.20560299148433384,
+          "reduction": {
+            "mean": 0.015818080924610838,
+            "ci95": [
+              0.014982033571047429,
+              0.01665908782017233
+            ],
+            "n": 10398
+          }
+        }
+      }
+    }
+  },
+  "panel_sha256": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+  "split_sha256": "34488e20a792c1ee15e588fb81ff9d4dc699ad233644cbcf423cff78c8d3a4d7",
+  "code_sha256": {
+    "run_additional_clustering.py": "b12bcb4a5113b34d2371b3d32fbff48ab34dfa17fb95fe880d09b55639d1a4d6",
+    "clustering_tools.py": "992536a84ce8650ebd500bbd4be096a0ff65c259c2c0ccbf2602830872ce6e00",
+    "refinements.py": "5302ff0608830c79ac0930a65899c7291f6ad15c46b909cfa2b88c57b6c08e68",
+    "geometry.py": "12c83d3b489c9f3c0f4c20123e129d14b155896ccb85a18d271ac79a484e77c0"
+  },
+  "slurm_job": "[redacted]"
+}

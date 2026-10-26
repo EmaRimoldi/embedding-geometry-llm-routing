@@ -1,0 +1,1950 @@
+{
+  "pass_completed": true,
+  "checked": [
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "gte",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_0",
+      "representation": "reader",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "gte",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_1",
+      "representation": "reader",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "gte",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_2",
+      "representation": "reader",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "gte",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 10,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_3",
+      "representation": "reader",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "gte",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.01,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "iid_4",
+      "representation": "reader",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 0.0001,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 0,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 1,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 2,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 5,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 10,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 20,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 30,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 50,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 1,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 75,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 10,
+      "early_stopping": true
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 100,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 100,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 150,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 10,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 250,
+      "architecture": [
+        100,
+        100,
+        100
+      ],
+      "alpha": 10,
+      "early_stopping": false
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "gte",
+      "lambda_value": 500,
+      "architecture": [
+        100,
+        100
+      ],
+      "alpha": 100,
+      "early_stopping": false
+    }
+  ],
+  "missing": [
+    [
+      "routerbench-0shot",
+      "ood_0",
+      "reader"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_1",
+      "gte"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_1",
+      "reader"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_2",
+      "gte"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_2",
+      "reader"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_3",
+      "gte"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_3",
+      "reader"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_4",
+      "gte"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_4",
+      "reader"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_5",
+      "gte"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_5",
+      "reader"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_6",
+      "gte"
+    ],
+    [
+      "routerbench-0shot",
+      "ood_6",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_0",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_0",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_1",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_1",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_2",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_2",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_3",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_3",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_4",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "iid_4",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_0",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_0",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_1",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_1",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_2",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_2",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_3",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_3",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_4",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_4",
+      "reader"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_5",
+      "gte"
+    ],
+    [
+      "sprout-sixfam",
+      "ood_5",
+      "reader"
+    ]
+  ],
+  "all_complete": false
+}

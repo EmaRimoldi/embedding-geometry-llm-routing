@@ -1,0 +1,111 @@
+{
+  "source": "results/geometry/_summary/source_family_transfer.csv",
+  "source_sha256": "653547f3f53c3931a77623ef8417205ce291a6953cb14e9a3e4a66cda428725d",
+  "definition": "Best source minimizes held-out row-centered reward MSE. Primary rank is descending unrestricted k100 retrieval share; mean cosine rank also retained. Equal weighting of held-out families; average ranks for ties. Descriptive post-hoc diagnostic, not deployable source selection.",
+  "records": [
+    {
+      "dataset": "routerbench",
+      "heldout_family": "arc-challenge",
+      "best_relative_reward_source": "hellaswag",
+      "candidate_families": 6,
+      "retrieval_share_in_unrestricted_100_rank": 2.0,
+      "mean_nearest_cosine_rank": 2.0
+    },
+    {
+      "dataset": "routerbench",
+      "heldout_family": "grade-school-math",
+      "best_relative_reward_source": "mtbench",
+      "candidate_families": 6,
+      "retrieval_share_in_unrestricted_100_rank": 2.0,
+      "mean_nearest_cosine_rank": 2.0
+    },
+    {
+      "dataset": "routerbench",
+      "heldout_family": "hellaswag",
+      "best_relative_reward_source": "arc-challenge",
+      "candidate_families": 6,
+      "retrieval_share_in_unrestricted_100_rank": 3.0,
+      "mean_nearest_cosine_rank": 3.0
+    },
+    {
+      "dataset": "routerbench",
+      "heldout_family": "mbpp",
+      "best_relative_reward_source": "grade-school-math",
+      "candidate_families": 6,
+      "retrieval_share_in_unrestricted_100_rank": 5.0,
+      "mean_nearest_cosine_rank": 6.0
+    },
+    {
+      "dataset": "routerbench",
+      "heldout_family": "mmlu",
+      "best_relative_reward_source": "arc-challenge",
+      "candidate_families": 6,
+      "retrieval_share_in_unrestricted_100_rank": 2.0,
+      "mean_nearest_cosine_rank": 2.0
+    },
+    {
+      "dataset": "routerbench",
+      "heldout_family": "mtbench",
+      "best_relative_reward_source": "grade-school-math",
+      "candidate_families": 6,
+      "retrieval_share_in_unrestricted_100_rank": 4.0,
+      "mean_nearest_cosine_rank": 6.0
+    },
+    {
+      "dataset": "routerbench",
+      "heldout_family": "winogrande",
+      "best_relative_reward_source": "mtbench",
+      "candidate_families": 6,
+      "retrieval_share_in_unrestricted_100_rank": 4.0,
+      "mean_nearest_cosine_rank": 4.0
+    },
+    {
+      "dataset": "sprout",
+      "heldout_family": "gpqa",
+      "best_relative_reward_source": "musr",
+      "candidate_families": 5,
+      "retrieval_share_in_unrestricted_100_rank": 5.0,
+      "mean_nearest_cosine_rank": 5.0
+    },
+    {
+      "dataset": "sprout",
+      "heldout_family": "math",
+      "best_relative_reward_source": "mmlupro",
+      "candidate_families": 5,
+      "retrieval_share_in_unrestricted_100_rank": 3.0,
+      "mean_nearest_cosine_rank": 3.0
+    },
+    {
+      "dataset": "sprout",
+      "heldout_family": "mmlupro",
+      "best_relative_reward_source": "musr",
+      "candidate_families": 5,
+      "retrieval_share_in_unrestricted_100_rank": 1.0,
+      "mean_nearest_cosine_rank": 1.0
+    },
+    {
+      "dataset": "sprout",
+      "heldout_family": "musr",
+      "best_relative_reward_source": "gpqa",
+      "candidate_families": 5,
+      "retrieval_share_in_unrestricted_100_rank": 5.0,
+      "mean_nearest_cosine_rank": 5.0
+    },
+    {
+      "dataset": "sprout",
+      "heldout_family": "openhermes",
+      "best_relative_reward_source": "ragbench",
+      "candidate_families": 5,
+      "retrieval_share_in_unrestricted_100_rank": 3.0,
+      "mean_nearest_cosine_rank": 2.0
+    },
+    {
+      "dataset": "sprout",
+      "heldout_family": "ragbench",
+      "best_relative_reward_source": "openhermes",
+      "candidate_families": 5,
+      "retrieval_share_in_unrestricted_100_rank": 1.0,
+      "mean_nearest_cosine_rank": 1.0
+    }
+  ]
+}

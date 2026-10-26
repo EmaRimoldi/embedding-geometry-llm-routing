@@ -1,0 +1,25 @@
+panel,protocol,cpu,method,batch_size,folds,queries,ms_per_query
+routerbench-0shot,iid,AMD EPYC 9474F 48-Core Processor,fixed_l21,1,5,640.0,0.36069473885268405
+routerbench-0shot,iid,AMD EPYC 9474F 48-Core Processor,fixed_l21,128,5,640.0,0.03616830754953508
+routerbench-0shot,iid,AMD EPYC 9474F 48-Core Processor,knn100,1,5,640.0,5.351721287297551
+routerbench-0shot,iid,AMD EPYC 9474F 48-Core Processor,knn100,128,5,640.0,3.386897945445246
+routerbench-0shot,iid,AMD EPYC 9474F 48-Core Processor,selected_layer,1,5,640.0,0.367213537706098
+routerbench-0shot,iid,AMD EPYC 9474F 48-Core Processor,selected_layer,128,5,640.0,0.035069996262721434
+routerbench-0shot,ood,AMD EPYC 9474F 48-Core Processor,fixed_l21,1,7,848.0,0.3586670654827218
+routerbench-0shot,ood,AMD EPYC 9474F 48-Core Processor,fixed_l21,128,7,848.0,0.036135176585308654
+routerbench-0shot,ood,AMD EPYC 9474F 48-Core Processor,knn100,1,7,848.0,6.40727797758337
+routerbench-0shot,ood,AMD EPYC 9474F 48-Core Processor,knn100,128,7,848.0,3.1954886844410075
+routerbench-0shot,ood,AMD EPYC 9474F 48-Core Processor,selected_layer,1,7,848.0,0.37061186549247005
+routerbench-0shot,ood,AMD EPYC 9474F 48-Core Processor,selected_layer,128,7,848.0,0.03500645671037116
+sprout-sixfam,iid,AMD EPYC 9474F 48-Core Processor,fixed_l21,1,5,640.0,0.3755684684550103
+sprout-sixfam,iid,AMD EPYC 9474F 48-Core Processor,fixed_l21,128,5,640.0,0.0398230350513656
+sprout-sixfam,iid,AMD EPYC 9474F 48-Core Processor,knn100,1,5,640.0,7.369128593395894
+sprout-sixfam,iid,AMD EPYC 9474F 48-Core Processor,knn100,128,5,640.0,3.267092498292466
+sprout-sixfam,iid,AMD EPYC 9474F 48-Core Processor,selected_layer,1,5,640.0,0.36827776628062847
+sprout-sixfam,iid,AMD EPYC 9474F 48-Core Processor,selected_layer,128,5,640.0,0.03769388276850805
+sprout-sixfam,ood,AMD EPYC 9474F 48-Core Processor,fixed_l21,1,6,768.0,0.3664493838769909
+sprout-sixfam,ood,AMD EPYC 9474F 48-Core Processor,fixed_l21,128,6,768.0,0.03660317200298708
+sprout-sixfam,ood,AMD EPYC 9474F 48-Core Processor,knn100,1,6,768.0,10.051102877743034
+sprout-sixfam,ood,AMD EPYC 9474F 48-Core Processor,knn100,128,6,768.0,3.3783084322632746
+sprout-sixfam,ood,AMD EPYC 9474F 48-Core Processor,selected_layer,1,6,768.0,0.3665539119631434
+sprout-sixfam,ood,AMD EPYC 9474F 48-Core Processor,selected_layer,128,6,768.0,0.03622537406045012

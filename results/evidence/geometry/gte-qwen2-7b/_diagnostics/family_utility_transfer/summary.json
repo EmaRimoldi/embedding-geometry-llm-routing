@@ -1,0 +1,22 @@
+[
+  {
+    "dataset": "routerbench",
+    "query_weighted_mean_rank": 2.8111755375279577,
+    "mean_family_penalty_rank": 3.2417582417582413,
+    "top1_count": 7.0,
+    "top2_count": 39.0,
+    "family_penalty_cases": 91,
+    "n_sources": 6,
+    "chance_rank": 3.5
+  },
+  {
+    "dataset": "sprout",
+    "query_weighted_mean_rank": 2.5650262650057574,
+    "mean_family_penalty_rank": 3.205128205128205,
+    "top1_count": 21.0,
+    "top2_count": 21.0,
+    "family_penalty_cases": 78,
+    "n_sources": 5,
+    "chance_rank": 3.0
+  }
+]

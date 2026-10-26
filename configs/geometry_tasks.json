@@ -1,0 +1,1244 @@
+[
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_6"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_6"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "gte-qwen2-7b",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_6"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_6"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_21",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_6"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_6"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_23",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "primary",
+    "fold": "ood_6"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_6"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "primary",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "qwen2.5-7b-instruct/layer_25",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "routerbench",
+    "subset": "shared_minilm",
+    "fold": "ood_6"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_0"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_1"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_2"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_3"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "iid_4"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_0"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_1"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_2"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_3"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_4"
+  },
+  {
+    "encoder": "minilm-l12",
+    "dataset": "sprout",
+    "subset": "shared_minilm",
+    "fold": "ood_5"
+  }
+]

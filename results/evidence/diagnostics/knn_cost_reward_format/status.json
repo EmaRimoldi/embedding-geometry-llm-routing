@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "updated_utc": "[redacted]",
+  "audits": {
+    "routerbench": {
+      "folds": 7,
+      "queries": 34771,
+      "retrieval_rows_checked": 1235,
+      "every_restricted_prediction_reconstructed": true,
+      "every_routing_choice_reconstructed": true,
+      "original_gte_l21_scores_reproduced": true,
+      "source_hashes_verified": true
+    },
+    "sprout": {
+      "folds": 6,
+      "queries": 43887,
+      "retrieval_rows_checked": 1007,
+      "every_restricted_prediction_reconstructed": true,
+      "every_routing_choice_reconstructed": true,
+      "original_gte_l21_scores_reproduced": true,
+      "source_hashes_verified": true
+    }
+  },
+  "slurm_jobs": {
+    "run": "[redacted]",
+    "report": "[redacted]"
+  },
+  "manuscript_changed": false
+}

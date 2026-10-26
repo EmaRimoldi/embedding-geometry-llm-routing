@@ -1,0 +1,218 @@
+{
+  "completed_result_files": 1079,
+  "audited_score_records": 6045,
+  "missing": [
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_0",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_1",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_2",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_2",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_3",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_3",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_4",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_4",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_5",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_5",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_6",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "routerbench-0shot",
+      "split": "ood_6",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_0",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_0",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_1",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_1",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_2",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_2",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_3",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_3",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_4",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "iid_4",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_0",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_0",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_1",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_1",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_2",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_2",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_3",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_4",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_4",
+      "representation": "reader",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_5",
+      "representation": "gte",
+      "kind": "mlp"
+    },
+    {
+      "panel": "sprout-sixfam",
+      "split": "ood_5",
+      "representation": "reader",
+      "kind": "mlp"
+    }
+  ],
+  "all_complete": false,
+  "warning": "Partial groups are explicitly marked; do not compare their pooled scores as complete results."
+}

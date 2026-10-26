@@ -1,0 +1,23 @@
+{
+  "task": 1,
+  "dataset": "routerbench",
+  "encoder": "gte-qwen2-7b",
+  "subset": "primary",
+  "fold": "iid_1",
+  "records": [
+    {
+      "family": "mmlu",
+      "nmi": 0.7188152724125485,
+      "ari": 0.39756614572110555,
+      "n": 4211,
+      "clusters": 57
+    }
+  ],
+  "original_scores_reproduced": true,
+  "source_hashes": {
+    "results/geometry/gte-qwen2-7b/routerbench/primary/iid_1/split.npz": "71bccf4764aa52b4c7d25b05b323f109d5f6bafdf7cc053e1997cafa5504c20f",
+    "results/geometry/gte-qwen2-7b/routerbench/primary/additional_clustering_kmeans/iid_1/metrics.json": "ce20bdf2dd753961db0e43ac367bd8d17d2a88c8260b55ae1dbaa9d101e6b37d",
+    "artifacts/embeddings/gte-qwen2-7b/routerbench/manifest.json": "3fcfd0a678e9039a40e32ae2b84019e04ad533512c8ad7f556fc8e2e63125019"
+  },
+  "slurm_job": "[redacted]"
+}

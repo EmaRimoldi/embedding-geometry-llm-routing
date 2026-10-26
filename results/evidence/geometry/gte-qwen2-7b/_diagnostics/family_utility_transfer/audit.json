@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "source_penalty_scores_reconstructed": 936,
+  "expected_scores": 936,
+  "split_and_source_exclusion": true,
+  "finite_predictions": true,
+  "utility_direct_vs_quadratic_verified": true,
+  "source_hashes_verified": true,
+  "lambda0_best_source_reproduction": true,
+  "lambda0_bitwise_reproduction": false,
+  "historical_numerical_discrepancies": [
+    {
+      "dataset": "routerbench",
+      "heldout": "grade-school-math",
+      "source": "winogrande",
+      "queries": 1,
+      "max_error_difference": 0.0007107430145760207,
+      "mean_error_difference": -9.396759423352385e-08,
+      "max_boundary_gap": 1.691758944044608e-08
+    },
+    {
+      "dataset": "routerbench",
+      "heldout": "hellaswag",
+      "source": "mmlu",
+      "queries": 5,
+      "max_error_difference": 0.0007553694993011201,
+      "mean_error_difference": -1.2168627977482416e-07,
+      "max_boundary_gap": 6.551341524829724e-08
+    },
+    {
+      "dataset": "routerbench",
+      "heldout": "hellaswag",
+      "source": "winogrande",
+      "queries": 3,
+      "max_error_difference": 0.0017867745847741506,
+      "mean_error_difference": 4.2993511975564225e-07,
+      "max_boundary_gap": 2.555084255284612e-08
+    },
+    {
+      "dataset": "routerbench",
+      "heldout": "mmlu",
+      "source": "arc-challenge",
+      "queries": 3,
+      "max_error_difference": 0.002333885748524278,
+      "mean_error_difference": -2.0917274029530475e-07,
+      "max_boundary_gap": 2.7271855718158378e-08
+    },
+    {
+      "dataset": "routerbench",
+      "heldout": "mmlu",
+      "source": "grade-school-math",
+      "queries": 3,
+      "max_error_difference": 0.0010496849006857711,
+      "mean_error_difference": 2.644888055791661e-08,
+      "max_boundary_gap": 2.867463361200251e-08
+    },
+    {
+      "dataset": "routerbench",
+      "heldout": "mmlu",
+      "source": "hellaswag",
+      "queries": 5,
+      "max_error_difference": 0.0019173617571838775,
+      "mean_error_difference": 3.671895428825067e-07,
+      "max_boundary_gap": 4.1097052427829794e-08
+    },
+    {
+      "dataset": "routerbench",
+      "heldout": "mmlu",
+      "source": "winogrande",
+      "queries": 2,
+      "max_error_difference": 0.0015768570905874413,
+      "mean_error_difference": -2.0197847167002791e-07,
+      "max_boundary_gap": 2.535948240289798e-08
+    },
+    {
+      "dataset": "sprout",
+      "heldout": "math",
+      "source": "musr",
+      "queries": 1,
+      "max_error_difference": 0.0015057969141937105,
+      "mean_error_difference": 1.55491477887848e-07,
+      "max_boundary_gap": 2.6310022771536268e-09
+    },
+    {
+      "dataset": "sprout",
+      "heldout": "mmlupro",
+      "source": "math",
+      "queries": 1,
+      "max_error_difference": 0.0012854116122680004,
+      "mean_error_difference": 9.663573394269598e-08,
+      "max_boundary_gap": 2.1255271992481894e-07
+    },
+    {
+      "dataset": "sprout",
+      "heldout": "openhermes",
+      "source": "math",
+      "queries": 3,
+      "max_error_difference": 0.0016644070147960044,
+      "mean_error_difference": -9.7267550430713e-08,
+      "max_boundary_gap": 8.861326067366448e-08
+    },
+    {
+      "dataset": "sprout",
+      "heldout": "openhermes",
+      "source": "musr",
+      "queries": 1,
+      "max_error_difference": 0.0005489833515014836,
+      "mean_error_difference": -2.7525440114695154e-08,
+      "max_boundary_gap": 9.8373779955363e-10
+    },
+    {
+      "dataset": "sprout",
+      "heldout": "openhermes",
+      "source": "ragbench",
+      "queries": 2,
+      "max_error_difference": 0.0006128872379854468,
+      "mean_error_difference": -3.002345599911749e-08,
+      "max_boundary_gap": 4.544400283856831e-08
+    }
+  ]
+}

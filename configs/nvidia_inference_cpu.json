@@ -1,0 +1,17 @@
+{
+  "version": "matched_cpu_inference_v1",
+  "threads": 4,
+  "max_queries": 128,
+  "batch_sizes": [
+    1,
+    128
+  ],
+  "repeats": 3,
+  "sampling_salt": "nvidia-knn-matched-inference-v1",
+  "yield_seconds": 6000,
+  "rtol": 0.0002,
+  "atol": 0.00002,
+  "scope": "Matched four-thread CPU deployment on precomputed raw embeddings. All 23 outer evaluations and 13 penalties, at most 128 deterministically hash-selected test queries per evaluation. Identical queries and batch sizes for all methods; full source sets. No encoder forward pass, training, validation, or new selection. Hardware recorded per paired fold. Not a GPU deployment benchmark or from-scratch encoder comparison.",
+  "phases": "Separate source/checkpoint/transform setup, query preprocessing, and prediction. kNN retrieval and reward/cost means reused across penalties; per-penalty utility/choice measured separately. NVIDIA five-network inference, averaging and choice measured per penalty. Shared L21 controls measured once and reuse identified. Warmup once, three raw elapsed measurements retained; cache-warm CPU latency.",
+  "numerical_audit": "Reconstruct saved PCA features and NVIDIA predictions using predeclared tolerances; record all choice differences. kNN uses original float32 cosine and stable full sorting, checks distinct source-only neighbours and exact reward/cost means; record all differences from historical predictions and across batches without suppressing outcomes."
+}

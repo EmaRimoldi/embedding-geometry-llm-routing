@@ -1,0 +1,185 @@
+\section{Cost, Reward and Answer-Format Controls}
+\label{app:cost-reward-format}
+
+\paragraph{Predictions and evaluation.}
+We use the same out-of-distribution splits as the main comparison: each of the seven RouterBench and six SPROUT families is held out in turn.
+All 34,771 RouterBench and 43,887 SPROUT queries are evaluated once.
+For each test query $x$ and candidate model $m$, kNN-100 predicts reward $\widehat r(x,m)$ and cost $\widehat c(x,m)$ by averaging that model's recorded outcomes over the 100 nearest training queries.
+GTE and L21 use their original cosine neighborhoods and frozen predictions.
+Cost is the total dollar cost used in the routing objective, including both input and output costs where available; we do not measure answer length separately.
+We retain every candidate model and prescribed penalty.
+
+\paragraph{Prediction errors.}
+Mean squared error (MSE) and mean absolute error (MAE) average equally over queries and candidate models.
+To examine relative model preferences, we also center predictions and recorded outcomes separately across models within each query before computing the same errors.
+Centering removes a common increase or decrease shared by all models.
+The training-mean reference predicts each model's average reward and cost over all available training queries.
+Table~\ref{tab:cost-reward-errors} reports the errors; Table~\ref{tab:cost-reward-relative} reports $100(1-E_{\mathrm{L21}}/E_{\mathrm{GTE}})$, where $E$ is the corresponding error.
+Positive percentages mean that L21 has lower error.
+Errors for reward and dollar cost have different units and should not be compared directly.
+
+\paragraph{Answer-format control.}
+For each test query, we restrict the training pool to queries with the same coarse answer-format label, then retrieve its 100 nearest GTE neighbors.
+The two labels, multiple-choice and free-form, are defined in Appendix~\ref{app:answer-format}.
+The query's entire family remains excluded, and every restricted training pool contains at least 100 queries.
+We use the known task-format label, without generating or classifying any answers.
+This control changes both format agreement and the available source-family composition; it does not isolate answer format as the sole cause.
+
+\paragraph{Combining reward and cost estimates.}
+We evaluate all four combinations of GTE and L21 reward and cost predictions.
+At each penalty $\lambda$, every combination selects $\arg\max_m[\widehat r(x,m)-\lambda\widehat c(x,m)]$.
+The GTE answer-format control uses both estimates from its restricted neighborhood.
+We average recorded routing utility equally over test queries and then equally over the thirteen penalties.
+Tables~\ref{tab:cost-reward-mean-ci} and~\ref{tab:cost-reward-differences} give means and paired differences; Tables~\ref{tab:cost-reward-routerbench} and~\ref{tab:cost-reward-sprout} retain all penalties.
+
+\paragraph{Uncertainty and checks.}
+All 95\% intervals use 2,000 paired bootstrap samples of queries within each held-out family, keeping family sizes fixed and using the same sampled queries across methods and penalties (Appendix~\ref{app:routing-ci}).
+Each bootstrap mean is computed over the full penalty grid before taking interval endpoints.
+These intervals condition on the evaluated families, frozen training pools and predictors.
+Saved predictions reproduce the original GTE/L21 choices and utilities; restricted-neighbor predictions and every new routing choice are reconstructed from recorded outcomes.
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\caption{Reward and cost prediction errors, with 95\% intervals. Cost MSE and MAE are multiplied by $10^6$ and $10^3$, respectively, for readability.}
+\label{tab:cost-reward-errors}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Benchmark & Predictor & Reward MSE & Reward MAE & Cost MSE & Cost MAE \\
+\midrule
+RouterBench & GTE & \resultci{0.2061}{0.2053}{0.2070} & \resultci{0.4077}{0.4068}{0.4086} & \resultci{2.5186}{2.4758}{2.5611} & \resultci{0.5757}{0.5725}{0.5788} \\[2pt]
+RouterBench & L21 & \resultci{0.1780}{0.1770}{0.1791} & \resultci{0.3383}{0.3370}{0.3395} & \resultci{1.0323}{1.0077}{1.0580} & \resultci{0.3185}{0.3160}{0.3208} \\[2pt]
+RouterBench & GTE, matching format & \resultci{0.1902}{0.1894}{0.1909} & \resultci{0.3852}{0.3844}{0.3860} & \resultci{0.8648}{0.8402}{0.8895} & \resultci{0.3406}{0.3382}{0.3428} \\[2pt]
+RouterBench & Training-model means & \resultci{0.1899}{0.1893}{0.1905} & \resultci{0.3943}{0.3937}{0.3949} & \resultci{2.8637}{2.8255}{2.9016} & \resultci{0.7833}{0.7806}{0.7863} \\[2pt]
+\midrule
+SPROUT & GTE & \resultci{0.2073}{0.2064}{0.2082} & \resultci{0.4031}{0.4020}{0.4042} & \resultci{4.8932}{4.5794}{5.2115} & \resultci{0.7142}{0.7086}{0.7199} \\[2pt]
+SPROUT & L21 & \resultci{0.1614}{0.1604}{0.1624} & \resultci{0.3221}{0.3209}{0.3234} & \resultci{5.0209}{4.7157}{5.3337} & \resultci{0.7436}{0.7377}{0.7493} \\[2pt]
+SPROUT & GTE, matching format & \resultci{0.1773}{0.1763}{0.1783} & \resultci{0.3478}{0.3467}{0.3489} & \resultci{5.2243}{4.9110}{5.5502} & \resultci{0.7163}{0.7106}{0.7222} \\[2pt]
+SPROUT & Training-model means & \resultci{0.1921}{0.1912}{0.1930} & \resultci{0.3787}{0.3778}{0.3798} & \resultci{5.6598}{5.3400}{5.9843} & \resultci{0.7527}{0.7467}{0.7586} \\[2pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\caption{L21 error reduction relative to GTE (\%), with paired 95\% intervals. Negative values indicate higher error.}
+\label{tab:cost-reward-relative}
+\begin{tabular}{@{}lllrr@{}}
+\toprule
+Target & Error & Centering & RouterBench & SPROUT \\
+\midrule
+Reward & MSE & None & \resultci{+13.64}{+13.23}{+14.05} & \resultci{+22.15}{+21.67}{+22.64} \\[2pt]
+Reward & MAE & None & \resultci{+17.03}{+16.79}{+17.27} & \resultci{+20.07}{+19.74}{+20.41} \\[2pt]
+Reward & MSE & Across models & \resultci{+5.84}{+5.58}{+6.10} & \resultci{+2.43}{+2.26}{+2.59} \\[2pt]
+Reward & MAE & Across models & \resultci{+6.25}{+6.07}{+6.44} & \resultci{+4.01}{+3.89}{+4.14} \\[2pt]
+Cost & MSE & None & \resultci{+59.01}{+58.11}{+59.95} & \resultci{-2.61}{-3.21}{-2.03} \\[2pt]
+Cost & MAE & None & \resultci{+44.67}{+44.19}{+45.21} & \resultci{-4.11}{-4.42}{-3.78} \\[2pt]
+Cost & MSE & Across models & \resultci{+53.16}{+52.15}{+54.21} & \resultci{-3.21}{-3.83}{-2.63} \\[2pt]
+Cost & MAE & Across models & \resultci{+41.35}{+40.80}{+41.94} & \resultci{-3.60}{-3.92}{-3.28} \\[2pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\caption{Mean out-of-distribution utility over thirteen penalties, with 95\% intervals.}
+\label{tab:cost-reward-mean-ci}
+\begin{tabular}{@{}llrr@{}}
+\toprule
+Reward estimate & Cost estimate & RouterBench & SPROUT \\
+\midrule
+GTE & GTE & \resultci{0.6615}{0.6583}{0.6651} & \resultci{0.7529}{0.7498}{0.7559} \\[2pt]
+L21 & GTE & \resultci{0.6754}{0.6720}{0.6791} & \resultci{0.7709}{0.7679}{0.7739} \\[2pt]
+GTE & L21 & \resultci{0.6965}{0.6934}{0.7000} & \resultci{0.7560}{0.7529}{0.7590} \\[2pt]
+L21 & L21 & \resultci{0.7007}{0.6972}{0.7043} & \resultci{0.7731}{0.7701}{0.7760} \\[2pt]
+\multicolumn{2}{l}{GTE with matching answer format} & \resultci{0.6974}{0.6942}{0.7010} & \resultci{0.7584}{0.7553}{0.7614} \\[2pt]
+\multicolumn{2}{l}{Training-model means} & \resultci{0.6618}{0.6586}{0.6652} & \resultci{0.7575}{0.7544}{0.7604} \\[2pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\caption{Mean utility differences, with paired 95\% intervals. GTE and L21 alone denote ordinary kNN-100.}
+\label{tab:cost-reward-differences}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Comparison & RouterBench & SPROUT \\
+\midrule
+Replace GTE reward estimate with L21 & \resultci{+0.0139}{+0.0120}{+0.0156} & \resultci{+0.0180}{+0.0163}{+0.0198} \\[2pt]
+Replace GTE cost estimate with L21 & \resultci{+0.0350}{+0.0342}{+0.0357} & \resultci{+0.0031}{+0.0027}{+0.0036} \\[2pt]
+Replace both GTE estimates with L21 & \resultci{+0.0391}{+0.0371}{+0.0410} & \resultci{+0.0202}{+0.0185}{+0.0220} \\[2pt]
+GTE with matching format minus GTE & \resultci{+0.0359}{+0.0350}{+0.0368} & \resultci{+0.0055}{+0.0042}{+0.0069} \\[2pt]
+GTE with matching format minus L21 & \resultci{-0.0032}{-0.0050}{-0.0015} & \resultci{-0.0147}{-0.0163}{-0.0131} \\[2pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Results.}
+On RouterBench, replacing only GTE's cost predictions raises mean utility from 0.6615 to 0.6965, whereas replacing only reward predictions gives 0.6754.
+On SPROUT, replacing reward predictions raises utility from 0.7529 to 0.7709, whereas replacing only cost predictions gives 0.7560.
+Thus, the contributions differ across benchmarks and are not additive.
+SPROUT's L21 cost estimates have slightly higher MSE and MAE, yet still produce a small routing gain, illustrating that aggregate prediction error does not determine routing utility.
+The answer-format restriction raises GTE utility to 0.6974 on RouterBench and 0.7584 on SPROUT, closing approximately 92\% and 27\% of the observed GTE--L21 gaps.
+Both restricted-GTE means remain below L21, with paired difference intervals excluding zero.
+These results support a substantial role for the format restriction on RouterBench and additional useful reward information in L21 on SPROUT.
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\caption{RouterBench: utility at every penalty, with 95\% intervals. The first four columns identify the reward/cost predictors; the last uses GTE neighbors matching the query answer format.}
+\label{tab:cost-reward-routerbench}
+\begin{tabular}{@{}rrrrrr@{}}
+\toprule
+$\lambda$ & GTE/GTE & L21/GTE & GTE/L21 & L21/L21 & GTE, matching format \\
+\midrule
+0 & \resultci{0.7900}{0.7866}{0.7937} & \resultci{0.7854}{0.7818}{0.7891} & \resultci{0.7900}{0.7866}{0.7937} & \resultci{0.7854}{0.7818}{0.7891} & \resultci{0.7902}{0.7868}{0.7939} \\[2pt]
+1 & \resultci{0.7864}{0.7831}{0.7902} & \resultci{0.7804}{0.7768}{0.7842} & \resultci{0.7865}{0.7832}{0.7903} & \resultci{0.7805}{0.7769}{0.7843} & \resultci{0.7867}{0.7834}{0.7905} \\[2pt]
+2 & \resultci{0.7831}{0.7798}{0.7869} & \resultci{0.7774}{0.7738}{0.7812} & \resultci{0.7832}{0.7799}{0.7870} & \resultci{0.7771}{0.7734}{0.7809} & \resultci{0.7832}{0.7799}{0.7870} \\[2pt]
+5 & \resultci{0.7732}{0.7699}{0.7770} & \resultci{0.7676}{0.7640}{0.7713} & \resultci{0.7732}{0.7698}{0.7770} & \resultci{0.7678}{0.7642}{0.7716} & \resultci{0.7726}{0.7690}{0.7764} \\[2pt]
+10 & \resultci{0.7563}{0.7529}{0.7601} & \resultci{0.7498}{0.7462}{0.7536} & \resultci{0.7557}{0.7524}{0.7595} & \resultci{0.7587}{0.7549}{0.7626} & \resultci{0.7638}{0.7601}{0.7676} \\[2pt]
+20 & \resultci{0.7225}{0.7192}{0.7263} & \resultci{0.7180}{0.7144}{0.7219} & \resultci{0.7392}{0.7358}{0.7430} & \resultci{0.7439}{0.7401}{0.7478} & \resultci{0.7491}{0.7456}{0.7529} \\[2pt]
+30 & \resultci{0.6881}{0.6846}{0.6919} & \resultci{0.6859}{0.6823}{0.6900} & \resultci{0.7247}{0.7213}{0.7286} & \resultci{0.7279}{0.7240}{0.7319} & \resultci{0.7341}{0.7306}{0.7380} \\[2pt]
+50 & \resultci{0.6225}{0.6188}{0.6264} & \resultci{0.6226}{0.6187}{0.6269} & \resultci{0.6948}{0.6912}{0.6987} & \resultci{0.6994}{0.6954}{0.7037} & \resultci{0.7029}{0.6991}{0.7069} \\[2pt]
+75 & \resultci{0.5491}{0.5453}{0.5535} & \resultci{0.5619}{0.5575}{0.5662} & \resultci{0.6574}{0.6537}{0.6616} & \resultci{0.6691}{0.6648}{0.6735} & \resultci{0.6638}{0.6600}{0.6680} \\[2pt]
+100 & \resultci{0.5057}{0.5013}{0.5102} & \resultci{0.5945}{0.5900}{0.5994} & \resultci{0.6253}{0.6215}{0.6296} & \resultci{0.6462}{0.6418}{0.6508} & \resultci{0.6334}{0.6296}{0.6377} \\[2pt]
+150 & \resultci{0.5320}{0.5270}{0.5370} & \resultci{0.6150}{0.6104}{0.6194} & \resultci{0.5967}{0.5922}{0.6013} & \resultci{0.6189}{0.6143}{0.6235} & \resultci{0.5937}{0.5897}{0.5981} \\[2pt]
+250 & \resultci{0.5560}{0.5513}{0.5605} & \resultci{0.5859}{0.5813}{0.5905} & \resultci{0.5843}{0.5797}{0.5891} & \resultci{0.5899}{0.5852}{0.5946} & \resultci{0.5592}{0.5546}{0.5638} \\[2pt]
+500 & \resultci{0.5353}{0.5307}{0.5398} & \resultci{0.5362}{0.5316}{0.5408} & \resultci{0.5434}{0.5388}{0.5481} & \resultci{0.5441}{0.5394}{0.5487} & \resultci{0.5341}{0.5296}{0.5386} \\[2pt]
+\midrule
+Mean & \resultci{0.6615}{0.6583}{0.6651} & \resultci{0.6754}{0.6720}{0.6791} & \resultci{0.6965}{0.6934}{0.7000} & \resultci{0.7007}{0.6972}{0.7043} & \resultci{0.6974}{0.6942}{0.7010} \\[2pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\caption{SPROUT: utility at every penalty, with 95\% intervals. The first four columns identify the reward/cost predictors; the last uses GTE neighbors matching the query answer format.}
+\label{tab:cost-reward-sprout}
+\begin{tabular}{@{}rrrrrr@{}}
+\toprule
+$\lambda$ & GTE/GTE & L21/GTE & GTE/L21 & L21/L21 & GTE, matching format \\
+\midrule
+0 & \resultci{0.8035}{0.8002}{0.8067} & \resultci{0.8243}{0.8212}{0.8275} & \resultci{0.8035}{0.8002}{0.8067} & \resultci{0.8243}{0.8212}{0.8275} & \resultci{0.7972}{0.7938}{0.8005} \\[2pt]
+0.5 & \resultci{0.8013}{0.7980}{0.8046} & \resultci{0.8224}{0.8193}{0.8256} & \resultci{0.8018}{0.7986}{0.8051} & \resultci{0.8225}{0.8192}{0.8257} & \resultci{0.7956}{0.7923}{0.7990} \\[2pt]
+1 & \resultci{0.7994}{0.7962}{0.8026} & \resultci{0.8204}{0.8173}{0.8235} & \resultci{0.7997}{0.7964}{0.8030} & \resultci{0.8200}{0.8169}{0.8232} & \resultci{0.7951}{0.7917}{0.7984} \\[2pt]
+2 & \resultci{0.7955}{0.7922}{0.7988} & \resultci{0.8165}{0.8132}{0.8196} & \resultci{0.7962}{0.7929}{0.7995} & \resultci{0.8170}{0.8137}{0.8202} & \resultci{0.7940}{0.7906}{0.7973} \\[2pt]
+5 & \resultci{0.7873}{0.7839}{0.7906} & \resultci{0.8075}{0.8041}{0.8108} & \resultci{0.7877}{0.7844}{0.7910} & \resultci{0.8073}{0.8040}{0.8106} & \resultci{0.7907}{0.7874}{0.7940} \\[2pt]
+10 & \resultci{0.7820}{0.7787}{0.7855} & \resultci{0.8004}{0.7970}{0.8037} & \resultci{0.7820}{0.7786}{0.7853} & \resultci{0.8009}{0.7974}{0.8042} & \resultci{0.7878}{0.7844}{0.7911} \\[2pt]
+25 & \resultci{0.7734}{0.7698}{0.7767} & \resultci{0.7926}{0.7892}{0.7960} & \resultci{0.7742}{0.7708}{0.7775} & \resultci{0.7946}{0.7911}{0.7979} & \resultci{0.7816}{0.7782}{0.7849} \\[2pt]
+50 & \resultci{0.7607}{0.7573}{0.7641} & \resultci{0.7795}{0.7761}{0.7829} & \resultci{0.7631}{0.7597}{0.7665} & \resultci{0.7830}{0.7796}{0.7864} & \resultci{0.7714}{0.7679}{0.7747} \\[2pt]
+75 & \resultci{0.7496}{0.7462}{0.7530} & \resultci{0.7671}{0.7637}{0.7706} & \resultci{0.7535}{0.7500}{0.7568} & \resultci{0.7716}{0.7682}{0.7751} & \resultci{0.7606}{0.7573}{0.7641} \\[2pt]
+100 & \resultci{0.7379}{0.7345}{0.7413} & \resultci{0.7555}{0.7520}{0.7589} & \resultci{0.7431}{0.7396}{0.7465} & \resultci{0.7606}{0.7571}{0.7641} & \resultci{0.7497}{0.7464}{0.7531} \\[2pt]
+150 & \resultci{0.7149}{0.7114}{0.7184} & \resultci{0.7318}{0.7282}{0.7353} & \resultci{0.7233}{0.7198}{0.7268} & \resultci{0.7384}{0.7348}{0.7419} & \resultci{0.7283}{0.7249}{0.7318} \\[2pt]
+250 & \resultci{0.6786}{0.6748}{0.6824} & \resultci{0.6924}{0.6886}{0.6963} & \resultci{0.6929}{0.6891}{0.6966} & \resultci{0.6986}{0.6947}{0.7023} & \resultci{0.6904}{0.6865}{0.6942} \\[2pt]
+500 & \resultci{0.6037}{0.5996}{0.6080} & \resultci{0.6115}{0.6071}{0.6157} & \resultci{0.6074}{0.6033}{0.6115} & \resultci{0.6119}{0.6079}{0.6160} & \resultci{0.6165}{0.6123}{0.6206} \\[2pt]
+\midrule
+Mean & \resultci{0.7529}{0.7498}{0.7559} & \resultci{0.7709}{0.7679}{0.7739} & \resultci{0.7560}{0.7529}{0.7590} & \resultci{0.7731}{0.7701}{0.7760} & \resultci{0.7584}{0.7553}{0.7614} \\[2pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
