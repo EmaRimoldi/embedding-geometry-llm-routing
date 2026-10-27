@@ -10,7 +10,7 @@ Turn each prompt into an embedding and route it to an LLM that balances quality 
 
 <sup>*</sup> Equal contribution.
 
-[Run the experiments](docs/RUN_COMMANDS.md) · [Methods](docs/METHODS.md) · [Results & audit](docs/REPRODUCTION_AUDIT.md) · [Citation](CITATION.cff)
+[Run the experiments](docs/EXPERIMENTS.md) · [Data](docs/DATA.md) · [Methods](docs/METHODS.md) · [Results & audit](docs/REPRODUCTION_AUDIT.md) · [Citation](CITATION.cff)
 
 [![A prompt arrives, a frozen encoder generates its embedding, a lightweight router classifies it, and a model is selected. The sequence repeats automatically.](docs/demo/routing-demo.gif)](docs/demo/README.md)
 
@@ -34,8 +34,10 @@ python3 scripts/check_paper_results.py
 
 For fresh data, embeddings and router training, follow the **[full execution guide](docs/RUN_COMMANDS.md)**. Public assets and environments are pinned; neural components require Linux and CUDA.
 
+With Make installed, `make verify` runs the three checks above. See the [repository map](docs/STRUCTURE.md) and [versioned release guide](docs/RELEASE.md).
+
 The audit passes 5,493 checks against the pinned manuscript reference and includes CPU/CUDA component runs. Full-scale fits and bootstraps have not all been independently rerun; see [coverage and limitations](docs/REPRODUCTION_AUDIT.md) and the [result index](docs/RESULT_INDEX.md).
 
-Citation metadata: [CITATION.cff](CITATION.cff). Third-party notices: [THIRD_PARTY.md](THIRD_PARTY.md).
+Original project material uses **[CC BY 4.0](LICENSE)**, matching the paper's arXiv license. Third-party assets retain their own terms: [THIRD_PARTY.md](THIRD_PARTY.md).
 
 After edits, refresh the export with `python scripts/build_submission.py` and commit its updated manifest.

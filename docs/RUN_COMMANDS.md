@@ -245,6 +245,83 @@ IDs. Without that file, the timing report retains measured phase times and marks
 scheduler accounting unavailable; it does not query unrelated jobs or invent
 allocated CPU/GPU totals.
 
+## 8. Additional diagnostics and uncertainty
+
+Run direct CPU commands below inside a CPU allocation, from the release root.
+Wait for each prerequisite before submitting its consumer. Runtime arrays and
+predictions must come from the new run, not the compact `results/evidence/` export.
+
+GTE hidden-layer-21 comparison, after canonical inputs, models and baseline setup:
+
+```bash
+sbatch jobs/gte_l21_extract.sbatch
+# Wait for both extraction tasks.
+sbatch jobs/gte_l21_route.sbatch
+# Wait for all 23 routing tasks.
+sbatch jobs/gte_l21_report.sbatch
+```
+
+Reward/cost prediction and known-format restrictions, after all GTE/L21 baseline
+predictions are complete:
+
+```bash
+sbatch jobs/knn_cost_reward_format.sbatch
+# Wait for both benchmark tasks.
+sbatch jobs/knn_cost_reward_format_report.sbatch
+# Wait for both reports.
+.venv/bin/python -B src/diagnostics/render_knn_cost_reward_format.py
+```
+
+Predicted-label lookup uses canonical GTE embeddings and the ten IID tasks:
+
+```bash
+.venv/bin/python -B src/diagnostics/submit_deployable_lookup.py
+```
+
+The helper submits the fixed array and a dependent report job. For the separate
+IID disagreement analysis, wait for all five GTE IID kNN and known-label lookup
+prediction files on both benchmarks, then run:
+
+```bash
+.venv/bin/python -B src/diagnostics/iid_lookup_disagreement.py
+```
+
+The native MMLU-topic diagnostic uses prepared outcomes and frozen IID splits,
+without encoder extraction:
+
+```bash
+.venv/bin/python -B src/diagnostics/mmlu_topic_preference.py
+```
+
+For a complete CPU rerun with automatic comparison to saved results, including
+all IID known-metadata lookups and this MMLU diagnostic, use
+`.venv/bin/python -B scripts/reproduce_cpu_diagnostics.py`. It creates an isolated
+workspace and verifies canonical input hashes before execution.
+
+Appendix uncertainty calculations require completed fresh predictions and
+query-level geometry/rank arrays:
+
+```bash
+sbatch jobs/appendix_ci_routing.sbatch
+sbatch jobs/appendix_ci_geometry.sbatch
+sbatch jobs/appendix_ci_clustering.sbatch
+# Wait for all clustering assignment jobs before its bootstrap stage.
+sbatch jobs/appendix_ci_clustering_bootstrap.sbatch
+sbatch jobs/appendix_ci_rank.sbatch
+# Final and historical SharedTrunkNet predictions must all be complete first.
+sbatch jobs/appendix_ci_sharedtrunknet.sbatch
+# Wait for every required report before rendering its tables.
+sbatch jobs/appendix_ci_render.sbatch
+.venv/bin/python -B src/diagnostics/appendix_ci/render_sharedtrunknet.py
+# Requires completed OOD kNN routing bootstrap arrays as well as predictions.
+sbatch jobs/per_family_knn_ci.sbatch
+```
+
+The family-rank bootstrap uses the corrected average-rank tie convention described
+in [REPRODUCTION_AUDIT.md](REPRODUCTION_AUDIT.md). Original evidence is historical;
+the new convention can affect auxiliary intervals with ties. The observed point
+estimates remain unchanged.
+
 ## Other entrypoints and audit scope
 
 The launch scripts preserve their resource requests and Python entrypoints.

@@ -7,6 +7,18 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 
 
+def test_release_exports_root_license_metadata_and_entrypoints(tmp_path):
+    spec = importlib.util.spec_from_file_location('release_root_checks', ROOT / 'scripts/verify_release.py')
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    required = {'LICENSE', 'CITATION.cff', '.zenodo.json', 'Makefile', 'CONTRIBUTING.md'}
+    for name in required:
+        (tmp_path / name).write_text('required release material\n')
+    (tmp_path / 'private-local-file.txt').write_text('must stay local\n')
+    exported = {str(p.relative_to(tmp_path)) for p in module.public_files(tmp_path)}
+    assert exported == required, 'The built ZIP must contain the license and release entrypoints'
+
+
 def test_finder_metadata_is_not_exported(tmp_path):
     spec = importlib.util.spec_from_file_location('release_checks', ROOT / 'scripts/verify_release.py')
     module = importlib.util.module_from_spec(spec)

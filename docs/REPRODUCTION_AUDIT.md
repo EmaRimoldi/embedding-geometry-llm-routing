@@ -14,9 +14,10 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 | Production downloader | Unchanged production downloader with pinned HF CLI, two real public tokenizer files; both dependency environments checked | Passed; this small CLI check does not redownload all weights |
 | Complete preparation | Production preparation commands for both benchmarks | All eight output hashes match the frozen canonical files; cohorts 34,771/43,887 and matched MiniLM subsets 34,659/41,324 |
 | Fresh numeric controls | Single-model selection and realized-oracle controls from newly prepared public outcomes | 598 method scores; 3,588 saved metric comparisons, maximum error zero |
+| Complete fresh CPU diagnostics | Unchanged production IID known-metadata lookups and MMLU topic analysis on complete canonical panels, including the prescribed MMLU bootstrap | 20 lookup reports, 520 lookup policy scores, 21 total reports and 24,209 numeric values match; maximum error zero |
 | Saved-result reconstruction | Seven result groups, including final per-model SharedTrunkNet JSONs | 23,740 fold-level records, 4,031 reconstructed aggregate rows, saved-aggregate tolerance 1e-10 relative / 1e-12 absolute |
 | Printed results | Pinned manuscript values and settings, all 44 table labels | 5,493 checks passed at printed precision; supplied intervals compared without resampling |
-| CPU regression tests | Pipeline/geometry, integrity, paper-gate, rank-tie and distribution regression cases | 20 tests passed |
+| CPU regression tests | Pipeline/geometry, integrity, paper-gate, rank-tie, distribution and fresh-diagnostic comparison regression cases | 28 tests passed |
 | CPU baseline execution | Actual kNN, Family Adaptation, Ridge, Avengers-Pro and KM-Prox CLI paths on synthetic ID/OOD inputs | 260 score checks; 16 MLP-equivalence and 36 direct-utility Ridge cases |
 | CPU/CUDA SharedTrunkNet | Actual probe, ternary search, fitting core, checkpoint reload and seed retention on synthetic inputs | 20 networks and 20 reloads on each device; cost-once and held-out-cost isolation checks passed |
 | PCA preprocessing | Actual production PCA100 entry point, both full-SVD and randomized branches | 10 checks per branch, including held-out poisoning and stale-cache rejection |
@@ -27,6 +28,9 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 The current machine-readable records are under `release_provenance/current_checks/`.
 They are distinct from `release_provenance/reviewer_smoke/`, which describes the
 conference package's earlier checks.
+The complete fresh CPU diagnostic run is recorded separately in
+`release_provenance/current_checks/v1_cpu_diagnostics.json`; it verifies canonical
+input bytes and records production-source fingerprints and execution times.
 
 CI fixes Ubuntu 24.04, Python 3.11.17 and the exact Node-24 action commits instead
 of floating runner/Python/action versions. Local and cluster executions recorded
@@ -68,6 +72,13 @@ differences are recorded rather than presented as an identical original environm
    Duplicate local extractions, retired data and synthetic check workspaces were
    removed after verification; the original conference ZIP is preserved outside
    the repository. `release_provenance/storage_cleanup.json` records the accounting.
+8. **Versioned distribution:** CC BY 4.0 now covers original project material,
+   matching the paper's arXiv license. Third-party exceptions remain explicit.
+   Data, experiment and resource guides, Make entrypoints, versioned citation
+   metadata and prepared Zenodo metadata make the artifact easier to retrieve
+   and rerun. The root license and metadata are included in the export allowlist.
+   The new CPU diagnostic gate rejects changed values, shapes and non-finite
+   values before reporting success.
 
 ## What this establishes and what it does not
 

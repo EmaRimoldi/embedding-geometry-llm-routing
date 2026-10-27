@@ -29,10 +29,22 @@ The full source revisions and download selections are in `manifests/assets.json`
 | GTE-Qwen2-7B-Instruct | Alibaba-NLP/gte-Qwen2-7B-instruct | Card declares Apache-2.0; downloaded custom model source contains upstream notices. |
 | Qwen2.5-7B-Instruct | Qwen/Qwen2.5-7B-Instruct | Apache-2.0 license file is present. |
 
-Dataset/model creators should be cited in the paper. Third-party dependency licenses remain those of their respective distributions. Upstream authors' names and citations are retained; anonymization concerns the submitting authors, not attribution to unrelated upstream work.
+Dataset/model creators should be cited in the paper. Third-party dependency licenses remain those of their respective distributions. Upstream authors' names and citations are retained.
 
 The four short proof-comparison prompts are supplied explicitly as experiment inputs; they do not include model-generated answers. The remaining raw query corpora are fetched from the pinned public sources.
 
 ## Original project code
 
-No new open-source license grant is asserted by this packaging operation. This anonymous review artifact is supplied for inspection and reproducibility; the authors must decide the project's public-release license. This statement does not replace any upstream license.
+Copyright 2026 Leonardo Torti, Emanuele Rimoldi, Tomer Galanti, Tomaso Poggio and
+Pierfrancesco Beneventano. Original project code, documentation and original
+research outputs are licensed under **Creative Commons Attribution 4.0
+International (CC BY 4.0)**, as set out in the root `LICENSE`. This is the same
+license linked from [the paper's arXiv record](https://arxiv.org/abs/2610.19198v1).
+The license selection and official legal-text checksum are recorded in
+`manifests/project_license.json`.
+
+This grant covers only the authors' rights in original project material.
+The NVIDIA reference sources retain Apache-2.0; the Inter font retains OFL-1.1;
+downloaded datasets, models and their constituent material retain their upstream
+terms. The root license does not relicense those assets. Retain the authorship,
+source and license notices, and identify modifications when redistributing.

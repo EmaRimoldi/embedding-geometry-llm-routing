@@ -6,7 +6,7 @@ From the package root, using its Python environment:
 python -B scripts/render_saved_tables.py
 ```
 
-This optional command renders four selected table families from the bundled reports. It checks that each renderer finishes and produces its expected nonempty files. It does not recompute predictions, bootstrap intervals, training results, or all figures in the paper. NumPy is needed by the appendix table helper; the other renderers use the Python standard library.
+This optional command renders four selected table families from the bundled reports. It checks that each renderer finishes and that all seven numerical table outputs match the frozen evidence byte-for-byte. A nonempty but changed output fails verification. It does not recompute predictions, bootstrap intervals, training results, or all figures in the paper. NumPy is needed by the appendix table helper; the other renderers use the Python standard library.
 
 Each invocation creates a fresh workspace under `results/reproduced/saved_tables/run-*/`. It copies only the listed renderers, their direct helpers/configurations, and the required saved report inputs into that workspace. Subprocesses use the current interpreter with `-B`; their caches and temporary files stay in the workspace. Source files, configurations, bundled evidence, and previous rendering runs are left intact.
 

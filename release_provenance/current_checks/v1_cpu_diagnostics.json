@@ -1,0 +1,156 @@
+{
+  "passed": true,
+  "scope": "Complete production IID metadata lookups and MMLU topic diagnostic; all prescribed penalties, full canonical cohorts and 1,000 MMLU paired bootstrap draws per penalty. No embedding-based router training or full-study rerun.",
+  "input_origin": "Previously downloaded public assets; prepared bytes verified against canonical hashes.",
+  "lookup_reports": 20,
+  "lookup_policy_scores": 520,
+  "mmlu_bootstrap_replicates_per_penalty": 1000,
+  "reports_compared": 21,
+  "numeric_values": 24209,
+  "maximum_absolute_error": 0.0,
+  "relative_tolerance": 1e-10,
+  "absolute_tolerance": 1e-12,
+  "comparison_excludes": [
+    "Historical MMLU provenance field; new source/input fingerprints recorded separately"
+  ],
+  "python": "3.11.15",
+  "verification_code_sha256": "358d057aab9ca27acd42f257f3310d25fe0654d6dfb201dd67234036b6bbdc34",
+  "elapsed_seconds": 23.0243871670682,
+  "stage_seconds": {
+    "iid_metadata_lookups": 18.250280125066638,
+    "mmlu_topic_bootstrap": 4.77410704200156
+  },
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "torch": "2.5.1"
+  },
+  "verified_inputs": {
+    "datasets/routerbench/prepared/panel.npz": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+    "datasets/routerbench/prepared/queries.jsonl": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd",
+    "datasets/routerbench/prepared/excluded.jsonl": "205d589b57185bba271f4602d711ebb7012fb9bf50b16d356bfc3f5a67f9ff6d",
+    "datasets/routerbench/prepared/manifest.json": "557bc48609f0ff15040bdf83120770ef7da8775c52a640709a85d1d3168b4f88",
+    "datasets/sprout/prepared/panel.npz": "e125721301ce056fdaaebe2c51ac0fdfca4ab460825ce8bd1f8a4be1d302a972",
+    "datasets/sprout/prepared/queries.jsonl": "977295d4650e20ecbb1b1b14d9250d2bec9b42efb0633a21d98098157c78c0f9",
+    "datasets/sprout/prepared/excluded.jsonl": "c6d255d6c369056092b608a544f39a2a89d0b3575cf6db025fb3c46573f5485b",
+    "datasets/sprout/prepared/manifest.json": "a1f6bb0cad2e88a49489d2b043a1ec5204d54bf32e1139a46967bf3e09cbfec7"
+  },
+  "source_hashes": {
+    "src/baselines/common.py": "90469238a1bda991d4a8057ae536879181d35eff4252c783fab7f93202661133",
+    "src/baselines/run_lookups.py": "3f7c14ed8a47cada39c1c6d74c3d5503ebbc79b88988da1c2e266cb45643f1e9",
+    "src/baselines/run_mlp.py": "34c14433d25a0cfe8e11795091419eadd062555b58bef03aedc10a439b99eea1",
+    "src/baselines/batched_mlp.py": "abf4686bbb2e3a8d6865da62a33d1b30c859e1d06d873b85f79e15c2163b13c1",
+    "src/diagnostics/mmlu_topic_preference.py": "8696507ab2b1ec08ee472c285988bf20622148a56c37ec436baf530a3c2a092a",
+    "configs/baselines.json": "741e9cdeab782a41b00f2377fdc5463732604e4a0def769f029fe0a91d127d2b",
+    "configs/baseline_splits/routerbench-0shot.json": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+    "configs/baseline_splits/sprout-sixfam.json": "8d3ff78c8c1b84f60a737720cad236af5d977ccb5f958a4ab7cda3927542c997"
+  },
+  "reports": [
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_0/lookups/result.json",
+      "fresh_sha256": "1f1a25c1b067399b286e32dcf4d062d48135a52a5d8c4cc68abedf50f8ec6edc",
+      "reference_sha256": "9ec8d5008e5db455af0854dc75089d6a17c932316c0cb3e734355c1183028e68"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_1/lookups/result.json",
+      "fresh_sha256": "0da6ea8275d4920e5749f5bd888104466d11e0912ede79fd93ef506ed63e8aad",
+      "reference_sha256": "0bf51b66033e27c0f61bba271b3399f6cae2ac8ddda2f2db318e1d208e5f487d"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_2/lookups/result.json",
+      "fresh_sha256": "5c7305a05f87ee2d31eecc8b76852901a8c7b70143a284896eb5a99136b4cbf9",
+      "reference_sha256": "c07fe5342b48a68a7e6b6ac140da550cd25484019496a11d523117d62fc607f3"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_3/lookups/result.json",
+      "fresh_sha256": "47d6d8525c99ae0ba00a2a271e8fb2f3e861727084358529bb729be748b524ae",
+      "reference_sha256": "34b8410541647e5580dc0c7f3ca7bd59c4d4d04440705971eff95fa5943f2195"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_4/lookups/result.json",
+      "fresh_sha256": "5623b802e63f265f7cfb2f6026b9bc96cf2a2a2580c52451c8a6c0b633ed48df",
+      "reference_sha256": "8c1f17601504e96ac937a3ff6c3d31a59a08ec3a00832455be003bb0ee767461"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_0/lookups/result.json",
+      "fresh_sha256": "64d26f43f2aa45e90bf867e096980059bead535c739fe50657e9280d6b480411",
+      "reference_sha256": "279c634d64f095517ebc5a65d4f5fbae97d2f6f3dac70d09576d9e89e4c04aa9"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_1/lookups/result.json",
+      "fresh_sha256": "39a203d11ce5a7e82038366428dab9d4f391b6e962bdd0cffe5b744723ef81b8",
+      "reference_sha256": "593e2b37210909147aebcdce27cf131f62c953fd9d18ea98488e155414dd98a8"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_2/lookups/result.json",
+      "fresh_sha256": "32f23fcb4bbd1e768aac08e50f74e74d8be695ec2faf20430383e8abd3f5a1ea",
+      "reference_sha256": "ed2e4be746dd3fe3f28df134314e003f80c90b3d053299445b8964425bd670aa"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_3/lookups/result.json",
+      "fresh_sha256": "211d59433f88ab64a45f3c0184dece47b2c5bfcab3f25d174613626f4eac0917",
+      "reference_sha256": "86d1437c53f3516a175ae54f0685b3daecd1a39e34029c34e0950273c279a4f8"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_4/lookups/result.json",
+      "fresh_sha256": "8638d376989c333d5d89e17f824eb8bd7250b71e9d45e4e901c5c79423e16add",
+      "reference_sha256": "e515bebea3245813fcfaef8d3e4f4ff939c861600cd8d12adbc39a0bc9a7874a"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/lookups/result.json",
+      "fresh_sha256": "dfed71bc0c3b74c28d93b70df21dfe5263357f6e2aec87c52a4fabfa988a3282",
+      "reference_sha256": "db089bac406e28fb0618ebd047874b02d5e1b5fd56517ea29705ae933f00d550"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/lookups/result.json",
+      "fresh_sha256": "e9630ecfc919818298011830b923bb022ebb939362c8387c9ef95a24dde01af6",
+      "reference_sha256": "7d6d038741be88ac9d69c79e49d56fdc22b4b1f5c0cd8bf34c9fc75d185abe18"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/lookups/result.json",
+      "fresh_sha256": "c45a5316e26f79e3db1555232d90b1df49bdb3ac150313ed32cd874c0baf716b",
+      "reference_sha256": "8150004dcd1c27a3a9a2ba704061367e7e8b906f2b34e979db3a1b45f71ef11f"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/lookups/result.json",
+      "fresh_sha256": "b87896ff9266df8507064d471db9b0619e32372a88b288449ebcdd7f68e85b8b",
+      "reference_sha256": "99783a64ffb315a1ebf88f96c442373ef695fcaba1ca73f6abd7ec2a0d80bb7b"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/lookups/result.json",
+      "fresh_sha256": "b78765fcd1a24abe15f81d4624fa667760feec469a50770f326a7818c94c07b9",
+      "reference_sha256": "2db1ebcd95f0f4ee0aa91a39b4855aa521c73aff57dec86a965f46d51226e1a8"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/lookups/result.json",
+      "fresh_sha256": "84889297a8b16a0c523a63b16c741e3122f46f67a64d28880cec501eb40867f8",
+      "reference_sha256": "b1ba20a71107b1ca696b77c43878de2ee21982571f8e84603e2985226475e86c"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/lookups/result.json",
+      "fresh_sha256": "4c3eb07b7b645ef6b1063380def72e5961445fe0c813f536cd033928201c6825",
+      "reference_sha256": "ec11e61b9c6c82824c7162420636e45b3ff2a9c0771b4d59bfdb5d183c095099"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/lookups/result.json",
+      "fresh_sha256": "b9d27ce561f779c2aa1ef7efdc64540e42656347e886d5303ffb5c68ca3101c1",
+      "reference_sha256": "a5d85dc3d845d3003c65042ee7be50b1210f42b669cc3d7414e6de715343c8d6"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/lookups/result.json",
+      "fresh_sha256": "11af2b03fa5c711392afe6a1c1e4b14706666bfdce432d44ab69f6e4daf15b07",
+      "reference_sha256": "2227d239f46d3d6a8b1a95375b4d95efa3fb6d23ff650ef984687b6c6ca8f4e9"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/lookups/result.json",
+      "fresh_sha256": "c7d607805fc4e630d04d9e604957ceeaebbb90519a4858aeba10e92367a97cb0",
+      "reference_sha256": "49650b2d273a3717fc99ece010a457a944722d145ced8a16d3af003f53e6b0be"
+    },
+    {
+      "path": "geometry/_diagnostics/mmlu_topic_preference/report.json",
+      "fresh_sha256": "83176cd77041aa9db986af5f9e05c88d8a1bb7e8b7559f451c2a6cd93509dfb6",
+      "reference_sha256": "c9db2a01e9bec88175c0b590a5acf510f1daf16a50529642b41e78b09ad6f069"
+    }
+  ]
+}

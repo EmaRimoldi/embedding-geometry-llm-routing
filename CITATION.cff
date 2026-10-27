@@ -1,6 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this code or build on the study, please cite the paper below."
 type: software
+version: 1.0.0
+date-released: 2026-10-26
+license: CC-BY-4.0
 title: "Embedding Geometry Shapes LLM Routing: Experiment Code"
 url: "https://github.com/EmaRimoldi/routing-theory-reproducibility"
 authors:

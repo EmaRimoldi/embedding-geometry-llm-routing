@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-26",
+  "source_base_commit": "2548b6aaa30acd45a862ec3ba0d6237ca0be578d",
+  "status": "passed_for_documented_local_scope",
+  "python": "3.11.15",
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.14.1",
+    "scikit-learn": "1.5.2",
+    "torch": "2.5.1",
+    "pandas": "2.2.3",
+    "transformers": "4.44.2"
+  },
+  "checks": {
+    "regression_tests": 28,
+    "baseline_synthetic_score_checks": 260,
+    "pca_checks_per_branch": 10,
+    "orchestration_categories": 17,
+    "numerical_tables_identical": 7,
+    "fresh_outcome_controls": {
+      "passed": true,
+      "fresh_method_scores": 598,
+      "saved_metric_comparisons": 3588,
+      "maximum_absolute_error": 0.0
+    },
+    "fresh_cpu_diagnostics": {
+      "file": "release_provenance/current_checks/v1_cpu_diagnostics.json",
+      "sha256": "94fd01f8a43254db5363f16e510f85d33f511bf21ffa5d74d1784d2b5224fd48"
+    },
+    "cff_schema": "1.2.0 validated",
+    "metadata_versions_and_authors_consistent": true,
+    "all_44_reference_table_labels_mapped": true,
+    "local_markdown_link_targets_resolve": true,
+    "license": "CC-BY-4.0; official legal text checksum verified"
+  },
+  "limits": [
+    "Full-scale embedding-based router/SharedTrunkNet refitting was not repeated by this release validation.",
+    "Only the complete MMLU diagnostic bootstrap was newly repeated here; the other full-workflow bootstrap arrays were not all regenerated.",
+    "Zenodo metadata is prepared; no software DOI has been issued."
+  ]
+}
