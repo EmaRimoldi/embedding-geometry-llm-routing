@@ -17,7 +17,7 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 | Complete fresh CPU diagnostics | Unchanged production IID known-metadata lookups and MMLU topic analysis on complete canonical panels, including the prescribed MMLU bootstrap | 20 lookup reports, 520 lookup policy scores, 21 total reports and 24,209 numeric values match; maximum error zero |
 | Saved-result reconstruction | Seven result groups, including final per-model SharedTrunkNet JSONs | 23,740 fold-level records, 4,031 reconstructed aggregate rows, saved-aggregate tolerance 1e-10 relative / 1e-12 absolute |
 | Printed results | Pinned manuscript values and settings, all 44 table labels | 5,493 checks passed at printed precision; supplied intervals compared without resampling |
-| CPU regression tests | Pipeline/geometry, integrity, paper-gate, rank-tie, distribution and fresh-diagnostic/baseline comparison cases | Passed, including 13 baseline-audit cases |
+| CPU regression tests | Pipeline/geometry, integrity, paper-gate, rank-tie, distribution and fresh-diagnostic/baseline comparison cases | Passed, including 14 baseline-audit cases |
 | CPU baseline execution | Actual kNN, Family Adaptation, Ridge, Avengers-Pro and KM-Prox CLI paths on synthetic ID/OOD inputs | 260 score checks; 16 MLP-equivalence and 36 direct-utility Ridge cases |
 | CPU/CUDA SharedTrunkNet | Actual probe, ternary search, fitting core, checkpoint reload and seed retention on synthetic inputs | 20 networks and 20 reloads on each device; cost-once and held-out-cost isolation checks passed |
 | PCA preprocessing | Actual production PCA100 entry point, both full-SVD and randomized branches | 10 checks per branch, including held-out poisoning and stale-cache rejection |
@@ -64,7 +64,7 @@ explicit in the report. No scientific or unexplained difference was found in thi
 subset; the complete 296-record main-baseline comparison has not passed yet.
 
 `scripts/compare_baseline_results.py` makes this comparison reusable and refuses
-to count missing experiments as matches. Thirteen adversarial tests cover
+to count missing experiments as matches. Fourteen adversarial tests cover
 changed scores and selections, invalid counts/shapes, nonfinite values, incomplete
 coverage, provenance classification and protected inputs. Matching saved scores
 and selections does not establish identical omitted per-query predictions or
@@ -118,10 +118,11 @@ differences are recorded rather than presented as an identical original environm
    and rerun. The root license and metadata are included in the export allowlist.
    The new CPU diagnostic gate rejects changed values, shapes and non-finite
    values before reporting success.
-9. **Exact selected KM-Prox setting:** the fresh-baseline comparator now requires
-   exact equality for `inverse_temperature`, matching its treatment of the other
-   discrete selected settings. A regression showed that the previous comparator
-   incorrectly accepted a small change in this setting under the score tolerance.
+9. **Exact settings and candidate grids:** the fresh-baseline comparator now
+   requires exact equality for KM-Prox `inverse_temperature` and the explicit
+   clustering candidate grid, matching its treatment of other discrete settings.
+   Regressions showed that the previous comparator incorrectly accepted small
+   changes in these settings under the score tolerance.
    Validation scores retain the declared numerical tolerances. Scientific
    producers, frozen evidence and the earlier exact-value checkpoint are unchanged.
 

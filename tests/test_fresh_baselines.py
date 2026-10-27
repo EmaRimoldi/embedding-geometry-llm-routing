@@ -73,6 +73,17 @@ class FreshBaselineChecks(unittest.TestCase):
         self.assertEqual(report["differences"][0]["path"],
                          ["selections", "0", "inverse_temperature"])
 
+    def test_clustering_candidate_grid_requires_exact_agreement(self):
+        path = RECORD.replace("/ridge/", "/clusters/")
+        reference = dict(candidates=[[32, 1, .01]],
+                         selections={"0": dict(alpha=.01, validation_utility=.5)})
+        actual = copy.deepcopy(reference)
+        actual["candidates"][0][2] += 1e-13
+        report = CHECKS.audit({path: actual}, {path: reference}, {path: "clusters"}, {})
+        self.assertFalse(report["passed"])
+        self.assertEqual(report["beyond_tolerance"], 1)
+        self.assertEqual(report["differences"][0]["path"], ["candidates", 0, 2])
+
     def test_small_score_difference_is_retained(self):
         self.fresh[RECORD]["results"]["0"]["ridge"]["utility"] += 1e-13
         report = self.report()

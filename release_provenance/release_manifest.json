@@ -149,8 +149,8 @@
       "sha256": "26a34744ee612cfd4225156ec57e096ecc2f564074293553b3f8529771623224"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 11659,
-      "sha256": "1d69e257f52fe606ea8d7fbe4bed89f6c6db697a538d8a5c26f9f9b5306a9881"
+      "bytes": 11704,
+      "sha256": "c9f00feee3524a7b8ead416f9bdf21a6aefd503b5106f6eb71bed15497c1b3eb"
     },
     "docs/RESOURCES.md": {
       "bytes": 9910,
@@ -177,8 +177,8 @@
       "sha256": "1c29baf9251267b49c0bfb5d8280ea592984c273aada8365ad818552b0440764"
     },
     "docs/RUN_COMMANDS.md": {
-      "bytes": 17958,
-      "sha256": "0d71caa0321838fd51341225f659750ac33fb75fc60ea8755406b1d32f92877a"
+      "bytes": 17975,
+      "sha256": "f5414ba6b0754e18f941f545e27f155a9f5147aa42f0d04aa21416f9858691de"
     },
     "docs/SAVED_TABLES.md": {
       "bytes": 2768,
@@ -7717,8 +7717,8 @@
       "sha256": "0d1fdc9d3ba309e8329b912ccb7c75ab142083c68657efbe99456b2286412493"
     },
     "scripts/compare_baseline_results.py": {
-      "bytes": 12226,
-      "sha256": "835303e6178e03e8803ea431114c2606c16fcd17f0d9e60301dc1a715620167e"
+      "bytes": 12282,
+      "sha256": "dffaf3a507b8b5b8b83d76cf97da8fd9274f4a45e35926034653dccf2723ef5d"
     },
     "scripts/initialize_release.py": {
       "bytes": 8052,
@@ -8165,8 +8165,8 @@
       "sha256": "7d79de2b89e54ba1fc2c1dd7168774e464336352efcc956012c687ba1296a9ac"
     },
     "tests/test_fresh_baselines.py": {
-      "bytes": 6842,
-      "sha256": "39f4c4de56b1ed56cef07add69200a0a0b15943352451bc37648817e68db7bd7"
+      "bytes": 7459,
+      "sha256": "b8f15c391944e4238d2728a707633829294cd4e4c408c660ee3eca7b0f217b2f"
     },
     "tests/test_geometry.py": {
       "bytes": 1975,

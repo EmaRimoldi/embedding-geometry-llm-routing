@@ -134,8 +134,8 @@ This standard-library command covers 296 prescribed result records: the six main
 method groups across all 46 tasks, plus 20 IID metadata-lookup reports. It compares
 scores, candidate validation values, selected settings, cohort sizes and split
 identities. Floats use the predeclared relative/absolute tolerances `1e-10`/`1e-12`;
-counts and discrete selected settings, including KM-Prox inverse temperature,
-must match exactly. Every nonidentical
+counts, candidate grids and discrete selected settings, including KM-Prox inverse
+temperature, must match exactly. Every nonidentical
 compared value is retained, including differences within tolerance.
 
 For a valid invocation, exit 0 requires complete coverage and matching scientific

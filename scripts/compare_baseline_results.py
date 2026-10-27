@@ -80,7 +80,8 @@ def compare_tree(actual, expected, path, counts, differences):
         elif actual == expected:
             counts["exact_numeric_values"] += 1
         else:
-            discrete = path[:1] == ["selections"] and any(key in EXACT_SELECTION_FIELDS for key in path)
+            discrete = (path[:1] == ["candidates"] or
+                        path[:1] == ["selections"] and any(key in EXACT_SELECTION_FIELDS for key in path))
             close = (not isinstance(expected, int) and not discrete
                      and math.isclose(actual, expected, rel_tol=RTOL, abs_tol=ATOL))
             differences.append(dict(path=path, kind="numeric", fresh=actual, reference=expected,
