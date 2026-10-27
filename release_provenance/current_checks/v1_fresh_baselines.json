@@ -1,16 +1,16 @@
 {
-  "status": "incomplete",
+  "status": "differences",
   "passed": false,
   "coverage_complete": false,
   "expected_records": 296,
-  "compared_completed_records": 35,
+  "compared_completed_records": 181,
   "completed_records_by_kind": {
-    "clusters": 5,
-    "knn": 5,
-    "lookups": 4,
-    "prior": 5,
-    "prox": 4,
-    "ridge": 12
+    "clusters": 29,
+    "knn": 31,
+    "lookups": 15,
+    "prior": 31,
+    "prox": 29,
+    "ridge": 46
   },
   "expected_records_by_kind": {
     "knn": 46,
@@ -21,25 +21,25 @@
     "mlp_reduced": 46,
     "lookups": 20
   },
-  "method_scores": 819,
+  "method_scores": 4511,
   "method_scores_by_name": {
-    "avengerspro_validated": 65,
-    "cluster_utility_validated": 65,
-    "knn100": 65,
-    "knn_validated": 65,
-    "family_lookup": 52,
-    "family_topic_lookup": 52,
-    "family_adaptation": 65,
-    "best_single_train": 65,
-    "realized_oracle": 65,
-    "km_prox32_temp20": 52,
-    "km_prox32_validated": 52,
-    "ridge": 156
+    "avengerspro_validated": 377,
+    "cluster_utility_validated": 377,
+    "knn100": 403,
+    "knn_validated": 403,
+    "family_lookup": 195,
+    "family_topic_lookup": 195,
+    "family_adaptation": 403,
+    "best_single_train": 403,
+    "realized_oracle": 403,
+    "km_prox32_temp20": 377,
+    "km_prox32_validated": 377,
+    "ridge": 598
   },
   "counts": {
-    "numeric_values": 39260,
-    "exact_numeric_values": 39260,
-    "other_values": 199
+    "numeric_values": 166887,
+    "exact_numeric_values": 166789,
+    "other_values": 1011
   },
   "relative_tolerance": 1e-10,
   "absolute_tolerance": 1e-12,
@@ -47,12 +47,12 @@
     "seconds",
     "slurm_job_id"
   ],
-  "exact_scientific_match": true,
-  "scientific_fields_within_tolerance": true,
+  "exact_scientific_match": false,
+  "scientific_fields_within_tolerance": false,
   "compared_record_fields_identical": false,
-  "recorded_provenance_differences": 22,
-  "scientific_or_unexplained_differences": 0,
-  "beyond_tolerance": 0,
+  "recorded_provenance_differences": 108,
+  "scientific_or_unexplained_differences": 98,
+  "beyond_tolerance": 98,
   "records": [
     {
       "path": "baselines/gte-qwen2-7b/routerbench/iid_0/clusters/result.json",
@@ -153,11 +153,25 @@
       "reference_file_sha256": "f49dcbf0ae55293bfd42c005136e458f91d1078522e48ad65bbc24ab641f6411"
     },
     {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_2/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "5c7305a05f87ee2d31eecc8b76852901a8c7b70143a284896eb5a99136b4cbf9",
+      "reference_file_sha256": "c07fe5342b48a68a7e6b6ac140da550cd25484019496a11d523117d62fc607f3"
+    },
+    {
       "path": "baselines/gte-qwen2-7b/routerbench/iid_2/prior/result.json",
       "kind": "prior",
       "method_scores": 39,
       "fresh_file_sha256": "bdf41e0e47ae85705506aaa3d9f8d75bf3476938f656325829dbd283a452c615",
       "reference_file_sha256": "83731295db059743dcd7173686147a03cb013beaa345dc6e166c66d9028d378d"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_2/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "01441b61b8a931e19e7a3390fa639a1b4a2b9ecc4e0264eb87bb241d81d78f0f",
+      "reference_file_sha256": "7a7e2f87791f16c9b4f5cb6b20696e1c953929294ba17fe9531159b260444055"
     },
     {
       "path": "baselines/gte-qwen2-7b/routerbench/iid_2/ridge/result.json",
@@ -167,11 +181,81 @@
       "reference_file_sha256": "20c07294c99c58b1286713e74307cad1fb49ae53b57ee6b3ad96a709ea05ee2b"
     },
     {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_3/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "1377becee30222dba49330e85fc1a290decfb11671d94cc536f66889a7c3400c",
+      "reference_file_sha256": "737f02bca7c9034b6561598c2959ef17a497a6e83454e13d43b29114abbcb762"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_3/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "25b9fd305ea6bbfdf9792b28c58d00d6691e3bb0e478f8815dde83a055fe02b5",
+      "reference_file_sha256": "56f7e00aff606332166002b14984f082be9fd68c9bebcb67eda30943978b2e74"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_3/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "47d6d8525c99ae0ba00a2a271e8fb2f3e861727084358529bb729be748b524ae",
+      "reference_file_sha256": "34b8410541647e5580dc0c7f3ca7bd59c4d4d04440705971eff95fa5943f2195"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_3/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "fff66fd4a1e3012fc5acb14801cf7a15739cdcbc349b95e109b005a9d77de3a8",
+      "reference_file_sha256": "b6bf0fcaae1e01f22219002633ae7c17658eb21bd45245a4a48fe2a0588dd6f1"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_3/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "0d736575309530ee8a1904f1a460b5b5b4d3f09766dfd62fc3e72e716dac7c66",
+      "reference_file_sha256": "2e5702cca003070fd6bc8c776a850616bfa543b941b5e812d14e5d53dd86c14c"
+    },
+    {
       "path": "baselines/gte-qwen2-7b/routerbench/iid_3/ridge/result.json",
       "kind": "ridge",
       "method_scores": 13,
       "fresh_file_sha256": "2b3338cf2ef4628560a418d8f94a76f1e33e906e67530946caf42a386e671d7d",
       "reference_file_sha256": "c26ac9374970c73c98d4c95fa83616cf2e0e192b1360973b92e79af4abe27491"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_4/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "29f78cd382cfc8976a8214ac28248b09cbe6f1c5bc7179982b415bd673667dae",
+      "reference_file_sha256": "49ac7d2d33351d5adc49a2497b41b260eaa7756b48d24d24138a2e4be03dfd66"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_4/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "a4cfbfb4520b643a76f5c04efd531c2ab4a9f49ff53e778c7c7abbc40fd0f07f",
+      "reference_file_sha256": "70a1336df5ebe9b5aca15f78cd68857494180fde128036ce6e7903fc470a10d7"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_4/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "5623b802e63f265f7cfb2f6026b9bc96cf2a2a2580c52451c8a6c0b633ed48df",
+      "reference_file_sha256": "8c1f17601504e96ac937a3ff6c3d31a59a08ec3a00832455be003bb0ee767461"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_4/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "80ec45abe87e36cb8f485f12b2b26b16ee2f8aa5497d9d10f03e5ca1496438a4",
+      "reference_file_sha256": "276a6e65ded94e55cd39cba9fb8c9b92438077e9ff65611eef879e078a9f5692"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_4/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "cb5a527e078662cbf6344336d6a6b1da1d3b66cd27100001b583947b4f0f6091",
+      "reference_file_sha256": "683871d00130957af0f1ae826fad80fe6648035dee90d49528e8c252b27de5cd"
     },
     {
       "path": "baselines/gte-qwen2-7b/routerbench/iid_4/ridge/result.json",
@@ -181,11 +265,445 @@
       "reference_file_sha256": "84d1560e6ca329848cf11651cdbccefb934dcf071edda76c8683dfa47aacd8c9"
     },
     {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_0/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "a0a2d0565541df77af2c90bd8b93ad804e6179b67c57f49dac22ab28bd1e8ec8",
+      "reference_file_sha256": "a504dc3fb087f074ceaa6339c358c78903892cab2656a687d5d8d2857317ea82"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_0/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "10f4b34d63a4623966effdb549850e71c1ed0785a4e4036efe404df964e2b8bb",
+      "reference_file_sha256": "0d6bf886b7a4da374f159ae2482116a5c3ed9e8bcdacbb0f5fbb50bc1a68baad"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_0/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "05a000b6ce7dec3d468fbea553e7bc38b683e1539b6969d17cd4648c6c8e04da",
+      "reference_file_sha256": "849816973f403b007be03d0b4635b3dc91bc9877139587287aaf810d6373f5f9"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_0/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "554297b7c464fe36fec95203deb4afb1d231085d18559428fe54bd0a0510295d",
+      "reference_file_sha256": "2689f2cce6a0e004d90a7e982d783a8d6d6fd4acfbec7ea87f79fe851588937a"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_0/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "5d856a9829812ae4d58464996cff05500a3025d924c79c3e4a214121d5c14422",
+      "reference_file_sha256": "3176bc2ea5ac6a56a3cb6b6c2140f558b35f85485a99293968bfe019b1d83e0b"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_1/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "b4acc16a5798ea09ee600538a01af9bbc0c96a30c54a77c881b5fd4a414e3ed8",
+      "reference_file_sha256": "c9fd984a3a0cfb9b4975b9fe4bec137a8ba3eee319ebb3f480a370c71771a67a"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_1/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "567f8fba99e5dc388975903c40b8a5a143da9abb891e937054bc8b1fe922f02d",
+      "reference_file_sha256": "67df42af61933aa6ab5d5f8b267cebc7220d9de98fed1a2e419ca83793bd390b"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_1/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "c9489afaca11c6c8ac00c443300ed8bd99929dbbf08211dd0387895cc4c77eb1",
+      "reference_file_sha256": "da2f0fa77a0abf48828235bae901f546ba2799b333b5fc234679d19814b67a9a"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_1/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "570a10b872c09914beed828d467b10f79b1a77ff2425a424d9a91257be3cff88",
+      "reference_file_sha256": "bb7e177582526d933ba09126b0c9e656ee3a243c89d5e621d76d2951c727dcd5"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_1/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "b3787d4612cec49e221f6f1254e532a1a0ee73d038e7ce9a1c31b7e3d0d5455c",
+      "reference_file_sha256": "40a66595cc19b2e5a298c842319101c17de9f645666bb434ff267c2ec3601aae"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_2/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "6bf28578f080a54ceddd1969eaf1a018743066b751f388d49bc26a55a0e558f0",
+      "reference_file_sha256": "ff177cfa230a9ddc359d10346029e75091f0ad5411c4e1afe46b3e312ab2dea8"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_2/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "169455b91c8546f26d1c5f9894f08b782ef9d0a5183ababec5bd07e55b357cd4",
+      "reference_file_sha256": "425b037c5de369b36bd11ac31798b1d8f1693e686a72d3eb4230a70ddc95f74f"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_2/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "1d9123cfd5f2a1c8de1f19ad3431a918e70c3de1c3eb71c8a0976452e1246ed9",
+      "reference_file_sha256": "af82871d29fbac000cb7eaffc17e455c4932a9ecbb83d7097bb035d7d2d034c0"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_2/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "e4079977da1b5a561ed04fd3f1309e89587ac01cebfdf8dd0fcdcb3df11b2e44",
+      "reference_file_sha256": "33f6990d6caeff972019ff329b905618634200fe0f78127b18a949fada815fc2"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_2/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "3746c88d40ff68dd1c00cd170b7774596fa028113a001655fe3b514aeb8a48b6",
+      "reference_file_sha256": "3f439872bfab2548178358f57abab71000bc82d80d5810158683c01d1f693fdc"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_3/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "3f99da3513a1a600d0b943dc1e7711a0fd5f6c6c594ff892bbc73cbe80c7b27b",
+      "reference_file_sha256": "117ffa1722662a44dfd4ddf1e84c860b6c68ac4613662e304b345ae36211d2aa"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_3/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "5434feca7c9ac031a5fe3cb9dfaae702c683ed2fd6b19969bef0f2f5afec901c",
+      "reference_file_sha256": "86aec3501bb65692fc852f1b44895cf19d7cca675abcaa98a24cbc48c7d34e38"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_3/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "001f7b0908d353ccfe9089f36a4a4be6b42c491f29e925372531efdd41fc16e8",
+      "reference_file_sha256": "dd77e2e23743e4c9d7f1b974e82071d2726346f31f0d17f4307b8b62f22fed46"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_3/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "9b613ceaeb111add270d6fe5230da1fc8595ad96f3b00f8d58657de4b1d00ad1",
+      "reference_file_sha256": "dff34fbad7ff2b7ab587e6da8b7244717a0bc90336a4c061bc2d871dc17f2431"
+    },
+    {
       "path": "baselines/gte-qwen2-7b/routerbench/ood_3/ridge/result.json",
       "kind": "ridge",
       "method_scores": 13,
       "fresh_file_sha256": "2abd304da3cacf504eae496e20ea3f35c8421dfbd8fc34d92efec42d476ad066",
       "reference_file_sha256": "ad1d2b09f291c62e231508c47b5e1c5814adb52b9ff77c87adc4e6042fa4bb26"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_4/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "d878b0eaf7c580aa31c3041823abf728386e16d771ab4ac61a61659bdb4b8f25",
+      "reference_file_sha256": "c90d2b35ad1822c29f71251e3112d4605fac1fcc0d93a83a27439bd30922355e"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_4/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "256729039792125ec68ca1b484c2ffb01215b6e40e972c99dc7d126cb9d9946a",
+      "reference_file_sha256": "66e97447bd3416bf9060036a2f924a93cf9bc78faa79175bb0afd00838c78ee0"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_4/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "604fea0ade6c8b02e119f34a90849db57ecadddd87021a8679a167fb901d05bb",
+      "reference_file_sha256": "22c06ced92eb73334cabe43c6075514e350ab0e0d10694fdd3d994ca59da1159"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_4/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "17f8cd4bbd21479f410cee74da8ce3b7d80e729dae35c499501aee5f49203a55",
+      "reference_file_sha256": "82aa21d3d930d7af0af6c46a8d9e98f48abd627d4914702208b7e8b3582a6963"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_4/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "fc2567fe27910a5e43bb3188d573f61ce4ed973709d213b198c04665e1327ad6",
+      "reference_file_sha256": "d983680af972fe479ca39c327382399432087c1c3f6e04d7ed79a1194d61c2e9"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_5/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "f63ce01b66f620a5a2566bbaa8973cdf7ecd1f234fd01905ab4bcb50dbfa5860",
+      "reference_file_sha256": "2647c4adf0f2cda90361d1aa62147ea0eff17edca3732be7817fcce1e6532261"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_5/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "12c1fb43fd2f921beee705d9813976ca9d247ad28fb3d5bb859bdbb9f893dab7",
+      "reference_file_sha256": "8b7988ef0f3480d89ae2d9287eee98b668a2277e63cae26916c2a0806cc4d5a0"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_5/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "e4b51484070acb77ee9d9faa2f4168a601ec54fbaed9f771cf87642373ebd427",
+      "reference_file_sha256": "e8203fd02384652557cf169a9ae904b7bd6e7b6ded0bc9f51b2ad77bc4501f64"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_5/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "51efdc82aa5bd8ae8c0e3fc7f47722671ffcf9742b36d1563bc578c78f4371ae",
+      "reference_file_sha256": "869a22779e3735bafcbc67a5e9f266020550cf22130ab60024064299aeffa4d6"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_5/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "1f23af5983804dafab172f03b0a18cd25ade3e8c3cbde2df7b9c2ec2ccbb92a4",
+      "reference_file_sha256": "1d963aa783fd9e5d6f0f82cbf006894c17487b9f8f1d8553daa6aea714ac662e"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_6/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "1470f75e5edef0b829ab17685071ed8c0c1d7dbbd0d7a7533438a3cd0aad5ad8",
+      "reference_file_sha256": "faa566cf369d9c7bba3bde5da72a67697286635fa61773cfc5048c06a53e1787"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_6/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "3d11e964e516d5662b14ffe77f45a8e0512a5eea39a8e40f78f07437db2b1149",
+      "reference_file_sha256": "0b330476a3ee9469a7474e8b586023a6f017ff0d4b44c29574e1c6245de0e3a0"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_6/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "0da380f5888a581b76d6e404bd30cb87d81a6a4b5c18694db5e787bf7a571dd1",
+      "reference_file_sha256": "02641bf2556f81635d1771d8fbdccac3c8be3b939664ba0c0aa195cb1f8ce93c"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_6/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "1b01e52a6163ae6156b57490c5524f1c5893846e194fcffaf8874008e3dd7501",
+      "reference_file_sha256": "336c7a091c20794c3a4da74bfc1d14aace52e1ea9858429f6d63ba713abaffa1"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_6/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "aedf06244d05bcc2195fe25d3d5b91f22e10d53055d3077e2283ff0b45503e22",
+      "reference_file_sha256": "fdec63e1611c38033a04aa10b3800f55018d90798a4096eea1df15bba6d9f97d"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_0/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "abfabd3af129cad02ed7d83b64b93d1d552dfffebf382d287e14c44071c253d9",
+      "reference_file_sha256": "294e8067dbcf5931cac4fdddacb1ea3d8e6e9d34b8733ed6954e7634834658b2"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_0/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "3121550a840775db385b752959401bccba5bdcbfc1eb4753d4e2e834a27a30fe",
+      "reference_file_sha256": "a1d60afbc85faf186e3e40daafb0bd134e83ee93997f4e423386c39294769458"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_0/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "64d26f43f2aa45e90bf867e096980059bead535c739fe50657e9280d6b480411",
+      "reference_file_sha256": "279c634d64f095517ebc5a65d4f5fbae97d2f6f3dac70d09576d9e89e4c04aa9"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_0/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "b77e8653d09a651b68f6ba638abe17dbbb48601e55108c147ac8190aff103977",
+      "reference_file_sha256": "b433561f13a8badf4dbccdcdb0c735cf1460719a5691a3cc014a04a2f3aa691d"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_0/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "90ee8793062f2bf2ab35a38aa19ab2b6ef1ebd76d6684cf70c8860340be35f52",
+      "reference_file_sha256": "19af455da21a469b9301695aca5cda08a7575bd7004187a0035a547c12acd5fe"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_0/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "2e11aebcd27e23d9fe83f043b9f940b5304d08896af17713d0e0837cc49dd2e5",
+      "reference_file_sha256": "e09dd0066595108eaac95402834e1fbfe8ff6a78d63965d1641567bcaf53d04f"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "aa5eed32ee0bd3cd6c1427323a108fe499a3653b725ec8714d02c467d3a688f3",
+      "reference_file_sha256": "5e4f9aa6942f23ad21f11750f1df5be8979de6a1f793f79174f4cffa39d66256"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_1/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "5bace07cc155b107347846fa7941182f02062548391fb0f77618100bc2ebeee9",
+      "reference_file_sha256": "0948ae4e766b56b63d0f6591f0ef4ee67d0f3c61ab64393b52eb8ec629937d6e"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_1/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "39a203d11ce5a7e82038366428dab9d4f391b6e962bdd0cffe5b744723ef81b8",
+      "reference_file_sha256": "593e2b37210909147aebcdce27cf131f62c953fd9d18ea98488e155414dd98a8"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_1/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "fa38cd6bed82ccfb957b508af44ce3b162f2ef8aaadd2b33f05c3168c5a5371c",
+      "reference_file_sha256": "bfe380fb8e3f3d7f186e472cb533d7ddda6e021ac2ed1ae43db840f2c90ca092"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_1/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "a22fcce4662158567464b0aa23e96ec669a8262be5e106031a13eeca825d88b3",
+      "reference_file_sha256": "686d55ad38f4df85674bc2b4970f689d8b7216ef73d7039164c553b5b0167cb1"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_1/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "d4979bb1e978b4a3618143a23a639780ce1c9230bcbb6f9768898bedb78f2911",
+      "reference_file_sha256": "e680d057939b5efd2ef5992a2cca74d7c41d8497103a18255fe3d5bdf0116d0b"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_2/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "b5334f5f9251a7bb8145ce58c945e3b5fc9f76c1a784f77a4e68617c536b313e",
+      "reference_file_sha256": "95925ca931ba2fc364edac43289ad56afe7ecebc98b1a5a8df5c5d6d5264b964"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_2/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "5bd29f8e09c5bcb45b31e4146b9859068ba211b491cb50e3bb81512b6ad4e7a6",
+      "reference_file_sha256": "2e32587a719e4571946f1490fed835af75d74b262b3bdb67180a62b99ad8ba58"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_2/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "32f23fcb4bbd1e768aac08e50f74e74d8be695ec2faf20430383e8abd3f5a1ea",
+      "reference_file_sha256": "ed2e4be746dd3fe3f28df134314e003f80c90b3d053299445b8964425bd670aa"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_2/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "00396026c1445eab06cdc2e94ab1c758f7385a9db2e8e6d4261417314a6b9b25",
+      "reference_file_sha256": "92ef9ce53bc71a4c754dffa6118a0de6956cc639124346eb066f4e3a5ecaba61"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_2/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "ee7005b128d3b7c982221844d83159169a375ead7d492fb22af1b4ecf3fedd73",
+      "reference_file_sha256": "39b1bd7b39015911649b23429c72754fb8a67c196ef5125e36bff677a663ce82"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_2/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "93c6bcde4c336b012e831a485a5349b80fc52e39eb1a57871afc610f6456a443",
+      "reference_file_sha256": "b5e534d9e7253c6c303e15348fc49bf32c7b1ba8f018314bdf3c982c1443b527"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_3/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "a264d32dbe1e96e52e101eff161bf12608292b2d7e7d9749fc598983c8b1b77f",
+      "reference_file_sha256": "e5b6f7d22d06b2a1d5c35b295a6bea2395134a945603040408e100347d1bfab9"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_3/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "a9333dece7ec2a44c7e7d2d181c6ab5e6e05af32957005aa0a7f7c43d53bd8d1",
+      "reference_file_sha256": "e7762bfeeb93f6847b765cbbe5642694649e75e0271669c3d48929c6e49726c0"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_3/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "311c5db40e4f7e59dab69a15364f38b77e18a2bb152f55599e215aaa7f7d0dd0",
+      "reference_file_sha256": "6127eed003025e84dc6039161693a7fa27b64f94944d0260802ef211b9882540"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_4/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "7f1ac02e121a914bc327811a87fe6eb2e95ce19013af911457dda571022b8605",
+      "reference_file_sha256": "3802649b1848303a70dc99acf3ce215887bcabe2cabebdf4b6967ebb93f9422c"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/ood_0/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "96e5a2f4ac9c9021cab3e3fa7d855dc1474b799a3c2fffc9c7e197fe626ee56b",
+      "reference_file_sha256": "12613f08346b1710bece4639403de41b3381aee7798e47e590d8123be5e5aad4"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/ood_1/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "e56baa04b3618a7d5b3303976fe586f1b6585758dbb9a5dcf5f07dc09b81c4c7",
+      "reference_file_sha256": "a30094b821e3d127d1e7ddf25096dd9afa249469f1787df8bf520cca02aa0dd5"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/ood_2/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "096012cb16a277a8d4593cdbd698acd5871b610e56c526785b400dbd0285456c",
+      "reference_file_sha256": "bcf6262a2cc4bb64bb6dee5015a09dff27f5e0012638fee40ef52123954471b6"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/ood_3/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "234cdf988231294f700a5b85f1478f209be632593859cc21bb9b6841e467aa50",
+      "reference_file_sha256": "d82c9d07724f63483c012710967e74ae364e43801ae90d068c94d112dd707ed8"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/ood_4/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "53157797452fb60e5ae426642e53555cbe7633c3e9ee9dd0f0b21d09ac2d931e",
+      "reference_file_sha256": "bd554b0dcccef149edea43aca0b2b36a0d5d333b92eaf9dd611ad1ba8e62a896"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/ood_5/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "f5caa3f52b95b37743f6f02a9107565361e08918abf767c46458fa5af850c547",
+      "reference_file_sha256": "a6f72acdd777b05073aad92fbc98936525f7775578280bdef7a14eb2d51ac40f"
     },
     {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/clusters/result.json",
@@ -272,11 +790,81 @@
       "reference_file_sha256": "c471d636f3d8d350e470722f3494dd42fdf2b9e9f6c9d41733b5b88d9f414873"
     },
     {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "e81db41ec3028d0242a1852881ac46e58a068b2738d8a21542f8c724d97cbdd5",
+      "reference_file_sha256": "b4f86a84b6e72a587b0eaaad3b63604c9f483c9c00e1c15e23406666fe8cd9a2"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "39e83412a5386f8e789944a67959e8c1c423f0ced16b9df29773877027595582",
+      "reference_file_sha256": "7c053276a355dd214d8305acf1e17b55c04d5d4322f3d48d8eb1c48976cec66d"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "c45a5316e26f79e3db1555232d90b1df49bdb3ac150313ed32cd874c0baf716b",
+      "reference_file_sha256": "8150004dcd1c27a3a9a2ba704061367e7e8b906f2b34e979db3a1b45f71ef11f"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "2875d399a70a5955d738f00ecef8b19d639fe89404b6360c0d04a6dd56358a4e",
+      "reference_file_sha256": "63b8fcb0ba47dcba75002d456c2aaf47c48690959b67bddc0ba857a2b3a5996d"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "79f7a50ead3a265abada4789ef0ada0a71c4a690bd59f1b3d8f771719ec8814d",
+      "reference_file_sha256": "786f019aea183574252f7614659a5516a2ad6bfdffe6c51a688dee2e16fa794c"
+    },
+    {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/ridge/result.json",
       "kind": "ridge",
       "method_scores": 13,
       "fresh_file_sha256": "b43a3e7c68bc6982b0e71df27d9c33303e01fa6b2a24d9d2811214b753820199",
       "reference_file_sha256": "46b23f19fa7316943070e3f9641d923fdfa05bceec9dc307fa2157cfedb85cc6"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "494d03c0956158eb16fc4bf6275f31d01f11ec0f3696f4a1c73ef508bb22aee1",
+      "reference_file_sha256": "931be1d3661da79eec0d5ee9f4e0d49642c6d5cc0a2a0e671c0cd216c64687bd"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "10539e32b6f28138c6b986cbf1322e1fb3f8bc2ee385940aa4fd30f84425ba25",
+      "reference_file_sha256": "d2c594ccd9e9c2b59f010a28b26878223d3d49d482dbae0fe7ecd40d4845bacb"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "b87896ff9266df8507064d471db9b0619e32372a88b288449ebcdd7f68e85b8b",
+      "reference_file_sha256": "99783a64ffb315a1ebf88f96c442373ef695fcaba1ca73f6abd7ec2a0d80bb7b"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "f89c08b6741bc02618400643d4d123e2740881a263c3921f8a75ad616dbb09a5",
+      "reference_file_sha256": "1e3da125a31a27d3bf2ec109621b4c56d9179c0fb57e41ffe1d0a78612b77c1c"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "d32f6540df318a5321711a3dcc40b8667cd0624c732fc4dbf523576dd053e88d",
+      "reference_file_sha256": "3d7788d00f435faad1f03e10e571bd139d8b318c87e6c70944c8a301b986f9ce"
     },
     {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/ridge/result.json",
@@ -286,6 +874,41 @@
       "reference_file_sha256": "a94fdf5d1b4228e1177260547d7964d73ce802485729eccb65c90d8a3b8e9017"
     },
     {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "308b728afa5a2a3f5ef03898e177360085e262bbc4aae1e9308796090f0b6582",
+      "reference_file_sha256": "0732dff8ee002a7405c93e312b9e2d4ceff396f9789ac2a6d47b0c18cbac674d"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "d29046a293db6c3186e770b3f6ee00c851978f9421d94c1290606b9d01c17963",
+      "reference_file_sha256": "767b6f6fb670be6a3da8902b50005f78866589d55047741b0042de42d29e83d0"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "b78765fcd1a24abe15f81d4624fa667760feec469a50770f326a7818c94c07b9",
+      "reference_file_sha256": "2db1ebcd95f0f4ee0aa91a39b4855aa521c73aff57dec86a965f46d51226e1a8"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "fbc7e6a7225cd9671f31a37b7d661b5a6a7765537a85643546a5d8f7e31fc9ee",
+      "reference_file_sha256": "227a05ecda4ad1b758435e797e9cc50f2352c8ebc296793f034ca39c35d9ff83"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "63a31927051d6cdf0bf1937df1d0013921c8ea7d7e2a38e7ab030534bd3e6ea0",
+      "reference_file_sha256": "990fc189e5265b0493bce4ecc391a7cdb428e8bf7d87cc810923b13fcf616469"
+    },
+    {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/ridge/result.json",
       "kind": "ridge",
       "method_scores": 13,
@@ -293,11 +916,410 @@
       "reference_file_sha256": "862727eaf01889390346ba4fea017ec215a5b2affb42759546732bb181863f8c"
     },
     {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "9ad9e3863489cb22868524481e9b654ee77cd795a7bc619c5dd187cae87f5af1",
+      "reference_file_sha256": "693dacb0bf2f2b4d2cb58979dd2670ba40351eed44520fa50d3cd0891ca16dfe"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "0c6fb91fdabd113e9ea9555d4a711d7f3ff661e79c936ab5e058705a33d99dca",
+      "reference_file_sha256": "286b8599f922d46c779a7036a1c32999212f15605d4723328a9e59e2161c65c5"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "ff1b9d472a911aef5d537c9f12f3e4b5b65e0318ebb6b05cafe8133e8623d361",
+      "reference_file_sha256": "65d7808d778ecb9502e90aefc62060e96376df4113c911d0e10c62e3bb416f31"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "6fce7b1d2db7c346cc044ac0a14f1d5e59d606b8e8960613a8402ba0f30833a3",
+      "reference_file_sha256": "87e6a24c895257dced678c5401956a443de745b78237ce800344fffd776a9655"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "61c51d2f529190d891e7fb13746b1e38acd1cb76b1d280a30769fc719a236a38",
+      "reference_file_sha256": "04ad973e79028263d1dae4c683ec9a26cdf360bfccb03c34a33d661ee4ef21cc"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "eb3e3fd4981c46f36fb1be8afb78a5aa28b23f415a8896bb6b74c55ebf97a3f6",
+      "reference_file_sha256": "8a51d39864ed6c321a0d6fc7985bc025b6686202dfd44332d6ececd45cf20bed"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "b805d35b97b0e0ba40fa6d36ec395539d981c8affc9214573a55db09a2a93ca4",
+      "reference_file_sha256": "31901af287b14add48347c054962f0862b34c8380068e1414aaf62542b58db03"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "a3349f635bbfc8a60775fc82418efa434d23b74101f3d293451edb0570e79297",
+      "reference_file_sha256": "34394623ca76762258c7d78e25ea817d8446dc56a11f42f7bc3e4b669a9e8335"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "d821147783d569a016890d661d23790cd86a5d3f3c3b061cb2a21e83b459685d",
+      "reference_file_sha256": "928feb1cf9db92ecdecffdd591a850e7befad7a025997a411e711887619dd567"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "d6656ef9618921695c59067fc6b5225144234da39f16abc90db2f98a4a206ad8",
+      "reference_file_sha256": "cb1755f7dc8fa11cb6612ea2002b0a859b3e6d2c65e7fbf20b9719a4cac1d5fb"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "3bec2ae3fc26f98d34af7e789e9421624f72b5811e5ea5a1e8480df23f491640",
+      "reference_file_sha256": "a8848371cf0a0407ebf80a246ed648b81a0bebc01a6bb60842bb3257c9c3b784"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "17dd9353fb47b8e12c984fdcbefe218845dda96050b429968e3f92a427c94514",
+      "reference_file_sha256": "93f653c572d4937f9ac8d7cb8e43ffae9469ccd12ff496c790bc38957f4ce6b0"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "cddee3536dcd1264feea8e502f3d60a0b449e995ad629c78f96757e0b5a0baa9",
+      "reference_file_sha256": "33a2f33ae01a74e62a3dd2d9e63cc4506d8f55cf66ef3ce1147a24fed2d19aa5"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "802c82d029fe3ac04a5adcc9d5e7d5812d1bb6a8463db12e6e1463a03f9c429a",
+      "reference_file_sha256": "f83860a3bc7a53401494a4c3af64f231a6432d02d64e987dd429b4394631f3cc"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "c07f60ac91fe7fafd1cf6163e23fd13b69ddb41a4f30b87afd0bab9704ac75f5",
+      "reference_file_sha256": "a46c6e8e4328a773f00eb9bf874b46c765cc988878aa0e1e110e9bea80b6572a"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "61726e8930681a7ffce675e21d5def13dfaeefce3f4612e3f6bf2de046c924e3",
+      "reference_file_sha256": "78b5d123319c727b580ae29083931111928bacebe19d7ec93fb78941d103fa02"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "ecbadeeaa2674c8bd2ae4a5b087ffd2186f4aab4d300cd57a2cc40a71628a1e2",
+      "reference_file_sha256": "c3120de7833622e2ea7f71e83a9196dbef5d8356aa85ad07013f9d53fcf707d9"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "da06dd0a08acf98f7bb30082b06a7cfb6211f951942fd3362e2d2611ba528a13",
+      "reference_file_sha256": "575abaf868fe37b238957d99ed05e376186a8cf8432ba8767f8480fd3f4364b8"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "902095bac6ed192cf8218f2ece7c66be630998315ff1320ea75dc42ff7dcb234",
+      "reference_file_sha256": "75cb4cec56bd6ffe955a07fb365bb1bcf0523ded8ed58ba68f5e493c3e062e77"
+    },
+    {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/ridge/result.json",
       "kind": "ridge",
       "method_scores": 13,
       "fresh_file_sha256": "bb97f30aedfdc830eb48bd39764cc4e09b39312ad2bb59d440f4212a6da7e5da",
       "reference_file_sha256": "ac765307dcc8de683ce4ed8038c91a43c52798b10f8ff8d625b19fc5bf3d9145"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "ce4f98138577a7e4bcc1ce796c4e936b97badef647c422e2d877c4a5baeabdb3",
+      "reference_file_sha256": "8e4b5955114f29a8b96526ad4b0b97399c4d6e38608ad91d11489527fb755414"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "8b5a918e023c542ca6dd2642a15f327b2483432b0fc2f09822878461d8e1eaa0",
+      "reference_file_sha256": "67fc902c3f26f4a8bd7ab27b21ea2b96481131e399d0733e1f98937cea1af312"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "ebd762682b6806028df6835df71f6e7ad562560c428197f245b08d055a6ebf03",
+      "reference_file_sha256": "0b00bd551d1d767a025dcc1a4f3cd796fd2b4ea61f8996979740cb787a2019bb"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "22c5eb3ddeb7da940a7961e5511e3a27d125c86a6a109897b35de7174a710a30",
+      "reference_file_sha256": "fce0a3f4d58345bb69354544bf2f8c20d51040ad2ad75e7c8d4976c417624ba1"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "18ab95d42c83fdecf7bbb27878b67a663369762bbdddc421fa97c1758e5a23d5",
+      "reference_file_sha256": "a4125b34a8758f02cdfb72e41f492aa32c50808cbea036705ba709521e25dcdd"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "0abe048fd7dfef79f435f7bc0be033991b2705fcefcd042f01f5d75d248f7553",
+      "reference_file_sha256": "6701c2d3bcdaa9e85e5677359d763354ed41c60453c3bd209cbbbd4debb70fba"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "5265a9267f7a089d511a341fd88b87cb938ac8432a4ee81a4a34655eddc1610a",
+      "reference_file_sha256": "86b080ab0287a3f6a0a040526ded530a61afaf1e799bc856878487473f10a852"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "7e408e8fe31c0e0badf91117587aa8ed32e39f18ba74d635d0b409e85c891e43",
+      "reference_file_sha256": "9a86c1d781e277769e8a73ff5a1dcaa4a6d004c52dc7ddd4c869ca255acd3d0e"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "bc6eb307011b35f0d1f1140bfba7a6633e6dd8e3d6cfce1b3dae6a311450b173",
+      "reference_file_sha256": "bbaa408ea61a17f28294ed6afddfad3db3911f4164e98e5457e68a12136b2001"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "1d840bcb3c47448d56ee9299303a7f829efa896e6c12fff301cbbb9669adf52e",
+      "reference_file_sha256": "35cf0f6ffc0dfc26c762db97d31abd2afe2cbce7bd9f1dbc791d11b2e53f1f24"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "622eb6cc563857e66ccbcc8d1575744eaae8676ee918e4f09d1d94c51b896131",
+      "reference_file_sha256": "047fbfa4e2ab0bad20a1e3330bfa11afa0d63ea25652ff9874331f96867be378"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "53f88e477ec6e165fca5f23f1eb4dbfc2d7daac4fce274765a1528cab2727044",
+      "reference_file_sha256": "60a2187b18fe8a69472a9ce4a5a2d4cd839443e5bb2b32dee97bd31755a8afa9"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "26e31d3bc7802bfc0e8ea5bde932472b82e223d32c93763c7d081b596cf6e6fc",
+      "reference_file_sha256": "c8a02caa5957fa37b87afc900b153c86398826a708a4ddfc7cc0135b5ed6f4f2"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "a8f6931d71a4f75012bca12c57fbc3b3db7447c9dee30acb35617c5ce5a1f78c",
+      "reference_file_sha256": "f25a9a02df4eb4f4d232bc660ca32c77e8fe9b4a76b75b5350c1ff190ff90c85"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "6bd5db6e662e8c4d4f490d0c086cf4b8c08b9d461bbd61ade101e08927486ae8",
+      "reference_file_sha256": "695a9863b4a2e48a16e89a3c2c83782152ac789dd2dded9e8c0f43d9ee3ec9d2"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "ac49655f1e2382969fc34a32220afc1f9ea793a0d2429156547141b62d7731ba",
+      "reference_file_sha256": "a678f3bdbebfb3d2243249c83f388885d955828d2c3d2adc8b3ae7970cd6f174"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "0dd257ce360f5323740f3c2698a04ed8bfda4910413a2da51a2d427d1dc04ce8",
+      "reference_file_sha256": "cf49cd0b950d809db1b6ef4b00314d02bce23fd7f36a56a755aea38c09039587"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "84889297a8b16a0c523a63b16c741e3122f46f67a64d28880cec501eb40867f8",
+      "reference_file_sha256": "b1ba20a71107b1ca696b77c43878de2ee21982571f8e84603e2985226475e86c"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "7d8c401aad366f3a5f8c0594ab82522c877b15454bb606b172100f0a3e12940f",
+      "reference_file_sha256": "46f9e5f920d7d7a2153e90db81baf5afdcbb2dedbc4c9bd2004f21c44c2a8a2c"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "b693f0ad18675ee4636546c87cea566e3820c82cfced821933883daf2be972c8",
+      "reference_file_sha256": "ac5f65e701ea7de1428bafa260af0bec30d27c7cdc220402dc75e2b54451564b"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "2e09a53fd4b43989db40d886ed6a56842c2b36604cbf13271078ae27cb4d3f0f",
+      "reference_file_sha256": "03e46bbd2513e62897072b35f828814c62270f4c2d4939b97dccd3645041b22f"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "885bd9c9aa0aa6e07592f89d519f09d61db7510e7622eb91a1c037245ff9dd9a",
+      "reference_file_sha256": "77145e2106ec0753bb24183bf5ff458baa930c0f093c3c2dbffadbf501a2b0fc"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "8548745a6e616c4dd4fb474dcb143979bfed11ffc22973942f6965a70767a95a",
+      "reference_file_sha256": "6a97653d4dfa586a28952011de6bc6a0283d7800ca316b4bdbd78da5d1ac8d87"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "4c3eb07b7b645ef6b1063380def72e5961445fe0c813f536cd033928201c6825",
+      "reference_file_sha256": "ec11e61b9c6c82824c7162420636e45b3ff2a9c0771b4d59bfdb5d183c095099"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "bc8b7c3d38b8c3cc52af8189b3fff8307364cf3f152a72e905c9596e44d318da",
+      "reference_file_sha256": "f5aaa9e5feaad621c588982a2bed96c859369146749068bec5ebdc4d0901cb22"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "923d9be1b28ce24ab563938875e84448414f981a5f77cf75f0fd7e27b76c4482",
+      "reference_file_sha256": "c512f6817245d7f7a22104f046eda4b710e8d3c90653616d293a008dcea04574"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "801a2c1be0720ee4de314dbd4ee727c61a60f289f5c391ea68a2802a8ce9c147",
+      "reference_file_sha256": "8caf5c859521f909773ce5ce468504704deed7162594b8f866e6b3a27b7df824"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "08e65e0d8b3cfa3b6ec1f4866ad3ff7b9e0ed93bcac66b879222155c15c38bc2",
+      "reference_file_sha256": "04e4eb9a45cc079c647a29bc9a565883049aa25b6214808b796edd47ca870e83"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "97fca276bf982e773161d43c7cd4ee98b3647ed28eed31401b9bd0d153db7be3",
+      "reference_file_sha256": "9820803e955aaf19a3b06ca0fb9510f08e7da2447048a52d9ce0945872a8f462"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "a02c92f75e7265a117ce2c517444a416bad23a8c8ef03aef7cd8958139ea20ac",
+      "reference_file_sha256": "8b6e3a0337a7997ce4635eee97adcde78966f4d9cab8c056297caa48d5ca6034"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "3be4db4094c172558cff94510c3ae2d376405d9cd25047ed18ceb2e69f4b1353",
+      "reference_file_sha256": "d46b0c090d5124de9ecc017d252c0d435dcf7b38b20089d9c0555097431cdccb"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "b76b64aee821a55b8d61a6923afe0765d51b3e436203ee2223b823765f24c691",
+      "reference_file_sha256": "a18defa8f62f5ac7ee346c6065f85168e8a6adf9e241cb8be1f8a3bd78909787"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "217c93740eeb6751d3d73e71c230b6e8b7f5a9b3056b7860277ca5c6f1226e39",
+      "reference_file_sha256": "a52011c7730e91725ad341ac6b8cd388075c9ff38025ea61758ff8071d8b3e9d"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "6ed42ac3830235edb161320a922f61c79d85426493363e7c3fb6ab1c7cda9011",
+      "reference_file_sha256": "00202d6a803f964cbf61efe52d7bc962bf6d8f2ba2b41aab0f36ac95eac89b91"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "93a03f7a60f13a6bd0720a3f68509a3582dd62b2a346d2109ad4f7aeb02bd43e",
+      "reference_file_sha256": "f293fdcbf5e3e009be19bbb5aa65ffe387b46aaff60a3b45ab734f54c168ab76"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "019401785f41278b2c3a5f7c2a5fb5b2691c6b2d53ec049c93433b6f03ac2577",
+      "reference_file_sha256": "1d91bf6626131f79ec9eeacc0b7c8f133fce115ac889a31915c4a41adc466e63"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "68bfaec2d80a4eeef23ba04b4d35d4b5426cf19eff8ddf7488d12c4577524b9f",
+      "reference_file_sha256": "8a5c51d5b749a32317fc389d6c8e229a6befe52141f040c2b19561b5f9c95463"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "3037220641395fd6a86387a470cad12bb52ed4a58a4444cb95ffe49f4e14ae8c",
+      "reference_file_sha256": "1726018ef8d53c48310c06f5ddcb9f372921839f0f6cb09238a7f0e0dc843ed3"
     }
   ],
   "differences": [
@@ -411,6 +1433,30 @@
     },
     {
       "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_3/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_3/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
         "config_sha256"
       ],
       "kind": "value",
@@ -420,6 +1466,30 @@
       "record": "baselines/gte-qwen2-7b/routerbench/iid_3/ridge/result.json",
       "classification": "recorded_release_provenance",
       "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_4/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_4/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
     },
     {
       "path": [
@@ -435,6 +1505,138 @@
     },
     {
       "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_0/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_0/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_0/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_1/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_1/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_1/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_2/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_2/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_2/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_3/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_3/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
         "config_sha256"
       ],
       "kind": "value",
@@ -442,6 +1644,736 @@
       "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
       "within_tolerance": false,
       "record": "baselines/gte-qwen2-7b/routerbench/ood_3/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_4/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_4/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_4/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_5/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_5/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_5/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_6/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_6/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_6/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_0/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_0/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_0/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.0011595367395762133,
+      "reference": 0.0015962651742993847,
+      "absolute_error": 0.00043672843472317147,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "equal_family"
+      ],
+      "kind": "numeric",
+      "fresh": 0.765621253763915,
+      "reference": 0.757506938355813,
+      "absolute_error": 0.008114315408102035,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "0",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.002053869135802469,
+      "reference": 0.0027297524691358025,
+      "absolute_error": 0.0006758833333333335,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "0",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.5518518518518519,
+      "reference": 0.5240740740740741,
+      "absolute_error": 0.02777777777777779,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "0",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.5313131604938272,
+      "reference": 0.49677654938271604,
+      "absolute_error": 0.034536611111111115,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "1",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.0005688533220910624,
+      "reference": 0.0005568105902192243,
+      "absolute_error": 1.2042731871838067e-05,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "1",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.8916020236087691,
+      "reference": 0.8940303541315346,
+      "absolute_error": 0.002428330522765587,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "1",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.8859134903878583,
+      "reference": 0.8884622482293424,
+      "absolute_error": 0.002548757841484117,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "2",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.0020948346153846155,
+      "reference": 0.0034868486990950226,
+      "absolute_error": 0.001392014083710407,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "2",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7671380090497737,
+      "reference": 0.7830599547511311,
+      "absolute_error": 0.01592194570135741,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "2",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7461896628959276,
+      "reference": 0.7481914677601811,
+      "absolute_error": 0.002001804864253498,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "3",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.0011086240000000001,
+      "reference": 0.00083808,
+      "absolute_error": 0.00027054400000000006,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "3",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6324444444444445,
+      "reference": 0.6137777777777778,
+      "absolute_error": 0.01866666666666672,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "3",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6213582044444443,
+      "reference": 0.6053969777777778,
+      "absolute_error": 0.01596122666666655,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "4",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.0008796693123061013,
+      "reference": 0.0010392044898310927,
+      "absolute_error": 0.0001595351775249915,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "4",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.9099431230610135,
+      "reference": 0.9071165115477422,
+      "absolute_error": 0.0028266115132713487,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "4",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.9011464299379525,
+      "reference": 0.8967244666494313,
+      "absolute_error": 0.00442196328852118,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.001022277568134172,
+      "reference": 0.0007910498951781972,
+      "absolute_error": 0.00023122767295597466,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.9180293501048219,
+      "reference": 0.9174004192872118,
+      "absolute_error": 0.0006289308176100628,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.90780657442348,
+      "reference": 0.9094899203354297,
+      "absolute_error": 0.0016833459119497407,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.8586078833447255,
+      "reference": 0.8615014809751653,
+      "absolute_error": 0.002893597630439837,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.8470125159489633,
+      "reference": 0.8455388292321713,
+      "absolute_error": 0.0014736867167920442,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "10",
+        "K"
+      ],
+      "kind": "numeric",
+      "fresh": 64,
+      "reference": 128,
+      "absolute_error": 64,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "10",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.8459386522623698,
+      "reference": 0.8448118400065106,
+      "absolute_error": 0.0011268122558591998,
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_1/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_2/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_2/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_2/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_3/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_3/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_3/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_4/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/ood_0/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/ood_1/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/ood_2/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/ood_3/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/ood_4/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/ood_5/ridge/result.json",
       "classification": "recorded_release_provenance",
       "source_path": "configs/ridge.json"
     },
@@ -519,6 +2451,30 @@
     },
     {
       "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
         "config_sha256"
       ],
       "kind": "value",
@@ -528,6 +2484,30 @@
       "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/ridge/result.json",
       "classification": "recorded_release_provenance",
       "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
     },
     {
       "path": [
@@ -543,6 +2523,30 @@
     },
     {
       "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
         "config_sha256"
       ],
       "kind": "value",
@@ -555,6 +2559,425 @@
     },
     {
       "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "selections",
+        "0",
+        "alpha"
+      ],
+      "kind": "numeric",
+      "fresh": 0.98,
+      "reference": 1.0,
+      "absolute_error": 0.020000000000000018,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "0",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7724614824699746,
+      "reference": 0.7724776578106676,
+      "absolute_error": 1.617534069298099e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "1",
+        "alpha"
+      ],
+      "kind": "numeric",
+      "fresh": 0.98,
+      "reference": 1.0,
+      "absolute_error": 0.020000000000000018,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "1",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7687888554975939,
+      "reference": 0.7687983202717457,
+      "absolute_error": 9.464774151757283e-06,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "10",
+        "alpha"
+      ],
+      "kind": "numeric",
+      "fresh": 0.98,
+      "reference": 1.0,
+      "absolute_error": 0.020000000000000018,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "10",
+        "top"
+      ],
+      "kind": "numeric",
+      "fresh": 1,
+      "reference": 3,
+      "absolute_error": 2,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "10",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7357352127461686,
+      "reference": 0.7357432374944398,
+      "absolute_error": 8.02474827121813e-06,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "2",
+        "alpha"
+      ],
+      "kind": "numeric",
+      "fresh": 0.98,
+      "reference": 1.0,
+      "absolute_error": 0.020000000000000018,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "2",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7651162285252133,
+      "reference": 0.7651189827328237,
+      "absolute_error": 2.7542076104225544e-06,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "20",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.69955611015407,
+      "reference": 0.6994698697076307,
+      "absolute_error": 8.624044643934514e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "30",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6908532413765214,
+      "reference": 0.6908662973027618,
+      "absolute_error": 1.305592624045726e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "5",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7540983476080715,
+      "reference": 0.7541005235957783,
+      "absolute_error": 2.175987706798388e-06,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "50",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6760476772210765,
+      "reference": 0.6760694370981439,
+      "absolute_error": 2.1759877067428768e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "selections",
+        "20",
+        "validation_utilities",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.7325754689635651,
+      "reference": 0.7325755703829512,
+      "absolute_error": 1.0141938611152312e-07,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "250",
+        "validation_utilities",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.5862646022888107,
+      "reference": 0.5862651562942294,
+      "absolute_error": 5.540054186514709e-07,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "250",
+        "validation_utilities",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.5866069533745805,
+      "reference": 0.5866491851672125,
+      "absolute_error": 4.223179263207477e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "250",
+        "validation_utilities",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.5819761514820656,
+      "reference": 0.5819757855149824,
+      "absolute_error": 3.659670831934747e-07,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "50",
+        "validation_utilities",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.6801962093089087,
+      "reference": 0.6801555198350117,
+      "absolute_error": 4.068947389701538e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "500",
+        "validation_utilities",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.5374024930243843,
+      "reference": 0.5374042702899429,
+      "absolute_error": 1.7772655586112407e-06,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "75",
+        "validation_utilities",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.4344849611791824,
+      "reference": 0.43440447268389343,
+      "absolute_error": 8.048849528896618e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
         "config_sha256"
       ],
       "kind": "value",
@@ -564,273 +2987,1278 @@
       "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/ridge/result.json",
       "classification": "recorded_release_provenance",
       "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "selections",
+        "50",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6863452561010901,
+      "reference": 0.6863322243657761,
+      "absolute_error": 1.3031735313973059e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "75",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6550966436770521,
+      "reference": 0.655089153564194,
+      "absolute_error": 7.4901128581661425e-06,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "selections",
+        "100",
+        "validation_utilities",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.6205033240088742,
+      "reference": 0.6205517160219929,
+      "absolute_error": 4.839201311868102e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "100",
+        "validation_utilities",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.6222737995562844,
+      "reference": 0.6222371582907302,
+      "absolute_error": 3.664126555413816e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "150",
+        "validation_utilities",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.627678352464551,
+      "reference": 0.6277266460885502,
+      "absolute_error": 4.829362399927373e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "50",
+        "validation_utilities",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.5109743570946272,
+      "reference": 0.5110203655831003,
+      "absolute_error": 4.600848847302608e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "75",
+        "validation_utilities",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.6113573213079966,
+      "reference": 0.6114538911932093,
+      "absolute_error": 9.656988521267174e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "results",
+        "0",
+        "avengerspro_validated",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "0",
+        "avengerspro_validated",
+        "equal_family"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "0",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "0",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "0",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "0",
+        "avengerspro_validated",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "0",
+        "avengerspro_validated",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "avengerspro_validated",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "avengerspro_validated",
+        "equal_family"
+      ],
+      "kind": "numeric",
+      "fresh": 0.71726535,
+      "reference": 0.706409875,
+      "absolute_error": 0.010855475000000059,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.71726535,
+      "reference": 0.706409875,
+      "absolute_error": 0.010855475000000059,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "avengerspro_validated",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "avengerspro_validated",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.71726535,
+      "reference": 0.706409875,
+      "absolute_error": 0.010855475000000059,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "cluster_utility_validated",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "cluster_utility_validated",
+        "equal_family"
+      ],
+      "kind": "numeric",
+      "fresh": 0.71726535,
+      "reference": 0.706409875,
+      "absolute_error": 0.010855475000000059,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "cluster_utility_validated",
+        "per_family",
+        "5",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "cluster_utility_validated",
+        "per_family",
+        "5",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "cluster_utility_validated",
+        "per_family",
+        "5",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.71726535,
+      "reference": 0.706409875,
+      "absolute_error": 0.010855475000000059,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "cluster_utility_validated",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "1",
+        "cluster_utility_validated",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.71726535,
+      "reference": 0.706409875,
+      "absolute_error": 0.010855475000000059,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "equal_family"
+      ],
+      "kind": "numeric",
+      "fresh": 0.5914035,
+      "reference": 0.58409875,
+      "absolute_error": 0.007304749999999971,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.5914035,
+      "reference": 0.58409875,
+      "absolute_error": 0.007304749999999971,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "10",
+        "avengerspro_validated",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.5914035,
+      "reference": 0.58409875,
+      "absolute_error": 0.007304749999999971,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "2",
+        "avengerspro_validated",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "2",
+        "avengerspro_validated",
+        "equal_family"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7032807,
+      "reference": 0.6928197500000001,
+      "absolute_error": 0.010460949999999913,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "2",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "2",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "2",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7032807,
+      "reference": 0.6928197500000001,
+      "absolute_error": 0.010460949999999913,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "2",
+        "avengerspro_validated",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "2",
+        "avengerspro_validated",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7032807,
+      "reference": 0.6928197500000001,
+      "absolute_error": 0.010460949999999913,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "5",
+        "avengerspro_validated",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "5",
+        "avengerspro_validated",
+        "equal_family"
+      ],
+      "kind": "numeric",
+      "fresh": 0.66132675,
+      "reference": 0.652049375,
+      "absolute_error": 0.009277374999999921,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "5",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.013984649999999998,
+      "reference": 0.013590125,
+      "absolute_error": 0.000394524999999998,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "5",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "5",
+        "avengerspro_validated",
+        "per_family",
+        "5",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.66132675,
+      "reference": 0.652049375,
+      "absolute_error": 0.009277374999999921,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "5",
+        "avengerspro_validated",
+        "reward"
+      ],
+      "kind": "numeric",
+      "fresh": 0.73125,
+      "reference": 0.72,
+      "absolute_error": 0.011249999999999982,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "5",
+        "avengerspro_validated",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.66132675,
+      "reference": 0.652049375,
+      "absolute_error": 0.009277374999999921,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "100",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6480467089446831,
+      "reference": 0.6480749917846128,
+      "absolute_error": 2.8282839929727466e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "20",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7305711405263613,
+      "reference": 0.7305628287452077,
+      "absolute_error": 8.311781153569342e-06,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "30",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7196171962180393,
+      "reference": 0.7196191415064427,
+      "absolute_error": 1.945288403359946e-06,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "50",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6977093076013952,
+      "reference": 0.6977317670289124,
+      "absolute_error": 2.2459427517218522e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "selections",
+        "75",
+        "validation_utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.67032444683059,
+      "reference": 0.6703725489319996,
+      "absolute_error": 4.810210140959725e-05,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
     }
   ],
   "missing_records": [
     "baselines/gte-qwen2-7b/routerbench/iid_0/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/routerbench/iid_1/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_2/lookups/result.json",
     "baselines/gte-qwen2-7b/routerbench/iid_2/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_2/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_3/clusters/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_3/knn/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_3/lookups/result.json",
     "baselines/gte-qwen2-7b/routerbench/iid_3/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_3/prior/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_3/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_4/clusters/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_4/knn/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_4/lookups/result.json",
     "baselines/gte-qwen2-7b/routerbench/iid_4/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_4/prior/result.json",
-    "baselines/gte-qwen2-7b/routerbench/iid_4/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_0/clusters/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_0/knn/result.json",
     "baselines/gte-qwen2-7b/routerbench/ood_0/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_0/prior/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_0/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_0/ridge/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_1/clusters/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_1/knn/result.json",
     "baselines/gte-qwen2-7b/routerbench/ood_1/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_1/prior/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_1/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_1/ridge/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_2/clusters/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_2/knn/result.json",
     "baselines/gte-qwen2-7b/routerbench/ood_2/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_2/prior/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_2/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_2/ridge/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_3/clusters/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_3/knn/result.json",
     "baselines/gte-qwen2-7b/routerbench/ood_3/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_3/prior/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_3/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_4/clusters/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_4/knn/result.json",
     "baselines/gte-qwen2-7b/routerbench/ood_4/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_4/prior/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_4/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_4/ridge/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_5/clusters/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_5/knn/result.json",
     "baselines/gte-qwen2-7b/routerbench/ood_5/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_5/prior/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_5/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_5/ridge/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_6/clusters/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_6/knn/result.json",
     "baselines/gte-qwen2-7b/routerbench/ood_6/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_6/prior/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_6/prox/result.json",
-    "baselines/gte-qwen2-7b/routerbench/ood_6/ridge/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_0/clusters/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_0/knn/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_0/lookups/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_0/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_0/prior/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_0/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_0/ridge/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_1/knn/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_1/lookups/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_1/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_1/prior/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_1/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_1/ridge/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_2/clusters/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_2/knn/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_2/lookups/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_2/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_2/prior/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_2/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_2/ridge/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_3/clusters/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_3/knn/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_3/lookups/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_3/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_3/prior/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_3/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_3/ridge/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_4/clusters/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_4/knn/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_4/lookups/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_4/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_4/prior/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_4/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_4/ridge/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_0/clusters/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_0/knn/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_0/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_0/prior/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_0/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/ood_0/ridge/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_1/clusters/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_1/knn/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_1/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_1/prior/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_1/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/ood_1/ridge/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_2/clusters/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_2/knn/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_2/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_2/prior/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_2/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/ood_2/ridge/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_3/clusters/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_3/knn/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_3/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_3/prior/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_3/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/ood_3/ridge/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_4/clusters/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_4/knn/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_4/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_4/prior/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_4/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/ood_4/ridge/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_5/clusters/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_5/knn/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_5/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_5/prior/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_5/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/ood_5/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/knn/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/knn/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/knn/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/ridge/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/ridge/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/ridge/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/ridge/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/ridge/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/ridge/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/knn/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/ridge/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/knn/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prior/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/clusters/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/prior/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/clusters/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/prior/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/clusters/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/prior/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/clusters/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/prior/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/clusters/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/prior/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/clusters/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/prior/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/clusters/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/prior/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/ridge/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/clusters/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/ridge/result.json"
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/prox/result.json"
   ],
-  "checked_at_utc": "2026-10-27T08:56:58.583542+00:00",
-  "auditor_sha256": "a4263b2e9623dbee13819655abb90a82cbd0e7dcf8c8686e8d8ac66f2f76d24d",
+  "checked_at_utc": "2026-10-27T20:00:28.906926+00:00",
+  "auditor_sha256": "dffaf3a507b8b5b8b83d76cf97da8fd9274f4a45e35926034653dccf2723ef5d",
   "reference_evidence_manifest_sha256": "699e0ccaf9c63fdf5ea1e24ee9b2eaded44a39f2d514dad73e8b772d27dd6167",
   "transition_registry": "release_provenance/source_changes.json",
   "scope": "Supplied main-baseline scores, selections, cohorts and split identities compared with pinned original records. This command does not attest execution history, compare omitted per-query predictions or test paper printed precision.",
