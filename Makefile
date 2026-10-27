@@ -2,10 +2,11 @@ PYTHON ?= python3
 COMPUTE_PYTHON ?= .venv/bin/python
 DOWNLOAD_PYTHON ?= .venv-download/bin/python
 
-.PHONY: help verify test smoke download data controls diagnostics tables package
+.PHONY: help verify compare-baselines test smoke download data controls diagnostics tables package
 
 help:
 	@echo "verify: saved-evidence and paper checks (Python standard library)"
+	@echo "compare-baselines: compare new main-baseline results; incomplete coverage exits 2"
 	@echo "test / smoke: CPU tests and synthetic execution checks (compute environment)"
 	@echo "download: all pinned public data AND model weights (tens of GB)"
 	@echo "data: prepare both benchmarks after downloading inputs"
@@ -17,6 +18,9 @@ verify:
 	"$(PYTHON)" -B scripts/verify_release.py
 	"$(PYTHON)" -B scripts/reproduce_results.py
 	"$(PYTHON)" -B scripts/check_paper_results.py
+
+compare-baselines:
+	"$(PYTHON)" -B scripts/compare_baseline_results.py --fresh-results results
 
 test:
 	"$(COMPUTE_PYTHON)" -B -m pytest -q tests

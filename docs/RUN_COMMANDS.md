@@ -122,6 +122,32 @@ After all baseline jobs finish:
 .venv/bin/python -B src/baselines/report_ridge.py
 ```
 
+Compare the newly generated main-baseline records with the pinned original
+scores and selections:
+
+```bash
+python -B scripts/compare_baseline_results.py --fresh-results results
+# Equivalent: make compare-baselines
+```
+
+This standard-library command covers 296 prescribed result records: the six main
+method groups across all 46 tasks, plus 20 IID metadata-lookup reports. It compares
+scores, candidate validation values, selected settings, cohort sizes and split
+identities. Floats use the predeclared relative/absolute tolerances `1e-10`/`1e-12`;
+counts and discrete selected settings must match exactly. Every nonidentical
+compared value is retained, including differences within tolerance.
+
+For a valid invocation, exit 0 requires complete coverage and matching scientific
+fields; exit 2 means coverage remains incomplete; exit 1 reports differences or
+invalid input files. Invalid command-line arguments also use the usual exit 2.
+Registered source/config hash transitions remain explicit differences and are
+recognized only when the new source bytes match the existing transition registry.
+The default report is `results/reproduced/fresh-baselines.json`. Comparing supplied
+files does not attest that new fitting occurred, compare omitted query-level
+predictions, or establish paper printed-precision agreement. Keep the new run's
+execution provenance separately. The command refuses to use `results/evidence/`
+as the fresh results directory.
+
 ## 3. Candidate layers and PCA
 
 The earlier common-layer NVIDIA implementation also provides the shared

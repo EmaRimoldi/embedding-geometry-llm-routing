@@ -17,12 +17,13 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 | Complete fresh CPU diagnostics | Unchanged production IID known-metadata lookups and MMLU topic analysis on complete canonical panels, including the prescribed MMLU bootstrap | 20 lookup reports, 520 lookup policy scores, 21 total reports and 24,209 numeric values match; maximum error zero |
 | Saved-result reconstruction | Seven result groups, including final per-model SharedTrunkNet JSONs | 23,740 fold-level records, 4,031 reconstructed aggregate rows, saved-aggregate tolerance 1e-10 relative / 1e-12 absolute |
 | Printed results | Pinned manuscript values and settings, all 44 table labels | 5,493 checks passed at printed precision; supplied intervals compared without resampling |
-| CPU regression tests | Pipeline/geometry, integrity, paper-gate, rank-tie, distribution and fresh-diagnostic comparison regression cases | 28 tests passed |
+| CPU regression tests | Pipeline/geometry, integrity, paper-gate, rank-tie, distribution and fresh-diagnostic/baseline comparison cases | Passed, including 12 new baseline-audit cases |
 | CPU baseline execution | Actual kNN, Family Adaptation, Ridge, Avengers-Pro and KM-Prox CLI paths on synthetic ID/OOD inputs | 260 score checks; 16 MLP-equivalence and 36 direct-utility Ridge cases |
 | CPU/CUDA SharedTrunkNet | Actual probe, ternary search, fitting core, checkpoint reload and seed retention on synthetic inputs | 20 networks and 20 reloads on each device; cost-once and held-out-cost isolation checks passed |
 | PCA preprocessing | Actual production PCA100 entry point, both full-SVD and randomized branches | 10 checks per branch, including held-out poisoning and stale-cache rejection |
 | CUDA encoders | Actual MiniLM, GTE and Qwen L21/L23/L25 extraction on four illustrative prompts | All vectors finite, completed and hash-consistent |
 | Complete fresh encoder extraction | GTE, MiniLM and Qwen layers 15–28 on both complete canonical cohorts | 32 arrays generated; all four GTE/L21 baseline input fingerprints exactly match the original |
+| Fresh main baselines and controls, partial | Production kNN, Family Adaptation, Ridge, clustering, KM-Prox and IID lookup paths on their prescribed outer populations | 35 of 296 result records checked; all 39,260 numeric fields exactly match, including selections; remaining coverage is incomplete |
 | Model identity | Full cached weights compared with pinned public LFS checksums | 12 files, 45,815,257,928 bytes, passed |
 | Execution plumbing | Inert-scheduler orchestration and isolated saved-report renderers | 17 orchestration categories; seven regenerated tables byte-identical to their supplied counterparts |
 
@@ -49,6 +50,26 @@ after flushing the complete array. Production baseline preparation also independ
 rehashed all four input arrays and verified the canonical panels and frozen splits.
 This is an encoder-stage checkpoint. New PCA,
 fitted-router, geometry and uncertainty comparisons remain in progress.
+
+The first fitted-baseline checkpoint is recorded in
+[`v1_fresh_baselines.json`](../release_provenance/current_checks/v1_fresh_baselines.json).
+It covers RouterBench IID evaluations and the first held-out-family Ridge fold
+for both representations. All 39,260 compared numeric fields match exactly across
+35 completed result records. The 819 policy scores include prompt routers,
+clustering/metadata diagnostics and single-model/oracle controls; they are not
+819 independent fitted models. Twenty-two source/config hash differences match
+transitions already recorded in `release_provenance/source_changes.json`, and the
+new source bytes were checked against that registry. Those hash differences remain
+explicit in the report. No scientific or unexplained difference was found in this
+subset; the complete 296-record main-baseline comparison has not passed yet.
+
+`scripts/compare_baseline_results.py` makes this comparison reusable and refuses
+to count missing experiments as matches. Twelve new adversarial tests cover
+changed scores and selections, invalid counts/shapes, nonfinite values, incomplete
+coverage, provenance classification and protected inputs. Matching saved scores
+and selections does not establish identical omitted per-query predictions or
+model parameters. Printed paper precision and scientific interpretation remain
+separate checks.
 
 CI fixes Ubuntu 24.04, Python 3.11.17 and the exact Node-24 action commits instead
 of floating runner/Python/action versions. Local and cluster executions recorded

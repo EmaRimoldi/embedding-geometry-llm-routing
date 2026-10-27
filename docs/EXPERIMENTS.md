@@ -13,6 +13,7 @@ numeric checks against that reference from new experimental execution.
 | Public outcome controls | `make controls` | 598 new single-model/oracle scores and 3,588 comparisons from canonical public outcomes |
 | Complete CPU diagnostics | `make diagnostics` | 20 new IID metadata lookup reports and complete MMLU topic analysis, including 1,000 paired bootstrap draws per penalty |
 | Numerical table production | `make tables` | Seven tables regenerated from saved reports and compared byte-for-byte |
+| New baseline-result comparison | `make compare-baselines` | Completed new scores and selections compared with frozen records; full success requires all 296 prescribed files; no new fitting |
 | CPU regression/components | `make test` and `make smoke` | Regression cases and synthetic production fit/PCA/orchestration paths |
 | Full study | [RUN_COMMANDS.md](RUN_COMMANDS.md) | New embeddings, fitted routers, predictions, diagnostics and bootstrap arrays |
 

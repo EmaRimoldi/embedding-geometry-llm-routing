@@ -1,0 +1,842 @@
+{
+  "status": "incomplete",
+  "passed": false,
+  "coverage_complete": false,
+  "expected_records": 296,
+  "compared_completed_records": 35,
+  "completed_records_by_kind": {
+    "clusters": 5,
+    "knn": 5,
+    "lookups": 4,
+    "prior": 5,
+    "prox": 4,
+    "ridge": 12
+  },
+  "expected_records_by_kind": {
+    "knn": 46,
+    "prior": 46,
+    "clusters": 46,
+    "prox": 46,
+    "ridge": 46,
+    "mlp_reduced": 46,
+    "lookups": 20
+  },
+  "method_scores": 819,
+  "method_scores_by_name": {
+    "avengerspro_validated": 65,
+    "cluster_utility_validated": 65,
+    "knn100": 65,
+    "knn_validated": 65,
+    "family_lookup": 52,
+    "family_topic_lookup": 52,
+    "family_adaptation": 65,
+    "best_single_train": 65,
+    "realized_oracle": 65,
+    "km_prox32_temp20": 52,
+    "km_prox32_validated": 52,
+    "ridge": 156
+  },
+  "counts": {
+    "numeric_values": 39260,
+    "exact_numeric_values": 39260,
+    "other_values": 199
+  },
+  "relative_tolerance": 1e-10,
+  "absolute_tolerance": 1e-12,
+  "excluded_operational_fields": [
+    "seconds",
+    "slurm_job_id"
+  ],
+  "exact_scientific_match": true,
+  "scientific_fields_within_tolerance": true,
+  "compared_record_fields_identical": false,
+  "recorded_provenance_differences": 22,
+  "scientific_or_unexplained_differences": 0,
+  "beyond_tolerance": 0,
+  "records": [
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_0/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "bcb276c8f28e47c837b2940f20e3db2947531b68d21ce5df74347d7f2c83bf97",
+      "reference_file_sha256": "893a5d8621f141ee6899c9e3748718722033ab7f91888eff766049d34bf1ad4f"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_0/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "dc81829f2a0f77e332a3dd973337dc70aa97cb8072be4fad9fd99f4d83b76527",
+      "reference_file_sha256": "5eb6705430b1722ed1858d64d9a024d0ccdaa9f3b8fa04daf43f4e2df50c3868"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_0/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "1f1a25c1b067399b286e32dcf4d062d48135a52a5d8c4cc68abedf50f8ec6edc",
+      "reference_file_sha256": "9ec8d5008e5db455af0854dc75089d6a17c932316c0cb3e734355c1183028e68"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_0/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "2dfbfef35b5a224a73a0bdd3fa195f2910e231ec32b6dda88dd7136936bcdd7f",
+      "reference_file_sha256": "2c0be61a34f7465d3ffc5230a2e893cf404aff19b0871d48133e13ea23d9fe75"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_0/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "2b95d98e1af5f17d288bc21b782a7d226b89098d6cee66f1d81528682734eacb",
+      "reference_file_sha256": "4938a97c4ec7a5401ab56146ea6086edcc42319897ca49e64ceda3d698cb6696"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_0/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "a9adf252d9da87222ec8365cbc8b083c7c72e04ed69d7acd7a027cf1bd6c86d1",
+      "reference_file_sha256": "3d234aec22f966e55a4489c4ad5a0f559e200a6087f72c50cb92c7b13ccffbf0"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_1/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "0c8efe412b9fcf1ed026b7be88201d80861d21670dd33c8e93cae5cc78337671",
+      "reference_file_sha256": "7ccc4eadca55d00f917b0c74689b87e3b2c378e84885f9b88d43d587597c073c"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_1/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "f6f9c4e66a16ab06b8bb7e38fb4c4e09e5cb6fcaeec824808316d18f7cf9cb88",
+      "reference_file_sha256": "f5213853ebeed484cc384af66b8536bd11ca21700c7b668a657423d648a01b48"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_1/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "0da6ea8275d4920e5749f5bd888104466d11e0912ede79fd93ef506ed63e8aad",
+      "reference_file_sha256": "0bf51b66033e27c0f61bba271b3399f6cae2ac8ddda2f2db318e1d208e5f487d"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_1/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "6a3f7defe525b2636023746a23c29224fb287d4de63f670fe65148b1eda654fb",
+      "reference_file_sha256": "305afaa4d6a44d6aeadb6b84a0613bb465a0bb70c3239d728b288d44aec7c9e9"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_1/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "6c6654d95cc5b146bbad528d90bd3ac60eba0d3794a5bd66e8a9bbb5100d2ad3",
+      "reference_file_sha256": "b9adc5d061d1555a21a06b5f193fb9fcf9c57bc175fc4922c1a2ab5427b9a9d0"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_1/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "7bf557021c425583333e1bd90ad52805949959fe6a915aa5695da4fe7368ce14",
+      "reference_file_sha256": "b9d6003621d977cef27277228252c5e7c98e81df7f63fb775c29a33d4b2e52ce"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_2/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "1c8a1c76869458fddaa4ae154da0764f71701957fbcb13ab05a9fd7263f173ba",
+      "reference_file_sha256": "13dbe770b103db1d4aab1fb8ec48f93a466c77f1aea80a8618690f056d86bd9b"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_2/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "6e25903a885c7875444d5ec43699a27399a7ddce9b89efa9c7df589aea7213af",
+      "reference_file_sha256": "f49dcbf0ae55293bfd42c005136e458f91d1078522e48ad65bbc24ab641f6411"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_2/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "bdf41e0e47ae85705506aaa3d9f8d75bf3476938f656325829dbd283a452c615",
+      "reference_file_sha256": "83731295db059743dcd7173686147a03cb013beaa345dc6e166c66d9028d378d"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_2/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "7500db61d75f84a2851cca34eed33aa3f55ea4629d9ff3671726bccdbe90220a",
+      "reference_file_sha256": "20c07294c99c58b1286713e74307cad1fb49ae53b57ee6b3ad96a709ea05ee2b"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_3/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "2b3338cf2ef4628560a418d8f94a76f1e33e906e67530946caf42a386e671d7d",
+      "reference_file_sha256": "c26ac9374970c73c98d4c95fa83616cf2e0e192b1360973b92e79af4abe27491"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/iid_4/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "f1961d66c0427afa2c5974bec189f7ae3ff92df4fe8289573c9ca4917a1da1ba",
+      "reference_file_sha256": "84d1560e6ca329848cf11651cdbccefb934dcf071edda76c8683dfa47aacd8c9"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/routerbench/ood_3/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "2abd304da3cacf504eae496e20ea3f35c8421dfbd8fc34d92efec42d476ad066",
+      "reference_file_sha256": "ad1d2b09f291c62e231508c47b5e1c5814adb52b9ff77c87adc4e6042fa4bb26"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "1835344027cee860c53b0a33d771733f0170dce7fecf8e66f94a4072a4e2de59",
+      "reference_file_sha256": "ce78bdfb7b0b6f42a044f558f50a98339721204e7473ed4e538f53502a5ee8a0"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "c661cd1c3bb20d263dc5576b5cdb3ba685039caf64ac44635eb3763b6f7d4eb8",
+      "reference_file_sha256": "f13c6a0b5891a84df7c8a4d1c55538a59c4169c1ac8f2bff5f0a265330224980"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "dfed71bc0c3b74c28d93b70df21dfe5263357f6e2aec87c52a4fabfa988a3282",
+      "reference_file_sha256": "db089bac406e28fb0618ebd047874b02d5e1b5fd56517ea29705ae933f00d550"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "6ed8be0977dad017b1fb9d3e8f026bba078949574f1982af5a43a5d2d2fccddd",
+      "reference_file_sha256": "a1e49ce732cb3c5767adfe89bbe1e86aad8279232b5499cd33343294d61a9d31"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "b884b148794d8c859d868de48d168bc376d1af46c26962f8d9bc6cfd1a814e88",
+      "reference_file_sha256": "b6002ceef87936e878faee486226985be8df7840630ae1ea11ced780a6b8468f"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "c76dc460db528f849b7f22fd9b7438842474425a219d70175acd2a5919df90ef",
+      "reference_file_sha256": "b09360a24f58ffc27f14ce038b7c900a5f42e4b4dfee9dac79ea7feb42a2e42f"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "2408b70fa4b80e128f0ba642d0dd636eedd39a44dc442268895d4177f9f54f03",
+      "reference_file_sha256": "836429ae29f006ce06b44883449b6c963fabb56fae85653a9b503ce3af18fc3a"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "6f2bdec631e4e39e24879d407e04a995b7c15d93bd048964764228661de4caa8",
+      "reference_file_sha256": "e9c43004aef812f7fecb58894aaede6a08cc73ac103204131696114d961925d4"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "e9630ecfc919818298011830b923bb022ebb939362c8387c9ef95a24dde01af6",
+      "reference_file_sha256": "7d6d038741be88ac9d69c79e49d56fdc22b4b1f5c0cd8bf34c9fc75d185abe18"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "56fc35e95803373ec051b20b30eadf6a9e349e264612ace3bbf0f590d300e71c",
+      "reference_file_sha256": "5728ab9716ca27ccfacc41f1a491c306969b4ffa67b8124ca5125b995cdf67ea"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "bc2e9fb229614d6f9771209cda2dfc04b72315479e3132cbf8d62527b095001f",
+      "reference_file_sha256": "cd5ec22f8e2b84241be3e68ef68b1dd4963df570be57cf94ca2739ee3c204ca7"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "ea735b354acd1b6745cf107a98994cdbafdec2e9a07c31bf4d57d3e5068ad91d",
+      "reference_file_sha256": "c471d636f3d8d350e470722f3494dd42fdf2b9e9f6c9d41733b5b88d9f414873"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "b43a3e7c68bc6982b0e71df27d9c33303e01fa6b2a24d9d2811214b753820199",
+      "reference_file_sha256": "46b23f19fa7316943070e3f9641d923fdfa05bceec9dc307fa2157cfedb85cc6"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "291f010c8d5e0ece16675082190fbca9abad575470a19456ed6eebd819954c6e",
+      "reference_file_sha256": "a94fdf5d1b4228e1177260547d7964d73ce802485729eccb65c90d8a3b8e9017"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "faa15c6a89cc9f70a52d4736e91f30de6b6353aae8cb97808698f926e035adc4",
+      "reference_file_sha256": "862727eaf01889390346ba4fea017ec215a5b2affb42759546732bb181863f8c"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/ridge/result.json",
+      "kind": "ridge",
+      "method_scores": 13,
+      "fresh_file_sha256": "bb97f30aedfdc830eb48bd39764cc4e09b39312ad2bb59d440f4212a6da7e5da",
+      "reference_file_sha256": "ac765307dcc8de683ce4ed8038c91a43c52798b10f8ff8d625b19fc5bf3d9145"
+    }
+  ],
+  "differences": [
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_0/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_0/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_0/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_1/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_1/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_1/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_2/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_2/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_2/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_3/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/iid_4/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/routerbench/ood_3/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "config_sha256"
+      ],
+      "kind": "value",
+      "fresh": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+      "reference": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/ridge/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "configs/ridge.json"
+    }
+  ],
+  "missing_records": [
+    "baselines/gte-qwen2-7b/routerbench/iid_0/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_1/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_2/lookups/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_2/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_2/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_3/clusters/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_3/knn/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_3/lookups/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_3/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_3/prior/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_3/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_4/clusters/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_4/knn/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_4/lookups/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_4/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_4/prior/result.json",
+    "baselines/gte-qwen2-7b/routerbench/iid_4/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_0/clusters/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_0/knn/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_0/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_0/prior/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_0/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_0/ridge/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_1/clusters/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_1/knn/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_1/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_1/prior/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_1/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_1/ridge/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_2/clusters/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_2/knn/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_2/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_2/prior/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_2/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_2/ridge/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_3/clusters/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_3/knn/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_3/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_3/prior/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_3/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_4/clusters/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_4/knn/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_4/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_4/prior/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_4/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_4/ridge/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_5/clusters/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_5/knn/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_5/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_5/prior/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_5/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_5/ridge/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_6/clusters/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_6/knn/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_6/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_6/prior/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_6/prox/result.json",
+    "baselines/gte-qwen2-7b/routerbench/ood_6/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_0/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_0/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_0/lookups/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_0/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_0/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_0/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_0/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_1/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_1/lookups/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_1/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_1/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_1/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_1/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_2/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_2/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_2/lookups/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_2/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_2/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_2/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_2/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_3/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_3/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_3/lookups/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_3/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_3/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_3/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_3/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_4/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_4/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_4/lookups/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_4/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_4/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_4/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/iid_4/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_0/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_0/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_0/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_0/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_0/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_0/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_1/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_1/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_1/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_1/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_1/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_1/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_2/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_2/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_2/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_2/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_2/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_2/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_3/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_3/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_3/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_3/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_3/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_3/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_4/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_4/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_4/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_4/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_4/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_4/ridge/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_5/clusters/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_5/knn/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_5/mlp_reduced/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_5/prior/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_5/prox/result.json",
+    "baselines/gte-qwen2-7b/sprout/ood_5/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_0/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_1/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/lookups/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_2/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/lookups/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_3/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/lookups/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/iid_4/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_0/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_3/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_4/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_5/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/lookups/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/lookups/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/lookups/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/lookups/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/lookups/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_1/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_2/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_3/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_4/ridge/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/clusters/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/knn/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/mlp_reduced/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/prior/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/prox/result.json",
+    "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/ridge/result.json"
+  ],
+  "checked_at_utc": "2026-10-27T08:56:58.583542+00:00",
+  "auditor_sha256": "a4263b2e9623dbee13819655abb90a82cbd0e7dcf8c8686e8d8ac66f2f76d24d",
+  "reference_evidence_manifest_sha256": "699e0ccaf9c63fdf5ea1e24ee9b2eaded44a39f2d514dad73e8b772d27dd6167",
+  "transition_registry": "release_provenance/source_changes.json",
+  "scope": "Supplied main-baseline scores, selections, cohorts and split identities compared with pinned original records. This command does not attest execution history, compare omitted per-query predictions or test paper printed precision.",
+  "reported_run_context": {
+    "release": "v1.0.0",
+    "commit": "a8ab76b62bc8f7562bbef70d7a9d7e9294ee0957",
+    "source_zip_sha256": "8f4792ff6ff45d56937c3d98e00cecb55991fbee7c397efdf55e3e6baa54d0fb"
+  }
+}

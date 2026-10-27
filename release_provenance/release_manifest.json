@@ -25,8 +25,8 @@
       "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
     },
     "Makefile": {
-      "bytes": 1685,
-      "sha256": "5e639e3aa7f0e3a95d5b74ee53d669ed137f8290171eb2549417be6f44d8b943"
+      "bytes": 1890,
+      "sha256": "fffc0a9ef21b747788be87004f7a94a820f09fc56d07f32f4e540685199f2538"
     },
     "README.md": {
       "bytes": 2870,
@@ -125,8 +125,8 @@
       "sha256": "d710863e2a49b224f442955c44e8487849a1fd65a0a09875751c388ca72749b9"
     },
     "docs/EXPERIMENTS.md": {
-      "bytes": 9060,
-      "sha256": "204b25fad4cad145eaf5e631b625069ad4258d26ce0724697796eaf3a51b0911"
+      "bytes": 9253,
+      "sha256": "7b68e4cfa2790b86eea262fbe4402ccaacb8080622d1fadc0500441fc3b16936"
     },
     "docs/INTER_FONT_LICENSE.txt": {
       "bytes": 4377,
@@ -149,8 +149,8 @@
       "sha256": "26a34744ee612cfd4225156ec57e096ecc2f564074293553b3f8529771623224"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 9496,
-      "sha256": "daa433f3d5dcf3246292161b52a2cc36632393af9c2736dbd522995da3034664"
+      "bytes": 11182,
+      "sha256": "804a99d1a3ad3c680996b9e6d27c0ef0f5e7d6976e965ccd31d3ff8e0f80cefa"
     },
     "docs/RESOURCES.md": {
       "bytes": 9910,
@@ -177,8 +177,8 @@
       "sha256": "1c29baf9251267b49c0bfb5d8280ea592984c273aada8365ad818552b0440764"
     },
     "docs/RUN_COMMANDS.md": {
-      "bytes": 16469,
-      "sha256": "1aec2fdee6f67d4ed7d1bf31752fa5589777caa4a0805df14d29b045414f7500"
+      "bytes": 17918,
+      "sha256": "2ccdee24738f636c727c529e67f757defd39622b6baae933b851f97245f8dc61"
     },
     "docs/SAVED_TABLES.md": {
       "bytes": 2768,
@@ -583,6 +583,10 @@
     "release_provenance/current_checks/v1_cpu_diagnostics.json": {
       "bytes": 8854,
       "sha256": "94fd01f8a43254db5363f16e510f85d33f511bf21ffa5d74d1784d2b5224fd48"
+    },
+    "release_provenance/current_checks/v1_fresh_baselines.json": {
+      "bytes": 43373,
+      "sha256": "8ad32d7803336b6236eedbbfe1d0ad514b8fee72392ce982e9bc217144ce0d97"
     },
     "release_provenance/current_checks/v1_full_encoders.json": {
       "bytes": 30310,
@@ -7712,6 +7716,10 @@
       "bytes": 4131,
       "sha256": "0d1fdc9d3ba309e8329b912ccb7c75ab142083c68657efbe99456b2286412493"
     },
+    "scripts/compare_baseline_results.py": {
+      "bytes": 12203,
+      "sha256": "a4263b2e9623dbee13819655abb90a82cbd0e7dcf8c8686e8d8ac66f2f76d24d"
+    },
     "scripts/initialize_release.py": {
       "bytes": 8052,
       "sha256": "a1a28e7115c0a0ab2df776f91d2ff685943f16faca6d7f3f02813a1fd3ae411d"
@@ -8155,6 +8163,10 @@
     "tests/test_family_rank.py": {
       "bytes": 1889,
       "sha256": "7d79de2b89e54ba1fc2c1dd7168774e464336352efcc956012c687ba1296a9ac"
+    },
+    "tests/test_fresh_baselines.py": {
+      "bytes": 6103,
+      "sha256": "85dc6ccb8e7cd848a32b96b0a2ffab8a41a3bd59abea4d43b3184dc32bbad925"
     },
     "tests/test_geometry.py": {
       "bytes": 1975,
