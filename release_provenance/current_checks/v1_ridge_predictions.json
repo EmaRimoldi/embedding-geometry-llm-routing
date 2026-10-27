@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "collected_at_utc": "2026-10-27T22:22:43.558926+00:00",
+  "source_commit": "a8ab76b62bc8f7562bbef70d7a9d7e9294ee0957",
+  "producer": "src/baselines/report_ridge.py",
+  "producer_sha256": "bf84b42b878c2afb0f8d807000c1ed67dfa16ffef4eb85c17187e380eacd29a1",
+  "outer_representation_evaluations": 46,
+  "audited_score_records": 598,
+  "missing": [],
+  "outputs": {
+    "ridge_per_split.csv": {
+      "fresh_sha256": "fbeded40f72e7dd85cd605b18c672009a4d644ad371fd5d0b677d3cb1eca962b",
+      "reference_sha256": "fbeded40f72e7dd85cd605b18c672009a4d644ad371fd5d0b677d3cb1eca962b",
+      "exact_bytes": true,
+      "rows": 598
+    },
+    "ridge_scores.csv": {
+      "fresh_sha256": "38e8036b378bb9b85d3f447a6a226c244f5fa8e45528f13221cc17548c85f326",
+      "reference_sha256": "38e8036b378bb9b85d3f447a6a226c244f5fa8e45528f13221cc17548c85f326",
+      "exact_bytes": true,
+      "rows": 104
+    },
+    "ridge_status.json": {
+      "fresh_sha256": "51235bba667e0e8c501873bbeef3773cac607d7ec1355796fe4745d455b484c8",
+      "reference_sha256": "2ca73382007d6c090dd2f8ac4f0f0e9feabffa6fab8f86721ee9d6aa47945126",
+      "exact_bytes": false,
+      "fresh_status": {
+        "audited_score_records": 598,
+        "missing": [],
+        "all_complete": true
+      },
+      "reference_status": {
+        "audited_score_records": 598,
+        "missing": [],
+        "all_complete": true
+      },
+      "parsed_values_equal": true
+    }
+  },
+  "checks": {
+    "saved_test_rows_and_query_ids_aligned": true,
+    "scores_reconstructed_from_new_choices_and_outcomes": true,
+    "selected_alpha_is_argmax_of_recorded_source_validation": true,
+    "per_fold_and_aggregate_tables_byte_identical": true
+  },
+  "scope": "Actual production audit on newly fitted Ridge outputs: reconstructs utility/reward/cost from saved query-level choices, verifies row/query identities and recorded alpha selection, and rebuilds the numerical tables. Does not independently refit/reload regressors, compare omitted original query-level choices or establish all-study reproduction."
+}

@@ -149,8 +149,8 @@
       "sha256": "26a34744ee612cfd4225156ec57e096ecc2f564074293553b3f8529771623224"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 13120,
-      "sha256": "12a018a743552bd2c74e0437c1ebc14d3f1ab0c5b3e2b1e009ec1d99ff53a3cc"
+      "bytes": 14863,
+      "sha256": "aea4f4f18b2514cd4d40cb3f9d2035eb6d98a6265c15b80437cd831e3fb91fbe"
     },
     "docs/RESOURCES.md": {
       "bytes": 9910,
@@ -580,13 +580,17 @@
       "bytes": 3340,
       "sha256": "72ee925d1941359c7242758a1f704980e88c9b88633b82a98b67ea7ab2e1ecfb"
     },
+    "release_provenance/current_checks/v1_cluster_repetitions.json": {
+      "bytes": 177080,
+      "sha256": "1a5dad4b86a3eac245b06db48caf96d71dbbdac6e7672254368f0db099fec1d2"
+    },
     "release_provenance/current_checks/v1_cpu_diagnostics.json": {
       "bytes": 8854,
       "sha256": "94fd01f8a43254db5363f16e510f85d33f511bf21ffa5d74d1784d2b5224fd48"
     },
     "release_provenance/current_checks/v1_fresh_baselines.json": {
-      "bytes": 166127,
-      "sha256": "05fc4bbbd60f15e4561af12e0a6e1c11a2f77106fa6d54516ad51574a8970f50"
+      "bytes": 178311,
+      "sha256": "baf4e163e4c60382b319244b05ec4ca2c2780b4326ea4c8dc9f96dff900398d2"
     },
     "release_provenance/current_checks/v1_full_encoders.json": {
       "bytes": 30310,
@@ -595,6 +599,10 @@
     "release_provenance/current_checks/v1_release.json": {
       "bytes": 1520,
       "sha256": "5a759676bcdc3b5f1b1b202b4a4ad920f398b93ec8f6a79610896d07314fcb66"
+    },
+    "release_provenance/current_checks/v1_ridge_predictions.json": {
+      "bytes": 2063,
+      "sha256": "5a56b3e5616f45607b27bff096559a6e2bb67182e771f23880e471b34f352387"
     },
     "release_provenance/original_source_hashes.json": {
       "bytes": 18876,

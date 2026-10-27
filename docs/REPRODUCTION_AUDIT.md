@@ -23,7 +23,8 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 | PCA preprocessing | Actual production PCA100 entry point, both full-SVD and randomized branches | 10 checks per branch, including held-out poisoning and stale-cache rejection |
 | CUDA encoders | Actual MiniLM, GTE and Qwen L21/L23/L25 extraction on four illustrative prompts | All vectors finite, completed and hash-consistent |
 | Complete fresh encoder extraction | GTE, MiniLM and Qwen layers 15–28 on both complete canonical cohorts | 32 arrays generated; all four GTE/L21 baseline input fingerprints exactly match the original |
-| Fresh main baselines and controls, partial | Production kNN, Family Adaptation, Ridge, clustering, KM-Prox and IID lookup paths on their prescribed outer populations | 181 of 296 result records checked; 175 records match scientifically, including all 46 Ridge records; 98 differing fields across six clustering/KM-Prox records remain under investigation |
+| Fresh main baselines and controls, partial | Production kNN, Family Adaptation, Ridge, clustering, KM-Prox and IID lookup paths on their prescribed outer populations | 204 of 296 result records checked; 197 records match scientifically, including all 46 Ridge records; 103 differing fields across seven clustering/KM-Prox records remain under investigation |
+| Complete fresh Ridge prediction audit | Production audit reconstructing scores from new saved choices and canonical outcomes, verifying query alignment and recorded alpha selection | All 598 policy scores audited; 598 per-fold rows and 104 aggregate rows reproduce both numerical CSVs byte-for-byte |
 | Model identity | Full cached weights compared with pinned public LFS checksums | 12 files, 45,815,257,928 bytes, passed |
 | Execution plumbing | Inert-scheduler orchestration and isolated saved-report renderers | 17 orchestration categories; seven regenerated tables byte-identical to their supplied counterparts |
 
@@ -53,26 +54,33 @@ fitted-router, geometry and uncertainty comparisons remain in progress.
 
 The latest fitted-baseline checkpoint, collected on 2026-10-27 UTC, is recorded in
 [`v1_fresh_baselines.json`](../release_provenance/current_checks/v1_fresh_baselines.json).
-It compares 181 of the prescribed 296 records, including all 46 Ridge evaluations
+It compares 204 of the prescribed 296 records, including all 46 Ridge evaluations
 across both benchmarks, representations and IID/OOD populations. All Ridge scores
-and selections match exactly. The separate audit reconstructing Ridge scores from
-new query-level predictions remains pending.
+and selections match exactly. The separate production audit also reconstructed
+all 598 policy scores from the new saved choices and outcomes, verified test-row
+and query identities and checked recorded alpha selection. The resulting 598-row
+per-fold and 104-row aggregate CSVs match the frozen tables byte-for-byte.
+[`v1_ridge_predictions.json`](../release_provenance/current_checks/v1_ridge_predictions.json)
+records the hashes and scope. This does not independently refit/reload the
+regressors or compare omitted original query-level predictions.
 
-Of the 181 compared records, 175 have exact scientific-field agreement. Across all
-records, 166,789 of 166,887 numeric fields match exactly; 98 fields differ beyond
-the declared tolerances in six clustering/KM-Prox records. Four of those records
+Of the 204 compared records, 197 have exact scientific-field agreement. Across all
+records, 194,230 of 194,333 numeric fields match exactly; 103 fields differ beyond
+the declared tolerances in seven clustering/KM-Prox records. Four of those records
 have differences confined to source-validation values or selected settings while
-their reported test scores match. Two clustering records also have test-score
-differences: GTE/SPROUT IID fold 1 and L21/RouterBench OOD fold 5. For example, at
-penalty 10 the former selects 64 rather than 128 clusters and reports Avengers-Pro
-utility 0.8470125159489633 rather than 0.8455388292321713. At penalty 0 the latter
-reports Avengers-Pro reward 0.73125 rather than 0.72. Their cause is not yet
-established. These are actual differences, not a successful reproduction claim;
+their reported test scores match. Three records also have test-score differences:
+GTE/SPROUT IID fold 1 clustering, L21/RouterBench OOD fold 5 clustering and
+L21/SPROUT IID fold 2 KM-Prox. At penalty 10, GTE/SPROUT IID fold 1 selects 64
+rather than 128 clusters and reports Avengers-Pro utility 0.8470125159489633
+rather than 0.8455388292321713. At penalty 0, L21/RouterBench OOD fold 5 reports
+Avengers-Pro reward 0.73125 rather than 0.72. The KM-Prox mean-utility
+difference at penalty 150 is about 5.64e-7 and is retained as a difference.
+Their cause is not yet established. These are actual differences, not a successful reproduction claim;
 no data, selection grid or tolerance was changed to remove them.
 
-The 4,511 policy scores include prompt routers, clustering/metadata diagnostics
-and single-model/oracle controls; they are not 4,511 independent fitted models.
-The 108 source/config hash differences match transitions already recorded in
+The 5,161 policy scores include prompt routers, clustering/metadata diagnostics
+and single-model/oracle controls; they are not 5,161 independent fitted models.
+The 116 source/config hash differences match transitions already recorded in
 `release_provenance/source_changes.json`, and the new source bytes were checked
 against that registry. These provenance differences and all scientific differences
 remain explicit in the report. The complete main-baseline comparison has not passed.
@@ -80,8 +88,20 @@ remain explicit in the report. The complete main-baseline comparison has not pas
 All 28 source-PCA scheduler packs exited successfully. The subsequent complete
 utility preflight exceeded its 30-minute allocation before producing its passed
 marker, so the dependent probe and training jobs did not start. A retry with a
-longer allocation and the same scientific checks is prepared; neither complete
-PCA validation nor new final SharedTrunkNet training is counted as passed.
+four-hour allocation and the same scientific checks has been submitted. Complete
+PCA validation and new final SharedTrunkNet training are still pending.
+
+One of six isolated, unchanged-protocol repetitions is complete. For GTE/SPROUT
+IID fold 1 clustering, it differs in 157 compared fields from the primary new run
+and in 140 from the frozen reference. At penalty 10 it selects 128 clusters,
+compared with 64 in the primary run, and reports utility 0.8456225896939318.
+The code, input sources, splits, random seed, candidate grid and four-thread
+settings were preserved; the repetition records its CPU and numerical libraries.
+This establishes variation across the tested executions, without establishing
+whether hardware, parallel reductions or numerical/tie sensitivity caused it.
+The original primary outputs are retained. The partial record is
+[`v1_cluster_repetitions.json`](../release_provenance/current_checks/v1_cluster_repetitions.json);
+the other five prescribed repetitions remain incomplete.
 
 `scripts/compare_baseline_results.py` makes this comparison reusable and refuses
 to count missing experiments as matches. Fourteen adversarial tests cover

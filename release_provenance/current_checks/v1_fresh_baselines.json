@@ -3,13 +3,13 @@
   "passed": false,
   "coverage_complete": false,
   "expected_records": 296,
-  "compared_completed_records": 181,
+  "compared_completed_records": 204,
   "completed_records_by_kind": {
-    "clusters": 29,
-    "knn": 31,
-    "lookups": 15,
-    "prior": 31,
-    "prox": 29,
+    "clusters": 34,
+    "knn": 35,
+    "lookups": 20,
+    "prior": 35,
+    "prox": 34,
     "ridge": 46
   },
   "expected_records_by_kind": {
@@ -21,25 +21,25 @@
     "mlp_reduced": 46,
     "lookups": 20
   },
-  "method_scores": 4511,
+  "method_scores": 5161,
   "method_scores_by_name": {
-    "avengerspro_validated": 377,
-    "cluster_utility_validated": 377,
-    "knn100": 403,
-    "knn_validated": 403,
-    "family_lookup": 195,
-    "family_topic_lookup": 195,
-    "family_adaptation": 403,
-    "best_single_train": 403,
-    "realized_oracle": 403,
-    "km_prox32_temp20": 377,
-    "km_prox32_validated": 377,
+    "avengerspro_validated": 442,
+    "cluster_utility_validated": 442,
+    "knn100": 455,
+    "knn_validated": 455,
+    "family_lookup": 260,
+    "family_topic_lookup": 260,
+    "family_adaptation": 455,
+    "best_single_train": 455,
+    "realized_oracle": 455,
+    "km_prox32_temp20": 442,
+    "km_prox32_validated": 442,
     "ridge": 598
   },
   "counts": {
-    "numeric_values": 166887,
-    "exact_numeric_values": 166789,
-    "other_values": 1011
+    "numeric_values": 194333,
+    "exact_numeric_values": 194230,
+    "other_values": 1126
   },
   "relative_tolerance": 1e-10,
   "absolute_tolerance": 1e-12,
@@ -50,9 +50,9 @@
   "exact_scientific_match": false,
   "scientific_fields_within_tolerance": false,
   "compared_record_fields_identical": false,
-  "recorded_provenance_differences": 108,
-  "scientific_or_unexplained_differences": 98,
-  "beyond_tolerance": 98,
+  "recorded_provenance_differences": 116,
+  "scientific_or_unexplained_differences": 103,
+  "beyond_tolerance": 103,
   "records": [
     {
       "path": "baselines/gte-qwen2-7b/routerbench/iid_0/clusters/result.json",
@@ -636,11 +636,25 @@
       "reference_file_sha256": "b5e534d9e7253c6c303e15348fc49bf32c7b1ba8f018314bdf3c982c1443b527"
     },
     {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_3/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "28bfa9fa7bda80fff24e57f10036a0ad4ae131a79adcf9263bde8bfae9ec6080",
+      "reference_file_sha256": "262a34613abdfecf5a94d53260c0ea7c5c504eadca791661c6d5ecc17f75b2c2"
+    },
+    {
       "path": "baselines/gte-qwen2-7b/sprout/iid_3/knn/result.json",
       "kind": "knn",
       "method_scores": 26,
       "fresh_file_sha256": "a264d32dbe1e96e52e101eff161bf12608292b2d7e7d9749fc598983c8b1b77f",
       "reference_file_sha256": "e5b6f7d22d06b2a1d5c35b295a6bea2395134a945603040408e100347d1bfab9"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_3/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "211d59433f88ab64a45f3c0184dece47b2c5bfcab3f25d174613626f4eac0917",
+      "reference_file_sha256": "86d1437c53f3516a175ae54f0685b3daecd1a39e34029c34e0950273c279a4f8"
     },
     {
       "path": "baselines/gte-qwen2-7b/sprout/iid_3/prior/result.json",
@@ -650,6 +664,13 @@
       "reference_file_sha256": "e7762bfeeb93f6847b765cbbe5642694649e75e0271669c3d48929c6e49726c0"
     },
     {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_3/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "96aa810695c8fac007d23888a8d0b47b3564c486b544c48f4b701c4d2509aa20",
+      "reference_file_sha256": "eb08da4b0e60e56f03bb7a779c1166e4e16ab3280acb2b00fbd12d4da7237986"
+    },
+    {
       "path": "baselines/gte-qwen2-7b/sprout/iid_3/ridge/result.json",
       "kind": "ridge",
       "method_scores": 13,
@@ -657,11 +678,60 @@
       "reference_file_sha256": "6127eed003025e84dc6039161693a7fa27b64f94944d0260802ef211b9882540"
     },
     {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_4/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "cf15d6ebcfcf633fd6e45cad300f33d7ca6e2505748b02b329125a60e619937c",
+      "reference_file_sha256": "c6c7faf3fd26329116997aa54402502f1a59995f40cfb84e2af54244054f0ab1"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_4/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "3348e697022af06760113de7adeecdaeccfbeaa7f3c19f9bd22c7ff1455861f8",
+      "reference_file_sha256": "3a3ca1cdca46b3ba798ed086d24501a1745c774d6c743cf0cdb9fe5a8e96a933"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_4/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "8638d376989c333d5d89e17f824eb8bd7250b71e9d45e4e901c5c79423e16add",
+      "reference_file_sha256": "e515bebea3245813fcfaef8d3e4f4ff939c861600cd8d12adbc39a0bc9a7874a"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_4/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "80e39db5053d353c3d59e6ed79b13d02c227001eb0a71d093a372254b6313964",
+      "reference_file_sha256": "292513b5b3f1cf96366b6e23546259d46081a139995d1828a764d3d44db6f2b6"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_4/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "9772b654b422df4196cce2ef1502bd9deb40ac580ae54f1a6d3de4a9dacf69b7",
+      "reference_file_sha256": "77ef79f0469914e53a4eda295663b1ed66559566fe1973e734603b06dc3fed4c"
+    },
+    {
       "path": "baselines/gte-qwen2-7b/sprout/iid_4/ridge/result.json",
       "kind": "ridge",
       "method_scores": 13,
       "fresh_file_sha256": "7f1ac02e121a914bc327811a87fe6eb2e95ce19013af911457dda571022b8605",
       "reference_file_sha256": "3802649b1848303a70dc99acf3ce215887bcabe2cabebdf4b6967ebb93f9422c"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/ood_0/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "17432b9bf080f3ed6c9999c00b8603ede30e61983cebed4b064b79647c3eb622",
+      "reference_file_sha256": "8c9b959fce60bcf1889b3d89329756575c9df2c824e2d32de1f1215cafff5e62"
+    },
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/ood_0/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "5f83bcd7f8a2bdc27fefa622f936714a4deeb23fe7816dd9de834887120623d1",
+      "reference_file_sha256": "369dfe49d5e0a0cdcb2e74f65dd0dc989f5a2a1834aec96761f5cf4d7cf4a847"
     },
     {
       "path": "baselines/gte-qwen2-7b/sprout/ood_0/ridge/result.json",
@@ -1245,11 +1315,25 @@
       "reference_file_sha256": "8caf5c859521f909773ce5ce468504704deed7162594b8f866e6b3a27b7df824"
     },
     {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "38c7c2f1ad785976e3f5b1775216a426d1c694ceb420fa0dd5165e7bca243711",
+      "reference_file_sha256": "bd623a7b792ebadf33d170ab8e5f756d49261473e2747f59ee59f62cc167f709"
+    },
+    {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/knn/result.json",
       "kind": "knn",
       "method_scores": 26,
       "fresh_file_sha256": "08e65e0d8b3cfa3b6ec1f4866ad3ff7b9e0ed93bcac66b879222155c15c38bc2",
       "reference_file_sha256": "04e4eb9a45cc079c647a29bc9a565883049aa25b6214808b796edd47ca870e83"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "b9d27ce561f779c2aa1ef7efdc64540e42656347e886d5303ffb5c68ca3101c1",
+      "reference_file_sha256": "a5d85dc3d845d3003c65042ee7be50b1210f42b669cc3d7414e6de715343c8d6"
     },
     {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prior/result.json",
@@ -1259,6 +1343,13 @@
       "reference_file_sha256": "9820803e955aaf19a3b06ca0fb9510f08e7da2447048a52d9ce0945872a8f462"
     },
     {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "4bf04548e0d19a044f856a82f318d24008cf23afe16e0beea8730fe3f23eda13",
+      "reference_file_sha256": "f239b529474ae745ebec4927978ff2285fb28548c30b1757884f79bed08fb0ac"
+    },
+    {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/ridge/result.json",
       "kind": "ridge",
       "method_scores": 13,
@@ -1266,11 +1357,81 @@
       "reference_file_sha256": "8b6e3a0337a7997ce4635eee97adcde78966f4d9cab8c056297caa48d5ca6034"
     },
     {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "aea3679575367aaa5f0884c8bf6d30d3a98e2fa4131bb57e2c9aca829cb98430",
+      "reference_file_sha256": "8df6c7b8d6e42bd45120464c4c354c03e8840c805b2e4322b1d6a384efa3cf59"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "bc2a03f31eb71bf118ad8eca2e0cb87463ef398f049f4f38bb273936174f491f",
+      "reference_file_sha256": "67d94359be6b8ad391bf45413586f2735d8a643a8d80c6b564dac9f5f5b38f63"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "11af2b03fa5c711392afe6a1c1e4b14706666bfdce432d44ab69f6e4daf15b07",
+      "reference_file_sha256": "2227d239f46d3d6a8b1a95375b4d95efa3fb6d23ff650ef984687b6c6ca8f4e9"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "2485f8d35ca30362706af2cf3d2b963bd64342d44862d5c7c4b32f677acd7c04",
+      "reference_file_sha256": "2943c652fffa80a1fb44ca1b8aae5dd4229ea9abb6e97c03784acd0d0ecf0274"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "1156e09b52eae720a131aa7e64bff499b0b3ee3eba128acdf4c25ed030cf0154",
+      "reference_file_sha256": "736475fa9fbce6370ef849e09d54e8c3af1f5f70f577980a51753764af0f0345"
+    },
+    {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/ridge/result.json",
       "kind": "ridge",
       "method_scores": 13,
       "fresh_file_sha256": "3be4db4094c172558cff94510c3ae2d376405d9cd25047ed18ceb2e69f4b1353",
       "reference_file_sha256": "d46b0c090d5124de9ecc017d252c0d435dcf7b38b20089d9c0555097431cdccb"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/clusters/result.json",
+      "kind": "clusters",
+      "method_scores": 26,
+      "fresh_file_sha256": "d7d672543db30088e9668125782b67452fbe4e9234eab5d0c13a6ebe925159b1",
+      "reference_file_sha256": "d7e839b0e8b73cdf9c832a4e2e2260c5f17306596d505837f1dcbeb62afa0045"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/knn/result.json",
+      "kind": "knn",
+      "method_scores": 26,
+      "fresh_file_sha256": "fb64a61344be446e32ba9f3ef5b36fe7f3b323823a58c45a4552fe3dd38fd0c6",
+      "reference_file_sha256": "af5c625be574b259efa2e5dbf948ced3c32447cb36ebcf8deaf962fd77428113"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/lookups/result.json",
+      "kind": "lookups",
+      "method_scores": 26,
+      "fresh_file_sha256": "c7d607805fc4e630d04d9e604957ceeaebbb90519a4858aeba10e92367a97cb0",
+      "reference_file_sha256": "49650b2d273a3717fc99ece010a457a944722d145ced8a16d3af003f53e6b0be"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/prior/result.json",
+      "kind": "prior",
+      "method_scores": 39,
+      "fresh_file_sha256": "4da6fed37361f4cb30f1162b17c207e9a8e1e4f923fcc5fabc6f28ff91094ac1",
+      "reference_file_sha256": "afdb878eadbdec5ef8bb34d5b76b5f89cfa861c4d83dc381a6b2de41428f59c6"
+    },
+    {
+      "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/prox/result.json",
+      "kind": "prox",
+      "method_scores": 26,
+      "fresh_file_sha256": "79bb4a119e5f82801d59537d6cacd2f232a4982ef77febaaa91d8c30f8efc93d",
+      "reference_file_sha256": "57cdc012f9e070a945239639c587037ea2230b5242fd6d74ae270117eeae881b"
     },
     {
       "path": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/ridge/result.json",
@@ -2295,6 +2456,30 @@
     },
     {
       "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_4/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/iid_4/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
         "config_sha256"
       ],
       "kind": "value",
@@ -2304,6 +2489,30 @@
       "record": "baselines/gte-qwen2-7b/sprout/iid_4/ridge/result.json",
       "classification": "recorded_release_provenance",
       "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/ood_0/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/gte-qwen2-7b/sprout/ood_0/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
     },
     {
       "path": [
@@ -4033,6 +4242,85 @@
     },
     {
       "path": [
+        "results",
+        "150",
+        "km_prox32_validated",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.0003454027834738361,
+      "reference": 0.00034540654287233235,
+      "absolute_error": 3.75939849622765e-09,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "150",
+        "km_prox32_validated",
+        "equal_family"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6930227624874226,
+      "reference": 0.6930224125157031,
+      "absolute_error": 3.4997171949324724e-07,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "150",
+        "km_prox32_validated",
+        "per_family",
+        "2",
+        "cost"
+      ],
+      "kind": "numeric",
+      "fresh": 0.00029722164875565615,
+      "reference": 0.0002972356476244344,
+      "absolute_error": 1.3998868778259711e-08,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "150",
+        "km_prox32_validated",
+        "per_family",
+        "2",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.6413896033653845,
+      "reference": 0.6413875035350679,
+      "absolute_error": 2.0998303166264165e-06,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
+        "results",
+        "150",
+        "km_prox32_validated",
+        "utility"
+      ],
+      "kind": "numeric",
+      "fresh": 0.7771331535277589,
+      "reference": 0.7771325896179845,
+      "absolute_error": 5.63909774431437e-07,
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prox/result.json",
+      "classification": "scientific_or_unexplained"
+    },
+    {
+      "path": [
         "config_sha256"
       ],
       "kind": "value",
@@ -4045,6 +4333,30 @@
     },
     {
       "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
         "config_sha256"
       ],
       "kind": "value",
@@ -4054,6 +4366,30 @@
       "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/ridge/result.json",
       "classification": "recorded_release_provenance",
       "source_path": "configs/ridge.json"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/knn/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
+    },
+    {
+      "path": [
+        "code_sha256"
+      ],
+      "kind": "value",
+      "fresh": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+      "reference": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+      "within_tolerance": false,
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/prior/result.json",
+      "classification": "recorded_release_provenance",
+      "source_path": "src/baselines/run_fixed.py"
     },
     {
       "path": [
@@ -4156,20 +4492,10 @@
     "baselines/gte-qwen2-7b/sprout/iid_0/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_1/mlp_reduced/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_2/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_3/clusters/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_3/lookups/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_3/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_3/prox/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_4/clusters/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_4/knn/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_4/lookups/result.json",
     "baselines/gte-qwen2-7b/sprout/iid_4/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_4/prior/result.json",
-    "baselines/gte-qwen2-7b/sprout/iid_4/prox/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_0/clusters/result.json",
-    "baselines/gte-qwen2-7b/sprout/ood_0/knn/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_0/mlp_reduced/result.json",
-    "baselines/gte-qwen2-7b/sprout/ood_0/prior/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_0/prox/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_1/clusters/result.json",
     "baselines/gte-qwen2-7b/sprout/ood_1/knn/result.json",
@@ -4210,22 +4536,9 @@
     "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_6/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_0/mlp_reduced/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_1/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_2/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/knn/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_3/prox/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/clusters/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/knn/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/lookups/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/mlp_reduced/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/prior/result.json",
-    "baselines/qwen2.5-7b-instruct/layer_21/sprout/iid_4/prox/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/clusters/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/knn/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_0/mlp_reduced/result.json",
@@ -4257,7 +4570,7 @@
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/prior/result.json",
     "baselines/qwen2.5-7b-instruct/layer_21/sprout/ood_5/prox/result.json"
   ],
-  "checked_at_utc": "2026-10-27T20:00:28.906926+00:00",
+  "checked_at_utc": "2026-10-27T21:52:43.048800+00:00",
   "auditor_sha256": "dffaf3a507b8b5b8b83d76cf97da8fd9274f4a45e35926034653dccf2723ef5d",
   "reference_evidence_manifest_sha256": "699e0ccaf9c63fdf5ea1e24ee9b2eaded44a39f2d514dad73e8b772d27dd6167",
   "transition_registry": "release_provenance/source_changes.json",

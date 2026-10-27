@@ -1,0 +1,4889 @@
+{
+  "status": "partial_differences",
+  "passed": false,
+  "completed_repetitions": 1,
+  "planned_repetitions": 6,
+  "collected_at_utc": "2026-10-27T22:22:43.558926+00:00",
+  "source_commit": "a8ab76b62bc8f7562bbef70d7a9d7e9294ee0957",
+  "auditor_sha256": "dffaf3a507b8b5b8b83d76cf97da8fd9274f4a45e35926034653dccf2723ef5d",
+  "settings": {
+    "random_state": 42,
+    "n_init": 10,
+    "threads": 4
+  },
+  "execution": {
+    "case": {
+      "kind": "clusters",
+      "task": 26
+    },
+    "started_at_utc": "2026-10-27T21:53:58.304933+00:00",
+    "completed_at_utc": "2026-10-27T22:18:39.654786+00:00",
+    "script_sha256": "0a9c4529aac02444fd6a310c835910d83e662b8e85efc6ea04bb5c2620707c8e",
+    "numpy": "1.26.4",
+    "sklearn": "1.5.2",
+    "python": "3.11.15",
+    "cpu": "AMD EPYC 9474F 48-Core Processor",
+    "thread_settings": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4"
+    },
+    "threadpools": [
+      {
+        "user_api": "openmp",
+        "internal_api": "openmp",
+        "num_threads": 4,
+        "prefix": "libgomp",
+        "version": null
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libopenblas",
+        "version": "0.3.23.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Cooperlake"
+      },
+      {
+        "user_api": "blas",
+        "internal_api": "openblas",
+        "num_threads": 4,
+        "prefix": "libscipy_openblas",
+        "version": "0.3.27.dev",
+        "threading_layer": "pthreads",
+        "architecture": "Cooperlake"
+      }
+    ]
+  },
+  "source_sha256": {
+    "src/baselines/common.py": "90469238a1bda991d4a8057ae536879181d35eff4252c783fab7f93202661133",
+    "src/baselines/run_clusters.py": "0a9c4529aac02444fd6a310c835910d83e662b8e85efc6ea04bb5c2620707c8e",
+    "src/baselines/run_prox.py": "d25fed7da8c783b241d53065bbd7d45b1001790f26d2e7863d8700570aa2b9c4",
+    "src/baselines/run_cpu_prox.py": "49c99f5b461c8c4bad3f83459475af49267eb6649734b2476bf477a2c12d729c",
+    "jobs/env.sh": "be743f50f5cd65bbee5d938e3160d74a1f886bb5ab9c1f43230957260039f4ff",
+    "configs/geometry.json": "856002a63fc7309782cbd7ce768275520d3c7fa5a0b17d10b3b53c69b0705c8d",
+    "configs/baselines.json": "741e9cdeab782a41b00f2377fdc5463732604e4a0def769f029fe0a91d127d2b",
+    "configs/baseline_splits/routerbench-0shot.json": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+    "configs/baseline_splits/sprout-sixfam.json": "8d3ff78c8c1b84f60a737720cad236af5d977ccb5f958a4ab7cda3927542c997"
+  },
+  "comparisons": [
+    {
+      "path": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+      "scientific_json_sha256": "8d8c4ced0ed8b9e1f65818f4f44666db57fff8585cb7f5b92068ed2e633e4505",
+      "primary_fresh_file_sha256": "aa5eed32ee0bd3cd6c1427323a108fe499a3653b725ec8714d02c467d3a688f3",
+      "comparisons": {
+        "primary_new_run": {
+          "status": "differences",
+          "passed": false,
+          "coverage_complete": true,
+          "expected_records": 1,
+          "compared_completed_records": 1,
+          "completed_records_by_kind": {
+            "clusters": 1
+          },
+          "expected_records_by_kind": {
+            "clusters": 1
+          },
+          "method_scores": 26,
+          "method_scores_by_name": {
+            "avengerspro_validated": 13,
+            "cluster_utility_validated": 13
+          },
+          "counts": {
+            "numeric_values": 2627,
+            "exact_numeric_values": 2470,
+            "other_values": 5
+          },
+          "relative_tolerance": 1e-10,
+          "absolute_tolerance": 1e-12,
+          "excluded_operational_fields": [
+            "seconds",
+            "slurm_job_id"
+          ],
+          "exact_scientific_match": false,
+          "scientific_fields_within_tolerance": false,
+          "compared_record_fields_identical": false,
+          "recorded_provenance_differences": 0,
+          "scientific_or_unexplained_differences": 157,
+          "beyond_tolerance": 157,
+          "records": [
+            {
+              "path": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "kind": "clusters",
+              "method_scores": 26
+            }
+          ],
+          "differences": [
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0031794429672666515,
+              "reference": 0.003179268857750437,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7797290402869587,
+              "reference": 0.7796819060486481,
+              "absolute_error": 4.713423831059771e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0031794429672666515,
+              "reference": 0.003179268857750437,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7797290402869587,
+              "reference": 0.7796819060486481,
+              "absolute_error": 4.713423831059771e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0031794429672666515,
+              "reference": 0.003179268857750437,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7782207323545731,
+              "reference": 0.778173652143883,
+              "absolute_error": 4.708021069010915e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7844276635322398,
+              "reference": 0.7841451822680995,
+              "absolute_error": 0.0002824812641403218,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8637850791543251,
+              "reference": 0.8637092187647148,
+              "absolute_error": 7.586038961027164e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0029244414597098807,
+              "reference": 0.002924267350193666,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7799595390117089,
+              "reference": 0.7799124588010188,
+              "absolute_error": 4.708021069010915e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7844276635322398,
+              "reference": 0.7841451822680995,
+              "absolute_error": 0.0002824812641403218,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8658912432596645,
+              "reference": 0.865815295815296,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8644290225298095,
+              "reference": 0.864353162140199,
+              "absolute_error": 7.586038961049368e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0028054189488873698,
+              "reference": 0.0028052448393711556,
+              "absolute_error": 1.7410951621416038e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7783944990418684,
+              "reference": 0.7783474728587992,
+              "absolute_error": 4.70261830691765e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7824017071549773,
+              "reference": 0.7821195500565611,
+              "absolute_error": 0.0002821570984161692,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8654279638490165,
+              "reference": 0.865352016404648,
+              "absolute_error": 7.59474443685626e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8626225449001291,
+              "reference": 0.8625467715652767,
+              "absolute_error": 7.577333485242477e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.002719709478241057,
+              "reference": 0.0027195353687248422,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7783658465021556,
+              "reference": 0.7783188203190862,
+              "absolute_error": 4.702618306939854e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7824017071549773,
+              "reference": 0.7821195500565611,
+              "absolute_error": 0.0002821570984161692,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8655418850155693,
+              "reference": 0.8654659375712007,
+              "absolute_error": 7.59474443685626e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8628221755373281,
+              "reference": 0.8627464022024759,
+              "absolute_error": 7.577333485220272e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0015962433470038733,
+              "reference": 0.0011595367395762133,
+              "absolute_error": 0.00043670660742766007,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7575589214817557,
+              "reference": 0.765621253763915,
+              "absolute_error": 0.008062332282159246,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "0",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0027297524691358025,
+              "reference": 0.002053869135802469,
+              "absolute_error": 0.0006758833333333335,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "0",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.5240740740740741,
+              "reference": 0.5518518518518519,
+              "absolute_error": 0.02777777777777779,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "0",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.49677654938271604,
+              "reference": 0.5313131604938272,
+              "absolute_error": 0.034536611111111115,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "1",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0005568105902192243,
+              "reference": 0.0005688533220910624,
+              "absolute_error": 1.2042731871838067e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "1",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8940303541315346,
+              "reference": 0.8916020236087691,
+              "absolute_error": 0.002428330522765587,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "1",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8884622482293424,
+              "reference": 0.8859134903878583,
+              "absolute_error": 0.002548757841484117,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0034867674208144796,
+              "reference": 0.0020948346153846155,
+              "absolute_error": 0.001391932805429864,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7833710407239819,
+              "reference": 0.7671380090497737,
+              "absolute_error": 0.016233031674208198,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.748503366515837,
+              "reference": 0.7461896628959276,
+              "absolute_error": 0.0023137036199094574,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "3",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00083808,
+              "reference": 0.0011086240000000001,
+              "absolute_error": 0.00027054400000000006,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "3",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6137777777777778,
+              "reference": 0.6324444444444445,
+              "absolute_error": 0.01866666666666672,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "3",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6053969777777778,
+              "reference": 0.6213582044444443,
+              "absolute_error": 0.01596122666666655,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "4",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0010392044898310927,
+              "reference": 0.0008796693123061013,
+              "absolute_error": 0.0001595351775249915,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "4",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.9071165115477422,
+              "reference": 0.9099431230610135,
+              "absolute_error": 0.0028266115132713487,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "4",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8967244666494313,
+              "reference": 0.9011464299379525,
+              "absolute_error": 0.00442196328852118,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "5",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0007910498951781972,
+              "reference": 0.001022277568134172,
+              "absolute_error": 0.00023122767295597466,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "5",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.9174004192872118,
+              "reference": 0.9180293501048219,
+              "absolute_error": 0.0006289308176100628,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "5",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.9094899203354297,
+              "reference": 0.90780657442348,
+              "absolute_error": 0.0016833459119497407,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8615850231639707,
+              "reference": 0.8586078833447255,
+              "absolute_error": 0.0029771398192451892,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8456225896939318,
+              "reference": 0.8470125159489633,
+              "absolute_error": 0.0013899262550315372,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0004526041847041847,
+              "reference": 0.0004528142895116579,
+              "absolute_error": 2.101048074732467e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7041933125424641,
+              "reference": 0.7042792549915591,
+              "absolute_error": 8.594244909498894e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00048535721153846156,
+              "reference": 0.00048613957861990954,
+              "absolute_error": 7.82367081447982e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.703789592760181,
+              "reference": 0.7043834841628959,
+              "absolute_error": 0.000593891402714819,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6552538716063347,
+              "reference": 0.655769526300905,
+              "absolute_error": 0.0005156546945702667,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8395355813776867,
+              "reference": 0.8396950710108606,
+              "absolute_error": 0.00015948963317391485,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7942751629072682,
+              "reference": 0.7944136420596947,
+              "absolute_error": 0.000138479152426485,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00041388735854788484,
+              "reference": 0.0004140170122275385,
+              "absolute_error": 1.2965367965367142e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7030678401222171,
+              "reference": 0.7031587755011764,
+              "absolute_error": 9.093537895932258e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0004496854779411765,
+              "reference": 0.0004501682692307693,
+              "absolute_error": 4.827912895927688e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6999717194570136,
+              "reference": 0.7005656108597285,
+              "absolute_error": 0.000593891402714819,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6550031716628959,
+              "reference": 0.6555487839366515,
+              "absolute_error": 0.0005456122737556024,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8359432672590569,
+              "reference": 0.8361027568922306,
+              "absolute_error": 0.0001594896331736928,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7945545314042683,
+              "reference": 0.7947010556694767,
+              "absolute_error": 0.0001465242652083365,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0004051961540214172,
+              "reference": 0.00040532580770107085,
+              "absolute_error": 1.2965367965367142e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6763763680704559,
+              "reference": 0.6764632801886686,
+              "absolute_error": 8.691211821276745e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0003415803308823529,
+              "reference": 0.00034206312217194566,
+              "absolute_error": 4.827912895927688e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.689762443438914,
+              "reference": 0.6903563348416291,
+              "absolute_error": 0.000593891402715041,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.638525393806561,
+              "reference": 0.6390468665158371,
+              "absolute_error": 0.0005214727092760496,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8349559504822663,
+              "reference": 0.8351154401154401,
+              "absolute_error": 0.00015948963317380382,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7741765273790536,
+              "reference": 0.7743165689602796,
+              "absolute_error": 0.0001400415812259359,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00035211336371231106,
+              "reference": 0.00035224301739196474,
+              "absolute_error": 1.2965367965367142e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6902906991208756,
+              "reference": 0.6903776112390881,
+              "absolute_error": 8.691211821254541e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00035431094457013575,
+              "reference": 0.00035479373585972846,
+              "absolute_error": 4.827912895927146e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6923359728506787,
+              "reference": 0.6929298642533936,
+              "absolute_error": 0.00059389140271493,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6391893311651584,
+              "reference": 0.6397108038744342,
+              "absolute_error": 0.0005214727092758276,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8307104883420673,
+              "reference": 0.8308699779752412,
+              "absolute_error": 0.00015948963317391485,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7778934837852206,
+              "reference": 0.7780335253664464,
+              "absolute_error": 0.00014004158122582488,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0021333172780435943,
+              "reference": 0.0021331431685273792,
+              "absolute_error": 1.7410951621502774e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7742260565451403,
+              "reference": 0.7741791384173123,
+              "absolute_error": 4.691812782797733e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7783497944004524,
+              "reference": 0.7780682856334842,
+              "absolute_error": 0.00028150876696819704,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8641520467836258,
+              "reference": 0.8640760993392573,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8598854122275386,
+              "reference": 0.8598098130022025,
+              "absolute_error": 7.559922533606489e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0005576798283587757,
+              "reference": 0.0005577360028860028,
+              "absolute_error": 5.61745272271031e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.753903018963757,
+              "reference": 0.7539021473927728,
+              "absolute_error": 8.715709841622399e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0008579025028280544,
+              "reference": 0.0008581116798642534,
+              "absolute_error": 2.091770361989983e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.717268500777715,
+              "reference": 0.7172632713518101,
+              "absolute_error": 5.229425904862417e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8353300480367587,
+              "reference": 0.835328643673578,
+              "absolute_error": 1.4043631807458823e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00030738852510063037,
+              "reference": 0.0003073919996962102,
+              "absolute_error": 3.4745955798426605e-09,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.648165350492452,
+              "reference": 0.6482119456329122,
+              "absolute_error": 4.659514046012614e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0002910357607466063,
+              "reference": 0.0002910486990950226,
+              "absolute_error": 1.2938348416301551e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6796945701357465,
+              "reference": 0.6799773755656108,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.606935629949095,
+              "reference": 0.6072152007918551,
+              "absolute_error": 0.0002795708427600907,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8197284878863828,
+              "reference": 0.8198044353307512,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.742881356611225,
+              "reference": 0.7429564354066986,
+              "absolute_error": 7.50787954736376e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0021333172780435943,
+              "reference": 0.0021331431685273792,
+              "absolute_error": 1.7410951621502774e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7684419628304869,
+              "reference": 0.7683953688683828,
+              "absolute_error": 4.659396210415778e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7661940561368777,
+              "reference": 0.7659144923642535,
+              "absolute_error": 0.00027956377262428056,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8641520467836258,
+              "reference": 0.8640760993392573,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8534854603934078,
+              "reference": 0.8534103834966204,
+              "absolute_error": 7.507689678742935e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0016542573934837095,
+              "reference": 0.0016540832839674945,
+              "absolute_error": 1.7410951621502774e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7678474832090045,
+              "reference": 0.7678008892469004,
+              "absolute_error": 4.659396210415778e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7661940561368777,
+              "reference": 0.7659144923642535,
+              "absolute_error": 0.00027956377262428056,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8631571352623983,
+              "reference": 0.8630811878180298,
+              "absolute_error": 7.59474443685626e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8548858482949798,
+              "reference": 0.8548107713981925,
+              "absolute_error": 7.507689678731833e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0005576798283587757,
+              "reference": 0.0005577360028860028,
+              "absolute_error": 5.61745272271031e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7372665667117467,
+              "reference": 0.7372648235697784,
+              "absolute_error": 1.7431419683244798e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0008579025028280544,
+              "reference": 0.0008581116798642534,
+              "absolute_error": 2.091770361989983e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6958209382070136,
+              "reference": 0.6958104793552036,
+              "absolute_error": 1.0458851810057901e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8213880523277891,
+              "reference": 0.8213852436014277,
+              "absolute_error": 2.8087263613807423e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0006074761714893294,
+              "reference": 0.0006075323460165565,
+              "absolute_error": 5.61745272271031e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7363548958142799,
+              "reference": 0.7363531526723116,
+              "absolute_error": 1.7431419683244798e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.000925162613122172,
+              "reference": 0.0009253717901583709,
+              "absolute_error": 2.091770361989983e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6949749010180994,
+              "reference": 0.6949644421662895,
+              "absolute_error": 1.0458851809946879e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8194545502012608,
+              "reference": 0.8194517414748993,
+              "absolute_error": 2.8087263614917646e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00016669896331738437,
+              "reference": 0.00016667626642363482,
+              "absolute_error": 2.2696893749543125e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.5657341148727598,
+              "reference": 0.5657411579063193,
+              "absolute_error": 7.043033559472889e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0002394326640271493,
+              "reference": 0.0002393481476244344,
+              "absolute_error": 8.451640271490914e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.5254194145927602,
+              "reference": 0.5254616727941176,
+              "absolute_error": 4.2258201357392444e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6693174128503077,
+              "reference": 0.6693287612971824,
+              "absolute_error": 1.1348446874781537e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00019294105566947673,
+              "reference": 0.00019291835877572718,
+              "absolute_error": 2.2696893749543125e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.5672809692112926,
+              "reference": 0.5672880122448521,
+              "absolute_error": 7.043033559583911e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0002573689338235294,
+              "reference": 0.0002572844174208144,
+              "absolute_error": 8.451640271499045e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.5388211891968326,
+              "reference": 0.53886344739819,
+              "absolute_error": 4.2258201357392444e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6779856884635832,
+              "reference": 0.677997036910458,
+              "absolute_error": 1.1348446874781537e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0005157911179463811,
+              "reference": 0.0005158472924736083,
+              "absolute_error": 5.617452722721152e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7210696568209173,
+              "reference": 0.7210670421079648,
+              "absolute_error": 2.6147129524867196e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.000712412358597285,
+              "reference": 0.0007126215356334842,
+              "absolute_error": 2.091770361991067e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.679233100254525,
+              "reference": 0.67921741197681,
+              "absolute_error": 1.568827771503134e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8088333239348372,
+              "reference": 0.8088291108452951,
+              "absolute_error": 4.2130895421266246e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0004946422457659301,
+              "reference": 0.0004946984202931572,
+              "absolute_error": 5.61745272271031e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7198309314324233,
+              "reference": 0.7198283167194708,
+              "absolute_error": 2.6147129524867196e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0006885878110859729,
+              "reference": 0.000688796988122172,
+              "absolute_error": 2.091770361991067e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6804543304581449,
+              "reference": 0.6804386421804299,
+              "absolute_error": 1.5688277714920318e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8090600300941749,
+              "reference": 0.8090558170046328,
+              "absolute_error": 4.2130895421266246e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "selections",
+                "10",
+                "K"
+              ],
+              "kind": "numeric",
+              "fresh": 128,
+              "reference": 64,
+              "absolute_error": 64,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "selections",
+                "10",
+                "validation_utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8448118400065106,
+              "reference": 0.8459386522623698,
+              "absolute_error": 0.0011268122558591998,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            }
+          ],
+          "missing_records": []
+        },
+        "frozen_reference": {
+          "status": "differences",
+          "passed": false,
+          "coverage_complete": true,
+          "expected_records": 1,
+          "compared_completed_records": 1,
+          "completed_records_by_kind": {
+            "clusters": 1
+          },
+          "expected_records_by_kind": {
+            "clusters": 1
+          },
+          "method_scores": 26,
+          "method_scores_by_name": {
+            "avengerspro_validated": 13,
+            "cluster_utility_validated": 13
+          },
+          "counts": {
+            "numeric_values": 2627,
+            "exact_numeric_values": 2487,
+            "other_values": 5
+          },
+          "relative_tolerance": 1e-10,
+          "absolute_tolerance": 1e-12,
+          "excluded_operational_fields": [
+            "seconds",
+            "slurm_job_id"
+          ],
+          "exact_scientific_match": false,
+          "scientific_fields_within_tolerance": false,
+          "compared_record_fields_identical": false,
+          "recorded_provenance_differences": 0,
+          "scientific_or_unexplained_differences": 140,
+          "beyond_tolerance": 140,
+          "records": [
+            {
+              "path": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "kind": "clusters",
+              "method_scores": 26
+            }
+          ],
+          "differences": [
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0031794429672666515,
+              "reference": 0.003179268857750437,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7797290402869587,
+              "reference": 0.7796819060486481,
+              "absolute_error": 4.713423831059771e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0031794429672666515,
+              "reference": 0.003179268857750437,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7797290402869587,
+              "reference": 0.7796819060486481,
+              "absolute_error": 4.713423831059771e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0031794429672666515,
+              "reference": 0.003179268857750437,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7782207323545731,
+              "reference": 0.778173652143883,
+              "absolute_error": 4.708021069010915e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7844276635322398,
+              "reference": 0.7841451822680995,
+              "absolute_error": 0.0002824812641403218,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8653748006379585,
+              "reference": 0.86529885319359,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8637850791543251,
+              "reference": 0.8637092187647148,
+              "absolute_error": 7.586038961027164e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0029244414597098807,
+              "reference": 0.002924267350193666,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7799595390117089,
+              "reference": 0.7799124588010188,
+              "absolute_error": 4.708021069010915e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7844276635322398,
+              "reference": 0.7841451822680995,
+              "absolute_error": 0.0002824812641403218,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8658912432596645,
+              "reference": 0.865815295815296,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "0.5",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8644290225298095,
+              "reference": 0.864353162140199,
+              "absolute_error": 7.586038961049368e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0028054189488873698,
+              "reference": 0.0028052448393711556,
+              "absolute_error": 1.7410951621416038e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7783944990418684,
+              "reference": 0.7783474728587992,
+              "absolute_error": 4.70261830691765e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7824017071549773,
+              "reference": 0.7821195500565611,
+              "absolute_error": 0.0002821570984161692,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8654279638490165,
+              "reference": 0.865352016404648,
+              "absolute_error": 7.59474443685626e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8626225449001291,
+              "reference": 0.8625467715652767,
+              "absolute_error": 7.577333485242477e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.002719709478241057,
+              "reference": 0.0027195353687248422,
+              "absolute_error": 1.7410951621459406e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7783658465021556,
+              "reference": 0.7783188203190862,
+              "absolute_error": 4.702618306939854e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7824017071549773,
+              "reference": 0.7821195500565611,
+              "absolute_error": 0.0002821570984161692,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8655418850155693,
+              "reference": 0.8654659375712007,
+              "absolute_error": 7.59474443685626e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "1",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8628221755373281,
+              "reference": 0.8627464022024759,
+              "absolute_error": 7.577333485220272e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0015962433470038733,
+              "reference": 0.0015962651742993847,
+              "absolute_error": 2.1827295511398642e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7575589214817557,
+              "reference": 0.757506938355813,
+              "absolute_error": 5.198312594278942e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0034867674208144796,
+              "reference": 0.0034868486990950226,
+              "absolute_error": 8.127828054300609e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7833710407239819,
+              "reference": 0.7830599547511311,
+              "absolute_error": 0.00031108597285078865,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.748503366515837,
+              "reference": 0.7481914677601811,
+              "absolute_error": 0.00031189875565595937,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8615850231639707,
+              "reference": 0.8615014809751653,
+              "absolute_error": 8.354218880535225e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "10",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8456225896939318,
+              "reference": 0.8455388292321713,
+              "absolute_error": 8.3760461760507e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0004526041847041847,
+              "reference": 0.0004528142895116579,
+              "absolute_error": 2.101048074732467e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7041933125424641,
+              "reference": 0.7042792549915591,
+              "absolute_error": 8.594244909498894e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00048535721153846156,
+              "reference": 0.00048613957861990954,
+              "absolute_error": 7.82367081447982e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.703789592760181,
+              "reference": 0.7043834841628959,
+              "absolute_error": 0.000593891402714819,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6552538716063347,
+              "reference": 0.655769526300905,
+              "absolute_error": 0.0005156546945702667,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8395355813776867,
+              "reference": 0.8396950710108606,
+              "absolute_error": 0.00015948963317391485,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7942751629072682,
+              "reference": 0.7944136420596947,
+              "absolute_error": 0.000138479152426485,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00041388735854788484,
+              "reference": 0.0004140170122275385,
+              "absolute_error": 1.2965367965367142e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7030678401222171,
+              "reference": 0.7031587755011764,
+              "absolute_error": 9.093537895932258e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0004496854779411765,
+              "reference": 0.0004501682692307693,
+              "absolute_error": 4.827912895927688e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6999717194570136,
+              "reference": 0.7005656108597285,
+              "absolute_error": 0.000593891402714819,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6550031716628959,
+              "reference": 0.6555487839366515,
+              "absolute_error": 0.0005456122737556024,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8359432672590569,
+              "reference": 0.8361027568922306,
+              "absolute_error": 0.0001594896331736928,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "100",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7945545314042683,
+              "reference": 0.7947010556694767,
+              "absolute_error": 0.0001465242652083365,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0004051961540214172,
+              "reference": 0.00040532580770107085,
+              "absolute_error": 1.2965367965367142e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6763763680704559,
+              "reference": 0.6764632801886686,
+              "absolute_error": 8.691211821276745e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0003415803308823529,
+              "reference": 0.00034206312217194566,
+              "absolute_error": 4.827912895927688e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.689762443438914,
+              "reference": 0.6903563348416291,
+              "absolute_error": 0.000593891402715041,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.638525393806561,
+              "reference": 0.6390468665158371,
+              "absolute_error": 0.0005214727092760496,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8349559504822663,
+              "reference": 0.8351154401154401,
+              "absolute_error": 0.00015948963317380382,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7741765273790536,
+              "reference": 0.7743165689602796,
+              "absolute_error": 0.0001400415812259359,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00035211336371231106,
+              "reference": 0.00035224301739196474,
+              "absolute_error": 1.2965367965367142e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6902906991208756,
+              "reference": 0.6903776112390881,
+              "absolute_error": 8.691211821254541e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00035431094457013575,
+              "reference": 0.00035479373585972846,
+              "absolute_error": 4.827912895927146e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6923359728506787,
+              "reference": 0.6929298642533936,
+              "absolute_error": 0.00059389140271493,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6391893311651584,
+              "reference": 0.6397108038744342,
+              "absolute_error": 0.0005214727092758276,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8307104883420673,
+              "reference": 0.8308699779752412,
+              "absolute_error": 0.00015948963317391485,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "150",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7778934837852206,
+              "reference": 0.7780335253664464,
+              "absolute_error": 0.00014004158122582488,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0021333172780435943,
+              "reference": 0.0021331431685273792,
+              "absolute_error": 1.7410951621502774e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7742260565451403,
+              "reference": 0.7741791384173123,
+              "absolute_error": 4.691812782797733e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7783497944004524,
+              "reference": 0.7780682856334842,
+              "absolute_error": 0.00028150876696819704,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8641520467836258,
+              "reference": 0.8640760993392573,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "2",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8598854122275386,
+              "reference": 0.8598098130022025,
+              "absolute_error": 7.559922533606489e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0005576798283587757,
+              "reference": 0.0005577360028860028,
+              "absolute_error": 5.61745272271031e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.753903018963757,
+              "reference": 0.7539021473927728,
+              "absolute_error": 8.715709841622399e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0008579025028280544,
+              "reference": 0.0008581116798642534,
+              "absolute_error": 2.091770361989983e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.717268500777715,
+              "reference": 0.7172632713518101,
+              "absolute_error": 5.229425904862417e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "25",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8353300480367587,
+              "reference": 0.835328643673578,
+              "absolute_error": 1.4043631807458823e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00030738852510063037,
+              "reference": 0.0003073919996962102,
+              "absolute_error": 3.4745955798426605e-09,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.648165350492452,
+              "reference": 0.6482119456329122,
+              "absolute_error": 4.659514046012614e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0002910357607466063,
+              "reference": 0.0002910486990950226,
+              "absolute_error": 1.2938348416301551e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6796945701357465,
+              "reference": 0.6799773755656108,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.606935629949095,
+              "reference": 0.6072152007918551,
+              "absolute_error": 0.0002795708427600907,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8197284878863828,
+              "reference": 0.8198044353307512,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "250",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.742881356611225,
+              "reference": 0.7429564354066986,
+              "absolute_error": 7.50787954736376e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0021333172780435943,
+              "reference": 0.0021331431685273792,
+              "absolute_error": 1.7410951621502774e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7684419628304869,
+              "reference": 0.7683953688683828,
+              "absolute_error": 4.659396210415778e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7661940561368777,
+              "reference": 0.7659144923642535,
+              "absolute_error": 0.00027956377262428056,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8641520467836258,
+              "reference": 0.8640760993392573,
+              "absolute_error": 7.594744436845158e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8534854603934078,
+              "reference": 0.8534103834966204,
+              "absolute_error": 7.507689678742935e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0016542573934837095,
+              "reference": 0.0016540832839674945,
+              "absolute_error": 1.7410951621502774e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7678474832090045,
+              "reference": 0.7678008892469004,
+              "absolute_error": 4.659396210415778e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0040519127545248865,
+              "reference": 0.004051264423076923,
+              "absolute_error": 6.483314479634877e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7864536199095022,
+              "reference": 0.786170814479638,
+              "absolute_error": 0.0002828054298642524,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7661940561368777,
+              "reference": 0.7659144923642535,
+              "absolute_error": 0.00027956377262428056,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "reward"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8631571352623983,
+              "reference": 0.8630811878180298,
+              "absolute_error": 7.59474443685626e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "5",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8548858482949798,
+              "reference": 0.8548107713981925,
+              "absolute_error": 7.507689678731833e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0005576798283587757,
+              "reference": 0.0005577360028860028,
+              "absolute_error": 5.61745272271031e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7372665667117467,
+              "reference": 0.7372648235697784,
+              "absolute_error": 1.7431419683244798e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0008579025028280544,
+              "reference": 0.0008581116798642534,
+              "absolute_error": 2.091770361989983e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6958209382070136,
+              "reference": 0.6958104793552036,
+              "absolute_error": 1.0458851810057901e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8213880523277891,
+              "reference": 0.8213852436014277,
+              "absolute_error": 2.8087263613807423e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0006074761714893294,
+              "reference": 0.0006075323460165565,
+              "absolute_error": 5.61745272271031e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7363548958142799,
+              "reference": 0.7363531526723116,
+              "absolute_error": 1.7431419683244798e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.000925162613122172,
+              "reference": 0.0009253717901583709,
+              "absolute_error": 2.091770361989983e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6949749010180994,
+              "reference": 0.6949644421662895,
+              "absolute_error": 1.0458851809946879e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "50",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8194545502012608,
+              "reference": 0.8194517414748993,
+              "absolute_error": 2.8087263614917646e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00016669896331738437,
+              "reference": 0.00016667626642363482,
+              "absolute_error": 2.2696893749543125e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.5657341148727598,
+              "reference": 0.5657411579063193,
+              "absolute_error": 7.043033559472889e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0002394326640271493,
+              "reference": 0.0002393481476244344,
+              "absolute_error": 8.451640271490914e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.5254194145927602,
+              "reference": 0.5254616727941176,
+              "absolute_error": 4.2258201357392444e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6693174128503077,
+              "reference": 0.6693287612971824,
+              "absolute_error": 1.1348446874781537e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.00019294105566947673,
+              "reference": 0.00019291835877572718,
+              "absolute_error": 2.2696893749543125e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.5672809692112926,
+              "reference": 0.5672880122448521,
+              "absolute_error": 7.043033559583911e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0002573689338235294,
+              "reference": 0.0002572844174208144,
+              "absolute_error": 8.451640271499045e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.5388211891968326,
+              "reference": 0.53886344739819,
+              "absolute_error": 4.2258201357392444e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "500",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6779856884635832,
+              "reference": 0.677997036910458,
+              "absolute_error": 1.1348446874781537e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0005157911179463811,
+              "reference": 0.0005158472924736083,
+              "absolute_error": 5.617452722721152e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7210696568209173,
+              "reference": 0.7210670421079648,
+              "absolute_error": 2.6147129524867196e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.000712412358597285,
+              "reference": 0.0007126215356334842,
+              "absolute_error": 2.091770361991067e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.679233100254525,
+              "reference": 0.67921741197681,
+              "absolute_error": 1.568827771503134e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "avengerspro_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8088333239348372,
+              "reference": 0.8088291108452951,
+              "absolute_error": 4.2130895421266246e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0004946422457659301,
+              "reference": 0.0004946984202931572,
+              "absolute_error": 5.61745272271031e-08,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "equal_family"
+              ],
+              "kind": "numeric",
+              "fresh": 0.7198309314324233,
+              "reference": 0.7198283167194708,
+              "absolute_error": 2.6147129524867196e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "cost"
+              ],
+              "kind": "numeric",
+              "fresh": 0.0006885878110859729,
+              "reference": 0.000688796988122172,
+              "absolute_error": 2.091770361991067e-07,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "per_family",
+                "2",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.6804543304581449,
+              "reference": 0.6804386421804299,
+              "absolute_error": 1.5688277714920318e-05,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            },
+            {
+              "path": [
+                "results",
+                "75",
+                "cluster_utility_validated",
+                "utility"
+              ],
+              "kind": "numeric",
+              "fresh": 0.8090600300941749,
+              "reference": 0.8090558170046328,
+              "absolute_error": 4.2130895421266246e-06,
+              "within_tolerance": false,
+              "record": "baselines/gte-qwen2-7b/sprout/iid_1/clusters/result.json",
+              "classification": "scientific_or_unexplained"
+            }
+          ],
+          "missing_records": []
+        }
+      }
+    }
+  ],
+  "scope": "One separately recorded repetition of the unchanged production clustering protocol on the same newly prepared panels and new embeddings. Its outputs differ from both the primary new run and the frozen reference; neither is overwritten or replaced. This establishes variation across the tested executions, not its cause or a whole-study failure/success. CPU/runtime, parallel reductions and numerical or tie sensitivity remain hypotheses to investigate. Five planned repetitions remain incomplete. Scientific JSON fingerprints hash parsed records excluding only the declared operational fields; they are not raw output-file fingerprints."
+}
