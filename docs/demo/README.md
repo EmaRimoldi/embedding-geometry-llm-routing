@@ -45,6 +45,10 @@ plotted point, source selectors, unrounded means and source-file checksum.
 The wide SVG/PNG and the stacked SVG use the same values. The browser selects the
 stacked layout on narrow screens.
 
+Plots use the bundled Inter typeface, with a vector SVG and a 600-DPI PNG
+(7200 × 2640 pixels). The animation and its poster render at twice the display
+resolution. Font licensing and pinned upstream checksums are in `fonts/`.
+
 The separate quality/cost sentences compare a source-selected single model with
 L21 Family Adaptation on RouterBench. Mean reward rises from 71.04% to 74.63%, and
 candidate-model inference cost falls from $2.07 to $1.55 per 1,000 queries.

@@ -6,10 +6,9 @@
 <title>LLM routing — from prompt to model</title>
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; color: #333; background: white; font-family: Arial, Helvetica, sans-serif; }
+  body { margin: 0; color: #333; background: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
   main { max-width: 1200px; margin: 24px auto; }
   #demo { padding: 22px 28px 16px; }
-  .prompt { margin: 0 0 22px; min-height: 29px; font-size: 21px; line-height: 1.4; }
   .figure svg { display: block; width: 100%; height: auto; overflow: hidden; }
   #stage-caption { margin: 17px 0 0; min-height: 27px; font-size: 18px; line-height: 1.5; color: #52616d; }
   .explanation { padding: 20px 28px 0; max-width: 940px; line-height: 1.65; }
@@ -22,7 +21,6 @@
   @media (max-width: 640px) {
     main { margin: 8px auto; }
     #demo { padding: 20px 16px 10px; }
-    .prompt { font-size: 17px; min-height: 48px; margin-bottom: 12px; }
     #stage-caption { font-size: 16px; min-height: 48px; }
     .explanation { padding: 16px 16px 0; font-size: 15px; }
     h1 { font-size: 22px; }
@@ -34,7 +32,6 @@
 <body>
 <main>
   <section id="demo" aria-label="Automatic animation: a prompt becomes an embedding, is classified, and is routed to a model">
-    <p class="prompt" id="prompt-text"></p>
     <div class="figure"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="720" height="151.34" viewBox="0 0 720 151.34" id="routing-figure" role="img" aria-labelledby="figure-title figure-desc">
 <title id="figure-title">Figure 1: prompt, embedding, classification, model selection</title><desc id="figure-desc">Original paper vectors, separated into layers for animation. Model 2 is schematic.</desc><defs>
 <clipPath id="clip_1">
@@ -232,9 +229,9 @@
     <p id="stage-caption">A new prompt arrives.</p>
   </section>
   <section class="explanation" aria-label="Framework and main finding">
-    <h1>Better representations help simple routers generalize.</h1>
-    <p>The framework embeds a prompt and selects an LLM to balance answer quality and inference cost.
-      Frozen Qwen hidden states help lightweight routers generalize to unseen task families better than semantic GTE embeddings.</p>
+    <h1>The right model starts with the right representation.</h1>
+    <p>Turn each prompt into an embedding and route it to an LLM that balances quality and cost.
+      Frozen Qwen hidden states help simple routers generalize to new task families.</p>
     <p id="embedding-summary"></p>
     <p id="quality-summary"></p>
   </section>
@@ -245,9 +242,6 @@
     </picture>
   </figure>
   <div class="notes">
-    <p>The animation reuses the paper's original Figure 1. Prompt and model IDs are illustrative.
-      The numerical comparisons use held-out-family benchmark results averaged across all 13 cost penalties.
-      Reward includes graded tasks; candidate-model inference cost excludes encoder/router overhead.</p>
     <p><a href="figure1-original.pdf">Original figure</a> · <a href="embedding-comparison-data.json">Plot data</a> ·
       <a href="demo-data.json">Quality and cost data</a> · <a href="https://arxiv.org/abs/2610.19198">Paper</a> ·
       <a href="https://github.com/EmaRimoldi/routing-theory-reproducibility">Code and authors</a></p>
@@ -273,7 +267,6 @@ const rect = document.createElementNS(ns, 'rect');
 rect.setAttribute('x', '550'); rect.setAttribute('y', '68'); rect.setAttribute('height', '28');
 clip.append(rect); svg.querySelector('defs').append(clip);
 $('selected-route').setAttribute('clip-path', 'url(#route-reveal)');
-const PROMPT = 'Explain why the sky appears blue.';
 let time = 0, cycles = 0, previous = null, visible = false, currentStep = -1;
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 const capture = new URLSearchParams(location.search).has('capture');
@@ -308,7 +301,6 @@ function render(at) {
   if (time >= 4.0 && time < 4.85) { markX = interpolate(294, 350, smooth(time, 4, 4.85)); markOpacity = 1; }
   if (time >= 7 && time < 8.1) { markX = interpolate(552, 670, choice); markOpacity = 1; }
   moving.setAttribute('cx', markX); moving.setAttribute('cy', markY); moving.setAttribute('opacity', markOpacity);
-  $('prompt-text').textContent = PROMPT.slice(0, Math.floor(PROMPT.length * smooth(time, .1, 1.6)));
   const step = time < 1.8 ? 0 : time < 4.3 ? 1 : time < 7.8 ? 2 : 3;
   if (step !== currentStep) {
     $('stage-caption').textContent = [

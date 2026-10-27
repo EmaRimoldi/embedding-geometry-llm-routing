@@ -20,7 +20,7 @@ async function main() {
   if (process.env.DEMO_BROWSER) options.channel = process.env.DEMO_BROWSER;
   const browser = await chromium.launch(options);
   try {
-    const page = await browser.newPage({viewport: {width: 1200, height: 950}, deviceScaleFactor: 1});
+    const page = await browser.newPage({viewport: {width: 1200, height: 950}, deviceScaleFactor: 2});
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     const url = pathToFileURL(path.join(target, 'index.html')).href;
@@ -28,6 +28,8 @@ async function main() {
     await page.waitForFunction(() => Boolean(window.demo));
     assert.equal(await page.locator('button, input, select, video[controls], audio[controls]').count(), 0);
     assert.ok(!(await page.locator('body').textContent()).toLowerCase().includes('in motion'));
+    assert.equal(await page.locator('#prompt-text').count(), 0);
+    assert.ok(!(await page.locator('body').textContent()).includes("The animation reuses the paper's original Figure 1."));
     await page.evaluate(() => window.demo.render(window.demo.duration));
     assert.equal(await page.locator('#selection-check').getAttribute('opacity'), '1.0000');
     assert.ok((await page.locator('#embedding-summary').textContent()).includes('0.6615 to 0.7007'));
@@ -80,8 +82,10 @@ async function main() {
     assert.equal(await page.evaluate(() => window.demo.state.time), animation.duration_seconds);
     assert.deepEqual(errors, []);
     const report = {passed: true, captured_frames: count, duration_ms: 1000 * animation.duration_seconds,
+      device_pixel_ratio: 2,
       browser: await browser.version(), playwright: require((process.env.PLAYWRIGHT_MODULE || 'playwright') + '/package.json').version,
-      layouts, checks: ['no playback controls', 'no motion heading', 'numbers in sentences',
+      layouts, checks: ['no playback controls', 'no motion heading', 'no prompt instance text',
+        'no provenance footer paragraph', 'numbers in sentences',
         'original model-selection sequence', 'plot loaded', 'no horizontal overflow',
         'autoplay on view', 'automatic advancement', 'automatic repeat after completion',
         'reduced motion', 'no page errors']};

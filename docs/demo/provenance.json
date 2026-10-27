@@ -207,5 +207,15 @@
   "metrics": "RouterBench held-out-family results, query-pooled per penalty, arithmetic mean across all 13 frozen penalties",
   "evidence_sha256": "0fbdc6dac80b05736808f76a72caa8260a7fa561dbd1272a3cc11bbd0cbd27db",
   "comparison_plot": "All 13 penalties per benchmark, fixed kNN-100, GTE versus L21; embedding-comparison-data.json",
-  "plot_renderer": "Matplotlib 3.9.4"
+  "plot_renderer": "Matplotlib 3.9.4",
+  "presentation": {
+    "plot_font": "Inter",
+    "plot_font_sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+    "png_dpi": 600,
+    "png_dimensions": [
+      7200,
+      2640
+    ],
+    "animation_pixel_ratio": 2
+  }
 }

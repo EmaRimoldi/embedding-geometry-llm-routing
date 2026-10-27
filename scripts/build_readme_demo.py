@@ -53,6 +53,24 @@ def build_comparison(rows, relative):
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
+    from matplotlib import font_manager
+    from fontTools.ttLib import TTFont
+    from fontTools.varLib.instancer import instantiateVariableFont
+
+    font_source = DEST / "fonts/Inter-Variable.ttf"
+    font_record = json.loads((DEST / "fonts/provenance.json").read_text())
+    assert sha(font_source) == font_record["files"][font_source.name]["sha256"]
+    font_cache = ROOT / ".cache/readme-demo/fonts"
+    font_cache.mkdir(parents=True, exist_ok=True)
+    fonts = {}
+    for name, weight in [("Regular", 400), ("SemiBold", 600)]:
+        path = font_cache / ("Inter-" + name + ".ttf")
+        with TTFont(font_source) as variable:
+            instance = instantiateVariableFont(variable, {"opsz": 14, "wght": weight},
+                                               inplace=False, updateFontNames=True)
+            instance.save(path)
+        font_manager.fontManager.addfont(str(path))
+        fonts[name] = font_manager.FontProperties(fname=path)
 
     panels = []
     for dataset, label in [("routerbench-0shot", "RouterBench"), ("sprout-sixfam", "SPROUT")]:
@@ -84,7 +102,7 @@ def build_comparison(rows, relative):
                 utility="reward - penalty * cost", x_axis="symlog, linear within [0, 1]",
                 evidence=relative, evidence_sha256=sha(ROOT / relative), panels=panels)
     (DEST / "embedding-comparison-data.json").write_text(json.dumps(data, indent=2) + "\n")
-    rc = {"font.family": "DejaVu Sans", "font.size": 11, "axes.spines.top": False,
+    rc = {"font.family": fonts["Regular"].get_name(), "font.size": 11.5, "axes.spines.top": False,
           "axes.spines.right": False, "axes.labelcolor": "#4b5563",
           "text.color": "#26313b", "xtick.color": "#586572", "ytick.color": "#586572",
           "axes.edgecolor": "#c4cdd5", "svg.hashsalt": "routing-embedding-comparison",
@@ -92,23 +110,22 @@ def build_comparison(rows, relative):
     with plt.rc_context(rc):
         for stacked in [False, True]:
             fig, axes = plt.subplots(2 if stacked else 1, 1 if stacked else 2,
-                                     figsize=(6.2, 7.6) if stacked else (12, 4.8),
+                                     figsize=(6.2, 7.3) if stacked else (12, 4.4),
                                      sharey=True)
             if stacked:
-                fig.subplots_adjust(left=.13, right=.96, top=.72, bottom=.08, hspace=.55)
+                fig.subplots_adjust(left=.13, right=.96, top=.73, bottom=.085, hspace=.55)
             else:
-                fig.subplots_adjust(left=.075, right=.98, top=.66, bottom=.17, wspace=.17)
+                fig.subplots_adjust(left=.075, right=.98, top=.71, bottom=.19, wspace=.17)
             fig.text(.075 if not stacked else .13, .935, "Same router. Different embeddings.",
-                     fontsize=19 if not stacked else 17, weight="bold")
-            fig.text(.075 if not stacked else .13, .855 if not stacked else .89,
-                     "Held-out task families · kNN-100 · higher utility is better", fontsize=11)
+                     fontsize=20 if not stacked else 17, fontproperties=fonts["SemiBold"])
             for ax, panel in zip(axes.flat, panels):
                 for curve in panel["curves"]:
                     ax.plot([p["penalty"] for p in curve["points"]],
                             [p["utility"] for p in curve["points"]], label=curve["label"],
                             color=curve["color"], marker=curve["marker"],
-                            linestyle=curve["linestyle"], linewidth=2.3, markersize=4.3)
-                ax.set_title(panel["label"], loc="left", fontsize=13, weight="bold", pad=13)
+                            linestyle=curve["linestyle"], linewidth=2.2, markersize=4.3)
+                ax.set_title(panel["label"], loc="left", fontsize=13.5,
+                             fontproperties=fonts["SemiBold"], pad=12)
                 ax.set_xscale("symlog", linthresh=1, linscale=.7)
                 ax.set_xlim(-.1, 650)
                 ax.set_xticks([0, 1, 10, 100, 500], labels=["0", "1", "10", "100", "500"])
@@ -125,8 +142,8 @@ def build_comparison(rows, relative):
                 axes.flat[0].set_ylabel("Utility", labelpad=10)
             handles, labels = axes.flat[0].get_legend_handles_labels()
             fig.legend(handles, labels, loc="upper left",
-                       bbox_to_anchor=(.066 if not stacked else .11, .81 if not stacked else .86),
-                       ncol=2 if not stacked else 1, frameon=False, fontsize=11,
+                       bbox_to_anchor=(.066 if not stacked else .11, .865 if not stacked else .90),
+                       ncol=2 if not stacked else 1, frameon=False, fontsize=11.5,
                        handlelength=2.5, columnspacing=2)
             name = "embedding-comparison-stacked" if stacked else "embedding-comparison"
             svg_path = DEST / (name + ".svg")
@@ -137,7 +154,7 @@ def build_comparison(rows, relative):
             serialized = ET.tostring(plot, encoding="unicode")
             svg_path.write_text("\n".join(line.rstrip() for line in serialized.splitlines()) + "\n")
             if not stacked:
-                fig.savefig(DEST / "embedding-comparison.png", dpi=180,
+                fig.savefig(DEST / "embedding-comparison.png", dpi=600,
                             metadata={"Software": "Matplotlib " + matplotlib.__version__})
             plt.close(fig)
     return data
@@ -222,6 +239,9 @@ def build():
         "metrics": data["scope"], "evidence_sha256": data["evidence_sha256"],
         "comparison_plot": "All 13 penalties per benchmark, fixed kNN-100, GTE versus L21; embedding-comparison-data.json",
         "plot_renderer": "Matplotlib " + version("matplotlib"),
+        "presentation": {"plot_font": "Inter", "plot_font_sha256": sha(DEST / "fonts/Inter-Variable.ttf"),
+                         "png_dpi": 600, "png_dimensions": [7200, 2640],
+                         "animation_pixel_ratio": 2},
     }
     (DEST / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
     print(json.dumps({"layers": len(GROUPS), "original_objects_retained": len(indices),

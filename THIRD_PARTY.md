@@ -1,5 +1,12 @@
 # Third-party assets and attribution
 
+## Inter typeface
+
+The presentation assets use Inter, Copyright 2020 The Inter Project Authors,
+under the SIL Open Font License 1.1. The original variable font, license and pinned
+upstream revision/checksums are retained in `docs/demo/fonts/`. Static instances
+used for rendering are generated locally and remain under the same font license.
+
 ## NVIDIA reference implementation
 
 The included reference sources come from NVIDIA-AI-Blueprints/llm-router, commit `8a9d3509fbde879d9795258081bab9553b458e04`. The upstream provenance records name the exact paths and SHA-256 checksums. The Apache-2.0 license and NVIDIA notices are retained in the vendor directories.
