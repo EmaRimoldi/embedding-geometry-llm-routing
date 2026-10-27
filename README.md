@@ -4,7 +4,7 @@
 
 Turn each prompt into an embedding and route it to an LLM that balances quality and cost. Frozen Qwen hidden states help simple routers generalize to new task families.
 
-**Leonardo Torti<sup>1,*</sup> · Emanuele Rimoldi<sup>1,*</sup> · Tomer Galanti<sup>2</sup> · Tomaso Poggio<sup>1</sup> · Pierfrancesco Beneventano<sup>1</sup>**
+**Leonardo Torti<sup>1,&#42;</sup> · Emanuele Rimoldi<sup>1,&#42;</sup> · Tomer Galanti<sup>2</sup> · Tomaso Poggio<sup>1</sup> · Pierfrancesco Beneventano<sup>1</sup>**
 
 <sup>1</sup> Massachusetts Institute of Technology · <sup>2</sup> Texas A&M University
 
