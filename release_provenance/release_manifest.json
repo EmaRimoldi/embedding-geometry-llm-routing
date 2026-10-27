@@ -149,8 +149,8 @@
       "sha256": "26a34744ee612cfd4225156ec57e096ecc2f564074293553b3f8529771623224"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 8080,
-      "sha256": "4e7f73e6e75cca9d519104de4d5389cf2acb7228a99759e32dbccceb22c69dea"
+      "bytes": 9443,
+      "sha256": "45977ed3d225ed3eb9012701cade6ae686833d90d2bc0945a686a9248690f4e5"
     },
     "docs/RESOURCES.md": {
       "bytes": 9910,
@@ -583,6 +583,10 @@
     "release_provenance/current_checks/v1_cpu_diagnostics.json": {
       "bytes": 8854,
       "sha256": "94fd01f8a43254db5363f16e510f85d33f511bf21ffa5d74d1784d2b5224fd48"
+    },
+    "release_provenance/current_checks/v1_full_encoders.json": {
+      "bytes": 29792,
+      "sha256": "ce69f6769b40b416b1e3fee034cbd67e9caea075d2346b283ca324f864046f0c"
     },
     "release_provenance/current_checks/v1_release.json": {
       "bytes": 1520,

@@ -22,6 +22,7 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 | CPU/CUDA SharedTrunkNet | Actual probe, ternary search, fitting core, checkpoint reload and seed retention on synthetic inputs | 20 networks and 20 reloads on each device; cost-once and held-out-cost isolation checks passed |
 | PCA preprocessing | Actual production PCA100 entry point, both full-SVD and randomized branches | 10 checks per branch, including held-out poisoning and stale-cache rejection |
 | CUDA encoders | Actual MiniLM, GTE and Qwen L21/L23/L25 extraction on four illustrative prompts | All vectors finite, completed and hash-consistent |
+| Complete fresh encoder extraction | GTE, MiniLM and Qwen layers 15–28 on both complete canonical cohorts | 32 arrays generated; all four GTE/L21 baseline input fingerprints exactly match the original |
 | Model identity | Full cached weights compared with pinned public LFS checksums | 12 files, 45,815,257,928 bytes, passed |
 | Execution plumbing | Inert-scheduler orchestration and isolated saved-report renderers | 17 orchestration categories; seven regenerated tables byte-identical to their supplied counterparts |
 
@@ -31,6 +32,22 @@ conference package's earlier checks.
 The complete fresh CPU diagnostic run is recorded separately in
 `release_provenance/current_checks/v1_cpu_diagnostics.json`; it verifies canonical
 input bytes and records production-source fingerprints and execution times.
+
+The fresh full-input campaign completed all encoder tasks on 2026-10-27 UTC,
+using newly prepared public inputs and verified model weights. It generated GTE
+and all 14 Qwen candidate layers for 34,771 RouterBench and 43,887 SPROUT queries,
+plus MiniLM on the prescribed 34,659/41,324 compatible subsets. Every eligible
+vector passed the production extractor's finite/nonzero and completion checks.
+The four complete GTE/L21 vector-file SHA-256 fingerprints match those preserved
+in the original baseline input manifest, along with all 14 compared scientific
+metadata fields. The other 28 arrays have fresh complete manifests; no historical
+byte-equality claim is made for arrays without a matching original fingerprint.
+
+[`v1_full_encoders.json`](../release_provenance/current_checks/v1_full_encoders.json)
+records all 32 manifests and the four comparisons. Extraction computes each hash
+after flushing the complete array; downstream baseline preparation independently
+rehashes its inputs before fitting. This is an encoder-stage checkpoint. New PCA,
+fitted-router, geometry and uncertainty comparisons remain in progress.
 
 CI fixes Ubuntu 24.04, Python 3.11.17 and the exact Node-24 action commits instead
 of floating runner/Python/action versions. Local and cluster executions recorded
@@ -87,9 +104,10 @@ experimental numeric tables match the paper, and the tested execution components
 work in fresh CPU/CUDA environments. The added integrity and estimator bugs have
 regression coverage; the final local check cycle has no outstanding test failure.
 
-This audit **has not repeated all full-scale fitted routers, all 2,990 final
-SharedTrunkNet network fits, every large embedding/PCA job or every paired bootstrap
-from newly generated predictions**. The supplement omits those large arrays and
+This audit **has not yet completed all full-scale fitted routers, all 2,990 final
+SharedTrunkNet network fits, every source-PCA job or every paired bootstrap
+from newly generated predictions**. Full encoder extraction is complete. The
+supplement omits those large arrays and
 checkpoints by design. The full commands to regenerate them are in `RUN_COMMANDS.md`.
 Consequently the audit establishes source/input availability, exact saved-result
 consistency and component execution; it does not label the whole study independently
