@@ -156,7 +156,16 @@
         "exact_match": true
       }
     ],
-    "limitation": "This checkpoint compares the checksums computed by full production extraction. Downstream baseline preparation independently rehashes the four baseline input arrays before fitting. The other 28 arrays have fresh complete manifests but are not labeled byte-identical to historical files without matching historical fingerprints."
+    "limitation": "All four baseline input vector files were independently rehashed by production preparation and match the original input fingerprints. The other 28 arrays have fresh complete manifests but are not labeled byte-identical to historical files without matching historical fingerprints.",
+    "independent_baseline_preparation_verification": {
+      "verified_at_utc": "2026-10-27T07:14:26.618606+00:00",
+      "producer": "src/baselines/prepare.py",
+      "passed": true,
+      "all_four_vector_file_hashes_recomputed": true,
+      "canonical_panels_and_frozen_splits_exact": true,
+      "compared_manifest_fields_per_array": 13,
+      "scope": "Fresh production baseline preparation independently rehashed all four complete vector files before fitting; compared its resulting input record with the original evidence and frozen validation plan."
+    }
   },
   "embedding_manifests": {
     "artifacts/embeddings/gte-qwen2-7b/routerbench/manifest.json": {

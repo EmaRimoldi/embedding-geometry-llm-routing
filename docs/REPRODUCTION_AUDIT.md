@@ -39,14 +39,15 @@ and all 14 Qwen candidate layers for 34,771 RouterBench and 43,887 SPROUT querie
 plus MiniLM on the prescribed 34,659/41,324 compatible subsets. Every eligible
 vector passed the production extractor's finite/nonzero and completion checks.
 The four complete GTE/L21 vector-file SHA-256 fingerprints match those preserved
-in the original baseline input manifest, along with all 14 compared scientific
+in the original baseline input manifest, along with all 13 compared scientific
 metadata fields. The other 28 arrays have fresh complete manifests; no historical
 byte-equality claim is made for arrays without a matching original fingerprint.
 
 [`v1_full_encoders.json`](../release_provenance/current_checks/v1_full_encoders.json)
 records all 32 manifests and the four comparisons. Extraction computes each hash
-after flushing the complete array; downstream baseline preparation independently
-rehashes its inputs before fitting. This is an encoder-stage checkpoint. New PCA,
+after flushing the complete array. Production baseline preparation also independently
+rehashed all four input arrays and verified the canonical panels and frozen splits.
+This is an encoder-stage checkpoint. New PCA,
 fitted-router, geometry and uncertainty comparisons remain in progress.
 
 CI fixes Ubuntu 24.04, Python 3.11.17 and the exact Node-24 action commits instead
