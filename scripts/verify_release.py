@@ -9,7 +9,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC_TOP = {"README.md", "THIRD_PARTY.md", ".gitignore", ".github", "requirements.lock",
+PUBLIC_TOP = {"README.md", "CITATION.cff", "THIRD_PARTY.md", ".gitignore", ".github", "requirements.lock",
               "src", "configs", "jobs", "tests", "environment", "manifests",
               "docs", "scripts", "release_provenance"}
 # Generic user-home or machine-storage paths; no author-specific identifiers.

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "captured_frames": 128,
+  "duration_ms": 12800,
+  "browser": "156.0.8078.48",
+  "playwright": "1.62.1",
+  "layouts": [
+    {
+      "width": 320,
+      "scroll": 320
+    },
+    {
+      "width": 768,
+      "scroll": 768
+    },
+    {
+      "width": 1200,
+      "scroll": 1200
+    }
+  ],
+  "checks": [
+    "final metrics",
+    "no horizontal overflow",
+    "play/pause",
+    "replay",
+    "prompt selection",
+    "timeline",
+    "reduced motion",
+    "no page errors"
+  ]
+}

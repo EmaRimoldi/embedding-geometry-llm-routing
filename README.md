@@ -2,178 +2,44 @@
 
 **Similar prompts do not always need the same model.**
 
-This is the code and reproducibility repository for the paper
-**[Embedding Geometry Shapes LLM Routing: Tracing Failure Modes and Improving Generalization](https://arxiv.org/abs/2610.19198)**.
+Code and reproducibility materials for **[Embedding Geometry Shapes LLM Routing: Tracing Failure Modes and Improving Generalization](https://arxiv.org/abs/2610.19198)**.
 
-Leonardo Torti · Emanuele Rimoldi · Tomer Galanti · Tomaso Poggio · Pierfrancesco Beneventano
+**Leonardo Torti<sup>1,*</sup> · Emanuele Rimoldi<sup>1,*</sup> · Tomer Galanti<sup>2</sup> · Tomaso Poggio<sup>1</sup> · Pierfrancesco Beneventano<sup>1</sup>**
 
-[Paper](https://arxiv.org/abs/2610.19198) ·
-[Reproduce the experiments](docs/RUN_COMMANDS.md) ·
-[Methods](docs/METHODS.md) ·
-[Reproduction audit](docs/REPRODUCTION_AUDIT.md) ·
-[CI checks](https://github.com/EmaRimoldi/routing-theory-reproducibility/actions/workflows/cpu-checks.yml)
+<sup>1</sup> Massachusetts Institute of Technology · <sup>2</sup> Texas A&M University<br>
+<sup>*</sup> Main contributors, as noted in the paper.
 
-## The idea
+[Paper](https://arxiv.org/abs/2610.19198) · [Run the experiments](docs/RUN_COMMANDS.md) · [Methods](docs/METHODS.md) · [Results & audit](docs/REPRODUCTION_AUDIT.md) · [Citation](CITATION.cff)
 
-An LLM router chooses a model for each prompt, balancing answer quality and cost.
-Many routers make that choice from semantic prompt embeddings. But when a new
-task family arrives, semantic neighbors can give the wrong picture of which
-model will perform well.
+[![Animated Figure 1: a prompt arrives, its embedding is generated and classified, and model 2 is selected. Measured RouterBench comparison: quality 71.04% to 74.63%; inference cost $2.07 to $1.55 per 1,000 queries.](docs/demo/routing-demo.gif)](docs/demo/README.md)
 
-We study this failure through embedding geometry and evaluate two simple changes:
+*The paper's original Figure 1, animated. Prompt and model IDs are illustrative; counters show held-out RouterBench means across all 13 cost penalties, comparing a source-selected single model with L21 Family Adaptation. Quality denotes benchmark reward. [Interactive version, static figure & sources](docs/demo/README.md).*
 
-- **Change the representation.** Replace semantic GTE embeddings with the last-token
-  hidden state at layer 21 of frozen Qwen2.5-7B-Instruct (**L21**). Even a simple
-  kNN router generalizes better with this representation.
-- **Use family structure.** **Family Adaptation** combines source-family model
-  performance profiles using predicted family probabilities. It uses source
-  family labels during training and does not require the test prompt's true family.
+## Why geometry matters
 
-The repository contains the embedding, geometry, routing and diagnostic pipelines,
-frozen evaluation settings, and compact numerical evidence accompanying the paper.
+Semantic neighbors can be unreliable guides to model performance on unseen task families. We study this failure and improve generalization with **Qwen2.5-7B-Instruct layer-21 representations** and **Family Adaptation**, a simple router that combines source-family performance profiles using predicted family probabilities.
 
-## A snapshot of the results
+The experiments cover **RouterBench: 34,771 queries, 11 models** and **SPROUT: 43,887 queries, 13 models**, with frozen splits, seeds and cost penalties.
 
-**Generalization to held-out task families:** mean utility across each benchmark's
-13 fixed cost penalties; higher is better. Utility is reward minus the cost penalty
-times cost.
+## Reproduce
 
-| Representation and router | RouterBench | SPROUT |
-| --- | ---: | ---: |
-| GTE + kNN-100 | 0.6615 | 0.7529 |
-| L21 + kNN-100 | 0.7007 | 0.7731 |
-| L21 + Family Adaptation | 0.7157 | 0.7767 |
-| SharedTrunkNet utility adaptation | 0.6949 | 0.7829 |
-
-The full comparison includes additional baselines, per-penalty results and confidence
-intervals. See the [result index](docs/RESULT_INDEX.md) and the
-[supplied summary tables](results/evidence/diagnostics/appendix_confidence_intervals/overleaf/aistats_ci_tables.tex).
-L21 is a fixed representation; the separate source-only layer-selection experiments
-are described in [Methods](docs/METHODS.md).
-
-| Benchmark | Prepared queries | Candidate models | Task families |
-| --- | ---: | ---: | ---: |
-| RouterBench | 34,771 | 11 | 7 |
-| SPROUT | 43,887 | 13 | 6 |
-
-Evaluation uses five in-distribution splits per benchmark and one held-out-family
-split per family. Exact splits, seeds and penalty grids are frozen in `configs/`.
-
-## Start here: check the supplied results
-
-This route uses Python 3.11 and the standard library. It needs no model downloads
-or GPU.
+Check the bundled numerical evidence with Python 3.11; no GPU or external dependencies required:
 
 ```bash
 git clone https://github.com/EmaRimoldi/routing-theory-reproducibility.git
 cd routing-theory-reproducibility
-
 python3 scripts/verify_release.py
 python3 scripts/reproduce_results.py
 python3 scripts/check_paper_results.py
 ```
 
-These commands verify file integrity, reconstruct aggregate results from bundled
-fold-level records, and compare numerical results and settings with the pinned
-manuscript reference. Generated reports go to `results/reproduced/`.
-They replay the supplied evidence; they do not train routers or recompute bootstrap
-intervals. [Coverage and evidence types](docs/RESULT_INDEX.md) are documented explicitly.
+For fresh data, embeddings and router training, follow the **[full execution guide](docs/RUN_COMMANDS.md)**. Public assets and environments are pinned; neural components require Linux and CUDA.
 
-## Reproduce the experiments from public assets
-
-Use a fresh clone and follow the **[full execution guide](docs/RUN_COMMANDS.md)**.
-Setup and data preparation begin with:
-
-```bash
-bash scripts/bootstrap.sh
-source jobs/env.sh
-.venv-download/bin/python -B src/download_assets.py
-.venv/bin/python -B src/prepare_data.py routerbench
-.venv/bin/python -B src/prepare_data.py sprout
-```
-
-Then run embedding extraction, geometry analyses, router fitting and diagnostics
-in the order given in the guide. Public dataset and model revisions are pinned in
-[`manifests/assets.json`](manifests/assets.json); the compute environment is pinned
-in [`requirements.lock`](requirements.lock).
-
-Full reproduction uses Linux, Python 3.11 and CUDA-capable hardware for the neural
-components. Budget tens of GB for model weights and more than 100 GB for the complete
-experiment archive. The guide includes configurable Slurm launchers and direct
-Python commands where supported. Keep the documented two-GPU concurrency limit.
-Large downloaded assets, embedding arrays and fitted checkpoints are generated by
-the pipeline and are not bundled in Git.
-
-For a smaller fresh-data check, install the CPU dependencies below and run these
-commands in a fresh copy. They prepare public data and recompute single-model/oracle
-controls without downloading the large model weights:
-
-```bash
-python -B scripts/check_public_inputs.py --download --prepare
-python -B scripts/reproduce_outcome_controls.py
-```
-
-## What has been verified
-
-- **Public inputs:** fresh preparation reproduces all eight canonical output-file
-  hashes across the two benchmarks.
-- **Saved results:** 23,740 fold-level records reconstruct 4,031 aggregate rows;
-  5,493 numerical and configuration checks pass against the pinned manuscript
-  snapshot, covering 44 table labels.
-- **Execution:** CPU regression and router checks, CUDA encoder and SharedTrunkNet
-  component checks, preprocessing checks, and byte-identical saved-table regeneration
-  have passed. The CPU checks also run in [CI](https://github.com/EmaRimoldi/routing-theory-reproducibility/actions/workflows/cpu-checks.yml).
-
-**The current audit has not rerun every full-scale model fit or every bootstrap.**
-The [reproduction audit](docs/REPRODUCTION_AUDIT.md) records the executed checks,
-code corrections and remaining compute. Original conference evidence and newly
-executed checks have separate provenance.
-
-## Find your way around
-
-| Path | Contents |
-| --- | --- |
-| [`src/`](src/) | Data preparation, encoders, geometry, routers and diagnostics |
-| [`configs/`](configs/) | Frozen protocols, splits, seeds and hyperparameters |
-| [`jobs/`](jobs/) | Configurable Slurm launchers |
-| [`scripts/`](scripts/) | Setup, verification, reproduction and export helpers |
-| [`tests/`](tests/) | Regression tests and small synthetic cases |
-| [`results/evidence/`](results/evidence/) | Compact saved experimental records and tables |
-| [`environment/`](environment/) | Pinned compute, CPU and download dependencies |
-| [`manifests/`](manifests/) | Public asset revisions and model-weight checksums |
-| [`release_provenance/`](release_provenance/) | Original and current file manifests; executed-check reports |
-
-For implementation details, see [Methods](docs/METHODS.md). For optional table
-rendering, see [Saved tables](docs/SAVED_TABLES.md). For small execution checks,
-see [Reviewer smoke tests](docs/REVIEWER_SMOKE_TESTS.md). Third-party code and asset
-notices are in [THIRD_PARTY.md](THIRD_PARTY.md).
-
-## Development and export
-
-For CPU development, use Python 3.11 in a virtual environment. On Linux:
-
-```bash
-python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
-python -m pip install -r environment/cpu-requirements.lock
-python -B -m pytest -q tests
-```
-
-On macOS, install `torch==2.5.1` from the ordinary package index instead of the
-CPU wheel index.
-
-After a change, run the affected checks and refresh the release manifest:
-
-```bash
-python scripts/build_submission.py
-python scripts/verify_release.py
-```
-
-Commit the regenerated manifest with the change. The builder also produces the
-deterministic export `dist/routing_reproduction.zip`.
+The audit passes **5,493 checks against the pinned manuscript reference** and includes CPU/CUDA component runs. Full-scale fits and bootstraps have not all been independently rerun; see [coverage and limitations](docs/REPRODUCTION_AUDIT.md) and the [result index](docs/RESULT_INDEX.md).
 
 ## Citation
 
-If you use this code or build on the study, please cite:
+If you use this code or build on the study, please cite the paper. GitHub citation metadata is in [CITATION.cff](CITATION.cff).
 
 ```bibtex
 @misc{torti2026embeddinggeometry,
@@ -186,3 +52,5 @@ If you use this code or build on the study, please cite:
   url           = {https://arxiv.org/abs/2610.19198}
 }
 ```
+
+Third-party code and asset notices: [THIRD_PARTY.md](THIRD_PARTY.md). After edits, refresh the export with `python scripts/build_submission.py` and commit its updated manifest.

@@ -1,0 +1,209 @@
+{
+  "source": "Overleaf aistats_figures/intro_pipeline.pdf, Figure 1 in main.tex",
+  "overleaf_snapshot": "6e3bea88ec5d65de3587c0719025702e110ac3e0",
+  "source_pdf_sha256": "6e308d8f0cb6bd967150a37189acb1c31632ccfa633baf40f418e6df032f931e",
+  "vector_converter": "PyMuPDF 1.27.2",
+  "source_objects": 137,
+  "objects_retained": 137,
+  "layers": {
+    "background": [
+      0
+    ],
+    "labels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70
+    ],
+    "prompt": [
+      71,
+      72
+    ],
+    "prompt-line-0": [
+      73
+    ],
+    "prompt-line-1": [
+      74
+    ],
+    "prompt-line-2": [
+      75
+    ],
+    "prompt-arrow": [
+      76,
+      77
+    ],
+    "encoder": [
+      78,
+      79
+    ],
+    "encoder-arrow": [
+      80,
+      81
+    ],
+    "vector-brackets": [
+      82,
+      99
+    ],
+    "vector-cell-0": [
+      83,
+      84
+    ],
+    "vector-cell-1": [
+      85,
+      86
+    ],
+    "vector-cell-2": [
+      87,
+      88
+    ],
+    "vector-cell-3": [
+      89,
+      90
+    ],
+    "vector-cell-4": [
+      91,
+      92
+    ],
+    "vector-cell-5": [
+      93,
+      94
+    ],
+    "vector-cell-6": [
+      95,
+      96
+    ],
+    "vector-cell-7": [
+      97,
+      98
+    ],
+    "embedding-arrow": [
+      100,
+      101
+    ],
+    "classifier": [
+      102,
+      103,
+      104
+    ],
+    "class-gray": [
+      105,
+      106,
+      107,
+      108,
+      109,
+      110
+    ],
+    "class-blue": [
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
+    "query-star": [
+      117
+    ],
+    "other-routes": [
+      118,
+      119,
+      122,
+      123
+    ],
+    "selected-route": [
+      120,
+      121
+    ],
+    "model-one": [
+      124,
+      125,
+      126
+    ],
+    "model-two": [
+      127,
+      128,
+      129
+    ],
+    "selection-check": [
+      130
+    ],
+    "model-ellipsis": [
+      131,
+      132,
+      133
+    ],
+    "model-many": [
+      134,
+      135,
+      136
+    ]
+  },
+  "metrics": "RouterBench held-out-family results, query-pooled per penalty, arithmetic mean across all 13 frozen penalties",
+  "evidence_sha256": "0fbdc6dac80b05736808f76a72caa8260a7fa561dbd1272a3cc11bbd0cbd27db"
+}
