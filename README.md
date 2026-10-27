@@ -1,32 +1,156 @@
-# Routing Theory: experiment reproduction
+# Embedding Geometry Shapes LLM Routing
 
-This repository now uses the final conference supplement (archive SHA-256
-`043676877fed7b9ecf4f93da0ba428a5f8dbd0025212873fcebc94470623494e`). The obsolete
-September export was removed from the active tree; Git history preserves it.
-The original conference file manifest is retained separately from the current
-repository manifest, so original results and later code fixes remain distinguishable.
+**Similar prompts do not always need the same model.**
 
-## Checks added to this repository
+This is the code and reproducibility repository for the paper
+**[Embedding Geometry Shapes LLM Routing: Tracing Failure Modes and Improving Generalization](https://arxiv.org/abs/2610.19198)**.
+
+Leonardo Torti · Emanuele Rimoldi · Tomer Galanti · Tomaso Poggio · Pierfrancesco Beneventano
+
+[Paper](https://arxiv.org/abs/2610.19198) ·
+[Reproduce the experiments](docs/RUN_COMMANDS.md) ·
+[Methods](docs/METHODS.md) ·
+[Reproduction audit](docs/REPRODUCTION_AUDIT.md) ·
+[CI checks](https://github.com/EmaRimoldi/routing-theory-reproducibility/actions/workflows/cpu-checks.yml)
+
+## The idea
+
+An LLM router chooses a model for each prompt, balancing answer quality and cost.
+Many routers make that choice from semantic prompt embeddings. But when a new
+task family arrives, semantic neighbors can give the wrong picture of which
+model will perform well.
+
+We study this failure through embedding geometry and evaluate two simple changes:
+
+- **Change the representation.** Replace semantic GTE embeddings with the last-token
+  hidden state at layer 21 of frozen Qwen2.5-7B-Instruct (**L21**). Even a simple
+  kNN router generalizes better with this representation.
+- **Use family structure.** **Family Adaptation** combines source-family model
+  performance profiles using predicted family probabilities. It uses source
+  family labels during training and does not require the test prompt's true family.
+
+The repository contains the embedding, geometry, routing and diagnostic pipelines,
+frozen evaluation settings, and compact numerical evidence accompanying the paper.
+
+## A snapshot of the results
+
+**Generalization to held-out task families:** mean utility across each benchmark's
+13 fixed cost penalties; higher is better. Utility is reward minus the cost penalty
+times cost.
+
+| Representation and router | RouterBench | SPROUT |
+| --- | ---: | ---: |
+| GTE + kNN-100 | 0.6615 | 0.7529 |
+| L21 + kNN-100 | 0.7007 | 0.7731 |
+| L21 + Family Adaptation | 0.7157 | 0.7767 |
+| SharedTrunkNet utility adaptation | 0.6949 | 0.7829 |
+
+The full comparison includes additional baselines, per-penalty results and confidence
+intervals. See the [result index](docs/RESULT_INDEX.md) and the
+[supplied summary tables](results/evidence/diagnostics/appendix_confidence_intervals/overleaf/aistats_ci_tables.tex).
+L21 is a fixed representation; the separate source-only layer-selection experiments
+are described in [Methods](docs/METHODS.md).
+
+| Benchmark | Prepared queries | Candidate models | Task families |
+| --- | ---: | ---: | ---: |
+| RouterBench | 34,771 | 11 | 7 |
+| SPROUT | 43,887 | 13 | 6 |
+
+Evaluation uses five in-distribution splits per benchmark and one held-out-family
+split per family. Exact splits, seeds and penalty grids are frozen in `configs/`.
+
+## Start here: check the supplied results
+
+This route uses Python 3.11 and the standard library. It needs no model downloads
+or GPU.
 
 ```bash
-python scripts/verify_release.py
-python scripts/check_paper_results.py
+git clone https://github.com/EmaRimoldi/routing-theory-reproducibility.git
+cd routing-theory-reproducibility
+
+python3 scripts/verify_release.py
+python3 scripts/reproduce_results.py
+python3 scripts/check_paper_results.py
 ```
 
-The paper check reconstructs saved aggregates and verifies **5,493 numeric values
-and settings covering all 44 tables** against the pinned final manuscript snapshot.
-It checks printed precision, full penalty grids and known-metadata/oracle labels.
-Supplied confidence endpoints are compared, not resampled by this compact command.
+These commands verify file integrity, reconstruct aggregate results from bundled
+fold-level records, and compare numerical results and settings with the pinned
+manuscript reference. Generated reports go to `results/reproduced/`.
+They replay the supplied evidence; they do not train routers or recompute bootstrap
+intervals. [Coverage and evidence types](docs/RESULT_INDEX.md) are documented explicitly.
 
-Fresh public data preparation has also been rerun: all eight output-file hashes
-match the canonical cohorts (34,771 RouterBench and 43,887 SPROUT queries).
-CPU and CUDA component checks passed, including actual encoder extraction on four
-illustrative prompts and SharedTrunkNet toy fitting. These checks **do not constitute
-a repeat of every full-scale model fit or confidence-interval bootstrap**. See
-`docs/REPRODUCTION_AUDIT.md` for exactly what ran, fixes and remaining compute.
+## Reproduce the experiments from public assets
 
-For CPU development on Python 3.11, create a virtual environment. On Linux,
-install the CPU PyTorch wheel before the remaining pinned dependencies:
+Use a fresh clone and follow the **[full execution guide](docs/RUN_COMMANDS.md)**.
+Setup and data preparation begin with:
+
+```bash
+bash scripts/bootstrap.sh
+source jobs/env.sh
+.venv-download/bin/python -B src/download_assets.py
+.venv/bin/python -B src/prepare_data.py routerbench
+.venv/bin/python -B src/prepare_data.py sprout
+```
+
+Then run embedding extraction, geometry analyses, router fitting and diagnostics
+in the order given in the guide. Public dataset and model revisions are pinned in
+[`manifests/assets.json`](manifests/assets.json); the compute environment is pinned
+in [`requirements.lock`](requirements.lock).
+
+Full reproduction uses Linux, Python 3.11 and CUDA-capable hardware for the neural
+components. Budget tens of GB for model weights and more than 100 GB for the complete
+experiment archive. The guide includes configurable Slurm launchers and direct
+Python commands where supported. Keep the documented two-GPU concurrency limit.
+Large downloaded assets, embedding arrays and fitted checkpoints are generated by
+the pipeline and are not bundled in Git.
+
+For a smaller fresh-data check, install the CPU dependencies below and run these
+commands in a fresh copy. They prepare public data and recompute single-model/oracle
+controls without downloading the large model weights:
+
+```bash
+python -B scripts/check_public_inputs.py --download --prepare
+python -B scripts/reproduce_outcome_controls.py
+```
+
+## What has been verified
+
+- **Public inputs:** fresh preparation reproduces all eight canonical output-file
+  hashes across the two benchmarks.
+- **Saved results:** 23,740 fold-level records reconstruct 4,031 aggregate rows;
+  5,493 numerical and configuration checks pass against the pinned manuscript
+  snapshot, covering 44 table labels.
+- **Execution:** CPU regression and router checks, CUDA encoder and SharedTrunkNet
+  component checks, preprocessing checks, and byte-identical saved-table regeneration
+  have passed. The CPU checks also run in [CI](https://github.com/EmaRimoldi/routing-theory-reproducibility/actions/workflows/cpu-checks.yml).
+
+**The current audit has not rerun every full-scale model fit or every bootstrap.**
+The [reproduction audit](docs/REPRODUCTION_AUDIT.md) records the executed checks,
+code corrections and remaining compute. Original conference evidence and newly
+executed checks have separate provenance.
+
+## Find your way around
+
+| Path | Contents |
+| --- | --- |
+| [`src/`](src/) | Data preparation, encoders, geometry, routers and diagnostics |
+| [`configs/`](configs/) | Frozen protocols, splits, seeds and hyperparameters |
+| [`jobs/`](jobs/) | Configurable Slurm launchers |
+| [`scripts/`](scripts/) | Setup, verification, reproduction and export helpers |
+| [`tests/`](tests/) | Regression tests and small synthetic cases |
+| [`results/evidence/`](results/evidence/) | Compact saved experimental records and tables |
+| [`environment/`](environment/) | Pinned compute, CPU and download dependencies |
+| [`manifests/`](manifests/) | Public asset revisions and model-weight checksums |
+| [`release_provenance/`](release_provenance/) | Original and current file manifests; executed-check reports |
+
+For implementation details, see [Methods](docs/METHODS.md). For optional table
+rendering, see [Saved tables](docs/SAVED_TABLES.md). For small execution checks,
+see [Reviewer smoke tests](docs/REVIEWER_SMOKE_TESTS.md). Third-party code and asset
+notices are in [THIRD_PARTY.md](THIRD_PARTY.md).
+
+## Development and export
+
+For CPU development, use Python 3.11 in a virtual environment. On Linux:
 
 ```bash
 python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
@@ -35,91 +159,30 @@ python -B -m pytest -q tests
 ```
 
 On macOS, install `torch==2.5.1` from the ordinary package index instead of the
-CPU wheel index. Full Linux/CUDA reproduction retains `requirements.lock`.
+CPU wheel index.
 
-To independently download, checksum and prepare public data and tokenizers without
-downloading the large model weights:
-
-```bash
-python -B scripts/check_public_inputs.py --download --prepare
-python -B scripts/reproduce_outcome_controls.py
-```
-
-The latter recomputes all 598 single-model/oracle control scores from the prepared
-outcomes and checks 3,588 saved metric values. Use a fresh reproduction copy for
-preparation. Full model extraction still requires all model weights; after the
-production asset download, verify their pinned LFS checksums with
-`python scripts/verify_model_weights.py`.
-
-This package contains the source, frozen configurations and compact evidence for the routing study. It supports two separate workflows:
-
-1. **Check the supplied evidence and regenerate numerical summary tables**, without models, datasets or a GPU.
-2. **Reproduce the experiments from public assets**, using the pinned revisions and the full execution instructions.
-
-## Quick evidence check
-
-From this directory, with Python 3.11:
-
-```bash
-python scripts/verify_release.py
-python scripts/reproduce_results.py
-```
-
-The second command reconstructs the supported aggregate tables from the bundled records and writes derived outputs to `results/reproduced/`. Read `docs/RESULT_INDEX.md` for the exact coverage and distinction between reconstructed results and supplied summary-only evidence. It does not retrain routers or independently regenerate all predictions.
-
-## Render saved appendix tables
-
-With the compute dependencies installed:
-
-```bash
-python -B scripts/render_saved_tables.py
-```
-
-This optional command regenerates four table families in isolated output folders.
-See `docs/SAVED_TABLES.md`. It does not recompute bootstrap intervals.
-
-## Full experiment reproduction
-
-Read `docs/RUN_COMMANDS.md` and `environment/`. Public dataset/model revisions are in `manifests/assets.json`. Frozen settings and row splits are in `configs/`.
-
-The full pipeline requires Linux, the pinned Python environment, CUDA-capable hardware for encoder extraction and neural router fitting, substantial storage, and either configurable Slurm launchers or the documented Python commands. No GPUs are needed for the compact evidence check. Downloaded model weights, raw datasets, all fitted checkpoints and large embedding arrays are deliberately omitted.
-
-## Methods and results
-
-- The primary representations are GTE-Qwen2-7B-Instruct and raw Qwen2.5-7B-Instruct hidden state 21; GTE internal-layer and Qwen layer-sweep controls are separate.
-- kNN-100 and validated kNN are separate methods. The fixed cost-penalty grids, splits and all reported outcomes are retained.
-- The final NVIDIA utility adaptation is `src/nvidia_utility/` with `configs/nvidia_utility_v1.json`. It uses per-target/per-penalty Ridge validation and the reference ternary layer search, followed by SharedTrunkNet ensembles.
-- `src/nvidia/` retains the earlier common-layer and fixed-layer utility controls. Their CPU inference measurements apply to those controls, not to the final per-target pipeline.
-- Read `docs/METHODS.md` and `docs/RESULT_INDEX.md` before interpreting a comparison.
-
-## Package contents
-
-`src/` source; `configs/` frozen protocols/splits; `jobs/` configurable Slurm examples; `tests/` synthetic tests; `environment/` dependency specifications; `manifests/` public asset revisions; `results/` compact evidence; `release_provenance/` checksums; `scripts/` installation, verification and reproduction helpers.
-
-Historical scheduling logs, private research notes, machine-specific caches and obsolete manuscript drafts are excluded. This code supplement does not contain or replace the submitted paper PDF.
-
-## Updating the repository
-
-After changing code, configuration or documentation, run the affected tests and
-the paper-value check, then refresh the current file manifest and code archive:
+After a change, run the affected checks and refresh the release manifest:
 
 ```bash
 python scripts/build_submission.py
 python scripts/verify_release.py
 ```
 
-Commit the regenerated manifest with the changes. The deterministic export is
-`dist/routing_reproduction.zip`. Original conference fingerprints and saved
-experimental evidence remain separate from newly executed results.
+Commit the regenerated manifest with the change. The builder also produces the
+deterministic export `dist/routing_reproduction.zip`.
 
-## Provenance and limitations
+## Citation
 
-Original-run source hashes and release hashes are distinct. Portability and anonymization changes are described in `docs/RELEASE_CHANGES.md`. Published numerical outcomes are not retuned or selected by this packaging step. Fresh runs produce their own provenance; do not relabel historical results as having been generated by the release sources.
+If you use this code or build on the study, please cite:
 
-The release verification report describes exactly which checks ran. A successful compact evidence check is not a claim that every GPU experiment was rerun. See `docs/VALIDATION.md`.
-
-Third-party code notices are retained. See `THIRD_PARTY.md` for asset and licensing information. The package does not assert a new license grant over third-party assets or its authors' original code.
-
-## Reviewer smoke tests
-
-See [reviewer smoke tests](docs/REVIEWER_SMOKE_TESTS.md) for small CPU/GPU execution checks, installation evidence and their scope. These runs do not replace the saved paper evidence.
+```bibtex
+@misc{torti2026embeddinggeometry,
+  title         = {Embedding Geometry Shapes {LLM} Routing: Tracing Failure Modes and Improving Generalization},
+  author        = {Leonardo Torti and Emanuele Rimoldi and Tomer Galanti and Tomaso Poggio and Pierfrancesco Beneventano},
+  year          = {2026},
+  eprint        = {2610.19198},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2610.19198}
+}
+```
