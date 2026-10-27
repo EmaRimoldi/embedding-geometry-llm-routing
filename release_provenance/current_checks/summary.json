@@ -46,7 +46,7 @@
     },
     "baselines": {
       "file": "release_provenance/current_checks/baselines.json",
-      "sha256": "86445ecd3b86a959108788b69c93cdae89e60b6607a3eb083c66f4fd7c90ae34"
+      "sha256": "f7f3e454ca76a65c878a4d625a3a91985274a6b87a587152c9b042c89205492f"
     },
     "nvidia_cpu": {
       "file": "release_provenance/current_checks/nvidia_cpu.json",
@@ -70,7 +70,8 @@
     "Bootstrap Top-1 follows original average-rank point estimator; all 169 observed points preserved.",
     "Replace September code with conference package; remove manuscript-only figure builder.",
     "Anchor the manuscript ignore rule and exclude Finder metadata; verify complete tracked-file manifest coverage.",
-    "Require regenerated table bytes to match frozen evidence, with producer regression tests."
+    "Require regenerated table bytes to match frozen evidence, with producer regression tests.",
+    "Exercise real Avengers-Pro and KM-Prox CPU fit/predict/save paths; baseline score checks expanded to 260."
   ],
   "dependency_checks": {
     "compute": "passed",

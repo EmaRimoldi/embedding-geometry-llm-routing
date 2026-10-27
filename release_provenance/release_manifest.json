@@ -109,8 +109,8 @@
       "sha256": "6aae17c114104734498cfa7e8cda8185ae0c8ca26cf6b947fa38a8429413a11e"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 6348,
-      "sha256": "2bce7b5292498f806bb90176aed58f001284bce8d9bf8a2eee3cfd32bc0ead40"
+      "bytes": 6371,
+      "sha256": "ea5b8b43461eb1f518e78ada49f6bcdf19253c8368937249df0be494063af64b"
     },
     "docs/RESULT_INDEX.md": {
       "bytes": 11590,
@@ -129,8 +129,8 @@
       "sha256": "a9334e6eaffc678ef6309a96870122bd976d90303764ec82f24f1c94c478d574"
     },
     "docs/REVIEWER_SMOKE_TESTS.md": {
-      "bytes": 4312,
-      "sha256": "3bd7876f3973283cfb7aa609b62afdfd15e826e09d4b5a2ad3929297fbc3d207"
+      "bytes": 4596,
+      "sha256": "1c29baf9251267b49c0bfb5d8280ea592984c273aada8365ad818552b0440764"
     },
     "docs/RUN_COMMANDS.md": {
       "bytes": 13580,
@@ -417,8 +417,8 @@
       "sha256": "06e8962e85c151a899cb59ba89cc7418b18e9832cc1b6bce8122cba45e9742bb"
     },
     "release_provenance/current_checks/baselines.json": {
-      "bytes": 333,
-      "sha256": "86445ecd3b86a959108788b69c93cdae89e60b6607a3eb083c66f4fd7c90ae34"
+      "bytes": 366,
+      "sha256": "f7f3e454ca76a65c878a4d625a3a91985274a6b87a587152c9b042c89205492f"
     },
     "release_provenance/current_checks/downloader_cli.json": {
       "bytes": 276,
@@ -465,8 +465,8 @@
       "sha256": "a348636c3deefa61a1d3eebeac219e865fa7f59be002bdf75aeba4e968d5a138"
     },
     "release_provenance/current_checks/summary.json": {
-      "bytes": 3227,
-      "sha256": "fbc07718c30fe3e2be1c59ed47af8567ba7dfa39fe41f10865bb1587b014c999"
+      "bytes": 3340,
+      "sha256": "72ee925d1941359c7242758a1f704980e88c9b88633b82a98b67ea7ab2e1ecfb"
     },
     "release_provenance/original_source_hashes.json": {
       "bytes": 18876,
@@ -7597,8 +7597,8 @@
       "sha256": "7988aeda651f60e9a735232f280d1508e0a23dddf2f0ee0ea2ffff15b6be47e0"
     },
     "scripts/smoke_baselines.py": {
-      "bytes": 7421,
-      "sha256": "aefba2431ac6ce8b2042d6801b1f819f631fefd8c21f26ec0cae2210d65005c5"
+      "bytes": 7682,
+      "sha256": "29cc328de8f2d5777bbf43d75a62faf34986f7c483cacdc35b6efbe2ca2c5cc8"
     },
     "scripts/smoke_encoders.py": {
       "bytes": 2915,

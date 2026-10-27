@@ -1,5 +1,10 @@
 # Reviewer smoke tests
 
+The current repository additionally executes Avengers-Pro and KM-Prox in the CPU
+baseline harness (260 score checks). The 156-check counts below describe the
+original conference reviewer run, whose reports are preserved unchanged. See
+`REPRODUCTION_AUDIT.md` for current executions.
+
 These checks exercise installed software and small real execution paths. Synthetic outputs are explicitly labelled and never replace the paper evidence.
 
 ## Installation

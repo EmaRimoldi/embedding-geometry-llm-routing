@@ -50,8 +50,11 @@ def main():
     for task,split in [(0,"iid_0"),(10,"ood_0")]:
         for kind in ["knn","prior"]:
             run(split+"_"+kind,["src/baselines/run_fixed.py","--task",str(task),"--kind",kind])
+        run(split+"_clusters",["src/baselines/run_clusters.py","--task",str(task)])
     run("ridge_iid",["src/baselines/run_ridge.py","--pack","0"])
     run("ridge_ood",["src/baselines/run_ridge.py","--pack","5"])
+    run("prox_iid",["src/baselines/run_prox.py","--pack","0"])
+    run("prox_ood",["src/baselines/run_prox.py","--pack","5"])
     cfg=json.loads((work/"configs/baselines.json").read_text());lams=cfg["lambdas"]["routerbench-0shot"]
     splits=json.loads((work/"configs/baseline_splits/routerbench-0shot.json").read_text())
     checks=0
@@ -65,7 +68,7 @@ def main():
         neighbors=tr[np.argsort(-(x[te]@x[tr].T),axis=1,kind="stable")[:,:100]]
         np.testing.assert_allclose(kz["knn100|r"],rewards[neighbors].mean(1),atol=1e-12)
         np.testing.assert_allclose(kz["knn100|c"],costs[neighbors].mean(1),atol=1e-12)
-        for kind in ["knn","prior","ridge"]:
+        for kind in ["knn","prior","ridge","clusters","prox"]:
             p=work/"results/baselines/gte-qwen2-7b/routerbench"/split/kind
             rec=json.loads((p/"result.json").read_text());z=np.load(p/"predictions.npz")
             np.testing.assert_array_equal(z["test_rows"],te)
@@ -93,7 +96,7 @@ def main():
         for il,lam in enumerate(lams):
             np.testing.assert_allclose(kr["selections"][str(lam)]["candidate_utilities"],vals[il]/vn,rtol=1e-12,atol=1e-12)
             assert kr["selections"][str(lam)]["k"]==cfg["knn_candidates"][int(np.argmax(vals[il]))]
-    result={"passed":True,"scope":"Synthetic fixture; real kNN/prior/Ridge CLI fit-predict-save paths, all prescribed RouterBench penalties, IID/OOD; not paper performance.",
+    result={"passed":True,"scope":"Synthetic fixture; real kNN/Family Adaptation/Ridge/Avengers-Pro/KM-Prox CLI fit-predict-save paths, all prescribed RouterBench penalties, IID/OOD; not paper performance.",
             "score_checks":checks,"mlp_sklearn_equivalence_cases":16,"ridge_direct_utility_checks":36,
             "workspace":str(work.relative_to(ROOT)) if work.is_relative_to(ROOT) else str(work)}
     save(work/"report.json",result);print(json.dumps(result,indent=2))
