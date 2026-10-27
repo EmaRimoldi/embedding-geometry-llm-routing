@@ -13,12 +13,12 @@
       "sha256": "2bf8dc70d4621607aa426713e153c552de9fa5f5496816b011856ab305245f81"
     },
     "README.md": {
-      "bytes": 2578,
-      "sha256": "1ffa26ecbebcc870876988eeefc9982aa4665d8830bfda73dd29de7ca47b5794"
+      "bytes": 2616,
+      "sha256": "374245b33b7c30eb3ee299cfc4978f33fc2bfa64a14a5a7f34af7abb270f7f25"
     },
     "THIRD_PARTY.md": {
-      "bytes": 2780,
-      "sha256": "46518376285da319dc9681aa8f67a65df8f1eeccc01d8724ac22fba3ee0c0029"
+      "bytes": 2866,
+      "sha256": "fc30dd5829b10d5cca687c15a70a5c103c4956c416e7f9fc4cb777dad4d43256"
     },
     "configs/additional_clustering_tasks.json": {
       "bytes": 11368,
@@ -77,8 +77,8 @@
       "sha256": "4d2bcf8217154a06358ed959b1fc5554c661a292fae9536b947b0bc8f06fe521"
     },
     "configs/nvidia.json": {
-      "bytes": 21489038,
-      "sha256": "4a7e398acc43d07cd604776539d3633e4f257202bb2966ca2352e5aa4d60be84"
+      "bytes": 8341673,
+      "sha256": "2b6fbf23cec81258fa8ad7f968ff16f9a4085e080eae1f49668c655e2ed1dcbc"
     },
     "configs/nvidia_inference_cpu.json": {
       "bytes": 1463,
@@ -104,6 +104,10 @@
       "bytes": 6574,
       "sha256": "a0cc1a6c6ce87070d1cd36175fa34093fb8371fb2f97154ffbdfaa915381306a"
     },
+    "docs/INTER_FONT_LICENSE.txt": {
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
     "docs/METHODS.md": {
       "bytes": 5430,
       "sha256": "08923b1ea63c99db2037ae0429bdee2f4ec8928ea0c2bacf67e5ed9bdf214f68"
@@ -113,8 +117,8 @@
       "sha256": "6aae17c114104734498cfa7e8cda8185ae0c8ca26cf6b947fa38a8429413a11e"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 6371,
-      "sha256": "ea5b8b43461eb1f518e78ada49f6bcdf19253c8368937249df0be494063af64b"
+      "bytes": 7024,
+      "sha256": "e6fd85400e60e11e2d7a529b3185ffd4b007e6ac5347543bb05944c41622300d"
     },
     "docs/RESULT_INDEX.md": {
       "bytes": 11590,
@@ -149,8 +153,8 @@
       "sha256": "8cbc4235d7db66c8549a911024cdbc7e8e01166a2a5e994ef05173e843ea3980"
     },
     "docs/demo/README.md": {
-      "bytes": 4315,
-      "sha256": "baba622fa145d9ee9e2b3132bf8e48efbc2d6a730b9f28a1fb23d2bf332aec19"
+      "bytes": 4568,
+      "sha256": "dacced180774af1a46ebcbefbeb6a8d4ee832a84bbb7eba92bb243be36bc52bb"
     },
     "docs/demo/browser-check.json": {
       "bytes": 730,
@@ -176,25 +180,9 @@
       "bytes": 63140,
       "sha256": "7ceb17b92cebd370e10abf39a211265e9f2614078a947cc6a5b7d2dfd9b79121"
     },
-    "docs/demo/figure1-components.svg": {
-      "bytes": 46427,
-      "sha256": "7e41584b95b23ce2f9cf6d95fca8054065130817caacb041425731d28f0046fb"
-    },
     "docs/demo/figure1-original.pdf": {
       "bytes": 34984,
       "sha256": "6e308d8f0cb6bd967150a37189acb1c31632ccfa633baf40f418e6df032f931e"
-    },
-    "docs/demo/fonts/Inter-Variable.ttf": {
-      "bytes": 876576,
-      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
-    },
-    "docs/demo/fonts/OFL.txt": {
-      "bytes": 4377,
-      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
-    },
-    "docs/demo/fonts/provenance.json": {
-      "bytes": 515,
-      "sha256": "428904e59cfd2ebe0d2c4c166bd3a83054c4abfc352a40a80d0ba8080c40e20a"
     },
     "docs/demo/index.html": {
       "bytes": 55898,
@@ -484,6 +472,10 @@
       "bytes": 3944,
       "sha256": "8c3e5150557e705f7c7fd2af5be7c5c6de3d49ff1e39aa5dfca3e67bf6fb8b3e"
     },
+    "manifests/readme_font.json": {
+      "bytes": 664,
+      "sha256": "2be0d6e0a7d28c5231221795b4ad692ce5a5b0342d28aaadb939df3acb8589ce"
+    },
     "release_provenance/conference_import.json": {
       "bytes": 645,
       "sha256": "06582afddd36f10e90325a54b676cbfebdc087226df3aa47f57eafbeac692f9d"
@@ -595,6 +587,10 @@
     "release_provenance/source_changes.json": {
       "bytes": 20655,
       "sha256": "362a7be5a6573237b54de99ff19372ab4b1070bc3d7ea5cb376bd2f26db7bd9c"
+    },
+    "release_provenance/storage_cleanup.json": {
+      "bytes": 5337,
+      "sha256": "5f8450e7666dd256e3c55e3fed3ce8b0cd9194402f15dc8f302cae30ee104926"
     },
     "release_provenance/validation.json": {
       "bytes": 4735,
@@ -7645,8 +7641,8 @@
       "sha256": "5c6ecde9b0eda930b2a0c016323997feade588ecd05c43e5656221d302524df0"
     },
     "scripts/build_readme_demo.py": {
-      "bytes": 15037,
-      "sha256": "c8aac8e8c8722b79f40ab5c4dff0fb35982c8b56a8aa7ec75d0a6671872ca9ef"
+      "bytes": 16215,
+      "sha256": "7e145b968072aa7f95d03e914e18d9948796f871209f0657d3cbeb53ae198c16"
     },
     "scripts/build_submission.py": {
       "bytes": 2743,
@@ -7661,8 +7657,8 @@
       "sha256": "0d1fdc9d3ba309e8329b912ccb7c75ab142083c68657efbe99456b2286412493"
     },
     "scripts/initialize_release.py": {
-      "bytes": 7873,
-      "sha256": "85943d8d8e171ab6057342816b78086dbc62e3880adb4607ad3075bc2f331018"
+      "bytes": 8052,
+      "sha256": "a1a28e7115c0a0ab2df776f91d2ff685943f16faca6d7f3f02813a1fd3ae411d"
     },
     "scripts/render_readme_demo.cjs": {
       "bytes": 5914,

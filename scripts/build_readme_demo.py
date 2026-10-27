@@ -12,6 +12,8 @@ import math
 from importlib.metadata import version
 from pathlib import Path
 import statistics
+import subprocess
+import tempfile
 import xml.etree.ElementTree as ET
 
 import fitz
@@ -49,6 +51,31 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def cached_font():
+    """Fetch only the optional illustration font, at a pinned revision/checksum."""
+    record = json.loads((ROOT / "manifests/readme_font.json").read_text())
+    asset = record["font"]
+    destination = ROOT / ".cache/readme-demo/font-assets/Inter-Variable.ttf"
+    destination.parent.mkdir(parents=True, exist_ok=True)
+    if not destination.exists():
+        with tempfile.NamedTemporaryFile(dir=destination.parent, suffix=".ttf", delete=False) as stream:
+            temporary = Path(stream.name)
+        try:
+            subprocess.run(["curl", "--fail", "--location", "--silent", "--show-error",
+                            "--output", str(temporary), asset["url"]], check=True)
+            if sha(temporary) != asset["sha256"] or temporary.stat().st_size != asset["bytes"]:
+                raise ValueError("Downloaded illustration font differs from the pinned asset")
+            temporary.replace(destination)
+        finally:
+            temporary.unlink(missing_ok=True)
+    if sha(destination) != asset["sha256"] or destination.stat().st_size != asset["bytes"]:
+        raise ValueError("Cached illustration font differs from its pinned checksum")
+    license_path = ROOT / record["license"]["path"]
+    if sha(license_path) != record["license"]["sha256"]:
+        raise ValueError("Illustration font license differs from its pinned checksum")
+    return destination
+
+
 def build_comparison(rows, relative):
     import matplotlib
     matplotlib.use("Agg")
@@ -57,9 +84,7 @@ def build_comparison(rows, relative):
     from fontTools.ttLib import TTFont
     from fontTools.varLib.instancer import instantiateVariableFont
 
-    font_source = DEST / "fonts/Inter-Variable.ttf"
-    font_record = json.loads((DEST / "fonts/provenance.json").read_text())
-    assert sha(font_source) == font_record["files"][font_source.name]["sha256"]
+    font_source = cached_font()
     font_cache = ROOT / ".cache/readme-demo/fonts"
     font_cache.mkdir(parents=True, exist_ok=True)
     fonts = {}
@@ -185,7 +210,6 @@ def build():
     tree.insert(0, title)
     tree.insert(1, desc)
     svg = ET.tostring(tree, encoding="unicode")
-    (DEST / "figure1-components.svg").write_text(svg + "\n")
 
     relative = "results/evidence/baselines/_summary_reduced/scores.csv"
     with (ROOT / relative).open(newline="") as stream:
@@ -239,7 +263,7 @@ def build():
         "metrics": data["scope"], "evidence_sha256": data["evidence_sha256"],
         "comparison_plot": "All 13 penalties per benchmark, fixed kNN-100, GTE versus L21; embedding-comparison-data.json",
         "plot_renderer": "Matplotlib " + version("matplotlib"),
-        "presentation": {"plot_font": "Inter", "plot_font_sha256": sha(DEST / "fonts/Inter-Variable.ttf"),
+        "presentation": {"plot_font": "Inter", "plot_font_sha256": sha(cached_font()),
                          "png_dpi": 600, "png_dimensions": [7200, 2640],
                          "animation_pixel_ratio": 2},
     }

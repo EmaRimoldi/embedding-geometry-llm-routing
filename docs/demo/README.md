@@ -45,9 +45,11 @@ plotted point, source selectors, unrounded means and source-file checksum.
 The wide SVG/PNG and the stacked SVG use the same values. The browser selects the
 stacked layout on narrow screens.
 
-Plots use the bundled Inter typeface, with a vector SVG and a 600-DPI PNG
+Plots use the Inter typeface, with a vector SVG and a 600-DPI PNG
 (7200 × 2640 pixels). The animation and its poster render at twice the display
-resolution. Font licensing and pinned upstream checksums are in `fonts/`.
+resolution. The optional builder fetches the font into `.cache/` on its first run;
+its revision and checksum are in `../../manifests/readme_font.json`, and the license
+is in `../INTER_FONT_LICENSE.txt`. Viewing the exported images needs no download.
 
 The separate quality/cost sentences compare a source-selected single model with
 L21 Family Adaptation on RouterBench. Mean reward rises from 71.04% to 74.63%, and
@@ -63,6 +65,7 @@ All values are regenerated from the frozen
 ## Rebuild
 
 Optional authoring dependencies are separate from the experiment environment.
+The initial font download uses `curl`; subsequent builds can use the verified cache.
 Use Playwright 1.62.1, or select installed Chrome with `DEMO_BROWSER=chrome`.
 
 ```bash

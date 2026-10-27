@@ -60,6 +60,14 @@ differences are recorded rather than presented as an identical original environm
    whose bytes differ from the frozen numerical table. A successful process exit
    alone cannot mark such a table reproduced. Both matching and changed producers
    are covered by regression tests.
+7. **Storage cleanup:** redundant illustration vectors and the bundled font folder
+   were removed; the optional builder fetches the same pinned, checksum-verified
+   font, with its license retained. Compact serialization of `configs/nvidia.json`
+   preserves every parsed value and saves 13.1 MB; provenance updates retain that
+   format. Fixed splits, frozen evidence and final demo assets are unchanged.
+   Duplicate local extractions, retired data and synthetic check workspaces were
+   removed after verification; the original conference ZIP is preserved outside
+   the repository. `release_provenance/storage_cleanup.json` records the accounting.
 
 ## What this establishes and what it does not
 

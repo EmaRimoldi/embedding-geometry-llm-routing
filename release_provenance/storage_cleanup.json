@@ -1,0 +1,121 @@
+{
+  "config_serialization": {
+    "path": "configs/nvidia.json",
+    "before_bytes": 21489038,
+    "after_bytes": 8341673,
+    "before_sha256": "4a7e398acc43d07cd604776539d3633e4f257202bb2966ca2352e5aa4d60be84",
+    "after_sha256": "2b6fbf23cec81258fa8ad7f968ff16f9a4085e080eae1f49668c655e2ed1dcbc",
+    "canonical_value_sha256_before": "c8f1506faa74fee5bb27629532002cc3f061c603a1e394012d6ce5513d937e9f",
+    "canonical_value_sha256_after": "c8f1506faa74fee5bb27629532002cc3f061c603a1e394012d6ce5513d937e9f",
+    "scope": "Whitespace-only JSON compaction. Every parsed protocol setting, fold and source row is unchanged. Frozen baseline split files and saved experimental evidence are untouched."
+  },
+  "tracked_removals": [
+    {
+      "path": "docs/demo/fonts/Inter-Variable.ttf",
+      "bytes": 876576,
+      "reason": "Optional README-only font is fetched and checksum-verified from a pinned public URL."
+    },
+    {
+      "path": "docs/demo/fonts/provenance.json",
+      "bytes": 515,
+      "reason": "Pinned font metadata moved to manifests/readme_font.json."
+    },
+    {
+      "path": "docs/demo/figure1-components.svg",
+      "bytes": 46427,
+      "reason": "Duplicate generated vectors already embedded in index.html and regenerable from the retained original PDF."
+    }
+  ],
+  "local_only_removals": [
+    {
+      "path": "incoming",
+      "files": 1993,
+      "bytes": 86580594,
+      "size_basis": "Original ZIP payload plus scratch reaggregation; includes the already removed portion of the verified extraction and excludes Finder metadata.",
+      "reason": "Duplicate original conference extraction and scratch reaggregation; original ZIP remains outside the repository and its fingerprint is unchanged.",
+      "status": "removed"
+    },
+    {
+      "path": "data",
+      "files": 6,
+      "bytes": 31567626,
+      "size_basis": "Logical file bytes immediately before removal; Finder metadata excluded.",
+      "reason": "Retired September export, superseded by canonical public-data preparation under datasets/.",
+      "status": "removed"
+    },
+    {
+      "path": ".cache/reproduction-audit",
+      "files": 2136,
+      "bytes": 117736168,
+      "size_basis": "Logical file bytes immediately before removal; Finder metadata excluded.",
+      "reason": "Temporary synthetic audit fixtures; generators and committed audit reports are retained.",
+      "status": "removed"
+    },
+    {
+      "path": ".cache/readme-demo/frames",
+      "files": 108,
+      "bytes": 7858239,
+      "size_basis": "Logical file bytes immediately before removal; Finder metadata excluded.",
+      "reason": "Intermediate animation frames; final GIF, poster, source PDF and generator are retained.",
+      "status": "removed"
+    },
+    {
+      "path": ".cache/reviewer_pca_smoke",
+      "files": 34,
+      "bytes": 16411,
+      "size_basis": "Logical file bytes immediately before removal; Finder metadata excluded.",
+      "reason": "Temporary synthetic PCA fixtures; smoke generator and committed report are retained.",
+      "status": "removed"
+    },
+    {
+      "path": ".cache/reviewer_smoke_orchestration",
+      "files": 1,
+      "bytes": 2135,
+      "size_basis": "Logical file bytes immediately before removal; Finder metadata excluded.",
+      "reason": "Temporary inert-scheduler test workspace; generator and report are retained.",
+      "status": "removed"
+    },
+    {
+      "path": "results/reproduced/reviewer_nvidia",
+      "files": 158,
+      "bytes": 18140202,
+      "size_basis": "Logical file bytes immediately before removal; Finder metadata excluded.",
+      "reason": "Temporary synthetic neural-router workspace; production code, smoke generator and committed reports are retained.",
+      "status": "removed"
+    },
+    {
+      "path": "results/reproduced/saved_tables",
+      "files": 88,
+      "bytes": 50206978,
+      "size_basis": "Logical file bytes immediately before removal; Finder metadata excluded.",
+      "reason": "Isolated copies used to check saved-table renderers; frozen evidence and final reports are retained.",
+      "status": "removed"
+    },
+    {
+      "path": "results/reproduced/smoke",
+      "files": 644,
+      "bytes": 6774817,
+      "size_basis": "Logical file bytes immediately before removal; Finder metadata excluded.",
+      "reason": "Temporary synthetic baseline fixtures; smoke generator and committed reports are retained.",
+      "status": "removed"
+    }
+  ],
+  "retained_demo_assets_verified_identical": [
+    "docs/demo/embedding-comparison.svg",
+    "docs/demo/embedding-comparison-stacked.svg",
+    "docs/demo/embedding-comparison.png",
+    "docs/demo/routing-demo.gif",
+    "docs/demo/routing-poster.png",
+    "docs/demo/index.html",
+    "docs/demo/demo-data.json",
+    "docs/demo/embedding-comparison-data.json"
+  ],
+  "font_download_verified": true,
+  "original_archive_sha256_verified": "043676877fed7b9ecf4f93da0ba428a5f8dbd0025212873fcebc94470623494e",
+  "original_archive_payload_files_verified_before_removal": 1981,
+  "original_archive_preserved": true,
+  "compact_provenance_updates_verified": true,
+  "tracked_payload_bytes_saved_before_new_metadata": 14070883,
+  "local_only_bytes_removed": 318883170,
+  "scope": "Working-tree and exported-payload cleanup; Git history is preserved. Essential split files and frozen experimental evidence are unchanged."
+}

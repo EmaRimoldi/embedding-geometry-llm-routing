@@ -40,7 +40,7 @@ def replace_config(rel, obj):
     # Only callers below may change explicit metadata fields; no method fields change.
     p = ROOT / rel
     if read(rel) != obj:
-        p.write_text(json.dumps(obj, indent=2, allow_nan=False) + "\n")
+        p.write_bytes(config_bytes(rel, obj))
 
 def freeze_manifest(rel):
     paths = read("environment/runtime_manifest_paths.json")[rel]
@@ -66,6 +66,9 @@ def config_bytes(rel, obj):
     # Preserve byte identity on idempotent calls (including original formatting).
     if read(rel) == obj:
         return (ROOT / rel).read_bytes()
+    if rel == "configs/nvidia.json":
+        # Keep the large row-index payload compact when refreshing provenance.
+        return (json.dumps(obj, separators=(",", ":"), allow_nan=False) + "\n").encode()
     return (json.dumps(obj, indent=2, allow_nan=False) + "\n").encode()
 
 def validate_new_manifest(rel, obj):

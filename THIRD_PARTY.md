@@ -3,9 +3,11 @@
 ## Inter typeface
 
 The presentation assets use Inter, Copyright 2020 The Inter Project Authors,
-under the SIL Open Font License 1.1. The original variable font, license and pinned
-upstream revision/checksums are retained in `docs/demo/fonts/`. Static instances
-used for rendering are generated locally and remain under the same font license.
+under the SIL Open Font License 1.1. The optional illustration builder downloads
+the font into its local cache using the revision and checksum in
+`manifests/readme_font.json`. The license is retained in
+`docs/INTER_FONT_LICENSE.txt`. Static instances used for rendering are generated
+locally and remain under the same font license.
 
 ## NVIDIA reference implementation
 
