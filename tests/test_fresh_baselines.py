@@ -60,6 +60,19 @@ class FreshBaselineChecks(unittest.TestCase):
         self.assertFalse(report["passed"])
         self.assertEqual(report["beyond_tolerance"], 1)
 
+    def test_selected_prox_inverse_temperature_requires_exact_agreement(self):
+        path = RECORD.replace("/ridge/", "/prox/")
+        reference = dict(
+            selections={"0": dict(inverse_temperature=20., validation_utilities=[.2, .5])},
+            results={"0": {"km_prox32_validated": dict(utility=.5)}})
+        actual = copy.deepcopy(reference)
+        actual["selections"]["0"]["inverse_temperature"] += 1e-10
+        report = CHECKS.audit({path: actual}, {path: reference}, {path: "prox"}, {})
+        self.assertFalse(report["passed"])
+        self.assertEqual(report["beyond_tolerance"], 1)
+        self.assertEqual(report["differences"][0]["path"],
+                         ["selections", "0", "inverse_temperature"])
+
     def test_small_score_difference_is_retained(self):
         self.fresh[RECORD]["results"]["0"]["ridge"]["utility"] += 1e-13
         report = self.report()

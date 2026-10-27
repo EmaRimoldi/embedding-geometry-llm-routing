@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RTOL, ATOL = 1e-10, 1e-12
 OPERATIONAL_FIELDS = {"seconds", "slurm_job_id"}
 PROVENANCE_FIELDS = {"code_sha256", "config_sha256", "trainer_sha256", "protocol_sha256"}
-EXACT_SELECTION_FIELDS = {"alpha", "alphas", "candidate_alphas", "k", "K", "tau", "temperature",
+EXACT_SELECTION_FIELDS = {"alpha", "alphas", "candidate_alphas", "k", "K", "tau", "temperature", "inverse_temperature",
                           "architecture", "layers", "seeds", "n_clusters", "early_stopping"}
 
 
