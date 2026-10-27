@@ -8,6 +8,7 @@ import argparse
 import csv
 import hashlib
 import json
+import math
 from importlib.metadata import version
 from pathlib import Path
 import statistics
@@ -48,6 +49,100 @@ def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def build_comparison(rows, relative):
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+
+    panels = []
+    for dataset, label in [("routerbench-0shot", "RouterBench"), ("sprout-sixfam", "SPROUT")]:
+        curves = []
+        for encoder, name, color, marker, style in [
+            ("gte", "GTE semantic embedding", "#0072b2", "o", "--"),
+            ("reader", "Qwen L21 hidden state", "#c43b3b", "s", "-"),
+        ]:
+            subset = sorted([r for r in rows if r["dataset"] == dataset
+                             and r["protocol"] == "ood" and r["encoder"] == encoder
+                             and r["method"] == "kNN-100"],
+                            key=lambda r: float(r["lambda_value"]))
+            assert len(subset) == 13 and all(r["complete"] == "True" for r in subset)
+            points = [{key: float(r[field]) for key, field in
+                       [("penalty", "lambda_value"), ("utility", "utility"),
+                        ("reward", "reward"), ("cost", "cost")]}
+                      for r in subset]
+            assert len({p["penalty"] for p in points}) == 13
+            assert all(math.isclose(p["utility"], p["reward"] - p["penalty"] * p["cost"],
+                                    rel_tol=1e-10, abs_tol=1e-12) for p in points)
+            curves.append(dict(encoder=encoder, label=name, color=color,
+                               marker=marker, linestyle=style, points=points,
+                               mean_utility=statistics.mean(p["utility"] for p in points)))
+        assert [p["penalty"] for p in curves[0]["points"]] == [p["penalty"] for p in curves[1]["points"]]
+        panels.append(dict(dataset=dataset, label=label, curves=curves))
+
+    data = dict(method="kNN-100", protocol="held-out-family",
+                scope="Query-pooled held-out utility at every frozen penalty; identical router and cohorts across embeddings. Lines connect evaluated points without smoothing.",
+                utility="reward - penalty * cost", x_axis="symlog, linear within [0, 1]",
+                evidence=relative, evidence_sha256=sha(ROOT / relative), panels=panels)
+    (DEST / "embedding-comparison-data.json").write_text(json.dumps(data, indent=2) + "\n")
+    rc = {"font.family": "DejaVu Sans", "font.size": 11, "axes.spines.top": False,
+          "axes.spines.right": False, "axes.labelcolor": "#4b5563",
+          "text.color": "#26313b", "xtick.color": "#586572", "ytick.color": "#586572",
+          "axes.edgecolor": "#c4cdd5", "svg.hashsalt": "routing-embedding-comparison",
+          "svg.fonttype": "path", "savefig.facecolor": "white"}
+    with plt.rc_context(rc):
+        for stacked in [False, True]:
+            fig, axes = plt.subplots(2 if stacked else 1, 1 if stacked else 2,
+                                     figsize=(6.2, 7.6) if stacked else (12, 4.8),
+                                     sharey=True)
+            if stacked:
+                fig.subplots_adjust(left=.13, right=.96, top=.72, bottom=.08, hspace=.55)
+            else:
+                fig.subplots_adjust(left=.075, right=.98, top=.66, bottom=.17, wspace=.17)
+            fig.text(.075 if not stacked else .13, .935, "Same router. Different embeddings.",
+                     fontsize=19 if not stacked else 17, weight="bold")
+            fig.text(.075 if not stacked else .13, .855 if not stacked else .89,
+                     "Held-out task families · kNN-100 · higher utility is better", fontsize=11)
+            for ax, panel in zip(axes.flat, panels):
+                for curve in panel["curves"]:
+                    ax.plot([p["penalty"] for p in curve["points"]],
+                            [p["utility"] for p in curve["points"]], label=curve["label"],
+                            color=curve["color"], marker=curve["marker"],
+                            linestyle=curve["linestyle"], linewidth=2.3, markersize=4.3)
+                ax.set_title(panel["label"], loc="left", fontsize=13, weight="bold", pad=13)
+                ax.set_xscale("symlog", linthresh=1, linscale=.7)
+                ax.set_xlim(-.1, 650)
+                ax.set_xticks([0, 1, 10, 100, 500], labels=["0", "1", "10", "100", "500"])
+                ax.minorticks_off()
+                ax.set_ylim(.48, .855)
+                ax.set_yticks([.5, .6, .7, .8])
+                ax.set_xlabel("Cost penalty λ (symlog scale)", labelpad=10)
+                ax.grid(axis="y", color="#e6ebef", linewidth=.8)
+                ax.set_axisbelow(True)
+                ax.tick_params(length=0, pad=7)
+                if stacked:
+                    ax.set_ylabel("Utility", labelpad=10)
+            if not stacked:
+                axes.flat[0].set_ylabel("Utility", labelpad=10)
+            handles, labels = axes.flat[0].get_legend_handles_labels()
+            fig.legend(handles, labels, loc="upper left",
+                       bbox_to_anchor=(.066 if not stacked else .11, .81 if not stacked else .86),
+                       ncol=2 if not stacked else 1, frameon=False, fontsize=11,
+                       handlelength=2.5, columnspacing=2)
+            name = "embedding-comparison-stacked" if stacked else "embedding-comparison"
+            svg_path = DEST / (name + ".svg")
+            fig.savefig(svg_path, metadata={"Date": None, "Creator": "Matplotlib " + matplotlib.__version__})
+            plot = ET.fromstring(svg_path.read_text())
+            plot.set("role", "img")
+            plot.set("aria-label", "GTE in blue and Qwen L21 in red: held-out kNN-100 utility on RouterBench and SPROUT across all 13 cost penalties")
+            serialized = ET.tostring(plot, encoding="unicode")
+            svg_path.write_text("\n".join(line.rstrip() for line in serialized.splitlines()) + "\n")
+            if not stacked:
+                fig.savefig(DEST / "embedding-comparison.png", dpi=180,
+                            metadata={"Software": "Matplotlib " + matplotlib.__version__})
+            plt.close(fig)
+    return data
+
+
 def build():
     source = DEST / "figure1-original.pdf"
     with fitz.open(source) as pdf:
@@ -78,6 +173,7 @@ def build():
     relative = "results/evidence/baselines/_summary_reduced/scores.csv"
     with (ROOT / relative).open(newline="") as stream:
         rows = list(csv.DictReader(stream))
+    comparison = build_comparison(rows, relative)
     summaries = {}
     for key, encoder, method in [
         ("baseline", "gte", "Best single model"),
@@ -101,6 +197,10 @@ def build():
         "quality_label": "Answer quality (benchmark reward)",
         "baseline_label": "Source-selected single model",
         "routed_label": "L21 Family Adaptation",
+        "animation": {"duration_seconds": 10.8, "fps": 10},
+        "embedding_comparison": {
+            p["label"]: {c["encoder"]: c["mean_utility"] for c in p["curves"]}
+            for p in comparison["panels"]},
         **summaries,
         "reward_gain_pp": 100 * (routed["reward"] - baseline["reward"]),
         "cost_reduction_percent": 100 * (1 - routed["cost"] / baseline["cost"]),
@@ -120,6 +220,8 @@ def build():
         "source_objects": 137, "objects_retained": len(indices),
         "layers": {name: group for name, group in GROUPS},
         "metrics": data["scope"], "evidence_sha256": data["evidence_sha256"],
+        "comparison_plot": "All 13 penalties per benchmark, fixed kNN-100, GTE versus L21; embedding-comparison-data.json",
+        "plot_renderer": "Matplotlib " + version("matplotlib"),
     }
     (DEST / "provenance.json").write_text(json.dumps(provenance, indent=2) + "\n")
     print(json.dumps({"layers": len(GROUPS), "original_objects_retained": len(indices),
@@ -130,7 +232,9 @@ def build():
 def make_gif():
     from PIL import Image
     frames = sorted((ROOT / ".cache/readme-demo/frames").glob("frame-*.png"))
-    assert len(frames) == 128, "Run scripts/render_readme_demo.cjs first"
+    animation = json.loads((DEST / "demo-data.json").read_text())["animation"]
+    expected = round(animation["duration_seconds"] * animation["fps"])
+    assert len(frames) == expected, "Run scripts/render_readme_demo.cjs first"
     with Image.open(DEST / "routing-poster.png") as poster:
         palette = poster.convert("RGB").quantize(colors=256)
     images = []
@@ -138,14 +242,14 @@ def make_gif():
         with Image.open(path) as frame:
             images.append(frame.convert("RGB").quantize(palette=palette, dither=Image.Dither.NONE))
     target = DEST / "routing-demo.gif"
-    images[0].save(target, save_all=True, append_images=images[1:], duration=100,
+    images[0].save(target, save_all=True, append_images=images[1:], duration=round(1000 / animation["fps"]),
                    loop=0, optimize=True, disposal=1)
     with Image.open(target) as gif:
         duration = 0
         for index in range(gif.n_frames):
             gif.seek(index)
             duration += gif.info["duration"]
-        assert duration == 12800 and gif.info["loop"] == 0
+        assert duration == round(1000 * animation["duration_seconds"]) and gif.info["loop"] == 0
         assert target.stat().st_size < 5_000_000
         print(json.dumps({"gif_bytes": target.stat().st_size,
                           "frames": gif.n_frames, "duration_ms": duration}))

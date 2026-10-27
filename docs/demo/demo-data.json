@@ -3,6 +3,20 @@
   "quality_label": "Answer quality (benchmark reward)",
   "baseline_label": "Source-selected single model",
   "routed_label": "L21 Family Adaptation",
+  "animation": {
+    "duration_seconds": 10.8,
+    "fps": 10
+  },
+  "embedding_comparison": {
+    "RouterBench": {
+      "gte": 0.6615458911913774,
+      "reader": 0.7006755642363331
+    },
+    "SPROUT": {
+      "gte": 0.7529084942971109,
+      "reader": 0.7731341424069859
+    }
+  },
   "baseline": {
     "encoder": "gte",
     "method": "Best single model",

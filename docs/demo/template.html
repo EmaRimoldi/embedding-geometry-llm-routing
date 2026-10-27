@@ -3,106 +3,67 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Embedding Geometry Shapes LLM Routing — Figure 1 in motion</title>
+<title>LLM routing — from prompt to model</title>
 <style>
   * { box-sizing: border-box; }
-  body { margin: 0; color: #333; background: #f4f6f8; font-family: Arial, Helvetica, sans-serif; }
-  main { max-width: 1256px; margin: 24px auto; }
-  #demo { padding: 26px 30px 22px; background: white; }
-  .eyebrow { display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 16px; color: #697582; font-size: 13px; letter-spacing: .07em; }
-  .eyebrow strong { color: #0072b2; }
-  .prompt { margin: 0 0 28px; font-size: 21px; min-height: 26px; line-height: 1.4; }
-  .prompt span:first-child { color: #697582; font-size: 13px; margin-right: 12px; letter-spacing: .08em; }
-  .figure { margin: 0 0 24px; }
-  .figure svg { width: 100%; height: auto; display: block; overflow: hidden; }
-  .status { display: flex; gap: 13px; align-items: center; margin: 0 0 13px; min-height: 32px; }
-  #step-number { background: #d55e00; color: white; width: 29px; height: 29px; border-radius: 50%; display: grid; place-items: center; font-size: 15px; flex: 0 0 auto; }
-  #step-label { font-size: 21px; font-weight: 600; line-height: 1.35; }
-  .track { height: 3px; background: #edf0f3; margin-bottom: 23px; }
-  #progress { height: 100%; width: 0; background: #d55e00; }
-  .metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; padding-bottom: 19px; }
-  .metric { border-left: 3px solid #dceaf3; padding-left: 17px; min-width: 0; }
-  .metric h2 { margin: 0 0 8px; font-size: 15px; font-weight: 500; color: #697582; }
-  .values { display: flex; align-items: baseline; flex-wrap: wrap; gap: 11px; font-size: 32px; font-variant-numeric: tabular-nums; }
-  .reference { color: #8c959f; font-size: 23px; }
-  .arrow { color: #9aa4ad; font-size: 22px; }
-  .result { color: #0072b2; font-weight: 600; }
-  .change { margin: 8px 0 0; color: #0072b2; min-height: 18px; font-size: 15px; }
-  .scope { margin: 0; padding-top: 15px; border-top: 1px solid #e8edf1; font-size: 13px; color: #5c6874; line-height: 1.7; }
-  .scope span { display: block; }
-  .controls { padding: 20px 30px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
-  button, select { font: inherit; min-height: 40px; padding: 8px 13px; border: 1px solid #bdc8d1; border-radius: 6px; background: white; color: #333; }
-  button { cursor: pointer; }
-  button:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid #0072b2; outline-offset: 3px; }
-  select { max-width: 100%; }
-  .timeline { display: flex; align-items: center; gap: 12px; width: 100%; }
-  .timeline input { flex: 1; min-width: 0; accent-color: #0072b2; }
-  .notes { padding: 0 30px 25px; font-size: 14px; line-height: 1.65; }
+  body { margin: 0; color: #333; background: white; font-family: Arial, Helvetica, sans-serif; }
+  main { max-width: 1200px; margin: 24px auto; }
+  #demo { padding: 22px 28px 16px; }
+  .prompt { margin: 0 0 22px; min-height: 29px; font-size: 21px; line-height: 1.4; }
+  .figure svg { display: block; width: 100%; height: auto; overflow: hidden; }
+  #stage-caption { margin: 17px 0 0; min-height: 27px; font-size: 18px; line-height: 1.5; color: #52616d; }
+  .explanation { padding: 20px 28px 0; max-width: 940px; line-height: 1.65; }
+  h1 { margin: 0 0 10px; font-size: 25px; letter-spacing: -.02em; }
+  p { margin: 0 0 13px; }
+  .comparison { margin: 22px 0 12px; }
+  .comparison img { display: block; width: 100%; height: auto; }
+  .notes { padding: 0 28px 20px; font-size: 13px; color: #5c6874; line-height: 1.65; }
   a { color: #006baa; }
-  .notes p { margin: 8px 0; }
   @media (max-width: 640px) {
-    main { margin: 0; }
-    #demo { padding: 20px 16px; }
-    .eyebrow { font-size: 11px; }
-    .prompt { font-size: 17px; min-height: 72px; margin-bottom: 20px; }
-    .figure { margin-bottom: 20px; }
-    #step-label { font-size: 17px; }
-    .metrics { grid-template-columns: 1fr; gap: 23px; }
-    .values { font-size: 28px; }
-    .scope { font-size: 12px; }
-    .controls { padding: 20px 16px; }
+    main { margin: 8px auto; }
+    #demo { padding: 20px 16px 10px; }
+    .prompt { font-size: 17px; min-height: 48px; margin-bottom: 12px; }
+    #stage-caption { font-size: 16px; min-height: 48px; }
+    .explanation { padding: 16px 16px 0; font-size: 15px; }
+    h1 { font-size: 22px; }
+    .comparison { margin: 16px 0; }
     .notes { padding: 0 16px 20px; }
-    select { width: 100%; }
   }
 </style>
 </head>
 <body>
 <main>
-  <section id="demo" aria-label="Animated Figure 1 and measured benchmark comparison">
-    <div class="eyebrow"><strong>FIGURE 1 · IN MOTION</strong><span>Embedding Geometry Shapes LLM Routing</span></div>
-    <p class="prompt"><span>PROMPT</span><span id="prompt-text"></span></p>
+  <section id="demo" aria-label="Automatic animation: a prompt becomes an embedding, is classified, and is routed to a model">
+    <p class="prompt" id="prompt-text"></p>
     <div class="figure">__FIGURE_SVG__</div>
-    <div class="status" aria-live="polite" aria-atomic="true"><span id="step-number">1</span><span id="step-label">A new prompt arrives</span></div>
-    <div class="track" aria-hidden="true"><div id="progress"></div></div>
-    <div class="metrics">
-      <section class="metric" aria-label="Answer quality comparison">
-        <h2>Answer quality · benchmark reward</h2>
-        <div class="values"><span class="reference" id="reward-before"></span><span class="arrow">→</span><span class="result" id="reward-after"></span></div>
-        <p class="change" id="reward-change"></p>
-      </section>
-      <section class="metric" aria-label="Inference cost comparison">
-        <h2>Mean inference cost · USD / 1,000 queries</h2>
-        <div class="values"><span class="reference" id="cost-before"></span><span class="arrow">→</span><span class="result" id="cost-after"></span></div>
-        <p class="change" id="cost-change"></p>
-      </section>
-    </div>
-    <p class="scope"><span>Measured: RouterBench · held-out families · mean across all 13 cost penalties.</span>
-      <span>Source-selected single model → L21 Family Adaptation. Prompt and model IDs are illustrative.</span></p>
+    <p id="stage-caption">A new prompt arrives.</p>
   </section>
-  <div class="controls" aria-label="Animation controls">
-    <button type="button" id="play" aria-pressed="true">Pause</button>
-    <button type="button" id="replay">Replay</button>
-    <label for="prompt-choice">Illustrative prompt</label>
-    <select id="prompt-choice">
-      <option>Explain why the sky appears blue.</option>
-      <option>Write a Python function to merge two sorted lists.</option>
-      <option>Solve the equation 3x + 7 = 22.</option>
-    </select>
-    <label class="timeline" for="timeline">Timeline <input id="timeline" type="range" min="0" max="12.8" step="0.05" value="0"></label>
-  </div>
+  <section class="explanation" aria-label="Framework and main finding">
+    <h1>Better representations help simple routers generalize.</h1>
+    <p>The framework embeds a prompt and selects an LLM to balance answer quality and inference cost.
+      Frozen Qwen hidden states help lightweight routers generalize to unseen task families better than semantic GTE embeddings.</p>
+    <p id="embedding-summary"></p>
+    <p id="quality-summary"></p>
+  </section>
+  <figure class="comparison" aria-label="GTE and L21 embedding comparison from saved experimental results">
+    <picture>
+      <source media="(max-width: 640px)" srcset="embedding-comparison-stacked.svg">
+      <img src="embedding-comparison.svg" alt="Blue GTE and red L21 curves compare the same kNN-100 router across every cost penalty on RouterBench and SPROUT. L21 improves average held-out utility; GTE is slightly better at low penalties on RouterBench.">
+    </picture>
+  </figure>
   <div class="notes">
-    <p>This is an explanation of the pipeline, using the paper's original Figure 1 vectors.
-      It does not execute a model. The counters show measured aggregate benchmark results,
-      not a prediction for the displayed prompt. Quality is the benchmark reward, which includes
-      graded tasks; it is not uniformly binary accuracy.</p>
-    <p><a href="figure1-original.pdf">Original Figure 1</a> · <a href="demo-data.json">Exact values and scope</a> ·
-      <a href="https://arxiv.org/abs/2610.19198">Paper</a> · <a href="https://github.com/EmaRimoldi/routing-theory-reproducibility">Code and authors</a></p>
+    <p>The animation reuses the paper's original Figure 1. Prompt and model IDs are illustrative.
+      The numerical comparisons use held-out-family benchmark results averaged across all 13 cost penalties.
+      Reward includes graded tasks; candidate-model inference cost excludes encoder/router overhead.</p>
+    <p><a href="figure1-original.pdf">Original figure</a> · <a href="embedding-comparison-data.json">Plot data</a> ·
+      <a href="demo-data.json">Quality and cost data</a> · <a href="https://arxiv.org/abs/2610.19198">Paper</a> ·
+      <a href="https://github.com/EmaRimoldi/routing-theory-reproducibility">Code and authors</a></p>
   </div>
 </main>
 <script>
 'use strict';
 const DATA = __DEMO_DATA__;
-const DURATION = 12.8;
+const DURATION = DATA.animation.duration_seconds;
 const $ = id => document.getElementById(id);
 const clamp = value => Math.max(0, Math.min(1, value));
 const smooth = (time, begin, end) => { const p = clamp((time - begin) / (end - begin)); return p * p * (3 - 2 * p); };
@@ -119,12 +80,11 @@ const rect = document.createElementNS(ns, 'rect');
 rect.setAttribute('x', '550'); rect.setAttribute('y', '68'); rect.setAttribute('height', '28');
 clip.append(rect); svg.querySelector('defs').append(clip);
 $('selected-route').setAttribute('clip-path', 'url(#route-reveal)');
-let time = 0;
+const PROMPT = 'Explain why the sky appears blue.';
+let time = 0, cycles = 0, previous = null, visible = false, currentStep = -1;
 const reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 const capture = new URLSearchParams(location.search).has('capture');
-let playing = !reduced.matches && !capture;
-let previous = null;
-let currentStep = -1;
+const active = () => visible && !capture && !reduced.matches && !document.hidden;
 
 function opacity(id, value) { $(id).setAttribute('opacity', value.toFixed(4)); }
 function render(at) {
@@ -155,44 +115,36 @@ function render(at) {
   if (time >= 4.0 && time < 4.85) { markX = interpolate(294, 350, smooth(time, 4, 4.85)); markOpacity = 1; }
   if (time >= 7 && time < 8.1) { markX = interpolate(552, 670, choice); markOpacity = 1; }
   moving.setAttribute('cx', markX); moving.setAttribute('cy', markY); moving.setAttribute('opacity', markOpacity);
-  const prompt = $('prompt-choice').value;
-  $('prompt-text').textContent = prompt.slice(0, Math.floor(prompt.length * smooth(time, .1, 1.6)));
+  $('prompt-text').textContent = PROMPT.slice(0, Math.floor(PROMPT.length * smooth(time, .1, 1.6)));
   const step = time < 1.8 ? 0 : time < 4.3 ? 1 : time < 7.8 ? 2 : 3;
   if (step !== currentStep) {
-    $('step-number').textContent = step + 1;
-    $('step-label').textContent = [
-      'A new prompt arrives', 'Generate the prompt embedding',
-      'Classify the representation', 'Route to the selected model'
+    $('stage-caption').textContent = [
+      'A new prompt arrives.', 'A frozen encoder generates its embedding.',
+      'A lightweight router classifies the representation.', 'The router selects a model to answer the prompt.'
     ][step]; currentStep = step;
   }
-  const gain = smooth(time, 8.4, 10.6);
-  $('reward-before').textContent = percent(DATA.baseline.reward);
-  $('reward-after').textContent = percent(interpolate(DATA.baseline.reward, DATA.routed.reward, gain));
-  $('cost-before').textContent = cost(DATA.baseline.cost);
-  $('cost-after').textContent = cost(interpolate(DATA.baseline.cost, DATA.routed.cost, gain));
-  $('reward-change').textContent = '+' + (gain * DATA.reward_gain_pp).toFixed(2) + ' percentage points';
-  $('cost-change').textContent = (gain * DATA.cost_reduction_percent).toFixed(1) + '% lower cost';
-  $('progress').style.width = (100 * time / DURATION).toFixed(3) + '%';
-  $('timeline').value = time;
 }
+const means = DATA.embedding_comparison;
+$('embedding-summary').textContent = `With the same kNN-100 router, L21 raises mean utility from ${means.RouterBench.gte.toFixed(4)} to ${means.RouterBench.reader.toFixed(4)} on RouterBench and from ${means.SPROUT.gte.toFixed(4)} to ${means.SPROUT.reader.toFixed(4)} on SPROUT.`;
+$('quality-summary').textContent = `On RouterBench, L21 Family Adaptation raises mean reward from ${percent(DATA.baseline.reward)} to ${percent(DATA.routed.reward)} versus a source-selected single model. Mean candidate-model inference cost falls from ${cost(DATA.baseline.cost)} to ${cost(DATA.routed.cost)} per 1,000 queries.`;
 
-function playback(value) {
-  playing = value; previous = null;
-  $('play').textContent = playing ? 'Pause' : 'Play';
-  $('play').setAttribute('aria-pressed', String(playing));
-}
-$('play').addEventListener('click', () => playback(!playing));
-$('replay').addEventListener('click', () => { render(0); playback(!reduced.matches); });
-$('prompt-choice').addEventListener('change', () => { render(0); playback(!reduced.matches); });
-$('timeline').addEventListener('input', event => { playback(false); render(Number(event.target.value)); });
-reduced.addEventListener('change', event => { if (event.matches) { playback(false); render(DURATION); } });
+new IntersectionObserver(entries => {
+  visible = entries[0].isIntersecting; previous = null;
+}, {threshold: .15}).observe($('demo'));
+document.addEventListener('visibilitychange', () => { previous = null; });
+reduced.addEventListener('change', () => { render(reduced.matches ? DURATION : 0); previous = null; });
 function tick(now) {
-  if (playing && previous !== null) render((time + (now - previous) / 1000) % DURATION);
+  if (active() && previous !== null) {
+    const next = time + (now - previous) / 1000;
+    cycles += Math.floor(next / DURATION);
+    render(next % DURATION);
+  }
   previous = now; requestAnimationFrame(tick);
 }
-window.demo = {render, playback, duration: DURATION, data: DATA};
+window.demo = {render, duration: DURATION, data: DATA,
+  get state() { return {time, cycles, visible, running: active()}; }};
 render(reduced.matches && !capture ? DURATION : 0);
-playback(playing); requestAnimationFrame(tick);
+requestAnimationFrame(tick);
 </script>
 </body>
 </html>

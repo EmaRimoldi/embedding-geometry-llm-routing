@@ -23,24 +23,27 @@ async function main() {
     const page = await browser.newPage({viewport: {width: 1200, height: 950}, deviceScaleFactor: 1});
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
-    const url = pathToFileURL(path.join(target, 'index.html')).href + '?capture=1';
-    await page.goto(url);
+    const url = pathToFileURL(path.join(target, 'index.html')).href;
+    await page.goto(url + '?capture=1');
     await page.waitForFunction(() => Boolean(window.demo));
+    assert.equal(await page.locator('button, input, select, video[controls], audio[controls]').count(), 0);
+    assert.ok(!(await page.locator('body').textContent()).toLowerCase().includes('in motion'));
     await page.evaluate(() => window.demo.render(window.demo.duration));
-    assert.equal(await page.locator('#reward-after').textContent(), '74.63%');
-    assert.equal(await page.locator('#cost-after').textContent(), '$1.55');
-    assert.equal(await page.locator('#reward-change').textContent(), '+3.59 percentage points');
-    assert.equal(await page.locator('#cost-change').textContent(), '25.3% lower cost');
+    assert.equal(await page.locator('#selection-check').getAttribute('opacity'), '1.0000');
+    assert.ok((await page.locator('#embedding-summary').textContent()).includes('0.6615 to 0.7007'));
+    assert.ok((await page.locator('#quality-summary').textContent()).includes('71.04% to 74.63%'));
+    assert.ok((await page.locator('#quality-summary').textContent()).includes('$2.07 to $1.55'));
+    assert.ok(await page.locator('.comparison img').evaluate(img => img.complete && img.naturalWidth > 0));
     await page.locator('#demo').screenshot({path: path.join(target, 'routing-poster.png')});
 
-    // Capture exact animation times, independent of wall-clock rendering speed.
-    for (let index = 0; index < 128; index++) {
-      await page.evaluate(time => window.demo.render(time), index / 10);
+    const animation = await page.evaluate(() => window.demo.data.animation);
+    const count = Math.round(animation.duration_seconds * animation.fps);
+    for (let index = 0; index < count; index++) {
+      await page.evaluate(time => window.demo.render(time), index / animation.fps);
       await page.locator('#demo').screenshot({
         path: path.join(frames, `frame-${String(index).padStart(4, '0')}.png`)
       });
     }
-
     const layouts = [];
     for (const width of [320, 768, 1200]) {
       await page.setViewportSize({width, height: 1000});
@@ -53,34 +56,35 @@ async function main() {
       await page.screenshot({path: path.join(cache, `preview-${width}.png`)});
       layouts.push(sizes);
     }
-    await page.locator('#play').click();
-    await page.waitForFunction(() => Number(document.querySelector('#timeline').value) < 2);
-    await page.locator('#play').click();
-    assert.equal(await page.locator('#play').textContent(), 'Play');
-    await page.locator('#prompt-choice').selectOption({label: 'Solve the equation 3x + 7 = 22.'});
-    await page.evaluate(() => { window.demo.playback(false); window.demo.render(2); });
-    assert.equal(await page.locator('#prompt-text').textContent(), 'Solve the equation 3x + 7 = 22.');
-    await page.locator('#timeline').evaluate(element => {
-      element.value = '10.8'; element.dispatchEvent(new Event('input', {bubbles: true}));
-    });
-    assert.equal(await page.locator('#step-number').textContent(), '4');
-    assert.equal(await page.locator('#reward-after').textContent(), '74.63%');
-    await page.locator('#replay').click();
-    await page.evaluate(() => window.demo.playback(false));
-    assert.ok(Number(await page.locator('#timeline').inputValue()) < 1);
+
+    // Exercise actual automatic playback and a complete loop using the browser clock.
+    await page.setViewportSize({width: 1200, height: 950});
+    await page.clock.install({time: new Date('2026-01-01T00:00:00Z')});
+    await page.clock.pauseAt(new Date('2026-01-01T00:00:01Z'));
+    await page.goto(url);
+    await page.clock.runFor(300);
+    const start = await page.evaluate(() => window.demo.state);
+    assert.ok(start.visible && start.running, 'Autoplay must start when the animation is visible');
+    await page.clock.runFor(2500);
+    const advanced = await page.evaluate(() => window.demo.state);
+    assert.ok(advanced.time > start.time + 2, 'Animation must advance without input');
+    await page.clock.runFor(6200);
+    assert.equal(await page.locator('#selection-check').getAttribute('opacity'), '1.0000');
+    await page.clock.runFor(3000);
+    const repeated = await page.evaluate(() => window.demo.state);
+    assert.ok(repeated.cycles >= 1 && repeated.time < 3, 'Completed sequence must repeat automatically');
 
     await page.emulateMedia({reducedMotion: 'reduce'});
     await page.reload();
-    await page.waitForFunction(() => Boolean(window.demo));
-    // A normal (non-capture) page opens at the final, stationary state.
-    await page.goto(url.replace('?capture=1', ''));
-    await page.waitForFunction(() => Boolean(window.demo));
-    assert.equal(await page.locator('#play').textContent(), 'Play');
-    assert.equal(await page.locator('#timeline').inputValue(), '12.8');
+    assert.equal(await page.evaluate(() => window.demo.state.running), false);
+    assert.equal(await page.evaluate(() => window.demo.state.time), animation.duration_seconds);
     assert.deepEqual(errors, []);
-    const report = {passed: true, captured_frames: 128, duration_ms: 12800,
+    const report = {passed: true, captured_frames: count, duration_ms: 1000 * animation.duration_seconds,
       browser: await browser.version(), playwright: require((process.env.PLAYWRIGHT_MODULE || 'playwright') + '/package.json').version,
-      layouts, checks: ['final metrics', 'no horizontal overflow', 'play/pause', 'replay', 'prompt selection', 'timeline', 'reduced motion', 'no page errors']};
+      layouts, checks: ['no playback controls', 'no motion heading', 'numbers in sentences',
+        'original model-selection sequence', 'plot loaded', 'no horizontal overflow',
+        'autoplay on view', 'automatic advancement', 'automatic repeat after completion',
+        'reduced motion', 'no page errors']};
     fs.writeFileSync(path.join(cache, 'browser-check.json'), JSON.stringify(report, null, 2) + '\n');
     fs.writeFileSync(path.join(target, 'browser-check.json'), JSON.stringify(report, null, 2) + '\n');
     process.stdout.write(JSON.stringify(report, null, 2) + '\n');

@@ -11,15 +11,19 @@ Code and reproducibility materials for **[Embedding Geometry Shapes LLM Routing:
 
 [Paper](https://arxiv.org/abs/2610.19198) · [Run the experiments](docs/RUN_COMMANDS.md) · [Methods](docs/METHODS.md) · [Results & audit](docs/REPRODUCTION_AUDIT.md) · [Citation](CITATION.cff)
 
-[![Animated Figure 1: a prompt arrives, its embedding is generated and classified, and model 2 is selected. Measured RouterBench comparison: quality 71.04% to 74.63%; inference cost $2.07 to $1.55 per 1,000 queries.](docs/demo/routing-demo.gif)](docs/demo/README.md)
+The framework embeds each prompt and selects an LLM to balance answer quality and inference cost. Our main finding: **better representations help simple routers generalize to unseen task families**. Frozen Qwen hidden states improve average held-out routing utility over semantic GTE embeddings.
 
-*The paper's original Figure 1, animated. Prompt and model IDs are illustrative; counters show held-out RouterBench means across all 13 cost penalties, comparing a source-selected single model with L21 Family Adaptation. Quality denotes benchmark reward. [Interactive version, static figure & sources](docs/demo/README.md).*
+[![A prompt arrives, a frozen encoder generates its embedding, a lightweight router classifies it, and a model is selected. The sequence repeats automatically.](docs/demo/routing-demo.gif)](docs/demo/README.md)
 
-## Why geometry matters
+*An illustrative sequence using the paper's original Figure 1. [Automatic browser demo, static version and sources](docs/demo/README.md).*
 
-Semantic neighbors can be unreliable guides to model performance on unseen task families. We study this failure and improve generalization with **Qwen2.5-7B-Instruct layer-21 representations** and **Family Adaptation**, a simple router that combines source-family performance profiles using predicted family probabilities.
+![Blue GTE and red L21 curves compare held-out utility for the same kNN-100 router on RouterBench and SPROUT across all 13 cost penalties.](docs/demo/embedding-comparison.svg)
 
-The experiments cover **RouterBench: 34,771 queries, 11 models** and **SPROUT: 43,887 queries, 13 models**, with frozen splits, seeds and cost penalties.
+With the same kNN-100 router, L21 raises mean held-out utility from 0.6615 to 0.7007 on RouterBench. On SPROUT, it rises from 0.7529 to 0.7731. The curves show every evaluated penalty, including the low-penalty region where GTE is slightly better on RouterBench.
+
+In a separate comparison on RouterBench, L21 Family Adaptation raises mean reward from 71.04% to 74.63% versus a source-selected single model. Mean candidate-model inference cost falls from $2.07 to $1.55 per 1,000 queries.
+
+These means cover all 13 frozen cost penalties under held-out-family evaluation. Reward includes graded tasks, and cost excludes encoder/router overhead. [Data, metric definitions and plot sources](docs/demo/README.md).
 
 ## Reproduce
 
@@ -35,7 +39,7 @@ python3 scripts/check_paper_results.py
 
 For fresh data, embeddings and router training, follow the **[full execution guide](docs/RUN_COMMANDS.md)**. Public assets and environments are pinned; neural components require Linux and CUDA.
 
-The audit passes **5,493 checks against the pinned manuscript reference** and includes CPU/CUDA component runs. Full-scale fits and bootstraps have not all been independently rerun; see [coverage and limitations](docs/REPRODUCTION_AUDIT.md) and the [result index](docs/RESULT_INDEX.md).
+The audit passes 5,493 checks against the pinned manuscript reference and includes CPU/CUDA component runs. Full-scale fits and bootstraps have not all been independently rerun; see [coverage and limitations](docs/REPRODUCTION_AUDIT.md) and the [result index](docs/RESULT_INDEX.md).
 
 ## Citation
 

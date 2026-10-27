@@ -1,62 +1,65 @@
-# Figure 1 in motion
+# Routing demo and embedding comparison
 
-The README animation reuses **every original drawing object** from Figure 1 of
+The animation reuses every original drawing object from Figure 1 of
 [Embedding Geometry Shapes LLM Routing](https://arxiv.org/abs/2610.19198).
 The source is Overleaf's `aistats_figures/intro_pipeline.pdf` at snapshot
-`6e3bea88ec5d65de3587c0719025702e110ac3e0`. The unchanged PDF is included here;
-font outlines, colors, points, decision boundary, arrows and model symbols are
-preserved. The 137 vector objects are separated into 30 named animation layers.
-[provenance.json](provenance.json) records the source checksum and full layer map.
+`6e3bea88ec5d65de3587c0719025702e110ac3e0`. The unchanged PDF, font outlines,
+colors, points, decision boundary, arrows and model symbols are preserved.
+[provenance.json](provenance.json) records the source checksum and layer map.
 
 ![Final animation state](routing-poster.png)
 
-## Play it
+## Automatic playback
 
-The [GIF](routing-demo.gif) plays directly in the GitHub README.
-For pause/play, replay, prompt selection and timeline controls, open the cloned
-repository's `docs/demo/index.html` in a browser. It is self-contained and works
-offline, including from a `file:` URL. It honors reduced-motion preferences.
-
-On macOS, from the repository root:
+The [GIF](routing-demo.gif) starts and repeats automatically in the GitHub README.
+Open `docs/demo/index.html` from the cloned repository for the browser version:
 
 ```bash
-open docs/demo/index.html
+open docs/demo/index.html  # macOS
 ```
 
-The prompts, two-dimensional layout and model IDs illustrate the paper's routing
-pipeline. This explanation does not run a trained router or an LLM in the browser.
-The same schematic model 2 is selected for the illustrative prompts.
+It starts when visible and repeats after completing the prompt-to-model sequence.
+There are no playback controls. The browser version uses a stationary final state
+when the viewer requests reduced motion. The page and its local plots work offline.
 
-## What the counters measure
+The prompt, two-dimensional layout and model IDs illustrate the pipeline; this
+explanation does not execute an LLM or predict a per-prompt performance improvement.
 
-The numbers come from the supplied `results/evidence/baselines/_summary_reduced/scores.csv`:
-RouterBench, held-out-family evaluation, **all 13 frozen cost penalties**. At each
-penalty, results pool held-out queries; the displayed values are the arithmetic
-mean across penalties. The reference is **Best single model**, chosen using source
-outcomes at each penalty, compared with **L21 Family Adaptation**.
+## What the comparison shows
 
-| Metric | Source-selected single model | L21 Family Adaptation |
-| --- | ---: | ---: |
-| Benchmark reward | 0.7104450437 | 0.7463264037 |
-| Inference cost, USD/query | 0.002071782337 | 0.001548069657 |
-| Mean utility | 0.6618000328 | 0.7156970263 |
+![Embedding comparison](embedding-comparison.svg)
 
-Thus the quality counter increases by **3.59 percentage points** and the cost
-counter decreases by **25.3%**. These are aggregate comparisons, not measurements
-for the displayed prompt. Reward includes graded tasks, so it is not uniformly
-binary accuracy. Cost is the recorded inference cost of the chosen candidate
-model; it does not add encoder/router overhead. A cost penalty does not imply that
-every prompt or every operating point improves both metrics simultaneously.
+The plot keeps kNN-100 fixed and changes only the embedding. Blue dashed circles
+show GTE; red solid squares show Qwen L21. Each panel retains all 13 evaluated cost
+penalties on the canonical held-out-family cohort. Lines connect point estimates
+without smoothing; confidence intervals are not shown. Utility is reward minus
+penalty times cost. The symlog horizontal axis includes zero and is linear between
+zero and one, then logarithmic.
 
-[demo-data.json](demo-data.json) retains full precision, the exact metric scope,
-selectors and source-file hash. `scripts/build_readme_demo.py` recomputes these
-values from the frozen records; they are not hand-entered animation targets.
+On RouterBench, mean utility increases from 0.6615 with GTE to 0.7007 with L21.
+On SPROUT, it increases from 0.7529 to 0.7731. L21 improves average utility; the plot
+also preserves GTE's slight advantage at low penalties on RouterBench.
 
-## Rebuild the animation
+[embedding-comparison-data.json](embedding-comparison-data.json) records every
+plotted point, source selectors, unrounded means and source-file checksum.
+The wide SVG/PNG and the stacked SVG use the same values. The browser selects the
+stacked layout on narrow screens.
 
-These optional authoring dependencies are separate from the experiment environment.
-The renderer uses Playwright 1.62.1; Chrome can alternatively be selected with
-`DEMO_BROWSER=chrome` if installed.
+The separate quality/cost sentences compare a source-selected single model with
+L21 Family Adaptation on RouterBench. Mean reward rises from 71.04% to 74.63%, and
+candidate-model inference cost falls from $2.07 to $1.55 per 1,000 queries.
+These are arithmetic means over all 13 penalties, after pooling held-out queries
+within each penalty. Reward includes graded tasks; cost excludes encoder/router
+overhead. These are aggregate comparisons, not a guarantee for every prompt or
+operating point. [demo-data.json](demo-data.json) retains their full precision.
+
+All values are regenerated from the frozen
+`results/evidence/baselines/_summary_reduced/scores.csv`.
+
+## Rebuild
+
+Optional authoring dependencies are separate from the experiment environment.
+Use Playwright 1.62.1, or select installed Chrome with `DEMO_BROWSER=chrome`.
 
 ```bash
 python3.11 -m venv .venv-demo
@@ -69,16 +72,14 @@ NODE_PATH=.cache/readme-demo/node_modules node scripts/render_readme_demo.cjs
 .venv-demo/bin/python scripts/build_readme_demo.py --gif
 ```
 
-The builder decomposes the original PDF and embeds its vectors and measured values
-in the offline page. The renderer captures 128 deterministic timeline samples over
-12.8 seconds and checks the controls, final values, reduced-motion behavior and
-layouts at 320, 768 and 1200 pixels. Frame PNGs stay under `.cache/readme-demo/`;
-the [browser-check report](browser-check.json), compressed GIF and final-state
-poster are exported here.
-Renderer/font versions can affect raster bytes; the original vectors and numerical
-inputs have explicit hashes.
+The builder decomposes the original PDF, recomputes the comparisons and redraws
+the plots with Matplotlib. The renderer captures 108 frames over 10.8 seconds and
+checks automatic start, completion, repeat, reduced motion and responsive layouts.
+The [browser-check report](browser-check.json) records these executions. Intermediate
+frames remain under `.cache/readme-demo/`. Renderer/font versions can affect raster
+bytes; original vectors and numerical inputs have explicit hashes.
 
-After changing the demo or README, update the repository's file manifest and export:
+After edits, refresh the repository manifest and export:
 
 ```bash
 python scripts/build_submission.py
