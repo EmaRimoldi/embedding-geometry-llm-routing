@@ -1,0 +1,3230 @@
+{
+  "collected_at_utc": "2026-10-27T23:12:52.660240+00:00",
+  "completed": 2,
+  "expected": 23,
+  "coverage_complete": false,
+  "passed": false,
+  "status": "differences",
+  "counts": {
+    "numeric_values": 2436,
+    "exact_numeric_values": 2217,
+    "other_values": 79
+  },
+  "config_differences": [
+    {
+      "path": [
+        "input_hashes",
+        "configs/nvidia.json"
+      ],
+      "kind": "value",
+      "fresh": "9b759acce67c544558d22c767e7553d8bfdaf153b079bd2c35079a28d5f975d9",
+      "reference": "4a7e398acc43d07cd604776539d3633e4f257202bb2966ca2352e5aa4d60be84",
+      "within_tolerance": false,
+      "classification": "runtime_config_provenance"
+    }
+  ],
+  "selection_differences": [
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16127664822183446,
+      "reference": 0.161217629733116,
+      "absolute_error": 5.9018488718448614e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.1517654482912419,
+      "reference": 0.15173801412270954,
+      "absolute_error": 2.743416853234759e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.1554166587926391,
+      "reference": 0.15539911266733397,
+      "absolute_error": 1.7546125305134552e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10309099016450556,
+      "reference": 0.10309478484661323,
+      "absolute_error": 3.794682107677305e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06299997464064276,
+      "reference": 0.0630215143012083,
+      "absolute_error": 2.1539660565533802e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10640573846541215,
+      "reference": 0.10635425907471238,
+      "absolute_error": 5.1479390699771255e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10826598481996881,
+      "reference": 0.10827580602476365,
+      "absolute_error": 9.821204794840943e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16127671593534493,
+      "reference": 0.16121773908094034,
+      "absolute_error": 5.8976854404590995e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15177281467005088,
+      "reference": 0.15174595775689287,
+      "absolute_error": 2.6856913158013196e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.155420433065505,
+      "reference": 0.1554028711260511,
+      "absolute_error": 1.7561939453875075e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10309988867370094,
+      "reference": 0.10310373044237,
+      "absolute_error": 3.8417686690633834e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06300046195952368,
+      "reference": 0.06302198775358815,
+      "absolute_error": 2.15257940644753e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10640619714354549,
+      "reference": 0.10635472719270962,
+      "absolute_error": 5.146995083586681e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10826632453850622,
+      "reference": 0.10827614189030976,
+      "absolute_error": 9.817351803539931e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.1612776738651704,
+      "reference": 0.16121907110972278,
+      "absolute_error": 5.8602755447612065e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15187303383539127,
+      "reference": 0.15185134359590932,
+      "absolute_error": 2.1690239481952922e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15548210014441333,
+      "reference": 0.15546434054545596,
+      "absolute_error": 1.775959895736201e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10328535779847119,
+      "reference": 0.10328956579368831,
+      "absolute_error": 4.207995217123117e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06300497249543564,
+      "reference": 0.06302637343166599,
+      "absolute_error": 2.1400936230348e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10641049886454139,
+      "reference": 0.10635911348665683,
+      "absolute_error": 5.138537788455799e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10826942570567581,
+      "reference": 0.10827920837232,
+      "absolute_error": 9.782666644184146e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "layers",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 27,
+      "reference": 26,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16132175547818778,
+      "reference": 0.1612668333355,
+      "absolute_error": 5.4922142687791053e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.1562334793383576,
+      "reference": 0.15625175096947097,
+      "absolute_error": 1.8271631113370157e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15884093462204038,
+      "reference": 0.15881572054362844,
+      "absolute_error": 2.5214078411939234e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.11533877295724301,
+      "reference": 0.11534264468177195,
+      "absolute_error": 3.871724528939358e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06306241978688479,
+      "reference": 0.06308256627182011,
+      "absolute_error": 2.014648493532667e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10647070423620245,
+      "reference": 0.10642012639149168,
+      "absolute_error": 5.057784471076965e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10830476371040629,
+      "reference": 0.10831419870974149,
+      "absolute_error": 9.434999335200533e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16137335145885998,
+      "reference": 0.16132042666695454,
+      "absolute_error": 5.292479190543986e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.16114226104337892,
+      "reference": 0.1611759997162301,
+      "absolute_error": 3.373867285116905e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.16286129112979109,
+      "reference": 0.16282763206100462,
+      "absolute_error": 3.365906878646796e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06310403119193327,
+      "reference": 0.0631234761454881,
+      "absolute_error": 1.944495355483966e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10651765527117954,
+      "reference": 0.10646749604765988,
+      "absolute_error": 5.015922351965518e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10832779485009776,
+      "reference": 0.10833703606007421,
+      "absolute_error": 9.241209976446063e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16127679139348294,
+      "reference": 0.1612178561598394,
+      "absolute_error": 5.893523364353115e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15178093486566197,
+      "reference": 0.15175465457177295,
+      "absolute_error": 2.6280293889013873e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15542482286332868,
+      "reference": 0.15540724388012273,
+      "absolute_error": 1.7578983205951415e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10311112901716332,
+      "reference": 0.10311501659344909,
+      "absolute_error": 3.887576285763195e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06300095204875986,
+      "reference": 0.06302246397500481,
+      "absolute_error": 2.151192624495757e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10640665967985215,
+      "reference": 0.10635519916030592,
+      "absolute_error": 5.1460519546228656e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10826666522816197,
+      "reference": 0.10827647872679136,
+      "absolute_error": 9.813498629385187e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.1612794739712396,
+      "reference": 0.1612212855938033,
+      "absolute_error": 5.818837743629124e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.1520560010596653,
+      "reference": 0.1520399911388128,
+      "absolute_error": 1.6009920852488868e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15560909399200207,
+      "reference": 0.15559099795902398,
+      "absolute_error": 1.8096032978087706e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10369305814735949,
+      "reference": 0.1037115914909132,
+      "absolute_error": 1.8533343553714388e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06301024738574663,
+      "reference": 0.06303150946581333,
+      "absolute_error": 2.1262080066697386e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10641564508099269,
+      "reference": 0.1063643528585422,
+      "absolute_error": 5.129222245048304e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.1082729637032354,
+      "reference": 0.10828270781341916,
+      "absolute_error": 9.744110183756982e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.1615346281251951,
+      "reference": 0.16148559639039062,
+      "absolute_error": 4.9031734804472205e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.17651906803495546,
+      "reference": 0.1765900563493436,
+      "absolute_error": 7.098831438814845e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.17551844133139274,
+      "reference": 0.17545867025421436,
+      "absolute_error": 5.977107717838881e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.17408960010175617,
+      "reference": 0.17427545675015743,
+      "absolute_error": 0.00018585664840126137,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06320803166588458,
+      "reference": 0.06322606366954844,
+      "absolute_error": 1.803200366386204e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10664049364029785,
+      "reference": 0.1065911073555534,
+      "absolute_error": 4.938628474444873e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.108381140518426,
+      "reference": 0.10838999277642651,
+      "absolute_error": 8.85225800051348e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "layers",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 27,
+      "reference": 21,
+      "absolute_error": 6,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16128204854004186,
+      "reference": 0.16122427318535743,
+      "absolute_error": 5.7775354684430624e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15231434996406448,
+      "reference": 0.15230395675141978,
+      "absolute_error": 1.039321264470483e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.1557976403354055,
+      "reference": 0.1557790849080382,
+      "absolute_error": 1.8555427367283883e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10432643982334881,
+      "reference": 0.10428033583970542,
+      "absolute_error": 4.610398364339463e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06301579931157564,
+      "reference": 0.06303692240365032,
+      "absolute_error": 2.1123092074679106e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10642117711476617,
+      "reference": 0.10636997719036811,
+      "absolute_error": 5.119992439805987e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.1082765988126477,
+      "reference": 0.10828630434806057,
+      "absolute_error": 9.705535412865562e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16127706423566082,
+      "reference": 0.16121825378298557,
+      "absolute_error": 5.881045267525087e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15180981835330112,
+      "reference": 0.15178526410059628,
+      "absolute_error": 2.455425270483924e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15544168540654937,
+      "reference": 0.1554240479144639,
+      "absolute_error": 1.7637492085470496e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.1031589010531521,
+      "reference": 0.10316291837862077,
+      "absolute_error": 4.017325468660959e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.0630024389385993,
+      "reference": 0.06302390925347597,
+      "absolute_error": 2.1470314876662067e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10640807043781123,
+      "reference": 0.10635663816069199,
+      "absolute_error": 5.143227711923437e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10826769312384081,
+      "reference": 0.10827749506184911,
+      "absolute_error": 9.80193800829976e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16128952106584613,
+      "reference": 0.16123256769088695,
+      "absolute_error": 5.69533749591733e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15305719281323757,
+      "reference": 0.15305784218574506,
+      "absolute_error": 6.493725074885326e-07,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15635939050965647,
+      "reference": 0.1563395474124048,
+      "absolute_error": 1.984309725167055e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06302773426978801,
+      "reference": 0.06304857899039343,
+      "absolute_error": 2.0844720605414646e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10643339863427992,
+      "reference": 0.10638238073384265,
+      "absolute_error": 5.101790043726684e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10828416036703,
+      "reference": 0.1082937886979712,
+      "absolute_error": 9.628330941202634e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.1622766472368121,
+      "reference": 0.16223675521871503,
+      "absolute_error": 3.989201809706522e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.23276298546342628,
+      "reference": 0.23254643497752356,
+      "absolute_error": 0.00021655048590271675,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.373322084425587,
+      "reference": 0.37418343026210127,
+      "absolute_error": 0.0008613458365142601,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06358923588991536,
+      "reference": 0.06360367784392358,
+      "absolute_error": 1.4441954008223568e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10711638464154946,
+      "reference": 0.10706855559937083,
+      "absolute_error": 4.782904217863482e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10855699112476118,
+      "reference": 0.10856486299215014,
+      "absolute_error": 7.871867388958842e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16130321807597575,
+      "reference": 0.16124728455233817,
+      "absolute_error": 5.593352363758575e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15440976832540676,
+      "reference": 0.15442386312073425,
+      "absolute_error": 1.4094795327490584e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15740781101642742,
+      "reference": 0.1573856666797479,
+      "absolute_error": 2.2144336679519316e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.0630442112923425,
+      "reference": 0.06306470730707682,
+      "absolute_error": 2.0496014734319723e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10645084575610944,
+      "reference": 0.10640005056285225,
+      "absolute_error": 5.079519325719428e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10829415856417872,
+      "reference": 0.10830369028653597,
+      "absolute_error": 9.531722357250527e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "100",
+        2,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 28,
+      "reference": 25,
+      "absolute_error": 3,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "30",
+        5,
+        4
+      ],
+      "kind": "numeric",
+      "fresh": 27,
+      "reference": 21,
+      "absolute_error": 6,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "30",
+        5,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 28,
+      "reference": 20,
+      "absolute_error": 8,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json"
+    },
+    {
+      "path": [
+        "evaluated_layers"
+      ],
+      "kind": "list_shape",
+      "fresh": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "reference": [
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "layers",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 26,
+      "reference": 27,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "layers",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 23,
+      "reference": 25,
+      "absolute_error": 2,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16217798932705785,
+      "reference": 0.16213721928239616,
+      "absolute_error": 4.0770044661686544e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15122506871877378,
+      "reference": 0.1511968379640135,
+      "absolute_error": 2.823075476027226e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15504944625602674,
+      "reference": 0.15501268458426481,
+      "absolute_error": 3.6761671761920134e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10228121648951752,
+      "reference": 0.10236781756631268,
+      "absolute_error": 8.660107679515916e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.0627562711350725,
+      "reference": 0.06279912219600654,
+      "absolute_error": 4.2851060934046004e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.1054623977029775,
+      "reference": 0.10543185816873524,
+      "absolute_error": 3.053953424225764e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10801811455262977,
+      "reference": 0.10800566152815146,
+      "absolute_error": 1.2453024478317753e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "0",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14389327631955737,
+      "reference": 0.14388841272913871,
+      "absolute_error": 4.863590418652253e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "layers",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 26,
+      "reference": 27,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "layers",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 26,
+      "reference": 25,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16217792865750513,
+      "reference": 0.1621372954340325,
+      "absolute_error": 4.063322347264142e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15123058237694367,
+      "reference": 0.15120239501316696,
+      "absolute_error": 2.8187363776716046e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15505406569433494,
+      "reference": 0.15501713121134547,
+      "absolute_error": 3.693448298947022e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.1023617143381218,
+      "reference": 0.1023681957441184,
+      "absolute_error": 6.481405996600076e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06275681638921009,
+      "reference": 0.06279967196293161,
+      "absolute_error": 4.2855573721523044e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10546285371283685,
+      "reference": 0.10543232378573389,
+      "absolute_error": 3.0529927102965204e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10801846238850069,
+      "reference": 0.1080060074087984,
+      "absolute_error": 1.2454979702286595e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "1",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14389195909923086,
+      "reference": 0.1438870948953585,
+      "absolute_error": 4.864203872356754e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "layers",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 26,
+      "reference": 27,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "layers",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 27,
+      "absolute_error": 2,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "layers",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 26,
+      "reference": 21,
+      "absolute_error": 5,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.1621777278474706,
+      "reference": 0.16213832867633435,
+      "absolute_error": 3.9399171136239586e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.1513112891529834,
+      "reference": 0.151287384717163,
+      "absolute_error": 2.3904435820398806e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15512402006815973,
+      "reference": 0.15508547122030253,
+      "absolute_error": 3.8548847857200474e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10247177156754894,
+      "reference": 0.10246608391518089,
+      "absolute_error": 5.687652368052687e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06276184368999241,
+      "reference": 0.06280473988196618,
+      "absolute_error": 4.2896191973770814e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10546716551400884,
+      "reference": 0.10543672177627458,
+      "absolute_error": 3.0443737734253684e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.1080216429655527,
+      "reference": 0.10800917038240296,
+      "absolute_error": 1.2472583149736316e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "10",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.1438803123710852,
+      "reference": 0.14387544259560384,
+      "absolute_error": 4.869775481364247e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.1622098961253238,
+      "reference": 0.1621710841095553,
+      "absolute_error": 3.88120157684968e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.1586331272822107,
+      "reference": 0.1585725874678332,
+      "absolute_error": 6.0539814377508216e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.11488112634024908,
+      "reference": 0.11488732734861828,
+      "absolute_error": 6.201008369205452e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06282399803864822,
+      "reference": 0.06286730072629929,
+      "absolute_error": 4.330268765107004e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10553084705684068,
+      "reference": 0.10550123799918196,
+      "absolute_error": 2.9609057658724902e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.1080584041031799,
+      "reference": 0.10804575484872529,
+      "absolute_error": 1.2649254454613623e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "100",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14378446231391828,
+      "reference": 0.14377953182033676,
+      "absolute_error": 4.930493581523088e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16225461751957226,
+      "reference": 0.16221552340304318,
+      "absolute_error": 3.909411652908146e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.1604886536714201,
+      "reference": 0.16049645585852718,
+      "absolute_error": 7.802187107081027e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.16278992021601418,
+      "reference": 0.1627125693456109,
+      "absolute_error": 7.735087040328104e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.1306597776841173,
+      "reference": 0.13063788285469857,
+      "absolute_error": 2.1894829418722672e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06286786261908353,
+      "reference": 0.06291139138369208,
+      "absolute_error": 4.352876460854416e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10558238110339599,
+      "reference": 0.10555321437694982,
+      "absolute_error": 2.916672644616425e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.1080827200628881,
+      "reference": 0.10806997215739371,
+      "absolute_error": 1.2747905494395195e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "150",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14374740987699888,
+      "reference": 0.14374244172139267,
+      "absolute_error": 4.96815560621644e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "layers",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 26,
+      "reference": 27,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "layers",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 26,
+      "reference": 25,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16217787565941744,
+      "reference": 0.1621373793162818,
+      "absolute_error": 4.0496343135631996e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15123687277241027,
+      "reference": 0.15120872931257848,
+      "absolute_error": 2.8143459831792006e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15505931578662224,
+      "reference": 0.15502220717987583,
+      "absolute_error": 3.710860674641103e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10236378913018748,
+      "reference": 0.10237116345413722,
+      "absolute_error": 7.374323949732586e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06275736431031542,
+      "reference": 0.06280022439689491,
+      "absolute_error": 4.286008657948537e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10546331433852862,
+      "reference": 0.10543279401245635,
+      "absolute_error": 3.052032607227251e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10801881133668736,
+      "reference": 0.10800635440161857,
+      "absolute_error": 1.2456935068794195e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "2",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14389064650678887,
+      "reference": 0.14388578168834018,
+      "absolute_error": 4.864818448691022e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "layers",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 26,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16217823351441985,
+      "reference": 0.16213983928212913,
+      "absolute_error": 3.8394232290711594e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15146314784170964,
+      "reference": 0.15144871931526294,
+      "absolute_error": 1.4428526446702561e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15526165927817842,
+      "reference": 0.15522119200129997,
+      "absolute_error": 4.0467276878453085e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06276768294167631,
+      "reference": 0.06281062427171913,
+      "absolute_error": 4.2941330042817194e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10547239490823038,
+      "reference": 0.10544204635614833,
+      "absolute_error": 3.0348552082046232e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10802528261006064,
+      "reference": 0.10801279045394474,
+      "absolute_error": 1.2492156115900821e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "20",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.1438678112110373,
+      "reference": 0.14386293513821427,
+      "absolute_error": 4.876072823040145e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "layers",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 18,
+      "reference": 16,
+      "absolute_error": 2,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16240159629830098,
+      "reference": 0.16236188955081754,
+      "absolute_error": 3.970674748343672e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.17627819079097978,
+      "reference": 0.17630872243970314,
+      "absolute_error": 3.053164872335312e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.17847128215706806,
+      "reference": 0.17875779794116703,
+      "absolute_error": 0.0002865157840989674,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06297559403724844,
+      "reference": 0.063019575482971,
+      "absolute_error": 4.398144572256846e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.1057200679357547,
+      "reference": 0.10569174005757395,
+      "absolute_error": 2.8327878180745003e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.1081396943511708,
+      "reference": 0.10812674807149354,
+      "absolute_error": 1.294627967725337e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "250",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14370801413496004,
+      "reference": 0.1437029622344178,
+      "absolute_error": 5.051900542230037e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "layers",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 26,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16217950632790526,
+      "reference": 0.1621410621327203,
+      "absolute_error": 3.8444195184950125e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15169267043721235,
+      "reference": 0.15168283108900157,
+      "absolute_error": 9.839348210777255e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.1554623638860827,
+      "reference": 0.15541984692725713,
+      "absolute_error": 4.251695882556694e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10343016008109837,
+      "reference": 0.1034473944422526,
+      "absolute_error": 1.72343611542225e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06277378889012393,
+      "reference": 0.06281677536526532,
+      "absolute_error": 4.298647514139331e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10547808588564163,
+      "reference": 0.10544783190835678,
+      "absolute_error": 3.0253977284844247e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10802903348615353,
+      "reference": 0.10801652174277668,
+      "absolute_error": 1.2511743376852902e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "30",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14385577283941345,
+      "reference": 0.14385089035697024,
+      "absolute_error": 4.882482443208103e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "layers",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 26,
+      "reference": 27,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "layers",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 26,
+      "reference": 21,
+      "absolute_error": 5,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16217776269394724,
+      "reference": 0.16213767734670612,
+      "absolute_error": 4.0085347241120006e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.1512604043825881,
+      "reference": 0.15123239571236172,
+      "absolute_error": 2.8008670226370436e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.1550788499873573,
+      "reference": 0.15504121113416397,
+      "absolute_error": 3.763885319332805e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10238524418985735,
+      "reference": 0.10237083222070739,
+      "absolute_error": 1.4411969149960568e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.062759024075437,
+      "reference": 0.06280189770101212,
+      "absolute_error": 4.287362557511831e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10546472391059439,
+      "reference": 0.1054342323509631,
+      "absolute_error": 3.049155963129324e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10801986485514314,
+      "reference": 0.10800740205311596,
+      "absolute_error": 1.2462802027185527e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "5",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14388673649676814,
+      "reference": 0.14388186982785303,
+      "absolute_error": 4.866668915110006e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "layers",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 26,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16218435339448561,
+      "reference": 0.16214580733633419,
+      "absolute_error": 3.854605815142853e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.15238470734854767,
+      "reference": 0.15238198861665841,
+      "absolute_error": 2.7187318892563095e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.15605296929554832,
+      "reference": 0.1560059592140513,
+      "absolute_error": 4.7010081497017575e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.10542813180059192,
+      "reference": 0.10544635836421482,
+      "absolute_error": 1.8226563622894543e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.0627868008773114,
+      "reference": 0.06282987766373749,
+      "absolute_error": 4.3076786426093916e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10549085259003443,
+      "reference": 0.10546078592977697,
+      "absolute_error": 3.0066660257468958e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.1080368689330938,
+      "reference": 0.1080243179723112,
+      "absolute_error": 1.2550960782606313e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "50",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14383308446143772,
+      "reference": 0.14382818882291887,
+      "absolute_error": 4.895638518853662e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "layers",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 21,
+      "reference": 20,
+      "absolute_error": 1,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16309756886899113,
+      "reference": 0.16305711742655857,
+      "absolute_error": 4.0451442432559714e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        2
+      ],
+      "kind": "numeric",
+      "fresh": 0.24933155179268773,
+      "reference": 0.24954422154965847,
+      "absolute_error": 0.00021266975697073476,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.2341387750143963,
+      "reference": 0.23406878987569363,
+      "absolute_error": 6.998513870268286e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.39450791066725005,
+      "reference": 0.3945628876694101,
+      "absolute_error": 5.497700216006152e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.06336160241688032,
+      "reference": 0.06340671864071012,
+      "absolute_error": 4.511622382979974e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10626622766226276,
+      "reference": 0.10623972965548527,
+      "absolute_error": 2.649800677749503e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.1083307938902637,
+      "reference": 0.1083173454211944,
+      "absolute_error": 1.344846906931041e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "500",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14381199471536282,
+      "reference": 0.14380668433064264,
+      "absolute_error": 5.31038472018075e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        1
+      ],
+      "kind": "numeric",
+      "fresh": 0.16219472742697832,
+      "reference": 0.16215605040791148,
+      "absolute_error": 3.8677019066846174e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        3
+      ],
+      "kind": "numeric",
+      "fresh": 0.157145968920487,
+      "reference": 0.15709260413794274,
+      "absolute_error": 5.336478254425181e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 0.1093715949609135,
+      "reference": 0.10938815425321824,
+      "absolute_error": 1.6559292304735296e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        6
+      ],
+      "kind": "numeric",
+      "fresh": 0.0628045660305925,
+      "reference": 0.06284775574566451,
+      "absolute_error": 4.3189715072000645e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        7
+      ],
+      "kind": "numeric",
+      "fresh": 0.10550940737596885,
+      "reference": 0.10547957142593418,
+      "absolute_error": 2.983595003466788e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        8
+      ],
+      "kind": "numeric",
+      "fresh": 0.10804728891943416,
+      "reference": 0.10803468885648637,
+      "absolute_error": 1.2600062947787372e-05,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "selected",
+        "75",
+        "validation_mse",
+        10
+      ],
+      "kind": "numeric",
+      "fresh": 0.14380732717385283,
+      "reference": 0.1438024144586732,
+      "absolute_error": 4.912715179633542e-06,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "0",
+        1,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 28,
+      "absolute_error": 3,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "0",
+        5
+      ],
+      "kind": "list_shape",
+      "fresh": [
+        19,
+        24,
+        22,
+        26,
+        27,
+        25,
+        23
+      ],
+      "reference": [
+        19,
+        24,
+        22,
+        26,
+        27,
+        25
+      ],
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "1",
+        1,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 28,
+      "absolute_error": 3,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "10",
+        1,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 28,
+      "absolute_error": 3,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "10",
+        2,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 28,
+      "absolute_error": 3,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "10",
+        5,
+        4
+      ],
+      "kind": "numeric",
+      "fresh": 27,
+      "reference": 21,
+      "absolute_error": 6,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "10",
+        5,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 20,
+      "absolute_error": 5,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "2",
+        1,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 28,
+      "absolute_error": 3,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "250",
+        5,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 18,
+      "reference": 15,
+      "absolute_error": 3,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "5",
+        1,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 28,
+      "absolute_error": 3,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "5",
+        5,
+        4
+      ],
+      "kind": "numeric",
+      "fresh": 27,
+      "reference": 21,
+      "absolute_error": 6,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    },
+    {
+      "path": [
+        "traces",
+        "5",
+        5,
+        5
+      ],
+      "kind": "numeric",
+      "fresh": 25,
+      "reference": 20,
+      "absolute_error": 5,
+      "within_tolerance": false,
+      "record": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json"
+    }
+  ],
+  "beyond_tolerance": 221,
+  "missing_records": [
+    "results/nvidia_layer_validation/utility_v1/routerbench/iid_1/selection.json",
+    "results/nvidia_layer_validation/utility_v1/routerbench/iid_3/selection.json",
+    "results/nvidia_layer_validation/utility_v1/routerbench/iid_4/selection.json",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_0/selection.json",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_1/selection.json",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_2/selection.json",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_3/selection.json",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_4/selection.json",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_5/selection.json",
+    "results/nvidia_layer_validation/utility_v1/routerbench/ood_6/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/iid_0/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/iid_1/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/iid_2/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/iid_3/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/iid_4/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_0/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_1/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_2/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_3/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_4/selection.json",
+    "results/nvidia_layer_validation/utility_v1/sprout/ood_5/selection.json"
+  ],
+  "records": [
+    {
+      "path": "results/nvidia_layer_validation/utility_v1/routerbench/iid_0/selection.json",
+      "fresh_file_sha256": "9cf55a27a6d18be5e36a6381c8974643aec9ecb42c316a68d524f23ae4b29c7a",
+      "reference_file_sha256": "80994927759e79d874321d031fea8382aee77e23d63727ddcfbf83107c513456",
+      "scientific_differences": 92,
+      "beyond_tolerance": 92,
+      "config_provenance": {
+        "fresh": "84d3632f24ffe9bc7fbce6a24c5f584079094d242745877d776d2d9fd93f0240",
+        "reference": "72e143166adf5bace61f73fe4fb06c3d7c6d759d898d5e72e27036d14cccb42e"
+      }
+    },
+    {
+      "path": "results/nvidia_layer_validation/utility_v1/routerbench/iid_2/selection.json",
+      "fresh_file_sha256": "86e4b20b295328448f4d1a50266e4bc55eda0c7a4e38a06a5803326f527d02d5",
+      "reference_file_sha256": "69051a92da423cb6de124e3781c253d9cc5128e8493b6d035f79318b21bcaad6",
+      "scientific_differences": 129,
+      "beyond_tolerance": 129,
+      "config_provenance": {
+        "fresh": "84d3632f24ffe9bc7fbce6a24c5f584079094d242745877d776d2d9fd93f0240",
+        "reference": "72e143166adf5bace61f73fe4fb06c3d7c6d759d898d5e72e27036d14cccb42e"
+      }
+    }
+  ],
+  "relative_tolerance": 1e-10,
+  "absolute_tolerance": 1e-12,
+  "scope": "Cached actual new source-only probe selections compared with pinned references: selected layers, search traces, validation MSE, evaluated layers and split/fold identity. The runtime nvidia-config fingerprint transition and selection identity config hashes are preserved separately; all other scientific protocol fields must match. Does not perform new fitting, compare omitted model weights or establish final trained routing scores.",
+  "source_commit": "a8ab76b62bc8f7562bbef70d7a9d7e9294ee0957",
+  "choices_compared": 286,
+  "changed_selected_layers": 18,
+  "mse_stratification": {
+    "unchanged_canonical_layers": {
+      "equal_mse": 99,
+      "different_mse": 0
+    },
+    "unchanged_other_layers": {
+      "equal_mse": 0,
+      "different_mse": 169
+    },
+    "changed_selected_layer": {
+      "different_mse": 18,
+      "equal_mse": 0
+    }
+  },
+  "preflight_record": "release_provenance/current_checks/v1_utility_preflight.json",
+  "interpretation": "Two completed RouterBench IID probe selections differ from their references. The 99 comparable MSE values at unchanged selected canonical layers 21/23/25 match exactly; 169 MSE values at unchanged other layers and 18 with a changed selected layer differ. This localizes an observed pattern without proving whether raw extraction, PCA fitting, runtime versions or another cause explains it. Do not overwrite primary outputs, rebind historical hashes or alter settings/tolerances to force concordance. Full trained routing and paper-precision comparisons remain pending."
+}

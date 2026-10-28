@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "outer_evaluations": 23,
+  "cached_transforms": 322,
+  "ternary_matches_reference": true,
+  "batched_ridge_matches_independent": true,
+  "source_only": true,
+  "seconds": 3516.6986063225195,
+  "config_sha256": "84d3632f24ffe9bc7fbce6a24c5f584079094d242745877d776d2d9fd93f0240",
+  "collected_at_utc": "2026-10-27T23:12:52.660240+00:00",
+  "source_commit": "a8ab76b62bc8f7562bbef70d7a9d7e9294ee0957",
+  "producer": "src/nvidia_utility/preflight.py",
+  "producer_sha256": "89f0011a6b1ec3f97bb88c0a26e712b3d505a0e98e23a7db6c25f216b2120aa0",
+  "hardware": {
+    "cpu_threads": "4",
+    "cpu_model": "AMD EPYC 9474F 48-Core Processor"
+  },
+  "scope": "Unchanged production preflight on newly generated raw embeddings and outer-source PCA caches: verifies input fingerprints, source-only identities, 322 transforms and independent reconstruction of sampled train/test rows, reference ternary-search equivalence and batched/independent Ridge equivalence. Passing validates these new caches internally; it does not establish equality to historical PCA arrays, probe selections or trained router outcomes. The production timer includes validation and I/O, not whole-study runtime."
+}

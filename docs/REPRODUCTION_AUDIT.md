@@ -25,6 +25,8 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 | Complete fresh encoder extraction | GTE, MiniLM and Qwen layers 15–28 on both complete canonical cohorts | 32 arrays generated; all four GTE/L21 baseline input fingerprints exactly match the original |
 | Fresh main baselines and controls, partial | Production kNN, Family Adaptation, Ridge, clustering, KM-Prox and IID lookup paths on their prescribed outer populations | 204 of 296 result records checked; 197 records match scientifically, including all 46 Ridge records; 103 differing fields across seven clustering/KM-Prox records remain under investigation |
 | Complete fresh Ridge prediction audit | Production audit reconstructing scores from new saved choices and canonical outcomes, verifying query alignment and recorded alpha selection | All 598 policy scores audited; 598 per-fold rows and 104 aggregate rows reproduce both numerical CSVs byte-for-byte |
+| Fresh final-utility preprocessing preflight | Production input checks, source-only PCA reconstruction, reference search and independent Ridge equivalence | Passed across 23 outer evaluations and 322 new source transforms; this checks the new caches internally |
+| Fresh final-utility probe comparison, partial | Newly computed source-only layer choices, search traces and validation MSE compared with pinned selections | First two of 23 folds compared: 18 of 286 layer choices differ, with 221 differing fields overall; final trained routing outcomes remain pending |
 | Model identity | Full cached weights compared with pinned public LFS checksums | 12 files, 45,815,257,928 bytes, passed |
 | Execution plumbing | Inert-scheduler orchestration and isolated saved-report renderers | 17 orchestration categories; seven regenerated tables byte-identical to their supplied counterparts |
 
@@ -49,8 +51,9 @@ byte-equality claim is made for arrays without a matching original fingerprint.
 records all 32 manifests and the four comparisons. Extraction computes each hash
 after flushing the complete array. Production baseline preparation also independently
 rehashed all four input arrays and verified the canonical panels and frozen splits.
-This is an encoder-stage checkpoint. New PCA,
-fitted-router, geometry and uncertainty comparisons remain in progress.
+This is an encoder-stage checkpoint. New PCA fitting jobs and the final-utility
+preprocessing preflight have since completed. Historical/final trained-router,
+geometry and uncertainty comparisons remain in progress.
 
 The latest fitted-baseline checkpoint, collected on 2026-10-27 UTC, is recorded in
 [`v1_fresh_baselines.json`](../release_provenance/current_checks/v1_fresh_baselines.json).
@@ -88,8 +91,26 @@ remain explicit in the report. The complete main-baseline comparison has not pas
 All 28 source-PCA scheduler packs exited successfully. The subsequent complete
 utility preflight exceeded its 30-minute allocation before producing its passed
 marker, so the dependent probe and training jobs did not start. A retry with a
-four-hour allocation and the same scientific checks has been submitted. Complete
-PCA validation and new final SharedTrunkNet training are still pending.
+four-hour allocation passed with the same scientific checks: 23 outer evaluations
+and 322 new source transforms were checked, including independently reconstructed
+training/test rows, reference ternary search and independent Ridge objectives.
+[`v1_utility_preflight.json`](../release_provenance/current_checks/v1_utility_preflight.json)
+records that internal validation. It does not certify that the new PCA caches or
+downstream choices equal the historical ones. The probes are running; both final
+GPU workers are queued after all 23 probe jobs exit successfully.
+
+The first two completed RouterBench IID probe records have been compared with
+the frozen selections. They differ in 18 of 286 selected layers and in 221 fields
+overall, including validation MSE and search traces. Scientific protocol settings
+match; the changed runtime NVIDIA-config fingerprint is recorded separately.
+All 99 comparable MSE values at unchanged selected canonical layers 21/23/25 match
+exactly. The other 187 MSE values differ: 169 retain the same noncanonical selected
+layer and 18 have a different selected layer. This pattern does not establish
+whether raw extraction, PCA fitting, runtime differences or another cause explains
+the deviation. Historical cached-input fingerprints are the next comparison.
+[`v1_utility_probe_comparison.json`](../release_provenance/current_checks/v1_utility_probe_comparison.json)
+retains every difference and the incomplete 2/23 coverage. Final trained scores
+and paper-precision agreement have not yet been established.
 
 One of six isolated, unchanged-protocol repetitions is complete. For GTE/SPROUT
 IID fold 1 clustering, it differs in 157 compared fields from the primary new run

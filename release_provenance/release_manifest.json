@@ -149,8 +149,8 @@
       "sha256": "26a34744ee612cfd4225156ec57e096ecc2f564074293553b3f8529771623224"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 14863,
-      "sha256": "aea4f4f18b2514cd4d40cb3f9d2035eb6d98a6265c15b80437cd831e3fb91fbe"
+      "bytes": 16917,
+      "sha256": "64a40f46d69921ce2a394201c8739fb608000c327b7ad72d8cfe57b2df021332"
     },
     "docs/RESOURCES.md": {
       "bytes": 9910,
@@ -603,6 +603,14 @@
     "release_provenance/current_checks/v1_ridge_predictions.json": {
       "bytes": 2063,
       "sha256": "5a56b3e5616f45607b27bff096559a6e2bb67182e771f23880e471b34f352387"
+    },
+    "release_provenance/current_checks/v1_utility_preflight.json": {
+      "bytes": 1196,
+      "sha256": "67c5743dcca0284f290c5b555070f192bf779db3bdc792a512ff695244970b6b"
+    },
+    "release_provenance/current_checks/v1_utility_probe_comparison.json": {
+      "bytes": 88009,
+      "sha256": "e065057352b38397f2504dc412d1c0b59d43562877456ee79ef2999331ac3e45"
     },
     "release_provenance/original_source_hashes.json": {
       "bytes": 18876,
