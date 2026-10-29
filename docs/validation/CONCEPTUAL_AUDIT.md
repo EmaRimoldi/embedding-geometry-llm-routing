@@ -44,4 +44,4 @@ The review identified a self-exclusion boundary in `geometry.Neighbours.get`: cl
 
 ## Scope of the compact checks
 
-The compact script verifies exported hashes, re-aggregates saved fold scores, checks reward-minus-penalty-times-cost identities and compares the results against saved summaries. Final per-target utility fold scores are additionally reconstructed from exported result JSONs. These checks are not independent reruns of per-query decisions, fitted models or bootstrap arrays. See `RESULT_INDEX.md` for the included evidence and the full-workflow requirements.
+The compact script verifies exported hashes, re-aggregates saved fold scores, checks reward-minus-penalty-times-cost identities and compares the results against saved summaries. Final per-target utility fold scores are additionally reconstructed from exported result JSONs. These checks are not independent reruns of per-query decisions, fitted models or bootstrap arrays. See [RESULT_INDEX.md](../reference/RESULT_INDEX.md) for the included evidence and the full-workflow requirements.

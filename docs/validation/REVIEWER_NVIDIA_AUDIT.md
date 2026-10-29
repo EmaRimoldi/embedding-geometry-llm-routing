@@ -31,7 +31,7 @@ The final path uses a separate Ridge target for every candidate model and cost p
 
 These are protocol limitations, not newly discovered implementation errors:
 
-- Outer-source PCA includes features from the internal validation folds. It excludes the outer test family, but internal CV is not a fully nested preprocessing estimate. This scope is already stated in `docs/METHODS.md`.
+- Outer-source PCA includes features from the internal validation folds. It excludes the outer test family, but internal CV is not a fully nested preprocessing estimate. This scope is already stated in `docs/reference/METHODS.md`.
 - Ternary search is a reference heuristic and need not find the global best layer on a non-unimodal score curve.
 - Seeds use different internal 85/15 validation splits, following the reference ensemble procedure. The reported conditional intervals do not measure uncertainty from refitting those networks.
 - The earlier common-layer and fixed-L21 variants use separate selection procedures. Their reported CPU latency is not a measurement of the final per-target pipeline.

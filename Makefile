@@ -2,9 +2,11 @@ PYTHON ?= python3
 COMPUTE_PYTHON ?= .venv/bin/python
 DOWNLOAD_PYTHON ?= .venv-download/bin/python
 
-.PHONY: help verify compare-baselines test smoke download data controls diagnostics tables package
+.PHONY: help check-docs manifest verify compare-baselines test smoke download data controls diagnostics tables package
 
 help:
+	@echo "check-docs: offline documentation links, anchors and versioned command paths"
+	@echo "manifest: refresh current file fingerprints without changing a release ZIP"
 	@echo "verify: saved-evidence and paper checks (Python standard library)"
 	@echo "compare-baselines: compare new main-baseline results; incomplete coverage exits 2"
 	@echo "test / smoke: CPU tests and synthetic execution checks (compute environment)"
@@ -14,7 +16,13 @@ help:
 	@echo "tables: regenerate seven numerical tables from frozen reports"
 	@echo "package: refresh the release manifest and deterministic ZIP"
 
-verify:
+check-docs:
+	"$(PYTHON)" -B scripts/check_docs.py
+
+manifest:
+	"$(PYTHON)" -B scripts/build_submission.py --manifest-only
+
+verify: check-docs
 	"$(PYTHON)" -B scripts/verify_release.py
 	"$(PYTHON)" -B scripts/reproduce_results.py
 	"$(PYTHON)" -B scripts/check_paper_results.py

@@ -41,6 +41,11 @@ Checksums establish identity; they do not establish scientific correctness.
 
 ## Build and identify a new version
 
+For ordinary edits, run `make manifest` followed by `make verify`. This updates
+current file fingerprints without modifying any ZIP. The steps below are for an
+intentional new software release; retain copies of previously published archives
+before invoking the packaging target.
+
 1. Complete the relevant tests and numeric checks; update the documented audit
    scope with actual executions and limitations.
 2. Update software `version` and `date-released` in `CITATION.cff`, the matching

@@ -13,6 +13,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--private-patterns", type=Path,
                         help="Optional JSON regex array outside the public file set; never exported.")
+    parser.add_argument("--manifest-only", action="store_true",
+                        help="Refresh and verify the current manifest without creating or replacing a ZIP.")
     args = parser.parse_args()
     private_patterns = load_private_patterns(args.private_patterns)
     files = {}
@@ -31,6 +33,10 @@ def main():
     if not check["ok"]:
         print(json.dumps(check, indent=2))
         return 1
+    if args.manifest_only:
+        print(json.dumps({"manifest": MANIFEST, "files": len(files),
+                          "validation": True, "archive_updated": False}, indent=2))
+        return 0
     dist = ROOT / "dist"
     dist.mkdir(exist_ok=True)
     archive = dist / "routing_reproduction.zip"

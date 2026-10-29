@@ -12,7 +12,7 @@ colors, points, decision boundary, arrows and model symbols are preserved.
 ## Automatic playback
 
 The [GIF](routing-demo.gif) starts and repeats automatically in the GitHub README.
-Open `docs/demo/index.html` from the cloned repository for the browser version:
+Open [the browser version](index.html) from the cloned repository:
 
 ```bash
 open docs/demo/index.html  # macOS
@@ -86,9 +86,9 @@ The [browser-check report](browser-check.json) records these executions. Interme
 frames remain under `.cache/readme-demo/`. Renderer/font versions can affect raster
 bytes; original vectors and numerical inputs have explicit hashes.
 
-After edits, refresh the repository manifest and export:
+After edits, refresh and verify the current repository manifest:
 
 ```bash
-python scripts/build_submission.py
+python scripts/build_submission.py --manifest-only
 python scripts/verify_release.py
 ```

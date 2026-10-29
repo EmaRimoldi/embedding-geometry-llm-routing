@@ -28,5 +28,8 @@ arrays are downloaded or regenerated through the execution guide; this release
 does not contain a separately published mirror of those arrays.
 
 No Zenodo software DOI is claimed. The repository's existing access settings are
-retained. See `docs/REPRODUCTION_AUDIT.md`, `docs/EXPERIMENTS.md`, `docs/DATA.md`
-and `docs/RELEASE.md` in the tagged source for scope and instructions.
+retained. For the original scope and instructions, see the tagged source's
+[audit](https://github.com/EmaRimoldi/embedding-geometry-llm-routing/blob/v1.0.0/docs/REPRODUCTION_AUDIT.md),
+[experiment map](https://github.com/EmaRimoldi/embedding-geometry-llm-routing/blob/v1.0.0/docs/EXPERIMENTS.md),
+[data guide](https://github.com/EmaRimoldi/embedding-geometry-llm-routing/blob/v1.0.0/docs/DATA.md)
+and [release guide](https://github.com/EmaRimoldi/embedding-geometry-llm-routing/blob/v1.0.0/docs/RELEASE.md).

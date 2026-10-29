@@ -1,43 +1,100 @@
 # Embedding Geometry Shapes LLM Routing
 
-**The right model starts with the right representation.**
-
-Turn each prompt into an embedding and route it to an LLM that balances quality and cost. Frozen Qwen hidden states help simple routers generalize to new task families.
-
 **Leonardo Torti<sup>1,&#42;</sup> · Emanuele Rimoldi<sup>1,&#42;</sup> · Tomer Galanti<sup>2</sup> · Tomaso Poggio<sup>1</sup> · Pierfrancesco Beneventano<sup>1</sup>**
 
-<sup>1</sup> Massachusetts Institute of Technology · <sup>2</sup> Texas A&M University
-
+<sup>1</sup> Massachusetts Institute of Technology · <sup>2</sup> Texas A&M University<br>
 <sup>*</sup> Main contribution.
 
-[Run the experiments](docs/EXPERIMENTS.md) · [Data](docs/DATA.md) · [Methods](docs/METHODS.md) · [Results & audit](docs/REPRODUCTION_AUDIT.md) · [Citation](CITATION.cff)
+[Paper](https://arxiv.org/abs/2610.19198) · [Quickstart](#quickstart) · [Experiments](docs/reference/EXPERIMENTS.md) · [Documentation](docs/README.md) · [Citation](#citation)
 
-[![A prompt arrives, a frozen encoder generates its embedding, a lightweight router classifies it, and a model is selected. The sequence repeats automatically.](docs/demo/routing-demo.gif)](docs/demo/README.md)
+**The right model starts with the right representation.**
+
+Research code and reproducibility materials for *Embedding Geometry Shapes LLM Routing: Tracing Failure Modes and Improving Generalization*. The pipeline embeds each prompt, then selects an LLM to balance quality and cost. It compares semantic embeddings with frozen Qwen hidden states, lightweight routers and SharedTrunkNet adaptations.
+
+[![A prompt arrives, a frozen encoder generates its embedding, a lightweight router classifies it, and a model is selected.](docs/demo/routing-demo.gif)](docs/demo/README.md)
 
 ![Blue GTE and red L21 curves compare utility for the same kNN-100 router on RouterBench and SPROUT across all 13 cost penalties.](docs/demo/embedding-comparison.svg)
 
-With the same kNN-100 router, L21 raises mean held-out utility from 0.6615 to 0.7007 on RouterBench. On SPROUT, it rises from 0.7529 to 0.7731. The curves show every evaluated penalty, including the low-penalty region where GTE is slightly better on RouterBench.
+With the same kNN-100 router, L21 raises mean held-out utility from 0.6615 to 0.7007 on RouterBench and from 0.7529 to 0.7731 on SPROUT. The curves include every evaluated penalty. In a separate RouterBench comparison, L21 Family Adaptation raises mean reward from 71.04% to 74.63% versus a source-selected single model, while mean candidate-model inference cost falls from $2.07 to $1.55 per 1,000 queries. See the [methods](docs/reference/METHODS.md) and [result index](docs/reference/RESULT_INDEX.md) for definitions and scope.
 
-In a separate comparison on RouterBench, L21 Family Adaptation raises mean reward from 71.04% to 74.63% versus a source-selected single model. Mean candidate-model inference cost falls from $2.07 to $1.55 per 1,000 queries.
+## Quickstart
 
-## Reproduce
-
-Check the bundled numerical evidence with Python 3.11; no GPU or external dependencies required:
+Use Python 3.11 to verify the bundled evidence. These commands require no GPU, downloads or third-party Python dependencies:
 
 ```bash
 git clone https://github.com/EmaRimoldi/embedding-geometry-llm-routing.git
 cd embedding-geometry-llm-routing
-python3 scripts/verify_release.py
-python3 scripts/reproduce_results.py
-python3 scripts/check_paper_results.py
+python3 -B scripts/check_docs.py
+python3 -B scripts/verify_release.py
+python3 -B scripts/reproduce_results.py
+python3 -B scripts/check_paper_results.py
 ```
 
-For fresh data, embeddings and router training, follow the **[full execution guide](docs/RUN_COMMANDS.md)**. Public assets and environments are pinned; neural components require Linux and CUDA.
+With Make installed, `make verify` runs the same checks. It validates repository paths and exported bytes, reconstructs saved aggregates and checks the pinned manuscript values. It does not fit new models or repeat bootstrap sampling.
 
-With Make installed, `make verify` runs the three checks above. See the [repository map](docs/STRUCTURE.md) and [versioned release guide](docs/RELEASE.md).
+## Reproduce experiments
 
-The audit passes 5,493 checks against the pinned manuscript reference and includes CPU/CUDA component runs. Full-scale fits and bootstraps have not all been independently rerun; see [coverage and limitations](docs/REPRODUCTION_AUDIT.md) and the [result index](docs/RESULT_INDEX.md).
+The full workflow uses Linux, Python 3.11, pinned public assets and CUDA for neural components. Follow the [execution guide](docs/guides/RUN_COMMANDS.md) in stage order; each stage lists its prerequisites and outputs.
 
-Original project material uses **[CC BY 4.0](LICENSE)**, matching the paper's arXiv license. Third-party assets retain their own terms: [THIRD_PARTY.md](THIRD_PARTY.md).
+| Task | Guide |
+| --- | --- |
+| Choose an experiment or verification level | [Experiment map](docs/reference/EXPERIMENTS.md) |
+| Download and prepare canonical inputs | [Data and model access](docs/guides/DATA.md) |
+| Generate embeddings, fit routers and run diagnostics | [Execution commands](docs/guides/RUN_COMMANDS.md) |
+| Plan CPU, GPU and storage requirements | [Resources](docs/guides/RESOURCES.md) |
+| Inspect result files and numerical tables | [Result index](docs/reference/RESULT_INDEX.md) and [saved tables](docs/reference/SAVED_TABLES.md) |
 
-After edits, refresh the export with `python scripts/build_submission.py` and commit its updated manifest.
+## Repository
+
+| Path | Purpose |
+| --- | --- |
+| [`src/`](src/) | Scientific implementations, data preparation and numerical report producers |
+| [`configs/`](configs/) | Fixed protocols, hyperparameters, row splits and paper references |
+| [`jobs/`](jobs/) | Slurm launchers and shared job environment |
+| [`scripts/`](scripts/) | Setup, verification, component checks and packaging tools |
+| [`tests/`](tests/) | Regression tests for numerical behavior, integrity and orchestration |
+| [`environment/`](environment/) and [`requirements.lock`](requirements.lock) | Pinned dependency environments and runtime provenance paths |
+| [`manifests/`](manifests/) | Public asset revisions, weight fingerprints and license provenance |
+| [`results/evidence/`](results/evidence/) | Frozen original scores, summaries and audit evidence |
+| [`release_provenance/`](release_provenance/) | Original fingerprints, current manifest and scoped verification records |
+| [`docs/`](docs/README.md) | Guides, reference material, validation history, release instructions and demo |
+
+Downloaded inputs, weights, generated arrays and new run outputs stay outside Git. The [repository map and retention policy](docs/reference/STRUCTURE.md) identifies their runtime locations.
+
+## Validation and limitations
+
+The saved-evidence checks cover 5,493 manuscript quantities and settings across all 44 pinned table labels. CPU/CUDA component executions and fresh full-input runs are documented separately in the [reproduction audit](docs/validation/REPRODUCTION_AUDIT.md). Historical numerical agreement is not established for every experiment; the audit preserves the observed differences and incomplete coverage.
+
+For development, install the pinned compute or CPU environment described in the [setup guide](docs/guides/RUN_COMMANDS.md#platform-and-setup), then run:
+
+```bash
+make check-docs
+make test
+make smoke
+```
+
+The smoke suite uses small synthetic inputs. The [documentation index](docs/README.md) distinguishes current validation from historical reviewer checks.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for change validation and issue reports. After edits, `make manifest` refreshes the current file manifest without rebuilding an existing release ZIP; run `make verify` before committing. [Release instructions](docs/releases/RELEASE.md) cover intentional new-version packaging.
+
+## License
+
+Original project material uses **[CC BY 4.0](LICENSE)**. Third-party sources, assets, datasets and models retain their own terms; see [THIRD_PARTY.md](THIRD_PARTY.md).
+
+## Citation
+
+If you use this code, data processing or results, please cite the paper below. Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
+
+```bibtex
+@misc{torti2026embedding,
+  title={Embedding Geometry Shapes LLM Routing: Tracing Failure Modes and Improving Generalization},
+  author={Leonardo Torti and Emanuele Rimoldi and Tomer Galanti and Tomaso Poggio and Pierfrancesco Beneventano},
+  year={2026},
+  eprint={2610.19198},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2610.19198}
+}
+```

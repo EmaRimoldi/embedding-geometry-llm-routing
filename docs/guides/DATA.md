@@ -6,7 +6,7 @@ reference scores. It does not redistribute the complete third-party datasets.
 
 ## Pinned sources
 
-The executable inventory is [manifests/assets.json](../manifests/assets.json).
+The executable inventory is [manifests/assets.json](../../manifests/assets.json).
 Every revision below is a full upstream commit, not a moving branch.
 
 | Asset | Upstream repository | Revision | Local destination |
@@ -86,12 +86,12 @@ Each `datasets/<dataset>/prepared/` directory contains:
 The panel uses `allow_pickle=False` when loaded. Do not reorder its rows or replace
 the canonical files with an independently sampled subset. Fixed IID/OOD outer and
 inner row indices are in `configs/baseline_splits/`. Their family-stratified 70/30
-IID and complete-family OOD definitions are described in [METHODS.md](METHODS.md).
+IID and complete-family OOD definitions are described in [METHODS.md](../reference/METHODS.md).
 
 ## Expected SHA-256 values
 
 The canonical reference is
-[public_data_preparation.json](../release_provenance/reviewer_smoke/public_data_preparation.json).
+[public_data_preparation.json](../../release_provenance/reviewer_smoke/public_data_preparation.json).
 Both fresh CPU verification commands check all eight values before computing.
 
 | Dataset | File | SHA-256 |
@@ -106,14 +106,14 @@ Both fresh CPU verification commands check all eight values before computing.
 | sprout | `manifest.json` | `a1f6bb0cad2e88a49489d2b043a1ec5204d54bf32e1139a46967bf3e09cbfec7` |
 
 Raw data/tokenizer fingerprints are recorded in
-[public_inputs.json](../release_provenance/current_checks/public_inputs.json);
+[public_inputs.json](../../release_provenance/current_checks/public_inputs.json);
 full weight fingerprints are in
-[model_weight_checksums.json](../manifests/model_weight_checksums.json).
+[model_weight_checksums.json](../../manifests/model_weight_checksums.json).
 
 ## Terms and availability
 
 The project CC BY 4.0 license covers original project material. Dataset and model
-terms remain those of their respective creators; see [THIRD_PARTY.md](../THIRD_PARTY.md).
+terms remain those of their respective creators; see [THIRD_PARTY.md](../../THIRD_PARTY.md).
 The inspected pinned RouterBench and SPROUT README files do not declare a license.
 This repository supplies retrieval instructions without asserting permission to
 relicense or redistribute their complete payloads. Consult upstream terms before
@@ -142,5 +142,5 @@ from historical provenance. These analyses need no embeddings or GPU; their impo
 dependencies are included in the compute/CPU environments.
 
 Embedding extraction, fitted routers and other bootstrap jobs follow
-[RUN_COMMANDS.md](RUN_COMMANDS.md). The [experiment map](EXPERIMENTS.md) identifies
+[RUN_COMMANDS.md](RUN_COMMANDS.md). The [experiment map](../reference/EXPERIMENTS.md) identifies
 their prerequisites and expected outputs.

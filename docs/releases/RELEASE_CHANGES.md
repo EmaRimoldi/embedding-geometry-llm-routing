@@ -1,8 +1,10 @@
-# Release provenance and permitted changes
+# Conference-package changes
 
-This is a curated copy of the completed research workspace. Original results and original sources were not changed.
+This document describes the original conference-package curation. Later corrections
+and verification outcomes are recorded in the [current reproduction audit](../validation/REPRODUCTION_AUDIT.md).
+Original results and source fingerprints are preserved as historical evidence.
 
-Permitted release changes are limited to portable paths, scheduler examples, environment/bootstrap instructions, inclusion of previously implicit dependencies, complete first-run orchestration, anonymization of operational metadata, and compact result reproduction/verification. Scientific objectives, model architectures, grids, input cohorts, split indices, penalties, predictions and reported numerical outcomes are preserved.
+Permitted release changes are limited to portable paths, scheduler examples, environment and bootstrap instructions, inclusion of previously implicit dependencies, complete first-run orchestration, anonymization of operational metadata, and compact result reproduction/verification. Scientific objectives, model architectures, grids, input cohorts, split indices, penalties, predictions and reported numerical outcomes are preserved.
 
 The geometry batch includes task 0 when started from scratch; the research batch originally assumed a previously run pilot. The format-control runtime links are created relative to the new location. Required upstream NVIDIA source is packaged explicitly. Hash initialization creates release-specific provenance; original-run hashes remain separate.
 

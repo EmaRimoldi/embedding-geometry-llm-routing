@@ -260,7 +260,7 @@ def main():
         assert "no study job IDs" in read(root, "results/nvidia/timing/summary.json")["scheduler_error"]
         passed("missing/empty scheduler metadata produces explicit unavailable accounting without sacct")
 
-        docs = (ROOT / "docs/RUN_COMMANDS.md").read_text()
+        docs = (ROOT / "docs/guides/RUN_COMMANDS.md").read_text()
         commands = sorted(set(re.findall(r"(?:src|scripts|jobs)/[A-Za-z0-9_./-]+", docs)))
         command_files = [s for s in commands if s.endswith((".py", ".sbatch", ".sh"))]
         assert all((ROOT / p).is_file() for p in command_files), [p for p in command_files if not (ROOT / p).is_file()]

@@ -362,7 +362,7 @@ sbatch jobs/per_family_knn_ci.sbatch
 ```
 
 The family-rank bootstrap uses the corrected average-rank tie convention described
-in [REPRODUCTION_AUDIT.md](REPRODUCTION_AUDIT.md). Original evidence is historical;
+in [REPRODUCTION_AUDIT.md](../validation/REPRODUCTION_AUDIT.md). Original evidence is historical;
 the new convention can affect auxiliary intervals with ties. The observed point
 estimates remain unchanged.
 
@@ -384,10 +384,10 @@ vendor hashes and small synthetic tests. Subsequent reviewer checks installed
 fresh environments, downloaded pinned data and tokenizers, reproduced complete
 data preparation, extracted embeddings for four supplied prompts, fitted small
 CPU/GPU router fixtures and exercised actual PCA100 preprocessing. See
-`docs/VALIDATION.md` for measured coverage. The ongoing full-input campaign has
+`docs/validation/VALIDATION.md` for measured coverage. The subsequent full-input campaign has
 since completed final per-target model training and checkpoint audits, with
 historical-result differences retained in
-[REPRODUCTION_AUDIT.md](REPRODUCTION_AUDIT.md). Other full-scale stages and
+[REPRODUCTION_AUDIT.md](../validation/REPRODUCTION_AUDIT.md). Other full-scale stages and
 bootstrap resampling remain incomplete; full-study numerical equivalence has
 not been established.
 
@@ -404,7 +404,7 @@ missing-prerequisite failures, preservation of input hashes and existing metadat
 partial-checkpoint guards, safe repeated calls, internal runtime links, actual
 launcher shell behavior and documented task ranges. It does not establish
 numerical equivalence of a new full experiment run. See
-`docs/REVIEWER_SMOKE_ORCHESTRATION.md` for the findings.
+`docs/validation/REVIEWER_SMOKE_ORCHESTRATION.md` for the findings.
 
 
 ## Actual PCA100 CPU smoke
@@ -413,4 +413,4 @@ Inside a small CPU allocation, run `.venv/bin/python -B scripts/smoke_pca.py`.
 This executes the unchanged production preprocessing CLI on synthetic rows,
 retains 100 components, poisons only held-out vectors to verify source isolation,
 and checks saved transforms, hashes, cache reuse and expected rejections. See
-`docs/REVIEWER_SMOKE_PCA.md` for commands, measured outcomes and scope.
+`docs/validation/REVIEWER_SMOKE_PCA.md` for commands, measured outcomes and scope.

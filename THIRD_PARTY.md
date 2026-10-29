@@ -13,7 +13,7 @@ locally and remain under the same font license.
 
 The included reference sources come from NVIDIA-AI-Blueprints/llm-router, commit `8a9d3509fbde879d9795258081bab9553b458e04`. The upstream provenance records name the exact paths and SHA-256 checksums. The Apache-2.0 license and NVIDIA notices are retained in the vendor directories.
 
-The routing study adapts BCE to MSE and uses unrestricted utility predictions. Layer selection and preprocessing choices are described in `docs/METHODS.md`; do not describe the utility adaptations as a literal reproduction of every published setting.
+The routing study adapts BCE to MSE and uses unrestricted utility predictions. Layer selection and preprocessing choices are described in `docs/reference/METHODS.md`; do not describe the utility adaptations as a literal reproduction of every published setting.
 
 ## Downloaded public assets
 

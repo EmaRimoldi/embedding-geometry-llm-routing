@@ -3,7 +3,7 @@
 The current repository additionally executes Avengers-Pro and KM-Prox in the CPU
 baseline harness (260 score checks). The 156-check counts below describe the
 original conference reviewer run, whose reports are preserved unchanged. See
-`REPRODUCTION_AUDIT.md` for current executions.
+[REPRODUCTION_AUDIT.md](REPRODUCTION_AUDIT.md) for current executions.
 
 These checks exercise installed software and small real execution paths. Synthetic outputs are explicitly labelled and never replace the paper evidence.
 
@@ -40,7 +40,7 @@ Generated results live under `results/reproduced` or `.cache`, and are excluded 
 
 ## PCA100 preprocessing
 
-Run `.venv/bin/python -B scripts/smoke_pca.py` in a CPU allocation. The actual production PCA CLI passed ten checks on each of the full-SVD and randomized branches, always retaining 100 components. Poisoning held-out vectors left scaler/PCA arrays and source projections bit-identical; saved-transform reconstruction error was zero. Cache reuse and deliberate stale/checksum mismatch rejection passed. See `REVIEWER_SMOKE_PCA.md`.
+Run `.venv/bin/python -B scripts/smoke_pca.py` in a CPU allocation. The actual production PCA CLI passed ten checks on each of the full-SVD and randomized branches, always retaining 100 components. Poisoning held-out vectors left scaler/PCA arrays and source projections bit-identical; saved-transform reconstruction error was zero. Cache reuse and deliberate stale/checksum mismatch rejection passed. See [REVIEWER_SMOKE_PCA.md](REVIEWER_SMOKE_PCA.md).
 
 ## GPU check
 
@@ -68,4 +68,4 @@ RouterBench produced 34,771 rows (34,659 in the shared MiniLM subset); SPROUT pr
 
 ## Interpretation
 
-These are working smoke paths, not a repeat of the full study. Full-scale training, all per-query audits and bootstrap resampling remain separate workflows. Read `CONCEPTUAL_AUDIT.md` for statistical scope and the recorded optional rank-interval tie-rule inconsistency.
+These are working smoke paths, not a repeat of the full study. Full-scale training, all per-query audits and bootstrap resampling remain separate workflows. Read [CONCEPTUAL_AUDIT.md](CONCEPTUAL_AUDIT.md) for statistical scope and the recorded optional rank-interval tie-rule inconsistency.
