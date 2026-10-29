@@ -25,8 +25,8 @@ In a separate comparison on RouterBench, L21 Family Adaptation raises mean rewar
 Check the bundled numerical evidence with Python 3.11; no GPU or external dependencies required:
 
 ```bash
-git clone https://github.com/EmaRimoldi/routing-theory-reproducibility.git
-cd routing-theory-reproducibility
+git clone https://github.com/EmaRimoldi/embedding-geometry-llm-routing.git
+cd embedding-geometry-llm-routing
 python3 scripts/verify_release.py
 python3 scripts/reproduce_results.py
 python3 scripts/check_paper_results.py

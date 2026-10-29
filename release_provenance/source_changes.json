@@ -432,7 +432,7 @@
   {
     "path": "README.md",
     "original_sha256": "e1c24fc801914a864640a3ebc379fc17bafbd27a4736aa19e28f90a2be471a1a",
-    "release_sha256": "ef84400516535284887110c0c5e2a70cf20f1e1e791ffea7a505c4234abe7e0a"
+    "release_sha256": "e97c0a671d4537e85991c5cb72ef51338fc47bfc28d5fbe24d54c10829e10bb1"
   },
   {
     "path": ".gitignore",

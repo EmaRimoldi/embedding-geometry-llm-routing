@@ -5,7 +5,7 @@ version: 1.0.0
 date-released: 2026-10-26
 license: CC-BY-4.0
 title: "Embedding Geometry Shapes LLM Routing: Experiment Code"
-url: "https://github.com/EmaRimoldi/routing-theory-reproducibility"
+url: "https://github.com/EmaRimoldi/embedding-geometry-llm-routing"
 authors:
   - family-names: Torti
     given-names: Leonardo

@@ -8,7 +8,7 @@ the release version identifies an artifact, not an independent reproduction badg
 
 ## Retrieve and verify
 
-The [GitHub release](https://github.com/EmaRimoldi/routing-theory-reproducibility/releases/tag/v1.0.0)
+The [GitHub release](https://github.com/EmaRimoldi/embedding-geometry-llm-routing/releases/tag/v1.0.0)
 contains `routing_reproduction.zip` and `routing_reproduction.zip.sha256`. Repository
 access is required while the project remains private. GitHub's automatically
 generated source archives also identify the tag; the attached ZIP uses the explicit
@@ -17,7 +17,7 @@ export allowlist and neutral ZIP metadata.
 With GitHub CLI installed and authenticated when required:
 
 ```bash
-gh release download v1.0.0 --repo EmaRimoldi/routing-theory-reproducibility \
+gh release download v1.0.0 --repo EmaRimoldi/embedding-geometry-llm-routing \
   --pattern 'routing_reproduction.zip*' --dir release-v1.0.0
 cd release-v1.0.0
 python3 - <<'PY'
