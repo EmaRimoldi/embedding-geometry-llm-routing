@@ -149,8 +149,8 @@
       "sha256": "26a34744ee612cfd4225156ec57e096ecc2f564074293553b3f8529771623224"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 19469,
-      "sha256": "96aba758831e51c8640b47845c9bc36d627c82e76afa235d9913f1fdd0ccb947"
+      "bytes": 19537,
+      "sha256": "539786a808490ccc6a03aa355b10100bc0bbc475240be6a3610046baf3c4df06"
     },
     "docs/RESOURCES.md": {
       "bytes": 9910,
@@ -593,8 +593,8 @@
       "sha256": "1d432d8ce31fe63e4bb444072e163664b6e2c118f21397fbf73c95f5e605c3c5"
     },
     "release_provenance/current_checks/v1_final_utility.json": {
-      "bytes": 2608755,
-      "sha256": "de308f3c60143e448c79d8804263489ef4c09281964075a88d474d50141c0bf1"
+      "bytes": 2608841,
+      "sha256": "55ee9b4e4f4dd43726aa768767c8399c26bb82c3bd5721fa5d612bf779740a7d"
     },
     "release_provenance/current_checks/v1_fresh_baselines.json": {
       "bytes": 216575,

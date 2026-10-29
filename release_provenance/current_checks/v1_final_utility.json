@@ -102232,7 +102232,7 @@
     }
   ],
   "ensemble_seed_selections": 299,
-  "changed_ensemble_seed_selections": 223,
+  "changed_ensemble_seed_selections": 105,
   "penalty_ensembles_with_changed_layers": 143,
   "relative_tolerance": 1e-10,
   "absolute_tolerance": 1e-12,
@@ -102257,5 +102257,7 @@
   "different_fields": 7698,
   "scientific_setting_changes": false,
   "interpretation": "Complete fresh final-model training and internal checkpoint/prediction audits; raw historical scores and selections differ. Full-study reproduction and manuscript precision are not certified by these checks.",
-  "reference_evidence_manifest_sha256": "699e0ccaf9c63fdf5ea1e24ee9b2eaded44a39f2d514dad73e8b772d27dd6167"
+  "reference_evidence_manifest_sha256": "699e0ccaf9c63fdf5ea1e24ee9b2eaded44a39f2d514dad73e8b772d27dd6167",
+  "changed_ordered_seed_lists": 223,
+  "unchanged_seed_sets_with_changed_order": 118
 }

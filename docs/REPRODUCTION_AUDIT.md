@@ -115,8 +115,9 @@ The final-model workers generated all 2,990 prescribed fits. All 23 independent
 production audit tasks completed successfully, checking saved checkpoints against
 predictions, query alignment, validation MSE, retained seeds, ensembles and 299
 utility scores. This establishes internal consistency of the new execution.
-It does not establish agreement with the original execution: 223 of 299 retained
-seed sets differ, and 7,698 of 13,335 compared numeric result fields differ.
+It does not establish agreement with the original execution: 105 of 299 retained
+seed sets differ; another 118 contain the same five seeds in a different order.
+In total, 7,698 of 13,335 compared numeric result fields differ.
 [`v1_final_utility.json`](../release_provenance/current_checks/v1_final_utility.json)
 preserves those differences and prediction fingerprints.
 
