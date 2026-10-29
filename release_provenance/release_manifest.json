@@ -149,8 +149,8 @@
       "sha256": "26a34744ee612cfd4225156ec57e096ecc2f564074293553b3f8529771623224"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 19537,
-      "sha256": "539786a808490ccc6a03aa355b10100bc0bbc475240be6a3610046baf3c4df06"
+      "bytes": 21936,
+      "sha256": "9943e509c41c95da7bcd36e44076e633747a07faac6279451cfbb9b2516cfbdb"
     },
     "docs/RESOURCES.md": {
       "bytes": 9910,
@@ -603,6 +603,10 @@
     "release_provenance/current_checks/v1_full_encoders.json": {
       "bytes": 30310,
       "sha256": "94a1b7b00a46132b2d4f3ad67eecf58d7ce0face9f4bf11fa208b077633ce636"
+    },
+    "release_provenance/current_checks/v1_reduced_mlp_checkpoint.json": {
+      "bytes": 10278,
+      "sha256": "1ca3881e1ca7e70fce5e2871931c26f61ec42e2cbe5f730130aea4fa4a8be400"
     },
     "release_provenance/current_checks/v1_release.json": {
       "bytes": 1520,

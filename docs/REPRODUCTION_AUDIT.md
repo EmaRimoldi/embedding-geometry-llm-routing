@@ -23,7 +23,8 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 | PCA preprocessing | Actual production PCA100 entry point, both full-SVD and randomized branches | 10 checks per branch, including held-out poisoning and stale-cache rejection |
 | CUDA encoders | Actual MiniLM, GTE and Qwen L21/L23/L25 extraction on four illustrative prompts | All vectors finite, completed and hash-consistent |
 | Complete fresh encoder extraction | GTE, MiniLM and Qwen layers 15–28 on both complete canonical cohorts | 32 arrays generated; all four GTE/L21 baseline input fingerprints exactly match the original |
-| Fresh main baselines and controls, partial | Production kNN, Family Adaptation, Ridge, clustering, KM-Prox and IID lookup paths on their prescribed outer populations | All 250 non-MLP records checked; 240 match scientifically, including all 46 Ridge records; 139 differing fields across ten clustering/KM-Prox records remain under investigation; 46 reduced-MLP records remain missing |
+| Fresh main baselines and controls, partial | Production kNN, Family Adaptation, Ridge, clustering, KM-Prox and IID lookup paths on their prescribed outer populations | All 250 non-MLP records checked; 240 match scientifically, including all 46 Ridge records; 139 differing fields across ten clustering/KM-Prox records remain under investigation; reduced MLP is reported separately below |
+| Initial fresh reduced-MLP checkpoint | New production validation and refits on canonical RouterBench inputs; saved scores, choices and input fingerprints compared | 16/46 records compared; 113 validation-utility fields differ and five alpha choices change; full prediction reconstruction and aggregate comparison remain pending |
 | Complete fresh Ridge prediction audit | Production audit reconstructing scores from new saved choices and canonical outcomes, verifying query alignment and recorded alpha selection | All 598 policy scores audited; 598 per-fold rows and 104 aggregate rows reproduce both numerical CSVs byte-for-byte |
 | Fresh final-utility preprocessing preflight | Production input checks, source-only PCA reconstruction, reference search and independent Ridge equivalence | Passed across 23 outer evaluations and 322 new source transforms; this checks the new caches internally |
 | Complete fresh final-utility probe comparison | Newly computed source-only layer choices, search traces and validation MSE compared with pinned selections | All 23 folds compared: 185 of 3,575 layer choices differ, with 2,833 differing fields overall |
@@ -57,7 +58,7 @@ This is an encoder-stage checkpoint. New PCA fitting, final-utility preprocessin
 probe selection and final-model training have since completed. Reduced MLP,
 historical trained-router, geometry and uncertainty comparisons remain incomplete.
 
-The latest fitted-baseline checkpoint, collected on 2026-10-29 UTC, is recorded in
+The non-MLP fitted-baseline checkpoint, collected on 2026-10-29 UTC, is recorded in
 [`v1_fresh_baselines.json`](../release_provenance/current_checks/v1_fresh_baselines.json).
 It compares 250 of the prescribed 296 records, including all 46 Ridge evaluations
 across both benchmarks, representations and IID/OOD populations. All Ridge scores
@@ -87,6 +88,36 @@ The 138 source/config hash differences match transitions already recorded in
 `release_provenance/source_changes.json`, and the new source bytes were checked
 against that registry. These provenance differences and all scientific differences
 remain explicit in the report. The complete main-baseline comparison has not passed.
+
+The reduced-MLP comparison at 2026-10-29 06:27 UTC adds 16 newly fitted
+RouterBench records: all five IID folds and OOD folds 0–2 for both canonical
+representations. The overall partial comparison therefore covers 266/296
+prescribed records. All saved candidate utilities and selected settings in the
+ten IID records match exactly. The reader's OOD folds 1 and 2 instead differ in
+113 validation-utility fields, with five alpha choices changing in OOD fold 2.
+These differences exceed the predeclared tolerances; the candidate grid,
+inner-fold indices, seeds and scientific settings were not changed.
+
+At penalty 150 in L21/RouterBench OOD fold 2, the selected alpha changes from 1
+to 0.0001 and the recorded test utility changes from 0.6786014568810994 to
+0.5715887761402112. The other changed choices include increases as well as
+decreases in test utility, so this example is not a benchmark-wide mean.
+The complete canonical panel, query and preparation hashes, frozen split hash
+and L21 vector-file hash were rechecked for this case. Its saved aggregate
+arithmetic is consistent with its reward/cost and per-family summaries.
+[`v1_reduced_mlp_checkpoint.json`](../release_provenance/current_checks/v1_reduced_mlp_checkpoint.json)
+retains the five changed choices, raw values and file fingerprints. This is an
+initial result-file comparison: the complete reduced-phase prediction audit,
+full baseline aggregate report and manuscript printed-precision comparison
+remain pending. The cause is not established, and variation is not confined
+to final refitting because validation scores also differ.
+
+The supplied conference archive and active checkout contain byte-identical
+`src/baselines/batched_mlp.py` files, but the historical results name a different
+trainer hash. This pre-existing discrepancy is recorded alongside the MLP
+checkpoint. The historical trainer bytes have not been recovered. A hash
+difference alone does not establish changed training semantics or explain the
+numerical differences. Primary outputs and historical evidence are preserved.
 
 All 28 source-PCA scheduler packs exited successfully. The subsequent complete
 utility preflight exceeded its 30-minute allocation before producing its passed

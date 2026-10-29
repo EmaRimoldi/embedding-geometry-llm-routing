@@ -1,0 +1,283 @@
+{
+  "version": 1,
+  "status": "partial; historical numerical agreement not established",
+  "completed_mlp_records_compared": 16,
+  "expected_mlp_records": 46,
+  "coverage_complete": false,
+  "scope": "Initial fresh RouterBench MLP results: all five IID folds and OOD folds 0-2 for both canonical encoders. No SPROUT result is included. Supplied result fields and input fingerprints are checked; complete prediction reconstruction and final aggregate comparison remain pending.",
+  "relative_tolerance": 1e-10,
+  "absolute_tolerance": 1e-12,
+  "selected_settings_compared_exactly": true,
+  "independent_complete_prediction_audit": false,
+  "paper_printed_precision_assessed": false,
+  "comparison_findings": {
+    "compared_at_utc": "2026-10-29T06:27:35.479052+00:00",
+    "verified_at_utc": "2026-10-29T06:35:50.071274+00:00",
+    "source_report_sha256": "8688af35266794748a9ef65e9ce3418bb215204f404e3414995cd02be54fb334",
+    "scope": {
+      "checked_at_utc": "2026-10-29T06:27:35.479052+00:00",
+      "compared_mlp_records": 16,
+      "selection_fields_raw": 123,
+      "selection_fields_beyond_tolerance": 123,
+      "validation_values_raw": 113,
+      "validation_values_beyond_tolerance": 113,
+      "changed_selected_cases": 5,
+      "by_record": [
+        {
+          "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_1/mlp_reduced/result.json",
+          "selection_fields_raw": 40,
+          "selection_fields_beyond_tolerance": 40,
+          "changed_penalties": []
+        },
+        {
+          "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/mlp_reduced/result.json",
+          "selection_fields_raw": 83,
+          "selection_fields_beyond_tolerance": 83,
+          "changed_penalties": [
+            "100",
+            "150",
+            "50",
+            "500",
+            "75"
+          ]
+        }
+      ],
+      "score_fields_raw": 2342,
+      "score_fields_beyond_tolerance": 2342
+    },
+    "changed_selections": [
+      {
+        "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/mlp_reduced/result.json",
+        "lambda_value": "100",
+        "fresh": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 1,
+          "validation_utility": 0.5562627171314765,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "reference": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 0.0001,
+          "validation_utility": 0.5572240119521916,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "fresh_test_utility": 0.6815078868751244,
+        "reference_test_utility": 0.6043880292770364
+      },
+      {
+        "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/mlp_reduced/result.json",
+        "lambda_value": "150",
+        "fresh": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 0.0001,
+          "validation_utility": 0.5283288911022637,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "reference": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 1,
+          "validation_utility": 0.5277352045152828,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "fresh_test_utility": 0.5715887761402112,
+        "reference_test_utility": 0.6786014568810994
+      },
+      {
+        "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/mlp_reduced/result.json",
+        "lambda_value": "50",
+        "fresh": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 1,
+          "validation_utility": 0.5826738114209847,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "reference": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 0.0001,
+          "validation_utility": 0.5868026992031905,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "fresh_test_utility": 0.738001046604262,
+        "reference_test_utility": 0.6353443930491933
+      },
+      {
+        "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/mlp_reduced/result.json",
+        "lambda_value": "500",
+        "fresh": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 1,
+          "validation_utility": 0.38751144754315814,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "reference": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 0.01,
+          "validation_utility": 0.3929628201859238,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "fresh_test_utility": 0.5381523152758414,
+        "reference_test_utility": 0.5452190474009161
+      },
+      {
+        "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/mlp_reduced/result.json",
+        "lambda_value": "75",
+        "fresh": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 1,
+          "validation_utility": 0.5694858253651994,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "reference": {
+          "architecture": [
+            100,
+            100,
+            100
+          ],
+          "alpha": 0.0001,
+          "validation_utility": 0.5741987114873742,
+          "inner_indices": [
+            4,
+            1
+          ]
+        },
+        "fresh_test_utility": 0.7196517566221867,
+        "reference_test_utility": 0.6369331901015733
+      }
+    ],
+    "large_score_case": {
+      "record": "baselines/qwen2.5-7b-instruct/layer_21/routerbench/ood_2/mlp_reduced/result.json",
+      "lambda_value": "150",
+      "fresh_utility": 0.5715887761402112,
+      "reference_utility": 0.6786014568810994,
+      "difference": -0.10701268074088821,
+      "fresh_selection": {
+        "architecture": [
+          100,
+          100,
+          100
+        ],
+        "alpha": 0.0001,
+        "validation_utility": 0.5283288911022637
+      },
+      "reference_selection": {
+        "architecture": [
+          100,
+          100,
+          100
+        ],
+        "alpha": 1,
+        "validation_utility": 0.5277352045152828
+      },
+      "n_train": 24729,
+      "n_test": 10042,
+      "split_sha256": "50c53a2185fe90a1dea0a7f6b323690f98ae74adaae170564161edb1b7aab9de",
+      "fresh_file_sha256": "8b225f0ee473f73b3a472d23d74e567eb139e55022352fce44a9f4fc95f3ade6",
+      "reference_file_sha256": "4dcd1281db83a0276a00b216949e7a96802af1f2459ff8f08e6e44b04225d357",
+      "fresh_trainer_sha256": "abf4686bbb2e3a8d6865da62a33d1b30c859e1d06d873b85f79e15c2163b13c1",
+      "reference_trainer_sha256": "ca61a9d078d4a1e254cc8f577b9c397518d23fdd8aa81016533056ccf8a236f5",
+      "aggregate_arithmetic_consistent": true,
+      "prepared_input_hashes": {
+        "panel.npz": "b3fc98d24f92279cf5881b95996645ab5bc30bb797b49c6ef8fa55da70c13a0f",
+        "queries.jsonl": "9aafd0134ece05f17ea2c15c2db1c2948d1583dc0b3fab6ba5fc968e57d9d4bd",
+        "excluded.jsonl": "205d589b57185bba271f4602d711ebb7012fb9bf50b16d356bfc3f5a67f9ff6d",
+        "manifest.json": "557bc48609f0ff15040bdf83120770ef7da8775c52a640709a85d1d3168b4f88"
+      },
+      "vector_sha256": "af19737a594d69c403c2ac1851aecea96582dbdb8456d41e6a7146004c244392",
+      "vector_matches_manifest": true,
+      "prediction_reconstruction_audit": "Pending final reduced-phase audit; this check verifies saved aggregates and input/file fingerprints."
+    },
+    "cause": "not established",
+    "scientific_settings_changed": false
+  },
+  "verified_remote_finding_sha256": "25ab7bed8140132bee0a9f855b605c73fcc1d6c646fc80d75028003ba4b17ba3",
+  "scientific_protocol": {
+    "scientific_protocol_matches_pinned_reference": true,
+    "scientific_protocol_sha256": "920fbb089104e35d8f6c2a61e6ed2bd24ccfe530b70623be0cc0d526470bfa6b",
+    "actual_runtime_protocol_sha256": "81966fa3e6e6b0d9f41e8977f2613cb9f422728b29b6efdf113d3c696fb6afc6",
+    "metadata_fields_excluded": [
+      "source_hashes",
+      "original_source_hashes_sha256"
+    ]
+  },
+  "trainer_provenance": {
+    "path": "src/baselines/batched_mlp.py",
+    "supplied_archive_source_sha256": "abf4686bbb2e3a8d6865da62a33d1b30c859e1d06d873b85f79e15c2163b13c1",
+    "active_source_sha256": "abf4686bbb2e3a8d6865da62a33d1b30c859e1d06d873b85f79e15c2163b13c1",
+    "archive_and_active_source_bytes_identical": true,
+    "historical_result_trainer_sha256": "ca61a9d078d4a1e254cc8f577b9c397518d23fdd8aa81016533056ccf8a236f5",
+    "original_archive_manifest": "release_provenance/conference_original_manifest.json",
+    "original_hash_record": "release_provenance/original_source_hashes.json",
+    "interpretation": "The trainer-hash mismatch is already present in the supplied conference package. The historical trainer bytes have not been recovered. A different hash alone does not establish changed training semantics or explain the numerical differences."
+  },
+  "limits": [
+    "This is a partial checkpoint of continuing new Slurm fits, not a completed MLP reproduction or a rerun of the final aggregate report.",
+    "The five changed alpha choices and the displayed large-score example are diagnostic findings, not a new selection rule. All scientific grids, seeds, splits, inputs and tolerances remain unchanged.",
+    "Test-utility differences run in both directions across the five changed choices; the largest displayed negative difference is not a benchmark-wide mean.",
+    "The complete field-level comparison is retained with the recorded source-report hash. Its full-run update follows completion and the reduced-phase prediction audit.",
+    "The aggregate arithmetic and fingerprints in the example were checked. Omitted historical per-query validation predictions and weights were not compared.",
+    "The cause remains unestablished; no primary output or historical evidence is replaced."
+  ]
+}
