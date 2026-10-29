@@ -29,8 +29,8 @@
       "sha256": "fffc0a9ef21b747788be87004f7a94a820f09fc56d07f32f4e540685199f2538"
     },
     "README.md": {
-      "bytes": 2870,
-      "sha256": "479780594a9e75f74a24b1137b544b08b1aa1b04c371a8224353997813875f10"
+      "bytes": 2869,
+      "sha256": "ef84400516535284887110c0c5e2a70cf20f1e1e791ffea7a505c4234abe7e0a"
     },
     "THIRD_PARTY.md": {
       "bytes": 3396,
@@ -678,7 +678,7 @@
     },
     "release_provenance/source_changes.json": {
       "bytes": 20655,
-      "sha256": "b67d7fc655478ad2c2ca495baad30c86db5d231898eb75b372d4721e6aac7088"
+      "sha256": "91bea1a6a267bc0ec7dd349776adf065ab6c4b3d6b485ff0b81e20a13d130653"
     },
     "release_provenance/storage_cleanup.json": {
       "bytes": 5337,

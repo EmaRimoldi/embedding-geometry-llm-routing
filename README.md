@@ -8,7 +8,7 @@ Turn each prompt into an embedding and route it to an LLM that balances quality 
 
 <sup>1</sup> Massachusetts Institute of Technology · <sup>2</sup> Texas A&M University
 
-<sup>*</sup> Equal contribution.
+<sup>*</sup> Main contribution.
 
 [Run the experiments](docs/EXPERIMENTS.md) · [Data](docs/DATA.md) · [Methods](docs/METHODS.md) · [Results & audit](docs/REPRODUCTION_AUDIT.md) · [Citation](CITATION.cff)
 
