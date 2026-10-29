@@ -188,6 +188,12 @@ Both workers finishing triggers the independent audit array/report. To submit
 the audit explicitly after complete training:
 `sbatch jobs/nvidia_utility_audit.sbatch`.
 
+The aggregate comparison also requires the completed baseline report at
+`results/baselines/_summary_reduced/scores.csv`. If training and the per-fold
+audits finish before that prerequisite, preserve them and rerun only
+`sbatch jobs/nvidia_utility_report.sbatch` after the reduced-baseline report
+completes. A missing comparator summary does not require retraining the networks.
+
 This implementation uses the **per-target Ridge probe and reference ternary
 search**, concatenated PCA100 blocks and the reference SharedTrunkNet with MSE
 utility targets. Its files live in `src/nvidia_utility/` and
@@ -367,9 +373,12 @@ vendor hashes and small synthetic tests. Subsequent reviewer checks installed
 fresh environments, downloaded pinned data and tokenizers, reproduced complete
 data preparation, extracted embeddings for four supplied prompts, fitted small
 CPU/GPU router fixtures and exercised actual PCA100 preprocessing. See
-`docs/VALIDATION.md` for measured coverage. Full-scale training, the complete
-sweep, all per-query prediction audits and bootstrap resampling were not repeated;
-full-study numerical equivalence remains a separate execution check.
+`docs/VALIDATION.md` for measured coverage. The ongoing full-input campaign has
+since completed final per-target model training and checkpoint audits, with
+historical-result differences retained in
+[REPRODUCTION_AUDIT.md](REPRODUCTION_AUDIT.md). Other full-scale stages and
+bootstrap resampling remain incomplete; full-study numerical equivalence has
+not been established.
 
 
 ## Reviewer orchestration smoke (no downloads or compute jobs)

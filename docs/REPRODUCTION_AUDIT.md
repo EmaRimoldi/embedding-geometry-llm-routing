@@ -23,10 +23,12 @@ fingerprints; `release_provenance/release_manifest.json` describes this reposito
 | PCA preprocessing | Actual production PCA100 entry point, both full-SVD and randomized branches | 10 checks per branch, including held-out poisoning and stale-cache rejection |
 | CUDA encoders | Actual MiniLM, GTE and Qwen L21/L23/L25 extraction on four illustrative prompts | All vectors finite, completed and hash-consistent |
 | Complete fresh encoder extraction | GTE, MiniLM and Qwen layers 15–28 on both complete canonical cohorts | 32 arrays generated; all four GTE/L21 baseline input fingerprints exactly match the original |
-| Fresh main baselines and controls, partial | Production kNN, Family Adaptation, Ridge, clustering, KM-Prox and IID lookup paths on their prescribed outer populations | 204 of 296 result records checked; 197 records match scientifically, including all 46 Ridge records; 103 differing fields across seven clustering/KM-Prox records remain under investigation |
+| Fresh main baselines and controls, partial | Production kNN, Family Adaptation, Ridge, clustering, KM-Prox and IID lookup paths on their prescribed outer populations | All 250 non-MLP records checked; 240 match scientifically, including all 46 Ridge records; 139 differing fields across ten clustering/KM-Prox records remain under investigation; 46 reduced-MLP records remain missing |
 | Complete fresh Ridge prediction audit | Production audit reconstructing scores from new saved choices and canonical outcomes, verifying query alignment and recorded alpha selection | All 598 policy scores audited; 598 per-fold rows and 104 aggregate rows reproduce both numerical CSVs byte-for-byte |
 | Fresh final-utility preprocessing preflight | Production input checks, source-only PCA reconstruction, reference search and independent Ridge equivalence | Passed across 23 outer evaluations and 322 new source transforms; this checks the new caches internally |
-| Fresh final-utility probe comparison, partial | Newly computed source-only layer choices, search traces and validation MSE compared with pinned selections | First two of 23 folds compared: 18 of 286 layer choices differ, with 221 differing fields overall; final trained routing outcomes remain pending |
+| Complete fresh final-utility probe comparison | Newly computed source-only layer choices, search traces and validation MSE compared with pinned selections | All 23 folds compared: 185 of 3,575 layer choices differ, with 2,833 differing fields overall |
+| Complete fresh final-utility training and internal audit | All prescribed final-model fits, saved networks, predictions, seed retention and score reconstruction | 2,990 fits and checkpoint checks, 299 utility scores, 23 successful audit tasks; historical raw results differ, and the aggregate comparator report awaits the reduced-MLP summary |
+| Complete fresh predicted-label lookup | Ten IID production folds and their aggregate report | All 1,665 numeric comparisons match exactly; completion fingerprints retained |
 | Model identity | Full cached weights compared with pinned public LFS checksums | 12 files, 45,815,257,928 bytes, passed |
 | Execution plumbing | Inert-scheduler orchestration and isolated saved-report renderers | 17 orchestration categories; seven regenerated tables byte-identical to their supplied counterparts |
 
@@ -51,13 +53,13 @@ byte-equality claim is made for arrays without a matching original fingerprint.
 records all 32 manifests and the four comparisons. Extraction computes each hash
 after flushing the complete array. Production baseline preparation also independently
 rehashed all four input arrays and verified the canonical panels and frozen splits.
-This is an encoder-stage checkpoint. New PCA fitting jobs and the final-utility
-preprocessing preflight have since completed. Historical/final trained-router,
-geometry and uncertainty comparisons remain in progress.
+This is an encoder-stage checkpoint. New PCA fitting, final-utility preprocessing,
+probe selection and final-model training have since completed. Reduced MLP,
+historical trained-router, geometry and uncertainty comparisons remain incomplete.
 
-The latest fitted-baseline checkpoint, collected on 2026-10-27 UTC, is recorded in
+The latest fitted-baseline checkpoint, collected on 2026-10-29 UTC, is recorded in
 [`v1_fresh_baselines.json`](../release_provenance/current_checks/v1_fresh_baselines.json).
-It compares 204 of the prescribed 296 records, including all 46 Ridge evaluations
+It compares 250 of the prescribed 296 records, including all 46 Ridge evaluations
 across both benchmarks, representations and IID/OOD populations. All Ridge scores
 and selections match exactly. The separate production audit also reconstructed
 all 598 policy scores from the new saved choices and outcomes, verified test-row
@@ -67,13 +69,11 @@ per-fold and 104-row aggregate CSVs match the frozen tables byte-for-byte.
 records the hashes and scope. This does not independently refit/reload the
 regressors or compare omitted original query-level predictions.
 
-Of the 204 compared records, 197 have exact scientific-field agreement. Across all
-records, 194,230 of 194,333 numeric fields match exactly; 103 fields differ beyond
-the declared tolerances in seven clustering/KM-Prox records. Four of those records
-have differences confined to source-validation values or selected settings while
-their reported test scores match. Three records also have test-score differences:
-GTE/SPROUT IID fold 1 clustering, L21/RouterBench OOD fold 5 clustering and
-L21/SPROUT IID fold 2 KM-Prox. At penalty 10, GTE/SPROUT IID fold 1 selects 64
+Of the 250 compared records, 240 have exact scientific-field agreement. Across all
+records, 230,189 of 230,328 numeric fields match exactly; 139 fields differ beyond
+the declared tolerances in ten clustering/KM-Prox records. The full difference
+list distinguishes validation/selection changes from test-score changes.
+At penalty 10, GTE/SPROUT IID fold 1 selects 64
 rather than 128 clusters and reports Avengers-Pro utility 0.8470125159489633
 rather than 0.8455388292321713. At penalty 0, L21/RouterBench OOD fold 5 reports
 Avengers-Pro reward 0.73125 rather than 0.72. The KM-Prox mean-utility
@@ -81,9 +81,9 @@ difference at penalty 150 is about 5.64e-7 and is retained as a difference.
 Their cause is not yet established. These are actual differences, not a successful reproduction claim;
 no data, selection grid or tolerance was changed to remove them.
 
-The 5,161 policy scores include prompt routers, clustering/metadata diagnostics
-and single-model/oracle controls; they are not 5,161 independent fitted models.
-The 116 source/config hash differences match transitions already recorded in
+The 6,500 policy scores include prompt routers, clustering/metadata diagnostics
+and single-model/oracle controls; they are not 6,500 independent fitted models.
+The 138 source/config hash differences match transitions already recorded in
 `release_provenance/source_changes.json`, and the new source bytes were checked
 against that registry. These provenance differences and all scientific differences
 remain explicit in the report. The complete main-baseline comparison has not passed.
@@ -96,23 +96,54 @@ and 322 new source transforms were checked, including independently reconstructe
 training/test rows, reference ternary search and independent Ridge objectives.
 [`v1_utility_preflight.json`](../release_provenance/current_checks/v1_utility_preflight.json)
 records that internal validation. It does not certify that the new PCA caches or
-downstream choices equal the historical ones. The probes are running; both final
-GPU workers are queued after all 23 probe jobs exit successfully.
+downstream choices equal the historical ones. All 23 probe tasks and both final
+GPU workers have now completed, with no continuation workers remaining.
 
-The first two completed RouterBench IID probe records have been compared with
-the frozen selections. They differ in 18 of 286 selected layers and in 221 fields
-overall, including validation MSE and search traces. Scientific protocol settings
-match; the changed runtime NVIDIA-config fingerprint is recorded separately.
-All 99 comparable MSE values at unchanged selected canonical layers 21/23/25 match
-exactly. The other 187 MSE values differ: 169 retain the same noncanonical selected
-layer and 18 have a different selected layer. This pattern does not establish
+All 23 new probe records have been compared with the frozen selections. They
+differ in 185 of 3,575 selected layers and in 2,833 fields overall, including
+validation MSE and search traces. Scientific protocol settings match; the changed
+runtime NVIDIA-config fingerprint is recorded separately. All 1,105 comparable
+MSE values at unchanged selected canonical layers 21/23/25 match exactly. The
+other 2,470 MSE values differ: 2,285 retain the same noncanonical selected layer
+and 185 have a different selected layer. This pattern does not establish
 whether raw extraction, PCA fitting, runtime differences or another cause explains
 the deviation. Historical cached-input fingerprints are the next comparison.
 [`v1_utility_probe_comparison.json`](../release_provenance/current_checks/v1_utility_probe_comparison.json)
-retains every difference and the incomplete 2/23 coverage. Final trained scores
-and paper-precision agreement have not yet been established.
+retains every difference and the complete 23/23 selection coverage.
 
-One of six isolated, unchanged-protocol repetitions is complete. For GTE/SPROUT
+The final-model workers generated all 2,990 prescribed fits. All 23 independent
+production audit tasks completed successfully, checking saved checkpoints against
+predictions, query alignment, validation MSE, retained seeds, ensembles and 299
+utility scores. This establishes internal consistency of the new execution.
+It does not establish agreement with the original execution: 223 of 299 retained
+seed sets differ, and 7,698 of 13,335 compared numeric result fields differ.
+[`v1_final_utility.json`](../release_provenance/current_checks/v1_final_utility.json)
+preserves those differences and prediction fingerprints.
+
+Mean utility, weighted over test queries within each penalty and then averaged
+over all 13 penalties, is:
+
+| Dataset | Protocol | Original | Fresh | Fresh minus original |
+| --- | --- | ---: | ---: | ---: |
+| RouterBench | IID | 0.737972293 | 0.738044253 | +0.000071960 |
+| RouterBench | OOD | 0.694920043 | 0.690112512 | -0.004807531 |
+| SPROUT | IID | 0.818570330 | 0.818403008 | -0.000167322 |
+| SPROUT | OOD | 0.782869138 | 0.782003154 | -0.000865983 |
+
+None of these four means matches at six decimal places. This explicit rounding
+comparison is separate from manuscript-specific printed precision and scientific
+interpretation. No historical score, candidate, seed or tolerance was changed.
+The aggregate comparison job stopped when it reached the absent reduced-baseline
+`scores.csv`, after checking the 299 scores and 2,990 fit records. It must be rerun
+after the reduced-MLP report completes; the successful per-fold audits are retained.
+
+The fresh predicted-label lookup stage completed all ten folds and its aggregate
+report. All 1,400 per-fold and 265 aggregate numeric values match exactly, as do
+the compared nonnumeric fields. Runtime and scheduler identifiers are excluded;
+result and prediction completion fingerprints remain in
+[`v1_deployable_lookup.json`](../release_provenance/current_checks/v1_deployable_lookup.json).
+
+All six isolated, unchanged-protocol repetitions are complete. For GTE/SPROUT
 IID fold 1 clustering, it differs in 157 compared fields from the primary new run
 and in 140 from the frozen reference. At penalty 10 it selects 128 clusters,
 compared with 64 in the primary run, and reports utility 0.8456225896939318.
@@ -120,9 +151,13 @@ The code, input sources, splits, random seed, candidate grid and four-thread
 settings were preserved; the repetition records its CPU and numerical libraries.
 This establishes variation across the tested executions, without establishing
 whether hardware, parallel reductions or numerical/tie sensitivity caused it.
-The original primary outputs are retained. The partial record is
-[`v1_cluster_repetitions.json`](../release_provenance/current_checks/v1_cluster_repetitions.json);
-the other five prescribed repetitions remain incomplete.
+The original primary outputs are retained. L21/RouterBench OOD fold 2 clustering
+matches the primary execution and still differs from the frozen reference.
+OOD fold 4 clustering and KM-Prox match the frozen reference while differing from
+the primary execution. The other repetitions retain their differences from both.
+[`v1_cluster_repetitions.json`](../release_provenance/current_checks/v1_cluster_repetitions.json)
+records every comparison, including the unfavorable outcomes. These six cases
+do not cover every discrepancy in the complete 250-record baseline checkpoint.
 
 `scripts/compare_baseline_results.py` makes this comparison reusable and refuses
 to count missing experiments as matches. Fourteen adversarial tests cover

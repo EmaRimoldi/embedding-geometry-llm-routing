@@ -1,0 +1,164 @@
+{
+  "completed_records": 10,
+  "expected_records": 10,
+  "records": [
+    {
+      "path": "results/diagnostics/deployable_lookup/routerbench-0shot/iid_0/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    },
+    {
+      "path": "results/diagnostics/deployable_lookup/routerbench-0shot/iid_1/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    },
+    {
+      "path": "results/diagnostics/deployable_lookup/routerbench-0shot/iid_2/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    },
+    {
+      "path": "results/diagnostics/deployable_lookup/routerbench-0shot/iid_3/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    },
+    {
+      "path": "results/diagnostics/deployable_lookup/routerbench-0shot/iid_4/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    },
+    {
+      "path": "results/diagnostics/deployable_lookup/sprout-sixfam/iid_0/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    },
+    {
+      "path": "results/diagnostics/deployable_lookup/sprout-sixfam/iid_1/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    },
+    {
+      "path": "results/diagnostics/deployable_lookup/sprout-sixfam/iid_2/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    },
+    {
+      "path": "results/diagnostics/deployable_lookup/sprout-sixfam/iid_3/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    },
+    {
+      "path": "results/diagnostics/deployable_lookup/sprout-sixfam/iid_4/result.json",
+      "counts": {
+        "numeric_values": 140,
+        "exact_numeric_values": 140,
+        "other_values": 35
+      },
+      "differences": [],
+      "beyond_tolerance": 0
+    }
+  ],
+  "summary": {
+    "counts": {
+      "numeric_values": 265,
+      "exact_numeric_values": 265,
+      "other_values": 115
+    },
+    "differences": [],
+    "beyond_tolerance": 0
+  },
+  "complete": true,
+  "passed": true,
+  "scope": "Fresh predicted-label lookup folds and aggregate report, excluding elapsed time and job ID only.",
+  "collected_at_utc": "2026-10-29T03:15:30.228870+00:00",
+  "source_commit": "a8ab76b62bc8f7562bbef70d7a9d7e9294ee0957",
+  "completion_fingerprints": {
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_0/complete.json": {
+      "result_sha256": "9810e87f41def4c7add549a2accfbff550c4998dc95bb218b0314699c5fa8488",
+      "prediction_sha256": "9e072ec4e23d1de3c151392bd8ecdfb13cb19239655d399ee79786c18fa4fb88"
+    },
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_1/complete.json": {
+      "result_sha256": "39d5fd29bb23ad9577d55d9bc80049f03e7b293f568ed810f9f255c47aa24c3b",
+      "prediction_sha256": "74fbd4aaed9fe730b1cdec3777f1f12b6557062b676fba86621ddf8dbba59ecd"
+    },
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_2/complete.json": {
+      "result_sha256": "0c111b5607dee83634c8094314ba15916e7ca20cde71579d66348d0234848156",
+      "prediction_sha256": "cf25b793eb1d0c3da144c80164ae987dab761627b8ba96a60fdb70588d0ef412"
+    },
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_3/complete.json": {
+      "result_sha256": "9a80d89221eab90ca629ad6e1b0abf1fb662952e7c7fc71bfb73948e6386e9a5",
+      "prediction_sha256": "920d9db59df5299f16afeb40adf615c02c9d1cc2a112732b6b1d698d3d89aef6"
+    },
+    "results/diagnostics/deployable_lookup/routerbench-0shot/iid_4/complete.json": {
+      "result_sha256": "acdebf378965f9ad1cf8d31cddd2e587b970984e63be1c163800dec9feead1ff",
+      "prediction_sha256": "02dd4d93ff9a332e378722884df70541464195d1ef5fe840cc61a5fb52dd1abc"
+    },
+    "results/diagnostics/deployable_lookup/sprout-sixfam/iid_0/complete.json": {
+      "result_sha256": "c0b1d361cf4b7fe58834317bc350c4726e1be6fc997b5b12593783777df8b5c4",
+      "prediction_sha256": "7deecd31e34f28ba2d3fdc734eff85c51f5446ec6b9a9682bd67b2d7e748a432"
+    },
+    "results/diagnostics/deployable_lookup/sprout-sixfam/iid_1/complete.json": {
+      "result_sha256": "69a295c50f056e7feaee1fe5862a94489ea344d3d90409a9d23161582d1d9140",
+      "prediction_sha256": "52194302c286f5f92cdbcd352db8cabb4a7c83e80f56ba0b630079c20db3a702"
+    },
+    "results/diagnostics/deployable_lookup/sprout-sixfam/iid_2/complete.json": {
+      "result_sha256": "7c6aee5c13150374918c547bdeb0a277b91170980cc9d39662414e10fe0b0b8a",
+      "prediction_sha256": "a5379896aac8850f73d6a2c5c01ec9848dd83f8a1d9745f794d77c1a3059df8f"
+    },
+    "results/diagnostics/deployable_lookup/sprout-sixfam/iid_3/complete.json": {
+      "result_sha256": "d570c4c2a339db9533c895ea62da0e9355730b97b20c1c25b0f71f25d94f68b8",
+      "prediction_sha256": "cac3fb7fcf4e05b4c993c4ede4003a5a06e156fcae1b069d121d39e81eb9bc59"
+    },
+    "results/diagnostics/deployable_lookup/sprout-sixfam/iid_4/complete.json": {
+      "result_sha256": "1765beecee553061ef8a93ac1b7cf9d81dacb566d710c85dc70a142ac371b368",
+      "prediction_sha256": "1b71c46998d6075e1f6de74f241b087b5ac3c1f3ccbf4377248648665fef0ef7"
+    }
+  },
+  "source_sha256": "e0ddf142c20d5966ec39d74850cf95c70ff26b4d65235d74b8e55d2074d40676",
+  "reference_evidence_manifest_sha256": "699e0ccaf9c63fdf5ea1e24ee9b2eaded44a39f2d514dad73e8b772d27dd6167"
+}

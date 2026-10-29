@@ -149,8 +149,8 @@
       "sha256": "26a34744ee612cfd4225156ec57e096ecc2f564074293553b3f8529771623224"
     },
     "docs/REPRODUCTION_AUDIT.md": {
-      "bytes": 16917,
-      "sha256": "64a40f46d69921ce2a394201c8739fb608000c327b7ad72d8cfe57b2df021332"
+      "bytes": 19469,
+      "sha256": "96aba758831e51c8640b47845c9bc36d627c82e76afa235d9913f1fdd0ccb947"
     },
     "docs/RESOURCES.md": {
       "bytes": 9910,
@@ -177,8 +177,8 @@
       "sha256": "1c29baf9251267b49c0bfb5d8280ea592984c273aada8365ad818552b0440764"
     },
     "docs/RUN_COMMANDS.md": {
-      "bytes": 17975,
-      "sha256": "f5414ba6b0754e18f941f545e27f155a9f5147aa42f0d04aa21416f9858691de"
+      "bytes": 18497,
+      "sha256": "37242fd5552a6647be626a867add2ba82795ac9561d06fa251716fec73bc00d9"
     },
     "docs/SAVED_TABLES.md": {
       "bytes": 2768,
@@ -581,16 +581,24 @@
       "sha256": "72ee925d1941359c7242758a1f704980e88c9b88633b82a98b67ea7ab2e1ecfb"
     },
     "release_provenance/current_checks/v1_cluster_repetitions.json": {
-      "bytes": 177080,
-      "sha256": "1a5dad4b86a3eac245b06db48caf96d71dbbdac6e7672254368f0db099fec1d2"
+      "bytes": 164376,
+      "sha256": "27b27810de0e137b064cd9c603140a24dd7bdf043ab6d013af26fb5984ae86a1"
     },
     "release_provenance/current_checks/v1_cpu_diagnostics.json": {
       "bytes": 8854,
       "sha256": "94fd01f8a43254db5363f16e510f85d33f511bf21ffa5d74d1784d2b5224fd48"
     },
+    "release_provenance/current_checks/v1_deployable_lookup.json": {
+      "bytes": 6277,
+      "sha256": "1d432d8ce31fe63e4bb444072e163664b6e2c118f21397fbf73c95f5e605c3c5"
+    },
+    "release_provenance/current_checks/v1_final_utility.json": {
+      "bytes": 2608755,
+      "sha256": "de308f3c60143e448c79d8804263489ef4c09281964075a88d474d50141c0bf1"
+    },
     "release_provenance/current_checks/v1_fresh_baselines.json": {
-      "bytes": 178311,
-      "sha256": "baf4e163e4c60382b319244b05ec4ca2c2780b4326ea4c8dc9f96dff900398d2"
+      "bytes": 216575,
+      "sha256": "870c0542ddbbcbd9eb4d32d368b676614020f908dfeda1e52b04c1f0c4bf8e4e"
     },
     "release_provenance/current_checks/v1_full_encoders.json": {
       "bytes": 30310,
@@ -609,8 +617,8 @@
       "sha256": "67c5743dcca0284f290c5b555070f192bf779db3bdc792a512ff695244970b6b"
     },
     "release_provenance/current_checks/v1_utility_probe_comparison.json": {
-      "bytes": 88009,
-      "sha256": "e065057352b38397f2504dc412d1c0b59d43562877456ee79ef2999331ac3e45"
+      "bytes": 1073697,
+      "sha256": "716707cdaccc1fae446577fe6d0aedb1dc0270fcad43ce86f444f37ed26768fb"
     },
     "release_provenance/original_source_hashes.json": {
       "bytes": 18876,
