@@ -22,6 +22,7 @@
     "jobs/nvidia_utility_audit.sbatch",
     "jobs/nvidia_utility_audit_task.sbatch",
     "jobs/nvidia_utility_report.sbatch",
+    "scripts/submit_utility_report.py",
     "configs/nvidia_utility_v1.json",
     "src/baselines/common.py",
     "src/baselines/run_mlp.py",

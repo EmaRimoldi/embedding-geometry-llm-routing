@@ -212,7 +212,7 @@
   {
     "path": "jobs/baselines_reduced_report.sbatch",
     "original_sha256": "17fa8873c7f6530b19181ad6a5442bb2805b6c48efe898c9399c49b22400c007",
-    "release_sha256": "a5f33591eb6fc12f96bda38eeb03c80fc1774b4ae1e58f2165c1b93f8530e5f2"
+    "release_sha256": "8fe68e9725181d3954d8f1fd2f25328b9369de63a60c94d8abb423ce8a30e2b8"
   },
   {
     "path": "jobs/nvidia_extract.sbatch",
@@ -332,7 +332,7 @@
   {
     "path": "jobs/nvidia_utility_audit.sbatch",
     "original_sha256": "5353df6829b69a31e13c7b476010e091b45f17823bbe5d2c9cf29128df867650",
-    "release_sha256": "f6d51047a83b8a07ea605041c77297616460e2d8106d7d047eb009d0327808a8"
+    "release_sha256": "2e11f654af0150ee6bd0992cad839cf67dfe24e0af3b301c6117163680f2ba10"
   },
   {
     "path": "jobs/nvidia_utility_audit_task.sbatch",

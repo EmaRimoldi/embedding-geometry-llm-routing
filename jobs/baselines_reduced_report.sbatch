@@ -9,3 +9,4 @@ source "$PWD/jobs/env.sh"
 "$PAPER_PYTHON" -u src/baselines/run_mlp_reduced.py --audit
 "$PAPER_PYTHON" -u src/baselines/report_reduced.py
 "$PAPER_PYTHON" -u src/baselines/report_ridge.py
+"$PAPER_PYTHON" -B scripts/submit_utility_report.py

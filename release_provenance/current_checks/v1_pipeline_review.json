@@ -1,0 +1,94 @@
+{
+  "version": 1,
+  "status": "pipeline checks passed; full fresh campaign stopped at owner request",
+  "checked_at_utc": "2026-10-29T09:42:16.144716+00:00",
+  "scope": "Pipeline correctness and orchestration checks on synthetic fixtures plus previously audited evidence. No full scientific experiment reruns were resumed. This is not proof of complete historical numerical reproduction.",
+  "campaign_stop": {
+    "active_campaign_jobs_after_stop": 0,
+    "existing_outputs_preserved": true,
+    "completed_reduced_mlp_records": 32,
+    "expected_reduced_mlp_records": 46,
+    "full_numerical_reproduction_complete": false,
+    "periodic_monitor_removed": true
+  },
+  "correction": {
+    "problem": "The aggregate utility report was submitted after its audit array even when the required reduced-baseline scores were missing. A real campaign report failed at that missing prerequisite.",
+    "behavior": "Register the audit array, defer missing or partial baseline summaries, and submit the aggregate report when both prerequisites are available. Use afterok for unfinished audits; omit a potentially expired dependency only after all 23 accounting records show successful completion. A file lock serializes repeated or concurrent calls.",
+    "scientific_source_or_configuration_changes": false,
+    "existing_output_provenance_rebound": false,
+    "applies_to": "Fresh reproduction copies; stopped campaign outputs retain their original source fingerprints."
+  },
+  "validation": {
+    "regression_before_correction": "Real audit-launcher test failed: two sbatch calls, including the premature report, instead of one audit-array submission.",
+    "regression_after_correction": {
+      "passed": true,
+      "cases": 12,
+      "coverage": [
+        "Real audit launcher defers missing baselines",
+        "Partial baseline CSV/status is not complete",
+        "Utility audit finishes first",
+        "Baselines finish first",
+        "Repeated completion calls",
+        "Concurrent completion calls",
+        "Scheduler failure preserves dependency without marking submission successful",
+        "Invalid scheduler job identifiers",
+        "Completed audit IDs retained only in accounting",
+        "Incomplete accounting retains afterok dependency",
+        "Failed and cancelled audit tasks cannot submit a report"
+      ]
+    },
+    "pytest": {
+      "passed": true,
+      "tests": 54
+    },
+    "synthetic_production_smoke": {
+      "passed": true,
+      "baseline_score_checks": 260,
+      "mlp_sklearn_equivalence_cases": 16,
+      "ridge_direct_utility_checks": 36,
+      "utility_independent_ridge_predictions": 180,
+      "utility_reference_search_paths": 6,
+      "trained_toy_networks_cpu": 20,
+      "checkpoint_reloads_cpu": 20,
+      "cost_applied_once": true,
+      "heldout_cost_does_not_change_routes": true,
+      "pca_full_svd_checks": 10,
+      "pca_randomized_checks": 10,
+      "orchestration_categories": 17,
+      "real_slurm_submissions": 0,
+      "new_gpu_experiments": 0
+    },
+    "commands": [
+      ".venv/bin/python -B -m pytest -q tests",
+      "make smoke",
+      ".venv/bin/python -B scripts/smoke_orchestration.py",
+      "make tables",
+      "make verify PYTHON=/usr/bin/python3"
+    ],
+    "python_version": "3.11.15",
+    "saved_evidence_checks": {
+      "passed": true,
+      "files": 1758,
+      "manuscript_numeric_checks": 5493,
+      "table_labels": 44,
+      "scope": "Saved-evidence reconstruction and printed references, not new full experiments."
+    },
+    "saved_table_renderers": {
+      "passed": true,
+      "families": 4,
+      "tables": 7
+    }
+  },
+  "tested_source_sha256": {
+    "jobs/nvidia_utility_audit.sbatch": "2e11f654af0150ee6bd0992cad839cf67dfe24e0af3b301c6117163680f2ba10",
+    "jobs/baselines_reduced_report.sbatch": "8fe68e9725181d3954d8f1fd2f25328b9369de63a60c94d8abb423ce8a30e2b8",
+    "scripts/submit_utility_report.py": "4526cf1d8f9c1da31003d81256aaea618b9ff5271b781c88f5e7896ad06e7589",
+    "tests/test_utility_report_submission.py": "4ca3aa114f26a3c30a09f8ca9f019b7a9ab7db1e8279032863084647587da344",
+    "environment/runtime_manifest_paths.json": "bedbd1599246bbb0b9660f7d286d8c3141e525c97fa1875af7b7c9987824c960"
+  },
+  "preserved_release": {
+    "tag": "v1.0.0",
+    "commit": "a8ab76b62bc8f7562bbef70d7a9d7e9294ee0957",
+    "zip_sha256": "8f4792ff6ff45d56937c3d98e00cecb55991fbee7c397efdf55e3e6baa54d0fb"
+  }
+}

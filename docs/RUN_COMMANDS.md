@@ -120,6 +120,7 @@ After all baseline jobs finish:
 .venv/bin/python -B src/baselines/run_mlp_reduced.py --audit
 .venv/bin/python -B src/baselines/report_reduced.py
 .venv/bin/python -B src/baselines/report_ridge.py
+.venv/bin/python -B scripts/submit_utility_report.py
 ```
 
 Compare the newly generated main-baseline records with the pinned original
@@ -184,15 +185,25 @@ sbatch jobs/nvidia_utility_train.sbatch 0
 sbatch jobs/nvidia_utility_train.sbatch 1
 ```
 
-Both workers finishing triggers the independent audit array/report. To submit
+Both workers finishing triggers the independent audit array. To submit
 the audit explicitly after complete training:
 `sbatch jobs/nvidia_utility_audit.sbatch`.
 
-The aggregate comparison also requires the completed baseline report at
-`results/baselines/_summary_reduced/scores.csv`. If training and the per-fold
-audits finish before that prerequisite, preserve them and rerun only
-`sbatch jobs/nvidia_utility_report.sbatch` after the reduced-baseline report
-completes. A missing comparator summary does not require retraining the networks.
+The aggregate comparison waits for both the utility audit array and the complete
+baseline report (`_summary_reduced/status.json` and `scores.csv`). The audit
+launcher and reduced-baseline report launcher both call
+`scripts/submit_utility_report.py`; their calls are serialized to submit one report.
+It uses an `afterok` dependency while the registered audit array is unfinished;
+if accounting already verifies all 23 audit tasks as successful, it submits
+without recreating a dependency on a retired job ID. Slurm limits how long
+completed IDs remain usable for [new dependencies](https://slurm.schedmd.com/sbatch.html#OPT_dependency).
+Missing or partial baseline
+summaries are recorded as `waiting_for_baselines` in
+`results/nvidia_layer_validation/utility_v1/finished/audit_submission.json`.
+If generating the baseline report manually, run the helper as shown above after
+the report completes. Repeated helper calls are safe and do not repeat training.
+To rerun an already submitted aggregate report explicitly, use
+`sbatch jobs/nvidia_utility_report.sbatch` after checking both prerequisites.
 
 This implementation uses the **per-target Ridge probe and reference ternary
 search**, concatenated PCA100 blocks and the reference SharedTrunkNet with MSE

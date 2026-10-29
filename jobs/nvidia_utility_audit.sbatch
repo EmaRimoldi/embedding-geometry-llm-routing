@@ -8,10 +8,4 @@ set -euo pipefail
 source "$PWD/jobs/env.sh"
 array=$(sbatch --parsable --array=0-22%4 jobs/nvidia_utility_audit_task.sbatch)
 array=${array%%;*}
-report=$(sbatch --parsable --dependency=afterok:"$array" jobs/nvidia_utility_report.sbatch)
-"$PAPER_PYTHON" - "$array" "$report" <<'PY'
-import json,sys
-from pathlib import Path
-p=Path("results/nvidia_layer_validation/utility_v1/finished/audit_submission.json")
-p.write_text(json.dumps(dict(audit_array=sys.argv[1],report=sys.argv[2]),indent=2)+"\n")
-PY
+"$PAPER_PYTHON" -B scripts/submit_utility_report.py --audit-array "$array"

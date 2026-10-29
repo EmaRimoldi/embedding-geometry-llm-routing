@@ -6,6 +6,17 @@ The original archive passed its 1,981-file release-manifest check before any cha
 `release_provenance/conference_original_manifest.json` preserves those original
 fingerprints; `release_provenance/release_manifest.json` describes this repository.
 
+The owner stopped the full fresh-experiment campaign on 2026-10-29 and requested
+a pipeline review instead. All remaining campaign jobs were cancelled, the
+periodic monitor was removed, and existing outputs were preserved. At that point
+32 of 46 reduced-MLP result records existed; the published 16-record checkpoint
+below remains a separately scoped comparison. Unfinished experiments and full
+numerical reproduction remain incomplete, rather than being counted as passes.
+Pipeline validation uses regression tests and small synthetic production runs;
+it does not resume the full scientific experiment grid.
+[`v1_pipeline_review.json`](../release_provenance/current_checks/v1_pipeline_review.json)
+records the revised scope, source fingerprints and executed pipeline checks.
+
 ## Executed checks
 
 | Level | Actual execution | Outcome |
@@ -166,8 +177,18 @@ None of these four means matches at six decimal places. This explicit rounding
 comparison is separate from manuscript-specific printed precision and scientific
 interpretation. No historical score, candidate, seed or tolerance was changed.
 The aggregate comparison job stopped when it reached the absent reduced-baseline
-`scores.csv`, after checking the 299 scores and 2,990 fit records. It must be rerun
-after the reduced-MLP report completes; the successful per-fold audits are retained.
+`scores.csv`, after checking the 299 scores and 2,990 fit records. Its historical
+failure and the successful per-fold audits are retained. The launcher now defers
+that comparison until the complete baseline report exists and submits it with
+an `afterok` dependency on an unfinished utility audit array, or verifies all 23
+successful accounting records before submitting after that array has ended.
+Either completion order is
+supported, and a file lock prevents duplicate report submissions. Regression
+coverage includes the previously failing missing-baseline case, partial summaries,
+both completion orders, concurrent calls, retired job IDs, failed audit tasks
+and scheduler failure. This orchestration
+correction changes no fitting, selection, scientific settings or existing results.
+It applies to fresh run copies; existing provenance is not rebound to new sources.
 
 The fresh predicted-label lookup stage completed all ten folds and its aggregate
 report. All 1,400 per-fold and 265 aggregate numeric values match exactly, as do
