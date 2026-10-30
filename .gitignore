@@ -7,18 +7,18 @@ __pycache__/
 *.pyc
 .pytest_cache/
 logs/
-datasets/*
-!datasets/proof_twins_v1/
-datasets/proof_twins_v1/*
-!datasets/proof_twins_v1/prepared/
-datasets/proof_twins_v1/prepared/*
-!datasets/proof_twins_v1/prepared/queries.jsonl
-embedders/
-artifacts/
+experiments/datasets/*
+!experiments/datasets/proof_twins_v1/
+experiments/datasets/proof_twins_v1/*
+!experiments/datasets/proof_twins_v1/prepared/
+experiments/datasets/proof_twins_v1/prepared/*
+!experiments/datasets/proof_twins_v1/prepared/queries.jsonl
+experiments/embedders/
+experiments/artifacts/
 /paper/
-results/*
-!results/evidence/
-!results/release_evidence_manifest.json
+experiments/results/*
+!experiments/results/evidence/
+!experiments/results/release_evidence_manifest.json
 
 # Local audit inputs and extracted original submission
 incoming/

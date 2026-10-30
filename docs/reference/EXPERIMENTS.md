@@ -1,7 +1,7 @@
 # Experiment-to-command map
 
 This map covers all 44 table labels in the pinned paper-reference registry,
-[configs/paper_reference.json](../../configs/paper_reference.json), whose source is
+[configs/paper_reference.json](../../experiments/configs/paper_reference.json), whose source is
 Overleaf snapshot `6e3bea88ec5d65de3587c0719025702e110ac3e0`. It distinguishes
 numeric checks against that reference from new experimental execution.
 
@@ -22,6 +22,8 @@ environment. They do not treat frozen scores as fresh measurements. Full-study
 stages must run after their prerequisites, in a new reproduction copy.
 
 ## Scientific stages
+
+Scientific paths in this section are relative to the [experiments/ workspace](../../experiments/README.md).
 
 Outputs below are fresh runtime paths. Their saved counterparts live under
 `results/evidence/`, with the leading `results/` replaced by `results/evidence/`.

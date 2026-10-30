@@ -65,7 +65,7 @@ def markdown_anchors(text):
 
 LINK = re.compile(r'\]\(\s*(<[^>\n]+>|[^\s)]+)(?:\s+["\'][^\n]*?["\'])?\s*\)')
 REFERENCE = re.compile(r'^ {0,3}\[[^\]\n]+\]:\s*(<[^>\n]+>|\S+)', re.M)
-PATH = re.compile(r'(?<![\w.-])(?:src|scripts|jobs|configs|environment|manifests|docs|release_provenance)/[\w./*?\[\]{}<>$-]+')
+PATH = re.compile(r'(?<![\w.-])(?:experiments|src|scripts|jobs|configs|environment|manifests|docs|release_provenance)/[\w./*?\[\]{}<>$-]+')
 
 
 def check(root=ROOT):
@@ -73,7 +73,7 @@ def check(root=ROOT):
     files = {p.relative_to(root) for p in public_files(root)}
     directories = {parent for path in files for parent in path.parents}
     documents = sorted(p for p in files if p.suffix.lower() in {'.md', '.html'}
-                       and (len(p.parts) == 1 or p.parts[0] == 'docs'))
+                       and (len(p.parts) == 1 or p.parts[0] == 'docs' or p == Path('experiments/README.md')))
     texts = {p: (root / p).read_text() for p in documents}
     anchors, links, graph = {}, {}, {}
     errors, local_links, source_paths = [], 0, 0
@@ -117,22 +117,32 @@ def check(root=ROOT):
             if parsed.fragment and relative in anchors and unquote(parsed.fragment) not in anchors[relative]:
                 problem(path, line, value, 'Missing heading or HTML anchor')
 
-    # These literal paths use repository-root semantics even in nested manuals.
+    # Literal paths use the repository or scientific workspace conventions below.
     # Generated data/results and variable placeholders are deliberately separate.
     command_sources = {p: text for p, text in texts.items() if p.suffix == '.md'}
-    command_sources.update({p: (root / p).read_text() for p in files if p.parts[0] == 'jobs'
+    command_sources.update({p: (root / p).read_text() for p in files if p.parts[:2] == ('experiments', 'jobs')
                             and p.suffix in {'.sbatch', '.sh'}})
+    command_sources.update({p: (root / p).read_text() for p in files
+                            if p == Path('Makefile') or p.parts[:2] == ('.github', 'workflows')})
     for path, text in command_sources.items():
         text = LINK.sub('', text)
         for match in PATH.finditer(text):
             value = match[0].rstrip('.,:;')
             if '...' in value or any(token in value for token in '<>{}$'):
                 continue
+            if value.startswith(('experiments/.venv', 'experiments/.cache/', 'experiments/.setup/',
+                                 'experiments/logs/', 'experiments/embedders/', 'experiments/artifacts/',
+                                 'experiments/results/reproduced/')):
+                continue
             source_paths += 1
+            # Bare scientific paths are relative to the documented experiments/
+            # working directory; repository links always use explicit relative URLs.
             candidate = Path(value)
+            if candidate.parts[0] in {'src', 'scripts', 'jobs', 'configs', 'environment', 'manifests', 'release_provenance'}:
+                candidate = Path('experiments') / candidate
             exists = candidate in files or candidate in directories
             if any(token in value for token in '*?['):
-                exists = any(p.match(value.rstrip('/')) for p in files | directories)
+                exists = any(p.match(str(candidate).rstrip('/')) for p in files | directories)
             if not exists:
                 problem(path, text.count('\n', 0, match.start()) + 1, value,
                         'Missing versioned path in a command or inline reference')
@@ -150,7 +160,7 @@ def check(root=ROOT):
     return dict(passed=not errors, documents=len(documents), local_links=local_links,
                 versioned_paths=source_paths, unreachable_documents=orphaned, errors=errors,
                 scope='Offline exported-file links, Markdown/HTML anchors, manual reachability and '
-                      'literal versioned paths in manuals/job launchers. External URLs and generated '
+                      'literal versioned paths in manuals, job launchers, Makefile and CI. External URLs and generated '
                       'runtime inputs/outputs are not executed or fetched.')
 
 

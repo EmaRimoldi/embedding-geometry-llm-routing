@@ -7,7 +7,7 @@ const path = require('node:path');
 const {pathToFileURL} = require('node:url');
 const {chromium} = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const root = path.resolve(__dirname, '..');
-const target = path.join(root, 'docs/demo');
+const target = path.join(root, '..', 'docs/demo');
 const cache = path.join(root, '.cache/readme-demo');
 const frames = path.join(cache, 'frames');
 

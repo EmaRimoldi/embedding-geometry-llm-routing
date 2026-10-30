@@ -156,13 +156,16 @@ def main():
     baseline_inputs = fresh_results / "baselines"
     if output == baseline_inputs or baseline_inputs in output.parents or output == Path(__file__).resolve():
         parser.error("Output must not overwrite fresh baseline inputs or the auditor.")
-    release = json.loads((ROOT / "release_provenance/release_manifest.json").read_text())["files"]
-    for source_root in {ROOT, fresh_results.parent}:
+    repository_release = json.loads((ROOT / "release_provenance/release_manifest.json").read_text())["files"]
+    release = {path.removeprefix('experiments/'): record for path, record in repository_release.items()
+               if path.startswith('experiments/')}
+    for source_root in {ROOT, fresh_results.parent, ROOT.parent}:
         try:
             relative_output = str(output.relative_to(source_root))
         except ValueError:
             continue
-        if relative_output in release:
+        protected = repository_release if source_root == ROOT.parent else release
+        if relative_output in protected:
             parser.error("Output must not overwrite a pinned project file.")
     def pinned(relative):
         content = (ROOT / relative).read_bytes()

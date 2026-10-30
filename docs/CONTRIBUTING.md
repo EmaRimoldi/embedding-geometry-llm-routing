@@ -6,7 +6,7 @@ hashes, expected result and observed result. Include a small log excerpt with
 credentials and machine-specific details removed.
 
 For code changes, run `make test` and the relevant component check in the pinned
-CPU environment described in the [setup guide](docs/guides/RUN_COMMANDS.md#platform-and-setup).
+CPU environment described in the [setup guide](guides/RUN_COMMANDS.md#platform-and-setup).
 `COMPUTE_PYTHON` can select another installed interpreter.
 Explain any effect on row selection, source/test separation, seeds, penalties,
 aggregation or uncertainty. Add a regression case for a demonstrated bug.
@@ -31,13 +31,13 @@ documented producers; they are not required for the documentation check.
 
 Commit the changed files and regenerated current manifest together. `make manifest`
 does not write `dist/` or change a published release. Use `make package` only when
-intentionally creating a new version, following the [release guide](docs/releases/RELEASE.md).
+intentionally creating a new version, following the [release guide](releases/RELEASE.md).
 Preserve earlier tags and attached release assets.
 
 Large data, embeddings, checkpoints, environments and temporary outputs remain
 outside Git. The directory and retention policy is in
-[docs/reference/STRUCTURE.md](docs/reference/STRUCTURE.md).
+[docs/reference/STRUCTURE.md](reference/STRUCTURE.md).
 
-Original contributions use CC BY 4.0 as described in [LICENSE](LICENSE), with
+Original contributions use CC BY 4.0 as described in [LICENSE](../LICENSE), with
 third-party exceptions listed in [THIRD_PARTY.md](THIRD_PARTY.md). Retain upstream
 attribution when adapting existing components.

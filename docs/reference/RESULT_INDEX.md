@@ -1,8 +1,10 @@
 # Result evidence and reconstruction
 
+Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+
 This release contains a compact snapshot of saved experiment results under `results/evidence/`. It includes completed outcomes, all recorded cost penalties, negative results, incomplete-state indicators, uncertainty reports and numerical audits. Evidence is isolated from the runtime result directories so a full rerun does not mistake exported summaries for completed model fits.
 
-Run from the release root:
+Run from the scientific workspace:
 
 ```bash
 python3 -B scripts/reproduce_results.py --verify-only

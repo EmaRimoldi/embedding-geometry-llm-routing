@@ -1,5 +1,7 @@
 # Reviewer smoke: actual PCA100 preprocessing
 
+Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+
 ## Reproduction command
 
 Run inside a CPU allocation using the compute environment:

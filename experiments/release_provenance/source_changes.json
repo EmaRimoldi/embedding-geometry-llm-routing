@@ -1,0 +1,531 @@
+[
+  {
+    "path": "src/geometry.py",
+    "original_sha256": "12c83d3b489c9f3c0f4c20123e129d14b155896ccb85a18d271ac79a484e77c0",
+    "release_sha256": "bd7bb305ee05b2ee178344bc524de3ebc1e32298a695df9e53324af08e9827d1",
+    "release_path": "experiments/src/geometry.py"
+  },
+  {
+    "path": "src/run_geometry_batch.py",
+    "original_sha256": "5f2ef100ceb88dea751076278851ee5c10fdadd001c1c9604618c4066e7b7b55",
+    "release_sha256": "e27a90f0ef370cdddbc6fb9bee49f28eb7ea9b96a24ef9c94b7d48aced5e6fb7",
+    "release_path": "experiments/src/run_geometry_batch.py"
+  },
+  {
+    "path": "src/download_assets.py",
+    "original_sha256": "0f4cad1202f80eccf62783b8573a5a1be3e80ca2e8c643bba4bd1ef5d9f66fff",
+    "release_sha256": "962bd92f7b1184fedfb87110793b0b452bd59e4e8930edab3cfec8a63e968eb7",
+    "release_path": "experiments/src/download_assets.py"
+  },
+  {
+    "path": "src/baselines/run_fixed.py",
+    "original_sha256": "d9c8eac76614b5dc44a809600dbbec4f63e7ba0b309ce84fb45ed6b014ff7b41",
+    "release_sha256": "53a5e278beb954dcc5d9b2fee34e30a2e4fec9b87dbb53d1300bdba132b64eda",
+    "release_path": "experiments/src/baselines/run_fixed.py"
+  },
+  {
+    "path": "src/baselines/batched_mlp.py",
+    "original_sha256": "ca61a9d078d4a1e254cc8f577b9c397518d23fdd8aa81016533056ccf8a236f5",
+    "release_sha256": "abf4686bbb2e3a8d6865da62a33d1b30c859e1d06d873b85f79e15c2163b13c1",
+    "release_path": "experiments/src/baselines/batched_mlp.py"
+  },
+  {
+    "path": "src/layer_sweep/run.py",
+    "original_sha256": "544c89ec269d4b16ab90acbf5980786bceab34d710e5bea66da64aa554bb641a",
+    "release_sha256": "dabb83c93f31a7f5aeef01f021b4a5d48b8d3205122bc2a2219b68b7c39589e9",
+    "release_path": "experiments/src/layer_sweep/run.py"
+  },
+  {
+    "path": "src/layer_sweep/report.py",
+    "original_sha256": "faa67bcf5c6f81599c92b443269b84e53f84fcfa6b853cced5c3c3c8f62e20f6",
+    "release_sha256": "fa0a3156b2c886e9041053d9d01765b99de9cd027be6e452fed13af2382f2bec",
+    "release_path": "experiments/src/layer_sweep/report.py"
+  },
+  {
+    "path": "src/paper/build_figures.py",
+    "original_sha256": "3b781b104b2061a2480d398686def3cb64ff6cae9586f902b0e33234cd098108",
+    "release_sha256": "5869db308b66db2923630cd9db1076ea565b4bedb7b3e557738530360a0b4b32",
+    "release_path": null,
+    "retention": "Historical transformation; file is not part of the current export."
+  },
+  {
+    "path": "src/nvidia/compute_report.py",
+    "original_sha256": "cd21b99a4e67b6e7039648543c85324f8ee96870f40ce85041f7badba5348d8b",
+    "release_sha256": "62cf8a4847a1fd6a3c7a330884beb5568a055cad03d30cc5a4c2b29c9844341d",
+    "release_path": "experiments/src/nvidia/compute_report.py"
+  },
+  {
+    "path": "src/nvidia/final_comparison.py",
+    "original_sha256": "00adcfd8d0254f18711f8d5cccdfea4bfea725b2d028531b94ab88734b2af14b",
+    "release_sha256": "4b384a6a0f8b6ae5f315af0939b8a8e724ca8cd96455e4bb0f1262309b478ce8",
+    "release_path": "experiments/src/nvidia/final_comparison.py"
+  },
+  {
+    "path": "src/diagnostics/audit_layer_source_selection.py",
+    "original_sha256": "06bea47e8bc4dd9a1b06d410e8c7b16ab469cc873b5a6b26ba7f07951d3ec9fa",
+    "release_sha256": "a7a12e63c41bd50909c6e29ac1872ba03010ed0763e2fe4cd17ad405635359f2",
+    "release_path": "experiments/src/diagnostics/audit_layer_source_selection.py"
+  },
+  {
+    "path": "src/diagnostics/submit_deployable_lookup.py",
+    "original_sha256": "732fa429b5f88c514304e786267cc6fa2791d97ddea5f210aba43a2ae162eb50",
+    "release_sha256": "cad4f4d3c9e27a169dba341151f86a8ce1acf2eafe5fd86699cca3ab64722f0c",
+    "release_path": "experiments/src/diagnostics/submit_deployable_lookup.py"
+  },
+  {
+    "path": "src/diagnostics/per_family_routing_ci.py",
+    "original_sha256": "7903a94962c9cd77b584e2b3c0d4811e32bef5bc398decf870347f714013c986",
+    "release_sha256": "890b2cdbfdfcacc02d49a6646d8d4e956ec256fc42349c7861b67388a86ec9c4",
+    "release_path": "experiments/src/diagnostics/per_family_routing_ci.py"
+  },
+  {
+    "path": "src/diagnostics/gte_l21/route.py",
+    "original_sha256": "ebe612ce067b8c005051b7a82a260db4cde990b8591af3327f26eb151cd13f0d",
+    "release_sha256": "a05943d90f49f74c515f8716a6ce9d039b779e95595db3ae9eb8636d58be5c41",
+    "release_path": "experiments/src/diagnostics/gte_l21/route.py"
+  },
+  {
+    "path": "src/diagnostics/appendix_ci/routing.py",
+    "original_sha256": "31f00bb46c69cdfed8c1bf2d9410424191be89af94b0f0597ef5a71ade73da5b",
+    "release_sha256": "815c73ba1b915132c4765d0ee1c784e191258b4fe2f7722da2f1966002797b4d",
+    "release_path": "experiments/src/diagnostics/appendix_ci/routing.py"
+  },
+  {
+    "path": "src/diagnostics/appendix_ci/render_tables.py",
+    "original_sha256": "b12915990e99d534352ac16ff5397dd73eb971fffb8dd3c7b7aeb03035f80ca9",
+    "release_sha256": "5ba7b0a87e6530605af7161a067028fa4b1aeb3b3ade57824c5d9d85f7d2b0df",
+    "release_path": "experiments/src/diagnostics/appendix_ci/render_tables.py"
+  },
+  {
+    "path": "src/diagnostics/appendix_ci/sharedtrunknet.py",
+    "original_sha256": "e915fcbabe6bbb24888f3989e10c2f89e007a74d8518735a30c069bfbc6b3409",
+    "release_sha256": "6b0403b138da9ebedbfdcef53767714b714de323ca89788331642b03673139f7",
+    "release_path": "experiments/src/diagnostics/appendix_ci/sharedtrunknet.py"
+  },
+  {
+    "path": "src/diagnostics/appendix_ci/render_sharedtrunknet.py",
+    "original_sha256": "5facba368dbe18d2f64ae72bfcc8e5e4e22ebc198f46ef61b74f5054d2f64f2a",
+    "release_sha256": "5b8ee0ff378f14a43ef258041bd93d5092b853deeea631219676e6b11283a4cf",
+    "release_path": "experiments/src/diagnostics/appendix_ci/render_sharedtrunknet.py"
+  },
+  {
+    "path": "src/nvidia_utility/common_u.py",
+    "original_sha256": "d410176df3290edeb6b92649025752b3d38b2b4e3de93f939a4d7f7ef19a07f7",
+    "release_sha256": "75a575e8d279dd96bc53e838ac14a2704b67c186da7acd53e5b36cdb393e8004",
+    "release_path": "experiments/src/nvidia_utility/common_u.py"
+  },
+  {
+    "path": "src/nvidia_utility/audit.py",
+    "original_sha256": "a923d9e82ec25e8ff93fd180ce18529d10f0a704d1e83f63e22d87242434ece7",
+    "release_sha256": "3c78c4323b9d466c13e946de7db391b8e4d6b1e99e259446ff3c8ab58ee3a975",
+    "release_path": "experiments/src/nvidia_utility/audit.py"
+  },
+  {
+    "path": "jobs/env.sh",
+    "original_sha256": "86ad17485b094ec594890f1a658f6cdcb3c96c9ab39f6c91dd8f1c62665fb392",
+    "release_sha256": "be743f50f5cd65bbee5d938e3160d74a1f886bb5ab9c1f43230957260039f4ff",
+    "release_path": "experiments/jobs/env.sh"
+  },
+  {
+    "path": "jobs/prepare.sbatch",
+    "original_sha256": "01f22a7391a9ada03b68038f9927bfe8d7c99dad650df33a5a539d8c1bb68cf2",
+    "release_sha256": "2b6319bf329f38bfdffc2b157773cd5f950d05ec4a768f40b1d4e74d93f5d60c",
+    "release_path": "experiments/jobs/prepare.sbatch"
+  },
+  {
+    "path": "jobs/encode.sbatch",
+    "original_sha256": "a2cd796aca1a65650ac045dba6681c5fd57dc97626e9f85c1cbc79a3ed557374",
+    "release_sha256": "08de12cc47081e8200bcaf6b84e04655b652ea5e6662947c36b15b87a887853c",
+    "release_path": "experiments/jobs/encode.sbatch"
+  },
+  {
+    "path": "jobs/geometry.sbatch",
+    "original_sha256": "c8a892228d2a7ff025e85ec1ee2f4a7b6271f07c222fc16284076ae27aff1887",
+    "release_sha256": "b78e18512dd8b076ac23bd77bb2392ca1faa15cb4d22959bd34e912d46930225",
+    "release_path": "experiments/jobs/geometry.sbatch"
+  },
+  {
+    "path": "jobs/report.sbatch",
+    "original_sha256": "ce7de528a511ee3bd43cd07945aff256c4cdc565eb79fcb63a94319a8d9253fe",
+    "release_sha256": "96e288673f8ab779154c7b901ad60e7f1cad9bf5071bb8d27287531784ae5342",
+    "release_path": "experiments/jobs/report.sbatch"
+  },
+  {
+    "path": "jobs/geometry_batch.sbatch",
+    "original_sha256": "33d020fd4b2a9513ff1e451a1e5b8107223961aa685c434bec5c874c3e13ab3f",
+    "release_sha256": "1be6a334753bc3505c9902d61f56869eba6e84f2fb9493abe6bd8d745a8a8d11",
+    "release_path": "experiments/jobs/geometry_batch.sbatch"
+  },
+  {
+    "path": "jobs/plots.sbatch",
+    "original_sha256": "77e0bd66e3b32f9a8474d40c1cfe7c0b92288ba765d94c2614de8f2e3bc6adce",
+    "release_sha256": "181abf6e913a7fc4e557f42a9167b2064e95866b596e1a511258f96176f8d5b0",
+    "release_path": "experiments/jobs/plots.sbatch"
+  },
+  {
+    "path": "jobs/audit_features.sbatch",
+    "original_sha256": "e7838bbfb569b6be29d04eb5b1de8aa52546cad5ed14b8eaea245bd8289f4ba7",
+    "release_sha256": "f62ad2fbd97ac0b3dde633698e1d73c47d09a1bedc9d3cb007b29d0cfe6beb8c",
+    "release_path": "experiments/jobs/audit_features.sbatch"
+  },
+  {
+    "path": "jobs/audit_absolute_difficulty.sbatch",
+    "original_sha256": "40fd9a80f9d2eb9dc2a898c8e73756be022eed51ccc08e7499c3c84c207c4039",
+    "release_sha256": "31fec3edac7a1d27db90ba84c24a052f54b8a8a0b1b5e9f016272dedbc00ed6e",
+    "release_path": "experiments/jobs/audit_absolute_difficulty.sbatch"
+  },
+  {
+    "path": "jobs/descriptive_clustering.sbatch",
+    "original_sha256": "f03791aca98c1e9ab43ae8db7b533a2dfdb02a8c0d07bccb856f38aaa2d5cf4e",
+    "release_sha256": "809b15e1a7d8843a5311a4253a8cf6b71d87ad907553cb98c17c092429eb3941",
+    "release_path": "experiments/jobs/descriptive_clustering.sbatch"
+  },
+  {
+    "path": "jobs/additional_clustering.sbatch",
+    "original_sha256": "283021e257f86571dbde5e1005cb65c80b27f1d178e5a4decaa6486780507fec",
+    "release_sha256": "9a0c8fa42685c33cc2d0d7703d4fcac562edae964554e6f7b43dcf7fbeac376a",
+    "release_path": "experiments/jobs/additional_clustering.sbatch"
+  },
+  {
+    "path": "jobs/audit_ordering_ties.sbatch",
+    "original_sha256": "a8513632a1d841e6f236fec7c0d3de14d36286a03757948b64faf0a3a702efeb",
+    "release_sha256": "957f4bc3a14f93108d97bb6033abcac57b1edad532e362024c10c5e628650625",
+    "release_path": "experiments/jobs/audit_ordering_ties.sbatch"
+  },
+  {
+    "path": "jobs/baselines_prepare.sbatch",
+    "original_sha256": "93531c89ad582d00c4c00aa90a8129a159e66815f97ab466dc04a185664aa64c",
+    "release_sha256": "22a2ca568ac57e768f93cc3832767f574c40c171018b0eb0bc7d0e85139e1414",
+    "release_path": "experiments/jobs/baselines_prepare.sbatch"
+  },
+  {
+    "path": "jobs/baselines_cpu.sbatch",
+    "original_sha256": "f8230332b243112bd33a21437af67084e24675e5286b205e4267249432c36fb7",
+    "release_sha256": "a0db78e4e09f3d5941e300c04df2ed0d551ebe6e69c0bcfe2eb48d8c76b18a28",
+    "release_path": "experiments/jobs/baselines_cpu.sbatch"
+  },
+  {
+    "path": "jobs/baselines_mlp.sbatch",
+    "original_sha256": "e4628b2930231ffe04ba21973827db945e079db08f0e2ddd68baa9ec9da3f729",
+    "release_sha256": "d2590b18cc42655aab8113f3e84d4038f9ee4b837c2ddf1e2f4c62cdeb625ec4",
+    "release_path": "experiments/jobs/baselines_mlp.sbatch"
+  },
+  {
+    "path": "jobs/baselines_report.sbatch",
+    "original_sha256": "1a4f8f359c17bf5b55e0b06bd9edd033a65645dd37531c92563f0b2a81eb3152",
+    "release_sha256": "d90baa23c72cac658a1c3fe0577cd5442c9ea6114c67563dbf174122c69c4671",
+    "release_path": "experiments/jobs/baselines_report.sbatch"
+  },
+  {
+    "path": "jobs/baselines_ridge.sbatch",
+    "original_sha256": "07a3f1795f295694c2a76d89133ba120620d6ae709fa5552157cf97798eceec1",
+    "release_sha256": "2e884bd3f48aaa54de8d4fd5ddace7246691e7fcb57232c84417c80557d72b3c",
+    "release_path": "experiments/jobs/baselines_ridge.sbatch"
+  },
+  {
+    "path": "jobs/layer_routing.sbatch",
+    "original_sha256": "fe1de0bd380559246bbec3313588916f5c72f49d195c8a516a134147c128ab5b",
+    "release_sha256": "ef1a71a4792ec5c767b5a15db63cbe46c4e4146073fecc8b280e00643d1bbaa1",
+    "release_path": "experiments/jobs/layer_routing.sbatch"
+  },
+  {
+    "path": "jobs/layer_extract.sbatch",
+    "original_sha256": "a90bdaff5c3b6a287ec2003b6befdb32543af0b5a0f01ee259b835c4849996f0",
+    "release_sha256": "e4160d2b4b7be5dba31b28485ac27663124d7fc27647d4a927bc926ee5d6e385",
+    "release_path": "experiments/jobs/layer_extract.sbatch"
+  },
+  {
+    "path": "jobs/layer_report.sbatch",
+    "original_sha256": "b48f081ad83be7ff20023d8b044876f654844620bbc04457c8f2684496508360",
+    "release_sha256": "0a27b9aa437bf4607e5fb61f89ccac99517dcf897df03133810c4366e1bf904c",
+    "release_path": "experiments/jobs/layer_report.sbatch"
+  },
+  {
+    "path": "jobs/baselines_mlp_reduced.sbatch",
+    "original_sha256": "a234c5ad2334f3bbcd11cffa652512b09182c3924992288bedbfe9563ad34f91",
+    "release_sha256": "fc934b1152d5081a74769ece30d8ccbad197a74faf368cfa3dbd54741c8759a0",
+    "release_path": "experiments/jobs/baselines_mlp_reduced.sbatch"
+  },
+  {
+    "path": "jobs/baselines_reduced_preflight.sbatch",
+    "original_sha256": "a5fc1169c87e5cc555700bf1974c8aa60c394d8e6414374e40f37d83ccdc95b5",
+    "release_sha256": "bd3fb5d44067e95891e0ee97f2e03f9dd8f894ed5b92742ae5225984b47ec92a",
+    "release_path": "experiments/jobs/baselines_reduced_preflight.sbatch"
+  },
+  {
+    "path": "jobs/baselines_reduced_report.sbatch",
+    "original_sha256": "17fa8873c7f6530b19181ad6a5442bb2805b6c48efe898c9399c49b22400c007",
+    "release_sha256": "8fe68e9725181d3954d8f1fd2f25328b9369de63a60c94d8abb423ce8a30e2b8",
+    "release_path": "experiments/jobs/baselines_reduced_report.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_extract.sbatch",
+    "original_sha256": "ed0bcad733eb21e6205bee311a1b70bbbecdbb84804aa3b9897ecb7d557ba49e",
+    "release_sha256": "5ea3663efaf1f47b2b75729af06bd36a50aa11e110c0e1e39267a599f69deec2",
+    "release_path": "experiments/jobs/nvidia_extract.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_pca.sbatch",
+    "original_sha256": "91bc4635ae7a90bdd7f7357d7f328b81aa3be57a6f9357f8e957113e3a941198",
+    "release_sha256": "19ffc2a9cace6334b4c7d11a14b68c001bba9d8ba0cea030e605826ec01da6e5",
+    "release_path": "experiments/jobs/nvidia_pca.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_preflight.sbatch",
+    "original_sha256": "ad76f12b5e501ad1f8ce35fd0fd0cddfdbf5ca839068ba52c15b055b2e6036d0",
+    "release_sha256": "a37fc849c2a9455c5f6330251996f0309387d13b69aa930d60a5dc0cbd540d9b",
+    "release_path": "experiments/jobs/nvidia_preflight.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_report.sbatch",
+    "original_sha256": "3e161fd88f6c2fb6b2b8d8473fe5e16e788b48f5cf2b5a751108718b30dda9de",
+    "release_sha256": "a3753247216c3238ecaed2efaa4536fcd42d5e4c78705d8d1bf07de31f56f1f8",
+    "release_path": "experiments/jobs/nvidia_report.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_train.sbatch",
+    "original_sha256": "af480e3df114fa09d9350af2e1c97cb482ea0c082640ab95f2418a1fecbe72b0",
+    "release_sha256": "91f36f182c15a97934896494062f8bff76cd02611d94fad22ef75e790f02f924",
+    "release_path": "experiments/jobs/nvidia_train.sbatch"
+  },
+  {
+    "path": "jobs/format_factorial_prepare.sbatch",
+    "original_sha256": "a64846781c857c57574c658cf3671b681dd41d87dd520b42c6ad19d9554555ab",
+    "release_sha256": "ecc6e36a5ee5cb65f90eae3cfd90f7dee7e581fb26faa09df6b732217273c9b4",
+    "release_path": "experiments/jobs/format_factorial_prepare.sbatch"
+  },
+  {
+    "path": "jobs/format_factorial_extract.sbatch",
+    "original_sha256": "55dc54117946dedcb13d4f1125fe1f3b733516051e68afbcb7a295499d72bee3",
+    "release_sha256": "e68ee97323ea75c56575ada4d9ca6c5a3962b6c9280f36648741958327036ca3",
+    "release_path": "experiments/jobs/format_factorial_extract.sbatch"
+  },
+  {
+    "path": "jobs/format_factorial_analyze.sbatch",
+    "original_sha256": "6e42d98bb883118c0e76714ec0f35ab2fa431c57a30e6f630075a0e794f46a01",
+    "release_sha256": "2cae8c37017a6a386651e417a57650a2c305ea69ca68946389c5f5f24fa8e641",
+    "release_path": "experiments/jobs/format_factorial_analyze.sbatch"
+  },
+  {
+    "path": "jobs/format_factorial_report.sbatch",
+    "original_sha256": "17b188c9f2dbafb17e4a8080673c407626b4dcdafeb7f662a20efdfcd5a17957",
+    "release_sha256": "f410a8b37d4063c769c54d172a47c407b42043c6a41e5306e09f3c2e1be45aea",
+    "release_path": "experiments/jobs/format_factorial_report.sbatch"
+  },
+  {
+    "path": "jobs/family_utility_transfer.sbatch",
+    "original_sha256": "a3504f559b1d899e521054cd81e28325702d0106c4e8a3d0df3d48bc67894b4a",
+    "release_sha256": "2cd77bca6ee45c5bd503742a6596124c6a9ced9b6b423b7fdef1b60cb8ff4175",
+    "release_path": "experiments/jobs/family_utility_transfer.sbatch"
+  },
+  {
+    "path": "jobs/family_utility_transfer_report.sbatch",
+    "original_sha256": "a19d9ed78ca8f64b5e6eedc31293c0b1a8196786b4c6d199450af791f74ebdf0",
+    "release_sha256": "8f49a22dd2cdc44bd5485cfc33c7915e1493b46b2bdb66c2e03b94502af6799d",
+    "release_path": "experiments/jobs/family_utility_transfer_report.sbatch"
+  },
+  {
+    "path": "jobs/proof_twins.sbatch",
+    "original_sha256": "5be978e26888c86e33389ae5ed24ea13ce10df87713e5121047bc33b9181605d",
+    "release_sha256": "230306ae802ba735acdf46536dfae23224f49d41af5db204ccd6aec8d37b5111",
+    "release_path": "experiments/jobs/proof_twins.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_inference_cpu.sbatch",
+    "original_sha256": "be6b9d6527db0e16127953147a9184799613b6a33d84deda2472b05bb07b6ef9",
+    "release_sha256": "b9a606f8862b6c1707272d81b33c39e383e640fc4ea8f32dbfb51ca6294bf854",
+    "release_path": "experiments/jobs/nvidia_inference_cpu.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_inference_audit.sbatch",
+    "original_sha256": "82a359aa3aaa080404070c0dafa72d28c46462844e915419cc3f19a1984bf759",
+    "release_sha256": "39fe978102b160ee32f7add0436208556a666e3c135b5c0d07ad5bf99030f9bf",
+    "release_path": "experiments/jobs/nvidia_inference_audit.sbatch"
+  },
+  {
+    "path": "jobs/deployable_lookup.sbatch",
+    "original_sha256": "ad969061dfdbd40e30419667df928575649d7faf07f37e7a7a5e57653d710586",
+    "release_sha256": "fee6f5c2afa467a6dc6988a6124a7b1ca63f4f2a1ee556587b6a4df5caebe0b5",
+    "release_path": "experiments/jobs/deployable_lookup.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_finalize.sbatch",
+    "original_sha256": "2372b8b02261ce2ca8ea0e7dc3b9358fec2c4f417cae0a96fc10c25a625069dc",
+    "release_sha256": "85f143cfd5340a1a3bdc3634a4f9b964f27607e53da3179f19556e1e0c06bd76",
+    "release_path": "experiments/jobs/nvidia_finalize.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_comparison_design_audit.sbatch",
+    "original_sha256": "7a64ac41aca739841e536c107acf408e372f2b7f8dc52107e36bbc9da36d8c71",
+    "release_sha256": "18544289909a423224b5b983ad96432940197e6ee139677fbca0f86cd012a3c5",
+    "release_path": "experiments/jobs/nvidia_comparison_design_audit.sbatch"
+  },
+  {
+    "path": "jobs/gte_l21_extract.sbatch",
+    "original_sha256": "ad9271a283e9276fed99f250ec09304c284383f4720ecfe33d20aa19f95b1356",
+    "release_sha256": "b80455dc7241911e9a0658aa134ca40892c3567f646d39f7e5ab7c2c2f0aed28",
+    "release_path": "experiments/jobs/gte_l21_extract.sbatch"
+  },
+  {
+    "path": "jobs/gte_l21_route.sbatch",
+    "original_sha256": "68bff9fc12cb5dbc2a8fa8461836a69262807efad734089fedd03c28f7b90d06",
+    "release_sha256": "5e56f892ee54d6b41532e6a302c67f4f0d7b6dd0651843cc8848fef19d0a1e27",
+    "release_path": "experiments/jobs/gte_l21_route.sbatch"
+  },
+  {
+    "path": "jobs/gte_l21_report.sbatch",
+    "original_sha256": "6ce81ed9bd2ed7845fa84598013e0cfa1d6872e5858558c109d9b8f3b1d27f3f",
+    "release_sha256": "dc7b699a31a469965ed076f4d7806919ecdd5e0f8ee851a589d5dfc561d86baf",
+    "release_path": "experiments/jobs/gte_l21_report.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_utility_preflight.sbatch",
+    "original_sha256": "8207453701d56f78a323b6edeb3f0470c104652a2d30f8483ecb91ed2fdc7828",
+    "release_sha256": "8a8ead9f14f19fa785b15700264a1616cc2378960cbd0d8769c90a7de531eb58",
+    "release_path": "experiments/jobs/nvidia_utility_preflight.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_utility_probe.sbatch",
+    "original_sha256": "6e592a38ab4d8921ff9625d68722d08188060ef765ae81af92cd360e1cb074fd",
+    "release_sha256": "9e50ef2aea747c11e98f70ab14f2923fd7067286e6f962b84e28f532df500547",
+    "release_path": "experiments/jobs/nvidia_utility_probe.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_utility_train.sbatch",
+    "original_sha256": "0d55de6d20b5325e07f1609e95b01add55b9f8cb9b5e529e59aa0c280552968f",
+    "release_sha256": "7666859d37482bcaf09140448d643d9ef6c95021f73213e22c873d4e8662f348",
+    "release_path": "experiments/jobs/nvidia_utility_train.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_utility_audit.sbatch",
+    "original_sha256": "5353df6829b69a31e13c7b476010e091b45f17823bbe5d2c9cf29128df867650",
+    "release_sha256": "2e11f654af0150ee6bd0992cad839cf67dfe24e0af3b301c6117163680f2ba10",
+    "release_path": "experiments/jobs/nvidia_utility_audit.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_utility_audit_task.sbatch",
+    "original_sha256": "993cbb1cabac87fd6a3db8c373ce8024db730cec3dedf8440497f3da21bf5904",
+    "release_sha256": "52eb42844d2c3c3b58339aa35bbd1c52e54541dfcca0a678d099b54c6602f4ef",
+    "release_path": "experiments/jobs/nvidia_utility_audit_task.sbatch"
+  },
+  {
+    "path": "jobs/nvidia_utility_report.sbatch",
+    "original_sha256": "e06385c4529cac2a2ba4b9325bf32ee251d624aee56f9bffa7c1dfe5f6e1c628",
+    "release_sha256": "547347160306b212c5e7681eea43f0e0a75de266a09817ba861b2ac3d1212e28",
+    "release_path": "experiments/jobs/nvidia_utility_report.sbatch"
+  },
+  {
+    "path": "jobs/appendix_ci_routing.sbatch",
+    "original_sha256": "bfc837a3e18fe37be2b69ebc84acbfc1d20c347a44a896d30322cfdc08d0d836",
+    "release_sha256": "ea84e6b6551572ce4b2ad05e4b2e833c4e7378af73bea0d597af6ba55c01bc45",
+    "release_path": "experiments/jobs/appendix_ci_routing.sbatch"
+  },
+  {
+    "path": "jobs/appendix_ci_geometry.sbatch",
+    "original_sha256": "de8d667121f8c1d4c287e8bbe13011f2481000234aafe59a6c4efcff8c13b1a7",
+    "release_sha256": "e9d105eb70a216ef7cf185056c81cedbdc5ae3f75a311443a0b5149427e2950c",
+    "release_path": "experiments/jobs/appendix_ci_geometry.sbatch"
+  },
+  {
+    "path": "jobs/appendix_ci_clustering.sbatch",
+    "original_sha256": "088ce9e712931c2ebbf00303d0cb7f73bfc60f9b04ae5c566bb345fc4fba5e10",
+    "release_sha256": "0d4cef4675abb6e29040153641a0cf085c66b20a648a90518ff52ae9961b3e10",
+    "release_path": "experiments/jobs/appendix_ci_clustering.sbatch"
+  },
+  {
+    "path": "jobs/appendix_ci_rank.sbatch",
+    "original_sha256": "3589c11c505807ccab167571d4bfffcbcd577962ed0ea12dd51949c139f1feb2",
+    "release_sha256": "ae0b49d5496298f02ab95ac0b87f6b2b1da3e64cd2e5352de36f52139a889411",
+    "release_path": "experiments/jobs/appendix_ci_rank.sbatch"
+  },
+  {
+    "path": "jobs/appendix_ci_clustering_bootstrap.sbatch",
+    "original_sha256": "9e9a878992e9e902709237b19785616851d4c11221eefd855a1806d34bd3dd4e",
+    "release_sha256": "cf338981fb70262a06ac99c8881588ae467b49f7738984637eb179001cebea05",
+    "release_path": "experiments/jobs/appendix_ci_clustering_bootstrap.sbatch"
+  },
+  {
+    "path": "jobs/appendix_ci_render.sbatch",
+    "original_sha256": "04188bc11516c564843bc513df2fe425c53e99f997a9aea181185220b7ff6fb4",
+    "release_sha256": "adecc08c25df85522ebe214bdbe02c96401cd9049348577f5e9a1917f0f357c7",
+    "release_path": "experiments/jobs/appendix_ci_render.sbatch"
+  },
+  {
+    "path": "jobs/appendix_ci_sharedtrunknet.sbatch",
+    "original_sha256": "ea0fa413a0453752ebeff16af726e391c5dd699c5c2c241a7db31e1bc96eee64",
+    "release_sha256": "9e6bee0165d38d59d1850976d95c9db1be12af38a3005947d02df90e7bc3329f",
+    "release_path": "experiments/jobs/appendix_ci_sharedtrunknet.sbatch"
+  },
+  {
+    "path": "jobs/knn_cost_reward_format.sbatch",
+    "original_sha256": "b206b8ed92d77fed180cff3e78f9e4a3dc2652becaac8fe91bc18ca02d4e9fa9",
+    "release_sha256": "79ae884efb0a4a13689db432dd0a879331d05983777938ff17fb417914d921ae",
+    "release_path": "experiments/jobs/knn_cost_reward_format.sbatch"
+  },
+  {
+    "path": "jobs/knn_cost_reward_format_report.sbatch",
+    "original_sha256": "c2254b8b982fe68f805e36bfd95279c8d35d746f6a8e221583222d6baa787ef1",
+    "release_sha256": "5920361a7d756d4b11a9c163c1ba12b1bdb7344161e53dca0acc99135f64dcc6",
+    "release_path": "experiments/jobs/knn_cost_reward_format_report.sbatch"
+  },
+  {
+    "path": "jobs/per_family_knn_ci.sbatch",
+    "original_sha256": "386ec20040fbcf614582cecdd18bd05885dce42fbfb089e4b2dedc6e93ee4172",
+    "release_sha256": "80d94ca07338efc660dd44dac5553b01770522445b0e1a2e3a2ae9f95b5df150",
+    "release_path": "experiments/jobs/per_family_knn_ci.sbatch"
+  },
+  {
+    "path": "configs/baselines.json",
+    "original_sha256": "8bbb430a67286bfafbb90e704a8f1bd8cbfb8d13bf7d06a999bf1853e14ee301",
+    "release_sha256": "741e9cdeab782a41b00f2377fdc5463732604e4a0def769f029fe0a91d127d2b",
+    "release_path": "experiments/configs/baselines.json"
+  },
+  {
+    "path": "configs/ridge.json",
+    "original_sha256": "b0a642984e53c4dd0051f8bf5db00e0bf668c3ade52e7e11eee0b25257c28150",
+    "release_sha256": "fe713aacd9aa19eabe78d7f4d6ba11069e5fd46064c19c22e62b1733cddf3e40",
+    "release_path": "experiments/configs/ridge.json"
+  },
+  {
+    "path": "configs/layer_sweep.json",
+    "original_sha256": "3b22145562a9ed6db7c7f5158409f982892b035d7a7531cfdbd01fdc654e7ccd",
+    "release_sha256": "cc3ea80a177bbbc806085f6361b2c20415a2b19076003ae7a1a36135a69cc597",
+    "release_path": "experiments/configs/layer_sweep.json"
+  },
+  {
+    "path": "configs/appendix_ci.json",
+    "original_sha256": "80577c288be7a2991db486c3fae989b808049a44f488ee3f205d76d0179adb9e",
+    "release_sha256": "78f2c44218a9b4198b494d6517d44bf67ea7bf6c0aa756c36ece2c2c769f1581",
+    "release_path": "experiments/configs/appendix_ci.json"
+  },
+  {
+    "path": "configs/knn_cost_reward_format.json",
+    "original_sha256": "83fd4849948df0e4fe7733b666c0b408044eb0b288869f106066fd0c0742290b",
+    "release_sha256": "3e62d8cf28e9381478ccb7b6ad31dda5d795ed459f5a62f2aeca898396a64deb",
+    "release_path": "experiments/configs/knn_cost_reward_format.json"
+  },
+  {
+    "path": "manifests/historical_geometry_reference.json",
+    "original_sha256": "12558e49c641a2b39459f3cd7f2957a18979a54974d0c995e974f77d7a97a805",
+    "release_sha256": "d6e8db7e25abffcf5e515fd656f5d4f3a5fcaffb8a3cffa58c9653571d336411",
+    "release_path": "experiments/manifests/historical_geometry_reference.json"
+  },
+  {
+    "path": "tests/test_geometry.py",
+    "original_sha256": "e2e49654a415164d554d3b5d28c3de742a427a673fd58c51fd6e14bcbf1409c6",
+    "release_sha256": "ea8ef248d348df5f565c327821d3100f3d9404f333af74174a847fcee024f081",
+    "release_path": "experiments/tests/test_geometry.py"
+  },
+  {
+    "path": "README.md",
+    "original_sha256": "e1c24fc801914a864640a3ebc379fc17bafbd27a4736aa19e28f90a2be471a1a",
+    "release_sha256": "6492b78563b8088035e33ee87850572a78b3a591f00c36423a3f1d32f47a039c",
+    "release_path": "README.md"
+  },
+  {
+    "path": ".gitignore",
+    "original_sha256": "60d35a22a3777f02cacd1a40912f77f888492ea1f074d1289e1442da11f327b0",
+    "release_sha256": "3ee003be82b741b559121b8fc932e3a4fb1aa6fa48676611f954eaa6ee813079",
+    "release_path": ".gitignore"
+  }
+]

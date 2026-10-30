@@ -4,10 +4,10 @@
   "paper": "https://arxiv.org/abs/2610.19198v1",
   "paper_license": "https://creativecommons.org/licenses/by/4.0/",
   "legal_text": {
-    "path": "LICENSE",
+    "path": "../LICENSE",
     "url": "https://creativecommons.org/licenses/by/4.0/legalcode.txt",
     "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
     "bytes": 18657
   },
-  "scope": "Original project code, documentation and original research outputs, limited to rights held by the authors. Third-party assets retain their own licenses and terms; see THIRD_PARTY.md."
+  "scope": "Original project code, documentation and original research outputs, limited to rights held by the authors. Third-party assets retain their own licenses and terms; see ../docs/THIRD_PARTY.md."
 }

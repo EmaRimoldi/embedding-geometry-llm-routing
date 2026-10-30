@@ -1,6 +1,8 @@
 # Render tables from saved reports
 
-From the package root, using its Python environment:
+Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+
+From the scientific workspace, using its Python environment:
 
 ```bash
 python -B scripts/render_saved_tables.py

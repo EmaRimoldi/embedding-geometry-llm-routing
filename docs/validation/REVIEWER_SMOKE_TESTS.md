@@ -1,5 +1,7 @@
 # Reviewer smoke tests
 
+Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+
 The current repository additionally executes Avengers-Pro and KM-Prox in the CPU
 baseline harness (260 score checks). The 156-check counts below describe the
 original conference reviewer run, whose reports are preserved unchanged. See
@@ -9,7 +11,7 @@ These checks exercise installed software and small real execution paths. Synthet
 
 ## Installation
 
-From an extracted archive, run:
+From the scientific workspace, run:
 
 ```bash
 bash scripts/bootstrap.sh all
@@ -21,7 +23,7 @@ The release was tested with a newly created Python 3.11 environment and packages
 
 ## CPU checks
 
-Run from the extracted root, inside a CPU allocation on clusters:
+Run from the scientific workspace, inside a CPU allocation on clusters:
 
 ```bash
 export OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=4 MKL_NUM_THREADS=4

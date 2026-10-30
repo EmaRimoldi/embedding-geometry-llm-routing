@@ -14,7 +14,7 @@ below remains a separately scoped comparison. Unfinished experiments and full
 numerical reproduction remain incomplete, rather than being counted as passes.
 Pipeline validation uses regression tests and small synthetic production runs;
 it does not resume the full scientific experiment grid.
-[`v1_pipeline_review.json`](../../release_provenance/current_checks/v1_pipeline_review.json)
+[`v1_pipeline_review.json`](../../experiments/release_provenance/current_checks/v1_pipeline_review.json)
 records the revised scope, source fingerprints and executed pipeline checks.
 
 ## Executed checks
@@ -61,7 +61,7 @@ in the original baseline input manifest, along with all 13 compared scientific
 metadata fields. The other 28 arrays have fresh complete manifests; no historical
 byte-equality claim is made for arrays without a matching original fingerprint.
 
-[`v1_full_encoders.json`](../../release_provenance/current_checks/v1_full_encoders.json)
+[`v1_full_encoders.json`](../../experiments/release_provenance/current_checks/v1_full_encoders.json)
 records all 32 manifests and the four comparisons. Extraction computes each hash
 after flushing the complete array. Production baseline preparation also independently
 rehashed all four input arrays and verified the canonical panels and frozen splits.
@@ -70,14 +70,14 @@ probe selection and final-model training have since completed. Reduced MLP,
 historical trained-router, geometry and uncertainty comparisons remain incomplete.
 
 The non-MLP fitted-baseline checkpoint, collected on 2026-10-29 UTC, is recorded in
-[`v1_fresh_baselines.json`](../../release_provenance/current_checks/v1_fresh_baselines.json).
+[`v1_fresh_baselines.json`](../../experiments/release_provenance/current_checks/v1_fresh_baselines.json).
 It compares 250 of the prescribed 296 records, including all 46 Ridge evaluations
 across both benchmarks, representations and IID/OOD populations. All Ridge scores
 and selections match exactly. The separate production audit also reconstructed
 all 598 policy scores from the new saved choices and outcomes, verified test-row
 and query identities and checked recorded alpha selection. The resulting 598-row
 per-fold and 104-row aggregate CSVs match the frozen tables byte-for-byte.
-[`v1_ridge_predictions.json`](../../release_provenance/current_checks/v1_ridge_predictions.json)
+[`v1_ridge_predictions.json`](../../experiments/release_provenance/current_checks/v1_ridge_predictions.json)
 records the hashes and scope. This does not independently refit/reload the
 regressors or compare omitted original query-level predictions.
 
@@ -116,7 +116,7 @@ decreases in test utility, so this example is not a benchmark-wide mean.
 The complete canonical panel, query and preparation hashes, frozen split hash
 and L21 vector-file hash were rechecked for this case. Its saved aggregate
 arithmetic is consistent with its reward/cost and per-family summaries.
-[`v1_reduced_mlp_checkpoint.json`](../../release_provenance/current_checks/v1_reduced_mlp_checkpoint.json)
+[`v1_reduced_mlp_checkpoint.json`](../../experiments/release_provenance/current_checks/v1_reduced_mlp_checkpoint.json)
 retains the five changed choices, raw values and file fingerprints. This is an
 initial result-file comparison: the complete reduced-phase prediction audit,
 full baseline aggregate report and manuscript printed-precision comparison
@@ -136,7 +136,7 @@ marker, so the dependent probe and training jobs did not start. A retry with a
 four-hour allocation passed with the same scientific checks: 23 outer evaluations
 and 322 new source transforms were checked, including independently reconstructed
 training/test rows, reference ternary search and independent Ridge objectives.
-[`v1_utility_preflight.json`](../../release_provenance/current_checks/v1_utility_preflight.json)
+[`v1_utility_preflight.json`](../../experiments/release_provenance/current_checks/v1_utility_preflight.json)
 records that internal validation. It does not certify that the new PCA caches or
 downstream choices equal the historical ones. All 23 probe tasks and both final
 GPU workers have now completed, with no continuation workers remaining.
@@ -150,7 +150,7 @@ other 2,470 MSE values differ: 2,285 retain the same noncanonical selected layer
 and 185 have a different selected layer. This pattern does not establish
 whether raw extraction, PCA fitting, runtime differences or another cause explains
 the deviation. Historical cached-input fingerprints are the next comparison.
-[`v1_utility_probe_comparison.json`](../../release_provenance/current_checks/v1_utility_probe_comparison.json)
+[`v1_utility_probe_comparison.json`](../../experiments/release_provenance/current_checks/v1_utility_probe_comparison.json)
 retains every difference and the complete 23/23 selection coverage.
 
 The final-model workers generated all 2,990 prescribed fits. All 23 independent
@@ -160,7 +160,7 @@ utility scores. This establishes internal consistency of the new execution.
 It does not establish agreement with the original execution: 105 of 299 retained
 seed sets differ; another 118 contain the same five seeds in a different order.
 In total, 7,698 of 13,335 compared numeric result fields differ.
-[`v1_final_utility.json`](../../release_provenance/current_checks/v1_final_utility.json)
+[`v1_final_utility.json`](../../experiments/release_provenance/current_checks/v1_final_utility.json)
 preserves those differences and prediction fingerprints.
 
 Mean utility, weighted over test queries within each penalty and then averaged
@@ -194,7 +194,7 @@ The fresh predicted-label lookup stage completed all ten folds and its aggregate
 report. All 1,400 per-fold and 265 aggregate numeric values match exactly, as do
 the compared nonnumeric fields. Runtime and scheduler identifiers are excluded;
 result and prediction completion fingerprints remain in
-[`v1_deployable_lookup.json`](../../release_provenance/current_checks/v1_deployable_lookup.json).
+[`v1_deployable_lookup.json`](../../experiments/release_provenance/current_checks/v1_deployable_lookup.json).
 
 All six isolated, unchanged-protocol repetitions are complete. For GTE/SPROUT
 IID fold 1 clustering, it differs in 157 compared fields from the primary new run
@@ -208,7 +208,7 @@ The original primary outputs are retained. L21/RouterBench OOD fold 2 clustering
 matches the primary execution and still differs from the frozen reference.
 OOD fold 4 clustering and KM-Prox match the frozen reference while differing from
 the primary execution. The other repetitions retain their differences from both.
-[`v1_cluster_repetitions.json`](../../release_provenance/current_checks/v1_cluster_repetitions.json)
+[`v1_cluster_repetitions.json`](../../experiments/release_provenance/current_checks/v1_cluster_repetitions.json)
 records every comparison, including the unfavorable outcomes. These six cases
 do not cover every discrepancy in the complete 250-record baseline checkpoint.
 

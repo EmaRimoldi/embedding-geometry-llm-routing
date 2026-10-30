@@ -1,5 +1,7 @@
 # Routing demo and embedding comparison
 
+Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+
 The animation reuses every original drawing object from Figure 1 of
 [Embedding Geometry Shapes LLM Routing](https://arxiv.org/abs/2610.19198).
 The source is Overleaf's `aistats_figures/intro_pipeline.pdf` at snapshot
@@ -15,7 +17,7 @@ The [GIF](routing-demo.gif) starts and repeats automatically in the GitHub READM
 Open [the browser version](index.html) from the cloned repository:
 
 ```bash
-open docs/demo/index.html  # macOS
+open ../docs/demo/index.html  # macOS
 ```
 
 It starts when visible and repeats after completing the prompt-to-model sequence.

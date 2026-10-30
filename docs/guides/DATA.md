@@ -1,12 +1,14 @@
 # Data and model access
 
+Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+
 Raw corpora, model weights and large generated arrays are obtained or generated
 locally. The repository includes fixed splits, four illustrative prompts and compact
 reference scores. It does not redistribute the complete third-party datasets.
 
 ## Pinned sources
 
-The executable inventory is [manifests/assets.json](../../manifests/assets.json).
+The executable inventory is [manifests/assets.json](../../experiments/manifests/assets.json).
 Every revision below is a full upstream commit, not a moving branch.
 
 | Asset | Upstream repository | Revision | Local destination |
@@ -91,7 +93,7 @@ IID and complete-family OOD definitions are described in [METHODS.md](../referen
 ## Expected SHA-256 values
 
 The canonical reference is
-[public_data_preparation.json](../../release_provenance/reviewer_smoke/public_data_preparation.json).
+[public_data_preparation.json](../../experiments/release_provenance/reviewer_smoke/public_data_preparation.json).
 Both fresh CPU verification commands check all eight values before computing.
 
 | Dataset | File | SHA-256 |
@@ -106,14 +108,14 @@ Both fresh CPU verification commands check all eight values before computing.
 | sprout | `manifest.json` | `a1f6bb0cad2e88a49489d2b043a1ec5204d54bf32e1139a46967bf3e09cbfec7` |
 
 Raw data/tokenizer fingerprints are recorded in
-[public_inputs.json](../../release_provenance/current_checks/public_inputs.json);
+[public_inputs.json](../../experiments/release_provenance/current_checks/public_inputs.json);
 full weight fingerprints are in
-[model_weight_checksums.json](../../manifests/model_weight_checksums.json).
+[model_weight_checksums.json](../../experiments/manifests/model_weight_checksums.json).
 
 ## Terms and availability
 
 The project CC BY 4.0 license covers original project material. Dataset and model
-terms remain those of their respective creators; see [THIRD_PARTY.md](../../THIRD_PARTY.md).
+terms remain those of their respective creators; see [THIRD_PARTY.md](../THIRD_PARTY.md).
 The inspected pinned RouterBench and SPROUT README files do not declare a license.
 This repository supplies retrieval instructions without asserting permission to
 relicense or redistribute their complete payloads. Consult upstream terms before

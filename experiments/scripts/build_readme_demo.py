@@ -19,7 +19,7 @@ import xml.etree.ElementTree as ET
 import fitz
 
 ROOT = Path(__file__).resolve().parents[1]
-DEST = ROOT / "docs/demo"
+DEST = ROOT.parent / "docs/demo"
 SVG = "http://www.w3.org/2000/svg"
 ET.register_namespace("", SVG)
 ET.register_namespace("xlink", "http://www.w3.org/1999/xlink")
@@ -70,7 +70,7 @@ def cached_font():
             temporary.unlink(missing_ok=True)
     if sha(destination) != asset["sha256"] or destination.stat().st_size != asset["bytes"]:
         raise ValueError("Cached illustration font differs from its pinned checksum")
-    license_path = ROOT / record["license"]["path"]
+    license_path = ROOT.parent / record["license"]["path"]
     if sha(license_path) != record["license"]["sha256"]:
         raise ValueError("Illustration font license differs from its pinned checksum")
     return destination

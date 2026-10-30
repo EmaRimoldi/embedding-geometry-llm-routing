@@ -8,11 +8,11 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-PUBLIC_TOP = {"README.md", "LICENSE", "CITATION.cff", "THIRD_PARTY.md", "CONTRIBUTING.md", "Makefile",
-              ".zenodo.json", ".gitignore", ".github", "requirements.lock",
-              "src", "configs", "jobs", "tests", "environment", "manifests",
-              "docs", "scripts", "release_provenance"}
+ROOT = Path(__file__).resolve().parents[2]
+PUBLIC_TOP = {"README.md", "LICENSE", "CITATION.cff", "Makefile",
+              ".zenodo.json", ".gitignore", ".github", "docs", "experiments"}
+WORKSPACE_TOP = {"README.md", "requirements.lock", "src", "configs", "jobs", "tests",
+                 "environment", "manifests", "scripts", "release_provenance"}
 # Generic user-home or machine-storage paths; no author-specific identifiers.
 PATH_PATTERNS = [
     rb"/(?:Users|home|u)/[^/\s\"'<>]+",
@@ -26,7 +26,7 @@ SECRET_PATTERNS = [
     rb"hf_[A-Za-z0-9]{20,}",
     rb"-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----",
 ]
-MANIFEST = "release_provenance/release_manifest.json"
+MANIFEST = "experiments/release_provenance/release_manifest.json"
 
 
 def sha(path):
@@ -42,10 +42,12 @@ def public_files(root=ROOT):
     for base, dirs, names in os.walk(str(root), followlinks=False):
         here = Path(base).relative_to(root)
         if str(here) == ".":
-            dirs[:] = sorted(d for d in dirs if d in PUBLIC_TOP or d in {"results", "datasets"})
-        elif here.parts == ("results",):
+            dirs[:] = sorted(d for d in dirs if d in PUBLIC_TOP)
+        elif here.parts == ("experiments",):
+            dirs[:] = sorted(d for d in dirs if d in WORKSPACE_TOP or d in {"results", "datasets"})
+        elif here.parts == ("experiments", "results"):
             dirs[:] = [d for d in dirs if d == "evidence"]
-        elif here.parts == ("datasets",):
+        elif here.parts == ("experiments", "datasets"):
             dirs[:] = [d for d in dirs if d == "proof_twins_v1"]
         dirs[:] = sorted(d for d in dirs if d not in skip)
         for name in sorted(names):
@@ -54,10 +56,11 @@ def public_files(root=ROOT):
             p = Path(base) / name
             rel = p.relative_to(root)
             parts = rel.parts
-            allowed = parts[0] in PUBLIC_TOP
-            allowed |= str(rel) == "results/release_evidence_manifest.json"
-            allowed |= parts[:2] == ("results", "evidence")
-            allowed |= str(rel) == "datasets/proof_twins_v1/prepared/queries.jsonl"
+            allowed = parts[0] in PUBLIC_TOP and parts[0] != "experiments"
+            allowed |= len(parts) > 1 and parts[0] == "experiments" and parts[1] in WORKSPACE_TOP
+            allowed |= str(rel) == "experiments/results/release_evidence_manifest.json"
+            allowed |= parts[:3] == ("experiments", "results", "evidence")
+            allowed |= str(rel) == "experiments/datasets/proof_twins_v1/prepared/queries.jsonl"
             if allowed:
                 yield p
 

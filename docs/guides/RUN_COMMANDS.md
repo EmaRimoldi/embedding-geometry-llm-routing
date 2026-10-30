@@ -1,5 +1,7 @@
 # Fresh experiment reproduction
 
+Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+
 These commands are for a **new reproduction copy**, separate from the saved evidence
 under `results/evidence/`. They regenerate runtime results; they do not import the
 saved paper scores as new measurements. The shipped evidence is immutable input to
@@ -14,7 +16,7 @@ separate download CLI environment. GPU extraction uses CUDA, BF16 for the two 7B
 encoders, and full untruncated prompts (up to 8192 tokens). MiniLM uses FP32 and a
 separate compatible subset. Do not reduce token limits to make a smaller GPU fit.
 
-From the extracted release root:
+From the scientific workspace:
 
 ```bash
 bash scripts/bootstrap.sh
@@ -38,7 +40,7 @@ to the cluster, but preserve algorithms, task ranges, seeds and scientific setti
 
 ## Slurm conventions
 
-Run every `sbatch` from this release root, after `source jobs/env.sh`.
+Run every `sbatch` from the scientific workspace (`experiments/`), after `source jobs/env.sh`.
 Launchers use their working directory (Slurm's default submission directory), so
 do not override `--chdir` to another directory. They do not trust a stale
 `PAPER_ROOT` or inherited `SLURM_SUBMIT_DIR` from an older allocation. The release
@@ -291,7 +293,7 @@ allocated CPU/GPU totals.
 
 ## 8. Additional diagnostics and uncertainty
 
-Run direct CPU commands below inside a CPU allocation, from the release root.
+Run direct CPU commands below inside a CPU allocation, from the scientific workspace.
 Wait for each prerequisite before submitting its consumer. Runtime arrays and
 predictions must come from the new run, not the compact `results/evidence/` export.
 

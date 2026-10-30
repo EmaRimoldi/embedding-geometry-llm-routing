@@ -24,7 +24,7 @@ def test_nested_links_duplicate_headings_and_code_fences(tmp_path):
     put(tmp_path, 'README.md', '[Guide](docs/guides/RUN.md#same-1)\n[Ref][ref]\n[ref]: docs/guides/RUN.md\n')
     put(tmp_path, 'docs/guides/RUN.md', '# Same\n## Same\n[Home](../../README.md)\n'
         '```markdown\n[Not a link](missing.md)\n```\nRun `python scripts/run.py`.\n')
-    put(tmp_path, 'scripts/run.py', 'pass\n')
+    put(tmp_path, 'experiments/scripts/run.py', 'pass\n')
     report = checks.check(tmp_path)
     assert report['passed'], report['errors']
     assert report['local_links'] == 3
@@ -64,8 +64,8 @@ def test_html_assets_and_case_sensitive_links(tmp_path):
 
 def test_manifest_only_preserves_published_archive(tmp_path):
     for name in ['build_submission.py', 'verify_release.py']:
-        target = tmp_path / 'scripts' / name
-        target.parent.mkdir(exist_ok=True)
+        target = tmp_path / 'experiments/scripts' / name
+        target.parent.mkdir(parents=True, exist_ok=True)
         shutil.copyfile(ROOT / 'scripts' / name, target)
     put(tmp_path, 'README.md', '# Initial\n')
     put(tmp_path, 'dist/routing_reproduction.zip', 'published immutable bytes')
@@ -74,10 +74,10 @@ def test_manifest_only_preserves_published_archive(tmp_path):
     sidecar = (tmp_path / 'dist/routing_reproduction.zip.sha256').read_bytes()
     for title in ['# Initial\n', '# Edited\n']:
         put(tmp_path, 'README.md', title)
-        result = subprocess.run([sys.executable, '-B', 'scripts/build_submission.py', '--manifest-only'],
+        result = subprocess.run([sys.executable, '-B', 'experiments/scripts/build_submission.py', '--manifest-only'],
                                 cwd=tmp_path, check=True, text=True, capture_output=True)
         assert json.loads(result.stdout)['archive_updated'] is False
-        manifest = json.loads((tmp_path / 'release_provenance/release_manifest.json').read_text())
+        manifest = json.loads((tmp_path / 'experiments/release_provenance/release_manifest.json').read_text())
         assert manifest['files']['README.md']['bytes'] == len(title)
         assert (tmp_path / 'dist/routing_reproduction.zip').read_bytes() == archive
         assert (tmp_path / 'dist/routing_reproduction.zip.sha256').read_bytes() == sidecar

@@ -1,5 +1,7 @@
 # Reviewer smoke: fresh-start orchestration
 
+Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+
 ## Scope
 
 Executed `python3.11 -B scripts/smoke_orchestration.py` in the submission copy.

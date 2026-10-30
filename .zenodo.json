@@ -41,5 +41,5 @@
       "scheme": "doi"
     }
   ],
-  "notes": "CC BY 4.0 applies to original project material; third-party exceptions are documented in THIRD_PARTY.md. This metadata file prepares archival and does not indicate that a Zenodo DOI has been issued."
+  "notes": "CC BY 4.0 applies to original project material; third-party exceptions are documented in docs/THIRD_PARTY.md. This metadata file prepares archival and does not indicate that a Zenodo DOI has been issued."
 }
