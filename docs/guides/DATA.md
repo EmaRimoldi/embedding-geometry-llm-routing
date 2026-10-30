@@ -1,6 +1,6 @@
 # Data and model access
 
-Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+Run all commands in this guide from the repository root.
 
 Raw corpora, model weights and large generated arrays are obtained or generated
 locally. The repository includes fixed splits, four illustrative prompts and compact
@@ -8,7 +8,7 @@ reference scores. It does not redistribute the complete third-party datasets.
 
 ## Pinned sources
 
-The executable inventory is [manifests/assets.json](../../experiments/manifests/assets.json).
+The executable inventory is [reproducibility/manifests/assets.json](../../reproducibility/manifests/assets.json).
 Every revision below is a full upstream commit, not a moving branch.
 
 | Asset | Upstream repository | Revision | Local destination |
@@ -52,7 +52,7 @@ CUDA packages, create the CPU environment in a new release copy:
 ```bash
 python3.11 -m venv .venv
 .venv/bin/python -m pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
-.venv/bin/python -m pip install -r environment/cpu-requirements.lock
+.venv/bin/python -m pip install -r reproducibility/environment/cpu-requirements.lock
 .venv/bin/python -m pip check
 .venv/bin/python -B scripts/initialize_release.py --stage layout
 .venv/bin/python -B scripts/check_public_inputs.py --download --prepare
@@ -93,7 +93,7 @@ IID and complete-family OOD definitions are described in [METHODS.md](../referen
 ## Expected SHA-256 values
 
 The canonical reference is
-[public_data_preparation.json](../../experiments/release_provenance/reviewer_smoke/public_data_preparation.json).
+[public_data_preparation.json](../../reproducibility/provenance/reviewer_smoke/public_data_preparation.json).
 Both fresh CPU verification commands check all eight values before computing.
 
 | Dataset | File | SHA-256 |
@@ -108,9 +108,9 @@ Both fresh CPU verification commands check all eight values before computing.
 | sprout | `manifest.json` | `a1f6bb0cad2e88a49489d2b043a1ec5204d54bf32e1139a46967bf3e09cbfec7` |
 
 Raw data/tokenizer fingerprints are recorded in
-[public_inputs.json](../../experiments/release_provenance/current_checks/public_inputs.json);
+[public_inputs.json](../../reproducibility/provenance/current_checks/public_inputs.json);
 full weight fingerprints are in
-[model_weight_checksums.json](../../experiments/manifests/model_weight_checksums.json).
+[model_weight_checksums.json](../../reproducibility/manifests/model_weight_checksums.json).
 
 ## Terms and availability
 

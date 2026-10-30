@@ -63,7 +63,7 @@
   },
   "reward_gain_pp": 3.5881360019291098,
   "cost_reduction_percent": 25.278363976688713,
-  "evidence": "results/evidence/baselines/_summary_reduced/scores.csv",
+  "evidence": "reproducibility/evidence/baselines/_summary_reduced/scores.csv",
   "evidence_sha256": "0fbdc6dac80b05736808f76a72caa8260a7fa561dbd1272a3cc11bbd0cbd27db",
   "illustrative_only": "Prompts, 2D layout and model IDs illustrate the routing pipeline; they are not live model predictions or per-prompt cost/accuracy measurements."
 }

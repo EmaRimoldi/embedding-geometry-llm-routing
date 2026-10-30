@@ -1,6 +1,6 @@
 # Final utility pipeline: reviewer audit and small smoke
 
-Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+Run all commands in this guide from the repository root.
 
 Run from the extracted package after installing compute dependencies:
 

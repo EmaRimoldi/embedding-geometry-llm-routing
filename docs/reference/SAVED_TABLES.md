@@ -1,8 +1,8 @@
 # Render tables from saved reports
 
-Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+Run all commands in this guide from the repository root.
 
-From the scientific workspace, using its Python environment:
+From the repository root, using its Python environment:
 
 ```bash
 python -B scripts/render_saved_tables.py
@@ -19,7 +19,7 @@ Each invocation creates a fresh workspace under `results/reproduced/saved_tables
 | `cost_reward` | Cost/reward/format report and completion metadata for both benchmarks | Cost/reward/format diagnostic tables |
 | `family_utility` | Family-utility audit, summary, and per-penalty CSV | Source-family retrieval rank tables |
 
-Inputs retain their original result-relative locations under `results/evidence/`. In the temporary workspace, they are staged below `results/` so the existing renderer source can run unchanged. Expected output paths and every staged input are recorded in the run's `report.json`, together with SHA-256 hashes and log locations.
+Inputs retain their original result-relative locations under `reproducibility/evidence/`. In the temporary workspace, they are staged below `results/` so the existing renderer source can run unchanged. Expected output paths and every staged input are recorded in the run's `report.json`, together with SHA-256 hashes and log locations.
 
 Statuses are explicit: `passed` means rendering succeeded; `skipped` means no evidence for a family was bundled; `missing` means only part of the required input set was available; `failed` means a renderer failed or omitted an output. A missing or failed family returns a nonzero exit code. A skipped family is not a validation success. The report does not certify the completeness of the paper or correctness of the underlying experiment.
 

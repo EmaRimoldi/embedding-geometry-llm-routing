@@ -1,9 +1,9 @@
 # Fresh experiment reproduction
 
-Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+Run all commands in this guide from the repository root.
 
 These commands are for a **new reproduction copy**, separate from the saved evidence
-under `results/evidence/`. They regenerate runtime results; they do not import the
+under `reproducibility/evidence/`. They regenerate runtime results; they do not import the
 saved paper scores as new measurements. The shipped evidence is immutable input to
 the lightweight report route documented in the main README.
 
@@ -11,12 +11,12 @@ the lightweight report route documented in the main README.
 
 The study used Linux x86-64 and Python **3.11.16**. Use Python 3.11, with venv/pip
 available. `requirements.lock` pins the compute environment, including PyTorch
-2.5.1/CUDA 12.4 dependencies; `environment/download-requirements.lock` pins the
+2.5.1/CUDA 12.4 dependencies; `reproducibility/environment/download-requirements.lock` pins the
 separate download CLI environment. GPU extraction uses CUDA, BF16 for the two 7B
 encoders, and full untruncated prompts (up to 8192 tokens). MiniLM uses FP32 and a
 separate compatible subset. Do not reduce token limits to make a smaller GPU fit.
 
-From the scientific workspace:
+From the repository root:
 
 ```bash
 bash scripts/bootstrap.sh
@@ -27,7 +27,7 @@ source jobs/env.sh
 .venv/bin/python -B -m pytest -p no:cacheprovider tests
 ```
 
-Downloads use the revisions and patterns in `manifests/assets.json` and verify
+Downloads use the revisions and patterns in `reproducibility/manifests/assets.json` and verify
 remote checksums. The downloader enables network access explicitly; compute
 launchers default to offline model use. If an asset requires accepting an upstream
 license, do so through the upstream provider before download. Never include access
@@ -40,7 +40,7 @@ to the cluster, but preserve algorithms, task ranges, seeds and scientific setti
 
 ## Slurm conventions
 
-Run every `sbatch` from the scientific workspace (`experiments/`), after `source jobs/env.sh`.
+Run every `sbatch` from the repository root, after `source jobs/env.sh`.
 Launchers use their working directory (Slurm's default submission directory), so
 do not override `--chdir` to another directory. They do not trust a stale
 `PAPER_ROOT` or inherited `SLURM_SUBMIT_DIR` from an older allocation. The release
@@ -149,7 +149,7 @@ recognized only when the new source bytes match the existing transition registry
 The default report is `results/reproduced/fresh-baselines.json`. Comparing supplied
 files does not attest that new fitting occurred, compare omitted query-level
 predictions, or establish paper printed-precision agreement. Keep the new run's
-execution provenance separately. The command refuses to use `results/evidence/`
+execution provenance separately. The command refuses to use `reproducibility/evidence/`
 as the fresh results directory.
 
 ## 3. Candidate layers and PCA
@@ -293,9 +293,9 @@ allocated CPU/GPU totals.
 
 ## 8. Additional diagnostics and uncertainty
 
-Run direct CPU commands below inside a CPU allocation, from the scientific workspace.
+Run direct CPU commands below inside a CPU allocation, from the repository root.
 Wait for each prerequisite before submitting its consumer. Runtime arrays and
-predictions must come from the new run, not the compact `results/evidence/` export.
+predictions must come from the new run, not the compact `reproducibility/evidence/` export.
 
 GTE hidden-layer-21 comparison, after canonical inputs, models and baseline setup:
 

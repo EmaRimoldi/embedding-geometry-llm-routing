@@ -3,8 +3,8 @@
 The active code is now the final conference supplement, identified by archive
 SHA-256 `043676877fed7b9ecf4f93da0ba428a5f8dbd0025212873fcebc94470623494e`.
 The original archive passed its 1,981-file release-manifest check before any changes.
-`release_provenance/conference_original_manifest.json` preserves those original
-fingerprints; `release_provenance/release_manifest.json` describes this repository.
+`reproducibility/provenance/conference_original_manifest.json` preserves those original
+fingerprints; `reproducibility/provenance/release_manifest.json` describes this repository.
 
 The owner stopped the full fresh-experiment campaign on 2026-10-29 and requested
 a pipeline review instead. All remaining campaign jobs were cancelled, the
@@ -14,7 +14,7 @@ below remains a separately scoped comparison. Unfinished experiments and full
 numerical reproduction remain incomplete, rather than being counted as passes.
 Pipeline validation uses regression tests and small synthetic production runs;
 it does not resume the full scientific experiment grid.
-[`v1_pipeline_review.json`](../../experiments/release_provenance/current_checks/v1_pipeline_review.json)
+[`v1_pipeline_review.json`](../../reproducibility/provenance/current_checks/v1_pipeline_review.json)
 records the revised scope, source fingerprints and executed pipeline checks.
 
 ## Executed checks
@@ -44,11 +44,11 @@ records the revised scope, source fingerprints and executed pipeline checks.
 | Model identity | Full cached weights compared with pinned public LFS checksums | 12 files, 45,815,257,928 bytes, passed |
 | Execution plumbing | Inert-scheduler orchestration and isolated saved-report renderers | 17 orchestration categories; seven regenerated tables byte-identical to their supplied counterparts |
 
-The current machine-readable records are under `release_provenance/current_checks/`.
-They are distinct from `release_provenance/reviewer_smoke/`, which describes the
+The current machine-readable records are under `reproducibility/provenance/current_checks/`.
+They are distinct from `reproducibility/provenance/reviewer_smoke/`, which describes the
 conference package's earlier checks.
 The complete fresh CPU diagnostic run is recorded separately in
-`release_provenance/current_checks/v1_cpu_diagnostics.json`; it verifies canonical
+`reproducibility/provenance/current_checks/v1_cpu_diagnostics.json`; it verifies canonical
 input bytes and records production-source fingerprints and execution times.
 
 The fresh full-input campaign completed all encoder tasks on 2026-10-27 UTC,
@@ -61,7 +61,7 @@ in the original baseline input manifest, along with all 13 compared scientific
 metadata fields. The other 28 arrays have fresh complete manifests; no historical
 byte-equality claim is made for arrays without a matching original fingerprint.
 
-[`v1_full_encoders.json`](../../experiments/release_provenance/current_checks/v1_full_encoders.json)
+[`v1_full_encoders.json`](../../reproducibility/provenance/current_checks/v1_full_encoders.json)
 records all 32 manifests and the four comparisons. Extraction computes each hash
 after flushing the complete array. Production baseline preparation also independently
 rehashed all four input arrays and verified the canonical panels and frozen splits.
@@ -70,14 +70,14 @@ probe selection and final-model training have since completed. Reduced MLP,
 historical trained-router, geometry and uncertainty comparisons remain incomplete.
 
 The non-MLP fitted-baseline checkpoint, collected on 2026-10-29 UTC, is recorded in
-[`v1_fresh_baselines.json`](../../experiments/release_provenance/current_checks/v1_fresh_baselines.json).
+[`v1_fresh_baselines.json`](../../reproducibility/provenance/current_checks/v1_fresh_baselines.json).
 It compares 250 of the prescribed 296 records, including all 46 Ridge evaluations
 across both benchmarks, representations and IID/OOD populations. All Ridge scores
 and selections match exactly. The separate production audit also reconstructed
 all 598 policy scores from the new saved choices and outcomes, verified test-row
 and query identities and checked recorded alpha selection. The resulting 598-row
 per-fold and 104-row aggregate CSVs match the frozen tables byte-for-byte.
-[`v1_ridge_predictions.json`](../../experiments/release_provenance/current_checks/v1_ridge_predictions.json)
+[`v1_ridge_predictions.json`](../../reproducibility/provenance/current_checks/v1_ridge_predictions.json)
 records the hashes and scope. This does not independently refit/reload the
 regressors or compare omitted original query-level predictions.
 
@@ -96,7 +96,7 @@ no data, selection grid or tolerance was changed to remove them.
 The 6,500 policy scores include prompt routers, clustering/metadata diagnostics
 and single-model/oracle controls; they are not 6,500 independent fitted models.
 The 138 source/config hash differences match transitions already recorded in
-`release_provenance/source_changes.json`, and the new source bytes were checked
+`reproducibility/provenance/source_changes.json`, and the new source bytes were checked
 against that registry. These provenance differences and all scientific differences
 remain explicit in the report. The complete main-baseline comparison has not passed.
 
@@ -116,7 +116,7 @@ decreases in test utility, so this example is not a benchmark-wide mean.
 The complete canonical panel, query and preparation hashes, frozen split hash
 and L21 vector-file hash were rechecked for this case. Its saved aggregate
 arithmetic is consistent with its reward/cost and per-family summaries.
-[`v1_reduced_mlp_checkpoint.json`](../../experiments/release_provenance/current_checks/v1_reduced_mlp_checkpoint.json)
+[`v1_reduced_mlp_checkpoint.json`](../../reproducibility/provenance/current_checks/v1_reduced_mlp_checkpoint.json)
 retains the five changed choices, raw values and file fingerprints. This is an
 initial result-file comparison: the complete reduced-phase prediction audit,
 full baseline aggregate report and manuscript printed-precision comparison
@@ -136,7 +136,7 @@ marker, so the dependent probe and training jobs did not start. A retry with a
 four-hour allocation passed with the same scientific checks: 23 outer evaluations
 and 322 new source transforms were checked, including independently reconstructed
 training/test rows, reference ternary search and independent Ridge objectives.
-[`v1_utility_preflight.json`](../../experiments/release_provenance/current_checks/v1_utility_preflight.json)
+[`v1_utility_preflight.json`](../../reproducibility/provenance/current_checks/v1_utility_preflight.json)
 records that internal validation. It does not certify that the new PCA caches or
 downstream choices equal the historical ones. All 23 probe tasks and both final
 GPU workers have now completed, with no continuation workers remaining.
@@ -150,7 +150,7 @@ other 2,470 MSE values differ: 2,285 retain the same noncanonical selected layer
 and 185 have a different selected layer. This pattern does not establish
 whether raw extraction, PCA fitting, runtime differences or another cause explains
 the deviation. Historical cached-input fingerprints are the next comparison.
-[`v1_utility_probe_comparison.json`](../../experiments/release_provenance/current_checks/v1_utility_probe_comparison.json)
+[`v1_utility_probe_comparison.json`](../../reproducibility/provenance/current_checks/v1_utility_probe_comparison.json)
 retains every difference and the complete 23/23 selection coverage.
 
 The final-model workers generated all 2,990 prescribed fits. All 23 independent
@@ -160,7 +160,7 @@ utility scores. This establishes internal consistency of the new execution.
 It does not establish agreement with the original execution: 105 of 299 retained
 seed sets differ; another 118 contain the same five seeds in a different order.
 In total, 7,698 of 13,335 compared numeric result fields differ.
-[`v1_final_utility.json`](../../experiments/release_provenance/current_checks/v1_final_utility.json)
+[`v1_final_utility.json`](../../reproducibility/provenance/current_checks/v1_final_utility.json)
 preserves those differences and prediction fingerprints.
 
 Mean utility, weighted over test queries within each penalty and then averaged
@@ -194,7 +194,7 @@ The fresh predicted-label lookup stage completed all ten folds and its aggregate
 report. All 1,400 per-fold and 265 aggregate numeric values match exactly, as do
 the compared nonnumeric fields. Runtime and scheduler identifiers are excluded;
 result and prediction completion fingerprints remain in
-[`v1_deployable_lookup.json`](../../experiments/release_provenance/current_checks/v1_deployable_lookup.json).
+[`v1_deployable_lookup.json`](../../reproducibility/provenance/current_checks/v1_deployable_lookup.json).
 
 All six isolated, unchanged-protocol repetitions are complete. For GTE/SPROUT
 IID fold 1 clustering, it differs in 157 compared fields from the primary new run
@@ -208,7 +208,7 @@ The original primary outputs are retained. L21/RouterBench OOD fold 2 clustering
 matches the primary execution and still differs from the frozen reference.
 OOD fold 4 clustering and KM-Prox match the frozen reference while differing from
 the primary execution. The other repetitions retain their differences from both.
-[`v1_cluster_repetitions.json`](../../experiments/release_provenance/current_checks/v1_cluster_repetitions.json)
+[`v1_cluster_repetitions.json`](../../reproducibility/provenance/current_checks/v1_cluster_repetitions.json)
 records every comparison, including the unfavorable outcomes. These six cases
 do not cover every discrepancy in the complete 250-record baseline checkpoint.
 
@@ -259,7 +259,7 @@ differences are recorded rather than presented as an identical original environm
    format. Fixed splits, frozen evidence and final demo assets are unchanged.
    Duplicate local extractions, retired data and synthetic check workspaces were
    removed after verification; the original conference ZIP is preserved outside
-   the repository. `release_provenance/storage_cleanup.json` records the accounting.
+   the repository. `reproducibility/provenance/storage_cleanup.json` records the accounting.
 8. **Versioned distribution:** CC BY 4.0 now covers original project material,
    matching the paper's arXiv license. Third-party exceptions remain explicit.
    Data, experiment and resource guides, Make entrypoints, versioned citation

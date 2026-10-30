@@ -1,17 +1,17 @@
 # Result evidence and reconstruction
 
-Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+Run all commands in this guide from the repository root.
 
-This release contains a compact snapshot of saved experiment results under `results/evidence/`. It includes completed outcomes, all recorded cost penalties, negative results, incomplete-state indicators, uncertainty reports and numerical audits. Evidence is isolated from the runtime result directories so a full rerun does not mistake exported summaries for completed model fits.
+This release contains a compact snapshot of saved experiment results under `reproducibility/evidence/`. It includes completed outcomes, all recorded cost penalties, negative results, incomplete-state indicators, uncertainty reports and numerical audits. Evidence is isolated from the runtime result directories so a full rerun does not mistake exported summaries for completed model fits.
 
-Run from the scientific workspace:
+Run from the repository root:
 
 ```bash
 python3 -B scripts/reproduce_results.py --verify-only
 python3 -B scripts/reproduce_results.py --plots
 ```
 
-Only Python's standard library is required. The first command checks every exported file against `results/release_evidence_manifest.json` and writes nothing. The second regenerates aggregate CSVs and two SVG overview charts in `results/reproduced/`. `--output PATH` selects another output directory. The SVGs are new views of the saved scores; they are not the historical manuscript figures.
+Only Python's standard library is required. The first command checks every exported file against `reproducibility/evidence_manifest.json` and writes nothing. The second regenerates aggregate CSVs and two SVG overview charts in `results/reproduced/`. `--output PATH` selects another output directory. The SVGs are new views of the saved scores; they are not the historical manuscript figures.
 
 The reconstruction checks 23,740 saved fold-level records across seven result groups, reproduces 4,031 aggregate rows, and checks utility = reward - penalty × cost. It preserves query-count weighting, incomplete-group flags and all thirteen penalties. Reconstructed numbers must match saved aggregates within relative tolerance 1e-10 and absolute tolerance 1e-12. The final per-model SharedTrunkNet fold scores are additionally rebuilt from the 23 exported `result.json` records and compared with their saved CSV and report.
 
@@ -29,7 +29,7 @@ These checks re-aggregate saved scores. They do not independently reconstruct pr
 
 ## Study-to-evidence map
 
-Paths in this table are relative to `results/evidence/`. A row marked "saved evidence" is available for inspection and integrity verification; its underlying statistical computation is not rerun by the compact reconstruction command.
+Paths in this table are relative to `reproducibility/evidence/`. A row marked "saved evidence" is available for inspection and integrity verification; its underlying statistical computation is not rerun by the compact reconstruction command.
 
 | Study | Evidence path | Compact reconstruction |
 | --- | --- | --- |
@@ -79,7 +79,7 @@ Both `main_comparison_*.csv` files include `method_role` and `required_informati
 
 ## Provenance and omissions
 
-`results/release_evidence_manifest.json` records each original repository-relative source path, original SHA-256, exported path, exported SHA-256, byte size and redacted fields. Original hashes describe private source bytes; exported hashes verify the sanitized delivered bytes. Hashes embedded inside saved audit records continue to refer to original-run files, including large artifacts that are not included here.
+`reproducibility/evidence_manifest.json` records each original repository-relative source path, original SHA-256, exported path, exported SHA-256, byte size and redacted fields. Original hashes describe private source bytes; exported hashes verify the sanitized delivered bytes. Hashes embedded inside saved audit records continue to refer to original-run files, including large artifacts that are not included here.
 
 The evidence export excludes raw corpora, embeddings, PCA arrays, model weights, individual training-fit artifacts, query-level prediction/bootstrap arrays, scheduler logs, old manuscript files and superseded protocol proposals. The original workspace retains those artifacts. This package does not claim that integrity verification alone proves the original model computation. Reproducing prediction audits, bootstrap intervals or historical manuscript figures requires regenerating the corresponding full-workflow artifacts.
 

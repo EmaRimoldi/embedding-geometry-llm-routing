@@ -6,7 +6,7 @@ numeric reference is Overleaf snapshot `6e3bea88ec5d65de3587c0719025702e110ac3e0
 Full-scale fitting and all paired bootstraps have not all been independently rerun;
 the release version identifies an artifact, not an independent reproduction badge.
 
-The current checkout groups the scientific workspace in `experiments/`. The original v1.0.0 ZIP retains its published flat layout; the extraction commands below apply to that unchanged archive. Top-level Make commands apply to the current checkout.
+The current checkout separates source, configurations, tools, jobs, tests, documentation and reproducibility materials. All current commands run from the repository root. The original v1.0.0 ZIP retains its published flat layout; the extraction commands below apply to that unchanged archive.
 
 ## Retrieve and verify
 

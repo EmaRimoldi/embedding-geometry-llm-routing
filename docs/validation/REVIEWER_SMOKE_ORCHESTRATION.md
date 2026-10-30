@@ -1,6 +1,6 @@
 # Reviewer smoke: fresh-start orchestration
 
-Commands for the current checkout run from the [scientific workspace](../../experiments/README.md). From the repository root, enter it with `cd experiments`.
+Run all commands in this guide from the repository root.
 
 ## Scope
 
@@ -71,7 +71,7 @@ per-target implementation.
 
 Input checksums in the final utility configuration remain strict. Only the
 copied NVIDIA-config link and source-provenance metadata are refreshed for the
-new release. Original evidence remains under `results/evidence/`; runtime
+new release. Original evidence remains under `reproducibility/evidence/`; runtime
 manifests describe a new run, not a replacement assertion about old results.
 
 ## Archive integrity

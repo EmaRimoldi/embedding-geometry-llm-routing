@@ -1,80 +1,66 @@
-# Repository map and retention policy
+# Repository structure and retention
 
-The repository root has two main directories: [experiments/](../../experiments/README.md)
-for the scientific workspace and [docs/](../README.md) for the manual. Its four
-visible entry files are `README.md`, `Makefile`, `CITATION.cff` and `LICENSE`.
-Contribution instructions and third-party notices are in
-[docs/CONTRIBUTING.md](../CONTRIBUTING.md) and [docs/THIRD_PARTY.md](../THIRD_PARTY.md).
+The root uses familiar research-software names and separates responsibilities. All commands and paths in the current manuals are relative to the repository root.
 
-Scientific paths below, including `src/`, `configs/` and `results/`, are relative
-to `experiments/`. Top-level Make targets invoke the appropriate tools without
-requiring the reader to navigate those internal folders.
+## Primary directories
 
-## Scientific implementation
-
-| Location | Responsibility |
-| --- | --- |
-| [src/baselines/](../../experiments/src/baselines) | kNN, Family Adaptation, clustering, Ridge, MLP and baseline reports |
-| [src/nvidia_utility/](../../experiments/src/nvidia_utility) | Final per-target layer selection, utility training and independent audit |
-| [src/nvidia/](../../experiments/src/nvidia) | Shared PCA preprocessing and earlier common-layer/fixed-L21 controls |
-| [src/layer_sweep/](../../experiments/src/layer_sweep) | Full-layer routing and layer-selection analysis |
-| [src/diagnostics/](../../experiments/src/diagnostics) | Controlled-format, lookup, transfer and uncertainty analyses |
-| [src/geometry.py](../../experiments/src/geometry.py) and [src/report_geometry.py](../../experiments/src/report_geometry.py) | Geometry measurements and numerical aggregation |
-| [configs/](../../experiments/configs) | Frozen scientific protocols and canonical row splits |
-
-The final per-target utility pipeline and the earlier NVIDIA controls have
-different selection protocols; their outputs are not interchangeable.
-
-## Documentation layout
-
-| Directory | Content |
-| --- | --- |
-| [docs/guides/](../guides) | Setup, execution, input preparation and resource planning |
-| [docs/reference/](.) | Methods, experiment/result maps, table production and this repository map |
-| [docs/validation/](../validation) | Current audit, conceptual limitations and historical reviewer checks |
-| [docs/releases/](../releases) | Published-release scope, archival and new-version instructions |
-| [docs/demo/](../demo/README.md) | Presentation assets, source provenance and rebuild instructions |
-
-## Versioned and generated material
-
-Locations in this table are relative to the repository root.
-
-| Location | Purpose | Versioned? |
+| Directory | Responsibility | Start here |
 | --- | --- | --- |
-| [README.md](../../README.md), `LICENSE`, `CITATION.cff`, `Makefile` | Root overview, license, citation and convenience commands | Yes |
-| [CONTRIBUTING.md](../CONTRIBUTING.md), [THIRD_PARTY.md](../THIRD_PARTY.md), `.gitignore` | Contribution guidance, attribution and runtime exclusions | Yes |
-| `experiments/src/` | Scientific implementations and numerical report producers | Yes |
-| `experiments/configs/` | Frozen protocols, hyperparameters, row splits and paper references | Yes |
-| `experiments/scripts/` | Setup, integrity checks, fresh CPU diagnostics and export | Yes |
-| `experiments/jobs/` | Portable Slurm launchers with original resource requests | Yes |
-| `experiments/tests/` | Regression and distribution checks | Yes |
-| `experiments/requirements.lock`, `experiments/environment/` | Compute, CPU, download and optional demo environments | Yes |
-| `experiments/manifests/` | Pinned upstream assets, weight fingerprints and license provenance | Yes |
-| `experiments/datasets/` | Raw and prepared public datasets | Downloaded locally; only the four proof-example prompts are included |
-| `experiments/results/evidence/` | Frozen per-fold scores, numerical summaries and original audit reports | Yes |
-| `experiments/results/release_evidence_manifest.json` | Fingerprints and provenance of frozen evidence | Yes |
-| `experiments/results/reproduced/` | Newly reconstructed reports and CPU diagnostic summaries | No |
-| Other `experiments/results/` subdirectories | New full-workflow predictions, reports and bootstrap arrays | No |
-| `docs/` | Indexed guides, references, validation, releases and presentation assets | Yes |
-| `experiments/release_provenance/` | Original fingerprints, release manifest and compact check records | Yes |
-| `.github/workflows/` | CPU CI | Yes |
-| `.zenodo.json` | Metadata prepared for later archival | Yes; its presence does not create a DOI |
-| `experiments/embedders/`, `experiments/artifacts/` | Downloaded weights, generated embeddings/PCA and checkpoints | No |
-| `experiments/.venv*`, `experiments/.cache/`, `experiments/.setup/`, `experiments/logs/`, `.cache/`, `dist/` | Local environments, temporary workspaces, setup state, logs and built ZIP | No |
+| [src/](../../src/) | Scientific algorithms, data processing and numerical report producers | [Experiment map](EXPERIMENTS.md) |
+| [configs/](../../configs/) | Fixed protocols, hyperparameters, row splits and manuscript references | [Methods](METHODS.md) |
+| [scripts/](../../scripts/) | Setup, validation, comparison and distribution tooling | [Execution guide](../guides/RUN_COMMANDS.md) |
+| [jobs/](../../jobs/) | Slurm resource declarations and launchers | [Slurm conventions](../guides/RUN_COMMANDS.md#slurm-conventions) |
+| [tests/](../../tests/) | Regression, component and distribution checks | [Contributing](../../CONTRIBUTING.md) |
+| [docs/](../README.md) | Setup guides, scientific reference, audits and release instructions | [Manual index](../README.md) |
+| [reproducibility/](../../reproducibility/README.md) | Environments, pinned manifests, frozen evidence and provenance | [Reproducibility index](../../reproducibility/README.md) |
 
-The internal directory names used by scientific code are retained within
-`experiments/` so input fingerprints,
-launch commands and historical evidence paths remain traceable. Downloaded inputs
-and new outputs stay separate from the frozen evidence.
+This follows the separation of source, tests, documentation and automation described in the [Good Research Code Handbook](https://goodresearch.dev/setup.html#create-a-project-skeleton) and [pyOpenSci structure guide](https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-structure.html). These are conventions to adapt to a project, not a mandatory universal folder count. This repository is a research workflow with direct Python and Slurm entrypoints.
 
-Keep small configuration files, split indices, source dependencies and reference
-scores in Git. Distribute large reusable arrays through a versioned archive with
-checksums when available. Temporary fixtures and caches can be removed after their
-checks finish. Recreate them from the included commands when needed.
+## Source map
 
-The deterministic export includes only the allowlisted files in
-`experiments/scripts/verify_release.py`; adding a new root file may require updating that list.
-`make manifest` refreshes and checks the current manifest without changing a ZIP.
-`make package` additionally builds a new archive and is reserved for intentional
-new-version packaging. The Git index and release-manifest file set must agree
-before tagging a release. Published tags and release assets remain historical.
+| Location | Implementation |
+| --- | --- |
+| [src/baselines/](../../src/baselines/) | kNN, Family Adaptation, clustering, Ridge, MLP and baseline reports |
+| [src/nvidia_utility/](../../src/nvidia_utility/) | Final per-target layer selection, utility training and independent audit |
+| [src/nvidia/](../../src/nvidia/) | Shared PCA preprocessing and earlier common-layer/fixed-L21 controls |
+| [src/layer_sweep/](../../src/layer_sweep/) | Full-layer routing and layer-selection analysis |
+| [src/diagnostics/](../../src/diagnostics/) | Controlled-format, lookup, transfer and uncertainty analyses |
+| [src/geometry.py](../../src/geometry.py) and [src/report_geometry.py](../../src/report_geometry.py) | Geometry measurements and numerical aggregation |
+
+The final utility pipeline and the earlier NVIDIA controls use different selection protocols. Their outputs are not interchangeable.
+
+## Root files
+
+[README.md](../../README.md) is the project entry point and ends with the paper citation. [CONTRIBUTING.md](../../CONTRIBUTING.md) describes development and validation. [requirements.lock](../../requirements.lock) pins compute dependencies; the [Makefile](../../Makefile) provides root commands. [LICENSE](../../LICENSE) and [CITATION.cff](../../CITATION.cff) expose licensing and citation metadata. Third-party notices are in [docs/THIRD_PARTY.md](../THIRD_PARTY.md).
+
+The hidden `.github/` directory contains CI and issue templates. `.gitignore` excludes runtime material, and `.zenodo.json` prepares archival metadata without issuing a software DOI.
+
+## Retention policy
+
+| Material | Location | Tracked? |
+| --- | --- | --- |
+| Scientific source and protocols | `src/`, `configs/` | Yes |
+| Automation and tests | `scripts/`, `jobs/`, `tests/` | Yes |
+| Documentation and presentation assets | `docs/` | Yes |
+| Pinned environment and asset records | `reproducibility/environment/`, `reproducibility/manifests/` | Yes |
+| Frozen original evidence | `reproducibility/evidence/`, `reproducibility/evidence_manifest.json` | Yes; preserved historical bytes |
+| Source identities and scoped checks | `reproducibility/provenance/` | Yes |
+| Four illustrative prompts | `reproducibility/examples/proof_twins.jsonl` | Yes |
+| Raw and prepared benchmark data | `datasets/` | No; download and prepare from pinned public assets |
+| Model weights | `embedders/` | No |
+| Embeddings, PCA arrays and checkpoints | `artifacts/` | No |
+| New scores, predictions, bootstraps and reconstructed reports | `results/` | No |
+| Environments, caches, setup state and logs | `.venv*`, `.cache/`, `.setup/`, `logs/` | No |
+| Built distribution ZIPs | `dist/` | No; published versions are retained separately |
+
+The [execution guide](../guides/RUN_COMMANDS.md) lists producers and prerequisites for runtime paths. The initializer materializes the bundled illustrative prompts in the runtime dataset directory and refuses to replace changed bytes. New model execution never imports frozen scores as measurements.
+
+Historical manifests retain the original paths and hashes. Current verification maps original `results/evidence/` names to `reproducibility/evidence/`; the current export manifest records this checkout's paths. Source-path changes are recorded separately from frozen outputs. Earlier tags and release assets remain unchanged.
+
+## Validation and distribution
+
+`make check-docs` checks local links, anchors, reachability and versioned command paths. CI also runs regression tests, synthetic baseline/NVIDIA/PCA/orchestration checks, and numerical table reconstruction. The [export allowlist](../../scripts/verify_release.py) excludes generated data and weights.
+
+Run `make manifest` after changes to refresh current file fingerprints, then `make verify`. `make manifest` does not alter a ZIP. Reserve `make package` for an intentional new release, following the [release guide](../releases/RELEASE.md); require the Git index and current export manifest to contain the same files.
+
+The current [layout validation record](../../reproducibility/provenance/current_checks/repository_layout.json) records clean-export checks and the scope of source-path adaptations.

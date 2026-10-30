@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "scope": "Repository organization and CPU component verification; no full-study rerun or scheduler submission.",
+  "primary_directories": [
+    "src",
+    "configs",
+    "scripts",
+    "jobs",
+    "tests",
+    "docs",
+    "reproducibility"
+  ],
+  "root_entry_files": [
+    "README.md",
+    "CONTRIBUTING.md",
+    "requirements.lock",
+    "Makefile",
+    "CITATION.cff",
+    "LICENSE"
+  ],
+  "working_directory": "repository root",
+  "tests_passed": 65,
+  "clean_export_checks": [
+    "verify",
+    "test",
+    "smoke",
+    "tables",
+    "production layout",
+    "baseline comparator metadata",
+    "CLI imports",
+    "shell syntax",
+    "license path"
+  ],
+  "versioned_sources_configs_evidence_jobs_checked": 1931,
+  "byte_identical_files": 1928,
+  "path_only_source_changes": [
+    "src/compare_historical_geometry.py",
+    "src/download_assets.py",
+    "src/reproduce_descriptive_clustering.py"
+  ],
+  "historical_evidence_manifest": "preserved; historical results/evidence paths resolve under reproducibility/evidence",
+  "illustrative_prompts": "Copied to ignored runtime dataset location; changed existing bytes rejected. Full benchmarks are not prepared by layout.",
+  "scientific_settings": "unchanged",
+  "original_v1_tag_and_zip": "unchanged",
+  "source_changes": "reproducibility/provenance/source_changes.json",
+  "nested_evidence_git_tracking": "Root-anchored runtime exclusions; both numerical table files and nested NVIDIA result records remain tracked."
+}

@@ -1,0 +1,87 @@
+{
+  "results/layer_sweep/provenance/source_hashes.json": [
+    "configs/layer_sweep.json",
+    "src/layer_sweep/common_layer.py",
+    "src/layer_sweep/run.py",
+    "src/layer_sweep/extract.py",
+    "src/layer_sweep/report.py",
+    "jobs/layer_routing.sbatch",
+    "jobs/layer_extract.sbatch",
+    "jobs/layer_report.sbatch",
+    "src/encode.py"
+  ],
+  "results/nvidia_layer_validation/utility_v1/provenance/source_hashes.json": [
+    "src/nvidia_utility/common_u.py",
+    "src/nvidia_utility/probe.py",
+    "src/nvidia_utility/train.py",
+    "src/nvidia_utility/preflight.py",
+    "src/nvidia_utility/audit.py",
+    "jobs/nvidia_utility_preflight.sbatch",
+    "jobs/nvidia_utility_probe.sbatch",
+    "jobs/nvidia_utility_train.sbatch",
+    "jobs/nvidia_utility_audit.sbatch",
+    "jobs/nvidia_utility_audit_task.sbatch",
+    "jobs/nvidia_utility_report.sbatch",
+    "scripts/submit_utility_report.py",
+    "configs/nvidia_utility_v1.json",
+    "src/baselines/common.py",
+    "src/baselines/run_mlp.py",
+    "src/nvidia/common_nv.py",
+    "src/nvidia/timing.py",
+    "jobs/env.sh"
+  ],
+  "results/geometry/_diagnostics/format_factorial_v1/source_hashes.json": [
+    "configs/format_factorial_v1.json",
+    "src/diagnostics/format_factorial_prepare.py",
+    "src/diagnostics/format_factorial_extract.py",
+    "src/diagnostics/format_factorial_analyze.py",
+    "jobs/format_factorial_prepare.sbatch",
+    "jobs/format_factorial_extract.sbatch",
+    "jobs/format_factorial_analyze.sbatch",
+    "jobs/format_factorial_report.sbatch",
+    "src/encode.py"
+  ],
+  "results/geometry/_diagnostics/proof_twins_v1/source_hashes.json": [
+    "src/encode.py",
+    "src/common.py",
+    "src/diagnostics/proof_twins.py",
+    "jobs/proof_twins.sbatch",
+    "jobs/env.sh",
+    "configs/geometry.json",
+    "reproducibility/manifests/assets.json",
+    "datasets/proof_twins_v1/prepared/queries.jsonl"
+  ],
+  "results/geometry/gte-qwen2-7b/_diagnostics/family_utility_transfer/source_hashes.json": [
+    "src/diagnostics/family_utility_transfer.py",
+    "configs/family_utility_transfer.json",
+    "src/geometry.py",
+    "src/common.py",
+    "configs/geometry.json",
+    "jobs/family_utility_transfer.sbatch",
+    "jobs/family_utility_transfer_report.sbatch"
+  ],
+  "results/nvidia/provenance/input_hashes.json": [
+    "datasets/routerbench/prepared/panel.npz",
+    "datasets/routerbench/prepared/queries.jsonl",
+    "datasets/routerbench/prepared/manifest.json",
+    "datasets/sprout/prepared/panel.npz",
+    "datasets/sprout/prepared/queries.jsonl",
+    "datasets/sprout/prepared/manifest.json"
+  ],
+  "results/nvidia/inference_cpu_v1/source_hashes.json": [
+    "src/nvidia/inference_cpu.py",
+    "configs/nvidia_inference_cpu.json",
+    "jobs/nvidia_inference_cpu.sbatch",
+    "src/nvidia/common_nv.py",
+    "src/nvidia/vendor/trunk.py",
+    "src/nvidia/timing.py",
+    "src/baselines/common.py",
+    "src/baselines/run_fixed.py",
+    "jobs/env.sh",
+    "configs/nvidia.json"
+  ],
+  "results/nvidia/inference_cpu_v1/audit_source_hashes.json": [
+    "src/nvidia/report_inference_cpu.py",
+    "jobs/nvidia_inference_audit.sbatch"
+  ]
+}

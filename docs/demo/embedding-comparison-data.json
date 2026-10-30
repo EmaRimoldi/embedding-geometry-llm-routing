@@ -4,7 +4,7 @@
   "scope": "Query-pooled held-out utility at every frozen penalty; identical router and cohorts across embeddings. Lines connect evaluated points without smoothing.",
   "utility": "reward - penalty * cost",
   "x_axis": "symlog, linear within [0, 1]",
-  "evidence": "results/evidence/baselines/_summary_reduced/scores.csv",
+  "evidence": "reproducibility/evidence/baselines/_summary_reduced/scores.csv",
   "evidence_sha256": "0fbdc6dac80b05736808f76a72caa8260a7fa561dbd1272a3cc11bbd0cbd27db",
   "panels": [
     {

@@ -24,10 +24,10 @@ Use Python 3.11 to verify the bundled evidence. These commands require no GPU, d
 ```bash
 git clone https://github.com/EmaRimoldi/embedding-geometry-llm-routing.git
 cd embedding-geometry-llm-routing
-python3 -B experiments/scripts/check_docs.py
-python3 -B experiments/scripts/verify_release.py
-python3 -B experiments/scripts/reproduce_results.py
-python3 -B experiments/scripts/check_paper_results.py
+python3 -B scripts/check_docs.py
+python3 -B scripts/verify_release.py
+python3 -B scripts/reproduce_results.py
+python3 -B scripts/check_paper_results.py
 ```
 
 With Make installed, `make verify` runs the same checks. It validates repository paths and exported bytes, reconstructs saved aggregates and checks the pinned manuscript values. It does not fit new models or repeat bootstrap sampling.
@@ -46,24 +46,26 @@ The full workflow uses Linux, Python 3.11, pinned public assets and CUDA for neu
 
 ## Repository
 
-The root has two main directories and four entry files:
+The root separates implementation, protocols, automation, tests, documentation and retained research evidence:
 
 ```text
 embedding-geometry-llm-routing/
-├── experiments/    Scientific code, protocols, launchers, tests and evidence
-├── docs/           Guides, reference material, audits and release instructions
-├── README.md       Overview, quickstart and paper citation
-├── Makefile        Commands that work from the repository root
-├── CITATION.cff    Machine-readable citation
-└── LICENSE         CC BY 4.0
+├── src/                Scientific implementations and report producers
+├── configs/            Fixed protocols, hyperparameters and row splits
+├── scripts/            Setup, verification and packaging tools
+├── jobs/               Slurm launchers
+├── tests/              Regression and component tests
+├── docs/               Guides, methods, results and audits
+├── reproducibility/    Pinned environments, manifests, provenance and evidence
+├── README.md           Overview, quickstart and paper citation
+├── CONTRIBUTING.md     Development and validation workflow
+├── requirements.lock   Pinned compute dependencies
+├── Makefile            Convenient commands from the repository root
+├── CITATION.cff        Machine-readable citation
+└── LICENSE             CC BY 4.0
 ```
 
-| Start here | What you will find |
-| --- | --- |
-| [Scientific workspace](experiments/README.md) | Implementations, fixed configurations, environments, Slurm jobs, tests and saved evidence |
-| [Documentation](docs/README.md) | Setup and execution guides, methods, results, validation and release material |
-
-Use top-level `make` commands from the repository root. Enter `experiments/` before following scientific CLI or Slurm examples. See the [workspace map](experiments/README.md#workspace-map) for its internal folders and the [retention policy](docs/reference/STRUCTURE.md) for generated files.
+Run all commands from the repository root. Start with the [documentation index](docs/README.md) for execution, the [reproducibility index](reproducibility/README.md) for retained inputs and checks, or the [directory and retention guide](docs/reference/STRUCTURE.md) for the full map. Downloaded datasets, weights, generated arrays and new results are local runtime material excluded from Git.
 
 ## Validation and limitations
 
@@ -81,7 +83,7 @@ The smoke suite uses small synthetic inputs. The [documentation index](docs/READ
 
 ## Contributing
 
-See [contributing guide](docs/CONTRIBUTING.md) for change validation and issue reports. After edits, `make manifest` refreshes the current file manifest without rebuilding an existing release ZIP; run `make verify` before committing. [Release instructions](docs/releases/RELEASE.md) cover intentional new-version packaging.
+See [contributing guide](CONTRIBUTING.md) for change validation and issue reports. After edits, `make manifest` refreshes the current file manifest without rebuilding an existing release ZIP; run `make verify` before committing. [Release instructions](docs/releases/RELEASE.md) cover intentional new-version packaging.
 
 ## License
 

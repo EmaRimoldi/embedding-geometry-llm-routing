@@ -1,6 +1,6 @@
 PYTHON ?= python3
-COMPUTE_PYTHON ?= experiments/.venv/bin/python
-DOWNLOAD_PYTHON ?= experiments/.venv-download/bin/python
+COMPUTE_PYTHON ?= .venv/bin/python
+DOWNLOAD_PYTHON ?= .venv-download/bin/python
 
 .PHONY: help check-docs manifest verify compare-baselines test smoke download data controls diagnostics tables package
 
@@ -17,45 +17,45 @@ help:
 	@echo "package: refresh the release manifest and deterministic ZIP"
 
 check-docs:
-	"$(PYTHON)" -B experiments/scripts/check_docs.py
+	"$(PYTHON)" -B scripts/check_docs.py
 
 manifest:
-	"$(PYTHON)" -B experiments/scripts/build_submission.py --manifest-only
+	"$(PYTHON)" -B scripts/build_submission.py --manifest-only
 
 verify: check-docs
-	"$(PYTHON)" -B experiments/scripts/verify_release.py
-	"$(PYTHON)" -B experiments/scripts/reproduce_results.py
-	"$(PYTHON)" -B experiments/scripts/check_paper_results.py
+	"$(PYTHON)" -B scripts/verify_release.py
+	"$(PYTHON)" -B scripts/reproduce_results.py
+	"$(PYTHON)" -B scripts/check_paper_results.py
 
 compare-baselines:
-	"$(PYTHON)" -B experiments/scripts/compare_baseline_results.py --fresh-results experiments/results
+	"$(PYTHON)" -B scripts/compare_baseline_results.py --fresh-results results
 
 test:
-	"$(COMPUTE_PYTHON)" -B -m pytest -q experiments/tests
+	"$(COMPUTE_PYTHON)" -B -m pytest -q tests
 
 smoke:
-	"$(COMPUTE_PYTHON)" -B experiments/scripts/smoke_baselines.py
-	"$(COMPUTE_PYTHON)" -B experiments/scripts/smoke_nvidia.py
-	"$(COMPUTE_PYTHON)" -B experiments/scripts/smoke_pca.py
-	"$(COMPUTE_PYTHON)" -B experiments/scripts/smoke_pca.py --rows 160 --source-rows 120 --features 128
-	"$(COMPUTE_PYTHON)" -B experiments/scripts/smoke_orchestration.py
+	"$(COMPUTE_PYTHON)" -B scripts/smoke_baselines.py
+	"$(COMPUTE_PYTHON)" -B scripts/smoke_nvidia.py
+	"$(COMPUTE_PYTHON)" -B scripts/smoke_pca.py
+	"$(COMPUTE_PYTHON)" -B scripts/smoke_pca.py --rows 160 --source-rows 120 --features 128
+	"$(COMPUTE_PYTHON)" -B scripts/smoke_orchestration.py
 
 download:
-	"$(DOWNLOAD_PYTHON)" -B experiments/src/download_assets.py
+	"$(DOWNLOAD_PYTHON)" -B src/download_assets.py
 
 data:
-	"$(COMPUTE_PYTHON)" -B experiments/src/prepare_data.py routerbench
-	"$(COMPUTE_PYTHON)" -B experiments/src/prepare_data.py sprout
+	"$(COMPUTE_PYTHON)" -B src/prepare_data.py routerbench
+	"$(COMPUTE_PYTHON)" -B src/prepare_data.py sprout
 
 controls:
-	"$(COMPUTE_PYTHON)" -B experiments/scripts/reproduce_outcome_controls.py
+	"$(COMPUTE_PYTHON)" -B scripts/reproduce_outcome_controls.py
 
 diagnostics:
-	"$(COMPUTE_PYTHON)" -B experiments/scripts/reproduce_cpu_diagnostics.py
+	"$(COMPUTE_PYTHON)" -B scripts/reproduce_cpu_diagnostics.py
 
 tables:
-	"$(COMPUTE_PYTHON)" -B experiments/scripts/render_saved_tables.py
+	"$(COMPUTE_PYTHON)" -B scripts/render_saved_tables.py
 
 package:
-	"$(PYTHON)" -B experiments/scripts/build_submission.py
-	"$(PYTHON)" -B experiments/scripts/verify_release.py
+	"$(PYTHON)" -B scripts/build_submission.py
+	"$(PYTHON)" -B scripts/verify_release.py

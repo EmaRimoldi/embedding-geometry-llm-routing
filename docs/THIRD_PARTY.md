@@ -5,7 +5,7 @@
 The presentation assets use Inter, Copyright 2020 The Inter Project Authors,
 under the SIL Open Font License 1.1. The optional illustration builder downloads
 the font into its local cache using the revision and checksum in
-`manifests/readme_font.json`. The license is retained in
+`reproducibility/manifests/readme_font.json`. The license is retained in
 `docs/INTER_FONT_LICENSE.txt`. Static instances used for rendering are generated
 locally and remain under the same font license.
 
@@ -17,7 +17,7 @@ The routing study adapts BCE to MSE and uses unrestricted utility predictions. L
 
 ## Downloaded public assets
 
-The full source revisions and download selections are in `manifests/assets.json`. Large datasets and model weights are not redistributed in this ZIP.
+The full source revisions and download selections are in `reproducibility/manifests/assets.json`. Large datasets and model weights are not redistributed in this ZIP.
 
 | Asset | Pinned upstream repository | License information present in inspected asset files |
 |---|---|---|
@@ -41,7 +41,7 @@ research outputs are licensed under **Creative Commons Attribution 4.0
 International (CC BY 4.0)**, as set out in the root `LICENSE`. This is the same
 license linked from [the paper's arXiv record](https://arxiv.org/abs/2610.19198v1).
 The license selection and official legal-text checksum are recorded in
-`manifests/project_license.json`.
+`reproducibility/manifests/project_license.json`.
 
 This grant covers only the authors' rights in original project material.
 The NVIDIA reference sources retain Apache-2.0; the Inter font retains OFL-1.1;
