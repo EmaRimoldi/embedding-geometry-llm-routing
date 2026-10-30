@@ -50,8 +50,8 @@ before invoking the packaging target.
 
 1. Complete the relevant tests and numeric checks; update the documented audit
    scope with actual executions and limitations.
-2. Update software `version` and `date-released` in `CITATION.cff`, the matching
-   metadata in `.zenodo.json`, and the release notes. Keep the paper DOI separate.
+2. Record the new software version and release date in the release notes. Keep
+   the README's paper citation separate from any future software DOI.
 3. Run `make package`, commit its updated manifest, then run `make verify`.
 4. Check that every tracked file is exported and that no exported file is absent
    from the Git index. Require the exact commit's CPU CI to pass.
@@ -62,19 +62,17 @@ Fixes after publication receive a new version; preserve the earlier tag, evidenc
 and release assets. Large regenerated arrays can be attached to a separately
 versioned data deposit with their own checksums and input/code provenance.
 
-## Zenodo metadata
+## Optional Zenodo archival
 
-The root `.zenodo.json` contains creators, affiliations, version, CC BY 4.0 license
-and the paper DOI with the `isSupplementTo` relationship. `CITATION.cff` preserves
-the preferred paper citation and identifies this software version.
+The README contains the preferred paper citation; the release notes identify
+software versions. A future Zenodo deposit can describe the software with
+creators, affiliations, version, CC BY 4.0 license, third-party exceptions and the
+paper DOI as a related publication. That metadata can be supplied during deposit.
 
-**No software DOI has been issued by this packaging step.** The repository is
-private and no authenticated Zenodo connection is configured in this workspace.
-To archive via the GitHub integration, an owner must connect the intended Zenodo
-account and enable this repository when it is public. An owner can also make a
-manual deposit of the verified release ZIP under the intended access settings.
-Record the returned version DOI and concept DOI after deposit; do not substitute
-the paper DOI or invent a placeholder identifier.
+**No software DOI has been issued for this repository.** For a future deposit,
+upload the verified release archive with its metadata and intended access settings,
+or configure Zenodo's GitHub integration. Record the returned version DOI and
+concept DOI after deposit; keep these distinct from the paper DOI.
 
 Official guidance: [GitHub archival with Zenodo](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
 and [Zenodo JSON metadata](https://help.zenodo.org/docs/github/describe-software/zenodo-json/).

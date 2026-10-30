@@ -1,5 +1,22 @@
 # Release validation
 
+## Development checks
+
+Run commands from the repository root. After code changes, run `make test` and the relevant synthetic component checks in the pinned compute or CPU environment described in the [setup guide](../guides/RUN_COMMANDS.md#platform-and-setup). `COMPUTE_PYTHON` can select another installed interpreter.
+
+Before committing:
+
+```bash
+make check-docs
+make manifest
+make verify
+git diff --check
+```
+
+Commit edited files and the current export manifest together. `make manifest` refreshes file fingerprints without modifying a ZIP. Reserve `make package` for intentional new versions, following the [release guide](../releases/RELEASE.md). Preserve earlier tags, release assets and historical evidence.
+
+For demonstrated bugs, add a meaningful regression and explain effects on data selection, splits, seeds, penalties, aggregation or uncertainty. New runs belong in ignored runtime directories with new provenance. Report issues with the commit, command, environment, relevant input hashes, expected result and observed result; remove credentials and machine-specific details from logs.
+
 ## Executed reviewer checks
 
 The original ZIP was extracted to a fresh directory. New compute and download environments were installed from public PyPI with Python 3.11.16; neither used the original environment's site packages. Both `pip check` commands passed.

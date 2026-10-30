@@ -58,10 +58,8 @@ embedding-geometry-llm-routing/
 ├── docs/               Guides, methods, results and audits
 ├── reproducibility/    Pinned environments, manifests, provenance and evidence
 ├── README.md           Overview, quickstart and paper citation
-├── CONTRIBUTING.md     Development and validation workflow
 ├── requirements.lock   Pinned compute dependencies
 ├── Makefile            Convenient commands from the repository root
-├── CITATION.cff        Machine-readable citation
 └── LICENSE             CC BY 4.0
 ```
 
@@ -81,9 +79,9 @@ make smoke
 
 The smoke suite uses small synthetic inputs. The [documentation index](docs/README.md) distinguishes current validation from historical reviewer checks.
 
-## Contributing
+## Development
 
-See [contributing guide](CONTRIBUTING.md) for change validation and issue reports. After edits, `make manifest` refreshes the current file manifest without rebuilding an existing release ZIP; run `make verify` before committing. [Release instructions](docs/releases/RELEASE.md) cover intentional new-version packaging.
+Run `make test` and the relevant component checks after code changes. Then use `make manifest` and `make verify` before committing; the manifest command preserves existing release ZIPs. See the [development checks](docs/validation/VALIDATION.md#development-checks) and [release instructions](docs/releases/RELEASE.md) for the complete workflow.
 
 ## License
 
@@ -91,7 +89,7 @@ Original project material uses **[CC BY 4.0](LICENSE)**. Third-party sources, as
 
 ## Citation
 
-If you use this code, data processing or results, please cite the paper below. Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
+If you use this code, data processing or results, please cite the paper below.
 
 ```bibtex
 @misc{torti2026embedding,

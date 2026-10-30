@@ -10,7 +10,7 @@ The root uses familiar research-software names and separates responsibilities. A
 | [configs/](../../configs/) | Fixed protocols, hyperparameters, row splits and manuscript references | [Methods](METHODS.md) |
 | [scripts/](../../scripts/) | Setup, validation, comparison and distribution tooling | [Execution guide](../guides/RUN_COMMANDS.md) |
 | [jobs/](../../jobs/) | Slurm resource declarations and launchers | [Slurm conventions](../guides/RUN_COMMANDS.md#slurm-conventions) |
-| [tests/](../../tests/) | Regression, component and distribution checks | [Contributing](../../CONTRIBUTING.md) |
+| [tests/](../../tests/) | Regression, component and distribution checks | [Development checks](../validation/VALIDATION.md#development-checks) |
 | [docs/](../README.md) | Setup guides, scientific reference, audits and release instructions | [Manual index](../README.md) |
 | [reproducibility/](../../reproducibility/README.md) | Environments, pinned manifests, frozen evidence and provenance | [Reproducibility index](../../reproducibility/README.md) |
 
@@ -31,9 +31,9 @@ The final utility pipeline and the earlier NVIDIA controls use different selecti
 
 ## Root files
 
-[README.md](../../README.md) is the project entry point and ends with the paper citation. [CONTRIBUTING.md](../../CONTRIBUTING.md) describes development and validation. [requirements.lock](../../requirements.lock) pins compute dependencies; the [Makefile](../../Makefile) provides root commands. [LICENSE](../../LICENSE) and [CITATION.cff](../../CITATION.cff) expose licensing and citation metadata. Third-party notices are in [docs/THIRD_PARTY.md](../THIRD_PARTY.md).
+[README.md](../../README.md) is the project entry point and ends with the paper citation. [requirements.lock](../../requirements.lock) pins compute dependencies; the [Makefile](../../Makefile) provides root commands. [LICENSE](../../LICENSE) exposes licensing terms. Development instructions are in the [validation guide](../validation/VALIDATION.md#development-checks), and third-party notices are in [docs/THIRD_PARTY.md](../THIRD_PARTY.md).
 
-The hidden `.github/` directory contains CI and issue templates. `.gitignore` excludes runtime material, and `.zenodo.json` prepares archival metadata without issuing a software DOI.
+The hidden `.github/` directory contains CI and issue templates. `.gitignore` excludes downloaded data, model weights, environments, caches and generated results from Git.
 
 ## Retention policy
 
@@ -63,4 +63,4 @@ Historical manifests retain the original paths and hashes. Current verification 
 
 Run `make manifest` after changes to refresh current file fingerprints, then `make verify`. `make manifest` does not alter a ZIP. Reserve `make package` for an intentional new release, following the [release guide](../releases/RELEASE.md); require the Git index and current export manifest to contain the same files.
 
-The current [layout validation record](../../reproducibility/provenance/current_checks/repository_layout.json) records clean-export checks and the scope of source-path adaptations.
+The [layout validation record](../../reproducibility/provenance/current_checks/repository_layout.json) records the earlier directory reorganization, clean-export checks and source-path adaptations.

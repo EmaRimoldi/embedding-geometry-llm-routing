@@ -11,7 +11,7 @@ def test_release_exports_root_license_metadata_and_entrypoints(tmp_path):
     spec = importlib.util.spec_from_file_location('release_root_checks', ROOT / 'scripts/verify_release.py')
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
-    required = {'LICENSE', 'CITATION.cff', '.zenodo.json', 'Makefile', 'CONTRIBUTING.md', 'docs/THIRD_PARTY.md', 'README.md'}
+    required = {'LICENSE', 'Makefile', 'requirements.lock', 'docs/THIRD_PARTY.md', 'README.md'}
     for name in required:
         (tmp_path / name).parent.mkdir(parents=True, exist_ok=True)
         (tmp_path / name).write_text('required release material\n')
@@ -61,7 +61,7 @@ def test_generated_workspace_data_is_excluded_but_root_is_compact(tmp_path):
                         'reproducibility/examples/proof_twins.jsonl'}
     actual = {str(p.relative_to(ROOT)) for p in module.public_files(ROOT)}
     assert {p.split('/')[0] for p in actual if '/' in p and not p.startswith('.')} == {'src', 'configs', 'tests', 'scripts', 'jobs', 'docs', 'reproducibility'}
-    assert {p for p in actual if '/' not in p and not p.startswith('.')} == {'README.md', 'Makefile', 'LICENSE', 'CITATION.cff', 'CONTRIBUTING.md', 'requirements.lock'}
+    assert {p for p in actual if '/' not in p and not p.startswith('.')} == {'README.md', 'Makefile', 'LICENSE', 'requirements.lock'}
 
 
 def test_layout_materializes_example_without_replacing_changed_runtime_data(tmp_path, monkeypatch):

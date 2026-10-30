@@ -43,4 +43,4 @@ The frozen numerical evidence is in [reproducibility/evidence](../reproducibilit
 | [Conference-package changes](releases/RELEASE_CHANGES.md) | Historical portability and packaging changes |
 | [README demo](demo/README.md) | Sources and regeneration commands for the animation and comparison figures |
 
-See [contributing](../CONTRIBUTING.md) for the development workflow and [third-party notices](THIRD_PARTY.md) for attribution. `make check-docs` validates local links, heading anchors, documentation reachability and literal versioned paths used in the manual and job launchers.
+See [development checks](validation/VALIDATION.md#development-checks) for the change workflow and [third-party notices](THIRD_PARTY.md) for attribution. `make check-docs` validates local links, heading anchors, documentation reachability and literal versioned paths used in the manual and job launchers.

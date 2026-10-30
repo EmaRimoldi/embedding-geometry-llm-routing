@@ -9,8 +9,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC_TOP = {"README.md", "LICENSE", "CITATION.cff", "CONTRIBUTING.md", "Makefile", "requirements.lock",
-              ".zenodo.json", ".gitignore", ".github", "docs", "src", "configs", "tests", "scripts",
+PUBLIC_TOP = {"README.md", "LICENSE", "Makefile", "requirements.lock",
+              ".gitignore", ".github", "docs", "src", "configs", "tests", "scripts",
               "jobs", "reproducibility"}
 # Generic user-home or machine-storage paths; no author-specific identifiers.
 PATH_PATTERNS = [

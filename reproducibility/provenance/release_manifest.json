@@ -8,18 +8,6 @@
       "bytes": 227,
       "sha256": "160cd97405ddcd23dfd220a6fab7d36e379258bad0e826f98cfeadf0144dde3c"
     },
-    ".zenodo.json": {
-      "bytes": 1728,
-      "sha256": "41cff3d04b9f90f64d94bb7ed26009f88194f25fe3df94c4ea5dad426c7a6548"
-    },
-    "CITATION.cff": {
-      "bytes": 1361,
-      "sha256": "51f5bf096ff42a60080fd432bbd382ffcc0ffc41e1980400ae8d74186cd7b5cf"
-    },
-    "CONTRIBUTING.md": {
-      "bytes": 2131,
-      "sha256": "00d81aec535b196d035278f282936b807033b28c20eb02100c637256d5e75785"
-    },
     "LICENSE": {
       "bytes": 18657,
       "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
@@ -29,8 +17,8 @@
       "sha256": "8e09301c603dc0f9dc5a22fc87d3434997528e555e8b55230917203256bce223"
     },
     "README.md": {
-      "bytes": 6536,
-      "sha256": "97c6b1fd1b225ba0378218db4fc1ca0e5fcba6b62daca34dd27d8b70d4c845d4"
+      "bytes": 6358,
+      "sha256": "8590c396303515a19d480995433861dfbb011399fb6cc56783d09aadf618dd85"
     },
     "configs/additional_clustering_tasks.json": {
       "bytes": 11368,
@@ -113,8 +101,8 @@
       "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
     },
     "docs/README.md": {
-      "bytes": 3563,
-      "sha256": "907cfa000985a92be1123657d464838f5251a4b9f9b24f2545b0684f3d574bae"
+      "bytes": 3589,
+      "sha256": "7fd96788277fa8d094c5a585283219c60f52f7d77d059b105fb9459a5e00bcc4"
     },
     "docs/THIRD_PARTY.md": {
       "bytes": 3454,
@@ -201,12 +189,12 @@
       "sha256": "b033d93b698864b1ca45037763a67305a9632f6a8febd330625c4fd4cffc09fd"
     },
     "docs/reference/STRUCTURE.md": {
-      "bytes": 5897,
-      "sha256": "923263609e2939d8f69e8dfc02297e79e509c09e7598c1cc4ab6f84468f9ebd6"
+      "bytes": 5909,
+      "sha256": "7e417fe62755aeb0e53239f23a3390efa158ed84d643d9271fee817420ee3fb3"
     },
     "docs/releases/RELEASE.md": {
-      "bytes": 4327,
-      "sha256": "678a878c78f0f4bb026f6b69ae31bc8d5b4172e936003fb0edfd016fe63e41ec"
+      "bytes": 4183,
+      "sha256": "e4dda8554201abc333ec79c41ac5e9006ad34bef37a6dc47564630c2125d4b1f"
     },
     "docs/releases/RELEASE_CHANGES.md": {
       "bytes": 2891,
@@ -241,8 +229,8 @@
       "sha256": "14f4152b75a0ae2cf9fca98b4f85f6f7b6069e5b1078b20997b2fab1aa0147fc"
     },
     "docs/validation/VALIDATION.md": {
-      "bytes": 3663,
-      "sha256": "4c1cc07731dd4283e91ec7ddb5b22b962facf16ee4021c1f1cf86a818c90ed20"
+      "bytes": 4764,
+      "sha256": "1df8eaed32888ca62811378931ae45ee9287249112861b21927dbe5ed4353065"
     },
     "jobs/additional_clustering.sbatch": {
       "bytes": 314,
@@ -7726,7 +7714,7 @@
     },
     "reproducibility/provenance/source_changes.json": {
       "bytes": 26674,
-      "sha256": "c71fb85598f44698279a893dc1361d93358e668e4b2779409840c6a36a3d1b24"
+      "sha256": "61d0f3c26a671c222bba091edf5f7aa176b53a0ad49baf158549cfb0b4e55aba"
     },
     "reproducibility/provenance/storage_cleanup.json": {
       "bytes": 5337,
@@ -7821,8 +7809,8 @@
       "sha256": "5a0aba259df129c9479e7c7c70f3810f2158ca3cf14cd7693872ae95663d609b"
     },
     "scripts/verify_release.py": {
-      "bytes": 5587,
-      "sha256": "c6f94ec323580fff2e573b74b1d7660696eabe44f087333e1e526cd67a3836cb"
+      "bytes": 5536,
+      "sha256": "a60d8c6d13215a85e0859ebc43ad30d9957981c9054feb617d76a052624b07c0"
     },
     "src/audit_absolute_difficulty.py": {
       "bytes": 4120,
@@ -8209,8 +8197,8 @@
       "sha256": "f9bb65dece40cf00a7c9adfbaa2f1eb811fcbfe656705bd4baa5d1f080cd172c"
     },
     "tests/test_distribution.py": {
-      "bytes": 5945,
-      "sha256": "453013b60f0f808b8fe0f924ec04ea745ef92a4fff1abfd5703ec49fd07852d1"
+      "bytes": 5880,
+      "sha256": "a1322fa6554627def4d2fc7ee2ddeff29c0048f848e47f308b1b9dbfb548b17c"
     },
     "tests/test_documentation.py": {
       "bytes": 3950,
